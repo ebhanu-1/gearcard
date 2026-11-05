@@ -1,5 +1,7 @@
 import { useState } from 'preact/hooks'
-import { lensGroups, lensById } from '../lib/data'
+import { lensGroups, lensById, curvesFor } from '../lib/data'
+import { fmtRange } from '../lib/optics'
+import { overallRange } from '../lib/curves'
 import { mount, set, useStore } from '../lib/state'
 import type { Lens } from '../lib/types'
 import { Sheet } from './Common'
@@ -11,12 +13,24 @@ export function lensBadges(l: Lens) {
   return b
 }
 
+/** "Sharpest f/5.6–f/8" from the curve data; a zoom shows the span across its focal lengths. Null when not researched. */
+export function sharpestLabel(l: Lens): string | null {
+  const r = curvesFor(l.id)
+  if (!r?.ok) return null
+  const es = r.data.entries.filter((e) => !e.raw.tc && (e.raw.mag ?? 'inf') === 'inf')
+  const rs = es.map((e) => overallRange(e, e.downhill).range).filter((x): x is { lo: number; hi: number } => !!x)
+  if (!rs.length) return null
+  const lo = Math.min(...rs.map((x) => x.lo))
+  const hi = Math.max(...rs.map((x) => x.hi))
+  return `Sharpest ${fmtRange({ lo, hi })}${l.kind === 'zoom' && rs.length > 1 ? ' (varies with focal length)' : ''}`
+}
+
 export function LensRow({ l, onPick, sub }: { l: Lens; onPick: () => void; sub?: string }) {
   return (
     <button class="list-item" onClick={onPick}>
       <span class="t">
         <b>{l.short}{lensBadges(l).map((x) => <span key={x} class="mf">{x}</span>)}</b>
-        <small>{sub ?? (l.quick.sweet_spot ? `Sweet spot ${l.quick.sweet_spot}` : l.quick.headline)}</small>
+        <small>{sub ?? sharpestLabel(l) ?? l.quick.headline}</small>
       </span>
     </button>
   )

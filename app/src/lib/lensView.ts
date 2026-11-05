@@ -1,10 +1,11 @@
 // View model for the Lens Card: combines a lens, a body, a focal length and the TC state (SPEC §5.2, §6).
 import type { Body, Lens } from './types'
 import {
-  type ApRange, type Bands, type Sensor, DX_H_MM, DX_W_MM, TC_FACTOR, bandSegments, bandThresholds, cropFactor,
-  diffractionBands, dofMm, effectiveAperture, frameMm, outputCoC_um, parseApRange, pixelCoC_um, shiftRange, snapThird,
-  sweetZone, THIRD_STOPS,
+  type Sensor, DX_H_MM, DX_W_MM, TC_FACTOR, cropFactor, dofMm, effectiveAperture, frameMm, outputCoC_um, pixelCoC_um, snapThird,
 } from './optics'
+import {
+  type CurveModel, type CurveResult, type CurveSource, type Pick, MAG_VALUE, buildCurveModel, closeFocusFactor, pickEntry,
+} from './curves'
 
 export function sensorFor(body: Body, lens: Lens): Sensor {
   const pitchUm = (body.sensor.width_mm / body.sensor.width_px) * 1000
@@ -50,18 +51,6 @@ export function focalOptions(lens: Lens, tc: boolean): FocalOption[] {
   })
 }
 
-export interface StripModel {
-  /** Third-stop f-numbers drawn, widest → narrowest. */
-  lo: number
-  hi: number
-  sweet: ApRange | null
-  tint: ApRange | null
-  bands: Bands
-  segments: { from: number; level: number }[]
-  thresholds: ReturnType<typeof bandThresholds>
-  ticks: number[]
-}
-
 export interface CloseUp {
   mag: number
   magFocal: number | null
@@ -76,7 +65,7 @@ export interface CloseUp {
   cocPixelUm: number
   cocOutUm: number
   /** Rows for the DOF mini table. */
-  rows: { setN: number; nEff: number; dofPixelMm: number; dofOutMm: number; level: number }[]
+  rows: { setN: number; nEff: number; dofPixelMm: number; dofOutMm: number }[]
 }
 
 export interface LensCardModel {
@@ -92,14 +81,8 @@ export interface LensCardModel {
   crop: number
   widest: number
   narrowest: number
-  strip: StripModel
-  sharpest: ApRange | null
-  sharpestApprox: boolean
-  sharpestNote: string
-  diffractionAt100: number
   closest: { mag: number; atFocal: number | null; mfdM: number | null; est: boolean }
   closeUp: CloseUp
-  byFocalRow: { center: string; corners: string; note: string; exact: boolean } | null
   chips: string[]
 }
 
@@ -107,7 +90,6 @@ export function buildLensCard(lens: Lens, body: Body, focalWanted: number | null
   const tcAvailable = lens.tc_compatible === true
   const tc = tcAvailable && tcWanted
   const sensor = sensorFor(body, lens)
-  const bands = diffractionBands(sensor)
 
   const opts = focalOptions(lens, tc)
   const wanted = focalWanted ?? opts[opts.length - 1].shown
@@ -122,35 +104,12 @@ export function buildLensCard(lens: Lens, body: Body, focalWanted: number | null
   const widest = snapThird(maxAp * factor)
   const narrowest = snapThird(lens.min_aperture_f * factor)
 
-  // Lens sweet spot (displayed numbers).
-  const byF = lens.quick.by_focal
-  const explicit = tc ? byF.find((b) => b.focal_mm === Math.round(focalBase * TC_FACTOR) && (isTcEntry(b.center_peak) || isTcEntry(b.corners_peak))) : undefined
-  const bareEntry = lens.kind === 'zoom' ? stepAt(byF.filter((b) => !isTcEntry(b.center_peak) && !isTcEntry(b.corners_peak)), focalBase) : byF[0]
-  const entry = explicit ?? bareEntry
-  let sweet: ApRange | null = null
-  let sharpestApprox = false
-  if (entry) {
-    sweet = sweetZone(parseApRange(entry.center_peak), parseApRange(entry.corners_peak))
-    if (sweet && tc && !explicit) {
-      sweet = shiftRange(sweet, TC_FACTOR)
-      sharpestApprox = true
-    }
-    if (lens.kind === 'zoom' && entry.focal_mm !== Math.round(explicit ? focalBase * TC_FACTOR : focalBase)) sharpestApprox = true
-  }
-  if (!sweet && lens.kind !== 'zoom') {
-    const ss = parseApRange(lens.quick.sweet_spot)
-    sweet = ss ? (tc ? shiftRange(ss, TC_FACTOR) : ss) : null
-  }
-  if (sweet) sweet = { lo: Math.max(sweet.lo, widest), hi: Math.min(Math.max(sweet.hi, sweet.lo), narrowest) }
-  const tint = sweet && sweet.lo > widest ? { lo: widest, hi: sweet.lo } : null
-
   const closeUp = buildCloseUp(lens, body, sensor, focalBase, tc)
   const mags = lens.close_focus.max_mag
   const best = mags.slice().sort((a, b) => b.value - a.value)[0]
   const mfd = best ? (stepAt(lens.close_focus.mfd_m, best.focal_mm)?.value ?? null) : (stepAt(lens.close_focus.mfd_m, focalBase)?.value ?? null)
 
   const crop = cropFactor(sensor)
-  const ticks = [1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22, 32, 45, 64].filter((t) => t > widest * 1.03 && t < narrowest * 0.97)
 
   const chips: string[] = []
   if (/MF only/i.test(lens.focus.on_z_body)) chips.push('MF only on FTZ II')
@@ -161,16 +120,11 @@ export function buildLensCard(lens: Lens, body: Body, focalWanted: number | null
   if (sensor.dxCrop) chips.push('DX crop')
   if (lens.adapter) chips.push(`via ${lens.adapter}`)
 
-  const thresholds = bandThresholds(bands)
   return {
     lens, body, sensor, tc, tcAvailable,
     focal: focalShown, focalBase, focalApprox: opt.approx && lens.kind === 'zoom',
     equivFocal: crop > 1.05 ? Math.round(focalShown * crop) : null,
     crop, widest, narrowest,
-    strip: { lo: widest, hi: narrowest, sweet, tint, bands, segments: bandSegments(bands), thresholds, ticks },
-    sharpest: sweet, sharpestApprox,
-    sharpestNote: tc ? 'displayed' : lens.kind === 'zoom' ? `at ${Math.round(focalShown)} mm` : '',
-    diffractionAt100: snapThird(bands.visible100),
     closest: {
       mag: best ? best.value * factor : 0,
       atFocal: best ? best.focal_mm : null,
@@ -178,9 +132,6 @@ export function buildLensCard(lens: Lens, body: Body, focalWanted: number | null
       est: tc || lens.kind === 'zoom',
     },
     closeUp,
-    byFocalRow: entry
-      ? { center: entry.center_peak ?? '—', corners: entry.corners_peak ?? '—', note: entry.wide_open_note ?? '', exact: !sharpestApprox }
-      : null,
     chips,
   }
 }
@@ -194,13 +145,11 @@ function buildCloseUp(lens: Lens, body: Body, sensor: Sensor, focalBase: number,
   const pupil = cf.pupil_magnification && cf.pupil_magnification > 0 ? cf.pupil_magnification : 1
   const cPix = pixelCoC_um(sensor)
   const cOut = outputCoC_um(sensor)
-  const bands = diffractionBands(sensor)
   const setNs = [5.6, 8, 11]
   const rows = setNs.map((n) => {
     const setN = tc ? n : n
     const nEff = effectiveAperture(setN, mag, displaysEffective === true, pupil)
-    const lvl = nEff >= bands.largeOutput ? 3 : nEff >= bands.visible100 ? 2 : nEff >= bands.measurable ? 1 : 0
-    return { setN, nEff, dofPixelMm: mag ? dofMm(nEff, cPix, mag) : 0, dofOutMm: mag ? dofMm(nEff, cOut, mag) : 0, level: lvl }
+    return { setN, nEff, dofPixelMm: mag ? dofMm(nEff, cPix, mag) : 0, dofOutMm: mag ? dofMm(nEff, cOut, mag) : 0 }
   })
   return {
     mag, magFocal: best?.focal_mm ?? null,
@@ -213,10 +162,45 @@ function buildCloseUp(lens: Lens, body: Body, sensor: Sensor, focalBase: number,
   }
 }
 
-/** Position 0–1 of an f-number on a strip, linear in stops (log N). */
-export function stripPos(n: number, lo: number, hi: number): number {
-  const p = Math.log(n / lo) / Math.log(hi / lo)
-  return Math.min(1, Math.max(0, p))
+export interface CurveCard {
+  status: 'ok' | 'missing' | 'error'
+  errors: string[]
+  model: CurveModel | null
+  pick: Pick | null
+  lastUpdated: string
+  sources: CurveSource[]
+  /** Magnification choices (macro lenses only), with the label to show. */
+  mags: { value: string; label: string }[]
+  mag: string
+  /** Close-focus mode: nominal lenses shift the strip, displayed ones just switch entry. */
+  macroMode: 'nominal' | 'displayed' | null
 }
 
-export { THIRD_STOPS }
+const NONE: CurveCard = { status: 'missing', errors: [], model: null, pick: null, lastUpdated: '', sources: [], mags: [], mag: 'inf', macroMode: null }
+
+/** Turns a lens card, a magnification choice and the loaded curve data into everything the Sharpness section draws. */
+export function buildCurveCard(lens: Lens, body: Body, m: LensCardModel, res: CurveResult | undefined, magWanted: string): CurveCard {
+  if (!res) return NONE
+  if (!res.ok) return { ...NONE, status: 'error', errors: res.errors }
+  const data = res.data
+  const macro = data.macro
+  const mags = macro ? macro.magnifications.map((v) => ({ value: v, label: v === 'inf' ? '∞' : v })) : []
+  const mag = macro && macro.magnifications.includes(magWanted) ? magWanted : 'inf'
+  const hasTc = data.entries.some((e) => e.raw.tc)
+  const useTc = m.tc && hasTc
+  const pick = pickEntry(data, { focal: useTc ? m.focal : m.focalBase, tc: m.tc, mag })
+  if (!pick) return { ...NONE, status: 'error', errors: [`${lens.id}: no usable entry`] }
+  const e = pick.entry
+  const baseFocal = e.raw.tc ? e.raw.focal_mm / TC_FACTOR : e.raw.focal_mm
+  const tcFactor = e.raw.tc || m.tc ? TC_FACTOR : 1
+  const maxAp = stepAt(lens.max_aperture, baseFocal)?.f ?? lens.max_aperture[0].f
+  const factor = macro?.mode === 'nominal' ? closeFocusFactor(MAG_VALUE[mag] ?? 0, macro.lossAt1to1Stops) : 1
+  const model = buildCurveModel(e, {
+    widest: snapThird(maxAp * tcFactor),
+    narrowest: snapThird(lens.min_aperture_f * tcFactor),
+    dxContext: lens.coverage === 'DX' || body.format === 'DX',
+    factor,
+    magLabel: mag === 'inf' ? '∞' : mag,
+  })
+  return { status: 'ok', errors: [], model, pick, lastUpdated: data.lastUpdated, sources: data.sources, mags, mag, macroMode: macro?.mode ?? null }
+}

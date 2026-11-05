@@ -1,6 +1,6 @@
 # GearCard — handoff package
 
-An offline iPhone field reference for Bhanu's Nikon kit: mount a lens on a body and see where it's sharp, where diffraction starts on that body, how close it focuses and what aperture to use up close. Plus a settings explainer for the Z8, Z5 II and Z50 II.
+An offline iPhone field reference for Bhanu's Nikon kit: mount a lens on a body and see where it's sharp (a per-lens sharpness-versus-aperture curve), where it falls off, how close it focuses and what aperture to use up close. Plus a settings explainer for the Z8, Z5 II and Z50 II.
 
 ## What's in the box
 
@@ -10,11 +10,12 @@ An offline iPhone field reference for Bhanu's Nikon kit: mount a lens on a body 
 | `CLAUDE.md` | Instructions for Claude Code: stack, ground rules, build order. |
 | `data/SCHEMA.md` | Content schema. |
 | `data/kit.json` | The gear in scope (25 lenses, 3 bodies, FTZ II, TC-1.4x) and grouping. |
+| `data/lens-curves.json` | Per-lens sharpness curves (peak, drop-off by aperture, per focal length). The file to refine as new reviews arrive; schema in `data/README.md`. |
 | `data/lenses/*.json` | 25 researched lens records with verdicts, close-up data, character, tips and cited sources. |
 | `data/bodies/*.json` | Z8, Z5 II, Z50 II records. |
 | `data/accessories/*.json` | FTZ II and Z TC-1.4x. |
 | `data/settings/*.json` | Settings explainer content, four groups. |
-| `docs/reference-tables.md` | Generated diffraction bands per body and close-up numbers per lens × body — the values the app's optics library must reproduce. |
+| `docs/reference-tables.md` | Generated close-up numbers per lens × body (its diffraction-band tables are from v1 and no longer used by the app). |
 | `docs/research-summary.md` | Coverage, confidence and open questions across all content. |
 | `design/screens/` | Screen mockups as plain HTML — open `index.html` to see all eight. Editable source in `design/canvas/` (also live as a Claude Design canvas). |
 | `scripts/` | `check_data.py` (content checks), `reference_tables.py`, `research_summary.py`, `export_screens.py`. |

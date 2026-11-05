@@ -5,7 +5,8 @@ You are building GearCard, an offline iPhone PWA field reference for one photogr
 ## Ground rules
 - The JSON under `data/` is researched content with sources. Never change a number, verdict or menu path in it to make the UI easier. If data is missing or malformed, surface it (validation warning, "not researched" label) rather than inventing a value.
 - The app must make zero network requests at runtime. Source links open externally only on tap.
-- Derived values (diffraction bands, effective aperture, DOF, frame size, TC maths) live in `app/src/lib/optics.ts` as pure functions with unit tests using the worked examples in SPEC §6.
+- Derived values (effective aperture, DOF, frame size, TC maths) live in `app/src/lib/optics.ts`; the sharpness-curve logic (overall peak, close-focus shift, fallback, strips, curve shapes) lives in `app/src/lib/curves.ts`. Both are pure functions with unit tests.
+- Sharpness curves come from `data/lens-curves.json` (schema: `data/README.md`). Refine that file for new reviews; do not hard-code curve values in code. There are no per-body diffraction bands any more (v1.5).
 - Light theme by default; red Night theme as specified. No dark theme beyond Night.
 - Keep the bundle small: Preact + TypeScript + Vite + vite-plugin-pwa. No UI framework, no chart library (the aperture strip is plain SVG/CSS).
 

@@ -1,21 +1,14 @@
-import { bodies, bodyById, lensById } from '../lib/data'
-import { back, useStore } from '../lib/state'
+import { bodyById } from '../lib/data'
+import { back } from '../lib/state'
 import type { BodyId } from '../lib/types'
 import { BackBar, SourceItem } from '../components/Common'
-import { bodyShort } from '../components/LensCard'
-import { sensorFor } from '../lib/lensView'
-import { diffractionBands, DX_H_MM, DX_W_MM, fmtN, snapThird, bandThresholds } from '../lib/optics'
 
 const list = (v: string[] | string | undefined) => (Array.isArray(v) ? v.join(', ') : v ?? '')
 
 export function BodyCard({ id }: { id: BodyId }) {
-  const st = useStore()
   const b = bodyById(id)
-  const lens = lensById(st.lens)!
   const s = b.sensor
   const pitch = (s.width_mm / s.width_px) * 1000
-  const modes = [{ label: b.format === 'FX' ? 'FX native' : 'DX native', sensor: { widthMm: s.width_mm, heightMm: s.height_mm, pitchUm: pitch, dxCrop: false } }]
-  if (b.format === 'FX') modes.push({ label: 'DX crop', sensor: { widthMm: DX_W_MM, heightMm: DX_H_MM, pitchUm: pitch, dxCrop: true } })
   const ready = (v: string | null | undefined) => (v && v.trim() ? v : 'not researched')
   return (
     <>
@@ -31,34 +24,6 @@ export function BodyCard({ id }: { id: BodyId }) {
           <span>OLPF</span><span class="r">{s.olpf == null ? 'unknown' : s.olpf ? 'yes' : 'no'}</span>
           <span>Readout (stills e-shutter)</span><span class="r">{s.readout_ms != null ? `${s.readout_ms} ms` : 'unknown'}</span>
         </div>{s.readout_notes && <details><summary>Readout notes</summary><p class="note">{s.readout_notes}</p></details>}</div>
-      </section>
-
-      <section class="sec">
-        <h2>Diffraction on this body</h2>
-        <div class="card">
-          <table class="t">
-            <thead><tr><th>Mode</th><th>Measurable</th><th>Visible 100%</th><th>Large output</th></tr></thead>
-            <tbody>
-              {modes.map((m) => {
-                const bd = diffractionBands(m.sensor)
-                return (
-                  <tr key={m.label}>
-                    <td>{m.label}</td>
-                    <td>f/{fmtN(snapThird(bd.measurable))}</td><td>f/{fmtN(snapThird(bd.visible100))}</td><td>f/{fmtN(snapThird(bd.largeOutput))}</td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
-          <p class="note muted">Exact values: {modes.map((m) => { const bd = diffractionBands(m.sensor); return `${m.label} f/${bd.measurable.toFixed(1)}, f/${bd.visible100.toFixed(1)}, f/${bd.largeOutput.toFixed(1)}` }).join(' · ')}. {modes.some((m) => bandThresholds(diffractionBands(m.sensor)).length < 3) ? 'Where two boundaries sit within a third of a stop, the lens card draws them as one.' : ''}</p>
-        </div>
-        <div class="card">
-          <b style={{ fontSize: 14 }}>{lens.short} on each body</b>
-          {bodies.map((o) => {
-            const bd = diffractionBands(sensorFor(o, lens))
-            return <div key={o.id} class="kv"><span>{bodyShort(o)}</span><span class="r">visible at 100%: f/{fmtN(snapThird(bd.visible100))}</span></div>
-          })}
-        </div>
       </section>
 
       <section class="sec">

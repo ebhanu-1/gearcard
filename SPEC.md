@@ -1,5 +1,7 @@
 # GearCard — Product & Build Spec (v1)
 
+> **v1.5 update (2026-11-05):** the per-body diffraction bands (§5.2 B body track, §6.1, the Body Card table) were replaced by per-lens sharpness curves. Data: `data/lens-curves.json` (schema in `data/README.md`); logic: `app/src/lib/curves.ts`; change brief: `gearcard-diffraction-update.md`. Where this spec still mentions bands, the curve model wins.
+
 *Owner: Bhanu Suryadevara · Spec date: 2026-11-05 · Build target: Claude Code · Content: 25 lenses, 3 bodies, 2 accessories, 81 settings*
 
 GearCard is an offline iPhone web app that answers, in the field and in under five seconds, "I just mounted this lens on this body — where is it sharp, where does diffraction start, how close can I get and at what aperture is it best up close?" A second module explains camera settings for the three Z bodies. Every verdict comes from researched sources, shown as one consensus answer with the evidence one tap away.
@@ -11,8 +13,8 @@ Everything needed to build it is in this folder: this spec, `CLAUDE.md` (build i
 ## 1. Goals and non-goals
 
 Goals for v1
-1. Lens Card for any owned lens × owned body combination: sharpness sweet spot (per focal length for zooms), body-specific diffraction bands, close-up block (minimum focus distance, maximum magnification, frame width at max magnification on this body, effective aperture, best close-up aperture, close-up depth of field).
-2. Teleconverter toggle for compatible lenses (Z TC-1.4x): recompute focal length, aperture, magnification and diffraction bands.
+1. Lens Card for any owned lens × owned body combination: per-lens sharpness curve (peak and drop-off by aperture, per focal length for zooms), close-up block (minimum focus distance, maximum magnification, frame width at max magnification on this body, effective aperture, best close-up aperture, close-up depth of field).
+2. Teleconverter toggle for compatible lenses (Z TC-1.4x): recompute focal length, aperture and magnification, and show the with-converter curve in displayed f-numbers.
 3. Body Card: sensor facts that drive decisions (pixel pitch, readout, IBIS, shutter types, FTZ II behaviour, special features).
 4. Settings Explainer: what each important setting does, per-body menu path, when to change it, suggested values for the owner's scenarios.
 5. Works fully offline after first load; one-handed on iPhone; readable in sun (light theme) and at night (red night mode).
@@ -95,14 +97,12 @@ Order matters; the first two blocks must fit on one iPhone screen.
 
 **A. Header.** Lens short name, body, and when relevant: equivalent focal length (DX lens or DX crop), "MF only on FTZ II" warning chip, "No CPU — enter focal length in Non-CPU lens data" chip, VR / Synchro VR chip, TC toggle (only if `tc_compatible`).
 
-**B. Aperture strip (hero).** A horizontal third-stop scale from the lens's widest aperture at the current focal length to its minimum aperture (`f/1.4 … f/22`), drawn as two aligned tracks (see `design/` Main artboard):
-- *Lens track:* sweet spot in green from `quick.by_focal[focal].center_peak`–`corners_peak` (or `quick.sweet_spot` for primes), with a pale tint for "usable but softer" wide-open stops.
-- *Body track:* diffraction zones that grow darker with severity — measurable (light amber, pixel-level onset §6.1), visible at 100% (orange), soft in large output (dark red).
-- Three hero tiles above the strip: sharpest aperture, "diffraction visible at 100% on <body>", closest focus as magnification + distance.
-- A caption line: the `quick.headline`, then `wide_open`.
-- For zooms, a focal-length stepper above the strip snaps to the focal lengths present in `by_focal`; intermediate focal lengths show the nearest entry with "≈".
-- If `quick.diffraction_note` exists, show it under the strip (measured beats computed).
-- Confidence badge (High / Medium / Low) on the right; tap opens the Sources sheet.
+**B. Sharpness by aperture (hero; v1.5).** Three hero tiles (Sharpest = Overall peak, Drops from = first measurable loss, Closest), then the Sharpness card:
+- *Overall* first, large and open: peak range, "derived" tag when computed from the centre and corner peaks, an SVG curve (average of centre and corners, peak band shaded) and an aperture strip from the widest aperture to f/22 in full stops: amber rising, green peak, light green still fine, grey downhill (from `downhillFrom`), dark grey clearly softer (from `clearlySofter`). One plain-language recommendation line under it.
+- *Center / Corners* behind an expander: the two-curve chart (centre solid, corners dashed) and a strip each. No numbers on the y-axis; caption "Shape, not measured values."
+- Zooms: wide / mid / long selector (kept in step with the focal-length stepper). TC on: the with-converter entry, in displayed f-numbers. Close-up lenses: magnification selector; lenses that show the set aperture shift the strip by the close-focus loss.
+- `inferred` entries carry an "inferred" tag and dashed borders on the segments that depend on inferred values; thin data uses the §6.1 fallback; no peak data shows "not measured".
+- Card footer: "Sources: … · updated YYYY-MM-DD". Confidence/evidence row opens the Sources sheet. Focal-length stepper, caption line (`quick.headline`) and the `wide_open` text stay.
 
 **C. Close-up block.**
 - Minimum focus distance (from focal plane) and maximum magnification as ratio and decimal (e.g. `1:2.6 · 0.39×`), per focal length for zooms (show the focal length where max magnification occurs).
@@ -145,33 +145,23 @@ Research date, number of sources by kind, list of low-confidence items, known co
 
 All functions pure, unit-tested, using λ = 0.55 µm (green). Inputs come from body and lens JSON.
 
-### 6.1 Diffraction bands per body
-Airy disk diameter to first minimum: `d = 2.44 · λ · N` (µm) → `d ≈ 1.342 · N` µm.
+### 6.1 Sharpness curves and the diffraction fallback (v1.5)
+Each lens has a rising side (lens-specific: aberrations clear as you stop down), a falling side (same for every lens: diffraction blur grows with f-number) and a peak where they cross. The peak differs per lens, centre versus corners and per focal length, and it is what reviewers mean by "diffraction kicks in at f/X". The app stores review verdicts and aperture ranges in `data/lens-curves.json` (fields and rules in `data/README.md`) and draws the shape; it never invents a numeric sharpness.
 
-| Band | Condition | Meaning |
-|---|---|---|
-| Measurable | `d ≥ 2 · p` | Pixel-level contrast loss starts; visible only in lab charts or side-by-side 100% crops. |
-| Visible at 100% | `d ≥ 2.5 · p` | A careful viewer sees it at 100% zoom. This is the "practical ceiling" for maximum detail. The 2.5 factor is calibrated to the lab reports in `data/lenses` (45MP tests consistently report diffraction from about f/8; 24MP tests from about f/11). |
-| Soft in large output | `d ≥ c_out` | Visible in a large print or full-screen 4K view. `c_out = sensor_diagonal / 3000`. |
+Derived: Overall = `overallPeak`, else the overlap of centre and corner peaks; no overlap → the later peak start if it is before `downhillFrom`, else the last stop before it. Close-focus lenses that show the set aperture shift the strip by the loss factor (lens-specific if researched, else 1 + m, in thirds of a stop); a lens whose camera shows the effective aperture needs no shift.
 
-Where `p` is pixel pitch in µm (`sensor_width_mm / width_px · 1000`). Round the resulting N to the nearest third stop for display, and show the exact value in the Body Card. Thresholds are drawn in ascending order; if two land within a third of a stop of each other, merge them into one labelled boundary (this happens on the Z5 II, where pixel-level and output-level softening coincide near f/11).
+Fallback for fields marked inferred: downhill from f/11 on FX, f/7.1 for DX-coverage lenses and on the Z50 II, clearly softer one stop later. Airy disk `d = 2.44 · λ · N ≈ 1.342 · N` µm reaching `sensor_diagonal / 3000` is where any lens is past its peak, not where a particular lens peaks.
 
-Reference values are in `docs/reference-tables.md`, generated from the body JSON by `scripts/reference_tables.py`. In round numbers: Z8 measurable f/6.5, visible at 100% f/8, large output f/11; Z5 II f/9, f/11, f/11; Z50 II f/6.3, f/8, large output (DX) f/7.1.
-
-Lens-measured diffraction (`quick.diffraction_note`) is shown under the strip and wins over the computed bands when they disagree.
-
-UI copy must explain the key insight: pixel pitch decides when you can *see* diffraction at 100%; sensor *format* decides when it shows in the final image. A Z5 II and a Z8 print the same at f/11; the Z8 just shows it earlier at 100%.
-
-When the effective aperture differs from the set aperture (close-up, §6.3), bands are computed on `N_eff`.
+The old per-body bands (measurable / visible at 100% / soft in large output) and `quick.diffraction_note` under the strip are no longer shown. The lens JSON still holds that research.
 
 ### 6.2 Teleconverter
-For `tc_compatible` lenses with TC-1.4x on: focal × 1.4; every aperture × 1.4 (one stop) — the camera displays this effective value, so the strip is labelled in displayed f-numbers; minimum focus distance unchanged, so max magnification × 1.4; diffraction bands apply to the displayed N. Sweet spot: if `by_focal` has an entry at the TC focal length (e.g. 280 mm for the 70-200, which was tested), use it; otherwise shift by one stop and label it "≈, extrapolated". TC-compatible lenses in the kit: 70-200 f/2.8 VR S and 180-600 VR only (the MC 105 is not compatible — data confirms).
+For `tc_compatible` lenses with TC-1.4x on: focal × 1.4; every aperture × 1.4 (one stop) — the camera displays this effective value, so the strip is labelled in displayed f-numbers; minimum focus distance unchanged, so max magnification × 1.4; the curve is in displayed f-numbers. v1.5 uses the with-converter entry in `lens-curves.json` (`tc: true`, e.g. 280 mm for the 70-200, 840 mm for the 180-600). TC-compatible lenses in the kit: 70-200 f/2.8 VR S and 180-600 VR only (the MC 105 is not compatible — data confirms).
 
 ### 6.3 Effective aperture at close focus
 `N_eff = N · (1 + m / P)` with pupil magnification P. Default P = 1 (state "approx." in UI); allow a per-lens `pupil_magnification` override in data if a source provides it.
 
 Two cases, decided per lens by `close_focus.camera_displays_effective` (true for the Z MC 105; false for lenses without electronic contacts; null = unverified, which the app treats as nominal and labels "camera may or may not show this — unverified"). The Z TC-1.4x factor is always displayed by the camera and is handled separately in §6.2:
-- **Camera displays effective aperture** (Z MC 105 S): the number on the camera already is N_eff. Do not multiply again. The app shows "Camera shows the effective aperture. At 1:1 wide open it reads f/4.5." and computes bands and DOF from the displayed number directly.
+- **Camera displays effective aperture** (Z MC 105 S): the number on the camera already is N_eff. Do not multiply again. The app shows "Camera shows the effective aperture. At 1:1 wide open it reads f/4.5." and computes DOF from the displayed number directly.
 - **Camera displays nominal aperture** (Laowa 65 with no CPU, Tokina 100 and AF Micro 60 via FTZ II unless data says otherwise): show "You set f/X; at this magnification you are really at ≈ f/Y" and compute everything from N_eff.
 
 Worked examples (unit tests):
@@ -233,7 +223,7 @@ See `design/` for mockups. Principles:
 
 **Phase 1 — Core lens card (MVP).**
 - Body + lens selection persists across launches.
-- Aperture strip renders correct bands for every lens × body (snapshot tests for Z8 + 24-120 at 24 and 120 mm, Z50 II + Sigma 30, Z8 + DX lens in crop).
+- Sharpness strips and curves are correct for every lens (acceptance tests in `app/tests/curves.test.ts`: 14-30 S, 70-200 + TC, MC 105, Tokina, Laowa, thin-data fallback).
 - Close-up block shows MFD, max magnification, frame size, effective aperture and DOF; unit tests pass for §6 examples.
 - Installable PWA; airplane-mode test: kill app, enable airplane mode, relaunch from home screen → everything works.
 

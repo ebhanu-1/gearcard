@@ -31,7 +31,7 @@ export function More() {
   return (
     <>
       <h1>More</h1>
-      <button class="list-item" onClick={() => push({ type: 'bodies' })}><span class="t"><b>Body cards</b><small>Sensor facts, FTZ II behaviour, diffraction table</small></span><Chevron /></button>
+      <button class="list-item" onClick={() => push({ type: 'bodies' })}><span class="t"><b>Body cards</b><small>Sensor facts, FTZ II behaviour, DX crop, ISO and stabilisation</small></span><Chevron /></button>
       <button class="list-item" onClick={() => push({ type: 'search' })}><span class="t"><b>Search</b><small>Lenses, settings, options, gotchas</small></span><Chevron /></button>
       <button class="list-item" onClick={() => push({ type: 'sources' })}><span class="t"><b>Data &amp; Sources</b><small>What was researched, confidence, open conflicts</small></span><Chevron /></button>
       <button class="list-item" onClick={() => checkForUpdate(false, true)}>

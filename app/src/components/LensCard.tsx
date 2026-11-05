@@ -1,8 +1,9 @@
-import { useMemo } from 'preact/hooks'
-import { buildLensCard, focalOptions } from '../lib/lensView'
-import { BAND_NAMES, fmtDof, fmtF, fmtMag, fmtMm, fmtN, fmtRange } from '../lib/optics'
+import { useMemo, useState } from 'preact/hooks'
+import { buildCurveCard, buildLensCard, focalOptions } from '../lib/lensView'
+import { fmtDof, fmtF, fmtMag, fmtMm, fmtN, fmtRange, snapThird } from '../lib/optics'
+import { curvesFor } from '../lib/data'
 import type { Body, Lens } from '../lib/types'
-import { ApertureStrip } from './Strip'
+import { CurveSection } from './Curves'
 import { Chevron, ConfBadge } from './Common'
 import { get, set, setFocal, useStore } from '../lib/state'
 
@@ -20,6 +21,8 @@ export function LensCard({ lens, body }: { lens: Lens; body: Body }) {
   const stored = st.focalByLens[lens.id]
   const wantedShown = stored != null ? Math.round(stored * (tcOn ? 1.4 : 1)) : null
   const m = useMemo(() => buildLensCard(lens, body, wantedShown, st.tc), [lens, body, wantedShown, st.tc])
+  const [mag, setMag] = useState('inf')
+  const cc = useMemo(() => buildCurveCard(lens, body, m, curvesFor(lens.id), mag), [lens, body, m, mag])
   const q = lens.quick
   const bShort = bodyShort(body)
   const cu = m.closeUp
@@ -62,13 +65,13 @@ export function LensCard({ lens, body }: { lens: Lens; body: Body }) {
       <div class="hero">
         <div class="tile">
           <span class="k">Sharpest</span>
-          <span class="v good">{m.sharpest ? `${m.sharpestApprox ? '≈' : ''}${fmtRange(m.sharpest)}` : '—'}</span>
-          <span class="s">{m.sharpest ? m.sharpestNote || 'set on camera' : 'not researched'}</span>
+          <span class="v good">{cc.model?.overall.range && !(cc.model.allPastPeak && cc.model.factor > 1) ? fmtRange(cc.model.overall.range) : cc.model ? 'none' : '—'}</span>
+          <span class="s">{cc.status === 'error' ? 'data error' : cc.model?.overall.range ? (cc.model.overall.derived ? 'whole frame, derived' : 'whole frame') : 'not measured'}</span>
         </div>
         <div class="tile">
-          <span class="k">Diffraction</span>
-          <span class="v b2">{fmtF(m.diffractionAt100)}</span>
-          <span class="s">visible at 100% on {bShort}{m.sensor.dxCrop ? ' (DX crop)' : ''}</span>
+          <span class="k">Drops from</span>
+          <span class="v b2">{cc.model ? fmtF(Math.max(cc.model.start, snapThird(cc.model.downhillEff / cc.model.factor))) : '—'}</span>
+          <span class="s">{cc.model ? (cc.model.fallback ? 'inferred, fallback' : 'first measurable loss') : cc.status === 'error' ? 'data error' : 'not researched'}</span>
         </div>
         <div class="tile">
           <span class="k">Closest</span>
@@ -77,25 +80,12 @@ export function LensCard({ lens, body }: { lens: Lens; body: Body }) {
         </div>
       </div>
 
-      <ApertureStrip strip={m.strip} bodyLabel={bShort} />
+      <CurveSection lens={lens} card={cc} onMag={setMag} />
 
       <p class="verdict">{q.headline}</p>
-      {q.diffraction_note && (
-        <p class="note"><b>Measured on this lens:</b> {q.diffraction_note}</p>
-      )}
-      <details>
-        <summary>How to read the bands</summary>
-        <p class="note">
-          Pixel pitch decides when you can <i>see</i> diffraction at 100%; sensor format decides when it shows in the final image.
-          A Z5 II and a Z8 print the same at f/11; the Z8 just shows it earlier at 100%.
-          {m.strip.thresholds.length < 3 ? ' Two boundaries sit within a third of a stop here, so they are drawn as one.' : ''}
-          {' '}Thresholds on {bShort}{m.sensor.dxCrop ? ' (DX crop)' : ''}: {m.strip.thresholds.map((t) => `${t.label.toLowerCase()} from f/${fmtN(t.n)}`).join(', ')}.
-        </p>
-      </details>
       <details>
         <summary>Wide open</summary>
         <p class="note">{q.wide_open}</p>
-        {m.byFocalRow?.note && <p class="note muted">{m.byFocalRow.note}</p>}
       </details>
 
       <button class="link-row" onClick={openSources}>
@@ -141,7 +131,7 @@ export function LensCard({ lens, body }: { lens: Lens; body: Body }) {
                 {cu.rows.map((r) => (
                   <tr key={r.setN}>
                     <td>{fmtF(r.setN)}</td>
-                    <td>{fmtF(r.nEff)}{r.level ? ` · ${BAND_NAMES[r.level as 1 | 2 | 3].split(' ')[0].toLowerCase()}` : ''}</td>
+                    <td>{fmtF(r.nEff)}</td>
                     <td>{fmtDof(r.dofPixelMm)}</td>
                     <td>{fmtDof(r.dofOutMm)}</td>
                   </tr>

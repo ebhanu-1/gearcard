@@ -158,3 +158,7 @@ A file is an array of settings for one group (e.g. `autofocus.json`).
   }
 ]
 ```
+
+## v1.5 note
+
+Sharpness-versus-aperture data now lives in `lens-curves.json` (see `data/README.md`). `quick.sweet_spot`, `quick.by_focal` and `quick.diffraction_note` remain as the researched source material and are no longer read by the Lens Card, except `by_focal` for the focal-length stepper.

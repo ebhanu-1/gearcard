@@ -1,0 +1,1179 @@
+{
+ "schema": 1,
+ "comment": "Per-lens sharpness-vs-aperture curves. Edit values here and redeploy; no code changes needed. Schema and a worked example are in data/README.md.",
+ "lastUpdated": "2026-11-05",
+ "lenses": {
+  "f-af-50-f18d": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/219.4-Lens_review-Nikon_Nikkor_AF_50_mm_f_1.8D_Image_resolution.html",
+     "testBody": "Nikon D200 (10.2MP DX) and Nikon D3x (24.5MP FX), RAW MTF50"
+    },
+    {
+     "name": "Photozone/OpticalLimits",
+     "url": "https://photozone.de/nikon_ff/623-nikkorafd5018ff?start=1",
+     "testBody": "Nikon D3x (24.5MP FX), RAW via Capture One"
+    },
+    {
+     "name": "Imaging Resource / SLRgear",
+     "url": "https://old.imaging-resource.com/lenses/nikon/50mm-f1.8d-af-nikkor/review",
+     "testBody": "Nikon D200 (10MP DX) and Nikon D3x (24.5MP FX)"
+    },
+    {
+     "name": "Photo Art From Science (Ed Dozier)",
+     "url": "https://www.photoartfromscience.com/single-post/2016/02/29/nikkor-50mm-f18-afd-fx-review",
+     "testBody": "Nikon D7100 (24MP DX, about 3.9 µm), MTF50, single copy"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 50,
+     "wideOpen": "Weak: center very good but low contrast; corners barely good",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photozone (D3x); Imaging Resource (D3x); Lenstip (D200/D3x); Photo Art From Science (D7100)",
+     "confidence": "measured",
+     "note": "Imaging Resource: diffraction limiting begins at f/11 (D3x), f/22 still only about 2 blur units. Photo Art From Science (3.9 µm pitch): peak f/8, softening visible at f/16. Corners keep gaining to f/8."
+    }
+   ]
+  },
+  "f-af-dc-105-f2d": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Photozone/OpticalLimits",
+     "url": "https://www.photozone.de/nikon--nikkor-aps-c-lens-tests/222-nikkor-af-105mm-f2-d-dc-review--test-report?start=1",
+     "testBody": "Nikon D200 (10.2MP DX), neutral DC setting"
+    },
+    {
+     "name": "Imaging Resource / SLRgear",
+     "url": "https://old.imaging-resource.com/lenses/nikon/105mm-f2d-af-dc-nikkor/review",
+     "testBody": "Nikon D200 (10MP DX) and D3x (24.5MP FX), DC at 0"
+    },
+    {
+     "name": "Phillip Reeve",
+     "url": "https://phillipreeve.net/blog/review-nikon-105mm-2-0-af-dc-nikkor/",
+     "testBody": "Sony A7R II (42MP FX) via adapter, 100% crops"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 105,
+     "wideOpen": "Slightly soft with strong LoCA; uneven across the frame",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Imaging Resource (D3x); Photozone (D200); Reeve (A7R II)",
+     "confidence": "measured",
+     "note": "Imaging Resource (D3x, 24.5MP): diffraction 'begins to set in very slightly' at f/11, no more than 1.5 blur units at f/16. On the Z8's finer pixels expect onset about a stop earlier (inference from pixel pitch, not measured)."
+    }
+   ]
+  },
+  "f-af-micro-60-f28d": {
+   "lastUpdated": "2026-11-05",
+   "macro": {
+    "mode": "nominal",
+    "magnifications": [
+     "inf",
+     "1:2",
+     "1:1"
+    ],
+    "lossAt1to1Stops": 1.67
+   },
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/29.4-Lens_review-Nikon_Nikkor_AF_Micro_60_mm_f_2.8D_Image_resolution.html",
+     "testBody": "Nikon D200 (10.2MP DX), RAW MTF50"
+    },
+    {
+     "name": "Photozone (now OpticalLimits)",
+     "url": "https://photozone.de/nikon--nikkor-aps-c-lens-tests/219-micro-nikkor-af-60mm-f28-d-review--test-report?start=1",
+     "testBody": "Nikon D200 (10.2MP DX)"
+    },
+    {
+     "name": "Photo Art From Science",
+     "url": "https://www.photoartfromscience.com/single-post/2015/12/13/micro-nikkor-60mm-afd-review",
+     "testBody": "Nikon D7100 (24MP DX, about 3.9 µm pitch)"
+    },
+    {
+     "name": "Jim Kasson (The Last Word)",
+     "url": "https://blog.kasson.com/the-last-word/normal-lenses-on-the-d810-at-f8",
+     "testBody": "Nikon D810 (36MP FX, 4.88 µm)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 60,
+     "wideOpen": "Center very sharp; FX corners soft",
+     "centerPeak": "f/4–f/8",
+     "cornerPeak": "f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photo Art From Science (D7100); Photozone (D200); Lenstip (D200); Kasson (D810)",
+     "confidence": "measured",
+     "note": "Curve is for focus at distance. At closer focus the strip shifts by the lens's own loss (1⅔ stops at 1:1, exposure factor 3.2). Photo Art From Science (D7100): softening begins at f/11 and is noticeable beyond it; Photozone: f/32 'still not good'."
+    }
+   ]
+  },
+  "f-af-s-85-f14g": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/264.4-Lens_review-Nikon_Nikkor_AF-S_85_mm_f_1.4G_Image_resolution.html",
+     "testBody": "Nikon D3x (24.5MP FX), RAW MTF50"
+    },
+    {
+     "name": "Photozone/OpticalLimits",
+     "url": "https://www.photozone.de/nikon_ff/606-nikkorafs854ff?start=1",
+     "testBody": "Nikon D3x (24.5MP FX)"
+    },
+    {
+     "name": "Photo Art From Science (Ed Dozier)",
+     "url": "https://www.photoartfromscience.com/single-post/2015-9-4-nikkor-85mm-f14-afs",
+     "testBody": "Nikon D7000 (16MP DX, about 4.8 µm), MTF50 (single copy)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 85,
+     "wideOpen": "Center decent to excellent; edges borderline; strong LoCA",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/4–f/5.6",
+     "downhillFrom": "f/8",
+     "clearlySofter": "f/11",
+     "source": "Photo Art From Science (D7000); Lenstip (D3x); Photozone (D3x)",
+     "confidence": "measured",
+     "note": "Photo Art From Science (D7000): peak f/5.6, resolution 'drops a bit' at f/8. Lenstip (D3x): f/4 and f/5.6 equal. Clearer loss at f/11–f/16. On the Z5 II (5.9 µm) f/8 costs little."
+    }
+   ]
+  },
+  "laowa-65-f28-2x-macro": {
+   "lastUpdated": "2026-11-05",
+   "macro": {
+    "mode": "nominal",
+    "magnifications": [
+     "inf",
+     "1:2",
+     "1:1",
+     "2:1"
+    ]
+   },
+   "sources": [
+    {
+     "name": "OpticalLimits",
+     "url": "https://opticallimits.com/fujifilm/laowa-65mm-f-2-8-2x-ultra-macro-apo-review/",
+     "testBody": "Fujifilm X APS-C body (model/MP not stated on the page)"
+    },
+    {
+     "name": "Amateur Photographer",
+     "url": "https://amateurphotographer.com/review/laowa-65mm-f-2-8-2x-ultra-macro-review/",
+     "testBody": "Fujifilm X-T3 (26MP APS-C)"
+    },
+    {
+     "name": "Dustin Abbott",
+     "url": "https://dustinabbott.net/2020/02/laowa-65mm-f2-8-ultra-2x-macro-review/",
+     "testBody": "Sony a6500 (24MP APS-C) and a7RIII in APS-C mode"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 65,
+     "wideOpen": "Excellent center, very good borders; extreme corners good",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/8",
+     "clearlySofter": "f/16",
+     "source": "OpticalLimits (Fuji APS-C); Amateur Photographer (X-T3); Abbott (a6500)",
+     "confidence": "measured",
+     "note": "OpticalLimits: marginal impact at f/8, still impressive at f/16 (the marked f/22 is really about f/14–f/16). Amateur Photographer: visible softening beyond f/8. Peaks are for normal distances."
+    }
+   ]
+  },
+  "sigma-135-f18-art": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Photozone/OpticalLimits",
+     "url": "https://photozone.de/canon_eos_ff/1008-sigma135f18art?start=1",
+     "testBody": "Canon EOS 5Ds R (50MP FX, about 4.1 µm)"
+    },
+    {
+     "name": "The-Digital-Picture",
+     "url": "https://the-digital-picture.com/Reviews/Sigma-135mm-f-1.8-DG-HSM-Art-Lens.aspx",
+     "testBody": "Canon EOS 5Ds R (50MP) for ISO 12233 crops. AF tests on 1D X II, 5Ds R, 77D"
+    },
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/501.4-Lens_review-Sigma_A_135_mm_f_1.8_DG_HSM_Image_resolution.html",
+     "testBody": "Canon EOS 5D Mark III (22MP FX), RAW MTF50"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 135,
+     "wideOpen": "Excellent across the frame",
+     "centerPeak": "f/2.8",
+     "cornerPeak": "f/4",
+     "downhillFrom": "f/8",
+     "clearlySofter": null,
+     "source": "Photozone (5Ds R); The Digital Picture (5Ds R); Lenstip (5D III)",
+     "confidence": "measured",
+     "note": "Photozone (50MP, 4.1 µm pitch, close to the Z8): diffraction first noticeable at f/8, f/11 still usable."
+    }
+   ]
+  },
+  "sigma-30-f14-dc-dn": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Amateur Photographer",
+     "url": "https://amateurphotographer.com/review/sigma-30mm-f1-4-dc-dn-review/",
+     "testBody": "Sony A6000/A6300/A7R APS-C crop (MTF via Applied Imaging, body unspecified)"
+    },
+    {
+     "name": "Fstoppers (Ivor Rackham)",
+     "url": "https://fstoppers.com/reviews/affordable-sigma-30mm-f14-dc-dn-contemporary-lens-worth-buying-review-624085",
+     "testBody": "OM System OM-1 (20MP Micro 4/3)"
+    },
+    {
+     "name": "Finding Range",
+     "url": "https://findingrange.com/2022/11/27/sigma-30mm-f1-4-dc-dn-contemporary-review-fuji-x/",
+     "testBody": "Fujifilm X-T3 (26MP APS-C)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 30,
+     "wideOpen": "Center very sharp; APS-C corners softer from field curvature",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Amateur Photographer (APS-C MTF); Fstoppers (OM-1); Finding Range (X-T3)",
+     "confidence": "measured",
+     "note": "Amateur Photographer: slight drop already at f/8, though real images still looked sharp. No source measured f/11 on APS-C; f/11 mild loss and f/16 visibly softer is the best-supported reading."
+    }
+   ]
+  },
+  "sigma-56-f14-dc-dn": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Digital Camera World",
+     "url": "https://www.digitalcameraworld.com/reviews/sigma-56mm-f14-dc-dn-or-c-review",
+     "testBody": "Canon EOS M (APS-C) test sample"
+    },
+    {
+     "name": "Amateur Photographer",
+     "url": "https://amateurphotographer.com/review/sigma-56mm-f-1-4-dc-dn-contemporary-review/",
+     "testBody": "Sony A6500 (24MP APS-C) primary, A7 III crop"
+    },
+    {
+     "name": "Dustin Abbott",
+     "url": "https://dustinabbott.net/2019/04/sigma-56mm-f1-4-dc-dn-review/",
+     "testBody": "Sony a6400 and a6500 (24MP APS-C)"
+    },
+    {
+     "name": "OpticalLimits",
+     "url": "https://sonyaddict.com/?p=11806",
+     "testBody": "Sony APS-C body (not stated in excerpt)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 56,
+     "wideOpen": "Excellent center; edges lag the center",
+     "centerPeak": "f/2–f/4",
+     "cornerPeak": "f/5.6–f/6.3",
+     "downhillFrom": "f/16",
+     "clearlySofter": null,
+     "source": "Digital Camera World (Imatest); Amateur Photographer (A6500); Abbott (a6400); OpticalLimits",
+     "confidence": "measured",
+     "note": "Digital Camera World (Imatest, Canon M): sharpness excellent through f/11, diffraction drop at f/16. Amateur Photographer: softening noticeable at f/16. OpticalLimits: superb to f/8."
+    }
+   ]
+  },
+  "thypoch-simera-28-f14": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "OpticalLimits",
+     "url": "https://opticallimits.com/nikon/nikon-z/thypoch-simera-28mm-f-1-4-z-review/",
+     "testBody": "Nikon Z full-frame, 45MP (Imatest MTF)"
+    },
+    {
+     "name": "Dustin Abbott",
+     "url": "https://dustinabbott.net/2024/01/thypoch-simera-28mm-f1-4-review/",
+     "testBody": "Sony a7RV (61MP) and Alpha 1 (50MP), M version via adapters"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 28,
+     "wideOpen": "Center good to very good; corners soft; heavy vignetting",
+     "centerPeak": "f/2.8–f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "OpticalLimits (45MP Z); Abbott (a7R V, 61MP)",
+     "confidence": "measured",
+     "note": "Abbott (61MP): slight diffraction softening at f/11 and f/16, not severe. OpticalLimits: peak around f/5.6; numbers beyond were only in a chart image."
+    }
+   ]
+  },
+  "tokina-100-f28-macro": {
+   "lastUpdated": "2026-11-05",
+   "macro": {
+    "mode": "nominal",
+    "magnifications": [
+     "inf",
+     "1:2",
+     "1:1"
+    ],
+    "lossAt1to1Stops": 2
+   },
+   "sources": [
+    {
+     "name": "Photozone",
+     "url": "https://www.photozone.de/nikon--nikkor-aps-c-lens-tests/269-tokina-af-100mm-f28-at-x-pro-d-macro-review--test-report?start=1",
+     "testBody": "Nikon D200 (10.2MP DX)"
+    },
+    {
+     "name": "Photozone (OpticalLimits)",
+     "url": "https://photozone.de/nikon_ff/819-tokina10028atxfx?start=1",
+     "testBody": "Nikon D3X (24.5MP FX) per sample-image captions"
+    },
+    {
+     "name": "DXOMARK",
+     "url": "https://www.dxomark.com/tokina-at-x-m100-af-pro-d-100mm-f2-8-nikon-mount-lens-review-excellent-all-round-performance/",
+     "testBody": "Nikon D800 (36MP FX)"
+    },
+    {
+     "name": "Ken Rockwell",
+     "url": "https://kenrockwell.com/tokina/100mm-f28.htm",
+     "testBody": "Nikon D3 (12MP FX) and D7000 (16MP DX)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 100,
+     "wideOpen": "Very good center and borders; FX corners one step softer",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Photozone (D200, D3x); DxOMark (D800); Lenstip (20D)",
+     "confidence": "measured",
+     "note": "Curve is for focus at distance. At 1:1 every set aperture is two stops smaller in effect, so the strip shifts by 2 stops. Photozone (DX): diffraction beyond about f/11; DxOMark (D800): still excellent at f/11 at distance. Rockwell (not measured): diffraction limits flat subjects by f/8."
+    }
+   ]
+  },
+  "voigtlander-58-f14-sl2": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Photozone (OpticalLimits)",
+     "url": "https://photozone.de/canon_eos_ff/518-voigtlander58f14ff?start=1",
+     "testBody": "Canon full-frame DSLR (model not named in text), adapted"
+    },
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/265.4-Lens_review-Voigtlander_Nokton_58_mm_f_1.4_SL_II_Image_resolution.html",
+     "testBody": "Nikon D3x (24.5MP FX), RAW"
+    },
+    {
+     "name": "phillipreeve.net (BastianK)",
+     "url": "https://phillipreeve.net/blog/review-voigtlander-58mm-1-4-sl-iis-nokton-nikon-f/",
+     "testBody": "Sony A7rII (42MP) adapted"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 58,
+     "wideOpen": "Center very good but low contrast; edges and corners soft",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Photozone (Canon FF DSLR); Lenstip (D3x); Reeve (A7R II)",
+     "confidence": "measured",
+     "note": "Photozone (lower-resolution Canon FF): diffraction slightly more obvious from f/11, still plenty sharp. On the Z8's finer pixels expect it a little earlier, about f/8–f/11 (inference)."
+    }
+   ]
+  },
+  "z-14-30-f4-s": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://lenstip.com/599.4-Lens_review-Nikon_Nikkor_Z_14-30_mm_f_4_S_Image_resolution.html",
+     "testBody": "Nikon Z7 (45.7MP), RAW MTF50"
+    },
+    {
+     "name": "Phillip Reeve blog",
+     "url": "https://phillipreeve.net/blog/review-nikon-z-nikkor-14-30mm-f-4-s/",
+     "testBody": "Nikon Z7 II (45.7MP)"
+    },
+    {
+     "name": "Dustin Abbott",
+     "url": "https://dustinabbott.net/2026/04/nikkor-z-14-30mm-f4-s-review/",
+     "testBody": "Nikon Z8 (45.7MP)"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-14-30mm-f4-s/2",
+     "testBody": "Imatest lab"
+    },
+    {
+     "name": "PhotographyBlog (Z7), per owner curve brief",
+     "url": null,
+     "testBody": "Nikon Z7"
+    },
+    {
+     "name": "Thom Hogan, per owner curve brief",
+     "url": null,
+     "testBody": null
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 14,
+     "wideOpen": "Center very good; corners weaker",
+     "centerPeak": "f/5.6–f/8",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "cornersNeverMatch": true,
+     "source": "PhotographyBlog (Z7); Thom Hogan; Lenstip (Z7); Abbott (Z8); Photography Life",
+     "confidence": "measured",
+     "note": "Slight drop at f/11, more at f/16, worst at f/22 but still fairly good. Corners never fully match the center."
+    },
+    {
+     "focal_mm": 20,
+     "wideOpen": "Center very good; midframe dips at f/4, fixed by f/5.6; corners need f/5.6",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "cornersNeverMatch": true,
+     "source": "PhotographyBlog (Z7); Thom Hogan; Lenstip (Z7); Abbott (Z8); Photography Life",
+     "confidence": "measured",
+     "note": "Lenstip (22mm, Z7): FF edge slightly weaker than at 14mm, sensible f/5.6–f/11. Abbott: midframe dip at f/4 fixed by f/5.6."
+    },
+    {
+     "focal_mm": 30,
+     "wideOpen": "Weakest focal length: center only decent at f/4, corners soft",
+     "centerPeak": "f/5.6–f/8",
+     "cornerPeak": "f/8–f/11",
+     "downhillFrom": "f/16",
+     "clearlySofter": "f/22",
+     "cornersNeverMatch": true,
+     "source": "PhotographyBlog (Z7); Thom Hogan; Lenstip (Z7); Abbott (Z8); Photography Life",
+     "confidence": "measured",
+     "note": "Big center gain from f/4 to f/5.6; center excellent from f/5.6. Corners best at f/8–f/11 (Reeve: sharpest at f/11), sharp across the frame by f/11 (Lenstip). Abbott (Z8): very slight softening from f/11, obvious at f/22."
+    }
+   ]
+  },
+  "z-180-600-vr": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/695.4-Lens_review-Nikon_Nikkor_Z_180-600_mm_f_5.6-6.3_VR_Image_resolution.html",
+     "testBody": "Nikon Z body not named in the fetched chapters"
+    },
+    {
+     "name": "OpticalLimits",
+     "url": "https://opticallimits.com/nikon/nikon-z/nikkor-z-180-600mm-f-5-6-6-3-vr-review/",
+     "testBody": "45MP-normalized MTF (body not named in fetched text)"
+    },
+    {
+     "name": "Cameralabs",
+     "url": "https://www.cameralabs.com/nikon-z-180-600mm-f5-6-6-3-vr-review/2/",
+     "testBody": "Nikon Z8 (45.7MP), Siemens stars at ~45× focal length plus 1 km city scene, Lightroom with"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-180-600mm-f-5-6-6-3-vr",
+     "testBody": "Nikon Z8 and Z9 (45.7MP)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 180,
+     "wideOpen": "Extremely crisp center, even across the frame",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Lenstip; OpticalLimits (45MP); Cameralabs (Z8); Photography Life (Z8/Z9)",
+     "confidence": "measured",
+     "note": "Lenstip: strongest at 180mm, center over 67 lpmm wide open. OpticalLimits (45MP): f/11 already diffraction-affected."
+    },
+    {
+     "focal_mm": 300,
+     "wideOpen": "Center very good; FX corner best of its class at f/6",
+     "centerPeak": "f/6",
+     "cornerPeak": "f/6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Lenstip; OpticalLimits (45MP); Cameralabs (Z8); Photography Life (Z8/Z9)",
+     "confidence": "measured",
+     "note": "Cameralabs (Z8) at f/6: FX corner best of the group tested. Lenstip: mid-range center almost 59 lpmm wide open."
+    },
+    {
+     "focal_mm": 600,
+     "wideOpen": "Center only decent at f/6.3, FX corner a bit soft; sources disagree",
+     "centerPeak": "f/8",
+     "cornerPeak": "f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Lenstip; OpticalLimits (45MP); Cameralabs (Z8); Photography Life (Z8/Z9)",
+     "confidence": "measured",
+     "note": "Lenstip: center over 47 lpmm at f/8, diffraction ceiling about f/8. Cameralabs (Z8) and OpticalLimits saw little gain from stopping down; verdict f/8 when light allows."
+    },
+    {
+     "focal_mm": 840,
+     "tc": true,
+     "wideOpen": "Center good at displayed f/9; FX corner decidedly soft",
+     "centerPeak": "f/9–f/11",
+     "cornerPeak": "f/11",
+     "downhillFrom": null,
+     "clearlySofter": null,
+     "source": "Cameralabs (Z8) with TC-1.4x",
+     "confidence": "inferred",
+     "inferredFields": [
+      "downhillFrom",
+      "clearlySofter"
+     ],
+     "note": "Cameralabs (Z8): good center at f/9, acuity improves a little at f/11. Nothing was tested past displayed f/11 with the TC-1.4x, so the drop-off uses the fallback. OpticalLimits advises against teleconverters (extra diffraction, not tested)."
+    }
+   ]
+  },
+  "z-24-120-f4-s": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Photo Art From Science (Ed Dozier)",
+     "url": "https://www.photoartfromscience.com/single-post/nikkor-z-24-120mm-f-4-s-lens-review",
+     "testBody": "Nikon Z8 (45.7MP), unsharpened raw, MTFMapper"
+    },
+    {
+     "name": "OpticalLimits",
+     "url": "https://opticallimits.com/?p=6907",
+     "testBody": "45MP Nikon Z body (model not named on the page)"
+    },
+    {
+     "name": "Dustin Abbott",
+     "url": "https://dustinabbott.net/2026/03/nikkor-z-24-120mm-f4-s-review/",
+     "testBody": "Nikon Z8 (45.7MP), tripod, 2 s delay"
+    },
+    {
+     "name": "Cameralabs",
+     "url": "https://cameralabs.com/nikon-z-24-120mm-f4-s-review/2",
+     "testBody": "Nikon Z7 (45.7MP), 100% crops, studio at ~45× focal length plus 1 km city test"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 24,
+     "wideOpen": "Center excellent; corners weak, extreme corners suffer field curvature",
+     "centerPeak": "f/4–f/5.6",
+     "cornerPeak": "f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photo Art From Science (Z8); OpticalLimits (45MP); Abbott (Z8); Cameralabs (Z7)",
+     "confidence": "measured",
+     "note": "Dozier (Z8) f/4: center 76.4, worst corner 43.2 lp/mm. Abbott: f/5.6 improves mid-frame and corners; f/8 narrows but never fully closes the extreme-corner gap. Abbott (Z8): softening begins after f/8, minimal at f/11; Dozier stopped testing at f/16 because diffraction 'destroys the resolution'."
+    },
+    {
+     "focal_mm": 50,
+     "wideOpen": "Center excellent; corners moderate, flatter field at f/5.6",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photo Art From Science (Z8); OpticalLimits (45MP); Abbott (Z8); Cameralabs (Z7)",
+     "confidence": "measured",
+     "note": "Dozier (Z8) f/4: center 77.4, corner 43.2 lp/mm. Abbott: crisp and flatter-field at f/5.6."
+    },
+    {
+     "focal_mm": 120,
+     "wideOpen": "Center excellent; corners softer but usable",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photo Art From Science (Z8); OpticalLimits (45MP); Abbott (Z8); Cameralabs (Z7)",
+     "confidence": "measured",
+     "note": "Dozier (Z8) f/4: center 66.5, corner 41.2 lp/mm. Cameralabs: f/5.6–f/8 improves corners."
+    }
+   ]
+  },
+  "z-26-f28": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/649.4-Lens_review-Nikon_Nikkor_Z_26_mm_f_2.8_Image_resolution.html",
+     "testBody": "Nikon Z7 (45.7MP), RAW via dcraw"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-26mm-f-2-8/2",
+     "testBody": "Nikon Z7 (45.7MP)"
+    },
+    {
+     "name": "Phillip Reeve",
+     "url": "https://phillipreeve.net/blog/review-nikon-z-nikkor-26mm-f-2-8/",
+     "testBody": "Nikon Z7 II (45.7MP FX) and Nikon Z fc (20.9MP DX)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 26,
+     "wideOpen": "Center excellent; FX corners slightly below decency, strong coma",
+     "centerPeak": "f/2.8–f/4",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/16",
+     "clearlySofter": null,
+     "cornersNeverMatch": true,
+     "source": "Lenstip (Z7); Photography Life (Z7); Reeve (Z7 II)",
+     "confidence": "measured",
+     "note": "Reeve (Z7 II): sharpness drops slightly at f/16. Lenstip, Photography Life and Cameralabs did not discuss diffraction; on the 45.7MP Z8 expect a small loss by f/11 (inference). FX corners stay weak at every aperture."
+    }
+   ]
+  },
+  "z-28-f28-se": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://lenstip.com/624.4-Lens_review-Nikon_Nikkor_Z_28_mm_f_2.8_(SE)_Image_resolution.html",
+     "testBody": "Nikon Z7 (45.7MP), RAW via dcraw"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-28mm-f-2-8/2",
+     "testBody": "Nikon Z7 (45.7MP), Imatest"
+    },
+    {
+     "name": "Phillip Reeve",
+     "url": "https://phillipreeve.net/blog/review-nikon-nikkor-z-28mm-f-2-8/",
+     "testBody": "Nikon Z7 II (45.7MP), plus a DX body for the APS-C results"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 28,
+     "wideOpen": "Center good but not at peak; FX edge at the decency floor",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "cornersNeverMatch": true,
+     "source": "Lenstip (Z7); Photography Life (Z7); Reeve (Z7 II)",
+     "confidence": "measured",
+     "note": "Photography Life (Z7): sharpness weakens gradually from the f/5.6 peak toward f/16. Reeve: slight FX softness at f/16 (on DX from f/11). On the Z8, f/8 is the last 'free' stop."
+    }
+   ]
+  },
+  "z-40-f2": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/620.4-Lens_review-Nikon_Nikkor_Z_40_mm_f_2.0_Image_resolution.html",
+     "testBody": "Nikon Z7 (45.7MP), RAW via dcraw"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-40mm-f-2/2",
+     "testBody": "Nikon Z7 (45.7MP)"
+    },
+    {
+     "name": "Phillip Reeve",
+     "url": "https://phillipreeve.net/blog/review-nikon-z-40mm-f-2-the-street-sniper-for-discreet-photography/",
+     "testBody": "Nikon Z7 II (45.7MP)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 40,
+     "wideOpen": "Center fair; edges blurry near f/2; strong vignetting and coma",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "cornersNeverMatch": true,
+     "source": "Lenstip (Z7); Photography Life (Z7); Reeve (Z7 II)",
+     "confidence": "measured",
+     "note": "Reeve (Z7 II): negligible diffraction hit at f/11, more obvious at f/16, especially in the corners. Corners never reach excellent."
+    }
+   ]
+  },
+  "z-50-f18-s": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://lenstip.com/577.4-Lens_review-Nikon_Nikkor_Z_50_mm_f_1.8_S_Image_resolution.html",
+     "testBody": "Nikon Z7 (45.7MP), RAW via dcraw"
+    },
+    {
+     "name": "DXOMARK",
+     "url": "https://www.dxomark.com/nikon-nikkor-z-50mm-f1-8s-lens-review/",
+     "testBody": "Nikon Z7 (45.7MP)"
+    },
+    {
+     "name": "Phillip Reeve",
+     "url": "https://phillipreeve.net/blog/?p=58683",
+     "testBody": "Nikon Z7 II (45.7MP), plus Z fc and Z f samples"
+    },
+    {
+     "name": "OpticalLimits",
+     "url": "https://opticallimits.com/nikon/nikkor-z-50mm-f-1-8-s-review/",
+     "testBody": "Nikon Z50 (20.9MP DX)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 50,
+     "wideOpen": "Center outstanding; FX corners only fair",
+     "centerPeak": "f/2.8–f/4",
+     "cornerPeak": "f/4–f/5.6",
+     "downhillFrom": "f/8",
+     "clearlySofter": "f/11",
+     "source": "Lenstip (Z7); DXOMARK (Z7); Reeve (Z7 II); OpticalLimits (Z50)",
+     "confidence": "measured",
+     "note": "DXOMARK (Z7): diffraction starts to cut sharpness around f/5.6–f/8, most visible from f/11. OpticalLimits (Z50, DX): resolution drops from f/8."
+    }
+   ]
+  },
+  "z-70-200-f28-vr-s": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/616.4-Lens_review-Nikon_Nikkor_Z_70-200_mm_f_2.8_VR_S_Image_resolution.html",
+     "testBody": "Nikon Z7 (45.7MP), RAW MTF50"
+    },
+    {
+     "name": "OpticalLimits",
+     "url": "https://opticallimits.com/nikon/nikon-z/nikkor-z-70-200mm-f-2-8-vr-s/",
+     "testBody": "45MP-normalized results (body not named in fetched text)"
+    },
+    {
+     "name": "Imaging Resource",
+     "url": "https://imaging-resource.com/lenses/nikon/z-70-200mm-f2.8-vr-s-nikkor/review",
+     "testBody": "Nikon Z7 (45.7MP) for sharpness"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-70-200mm-f2-8-vr-s/2",
+     "testBody": "Imatest (body not named for sharpness)"
+    },
+    {
+     "name": "Cameralabs",
+     "url": "https://cameralabs.com/nikon-z-tc-1-4x-tc-2-0x-teleconverter-review/2",
+     "testBody": "45MP Nikon Z7 (implied"
+    },
+    {
+     "name": "Mirrorlesscomparison",
+     "url": "https://mirrorlesscomparison.com/stories/nikon-z-70-200mm-2-8-tc-1-4-birds/2/",
+     "testBody": "Nikon Z6 and Z7 (also Z7 DX crop)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 70,
+     "wideOpen": "Excellent: center over 80 lpmm, slight corner drop",
+     "centerPeak": "f/2.8–f/4",
+     "cornerPeak": "f/4",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Lenstip (Z7); OpticalLimits (45MP); Imaging Resource (Z7); Photography Life; Mirrorlesscomparison",
+     "confidence": "measured",
+     "note": "OpticalLimits (45MP): visible impact from f/8. Imaging Resource (Z7): noticeable at f/11 but usable; f/16–f/22 very soft. Mirrorlesscomparison: starts at f/11, more at f/16."
+    },
+    {
+     "focal_mm": 105,
+     "wideOpen": "Excellent; corners already very good",
+     "centerPeak": "f/2.8–f/4",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Lenstip (Z7); OpticalLimits (45MP); Imaging Resource (Z7); Photography Life; Mirrorlesscomparison",
+     "confidence": "measured",
+     "note": "Photography Life: corners strongest at 105mm, very high at f/5.6."
+    },
+    {
+     "focal_mm": 200,
+     "wideOpen": "Excellent; borders drop to very good only at f/2.8",
+     "centerPeak": "f/4",
+     "cornerPeak": "f/4–f/5.6",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Lenstip (Z7); OpticalLimits (45MP); Imaging Resource (Z7); Photography Life; Mirrorlesscomparison",
+     "confidence": "measured",
+     "note": "Photography Life: f/2.8, f/4 and f/5.6 essentially equal at 200mm; OpticalLimits: only here does f/4 slightly improve the corners."
+    },
+    {
+     "focal_mm": 280,
+     "tc": true,
+     "wideOpen": "At displayed f/4: noticeably softer than bare 200 f/2.8 ('not too bad'); f/5.6 very crisp",
+     "centerPeak": "f/5.6–f/8",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": null,
+     "clearlySofter": null,
+     "source": "Imaging Resource (Z7); Cameralabs (45MP); Mirrorlesscomparison",
+     "confidence": "inferred",
+     "inferredFields": [
+      "downhillFrom",
+      "clearlySofter"
+     ],
+     "note": "Imaging Resource (Z7): f/5.6 very crisp, only slightly behind the bare lens. With the TC-1.4x, diffraction follows the displayed f-number, so displayed f/8 is the limit for detail on the Z8 (inference), and the drop-off uses the fallback."
+    }
+   ]
+  },
+  "z-dx-12-28-pz-vr": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-dx-12-28mm-f-3-5-5-6-pz-vr/2",
+     "testBody": "Nikon DX Z body (not named in text)"
+    },
+    {
+     "name": "Enrico Savazzi",
+     "url": "https://www.savazzi.net/photography/nikon-z-dx-12-28pz.html",
+     "testBody": "Nikon Z50 II (20.9MP DX), handheld, visual crops"
+    },
+    {
+     "name": "Thom Hogan (sansmirror/zsystemuser)",
+     "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-12-28mm-f35-56-dx.html",
+     "testBody": "Nikon Z30 (20.9MP DX)"
+    },
+    {
+     "name": "Ken Rockwell",
+     "url": "https://kenrockwell.com/nikon/z/12-28mm.htm",
+     "testBody": "Nikon Z8 in DX crop (19.4MP)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 12,
+     "wideOpen": "Center at its best wide open; corners only slightly softer",
+     "centerPeak": "f/3.5–f/8",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/16",
+     "clearlySofter": "f/16",
+     "source": "Photography Life (DX lab); Savazzi (Z50 II); Hogan (Z30); Rockwell (Z8 DX crop)",
+     "confidence": "measured",
+     "note": "Savazzi (Z50 II): center unchanged to f/11; slight but detectable blur at f/16. Rockwell (Z8 DX crop): softer from f/11. Best-supported: f/11 is the last 'free' stop, f/16 visibly soft."
+    },
+    {
+     "focal_mm": 18,
+     "wideOpen": "Sharp wide open; mid-range consistent with the ends",
+     "centerPeak": "f/4.5–f/8",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/16",
+     "clearlySofter": "f/16",
+     "source": "Photography Life (DX lab); Savazzi (Z50 II); Hogan (Z30); Rockwell (Z8 DX crop)",
+     "confidence": "inferred",
+     "inferredFields": [
+      "centerPeak",
+      "cornerPeak"
+     ],
+     "note": "Not reported separately: Photography Life and Hogan describe the mid-range as consistent with the ends (inferred plateau)."
+    },
+    {
+     "focal_mm": 28,
+     "wideOpen": "Weakest focal length, but still good",
+     "centerPeak": "f/5.6–f/8",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/16",
+     "clearlySofter": "f/16",
+     "source": "Photography Life (DX lab); Savazzi (Z50 II); Hogan (Z30); Rockwell (Z8 DX crop)",
+     "confidence": "measured",
+     "note": "Photography Life: 'a little weaker at 28mm'. Savazzi (Z50 II): no corner/center difference at 28mm."
+    }
+   ]
+  },
+  "z-dx-16-50-vr": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-dx-16-50mm-f3-5-6-3-vr/2",
+     "testBody": "Nikon Z50 (20.9MP DX), Imatest"
+    },
+    {
+     "name": "PhotoReview (Australia)",
+     "url": "https://www.photoreview.com.au/reviews/mirrorless-lenses/mirrorless-lenses-aps-c/nikkor-z-dx-16-50mm-f-3-5-6-3-vr-lens/",
+     "testBody": "Nikon Z50 (20.9MP DX), Imatest JPEG plus raw"
+    },
+    {
+     "name": "Thom Hogan (sansmirror)",
+     "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-16-50mm-f35-63-lens.html",
+     "testBody": "Nikon Z50 (20.9MP DX)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 16,
+     "wideOpen": "Center excellent; corners weak from field curvature, much better at f/5.6",
+     "centerPeak": "f/3.5–f/4",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photography Life (Z50); PhotoReview (Z50); Hogan (Z50)",
+     "confidence": "measured",
+     "note": "Sources disagree on onset. PhotoReview (Imatest): consistent to about f/8, diffraction between f/10 and f/11. Hogan: softening starts between f/5.6 and f/8. Best-supported: f/8 safe, f/11 measurable loss, f/16 and smaller avoid."
+    },
+    {
+     "focal_mm": 24,
+     "wideOpen": "Strong center and extreme corners; best overall at f/5.6",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photography Life (Z50); PhotoReview (Z50); Hogan (Z50)",
+     "confidence": "measured",
+     "note": "Photography Life: f/5.6 gives the best overall results at 24mm."
+    },
+    {
+     "focal_mm": 50,
+     "wideOpen": "Center very good, corners solidly good; use max aperture unless you need depth",
+     "centerPeak": "f/6.3–f/8",
+     "cornerPeak": "f/6.3–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "Photography Life (Z50); PhotoReview (Z50); Hogan (Z50)",
+     "confidence": "measured",
+     "note": "Photography Life: use maximum aperture at 50mm unless you need more depth of field."
+    }
+   ]
+  },
+  "z-dx-18-140-vr": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "PhotoReview (Australia)",
+     "url": "https://www.photoreview.com.au/reviews/mirrorless-lenses/mirrorless-lenses-aps-c/nikkor-z-dx-18-140mm-f-3-5-6-3-vr-lens/",
+     "testBody": "Nikon Z50 (20.9MP DX), Imatest on JPEG and NEF"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-dx-18-140mm-f-3-5-6-3-vr/2",
+     "testBody": "Nikon DX Z body (not named)"
+    },
+    {
+     "name": "Thom Hogan (sansmirror)",
+     "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-18-140mm-f35-63-lens.html",
+     "testBody": "Nikon Z50 (20.9MP DX)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 18,
+     "wideOpen": "Center barely changes f/3.5 to f/5.6; corners need f/5.6",
+     "centerPeak": "f/3.5–f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "PhotoReview (Z50); Photography Life; Hogan (Z50)",
+     "confidence": "measured",
+     "note": "PhotoReview (Imatest, Z50): diffraction noticeable from about f/10, resolution drops sharply from f/11 to f/22 at all focal lengths. Avoid f/16 and smaller except for sunstars."
+    },
+    {
+     "focal_mm": 50,
+     "wideOpen": "Corners very good wide open, nearly matching the center",
+     "centerPeak": "f/5.6–f/8",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "PhotoReview (Z50); Photography Life; Hogan (Z50)",
+     "confidence": "measured",
+     "note": "Hogan: corners nearly match the center at 50–70mm."
+    },
+    {
+     "focal_mm": 140,
+     "wideOpen": "Center good, corners good to fair and inconsistent",
+     "centerPeak": "f/8",
+     "cornerPeak": "f/8–f/9",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "source": "PhotoReview (Z50); Photography Life; Hogan (Z50)",
+     "confidence": "measured",
+     "note": "Hogan: stop down 1–2 stops from f/6.3 at the long end. PhotoReview: center falls a little short beyond 70mm."
+    }
+   ]
+  },
+  "z-dx-50-250-vr": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-dx-50-250mm-f4-5-6-3-vr/2",
+     "testBody": "Nikon Z50 (20.9MP DX), Imatest"
+    },
+    {
+     "name": "PhotoReview (Australia)",
+     "url": "https://www.photoreview.com.au/reviews/mirrorless-lenses/mirrorless-lenses-aps-c/nikkor-z-dx-50-250mm-f-4-5-6-3-vr-lens/",
+     "testBody": "Nikon Z50 (20.9MP DX), Imatest JPEG"
+    },
+    {
+     "name": "Thom Hogan (sansmirror)",
+     "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-50-250mm-f45-63-dx.html",
+     "testBody": "Nikon Z50 (20.9MP DX)"
+    },
+    {
+     "name": "Ken Rockwell",
+     "url": "https://kenrockwell.com/nikon/z/50-250mm.htm",
+     "testBody": "Nikon Z50 (20.9MP DX)"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 50,
+     "wideOpen": "Similar to the 16-50 at 50mm; stopping down pulls the corners in",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Photography Life (Z50); PhotoReview (Z50); Hogan (Z50); Rockwell (Z50)",
+     "confidence": "measured",
+     "note": "Hogan (Z50): avoid f/11 through f/22. No lab source published a measured onset. On the Z50 II (4.2 µm), f/8 is the practical ceiling."
+    },
+    {
+     "focal_mm": 135,
+     "wideOpen": "Slightly weaker overall; f/5.6 is the sweet spot",
+     "centerPeak": "f/5.6",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Photography Life (Z50); PhotoReview (Z50); Hogan (Z50); Rockwell (Z50)",
+     "confidence": "measured",
+     "note": "Photography Life: f/5.6 sweet spot at 135mm. Hogan: corners second-best."
+    },
+    {
+     "focal_mm": 250,
+     "wideOpen": "Weakest focal length: worst wide open, corners fair",
+     "centerPeak": "f/6.3–f/8",
+     "cornerPeak": "f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": null,
+     "source": "Photography Life (Z50); PhotoReview (Z50); Hogan (Z50); Rockwell (Z50)",
+     "confidence": "measured",
+     "note": "Photography Life: worst at 250mm, especially wide open; stop down to f/8. Hogan: center good, corners fair. Sources differ, so try f/8 when shutter speed allows."
+    }
+   ]
+  },
+  "z-mc-105-f28-vr-s": {
+   "lastUpdated": "2026-11-05",
+   "macro": {
+    "mode": "displayed",
+    "magnifications": [
+     "inf",
+     "1:1"
+    ]
+   },
+   "sources": [
+    {
+     "name": "Enrico Savazzi",
+     "url": "https://www.savazzi.net/photography/nikon-z-105-2-8-vr.html",
+     "testBody": "Nikon Z8 (45.7MP), resolution target at 1:1. Handling also on a Z50 II"
+    },
+    {
+     "name": "OpticalLimits (Klaus)",
+     "url": "https://opticallimits.com/?p=7433",
+     "testBody": "45MP Nikon Z body (model not named)"
+    },
+    {
+     "name": "Photography Life",
+     "url": "https://photographylife.com/reviews/nikon-z-mc-105mm-f-2-8-vr-s-macro/2",
+     "testBody": "Not stated on the page (lab chart image not readable)"
+    },
+    {
+     "name": "Lenstip",
+     "url": "https://www.lenstip.com/694.4-Lens_review-Nikon_Nikkor_Z_MC_105_mm_f_2.8_VR_S_Image_resolution.html",
+     "testBody": "Nikon Z7 (45.7MP), RAW"
+    },
+    {
+     "name": "Cameralabs",
+     "url": "https://www.cameralabs.com/nikon-z-mc-105mm-f2-8-vr-s-review/2/",
+     "testBody": "Nikon Z7 (45.7MP), Siemens star and real-world crops"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 105,
+     "mag": "inf",
+     "wideOpen": "Very sharp into the corners at f/2.8",
+     "centerPeak": "f/4",
+     "cornerPeak": "f/5.6",
+     "downhillFrom": "f/8",
+     "clearlySofter": "f/16",
+     "source": "OpticalLimits (45MP); Photography Life; Savazzi (Z8, 1:1); Lenstip (Z7); Cameralabs (Z7)",
+     "confidence": "measured",
+     "note": "OpticalLimits (45MP): diffraction sets in from about f/8; f/11 still very usable, f/16 softer, avoid f/22 for high-resolution work."
+    },
+    {
+     "focal_mm": 105,
+     "mag": "1:1",
+     "wideOpen": "Wide open at 1:1 reads f/4.5 (close-focus loss included); no separate close-range verdict researched",
+     "centerPeak": null,
+     "cornerPeak": null,
+     "overallPeak": "f/5.6–f/8",
+     "downhillFrom": "f/11",
+     "clearlySofter": "f/16",
+     "startAt": 4.5,
+     "source": "OpticalLimits (45MP); Photography Life; Savazzi (Z8, 1:1); Lenstip (Z7); Cameralabs (Z7)",
+     "confidence": "measured",
+     "note": "The camera shows the effective aperture, so these are displayed numbers. Savazzi (Z8) saw slight diffraction loss by f/8 at the finest detail and a further drop at f/11. Only a whole-frame peak was researched at 1:1, so Center and Corners are not measured separately. Focus-stack at f/5.6–f/8 instead of going to f/16+."
+    }
+   ]
+  },
+  "zeiss-milvus-35-f2-zf2": {
+   "lastUpdated": "2026-11-05",
+   "sources": [
+    {
+     "name": "phillipreeve.net",
+     "url": "https://phillipreeve.net/blog/review-zeiss-milvus-35mm-f-2/",
+     "testBody": "Nikon Z7II (45.7MP) via FTZ/FTZ II"
+    },
+    {
+     "name": "Photozone (OpticalLimits)",
+     "url": "https://photozone.de/canon_eos_ff/503-zeiss35f2eosff?start=1",
+     "testBody": "Canon full-frame DSLR (model not named in text"
+    },
+    {
+     "name": "The-Digital-Picture",
+     "url": "https://www.the-digital-picture.com/Reviews/Zeiss-Milvus-35mm-f-2-Lens.aspx",
+     "testBody": "Canon EOS 5Ds R (50.6MP), ZE version"
+    }
+   ],
+   "entries": [
+    {
+     "focal_mm": 35,
+     "wideOpen": "Center excellent, corners good; Digital Picture: corners somewhat soft",
+     "centerPeak": "f/2.8–f/5.6",
+     "cornerPeak": "f/8–f/11",
+     "downhillFrom": "f/16",
+     "clearlySofter": "f/22",
+     "source": "Reeve (Z7 II, 46MP); Photozone (Canon FF); The Digital Picture (5Ds R)",
+     "confidence": "measured",
+     "note": "Reeve (46MP): diffraction reduces sharpness from f/16 at infinity and from f/11 at close range; f/22 visibly softer. Photozone (lower resolution): noticeable from f/8, easily usable at f/11."
+    }
+   ]
+  }
+ }
+}

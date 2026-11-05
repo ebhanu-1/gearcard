@@ -1,5 +1,6 @@
 // Loads, indexes and sanity-checks the researched JSON (bundled at build time, SPEC §3).
 import type { Accessory, Body, BodyId, Kit, Lens, Setting } from './types'
+import { type CurveResult, parseCurveFile } from './curves'
 
 const files = import.meta.glob('../../../data/**/*.json', { eager: true, import: 'default' }) as Record<string, unknown>
 
@@ -26,6 +27,12 @@ export const lensGroups = kit.lens_groups.map((g) => ({
 export const lenses: Lens[] = lensGroups.flatMap((g) => g.items)
 export const groupOf = (lensId: string) => lensGroups.find((g) => g.lenses.includes(lensId))
 
+// Per-lens sharpness curves (data/lens-curves.json). Validated lens by lens: a broken entry marks only that lens as a data error.
+const curveFile = parseCurveFile(files['../../../data/lens-curves.json'])
+export const curveFileError = curveFile.fileError
+export const curvesFor = (lensId: string): CurveResult | undefined => curveFile.lenses.get(lensId)
+export const curveErrors = (): string[] => Array.from(curveFile.lenses.values()).flatMap((r) => (r.ok ? [] : r.errors))
+
 export const accessories = pick<Accessory>('accessories')
 export const accessoryById = (id: string) => accessories.find((a) => a.id === id)
 
@@ -43,6 +50,10 @@ export function dataWarnings(): string[] {
   const w: string[] = []
   for (const id of kit.lens_groups.flatMap((g) => g.lenses)) if (!lensMap.has(id)) w.push(`kit.json lists ${id} but no lens file exists`)
   for (const l of lensMap.values()) if (!kit.lens_groups.some((g) => g.lenses.includes(l.id))) w.push(`${l.id} has a file but is not in kit.json`)
+  if (curveFileError) w.push(curveFileError)
+  for (const id of lensMap.keys()) if (!curveFile.lenses.has(id)) w.push(`${id} has no entry in lens-curves.json (shown as "not researched")`)
+  for (const id of curveFile.lenses.keys()) if (!lensMap.has(id)) w.push(`lens-curves.json has an entry for ${id} but no such lens exists`)
+  w.push(...curveErrors())
   for (const b of kit.bodies) if (!bodies.some((x) => x.id === b.id)) w.push(`kit.json lists body ${b.id} but no body file exists`)
   return w
 }

@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { parseCurveFile } from '../app/src/lib/curves'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const root = join(here, '..')
@@ -131,6 +132,37 @@ for (const f of lensFiles) {
   if (!l.close_focus?.max_mag?.length) warn(`${where}: no close_focus.max_mag`)
 }
 
+// Per-lens sharpness curves (data/lens-curves.json): same parser the app uses, so what passes here loads there.
+let curveCount = 0
+try {
+  const raw = read('data/lens-curves.json')
+  const { lenses: parsed, fileError } = parseCurveFile(raw)
+  if (fileError) err(fileError)
+  for (const id of kitLensIds) if (!parsed.has(id)) err(`lens-curves.json has no entry for "${id}"`)
+  for (const [id, r] of parsed) {
+    if (!kitLensIds.includes(id)) { err(`lens-curves.json has an entry for "${id}" which is not in kit.json`); continue }
+    if (!r.ok) { r.errors.forEach((m) => err(`lens-curves.json: ${m}`)); continue }
+    const lens = read(`data/lenses/${id}.json`)
+    const lo = Math.min(...lens.focal_mm)
+    const hi = Math.max(...lens.focal_mm)
+    const groups = new Map<string, number>()
+    for (const e of r.data.entries) {
+      curveCount++
+      const shown = e.raw.focal_mm
+      const base = e.raw.tc ? shown / 1.4 : shown
+      if (base < lo * 0.97 || base > hi * 1.03) warn(`lens-curves#${id}: ${shown} mm${e.raw.tc ? ' (with TC)' : ''} is outside the lens range ${lo}–${hi} mm`)
+      if (e.raw.tc && lens.tc_compatible !== true) warn(`lens-curves#${id}: has a with-converter entry but the lens is not TC-compatible`)
+      if (e.raw.confidence === 'measured' && e.downhill == null) warn(`lens-curves#${id} ${shown} mm: confidence "measured" but downhillFrom is null (the fallback will be used; mark it inferred)`)
+      const k = `${!!e.raw.tc}/${e.raw.mag ?? 'inf'}`
+      groups.set(k, (groups.get(k) ?? 0) + 1)
+    }
+    for (const [k, n] of groups) if (n > 3) warn(`lens-curves#${id}: ${n} entries for ${k}; the brief allows wide / mid / long`)
+    if (lens.kind === 'zoom' && !r.data.entries.some((e) => !e.raw.tc)) warn(`lens-curves#${id}: a zoom with no bare-lens entry`)
+  }
+} catch (e) {
+  err(`lens-curves.json could not be read: ${(e as Error).message}`)
+}
+
 const bodyIds: string[] = kit.bodies.map((b: any) => b.id)
 for (const id of bodyIds) {
   let b: any
@@ -162,7 +194,7 @@ for (const f of list('data/accessories')) {
   checkUrls(`accessories/${f}`, a.sources)
 }
 
-console.log(`lenses ${lensFiles.length}, bodies ${bodyIds.length}, settings ${allSettings.length}`)
+console.log(`lenses ${lensFiles.length}, curve entries ${curveCount}, bodies ${bodyIds.length}, settings ${allSettings.length}`)
 if (warnings.length) { console.log(`\nWARNINGS (${warnings.length})`); warnings.forEach((w) => console.log('  - ' + w)) }
 if (errors.length) { console.log(`\nERRORS (${errors.length})`); errors.forEach((e) => console.log('  - ' + e)); process.exit(1) }
 console.log('data validation OK')
