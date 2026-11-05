@@ -1,0 +1,108 @@
+{
+  "id": "z8",
+  "name": "Nikon Z8",
+  "format": "FX",
+  "sensor": {
+    "effective_mp": 45.7,
+    "width_px": 8256,
+    "height_px": 5504,
+    "width_mm": 35.9,
+    "height_mm": 23.9,
+    "pixel_pitch_um": 4.35,
+    "type": "stacked CMOS",
+    "olpf": null,
+    "readout_ms": 3.7,
+    "readout_notes": "Stills, electronic shutter, 14-bit: about 3.7 ms (about 1/270 s). Kasson measured 3.7 ms on the Z9, which uses the same sensor. Horshack gives 1/268 for the Z8/Z9, and mplough calibrated against 3.7 ms on a Z8. DPReview reports no drop to 12-bit readout in RAW bursts, so 20 fps RAW keeps the 14-bit readout. High-Speed Frame Capture+ (JPEG) is slower: Horshack measured about 1/90 s at 60 fps (full-size DX JPEG) and about 1/173 s at 120 fps (small FX JPEG). Video (DPReview): 8K 13.6 ms. Most other modes 14.4 ms. 4K/120p, subsampled 60p and ProRes RAW 4.1K/60p 4.9 ms (line-skipping). A 12-bit stills readout figure was not found."
+  },
+  "iso": {
+    "base": 64,
+    "native_range": "64–25600",
+    "extended": "32 (Lo 1) – 102400 (Hi 2)",
+    "dual_gain_notes": "Stills: the high-gain mode starts at ISO 500 and the low-gain mode covers ISO 64–400 (Dariusz Breś guest post on Nikon Rumors, July 2026). Video: high gain from ISO 4000, low gain ISO 800–3200 (same post). In practice, if a dim scene will be brightened in post, ISO 500 has lower read noise than ISO 250–400.",
+    "ptp_notes": "The PhotonsToPhotos PDR chart is rendered by JavaScript and could not be read here, so no PDR numbers are recorded. DPReview says dynamic range matches the Z9, with a small read-noise cost visible only in the deepest shadows."
+  },
+  "ibis": {
+    "cipa_stops": 5.5,
+    "synchro_vr_stops": 6.0,
+    "focus_point_vr": false,
+    "notes": "5-axis sensor-shift VR. Nikon USA lists 5.5 stops in-body and 6.0 stops with Synchro VR-compatible NIKKOR Z lenses. DPReview's spec table gives only the 6 EV Synchro VR figure. Synchro VR is not available with F lenses on the FTZ II (Nikon FTZ compatibility guide). Focus-point VR is not listed for the Z8."
+  },
+  "shutter": {
+    "mechanical": false,
+    "efcs": false,
+    "electronic_fastest": "1/32000",
+    "flash_sync": "1/200 s X-sync with the electronic shutter. Auto FP high-speed sync up to 1/8000 s (Nikon USA spec).",
+    "slowest": "30 s standard. 900 s in M with extended shutter speeds. Bulb and Time also available.",
+    "notes": "Electronic shutter only. There is no mechanical shutter. A sensor shield closes over the sensor at power-off; the Setup menu item 'Sensor shield behavior at power off' controls it. Fast readout keeps rolling-shutter skew small, but banding is still possible under LED and other pulsed light. Use High-Frequency Flicker Reduction for that."
+  },
+  "drive": {
+    "max_fps_raw": "20 fps RAW (C-H, 14-bit, full AF/AE). C-L 1–10 fps.",
+    "pre_release_capture": "Only in High-Speed Frame Capture+ (JPEG): C15 (added in FW 3.00), C30, C60 and C120. It buffers up to about 1 s before the full press. C60 is full-size DX JPEG and C120 is 11 MP JPEG. There is no RAW pre-release capture.",
+    "notes": "Nikon USA: 30 fps JPEG Fine, 60 fps JPEG Normal, 120 fps 11 MP JPEG. C60 and C120 read out slower than C30 or 20 fps, so moving subjects skew more."
+  },
+  "af": {
+    "subject_detection": ["People (face, eye, head, upper body)", "Animals (dogs, cats)", "Birds (dedicated option since FW 2.00)", "Vehicles (cars, motorcycles, bicycles, trains)", "Airplanes"],
+    "low_light_ev": "−7 to +19 EV. −9 EV with Starlight View (Nikon USA spec).",
+    "notes": "493 focus points. FW 3.00 added an in-camera focus limiter (a16), MF subject detection (MF Subject Detection Area), more Wide-area C1/C2 sizes, and subject detection during Hi-Res Zoom. DPReview found bird detection weaker than expected at launch. FW 2.00 then added the dedicated Birds option. In video, AF uses Subject-tracking AF; there is no 3D-tracking."
+  },
+  "ftz_ii_behavior": "AF-S, AF-P and AF-I lenses: full AF with electronic rangefinder. Screw-drive AF and AF-D lenses: MF only, with electronic rangefinder. AI-P and non-CPU (AI/AI-S) lenses: MF, modes A and M only. Non-CPU lenses need Non-CPU lens data. Non-VR F lenses get 3-axis IBIS (yaw, pitch, roll). VR F lenses combine lens VR with body roll correction. No Synchro VR. Focus shift shooting works with AF-S and AF-P lenses, but auto reset is disabled and no peaking stack image is saved. Z teleconverters cannot be used on the FTZ II. See accessories/ftz-ii.json.",
+  "dx_crop": {
+    "mp": 19.4,
+    "notes": "DX image area L is 5392 × 3592 px, about 19.4 MP (Nikon USA spec). With DX lenses the camera switches to DX automatically. The DX crop gives a 1.5× field-of-view reach on the 180-600 at the cost of resolution."
+  },
+  "special_features": [
+    {"name": "Pixel shift", "available": true, "firmware": "2.00 (Feb 2024); expanded in 3.00", "notes": "4, 8, 16 or 32 frames. 16 and 32 frames give about 180 MP (J.M. Peltier). Electronic shutter, RAW only, tripod required, merged in NX Studio. FW 3.00 can combine it with focus shift or AE bracketing (PetaPixel, Nikon AU), adds per-sequence folders and self-timer support."},
+    {"name": "Focus shift shooting", "available": true, "firmware": "launch", "notes": "Photo shooting menu. With F lenses on the FTZ II: AF-S and AF-P only, and focus position auto reset is disabled."},
+    {"name": "Auto capture", "available": true, "firmware": "2.00", "notes": "Criteria are Motion, Distance (NIKKOR Z lenses only) and Subject detection. The Distance criterion may not work well with F lenses (FTZ guide)."},
+    {"name": "Bird detection", "available": true, "firmware": "2.00", "notes": "Dedicated Birds subject-detection option."},
+    {"name": "Starlight View", "available": true, "firmware": "launch", "notes": "Custom setting d10. AF down to −9 EV in photo Lv."},
+    {"name": "High-frequency flicker reduction", "available": true, "firmware": "launch; presets added in 3.00", "notes": "In the Photo and Video menus. Nikon AU lists 'high-frequency flicker reduction presets' under FW 3.00."},
+    {"name": "MF subject detection", "available": true, "firmware": "3.00", "notes": "Settings: AF/MF Subject Detection Options and MF Subject Detection Area. Nikon sources fetched here do not say whether chipped F lenses on the FTZ II are supported. J.M. Peltier (Zf/Z6III article) reports detection working with CPU and non-CPU F lenses, with uncertain results on some AF-D lenses. Treat as likely but unverified on the Z8."},
+    {"name": "Focus limiter", "available": true, "firmware": "3.00", "notes": "Custom setting a16."},
+    {"name": "Flexible Color Picture Control", "available": true, "firmware": "3.00", "notes": "Built in NX Studio and loaded as a Custom Picture Control."},
+    {"name": "Picture Control Cloud / Imaging Recipes (Nikon Imaging Cloud)", "available": false, "firmware": null, "notes": "The Z8 is not on the CineD (Dec 2025) list of Imaging Recipe cameras, which names the Z6III, Zf, ZR, Z50II and Z5II, and the Z8 manual has no Imaging Recipe item."},
+    {"name": "Hi-Res Zoom", "available": true, "firmware": "2.10 (video); subject detection during Hi-Res Zoom in 3.00", "notes": "Video only."},
+    {"name": "Pre-release capture", "available": true, "firmware": "launch; C15 added in 3.00", "notes": "JPEG only, in High-Speed Frame Capture+."}
+  ],
+  "video_key": {
+    "internal_raw": "N-RAW 12-bit up to 8K/60p and 4K/120p. ProRes RAW HQ 12-bit up to 4K/60p (Nikon USA).",
+    "log": "N-Log and HLG. N-Log minimum ISO 800 at launch (DPReview).",
+    "notes": "ProRes 422 HQ 10-bit up to 4K/60p. H.265 8/10-bit and H.264 8-bit. 8K is limited to about 90 min. Electronic VR adds a 1.25× crop. Shutter-angle mode was added in FW 2.10."
+  },
+  "firmware": {
+    "current": "3.12",
+    "date": "2026-10-20",
+    "notable_changes": "3.12 (Download Center 2026-10-20; Nikon Rumors dated it 2026-10-19): fixes the camera freezing with some lenses. 3.11 (2026-09-16): bug fixes for NX Tether wireless, a High-Frequency Flicker Reduction/Protect button conflict, and Custom Picture Control freezes. 3.10 (2025-09-17): HDMI output keeps running after recording stops, plus fixes. 3.00 (July 2025): focus limiter, MF subject detection, Flexible Color, C15, pixel shift combined with focus shift or AE bracketing, more Wide-area C1/C2 sizes, 400% zoom. 2.10 (Feb 2025): shutter angle, Hi-Res Zoom. 2.00 (Feb 2024): pixel shift, Birds detection, Auto Capture."
+  },
+  "battery_media": "EN-EL15c (EN-EL15b/a also fit, with fewer shots). CIPA 340 shots (LCD) / 330 (EVF) per DPReview. One CFexpress Type B/XQD slot and one SD UHS-II slot.",
+  "field_tips": [
+    "Change lenses with the sensor shield closed: power off first, and check Setup > Sensor shield behavior at power off. With no mechanical shutter, the shield is the only thing covering the sensor.",
+    "Under LED or stage lighting, turn on High-Frequency Flicker Reduction before you shoot. The electronic-only shutter can show banding, and DPReview reported flickering screens upsetting AF.",
+    "20 fps RAW stays 14-bit, so there is no image-quality reason to drop to C-L for action.",
+    "Pre-release capture is JPEG only (C15/C30/C60/C120). C60 and C120 read out slower (about 1/90 s at 60 fps), so use C30 or 20 fps RAW for fast lateral motion.",
+    "In dim light, if you will brighten in post anyway, ISO 500 (high-gain mode) has less shadow noise than ISO 250–400.",
+    "For extra reach, DX crop gives 19.4 MP, enough for most birding crops with the 180-600."
+  ],
+  "sources": [
+    {"id": "nikonusa-spec", "name": "Nikon USA Z8 product page and tech specs", "url": "https://www.nikonusa.com/p/z-8/1695/overview#tech-specs", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "45.7 MP. 35.9 × 23.9 mm. FX L 8256 × 5504, DX L 5392 × 3592. Electronic shutter, 1/32000–30 s, extendable to 900 s. X-sync 1/200, FP to 1/8000. C-H 10–20 fps, C30/C60/C120. ISO 64–25600, Lo to 32, Hi to 102400. VR 5.5 stops, 6.0 with Synchro VR. AF −7 to +19 EV (−9 with Starlight View). 9 subject types. EN-EL15c. CFexpress B/XQD + SD."},
+    {"id": "dpreview-review", "name": "DPReview Nikon Z8 review", "url": "https://www.dpreview.com/reviews/3604292544", "kind": "review", "tested_on": "Nikon Z8", "date": "2023-10-16", "findings": "Video readout 13.6 ms (8K), 14.4 ms in most modes, 4.9 ms in 4K/120 and ProRes RAW 4.1K/60. No drop to 12-bit readout in bursts. Sensor shield closes at power-off. Pre-release up to 1 s in the 30/60/120 fps JPEG modes. DR matches the Z9. Bird detection weak at launch. Flickering screens upset AF."},
+    {"id": "dpreview-specs", "name": "DPReview Nikon Z8 specifications", "url": "https://www.dpreview.com/reviews/3604292544/2", "kind": "review", "tested_on": null, "date": "2023", "findings": "Synchro VR up to 6 EV. 1/32000 s. Readout about 1/270 s. 20 fps RAW, 30 fps JPEG. CIPA 340/330 shots. 910 g."},
+    {"id": "kasson-z9", "name": "Jim Kasson: How fast is the Z9 shutter", "url": "https://blog.kasson.com/z9/how-fast-is-the-z9-shutter", "kind": "measured", "tested_on": "Nikon Z9 (same sensor as Z8)", "date": "2022-01-27", "findings": "Electronic-shutter transit time 3.7 ms (about 1/270 s), the same at 1/32000 s."},
+    {"id": "mplough", "name": "Measuring camera sensor readout speeds (mplough)", "url": "https://mplough.github.io/2025/01/30/camera-sensor-readout-speeds.html", "kind": "measured", "tested_on": "Nikon Z8, Z50, Z50II", "date": "2025-01-30", "findings": "Uses the Z8's about 1/270 s (3.7 ms) as a calibration reference."},
+    {"id": "dpr-forum-horshack", "name": "DPReview forum: Z8/Z9 rolling shutter in 60fps/120fps continuous modes (Horshack)", "url": "https://www.dpreview.com/forums/thread/4752433", "kind": "forum", "tested_on": "Nikon Z8/Z9", "date": null, "findings": "Standard readout 1/268. 60 fps DX JPEG 1/90. 120 fps small FX JPEG 1/173."},
+    {"id": "nr-dualgain", "name": "Nikon Rumors guest post (Dariusz Breś): Z9/Z8 dual gain ISO", "url": "https://nikonrumors.com/2026/07/18/nikon-z9-z8-z6-z7-and-zf-cameras-have-dual-gain-iso-this-means-its-better-to-shoot-at-iso-500-than-at-iso-250-due-to-the-wider-dynamic-range-and-less-noise.aspx/amp/", "kind": "review", "tested_on": "Nikon Z9/Z8", "date": "2026-07-18", "findings": "Stills: high gain from ISO 500, low gain ISO 64–400. Video: high gain from ISO 4000."},
+    {"id": "nikon-dc-2026", "name": "Nikon Download Center: 2026 updates", "url": "https://downloadcenter.nikonimglib.com/en/update/index/2026.html", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "Z 8 firmware 3.12 dated 2026-10-20."},
+    {"id": "nr-312", "name": "Nikon Rumors: Z9 v5.33 and Z8 v3.12", "url": "https://nikonrumors.com/?p=221729", "kind": "review", "tested_on": null, "date": "2026-10-19", "findings": "3.12 fixes the camera stopping responding with some lenses."},
+    {"id": "minna-fw", "name": "Minna Camera: Z8 firmware history", "url": "https://www.minnacamera.com/mags/6455", "kind": "review", "tested_on": null, "date": "2026-09", "findings": "3.11 (2026-09-16) bug fixes. 3.10 (2025-09-17). 3.01 (2025-07-16). 3.00 (2025-07-01): focus limiter, MF subject detection, Flexible Color, C15, pixel shift and auto capture expansion. 2.10 (2025-02-26): Hi-Res Zoom, shutter angle. 2.00 (2024-02-07): pixel shift, Birds, Auto Capture."},
+    {"id": "nr-310", "name": "Nikon Rumors: Z8 firmware 3.10", "url": "https://nikonrumors.com/2025/09/17/nikon-z8-firmware-update-version-3-10-released.aspx/amp", "kind": "review", "tested_on": null, "date": "2025-09-17", "findings": "HDMI output continues after recording ends. Fixes to playback filters and Save focus position."},
+    {"id": "nikon-fw200", "name": "Nikon news release: Z 8 firmware 2.00", "url": "https://www.nikon.com/company/news/2024/0207_firmware_01/", "kind": "manufacturer", "tested_on": null, "date": "2024-02-07", "findings": "Adds the Birds option, Auto Capture (Motion, Distance for NIKKOR Z only, Subject), pixel shift via NX software, and Rich Tone Portrait."},
+    {"id": "nikon-au-fw", "name": "Nikon Australia: Z8 firmware updates", "url": "https://www.nikon.com.au/z8-firmware-updates", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "FW 3.00: focus limiter, pixel shift integrated with focus shift or AE bracketing, high-frequency flicker reduction presets, High-Res Zoom subject detection, Flexible Colour. FW 2.10: shutter angle 5.6°–360°."},
+    {"id": "petapixel-fw300", "name": "PetaPixel: Z8 firmware 3.00", "url": "https://petapixel.com/2025/06/11/nikon-z8-firmware-adds-worlds-first-pixel-shift-mode-with-focus-shift-and-ae-bracketing", "kind": "review", "tested_on": null, "date": "2025-06-11", "findings": "Pixel shift combined with focus shift or AE bracketing, focus limiter, MF subject detection, Flexible Color, 400% zoom."},
+    {"id": "peltier-pixelshift", "name": "J.M. Peltier: Nikon pixel shift shooting", "url": "https://www.jmpeltier.com/nikon-pixel-shift-shooting/", "kind": "review", "tested_on": "Nikon Z8 and 24 MP Z bodies", "date": "2026-09-14", "findings": "4/8/16/32 shots. 16 and 32 give about 4× resolution (Z8 about 180 MP). Electronic shutter only, RAW only, NX Studio merge."},
+    {"id": "peltier-mfsd", "name": "J.M. Peltier: Manual focus subject detection on Nikon Z", "url": "https://www.jmpeltier.com/manual-focus-subject-detection-nikon-z/", "kind": "review", "tested_on": "Nikon Zf / Z6III", "date": "2024-09-16 (updated 2026-07-11)", "findings": "Works with non-CPU lenses (no ERF). ERF works with CPU F lenses that pass distance data. AF-D lenses are uncertain."},
+    {"id": "z8-manual-toc", "name": "Nikon Z8 Online Reference Guide (table of contents)", "url": "https://onlinemanual.nikonimglib.com/z8/en/subject_detection_changes_391.html", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "The TOC lists Auto Capture, High-Frequency Flicker Reduction, d10 Starlight View, Focus Shift, Pixel Shift, d3 Pre-Release Capture Options, a16 Focus Limiter, MF Subject Detection Area, Hi-Res Zoom, and Sensor Shield Behavior at Power Off. It has no Imaging Recipe item."},
+    {"id": "cined-recipes", "name": "CineD: Nikon and RED release nine free Imaging Recipes", "url": "https://www.cined.com/nikon-and-red-release-nine-free-image-recipes-for-select-z-mount-cameras/", "kind": "review", "tested_on": null, "date": "2025-12-10", "findings": "Compatible cameras: Z6III, Zf, ZR, Z50II, Z5II. The Z8 is not listed."},
+    {"id": "ftz-guide", "name": "Nikon: Using F-mount NIKKOR lenses with the FTZ II/FTZ (PDF)", "url": "https://download.nikonimglib.com/archive6/amgQQ00igi0U06sJjMP25JWC2H05/FTZ_CompatibleFmount_(En)11.pdf", "kind": "manufacturer", "tested_on": null, "date": null, "findings": "Compatibility classes. No Synchro VR with F lenses. Focus shift works with AF-S and AF-P. Z TCs cannot be used."}
+  ],
+  "research_notes": "Pixel pitch = 35.9 / 8256 × 1000 = 4.348, rounded to 4.35 µm. OLPF: no source fetched here states it, so the field is null. The Z8 is widely reported to have no OLPF, but that is unverified here. IBIS 5.5 stops comes from one Nikon USA page (read through a summarizer); DPReview gives only the 6 EV Synchro VR figure, so confidence is medium. The PhotonsToPhotos charts could not be read (JavaScript-rendered), so the dual-gain point relies on the Breś Nikon Rumors post. Medium confidence, consistent with the widely cited ISO 500 for the Z9 sensor. The 14-bit readout time comes from Z9 measurements (same sensor) plus Z8 references. A 12-bit stills readout time was not found. Whether MF subject detection supports chipped F lenses on the Z8 is not confirmed by Nikon. The web search budget ran out before Synchro VR lens lists and some PtP checks could be done."
+}

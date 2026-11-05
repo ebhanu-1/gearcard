@@ -1,0 +1,61 @@
+{
+  "id": "z-tc-14x",
+  "name": "Nikon Z TELECONVERTER TC-1.4x",
+  "kind": "teleconverter",
+  "short": "Z TC-1.4x",
+  "summary": "Multiplies focal length and maximum magnification by 1.4 at the cost of 1 stop of light. It fits only Nikon's listed Z telephotos. On the owner's kit that means the 70-200 f/2.8 VR S and the 180-600 VR. It does not fit the MC 105.",
+  "effects": {
+    "aperture_loss_stops": 1,
+    "focal_factor": 1.4,
+    "magnification_factor": 1.4,
+    "magnification_notes": "The teleconverter does not change the lens's minimum focus distance, so maximum magnification rises by about 1.4× (focal length ×1.4 at the same distance). Working distance is essentially unchanged; the TC adds length on the camera side.",
+    "af_impact": null,
+    "sharpness_impact": null,
+    "notes": "The camera displays and meters the effective aperture (f-number × 1.4). Measured AF-speed and sharpness losses for these specific combos were not found in this run, so those fields are null."
+  },
+  "effective_combos": [
+    {"lens_id": "z-70-200-f28-vr-s", "native": "70–200 mm f/2.8", "with_tc": "98–280 mm f/4", "z50ii_fov_equiv": "147–420 mm FX-equivalent", "notes": "f/2.8 × 1.4 = f/3.92, displayed as f/4."},
+    {"lens_id": "z-180-600-vr", "native": "180–600 mm f/5.6–6.3", "with_tc": "252–840 mm f/8–9", "z50ii_fov_equiv": "378–1260 mm FX-equivalent", "notes": "f/5.6 × 1.4 = f/7.84, shown as f/8. f/6.3 × 1.4 = f/8.82, shown as f/9. f/9 is at or near diffraction onset on the Z8's 4.35 µm and Z50II's 4.22 µm pixels."}
+  ],
+  "compatible_lenses": {
+    "official_list_as_found": [
+      "NIKKOR Z 70-180mm f/2.8",
+      "NIKKOR Z 70-200mm f/2.8 VR S",
+      "NIKKOR Z 100-400mm f/4.5-5.6 VR S",
+      "NIKKOR Z 180-600mm f/5.6-6.3 VR",
+      "NIKKOR Z 400mm f/2.8 TC VR S",
+      "NIKKOR Z 400mm f/4.5 VR S",
+      "NIKKOR Z 600mm f/4 TC VR S",
+      "NIKKOR Z 600mm f/6.3 VR S",
+      "NIKKOR Z 800mm f/6.3 VR S"
+    ],
+    "list_source_note": "This list is from a Wikipedia mirror, not a Nikon page; Nikon's product pages returned errors in this run. Newer lenses (e.g. a 70-200mm f/2.8 VR S II, which appears in Nikon's 2026 Download Center) may be compatible but are not on this list. Check Nikon's current TC-1.4x compatibility list.",
+    "owner_lenses": [
+      {"lens_id": "z-70-200-f28-vr-s", "compatible": true, "notes": "Listed. The owner's main TC use."},
+      {"lens_id": "z-180-600-vr", "compatible": true, "notes": "Listed."},
+      {"lens_id": "z-mc-105-f28-vr-s", "compatible": false, "notes": "Not on the compatibility list. Z teleconverters have a protruding front element that fits only the listed telephotos' recessed rear groups. Do not try to mount it."},
+      {"lens_id": "z-24-120-f4-s", "compatible": false, "notes": "Not listed."},
+      {"lens_id": "z-dx-50-250-vr", "compatible": false, "notes": "Not listed."}
+    ]
+  },
+  "body_notes": [
+    {"body": "z8", "note": "AF and subject detection behavior with the TC at f/8–9 was not verified from measured sources in this run."},
+    {"body": "z5ii", "note": "The TC lenses are VR lenses, so Focus-point VR does not apply. Normal IBIS plus lens VR."},
+    {"body": "z50ii", "note": "No IBIS, but both compatible lenses have lens VR. The 1.5× DX crop stacks with the TC (180-600 + TC covers 378–1260 mm FX-equivalent)."}
+  ],
+  "not_compatible_with": [
+    "FTZ / FTZ II: Z teleconverters cannot be used with F lenses through the adapter (Nikon FTZ guide)."
+  ],
+  "field_tips": [
+    "Budget 1 stop: the 70-200 becomes 98–280 f/4, and the 180-600 becomes 252–840 f/8–9. Raise ISO or lower shutter speed accordingly.",
+    "Close-up bonus: on the 70-200 the TC raises maximum magnification by 1.4× at the same minimum focus distance. That is handy for butterflies and flowers.",
+    "Never try it on the MC 105 or other unlisted lenses. The TC's front element can collide with the lens's rear element.",
+    "At 840 mm f/9, stop down little or not at all. f/9 is at or near diffraction onset on all three bodies (check the app's per-body diffraction figure).",
+    "Mount the TC to the lens first, then the pair to the camera, and change it out of wind and dust."
+  ],
+  "sources": [
+    {"id": "wiki-mirror-zmount", "name": "Nikon Z-mount (Wikipedia mirror, wiki.riteme.site)", "url": "https://wiki.riteme.site/wiki/Nikon_Z", "kind": "forum", "tested_on": null, "date": null, "findings": "Lists the TC-1.4x/TC-2.0x compatible lenses: 70-180 f/2.8, 70-200 f/2.8 VR S, 100-400 VR S, 180-600 VR, 400 f/2.8 TC VR S, 400 f/4.5 VR S, 600 f/4 TC VR S, 600 f/6.3 VR S, 800 f/6.3 VR S. Z TCs cannot be used with the FTZ."},
+    {"id": "ftz-guide", "name": "Nikon: Using F-mount NIKKOR lenses with the FTZ II/FTZ (PDF)", "url": "https://download.nikonimglib.com/archive6/amgQQ00igi0U06sJjMP25JWC2H05/FTZ_CompatibleFmount_(En)11.pdf", "kind": "manufacturer", "tested_on": null, "date": null, "findings": "The Z-series TC-1.4x and TC-2.0x cannot be used with the FTZ or FTZ II."}
+  ],
+  "research_notes": "1 stop, ×1.4 focal length and ×1.4 maximum magnification at an unchanged MFD are standard teleconverter optics; the brief supplied them and they are consistent with the list above. The compatibility list comes from a Wikipedia mirror because Nikon USA and Nikon Asia product pages failed to load and the web search budget ran out. Confidence is medium for the listed lenses and medium for the MC 105 being incompatible (absent from the list; the mechanical reason is general Z-TC design knowledge, not a fetched Nikon statement). No measured AF or sharpness impact (Photography Life, Lenstip, DPReview) was retrieved for the 70-200 + TC or 180-600 + TC, so af_impact and sharpness_impact are null. Weight, optical construction and weather sealing of the TC were not captured."
+}

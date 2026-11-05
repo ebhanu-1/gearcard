@@ -1,0 +1,191 @@
+{
+  "id": "z-28-f28-se",
+  "name": "NIKKOR Z 28mm f/2.8 (SE)",
+  "short": "Z 28 f/2.8 SE",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    28
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 28,
+      "f": 2.8
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 7,
+  "rounded_blades": true,
+  "weight_g": 160,
+  "filter_mm": 52,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Dual stepping motors, internal focusing (Sans Mirror spec). Accurate, quiet and quick, though not remarkable for a wide angle (Phillip Reeve). Fast, with a faint whirr (Thom Hogan).",
+    "focus_throw_deg": null,
+    "notes": "Single focus-by-wire ring, no AF/MF switch. Lens firmware 1.10 (separate downloads for the 28mm f/2.8 and the 28mm f/2.8 SE) adds linear 'Focus ring rotation range' options. Focus shift: the focal plane moves backward when stopping down. Hogan says AF on Z bodies handles it up to about f/5.6, but take care at small apertures and close distances. Plastic mount (Reeve, Sans Mirror)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical VR. Body IBIS on the Z8 and Z5 II. None on the Z50 II."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 28,
+        "value": 0.19
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 28,
+        "value": 0.2
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.19 m from the focal plane, 0.2× (Nikon, both versions). The lens is 43 mm long, but no working distance is published, so the field is null. Close-up image quality is notably weaker than at distance (Reeve, Hogan)."
+  },
+  "quick": {
+    "headline": "Small, cheap 28 with a good center that peaks at f/5.6. FX corners hover at Lenstip's decency borderline at every aperture. Stop to f/5.6–f/8 for close-ups, which are soft wide open.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Center good but not peak at f/2.8 (Lenstip Z7: 56 lp/mm. Photography Life: 'relatively weak' at f/2.8, improving at f/4). FX edge 41.0 lp/mm at f/2.8, right at Lenstip's decency floor. Heavy FX vignetting (Photography Life over 2 stops. Reeve 2.5 EV).",
+    "by_focal": [
+      {
+        "focal_mm": 28,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/8",
+        "wide_open_note": "Lenstip (Z7, 45.7MP): center 56 lp/mm at f/2.8, peak 75 lp/mm at f/5.6. DX edge close to 50 lp/mm at most apertures, slightly lower at f/4–f/5.6. FX edge rises only from 41.0 (f/2.8) to 43.5 lp/mm (f/8), the decency borderline. Photography Life (Z7, Imatest): weak at f/2.8, better at f/4, strongest at f/5.6. Reeve (Z7 II) puts the overall peak at f/8, and Hogan says FX corners never fully tighten."
+      }
+    ],
+    "close_up_best": "f/5.6–f/8",
+    "close_up_note": "Reeve (Z7 II): very soft with low contrast at f/2.8 close up, much better at f/4, excellent at f/5.6, peak at f/8, slight softening at f/11. Hogan: close-up is weaker than distance. Photography Life measured fairly high field curvature and a moderate backward focus shift on stopping down, so focus at the working aperture and put the AF point on the subject. No lab source measured sharpness at MFD.",
+    "diffraction_note": "Photography Life (Z7, 45.7MP): sharpness weakens gradually from the f/5.6 peak toward f/16 because of diffraction. Reeve: slight FX softness at f/16, and on DX from f/11. Lenstip's FX edge still gains slightly at f/8. On the Z8, f/8 is the last 'free' stop.",
+    "avoid": [
+      "Don't shoot close-ups at f/2.8 when you need detail: it is very soft there.",
+      "Avoid f/16 on the Z8 (diffraction).",
+      "Don't rely on FX corners for critical landscape work. Lenstip measured them at the decency borderline even at f/8.",
+      "Watch the sun in frame: strong flare at some angles (Reeve)."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Two lab sources on 45.7MP Z7 bodies agree on a center peak at f/5.6 and weak FX corners: Lenstip (lp/mm numbers readable) and Photography Life (Imatest). The corner peak at f/8 rests on Lenstip's FX-edge maximum plus Reeve. The close-up verdict is from hands-on reviews only (Reeve, Hogan)."
+  },
+  "character": {
+    "bokeh": "Better than expected. Photography Life: 'really good', with smooth, soft-edged highlights. Lenstip: pleasing for its class. Reeve: soft close to the subject. Hogan sees onion rings and elongated stopped-down highlights.",
+    "flare_sunstar": "Lenstip: 'sensible' against bright light. Hogan: flare is one of its better traits. Reeve: big flare problems with the sun in frame at some angles. All say there are no good sunstars (7 blades).",
+    "ca": "Lateral CA: Photography Life measured up to 1.94 px (high for a Z prime). Lenstip 'slight'. Reeve and Hogan: profile-corrected, with purple edge fringing visible without a profile. LoCA: Lenstip 'negligible'. Reeve: small at f/2.8, gone by f/5.6. Hogan: visible to f/4, worse close up.",
+    "distortion": "Barrel, corrected automatically in camera. Photography Life measured -2.39% (moderate). Reeve: moderate barrel uncorrected, virtually none corrected. Hogan describes pincushion, which conflicts with both.",
+    "vignetting": "High on FX. Photography Life: above 2 stops in the extreme corners at f/2.8 at infinity (2.20 stops per its 26mm comparison), with f/5.6–f/16 indistinguishable. Reeve (correction off): 2.5 / 2.0 / 1.7 / 1.5 / 1.5 EV at f/2.8 / 4 / 5.6 / 8 / 11. Lenstip: distinct on FX, moderate on DX. Hogan: default Vignette Control still leaves over 1 EV.",
+    "coma_astro": "Lenstip: 'a bit too pronounced' at f/2.8. Photography Life (Z7): a bit of coma, good overall. Reeve: usable for Milky Way at f/2.8.",
+    "focus_breathing": "Almost none (Reeve). Small change from MFD to infinity, unnoticeable for most moves (Hogan).",
+    "other": "The SE has the same optics as the standard version, with retro styling (silver ring, ridged rings) designed for the Z fc. Reeve and Hogan both say the optics are identical. Nikon specs for both: 9 elements in 8 groups (2 aspherical), 0.19 m and 0.2×, 7 rounded blades, 52 mm filter, 43 mm long. The SE is 160 g and 71.5 mm diameter vs 155 g and 70 mm for the standard. No hood included (Sans Mirror)."
+  },
+  "field_tips": [
+    "Street and travel at distance: f/2.8–f/4 is fine for centered subjects. f/5.6 is the measured peak, and f/8 squeezes the most from the corners.",
+    "Close-ups (food, details): stop to f/5.6–f/8 and focus at that aperture. f/2.8 up close is soft and low-contrast.",
+    "Leave Vignette Control and auto distortion on. Over 2 EV of corner falloff at f/2.8 otherwise.",
+    "With the sun in the frame, shift the angle slightly to kill ghosts. The lens has no hood or S-line coatings.",
+    "On the Z50 II it becomes about a 42mm normal with excellent corner-to-corner sharpness (Reeve), and the soft FX corners drop out. Keep shutter speeds up without IBIS."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP: Reeve's Z7 II results apply directly. Excellent f/2.8 center, low-contrast corners until f/4–f/8, peak about f/8. Expect slight diffraction from f/11 (inference)."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: wide-open corner softness is less visible per pixel. f/4–f/8 is a safe range, and f/11 is fine (inference)."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX, about 42mm-equivalent: Reeve rates DX sharpness excellent corner to corner, with diffraction softening at f/11. Hogan says the DX area is very good wide open. No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z 28 mm f/2.8 (SE) (resolution and summary chapters)",
+      "url": "https://lenstip.com/624.4-Lens_review-Nikon_Nikkor_Z_28_mm_f_2.8_(SE)_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), RAW via dcraw",
+      "date": "2022-02",
+      "findings": "Decency level 41–43 lp/mm. Center 56 lp/mm at f/2.8, peak 75 lp/mm at f/5.6 (4 lp/mm below the Z 24 f/1.8 S). DX edge mostly close to 50 lp/mm, slightly lower at f/4–f/5.6. FX edge 41.0 lp/mm at f/2.8 rising to 43.5 at f/8, the decency borderline. Summary (https://www.lenstip.com/624.11-Lens_review-Nikon_Nikkor_Z_28_mm_f_2.8_(SE)_Summary.html) pros: very good center, sensible DX edge, negligible LoCA, slight lateral CA, no spherical aberration problems, low astigmatism, moderate DX vignetting, sensible against bright light, pleasing bokeh, quick silent accurate AF. Cons: distinct FX vignetting, a bit too pronounced coma wide open, plastic barrel and mount. Tested the SE version."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 28mm f/2.8 review (page 2, lab tests)",
+      "url": "https://photographylife.com/reviews/nikon-z-28mm-f-2-8/2",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), Imatest",
+      "date": null,
+      "findings": "Relatively weak at f/2.8, improves at f/4, strongest at f/5.6, then weakens gradually toward f/16 from diffraction. Chart values not readable. Moderate backward focus shift on stopping down. Fairly high field curvature. Vignetting above 2 stops in the extreme corners at f/2.8 at infinity, f/5.6–f/16 indistinguishable. Barrel distortion -2.39%. Lateral CA up to 1.94 px. A bit of coma, good overall. Bokeh 'really good'. 1:5 magnification."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "Phillip Reeve: Review Nikon Nikkor Z 28mm f/2.8",
+      "url": "https://phillipreeve.net/blog/review-nikon-nikkor-z-28mm-f-2-8/",
+      "kind": "review",
+      "tested_on": "Nikon Z7 II (45.7MP), plus a DX body for the APS-C results",
+      "date": null,
+      "findings": "Infinity FX: center excellent at f/2.8, peak f/8. Corners very sharp but lower contrast, improved by f/4. Slight diffraction softness from f/16. DX: excellent corner to corner, diffraction at f/11. Portrait distance: very good at f/2.8 and excellent at f/4. Close-up: very soft and low contrast at f/2.8, much better at f/4, excellent at f/5.6, peak f/8, slight softening at f/11. Vignetting (off) 2.5/2.0/1.7/1.5/1.5 EV at f/2.8–f/11. Almost no focus breathing. Distortion virtually none corrected, moderate barrel uncorrected. Big flare problems with the sun in frame at some angles. Poor sunstars. Slight coma, Milky Way usable. Says the SE is optically identical. Says there is no weather sealing."
+    },
+    {
+      "id": "hogan",
+      "name": "Thom Hogan (Sans Mirror): Nikon 28mm f/2.8 lens review",
+      "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z/nikon-28mm-f28-lens-review.html",
+      "kind": "review",
+      "tested_on": "Nikon Z body, not named in the text (an image filename suggests a Z7 II)",
+      "date": null,
+      "findings": "Strong center. DX area very good wide open. FX corners fair-to-good, never fully tightening, mainly from field curvature. Distance performance better than close-up. 1:5 max magnification ('meh'). Pincushion uncorrected. Strong FX corner vignetting, with over 1 EV left at default Vignette Control. LoCA visible wide open and at f/4, worse close. Lateral CA well corrected. Onion-ring bokeh. Flare one of its better traits. Small breathing. Focal plane moves backward when stopping down, fine up to about f/5.6 with AF. SE has identical optics. No recommendation because of corner issues. Spec page (https://sansmirror.com/lenses/lens-database/lenses-from-camera-makers/nikon-z-mount-lenses/nikkor-z-28mm-f28-2.html): plastic mount, dual AF motors, internal focus, no hood. The SE differs only in ring textures and a silver ring."
+    },
+    {
+      "id": "nikon_spec_se",
+      "name": "Nikon: NIKKOR Z 28mm f/2.8 (SE) product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_28mmf28_se/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.19 m. 0.2×. About 160 g. 52 mm filter. 7 rounded blades. 9 elements in 8 groups (2 aspherical). f/16 minimum. 71.5 × 43 mm. Designed for dust and drip resistance (not guaranteed)."
+    },
+    {
+      "id": "nikon_spec_std",
+      "name": "Nikon: NIKKOR Z 28mm f/2.8 product page (standard version, for comparison)",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_28mmf28/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Same optical specs as the SE: 9 elements in 8 groups (2 aspherical), 0.19 m, 0.2×, 7 rounded blades, f/16, 52 mm filter, 43 mm long. Differs only in weight (about 155 g) and diameter (70 mm)."
+    },
+    {
+      "id": "nikon_fw",
+      "name": "Nikon firmware 1.10 for NIKKOR Z 28mm f/2.8 and 28mm f/2.8 (SE), via Photography Life forum",
+      "url": "https://downloadcenter.nikonimglib.com/en/download/fw/537.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Linked from https://photographylife.com/forum/nikon/lens-firmware-updates-for-nikkor-28mm-f-2-8-40mm-f-2-and-28-75mm-f-2-8: firmware 1.10 (SE: fw/537, standard: fw/536) adds 'Focus ring rotation range' linear options. The Nikon page itself was not fetched."
+    },
+    {
+      "id": "frost_video",
+      "name": "Christopher Frost (YouTube): Nikon Z 28mm f/2.8 (SE) lens review with samples",
+      "url": "https://www.youtube.com/watch?v=_zihXBSQIVM",
+      "kind": "video",
+      "tested_on": "Not readable",
+      "date": null,
+      "findings": "Only the title and channel were confirmed (YouTube oEmbed). Video content was not readable, so no findings are used."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://www.youtube.com/watch?v=_zihXBSQIVM",
+    "access": "title-only",
+    "summary": "YouTube oEmbed confirms the title 'Nikon Z 28mm f/2.8 (SE) lens review with samples' by Christopher Frost. The watch page, description and transcript could not be fetched, so his verdict is unknown and not used."
+  },
+  "research_notes": "1) SE vs standard: Nikon's two product pages list identical optics (9/8, 2 aspherical, 0.19 m, 0.2×, 7 rounded blades, f/16, 52 mm), and Reeve and Hogan both state the SE is optically identical. Lenstip tested a lens it labels '28 mm f/2.8 (SE)'. Differences are cosmetic plus 5 g and 1.5 mm diameter. 2) Follow-up search added Lenstip (Z7) and Photography Life (Z7) lab data, and confidence was raised from low to high. 3) Center peak: Lenstip and Photography Life say f/5.6, Reeve f/8. f/5.6 is used, with sweet spot f/5.6–f/8. 4) Wide-open center: Reeve calls it 'excellent' at f/2.8, while Lenstip (56 lp/mm, well above decency but far from the 75 peak) and Photography Life ('relatively weak') are less positive. The measured view is used. 5) Distortion: barrel per Photography Life (-2.39%) and Reeve. Hogan's 'pincushion' is treated as an outlier. 6) Flare: Lenstip and Hogan say OK, Reeve saw strong flare with the sun in frame at some angles. Both are reported. 7) Weather sealing: Nikon describes a dust and drip resistant design (not guaranteed). Reeve says none. 8) Close-up sharpness is not lab-measured. It comes from Reeve and Hogan. 9) Not on Nikon's Z TC-1.4x compatible list."
+}

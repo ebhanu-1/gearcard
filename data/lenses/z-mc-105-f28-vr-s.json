@@ -1,0 +1,209 @@
+{
+  "id": "z-mc-105-f28-vr-s",
+  "name": "NIKKOR Z MC 105mm f/2.8 VR S",
+  "short": "Z MC 105 f/2.8 VR S",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "macro",
+  "focal_mm": [
+    105
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 105,
+      "f": 2.8
+    }
+  ],
+  "min_aperture_f": 32,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 630,
+  "filter_mm": 62,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Internal focusing, stepping-motor AF, focus-by-wire manual ring. Quiet and accurate. Lenstip timed a full-range sweep plus confirmation at typically over 1 s.",
+    "focus_throw_deg": null,
+    "notes": "Focus limiter switch: FULL, or a close range of about 0.5 m to 0.29 m (Savazzi, measured on a Z8. Nikon names the limiter but publishes no ranges). The limiter only restricts AF, and MF still covers the full range (Savazzi). OpticalLimits recommends the limiter for macro to stop hunting, and says MF is often better at high magnification. Photography Life found AF fast for a macro, but it may need a manual nudge toward close range when switching from a distant subject. The lens LCD shows distance from the sensor plane and the reproduction ratio as its inverse ('1.2' = 1:1.2) (Savazzi). Lens firmware 1.10 added linear focus-ring response and the 'Switch focus/control ring roles' option (Nikon Download Center). No focus shift on stopping down (OpticalLimits, Photography Life). Nikon's focus-shift shooting works with this lens: Cameralabs tested it, and Savazzi notes full in-camera bracketing support."
+  },
+  "stabilization": {
+    "lens_vr": true,
+    "lens_vr_stops": 4.5,
+    "synchro_vr": null,
+    "ibis_on_ftz": null,
+    "notes": "Optical VR rated 4.5 stops (CIPA, NORMAL mode). Nikon's own footnote says VR effectiveness decreases as the shooting distance decreases, so expect much less benefit at 1:1. Photography Life also says VR is less useful for close-up work but steadies the viewfinder. There is no VR switch on the lens. Set VR on/off and Normal/Sport in the camera menu (Savazzi). On the Z50 II (no IBIS) the lens VR is the only stabilization. Synchro VR: still unverified. Nikon's support article (000066751) could not be fetched (robots-blocked); a FredMiranda quote of it (Jan 2026) shows the Z8 and Z5 II as compatible bodies but only a truncated lens list without this lens, which proves nothing either way. Field left null."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 105,
+        "value": 0.29
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 105,
+        "value": 1.0
+      }
+    ],
+    "working_distance_mm_at_max_mag": 138,
+    "effective_aperture_at_max_mag": "f/4.5 displayed at 1:1 when wide open, about 1⅓ stops down from f/2.8 (Nikon spec: aperture range f/2.8–32 at infinity, f/4.5–51 at 0.29 m). Z bodies show the effective value, which changes with focus distance (Savazzi, Z8). Confirmed by Photography Life, OpticalLimits and Cameralabs (f/4.5 effective at 1:1).",
+    "camera_displays_effective": true,
+    "notes": "MFD 0.29 m from the focal plane (Nikon). Free working distance at 1:1: Savazzi measured 138 mm (about 8 mm less than the AF-S 105 VR's 146 mm). Photography Life gives 13.4 cm and OpticalLimits about 13 cm. The lens focuses internally and does not extend. Because the displayed aperture is already effective, the f-number you read on the Z8, Z5 II or Z50 II at 1:1 is the one that governs diffraction. Set a displayed f/5.6 at 1:1 and the iris is at roughly nominal f/3.5. The 1:1 maximum is conservative (OpticalLimits). For more, use extension tubes (Photography Life says they keep AF and electronic aperture), because Nikon Z teleconverters don't fit."
+  },
+  "quick": {
+    "headline": "Sharp edge-to-edge from f/2.8. Best at f/4–f/5.6 at normal distances and f/5.6–f/8 displayed at 1:1. About 138 mm of working room, and no teleconverter.",
+    "sweet_spot": "f/4–f/5.6",
+    "wide_open": "Very sharp at f/2.8 into the corners (Photography Life: 'extremely sharp out to the corners'. OpticalLimits: center 'brutally sharp' from f/2.8. Cameralabs (Z7): very good across the full frame at f/2.8). The only wide-open weaknesses are heavy RAW vignetting (about 2.4 EV) and cat's-eye highlights.",
+    "by_focal": [
+      {
+        "focal_mm": 105,
+        "center_peak": "f/4",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Photography Life: improves a bit by f/4, arguably the sharpest aperture. Corners a hair sharper at f/5.6. OpticalLimits (45MP): minor center gain at f/4. Lenstip (Z7, 45.7MP): excellent center (slightly behind the Tamron 90 VXD and Laowa 90 at f/2.8–f/4), and it clearly outclasses those rivals at the DX and FX edges (DX edge above 70 lp/mm)."
+      }
+    ],
+    "close_up_best": "f/5.6–f/8 displayed (effective) at 1:1",
+    "close_up_note": "Measured on a Z8 at 1:1 (Savazzi): highest resolution at effective f/5.6. Effective f/4.5 is very slightly worse, and effective f/8 is roughly equal to f/4.5 with more depth of field. Cameralabs (Z7) at 1:1: f/4.5 is sharp with slight FX-corner softening, and the corner improves at f/8. Photography Life: sharpness holds at close distances and at 1:1. No field curvature to speak of (Cameralabs, Photography Life), so flat copy work is fine wide open. At 1:3.6, Cameralabs saw sharp results from effective f/3.2 and a slight loss at f/11.",
+    "diffraction_note": "OpticalLimits (45MP): diffraction sets in from about f/8. f/11 is still very usable, f/16 softer, and avoid f/22 for high-resolution work. Photography Life: strong at every aperture except f/16 (diffraction). At 1:1 the displayed value is already effective. Savazzi (Z8) saw slight diffraction loss by effective f/8 at the finest detail and a further drop at f/11.",
+    "avoid": [
+      "Don't go past displayed f/11 at 1:1 on the Z8. Focus-stack at f/5.6–f/8 instead.",
+      "Avoid f/16–f/22 at any distance for high-resolution work.",
+      "Don't mount a Z TC-1.4x or TC-2.0x: the lens is not compatible.",
+      "Don't count on the 4.5-stop VR rating at 1:1. Nikon says the effect shrinks as distance shortens."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Photography Life, OpticalLimits (45MP), Lenstip (Z7) and Cameralabs (Z7) agree the lens is excellent from f/2.8 with only a small gain at f/4–f/5.6. The 1:1 aperture guidance comes from Savazzi's Z8 resolution test, backed by Cameralabs' 1:1 crops. Lenstip and OpticalLimits per-aperture numbers sit in chart images that could not be read."
+  },
+  "character": {
+    "bokeh": "Smooth backgrounds (OpticalLimits; Lenstip: 'very pleasant'). 9 rounded blades. Center highlights are slightly non-circular at f/2.8 and rounder at f/4. Cat's-eye highlights toward the corners are stronger than usual and only fully round by f/8 (OpticalLimits).",
+    "flare_sunstar": "Lenstip lists performance against bright light as a weakness ('should have been better'). Nano Crystal and ARNEO coatings (Nikon). Sunstars not documented by any source used.",
+    "ca": "Lateral CA low: OpticalLimits 0.7–1.1 px at the borders, Lenstip 'slight'. Longitudinal CA practically zero (Lenstip, OpticalLimits).",
+    "distortion": "Slight barrel: Photography Life -0.66%, OpticalLimits 'slight', Lenstip 'slight'.",
+    "vignetting": "High on FX near wide open: OpticalLimits about 2.4 EV RAW at f/2.8, acceptable at f/4, negligible from f/5.6. Auto-correction removes about 1 EV at f/2.8. Lenstip: high on full frame near maximum aperture, negligible on DX.",
+    "coma_astro": "Lenstip: moderate coma, low astigmatism. Not an astro lens.",
+    "focus_breathing": "Sources disagree. Lenstip rated focus breathing 'very strong' (about 168% across the whole range, infinity to MFD). OpticalLimits called it 'minimal'. Savazzi measured the effective focal length shrinking from 102 mm at infinity to about 70 mm at 0.5× and about 49 mm at 1:1. Expect a much wider view than '105mm' at close range, and keep framing changes in mind for focus stacks and video focus pulls.",
+    "other": "Weather-sealed, fluorine front coat (Nikon). Lens OLED panel shows distance and magnification. A customizable control ring and an L-Fn button are on the barrel."
+  },
+  "field_tips": [
+    "Set the limiter to the close range (about 0.5–0.29 m) for insects and flowers so AF doesn't rack out to infinity. For people or landscapes, switch back to FULL.",
+    "At 1:1 the camera already shows the effective aperture (f/4.5 wide open). Shoot displayed f/5.6–f/8 for the sharpest frame on the Z8, and focus-stack rather than going to f/16+.",
+    "You have about 13.5 cm from the front element at 1:1, so a small flash or diffuser can reach in, but keep the lens hood off if it shades the subject.",
+    "Focus-shift shooting works with this lens: start at the nearest point. Cameralabs found step width 4 or lower sharpest at 1:1, and step 7 roughly doubles the spacing.",
+    "Don't buy a Z teleconverter for this lens. Use extension tubes for beyond 1:1, and in portraits shoot f/2.8–f/4 freely: it is sharp wide open."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP: Savazzi's 1:1 tests were on a Z8, with peak at effective f/5.6 and visible diffraction loss starting by f/8–f/11. At normal distances f/4–f/5.6 peaks, and diffraction is visible from about f/8 (OpticalLimits 45MP). Lens VR combines with IBIS. Synchro VR not confirmed."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP (about 5.9 µm pitch): diffraction shows later per pixel, so f/8–f/11 at 1:1 is a reasonable depth-of-field compromise (inference from pixel pitch, not tested). IBIS plus lens VR."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX crop: about 157mm-equivalent framing (1.5×), and the frame uses only the strong DX region (Lenstip DX edge above 70 lp/mm). No IBIS, so lens VR is the only stabilization. Savazzi found AF behaviour on the Z50 II the same as on the Z8."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z MC 105mm f/2.8 VR S review (pages 1–2)",
+      "url": "https://photographylife.com/reviews/nikon-z-mc-105mm-f-2-8-vr-s-macro/2",
+      "kind": "measured",
+      "tested_on": "Not stated on the page (lab chart image not readable)",
+      "date": null,
+      "findings": "Lab sharpness: extremely sharp to the corners even at f/2.8. Improves a bit by f/4, arguably the sharpest aperture. Corners a hair sharper at f/5.6. Strong at all apertures except f/16 (diffraction). Holds its sharpness at close focus, at 1:1 and at infinity. No focus shift and no meaningful field curvature. Distortion -0.66% barrel. Max aperture narrows to f/4.5 at MFD. AF fast for a macro. Page 1 (https://photographylife.com/reviews/nikon-z-mc-105mm-f-2-8-vr-s-macro): MFD 29.2 cm, 1:1, working distance 13.4 cm, 630 g. VR less useful for close-up work. Not compatible with Nikon teleconverters. Extension tubes keep AF and aperture control."
+    },
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits (Klaus): Nikkor Z MC 105mm f/2.8 VR S review",
+      "url": "https://opticallimits.com/?p=7433",
+      "kind": "measured",
+      "tested_on": "45MP Nikon Z body (model not named)",
+      "date": "2026-07",
+      "findings": "Center 'brutally sharp' from f/2.8 with a minor gain at f/4. Outer field very good. Diffraction from about f/8, f/11 still very usable, f/16 softer, avoid f/22 for high-megapixel work. Effective aperture drops to f/4.5 at high magnification. Working distance about 13 cm at 1:1. Use the focus limiter for macro. No focus shift. Vignetting about 2.4 EV RAW at f/2.8 (about 1 EV less corrected), negligible from f/5.6. Lateral CA 0.7–1.1 px at the borders, LoCA negligible. Slight barrel distortion. Cat's-eyes until f/8. Focus breathing 'minimal'. Not compatible with teleconverters. MTF values only in a chart image."
+    },
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z MC 105 mm f/2.8 VR S (resolution, focus breathing, summary chapters)",
+      "url": "https://www.lenstip.com/694.4-Lens_review-Nikon_Nikkor_Z_MC_105_mm_f_2.8_VR_S_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), RAW",
+      "date": null,
+      "findings": "Center roughly equal to the Tamron 90 VXD and Laowa 90 2× within error, but the weakest of the three at f/2.8 and f/4. Only lens of the group above 70 lp/mm at the DX edge. Clearly outclasses rivals at the FX edge. Decent level 40–42 lp/mm, record 93.5 lp/mm. Per-aperture lp/mm only in chart https://www.lenstip.com/upload2/300810_roz.png (not readable). Summary (694.11): excellent center, very good DX edge, good FX edge, almost zero LoCA, slight lateral CA, slight distortion, moderate coma, low astigmatism, very pleasant bokeh, efficient VR, high FX vignetting near wide open, weak against bright light, very strong focus breathing. Chapter 694.10: about 168% breathing infinity to MFD. A full AF sweep typically takes over 1 s."
+    },
+    {
+      "id": "savazzi",
+      "name": "Enrico Savazzi: Nikon Z MC 105 mm f/2.8 VR S (macro optical tests)",
+      "url": "https://www.savazzi.net/photography/nikon-z-105-2-8-vr.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z8 (45.7MP), resolution target at 1:1. Handling also on a Z50 II",
+      "date": null,
+      "findings": "Working distance at 1:1: 138 mm (AF-S 105 VR: 146 mm). Effective aperture at 1:1 about f/4.6 (about ⅔ stop faster than the thin-lens f/5.6). The camera displays the effective aperture according to focus distance. At 1:1 highest resolution at effective f/5.6, f/4.5 slightly worse, f/8 about equal to f/4.5. Diffraction slightly visible at f/8 and more at f/11. Effective focal length 102 mm at infinity, about 70 mm at 0.5×, about 49 mm at 1:1. Limiter FULL or 0.5–0.29 m, AF only. Does not accept teleconverters (rear element too close to the mount). Supports in-camera focus bracketing. VR switch is in the camera menu."
+    },
+    {
+      "id": "cameralabs",
+      "name": "Cameralabs: Nikon Z MC 105mm f/2.8 VR S review (Quality page)",
+      "url": "https://www.cameralabs.com/nikon-z-mc-105mm-f2-8-vr-s-review/2/",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), Siemens star and real-world crops",
+      "date": null,
+      "findings": "At about 5 m: very good across the full frame at f/2.8 (clearly ahead of the Laowa, near the Sigma 105 DG DN), slight gain at f/4, practically no field curvature. At about 1 km: very sharp corners, little gain from stopping down. At 1:3.6: very sharp wide open (effective f/3.2), slight diffraction loss at f/11. At 1:1: f/4.5 effective sharp with slight FX-corner softening, corner better at f/8. Focus-shift shooting tested: step width 1–4 gives the sharpest stacks, step 7 doubles the spacing. At 1:1 with f/4.5, step 4 is about 100 µm."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon: NIKKOR Z MC 105mm f/2.8 VR S product page",
+      "url": "https://imaging.nikon.com/lineup/lens/z-mount/z_mc105mmf28_vr_s/index.htm",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.29 m. 1.0× max reproduction. About 630 g. 62 mm filter. 9 blades, rounded opening. 4.5-stop VR. 16 elements in 11 groups. Aperture range f/2.8–32 at infinity and f/4.5–51 at 0.29 m. Focus limiter present (no ranges given)."
+    },
+    {
+      "id": "nikon_release",
+      "name": "Nikon news release (June 2021): NIKKOR Z MC 105mm f/2.8 VR S",
+      "url": "https://www.nikon.com/news/2021/0602_lens_02.htm",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": "2021-06",
+      "findings": "0.29 m MFD, 1.0×. 4.5-stop VR (CIPA, NORMAL), with the footnote that VR effectiveness decreases as shooting distance decreases. The focus limiter shortens focusing time for close-ups. Nano Crystal and ARNEO coats, fluorine coat, dust and drip resistance."
+    },
+    {
+      "id": "nikon_tc14",
+      "name": "Nikon: Z TELECONVERTER TC-1.4x product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_tc_14x/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Compatible lenses listed: Z 70-180 f/2.8, 70-200 f/2.8 VR S, 100-400 VR S, 180-600 VR, 400 f/2.8 TC VR S, 400 f/4.5 VR S, 600 f/4 TC VR S, 800 f/6.3 VR S. The MC 105 is not listed."
+    },
+    {
+      "id": "nikon_fw",
+      "name": "Nikon Download Center: NIKKOR Z MC 105mm f/2.8 VR S firmware 1.10",
+      "url": "https://downloadcenter.nikonimglib.com/en/download/fw/457.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": "2022-08",
+      "findings": "1.10 adds linear focus-ring rotation and support for 'Switch focus/control ring roles'. Nothing about Synchro VR."
+    },
+    {
+      "id": "synchro_vr_forum",
+      "name": "FredMiranda forum thread 'Nikon IBIS + VR: Which lenses work & how?' (post #10, ekam, 2026-01-07) quoting Nikon support article 000066751",
+      "url": "https://www.fredmiranda.com/forum/topic/1922057/",
+      "kind": "forum",
+      "tested_on": null,
+      "date": "2026-01",
+      "findings": "Quotes Nikon's Synchro VR support article (https://www.nikonimgsupport.com/eu/BV_article?articleNo=000066751&ctry=gb&lang=en_GB, which could not be fetched: robots-blocked). Compatible cameras: Z9, Z8, Z6III, Z5II, Zf, ZR. Synchro VR runs when a compatible lens is on a compatible body with body stabilization on. Visible lens entries: Z 28-400 VR, Z 70-200 f/2.8 VR S (marked with an unexplained asterisk), Z 100-400 VR S, Z 400 f/2.8 TC VR S; the quoted list is truncated ('...Show more'), so absence of a lens proves nothing."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the Z MC 105 was found. YouTube-restricted and open web searches surfaced reviews by other channels, including 'Nikon Z MC 105mm f/2.8 VR S lens review with samples images & video' (https://www.youtube.com/watch?v=2SHHjcUNKvw), which YouTube's oEmbed credits to Vahagraphy, not Frost. YouTube watch pages could not be fetched. Nothing is attributed to him."
+  },
+  "research_notes": "1) Focus breathing conflict: Lenstip says 'very strong' (about 168% from infinity to MFD), and OpticalLimits says 'minimal'. Savazzi's measured effective focal length (102 → about 49 mm at 1:1) supports Lenstip that framing changes a lot over the full range. OpticalLimits may have judged breathing over a short video pull. Both are reported. 2) Working distance: 138 mm (Savazzi measured), 134 mm (Photography Life), about 130 mm (OpticalLimits). 138 is used. 3) Effective aperture: Nikon spec f/4.5 at 0.29 m. Savazzi calculates f/4.6 and says Z bodies display the effective value. The drop is about 1⅓ stops at 1:1, less than the thin-lens 2 stops. 4) Focus-limiter ranges come only from Savazzi. Nikon pages fetched give none, and Lenstip confirms two ranges. 5) Synchro VR: no Nikon document fetched lists this lens for Synchro VR on the Z8 or Z5 II. Null, to verify. 6) Lenstip and OpticalLimits lp/mm or LW/PH values are in chart images, which WebFetch could not read. Verdicts rely on their text plus Photography Life and Cameralabs. 7) The Photography Life lab body is not named on the pages fetched. 8) Elements: Nikon says 16/11, Savazzi lists 16/10. Nikon is used (not stored in the schema anyway). Savazzi weighed 620 g vs Nikon's 630 g. 9) Z TC compatibility is confirmed negative by Nikon's TC-1.4x list, Photography Life, OpticalLimits and Savazzi (rear element too close to the mount)."
+}

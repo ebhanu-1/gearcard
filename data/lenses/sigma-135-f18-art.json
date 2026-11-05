@@ -1,0 +1,226 @@
+{
+  "id": "sigma-135-f18-art",
+  "name": "Sigma 135mm F1.8 DG HSM | Art (Nikon F)",
+  "short": "Sigma 135 f/1.8 Art",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    135
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 135,
+      "f": 1.8
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 1130,
+  "filter_mm": 82,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "HSM (Hyper Sonic Motor, ring-type) with full-time manual override. Three-position focus limiter: FULL, 0.875–1.5 m, 1.5 m–infinity.",
+    "focus_throw_deg": null,
+    "notes": "Sigma stated in 2018 that its current lenses keep full functionality on Nikon Z via the FTZ (TechRadar). Photography Life's FTZ guide lists Sigma HSM Art lenses as compatible. Firmware: in Oct 2018 and Jan 2019 Sigma released firmware for the Nikon-mount 135 Art (and 85 Art) that fixes occasional overexposure when stopping down from f/5.6 on Z bodies via the FTZ (Nikon Rumors). It is installed with the Sigma USB Dock (UD-01 for Nikon) and SIGMA Optimization Pro 1.5.0 or later, so check the lens firmware before relying on it. Z8 firmware 3.00 (July 2025): Nikon warned about installing it with non-NIKKOR lenses or non-FTZ adapters attached, and Tamron and Viltrox reported problems (Imaging Resource). Sigma was not named. Remove the Sigma before updating body firmware and test after. Eye/subject detection: no Sigma or Nikon statement found. BCG forum users report detection working with adapted F lenses generally (body-side), but not with this lens specifically. AF accuracy: TDP measured about 95% consistency at the center point on a 1D X II and the upper 80s% on a 5Ds R at f/1.8. Dustin Abbott found outer points less consistent on Canon. The Z bodies focus on-sensor, which removes DSLR phase-detect calibration error (inference)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon's FTZ II page says that with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. The Sigma reports its focal length over the CPU contacts, so IBIS should set itself. That is inference, not verified for this lens on Z. With about 1.26 kg of lens plus adapter, the FTZ II tripod-free design means the lens carries the load, so support the lens, not the body."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 135,
+        "value": 0.875
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 135,
+        "value": 0.2
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.875 m and 1:5 (0.20×) per Photography Life and TDP specs. TDP measured 0.838 m on its copy. TDP: sharpness holds at minimum focus distance. Dustin Abbott: the Zeiss Milvus 135/2 did better at MFD. The 0.875–1.5 m limiter position is the close-portrait range."
+  },
+  "quick": {
+    "headline": "One of the sharpest portrait lenses made: use it wide open at f/1.8 with confidence. It peaks around f/2.8–f/4, but it is heavy (about 1.26 kg with the FTZ II).",
+    "sweet_spot": "f/2.8–f/4",
+    "wide_open": "Excellent at f/1.8 across the frame. Lenstip (5D III, 22MP): FX edge 44.1 lp/mm wide open, higher than the Canon 135L's best center (43.2). Photozone (5Ds R, 50MP): center tack sharp and borders and corners very good at f/1.8. TDP (5Ds R): sharp corner to corner at f/1.8. Vignetting about 1.4–2 EV wide open.",
+    "by_focal": [
+      {
+        "focal_mm": 135,
+        "center_peak": "f/2.8",
+        "corners_peak": "f/4",
+        "wide_open_note": "Lenstip center record of 51.6 lp/mm at f/2.8 (5D III). Photozone (50MP): center improves only marginally stopped down, with the sweet spot at f/4 for excellent performance across the field. Lensrentals (10 copies, optical bench): MTF holds 'impressively well' to the corners, and one average copy at f/2.8 was markedly sharper than at f/1.8. TDP: corners improve modestly to f/4, mostly as vignetting clears."
+      }
+    ],
+    "close_up_best": "f/2.8–f/4",
+    "close_up_note": "TDP (5Ds R): sharpness holds at MFD (0.20×). No source gives per-aperture data close up. The general f/2.8–f/4 peak is used. At 0.875 m, f/1.8 depth of field is only millimetres deep (inference), so stop down for whole-face sharpness. No focus shift (Lenstip, Photozone), so the focus point stays put as you stop down.",
+    "diffraction_note": "Photozone (Canon 5Ds R, 50MP, about 4.1 µm pitch, very close to the Z8's 4.35 µm): diffraction first noticeable at f/8, f/11 still usable. Expect the same on the Z8. On the Z5 II (about 5.9 µm), f/8 is effectively free.",
+    "avoid": [
+      "Don't stop down 'for safety' on portraits: f/1.8–f/2.8 is already excellent. Past f/5.6 you only lose resolution on the Z8.",
+      "Don't carry it by the body: support the lens, since the adapter joint takes about 1.26 kg.",
+      "Don't update Z8 firmware with the Sigma mounted. Keep the Sigma lens firmware current via the USB Dock."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Photozone (50MP), Lenstip (22MP), TDP (50MP) and Lensrentals (bench) all agree: excellent at f/1.8, best around f/2.8–f/4, diffraction from f/8. Two of these tests used 50MP bodies, so the verdict transfers directly to the Z8. All are Canon-mount copies (same optics, Nikon mount not separately tested)."
+  },
+  "character": {
+    "bokeh": "Creamy and smooth. Photozone: transition blur 'perfectly symmetrical', virtually no outlining in highlights from f/1.8 to f/2.8 (slight at f/4), cat's eye in the corners wide open, reduced at f/2.8. Dustin Abbott: smoother transitions than the Sigma 85 Art. TDP notes an occasional seatbelt-like artifact in some highlights.",
+    "flare_sunstar": "Strong flare resistance. Dustin Abbott: much better than the Canon 135/2L. TDP: flare only starts to appear at f/16. 9 rounded blades give 18-point sunstars at narrow apertures (TDP).",
+    "ca": "Lateral CA is negligible: Lenstip max 0.02%, Photozone under 0.5 px. LoCA is low to moderate: Photozone saw purple in front and green behind, visible through f/4. Lenstip says it is noticeable (its only real con). TDP: mild at f/1.8, largely gone by f/2. Dustin Abbott: almost perfectly controlled. Far milder than the Nikon 85/1.4G.",
+    "distortion": "About 0.18% pincushion (Photozone), essentially none.",
+    "vignetting": "Photozone (5Ds R): 1.4 EV at f/1.8, irrelevant from f/2.8. TDP: about 2 stops at f/1.8, 1.5 at f/2, 0.5 at f/2.8, 0.3 at f/4. Lenstip lists noticeable FX vignetting wide open as a con. Nikon in-camera vignette control is not expected to support third-party lenses (inference), so correct it in raw.",
+    "coma_astro": "Lenstip: very good coma correction, slight astigmatism.",
+    "focus_breathing": "TDP: subjects noticeably change size with large focus changes (not quantified).",
+    "other": "No focus shift and no spherical-aberration issues (Lenstip, Photozone). Lensrentals' 10-copy sample was tightly grouped (one slightly soft outlier). 13 elements in 10 groups. Weight 1130 g per published Sigma specs (Photography Life, TDP). TDP measured 1135 g, and a Nikon-mount-specific figure was not found."
+  },
+  "field_tips": [
+    "Stage dance: f/1.8–f/2 is fully usable, with no need to stop down for sharpness. From the audience it frames about one dancer full-length at 10–15 m (inference). On the Z50 II it acts like about 200mm.",
+    "Set the focus limiter to 1.5 m–infinity for stage work. It cuts hunting (Dustin Abbott). Use 0.875–1.5 m only for tight portraits.",
+    "Family portraits: f/2–f/2.8 for a single face, f/4 for small groups. f/4 is the edge-to-edge sweet spot (Photozone 50MP).",
+    "Keep Sigma firmware current (USB Dock UD-01, Sigma Optimization Pro). The Z-specific fix cures overexposure when stopped past f/5.6. Detach the lens before updating camera firmware.",
+    "With about 1.26 kg on the FTZ II and only 3-axis IBIS, handhold at 1/250 s or faster on the Z8 and Z5 II. On the Z50 II (no IBIS) use 1/400 s or faster, or a monopod."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "The 50MP 5Ds R tests (Photozone, TDP) match the Z8's pixel pitch, so expect excellent f/1.8 and a peak at f/2.8–f/4, with diffraction from f/8. 3-axis IBIS via FTZ II."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP is easily out-resolved, so f/1.8 is effectively peak sharpness per pixel. 3-axis IBIS via FTZ II. Heavy on the smaller body: support the lens."
+    },
+    {
+      "body": "z50ii",
+      "note": "About 200mm-equivalent framing, and vignetting falls outside the DX frame. No IBIS, so keep the shutter fast or use a monopod."
+    }
+  ],
+  "tc_compatible": null,
+  "sources": [
+    {
+      "id": "photozone",
+      "name": "Photozone/OpticalLimits: Sigma 135mm f/1.8 DG HSM Art (Canon) review, analysis page",
+      "url": "https://photozone.de/canon_eos_ff/1008-sigma135f18art?start=1",
+      "kind": "measured",
+      "tested_on": "Canon EOS 5Ds R (50MP FX, about 4.1 µm)",
+      "date": null,
+      "findings": "Distortion about 0.18% pincushion. Vignetting 1.4 EV at f/1.8, irrelevant from f/2.8. Center tack sharp wide open, improving marginally stopped down. Borders and corners very good at f/1.8. Sweet spot f/4 with excellent performance across the field. Diffraction first noticeable at f/8, f/11 usable. Low field curvature, very good centering. Lateral CA under 0.5 px at the borders. Bokeh: symmetrical transition, no outlining f/1.8–f/2.8, slight at f/4, cat's eye in corners wide open. LoCA comparatively low but visible (purple front, green behind) through f/4. No focus shift. LW/PH values are in a chart image (not read)."
+    },
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Sigma A 135 mm f/1.8 DG HSM (resolution, CA and summary chapters)",
+      "url": "https://www.lenstip.com/501.4-Lens_review-Sigma_A_135_mm_f_1.8_DG_HSM_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Canon EOS 5D Mark III (22MP FX), RAW MTF50",
+      "date": null,
+      "findings": "Best result 51.6 lp/mm at f/2.8, a new record on that sensor (previous 49.7 Sigma 85 Art, 49.2 Otus 28). Decency level 30–32, best primes 45–48. Center noticeably sharper than the edge. Summary (https://www.lenstip.com/501.11-Lens_review-Sigma_A_135_mm_f_1.8_DG_HSM_Summary.html): FX edge 44.1 lp/mm wide open, versus the Canon 135/2L's best center of 43.2. Pros: excellent center and edges on APS-C and FX, no spherical aberration problems, almost no lateral CA or distortion, very good coma, slight astigmatism, quiet accurate AF. Cons: noticeable vignetting wide open on FX, LoCA slightly too high. CA chapter (https://www.lenstip.com/501.5-Lens_review-Sigma_A_135_mm_f_1.8_DG_HSM_Chromatic_and_spherical_aberration.html): lateral CA max 0.02%, LoCA moderate but noticeable, no focus shift. Per-aperture values are in a chart image (not read)."
+    },
+    {
+      "id": "tdp",
+      "name": "The-Digital-Picture: Sigma 135mm f/1.8 DG HSM Art lens review (Bryan Carnathan) + specifications",
+      "url": "https://the-digital-picture.com/Reviews/Sigma-135mm-f-1.8-DG-HSM-Art-Lens.aspx",
+      "kind": "measured",
+      "tested_on": "Canon EOS 5Ds R (50MP) for ISO 12233 crops. AF tests on 1D X II, 5Ds R, 77D",
+      "date": "2017",
+      "findings": "Extremely sharp center and sharp corners at f/1.8. Slight contrast gain at f/2–f/2.8, corners improve modestly to f/4 (mainly vignetting). Vignetting about 2 / 1.5 / 0.5 / 0.3 stops at f/1.8 / f/2 / f/2.8 / f/4. Mild axial CA at f/1.8, largely gone by f/2. Low lateral CA. Flare only from f/16. 18-point sunstars. AF consistency at f/1.8 (about 2,000 frames): about 95% center and 92% peripheral on the 1D X II, upper 80s% center on the 5Ds R. MFD spec 875 mm (838 mm measured), 0.20×, sharpness holds at MFD. Noticeable focus breathing. Specs page (https://www.the-digital-picture.com/Reviews/Lens-Specifications.aspx?Lens=1122): 1130 g spec, 1135 g measured, 13/10, 9 rounded blades, 82 mm, f/16, limiter FULL / 1.5 m–inf / 0.875–1.5 m."
+    },
+    {
+      "id": "lensrentals",
+      "name": "Lensrentals blog: Sigma 135mm f/1.8 Art MTF charts and a look behind the curtain",
+      "url": "https://www.lensrentals.com/blog/2017/04/sigma-135mm-f1-8-art-mtf-charts-and-a-look-behind-the-curtain/",
+      "kind": "measured",
+      "tested_on": "Optical bench (Olaf), 10 copies, lens only",
+      "date": "2017-04",
+      "findings": "MTF maintained 'impressively well all the way to the corners'. Nearly flat field. Minor sagittal/tangential separation. Tight copy grouping (one slightly soft outlier excluded). An average copy at f/2.8 markedly sharper than at f/1.8. Clearly better than the Canon 135/2L, about even with the Zeiss 135/2 APO (Sigma possibly better at the edges), better than the Nikon 70-200/2.8E FL at 135mm. No numbers in text."
+    },
+    {
+      "id": "dustinabbott",
+      "name": "Dustin Abbott: Sigma 135mm f/1.8 HSM ART review",
+      "url": "https://dustinabbott.net/2017/05/sigma-135mm-f1-8-hsm-art-review/",
+      "kind": "review",
+      "tested_on": "Canon EOS 5D Mark IV (30MP)",
+      "date": "2017-05",
+      "findings": "Slightly behind the Sigma 85 Art and the Zeiss Milvus 135/2 in absolute sharpness, ahead of the Tamron lenses compared. LoCA almost perfectly controlled. Creamy bokeh with smoother transitions than the 85 Art. Strong flare resistance. Vignetting present at f/1.8, low by f/2. MFD 0.87 m, 0.20×. AF fast, center consistency good, outer points less consistent. Focus limiter reduces hunting. 1130 g, front-heavy."
+    },
+    {
+      "id": "sigma_spec",
+      "name": "Photography Life lens database: Sigma 135mm f/1.8 DG HSM Art (spec summary)",
+      "url": "https://photographylife.com/lenses/sigma-135mm-f1-8-dg-hsm-art",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 87.5 cm, 1:5, 1130 g, 82 mm filter, 9 rounded blades, 13/10, f/16, focus limiter, 91.4 × 114.9 mm. Sigma's own spec page was not fetched."
+    },
+    {
+      "id": "sigma_fw_z",
+      "name": "Nikon Rumors: Sigma releases new firmware updates for several Nikon F-mount lenses",
+      "url": "https://nikonrumors.com/2019/01/26/sigma-releases-new-firmware-updates-for-several-nikon-f-mount-lenses.aspx/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": "2019-01",
+      "findings": "Sigma firmware for Z7 + FTZ use. 135mm F1.8 DG HSM Art and 85 Art: fixes occasional overexposure when stopping down from f/5.6. Installed via the Sigma USB Dock with SIGMA Optimization Pro 1.5.0 or later. Improved version of an Oct 2018 release."
+    },
+    {
+      "id": "sigma_z_statement",
+      "name": "TechRadar: Sigma says its lenses are fully compatible with the Nikon Z7",
+      "url": "https://www.techradar.com/news/sigma-says-its-lenses-are-fully-compatible-with-the-nikon-z7",
+      "kind": "review",
+      "tested_on": null,
+      "date": "2018",
+      "findings": "Sigma: current lenses work with full functionality via the FTZ. Lenses without an AF motor are MF only. Some pre-Nov-2013 lenses incompatible with recent DSLRs won't work."
+    },
+    {
+      "id": "z8_fw3",
+      "name": "Imaging Resource: Nikon Z8 firmware 3.00 reportedly causing issues with third-party lenses",
+      "url": "https://old.imaging-resource.com/news/2025/07/03/nikon-z8-firmware-3.00-reportedly-causing-issues-with-third-party-lenses",
+      "kind": "review",
+      "tested_on": null,
+      "date": "2025-07",
+      "findings": "Nikon warned about updating with non-NIKKOR Z lenses or non-FTZ adapters attached. Tamron and Viltrox reported issues. Sigma not mentioned. No fix reported at the time."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "With a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. F lenses with built-in AF motors keep full AF. Third-party lenses not addressed."
+    },
+    {
+      "id": "pl_ftz_guide",
+      "name": "Photography Life: Nikon FTZ and FTZ II adapter lens compatibility, explained",
+      "url": "https://photographylife.com/nikon-ftz-adapter-lens-compatibility",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "Many Sigma HSM Art/Sports/Contemporary lenses are fully compatible. Some (50 Art, 24-35 Art, 85 Art) need current firmware for past Z issues (AF on very blurred subjects, video stopping, overexposure)."
+    },
+    {
+      "id": "frost_lensvid",
+      "name": "LensVid: Sigma 135mm f/1.8 DG HSM Art lens hands-on review (embeds Christopher Frost's video)",
+      "url": "https://lensvid.com/gear/sigma-135mm-f1-8-dg-hsm-art-lens-hands-on-review",
+      "kind": "video",
+      "tested_on": "Canon EOS 6D (20MP), per the LensVid write-up",
+      "date": "2017-11",
+      "findings": "Third-party write-up (Iddo Genuth) of Frost's video. See chris_frost."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://www.youtube.com/watch?v=Vi59UXGVGQg",
+    "access": "description",
+    "summary": "The video page itself could not be fetched (YouTube is blocked here). Its title, confirmed via noembed/oEmbed with author 'Christopher Frost', is 'Sigma 135mm f/1.8 DG HSM 'Art' lens review with samples (Full-frame & APS-C)'. What was read is LensVid's written summary of the video (Nov 2017), not a transcript. Per that summary: optically superb, out-resolving the 20MP Canon 6D he tested on (the summary notes a higher-resolution body would be a better test). Very little CA or flare, good wide open. About 1.2 kg. His main criticism is AF accuracy, a precision issue with newer fast Sigma lenses, where the summary cites 70–80% hits with the Sigma 50-100 f/1.8 as a similar case. That AF finding is from a Canon DSLR (phase-detect) and may not carry over to on-sensor AF on Z bodies (inference)."
+  },
+  "research_notes": "1) All lab tests used Canon EF copies. Optics are identical across mounts, but no Nikon-mount lab test was found. 2) Weight: 1130 g is the published figure (Photography Life, TDP). Some retailers list other figures for the Nikon mount, and Sigma's own page was not fetched, so the Nikon-F-specific weight is unverified. The FTZ II itself adds roughly 135 g (from memory, not re-verified here), hence 'about 1.26 kg'. 3) Lenstip per-aperture resolution and Photozone LW/PH are chart images and not read. Only text-stated numbers are used. 4) Eye-detection with this lens on Z: no direct confirmation found. Body-side detection with adapted lenses is forum-reported (BCG, AF-S/AF-P Nikon lenses). 5) In-camera vignette/distortion control for third-party lenses on Z is assumed unsupported (not verified). 6) tc_compatible null: Sigma TC-1401/2001 compatibility for the Nikon mount was not checked, and Nikon TC-14E etc. are not intended for third-party lenses. 7) Z8 FW 3.00 warning: Sigma not named. Current status (Nov 2026) not checked. 8) Imaging-Resource/SLRgear full lab page (blur index) and Thom Hogan's dslrbodies review did not return readable content."
+}

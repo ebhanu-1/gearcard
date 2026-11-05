@@ -1,0 +1,193 @@
+{
+  "id": "z-dx-18-140-vr",
+  "name": "NIKKOR Z DX 18-140mm f/3.5-6.3 VR",
+  "short": "DX 18-140 VR",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "DX",
+  "kind": "zoom",
+  "focal_mm": [
+    18,
+    140
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 18,
+      "f": 3.5
+    },
+    {
+      "focal_mm": 140,
+      "f": 6.3
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 7,
+  "rounded_blades": true,
+  "weight_g": 315,
+  "filter_mm": 62,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "STM (stepping motor)",
+    "focus_throw_deg": null,
+    "notes": "Minimum aperture is f/22 at 18mm and f/40 at 140mm (Nikon). AF is reasonably snappy and occasionally slows at 140mm (Hogan, Z50). PhotoReview found AF very good, silent and smooth. The lens extends when zoomed (73 × 90 mm retracted, per Nikon). Nikon says it is dust- and drip-resistant, not guaranteed in all conditions."
+  },
+  "stabilization": {
+    "lens_vr": true,
+    "lens_vr_stops": 5.0,
+    "synchro_vr": null,
+    "ibis_on_ftz": null,
+    "notes": "Nikon rates it at 5.0 stops (CIPA, DX body, NORMAL, at 140mm). Rockwell measured about 3¾ stops at 18mm and 4 stops at 50mm and 140mm on the Z9. Hogan found about 5 stops achievable with careful technique. There is a Sport VR mode for panning (Hogan). PhotoReview got a high hit rate at 1/60 s at 140mm. On the Z50 II this is the only stabilisation. Synchro VR support was not confirmed by any source found, so it is null."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 18,
+        "value": 0.2
+      },
+      {
+        "focal_mm": 140,
+        "value": 0.4
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 140,
+        "value": 0.33
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "Nikon gives 0.2 m at 18mm and 0.33x at 140mm. PhotoReview and Hogan give 0.4 m at 140mm. Rockwell measured shorter distances on his copy: 16 cm at 18mm, 23 cm at 35mm, 32 cm at 70mm and 37 cm at 140mm. PL: 0.33x fills the DX frame with a subject about 7.1 cm wide. Working distance at 140mm is roughly 0.4 m − 90 mm lens − 16 mm flange, about 0.29 m or less because the barrel extends when zoomed. This is arithmetic, not measured, so the field is null."
+  },
+  "quick": {
+    "headline": "Do-everything DX zoom: best from 18mm to 70mm. Stop down 1–2 stops past 100mm and at close focus, and stay at f/8 or wider for maximum detail.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Good at the wide end: at 18mm the center barely changes from f/3.5 to f/5.6 (Hogan), and PL calls it 'pretty sharp, especially at the wide end'. From 50mm to 70mm the corners nearly match the center wide open (Hogan). Beyond 70–100mm, center resolution falls a little short (PhotoReview), and the corners are only fair to good wide open (Hogan).",
+    "by_focal": [
+      {
+        "focal_mm": 18,
+        "center_peak": "f/3.5–f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Corners need f/5.6 for their best (Hogan, Z50). Correcting −5.91% barrel distortion costs a little corner sharpness (PL). PhotoReview: the edge exceeded expectations only from about f/4.5 to f/7.1."
+      },
+      {
+        "focal_mm": 50,
+        "center_peak": "f/5.6–f/8",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Corners very good wide open, nearly matching the center (Hogan, 50–70mm). PL: the 16-50 is a little sharper at 50mm, but the difference is never huge."
+      },
+      {
+        "focal_mm": 140,
+        "center_peak": "f/8",
+        "corners_peak": "f/8–f/9",
+        "wide_open_note": "Center good, corners only good to sometimes fair and inconsistent above 70mm. Stop down 1–2 stops from f/6.3 (Hogan). PhotoReview: center falls a little short beyond 70mm. PL: the 50-250 is clearly sharper at long focal lengths."
+      }
+    ],
+    "close_up_best": "f/8–f/11 at 140mm",
+    "close_up_note": "Weak at close focus. Hogan: center only marginally good and corners barely fair at minimum distance. Rockwell (Z9 DX crop): at 140mm close focus, a little soft at f/6.3 and much sharper at f/11. f/11 sits at the diffraction edge on 20.9MP (PhotoReview), so try f/8 first and go to f/11 when you also need the depth of field.",
+    "diffraction_note": "PhotoReview (Imatest, Z50 20.9MP): diffraction noticeable from about f/10, and resolution drops sharply from f/11 to f/22 at all focal lengths. PL: the smallest apertures lose sharpness to diffraction. Avoid f/16 and smaller (f/22–f/40 available) except for sunstars.",
+    "avoid": [
+      "f/16–f/40: steep diffraction loss on the Z50 II.",
+      "Wide open at 100–140mm when the corners matter: stop down 1–2 stops.",
+      "Shooting into the sun at 18mm without a hood: Hogan rates flare the weakest trait at the wide end."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two labs (PhotoReview Imatest on the Z50, and Photography Life DX lab) plus Hogan's Z50 field test agree on f/4.5–f/8 peaks and diffraction from about f/10. Numeric MTF values are in chart images that could not be read. Close-up guidance rests on Hogan plus Rockwell's subjective close test."
+  },
+  "character": {
+    "bokeh": "PhotoReview: better than expected, but smooth background transitions at wide angles are near impossible with these apertures. Not otherwise assessed.",
+    "flare_sunstar": "Conflict. PL: hardly any flare with excellent contrast (some extra flare from dust on the front element). Hogan: flare is the lens's weakest trait, especially at the wide end. Sunstars: PL found well-defined 14-point stars at f/11–f/16, and Rockwell also saw 14-point stars at the smallest apertures.",
+    "ca": "Low. PhotoReview (corrections off): lateral CA well within the negligible band, highest at 18mm. Hogan: longitudinal CA virtually absent, and lateral CA up to about 1 px uncorrected wide open at the long end. PL: never extreme.",
+    "distortion": "Uncorrected: −5.91% barrel at 18mm (PL), almost none at 24mm, slight pincushion at 140mm (PhotoReview). Always corrected in-camera, leaving about 1% barrel at 18mm (Hogan).",
+    "vignetting": "Up to 2.34 stops wide open, depending on focal length (PL). Strong at 18mm and fine by f/5.6. Low from 24mm to about 100mm, then 1.5+ stops again at the long end. Default in-camera correction is weak, so stopping down one stop helps (Hogan). Rockwell (JPEG) found it negligible.",
+    "coma_astro": "Not tested by any source found.",
+    "focus_breathing": "Reasonably well suppressed for a consumer zoom (Hogan). Image slightly smaller at closer focus, unlikely to be noticed (Rockwell). PhotoReview: no noticeable breathing.",
+    "other": "Not parfocal, but zoom-induced focus shift is minimal (Hogan). Hogan rates it better than the F-mount 18-140 optically and smaller and lighter."
+  },
+  "field_tips": [
+    "18–70mm: shoot wide open to f/8 freely. At 18mm use f/5.6 when the corners matter.",
+    "Past 100mm, stop down to about f/8 rather than shooting f/6.3 for edge detail.",
+    "Close-ups at 0.33x (140mm, 0.4 m): f/8, or f/11 for depth of field. Corners will stay soft, so centre the subject.",
+    "Stay at f/11 or wider on the Z50 II. Use f/11–f/16 only to get 14-point sunstars.",
+    "VR is your only stabiliser on the Z50 II. Expect about 4 stops in practice, and use Sport mode for panning."
+  ],
+  "body_notes": [
+    {
+      "body": "z50ii",
+      "note": "Native body. PhotoReview (Z50) and Hogan (Z50) used the same 20.9MP sensor class, so their peaks (f/4.5–f/8) and f/10 diffraction onset apply directly. Lens VR is the only stabilisation."
+    },
+    {
+      "body": "z8",
+      "note": "Auto DX crop, 19.4MP (4.35 µm), essentially the same per-pixel behaviour as the Z50 II. Rockwell tested in Z9 DX crop (same 19.4MP) and found it sharp corner to corner, with diffraction only at the smallest apertures."
+    },
+    {
+      "body": "z5ii",
+      "note": "DX crop only about 10MP (computed). Less demanding per pixel, so f/11 is fine, but resolution is low. Prefer the Z50 II or Z8."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photoreview",
+      "name": "PhotoReview (Australia): Nikkor Z DX 18-140mm f/3.5-6.3 VR lens review (Margaret Brown)",
+      "url": "https://www.photoreview.com.au/reviews/mirrorless-lenses/mirrorless-lenses-aps-c/nikkor-z-dx-18-140mm-f-3-5-6-3-vr-lens/",
+      "kind": "measured",
+      "tested_on": "Nikon Z50 (20.9MP DX), Imatest on JPEG and NEF",
+      "date": "2021-11-30",
+      "findings": "Imatest graphs only, no numbers in text. Center exceeded expectations at shorter focal lengths and fell a little short beyond 70mm. At 75% of the way to the edge, exceeded expectations only from about f/4.5 to f/7.1. Diffraction noticeable from about f/10, with a sharp drop from f/11 to f/22 at all focal lengths. Lateral CA negligible (corrections off), highest at 18mm. Barrel distortion at 18mm, slight pincushion at 140mm. Vignetting wide open is reduced by stopping down 2 stops. MFD 20 cm at 18mm and 40 cm at 140mm, 0.33x. No noticeable focus breathing. Sharp handheld at 1/60 s at 140mm. Score 8.8."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z DX 18-140mm f/3.5-6.3 VR review (pages 2–3)",
+      "url": "https://photographylife.com/reviews/nikon-z-dx-18-140mm-f-3-5-6-3-vr/2",
+      "kind": "measured",
+      "tested_on": "Nikon DX Z body (not named); PL DX lab charts",
+      "date": null,
+      "findings": "Pretty sharp, especially at the wide end. Telephoto 'totally reasonable'. The sharpest aperture ranges from f/4 to f/8 depending on focal length. Smallest apertures lose sharpness to diffraction. Barrel distortion −5.91% at 18mm, and its correction costs a little corner sharpness. Hardly any distortion at 24mm. Vignetting max 2.34 stops. CA never extreme. Hardly any flare. 14-point sunstars at f/11–f/16. 0.33x (frame about 7.1 cm wide on DX). Page 3: the 16-50 is slightly sharper overall but the 18-140 has better corners at 18mm. The 50-250 is clearly sharper corner to corner at long focal lengths. Close to the 24mm f/1.7."
+    },
+    {
+      "id": "hogan",
+      "name": "Thom Hogan (sansmirror): Nikon 18-140mm f/3.5-6.3 Lens Review",
+      "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-18-140mm-f35-63-lens.html",
+      "kind": "review",
+      "tested_on": "Nikon Z50 (20.9MP DX)",
+      "date": "2021-11-27",
+      "findings": "18mm: center barely changes f/3.5 to f/5.6, and corners need f/5.6 to be good. 18–70mm center very good. 50–70mm corners very good wide open. 70–140mm center good, corners good to sometimes fair, and inconsistent. 100mm+: stop down 1–2 stops. Close focus: center marginally good, corners barely fair. Corrected distortion about 1% barrel at 18mm. Strong vignetting at 18mm, fine at f/5.6, 1.5+ stops at the long end. Longitudinal CA virtually absent, lateral up to about 1 px uncorrected at the long end. Breathing reasonably suppressed. About 5 stops VR with care. Sport mode. Flare is the weakest trait. Recommended."
+    },
+    {
+      "id": "kenrockwell",
+      "name": "Ken Rockwell: Nikon Z 18-140mm DX VR review",
+      "url": "https://kenrockwell.com/nikon/z/18-140mm.htm",
+      "kind": "review",
+      "tested_on": "Nikon Z9 in DX crop (19.4MP)",
+      "date": "2022-03",
+      "findings": "Very sharp corner to corner at every aperture, limited by diffraction at the smallest apertures (qualitative). At 140mm close focus: a little soft at f/6.3, much sharper at f/11. Measured MFD 16 cm at 18mm, 23 cm at 35mm, 32 cm at 70mm, 37 cm at 140mm. VR measured about 3¾ stops at 18mm and 4 stops at 50mm and 140mm. Falloff negligible in JPEG. Slight breathing. 14-point sunstars. Measured 312 g. Min aperture f/22–f/40."
+    },
+    {
+      "id": "nikon",
+      "name": "Nikon: NIKKOR Z DX 18-140mm f/3.5-6.3 VR product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_dx_18-140mmf35-63_vr/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.2 m at 18mm (focal plane), 0.33x at 140mm, about 315 g, 62 mm filter, 7 rounded blades, f/3.5–6.3, min f/22–40, VR 5.0 stops (CIPA, DX, NORMAL, tele end), 17 elements in 13 groups (2 ED, 2 aspherical), STM, 73 × 90 mm, dust- and drip-resistant (not guaranteed)."
+    },
+    {
+      "id": "fstoppers_frost",
+      "name": "Fstoppers (Alex Cooke): 'Is This Affordable Lens All Nikon Shooters Need?', a write-up of Christopher Frost's 18-140 video",
+      "url": "https://fstoppers.com/reviews/affordable-lens-all-nikon-shooters-need-596247",
+      "kind": "video",
+      "tested_on": null,
+      "date": "2022-02-12",
+      "findings": "Article paraphrases the video's conclusion: don't expect top-shelf image quality from such a long zoom range, but the results are impressive, and the lens is good value if you don't need a wide aperture. No test data."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "title-only",
+    "summary": "Frost reviewed this lens (Fstoppers write-up by Alex Cooke, 12 Feb 2022, embeds his video). The video, its description and any transcript could not be opened, so the URL is unknown. The only content available is Fstoppers' second-hand paraphrase: not top-shelf image quality given the zoom range, but impressive results and good value if you don't need a wide aperture. No apertures or test details from Frost were readable."
+  },
+  "research_notes": "1) No Lenstip, OpticalLimits, Lensrentals or TDP test exists for this lens. The measured sources are PhotoReview (Imatest, Z50) and Photography Life. Both publish numbers only as chart images (not readable), so their text conclusions are used. 2) Flare conflict: PL says hardly any flare, Hogan says flare is the weakest trait at the wide end. Likely conditions differ, so both are reported. 3) Vignetting: PL and Hogan measured it raw or uncorrected. Rockwell's 'negligible' is from corrected JPEG. 4) MFD: Nikon and PhotoReview give 0.2–0.4 m, Rockwell measured shorter on his copy. Nikon values are used. 5) 140mm peak f/8 combines Hogan's '1–2 stops down' with PhotoReview's f/10 diffraction onset. This is judgment, not a single measured peak. 6) Synchro VR not confirmed: null. 7) tc_compatible false: Nikon Z TCs fit only specific telephotos (general knowledge, not re-verified this session)."
+}

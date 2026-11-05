@@ -1,0 +1,2245 @@
+[
+  {
+    "id": "release-mode",
+    "group": "Drive, shutter & VR",
+    "name": "Release mode (single, CL, CH, CH extended, high-speed frame capture+, self-timer)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Release-mode button + main command dial (no Photo shooting menu item in the current Z8 manual index)",
+      "z5ii": "Photo shooting menu > Release mode (also via release-mode control + command dial; button layout not verified)",
+      "z50ii": "Hold the release-mode (c/E) button and rotate the command dials; also Photo shooting menu > Release mode"
+    },
+    "one_liner": "What one full shutter press does: one frame, a burst, or a timer.",
+    "what_it_does": "Chooses single-frame, continuous low (CL), continuous high (CH), continuous high extended (Z5II/Z50II), high-speed frame capture+ (Cxx, JPEG bursts with optional pre-release capture) or self-timer. Burst speed depends on body, shutter type and file type.",
+    "options": [
+      {
+        "value": "Single frame",
+        "meaning": "One shot per press.",
+        "use_when": "Landscape, tripod moon, deliberate portraits."
+      },
+      {
+        "value": "CL (Continuous low)",
+        "meaning": "Z8 about 1-10 fps; Z5II about 1-7 fps; Z50II about 1-5 fps (rate set in d1).",
+        "use_when": "Kids and dance when you want a few frames per gesture without thousands of files."
+      },
+      {
+        "value": "CH (Continuous high)",
+        "meaning": "Z8 about 10-20 fps (RAW). Z5II about 7.8 fps mechanical/Auto, 9.4 EFCS, 10 silent. Z50II about 5.6 fps, about 9.7 in some modes.",
+        "use_when": "Birds, peak action."
+      },
+      {
+        "value": "CH extended (Z5II, Z50II)",
+        "meaning": "Z5II about 14 fps (15 silent); Z50II about 11 fps (15 silent). Exposure may vary within the burst.",
+        "use_when": "Fast action on the second/travel body."
+      },
+      {
+        "value": "High-speed frame capture+ (C15/C30, Z8 also C60/C120)",
+        "meaning": "JPEG-only bursts with pre-release capture.",
+        "use_when": "Take-offs, splashes, jumps - see high-speed-frame-capture."
+      },
+      {
+        "value": "Self-timer",
+        "meaning": "Delay (2/5/10/20 s), 1-9 shots with interval (c2).",
+        "use_when": "Tripod shots without a remote: moon, landscapes, macro on a rail."
+      }
+    ],
+    "when_to_change": "Single for static; CL for people; CH for birds and decisive moments; HSFC+ only for very short events you can't time.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Z8 CH 20 fps RAW; C30/C60 with pre-release for take-offs",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "CL 5-8 fps (Z8) or CH (Z5II) - shorter bursts per jati; avoid HSFC+ (JPEG only, no flicker reduction)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "CH (Z8 10-12 fps is plenty)",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Single frame or self-timer 2 s",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "CL burst while rocking focus",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Self-timer 2 s or interval timer",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 has no CH extended; CL/CH ranges are adjustable (d1 Continuous shooting speed). Z8 is the only body with C60/C120. Z5II/Z50II: CH speed depends on shutter type and silent mode; CH extended is their fastest RAW mode.",
+    "gotchas": [
+      "Z5II/Z50II continuous-H figures in Nikon specs are for non-RAW quality; RAW can be slower.",
+      "When the buffer fills the frame rate drops; Z50II shows r000.",
+      "Z8 is listed by Nikon without a Release mode menu item - use the button."
+    ],
+    "related": [
+      "continuous-shooting-speed",
+      "high-speed-frame-capture",
+      "pre-release-capture",
+      "shutter-type"
+    ],
+    "firmware_note": "Z8 FW 3.00 added the C15 option to high-speed frame capture+.",
+    "research_notes": "Z8 and Z5II release-mode chapter bodies were unreadable; per-body controls (exact buttons) not fully verified. Z5II CH extended shutter type not stated in spec.",
+    "sources": [
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Release modes: single, CL (1-10 fps), CH (10-20 fps), HSFC+ C15/C30/C60/C120 with pre-release, self-timer."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "CL 1-7 fps; CH 7.8 fps (Auto/mech), 9.4 fps (EFCS), 10 fps (silent); CH extended 14 fps (15 silent); C15/C30; figures for non-RAW quality."
+      },
+      {
+        "id": "nikon-z50ii-release",
+        "name": "Nikon Z50II Reference Guide - Release mode chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-04.html",
+        "kind": "manufacturer",
+        "findings": "Release mode set by holding c (E) button and rotating command dials; CL 1-5 fps; CH up to 5.6 fps / 9.7 silent; CH extended up to 11 / 15 silent; C15, C30; exposure may vary in CH extended."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "Photo shooting menu includes 'Release mode'."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Z8 Photo shooting menu index has no Release mode item; d1 is Continuous Shooting Speed."
+      },
+      {
+        "id": "nikon-usa-z8-fw3",
+        "name": "Nikon USA press release - Z8 firmware 3.00",
+        "url": "https://www.nikonusa.com/press-room/z-8-firmware-3-point-0",
+        "kind": "manufacturer",
+        "findings": "FW 3.00 adds slower [C15] release mode."
+      }
+    ]
+  },
+  {
+    "id": "continuous-shooting-speed",
+    "group": "Drive, shutter & VR",
+    "name": "d1 Continuous shooting speed / CL mode shooting speed",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > d Shooting/display > d1 Continuous shooting speed",
+      "z5ii": "Custom Settings menu > d Shooting/display > d1 CL mode shooting speed",
+      "z50ii": "Custom Settings menu > d Shooting/display > d1 CL mode shooting speed"
+    },
+    "one_liner": "Sets the frames-per-second used by the continuous release modes.",
+    "what_it_does": "On the Z8 you set the rates used by CL and CH (and related burst options) here. On the Z5II and Z50II only the CL rate is adjustable; CH is fixed by shutter type/silent mode.",
+    "options": [
+      {
+        "value": "Z8 CL 1-10 fps; CH 10-20 fps",
+        "meaning": "Choose the rate each mode uses.",
+        "use_when": "CL 5-7 for people; CH 20 for birds."
+      },
+      {
+        "value": "Z5II CL 1-7 fps; Z50II CL 1-5 fps",
+        "meaning": "CL rate only.",
+        "use_when": "Moderate bursts for kids/dance."
+      }
+    ],
+    "when_to_change": "Lower rates for performances to reduce culling; max for birds.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Z8 CH 20 fps",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Z8 CL 6-8 fps; Z5II CL 5-7 fps",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Z8 CH 10-12 fps",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "CL 3-5 fps",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Name and scope differ: Z8 'Continuous shooting speed' covers CL and CH; Z5II/Z50II 'CL mode shooting speed' covers CL only.",
+    "gotchas": [
+      "Frame-rate ranges come from Nikon spec pages; exact selectable steps were not read from the menus."
+    ],
+    "related": [
+      "release-mode",
+      "high-speed-frame-capture"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "d1 Continuous Shooting Speed."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "d1 CL mode shooting speed."
+      },
+      {
+        "id": "nikon-z50ii-csm-index",
+        "name": "Nikon Z50II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05.html",
+        "kind": "manufacturer",
+        "findings": "d1 CL mode shooting speed."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "CL 1-10 fps, CH 10-20 fps."
+      },
+      {
+        "id": "cotswold-z8-wildlife",
+        "name": "The Cotswold Photographer - Best Nikon Z8 settings for wildlife",
+        "url": "https://thecotswoldphotographer.com/best-nikon-z8-settings-for-wildlife-photography/",
+        "kind": "review",
+        "findings": "Z8 CH set to 20 fps via d1."
+      }
+    ]
+  },
+  {
+    "id": "high-speed-frame-capture",
+    "group": "Drive, shutter & VR",
+    "name": "High-speed frame capture+ (C15 / C30 / C60 / C120)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Release mode (button + dial) > C15/C30/C60/C120",
+      "z5ii": "Release mode > C15/C30",
+      "z50ii": "Release mode (c/E button + dials) > C15/C30"
+    },
+    "one_liner": "Very fast JPEG-only bursts, with optional pre-release buffering.",
+    "what_it_does": "Shoots JPEG/HEIF at 15-120 fps (body dependent) with restrictions: fixed JPEG quality and size on the Z50II, shutter speed limited to 1/60-1/4000 s on the Z50II, no flash, no bracketing, no flicker reduction. Pairs with pre-release capture (d3) to catch the moment before you pressed.",
+    "options": [
+      {
+        "value": "C15",
+        "meaning": "~15 fps.",
+        "use_when": "Manageable file counts with pre-release."
+      },
+      {
+        "value": "C30",
+        "meaning": "~30 fps.",
+        "use_when": "Bird take-offs, kids jumping into a pool."
+      },
+      {
+        "value": "C60 (Z8)",
+        "meaning": "~60 fps.",
+        "use_when": "Wing-beat and splash moments."
+      },
+      {
+        "value": "C120 (Z8)",
+        "meaning": "~120 fps at reduced resolution.",
+        "use_when": "Extreme timing; accept smaller files."
+      }
+    ],
+    "when_to_change": "Use only for unpredictable sub-second events; return to CH for normal shooting.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Z8 C30 or C60 + pre-release 0.5 s for take-offs; CH RAW otherwise",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Avoid (no flicker reduction, JPEG only, minimum shutter limits)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "C15/C30 for a jump moment only",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "n/a",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8: C15 (added FW 3.00), C30, C60, C120; FW 3.00 also adds a FINE quality option. Z5II and Z50II: C15 and C30 only.",
+    "gotchas": [
+      "JPEG/HEIF only - no RAW.",
+      "Z50II: quality fixed to Normal Large; shutter 1/60-1/4000 s; ISO capped at 51200; cannot combine with flicker reduction, flash, bracketing, focus shift.",
+      "Subject detection performance drops in HSFC+ (Z50II manual).",
+      "Needs fast cards; the Z50II's SD slot is the bottleneck."
+    ],
+    "related": [
+      "pre-release-capture",
+      "release-mode",
+      "photo-flicker-reduction"
+    ],
+    "firmware_note": "Z8 FW 3.00: C15 and FINE quality for HSFC+; improved HSFC+.",
+    "research_notes": "Z8 C120 output size and Z8/Z5II HSFC+ shutter-speed limits not verified from the manual body.",
+    "sources": [
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "C15 ~15, C30 ~30, C60 ~60, C120 ~120 fps."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "C15 ~15, C30 ~30 fps."
+      },
+      {
+        "id": "nikon-z50ii-release",
+        "name": "Nikon Z50II Reference Guide - Release mode chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-04.html",
+        "kind": "manufacturer",
+        "findings": "C15/C30 restrictions: JPEG/HEIF normal, Large; 1/4000-1/60 s; ISO cap 51200; no flash/bracketing/flicker reduction/focus shift etc."
+      },
+      {
+        "id": "nikon-usa-z8-fw3",
+        "name": "Nikon USA press release - Z8 firmware 3.00",
+        "url": "https://www.nikonusa.com/press-room/z-8-firmware-3-point-0",
+        "kind": "manufacturer",
+        "findings": "FW 3.00: C15 release mode; FINE quality with HSFC+."
+      }
+    ]
+  },
+  {
+    "id": "pre-release-capture",
+    "group": "Drive, shutter & VR",
+    "name": "d3 Pre-release capture options",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > d Shooting/display > d3 Pre-release capture options",
+      "z5ii": "Custom Settings menu > d Shooting/display > d3 Pre-release capture options",
+      "z50ii": "Custom Settings menu > d Shooting/display > d3 Pre-Release Capture options"
+    },
+    "one_liner": "Saves frames from before you fully pressed the shutter (HSFC+ modes).",
+    "what_it_does": "In high-speed frame capture+, the camera buffers frames while the shutter is half-pressed; on full press it saves the last N seconds (pre-release burst) plus a set time after (post-release burst). Buffering times out after about 90 s of continuous half-press (Z50II manual).",
+    "options": [
+      {
+        "value": "Pre-release burst: None or a time",
+        "meaning": "How many seconds before full press are kept.",
+        "use_when": "0.3-0.5 s for bird take-offs; longer = more culling."
+      },
+      {
+        "value": "Post-release burst: 1 s / 2 s / 3 s / Max.",
+        "meaning": "How long shooting continues after full press.",
+        "use_when": "1-2 s keeps file counts sane; Max for long actions."
+      }
+    ],
+    "when_to_change": "Set before a perched-bird wait; check the L icon shows a green dot while half-pressed.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Pre 0.5 s, post 1-2 s (Z8 C30/C60)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Not used",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Pre 0.3 s, post 1 s for a jump",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "n/a",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Present as d3 on all three; applies only in HSFC+ modes. Z8 FW 2.00 lengthened pre-release buffering.",
+    "gotchas": [
+      "After ~90 s of half-press it cancels; lift and half-press again (Z50II manual).",
+      "If you full-press sooner than the pre-release time, only the buffered portion is saved."
+    ],
+    "related": [
+      "high-speed-frame-capture",
+      "release-mode"
+    ],
+    "firmware_note": "Z8 FW 2.00: 'longer pre-release buffering'.",
+    "research_notes": "Exact pre-release time values per body not retrieved.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-d3",
+        "name": "Nikon Z50II Reference Guide - d3 Pre-Release Capture options",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-59.html",
+        "kind": "manufacturer",
+        "findings": "Pre-release burst None or time; post-release 1/2/3 s/Max; ~90 s half-press timeout; L icon with green dot."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 example: pre-release 0.5 s, post-release Max."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 2.00: longer pre-release buffering."
+      }
+    ]
+  },
+  {
+    "id": "shutter-type",
+    "group": "Drive, shutter & VR",
+    "name": "d6 Shutter type (mechanical / EFCS / auto)",
+    "available_on": [
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": null,
+      "z5ii": "Custom Settings menu > d Shooting/display > d6 Shutter type",
+      "z50ii": "Custom Settings menu > d Shooting/display > d6 Shutter type"
+    },
+    "one_liner": "Pick mechanical, electronic front-curtain, or let the camera choose.",
+    "what_it_does": "Mechanical uses both physical curtains: no rolling-shutter distortion and no LED banding from the sensor readout. Electronic front-curtain (EFCS) starts the exposure electronically to avoid shutter shock at slow speeds but limits the top speed to 1/2000 s. Auto picks EFCS at slow speeds. The fully electronic shutter is reached via Silent mode, not here.",
+    "options": [
+      {
+        "value": "Auto",
+        "meaning": "Camera uses EFCS at slow speeds, mechanical at fast.",
+        "use_when": "Default for general shooting."
+      },
+      {
+        "value": "Mechanical shutter",
+        "meaning": "Mechanical for every frame.",
+        "use_when": "LED-lit stage, flash, fast panning - no rolling distortion."
+      },
+      {
+        "value": "Electronic front-curtain shutter",
+        "meaning": "EFCS every frame; max 1/2000 s.",
+        "use_when": "Tripod moon/landscape/macro at 1/15-1/250 where shutter shock blurs."
+      }
+    ],
+    "when_to_change": "Mechanical under LED stage lighting or with flash; EFCS on a tripod with long lenses or macro.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Auto or Mechanical (Z5II); Z8 n/a",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Mechanical (Z5II) - avoids e-shutter banding; Z8 n/a",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Auto",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "EFCS",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "EFCS (or Auto)",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "EFCS",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 has no mechanical shutter and no d6 Shutter type for stills (only an electronic shutter with a sensor shield). Z5II and Z50II have Auto / Mechanical / EFCS; their full electronic shutter is used in Silent mode.",
+    "gotchas": [
+      "EFCS caps shutter speed at 1/2000 s (Z50II manual).",
+      "Mechanical shutter may be unavailable with some lenses (Z50II manual).",
+      "High-frequency flicker reduction range depends on this setting."
+    ],
+    "related": [
+      "silent-mode",
+      "high-frequency-flicker-reduction",
+      "flash-with-electronic-shutter",
+      "exposure-delay-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "Z5II d6 option labels assumed to match the Z50II (both menu indexes list d6 Shutter type; Z5II spec lists mechanical, EFCS and electronic shutter types).",
+    "sources": [
+      {
+        "id": "nikon-z50ii-d6",
+        "name": "Nikon Z50II Reference Guide - d6 Shutter type",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-26.html",
+        "kind": "manufacturer",
+        "findings": "Auto / Mechanical / EFCS; EFCS max 1/2000 s; mechanical unavailable with some lenses."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "d6 Shutter type listed."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "Shutter types: mechanical, EFCS, electronic; 1/8000-30 s."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Shutter: electronic shutter with shutter sound and sensor shield."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "No Shutter type item in Z8 d1-d21; g13 Shutter Mode is video-only."
+      }
+    ]
+  },
+  {
+    "id": "flash-with-electronic-shutter",
+    "group": "Drive, shutter & VR",
+    "name": "Flash with electronic shutter",
+    "available_on": [
+      "z8"
+    ],
+    "menu_path": {
+      "z8": "No dedicated setting - flash works with the Z8's electronic shutter (sync and HSS set via e1 Flash sync speed)",
+      "z5ii": null,
+      "z50ii": null
+    },
+    "one_liner": "Z8 can fire flash with its electronic shutter; Z5II/Z50II cannot in silent mode.",
+    "what_it_does": "The Z8's fast sensor readout allows normal flash sync at 1/200 s (1/250 s option) and Auto FP high-speed sync up to 1/8000 s, all with the electronic shutter. On the Z5II and Z50II the electronic shutter is only used in Silent mode, and in Silent mode the flash does not fire.",
+    "options": [
+      {
+        "value": "Z8: e1 Flash sync speed",
+        "meaning": "Set 1/200 s or 1/250 s (Auto FP for HSS).",
+        "use_when": "Fill flash outdoors for kids; bounce flash indoors."
+      },
+      {
+        "value": "Z5II/Z50II: use Mechanical/Auto/EFCS",
+        "meaning": "Silent mode off for flash.",
+        "use_when": "Any flash shot on those bodies."
+      }
+    ],
+    "when_to_change": "On Z5II/Z50II, turn Silent mode off before using flash.",
+    "suggested": [
+      {
+        "scenario": "Kids running",
+        "value": "Z8 HSS up to 1/8000 s for outdoor fill; Z5II mechanical shutter, sync 1/200 s",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "No flash at performances",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Z8 sync 1/200; Z5II mechanical/EFCS sync 1/200",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8: flash supported with electronic shutter (1/200 or 1/250 sync, HSS to 1/8000). Z5II: sync 1/200 s with mechanical/EFCS. Z50II: sync 1/200 or 1/250 s; built-in and external flash will not fire in Silent mode.",
+    "gotchas": [
+      "Z50II/Z5II Silent mode disables flash.",
+      "Flash cannot be used with high-speed frame capture+."
+    ],
+    "related": [
+      "shutter-type",
+      "silent-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "Z5II 'flash does not fire in silent mode' is inferred from the Z50II manual and identical menu structure; not read from the Z5II manual.",
+    "sources": [
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Flash syncs at 1/250 or 1/200 s or slower; Auto FP HSS to 1/8000 s; shutter is electronic only."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "Flash syncs at 1/200 s or slower."
+      },
+      {
+        "id": "nikon-z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "Flash sync 1/250 or 1/200 s; Auto FP to 1/4000 s."
+      },
+      {
+        "id": "nikon-z50ii-silent",
+        "name": "Nikon Z50II Reference Guide - Silent mode",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-49.html",
+        "kind": "manufacturer",
+        "findings": "Built-in and optional flash will not fire in silent mode."
+      }
+    ]
+  },
+  {
+    "id": "silent-mode",
+    "group": "Drive, shutter & VR",
+    "name": "Silent mode (electronic shutter)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Setup menu > Silent mode (not confirmed in the current manual index - verify)",
+      "z5ii": "Setup menu > Silent mode",
+      "z50ii": "Setup menu > Silent mode"
+    },
+    "one_liner": "Uses the electronic shutter and mutes camera sounds for quiet shooting.",
+    "what_it_does": "On the Z5II/Z50II, Silent mode switches to the fully electronic shutter regardless of d6 and mutes beeps. That removes shutter noise and vibration but brings rolling-shutter distortion, banding under flickering/LED light, no flash and no photo flicker reduction. On the Z8 the shutter is always electronic, so its silence comes from turning off the simulated shutter sound.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Electronic shutter, muted beeps.",
+        "use_when": "Quiet ceremonies, sleeping baby, timid wildlife."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Shutter per d6.",
+        "use_when": "LED stage light, flash, fast pans."
+      }
+    ],
+    "when_to_change": "Turn ON for silence when light is natural/continuous; OFF under LED/fluorescent light or for fast motion on the Z5II/Z50II.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Z5II/Z50II OFF (rolling distortion of wings); Z8 mute shutter sound if desired",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Z5II OFF (banding risk), accept mechanical shutter noise; Z8 silent is fine but check banding",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "OFF",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "ON is fine (vibration-free)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "OFF unless subject is static",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "ON (no shutter shock); Z5II EFCS also fine",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z5II/Z50II: Silent mode = full electronic shutter (CH 10 fps / CH extended 15 fps on Z5II; CH 9.7 / CH extended 15 on Z50II). Z8: always electronic, readout fast enough that rolling distortion is minimal.",
+    "gotchas": [
+      "Z50II: flash won't fire; Long exposure NR and Photo flicker reduction disabled; banding under fluorescent/mercury/sodium light; motion distortion.",
+      "Aperture and AF motors are still audible.",
+      "Focus shift and interval timer have their own e-shutter options that still make a sound unless volume is 0."
+    ],
+    "related": [
+      "shutter-type",
+      "flash-with-electronic-shutter",
+      "photo-flicker-reduction",
+      "high-frequency-flicker-reduction"
+    ],
+    "firmware_note": "",
+    "research_notes": "Z8 Silent mode location not confirmed: the Z8 setup-menu index was truncated in the fetch. Z5II behaviour assumed same as Z50II.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-silent",
+        "name": "Nikon Z50II Reference Guide - Silent mode",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-49.html",
+        "kind": "manufacturer",
+        "findings": "Uses electronic shutter regardless of d6; flash won't fire; LENR and photo flicker reduction disabled; banding/distortion cautions."
+      },
+      {
+        "id": "nikon-z5ii-setup-index",
+        "name": "Nikon Z5II Reference Guide - Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/sum_silent_mode_336.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu includes Silent mode."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "CH 10 fps and CH extended 15 fps when silent mode is ON."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Electronic shutter with shutter sound and sensor shield."
+      }
+    ]
+  },
+  {
+    "id": "exposure-delay-mode",
+    "group": "Drive, shutter & VR",
+    "name": "d5 Exposure delay mode",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > d Shooting/display > d5 Exposure delay mode",
+      "z5ii": "Custom Settings menu > d Shooting/display > d5 Exposure delay mode",
+      "z50ii": "Custom Settings menu > d Shooting/display > d5 Exposure delay mode"
+    },
+    "one_liner": "Waits 0.2-3 s after the press so tripod vibration dies down.",
+    "what_it_does": "Delays the exposure by a set time after you press the shutter, letting vibration from your finger settle. Useful on a tripod at long focal lengths or high magnification when you have no remote.",
+    "options": [
+      {
+        "value": "Off",
+        "meaning": "No delay.",
+        "use_when": "Handheld and action."
+      },
+      {
+        "value": "0.2-3 s",
+        "meaning": "Delay before exposure.",
+        "use_when": "Tripod moon, macro on a rail, long-lens landscapes."
+      }
+    ],
+    "when_to_change": "Turn on for tripod work; off immediately after (it ruins action shots).",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Off",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Off",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Off",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "1 s",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Off",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "1-2 s (or self-timer 2 s)",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "All three list d5 in current firmware. Early Z8 firmware lacked it (Reed Hoffmann's FW 1.x guide); present in the current Z8 manual.",
+    "gotchas": [
+      "A z icon shows when active - easy to forget and then wonder why the shutter lags."
+    ],
+    "related": [
+      "shutter-type",
+      "release-mode",
+      "vibration-reduction"
+    ],
+    "firmware_note": "Z8: added after FW 1.x (present in FW 3.x manual).",
+    "research_notes": "Exact delay steps not listed in the retrieved page.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-d5",
+        "name": "Nikon Z50II Reference Guide - d5 Exposure delay mode",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-25.html",
+        "kind": "manufacturer",
+        "findings": "Delays release ~0.2-3 s; icon shown when on."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "d5 Exposure Delay Mode listed in current Z8 manual."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Says exposure delay not available on the Z8 (written for early firmware); uses self-timer instead."
+      }
+    ]
+  },
+  {
+    "id": "photo-flicker-reduction",
+    "group": "Drive, shutter & VR",
+    "name": "Photo flicker reduction",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Photo flicker reduction",
+      "z5ii": "Photo shooting menu > Photo flicker reduction",
+      "z50ii": "Photo shooting menu > Photo flicker reduction"
+    },
+    "one_liner": "Times each shot to the peak of mains-frequency flicker (100/120 Hz).",
+    "what_it_does": "Detects 100/120 Hz flicker from mains-powered lamps (fluorescent, mercury vapour, cheap LED drivers) and releases the shutter at the brightest point of the cycle, so exposure and colour stay consistent through a burst. It adds a small shutter lag and can slow or make bursts irregular. It does not fix high-frequency PWM LED banding - that's the next setting.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Flicker-timed release; green indicator next to FLICKER when detected.",
+        "use_when": "Gyms, school halls, auditoriums with older lighting."
+      },
+      {
+        "value": "OFF",
+        "meaning": "No timing.",
+        "use_when": "Daylight, theatrical lighting without mains flicker, any time you need zero lag."
+      }
+    ],
+    "when_to_change": "If a test burst shows frames alternating brighter/darker or colour-shifting, turn it on.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "OFF",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "ON if test bursts vary in brightness/colour; OFF if the rig is flicker-free",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "ON indoors under fluorescent/LED ceiling lights",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "OFF",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "OFF",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "OFF",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "On all three. Z50II: in CH extended, frame rate takes priority (blackout only on first frame); in CH/CL, flicker reduction takes priority and frame rate may drop. Not active in HDR overlay, high-speed frame capture+, or Silent mode (Z50II).",
+    "gotchas": [
+      "Doesn't work in Silent mode or HSFC+ (Z50II manual) - on the Z5II/Z50II that means mechanical/EFCS shutter.",
+      "Detection unreliable in bright scenes, dark backgrounds or decorative lighting; if results are poor, power-cycle while pointing at the light.",
+      "Long bursts in CH extended may not be fully corrected."
+    ],
+    "related": [
+      "high-frequency-flicker-reduction",
+      "silent-mode",
+      "shutter-type",
+      "release-mode"
+    ],
+    "firmware_note": "Z8 FW 2.10 fixed freezes/overexposure with auto bracketing when photo flicker reduction was on.",
+    "research_notes": "Z8 burst-priority behaviour not read from the Z8 manual body.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-flicker",
+        "name": "Nikon Z50II Reference Guide - Photo flicker reduction",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-40.html",
+        "kind": "manufacturer",
+        "findings": "Detects 100/120 Hz flicker; shutter lag; burst behaviour by mode; not in HDR overlay, HSFC+, silent mode; detection cautions."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Photo Flicker Reduction in Z8 Photo shooting menu."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 2.10 fixed freezing/overexposure with Photo flicker reduction."
+      }
+    ]
+  },
+  {
+    "id": "high-frequency-flicker-reduction",
+    "group": "Drive, shutter & VR",
+    "name": "High-frequency flicker reduction (shutter fine-tuning)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > High-frequency flicker reduction",
+      "z5ii": "Photo shooting menu > High-frequency flicker reduction",
+      "z50ii": "Photo shooting menu > High-frequency flicker reduction"
+    },
+    "one_liner": "Fine-step shutter speeds to remove LED banding stripes (modes S and M).",
+    "what_it_does": "Lets you adjust shutter speed in tiny steps (e.g. 1/512.0 s instead of 1/500 s) in S and M so you can match the PWM frequency of LED stage lights or screens and make banding disappear. You watch the magnified live view and nudge the speed until the stripes go away.",
+    "options": [
+      {
+        "value": "On (shutter speed fine-tuning)",
+        "meaning": "Shutter speed shown as denominator with one decimal; fine steps.",
+        "use_when": "LED stage rigs, LED walls/screens, LED-lit halls with banding."
+      },
+      {
+        "value": "Off",
+        "meaning": "Standard 1/3-stop speeds.",
+        "use_when": "Everything else."
+      }
+    ],
+    "when_to_change": "The moment you see horizontal stripes in live view under LED light.",
+    "suggested": [
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "On; start near your target (1/320-1/500 s per your Bharatanatyam speeds) and fine-tune until bands vanish in magnified view; recheck when the lighting cue changes",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "On only if indoor LEDs band",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Birds in flight",
+        "value": "Off",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Off",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Off (unless under LED panel light)",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Off",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z50II range: 1/4000-1/30 s with Auto/Mechanical, 1/2000-1/30 s with EFCS. Z8 FW 3.00 adds frequency presets for high-frequency flicker reduction. Z8's fast e-shutter readout reduces but does not eliminate banding.",
+    "gotchas": [
+      "Display preview can differ from the final file - take test shots.",
+      "Lighting changes between cues can bring banding back.",
+      "Turning it off rounds the speed to the nearest standard value."
+    ],
+    "related": [
+      "photo-flicker-reduction",
+      "shutter-type",
+      "silent-mode"
+    ],
+    "firmware_note": "Z8 FW 3.00: frequency presets for flicker reduction.",
+    "research_notes": "Z8/Z5II fine-tune ranges not read from manual body.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-hf-flicker",
+        "name": "Nikon Z50II Reference Guide - High-frequency flicker reduction",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-41.html",
+        "kind": "manufacturer",
+        "findings": "Fine shutter steps in S/M to minimise LED banding; 1/500 shows as 512.0; range 1/4000-1/30 (mech/auto), 1/2000-1/30 (EFCS); test shots advised."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 3.00 adds frequency presets for flicker reduction."
+      },
+      {
+        "id": "nikon-au-z8-fw",
+        "name": "Nikon Australia - Z8 firmware updates",
+        "url": "https://www.nikon.com.au/z8-firmware-updates",
+        "kind": "manufacturer",
+        "findings": "FW 3.00 adds high-frequency flicker reduction presets."
+      }
+    ]
+  },
+  {
+    "id": "vibration-reduction",
+    "group": "Drive, shutter & VR",
+    "name": "Vibration reduction (Normal / Sport / Off)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Vibration reduction (also i menu)",
+      "z5ii": "Photo shooting menu > Vibration reduction (also i menu)",
+      "z50ii": "Photo shooting menu > Vibration reduction (VR lenses only)"
+    },
+    "one_liner": "Stabilisation style: maximum (Normal), action-friendly (Sport), or Off.",
+    "what_it_does": "Normal gives the most correction for static subjects; Sport gives a steadier, less 'floaty' viewfinder for tracking erratic subjects and is recommended for panning. In Normal/Sport, panning motion is not corrected, only the perpendicular axis. On the Z8/Z5II this drives in-body 5-axis IBIS plus lens VR; on the Z50II only VR lenses are stabilised.",
+    "options": [
+      {
+        "value": "Normal",
+        "meaning": "Strongest stabilisation; image may 'jiggle' before release.",
+        "use_when": "Static subjects handheld, macro, slow-shutter handheld."
+      },
+      {
+        "value": "Sport",
+        "meaning": "Steadier framing, less lag; recommended for panning.",
+        "use_when": "Birds, dancers, kids - anything you track."
+      },
+      {
+        "value": "Off",
+        "meaning": "No stabilisation.",
+        "use_when": "Solidly locked tripod, especially for long exposures."
+      }
+    ],
+    "when_to_change": "Sport for tracking, Normal for static handheld, Off on a locked-down tripod.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Sport (Z8 + 180-600)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Sport (Normal for held poses at 1/160 s or slower)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Sport",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Off",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Normal",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Off on a solid tripod; Normal if the head is loose or it's windy",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8: 5-axis IBIS + lens VR. Z5II: 5-axis IBIS (Nikon: about 7.5 stops centre with 24-120 f/4 S) plus Focus-point VR option. Z50II: no IBIS - menu works only with VR lenses (the DX 16-50/18-140/50-250/12-28 PZ VR, 180-600, 70-200, MC 105); electronic VR is video-only.",
+    "gotchas": [
+      "F-mount lenses with a VR switch on the FTZ II: VR must be set on the lens.",
+      "On the Z50II, primes like the Sigma 30/56 and 40mm f/2 have no stabilisation at all.",
+      "In Normal the view may drift before release - switch to Sport if distracting."
+    ],
+    "related": [
+      "focus-point-vr",
+      "synchro-vr",
+      "non-cpu-lens-data",
+      "exposure-delay-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "Tripod advice ('Off on a locked tripod, Normal if not secured') is common Nikon guidance from older Z manuals and is not re-verified in the current manuals (Z50II VR page doesn't cover tripods).",
+    "sources": [
+      {
+        "id": "nikon-z50ii-vr",
+        "name": "Nikon Z50II Reference Guide - Vibration reduction",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-27.html",
+        "kind": "manufacturer",
+        "findings": "Normal (static), Sport (fast/unpredictable, panning), Off; only VR lenses; F VR lenses set on lens; Normal may jiggle; panning corrects only perpendicular axis."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Camera VR 5-axis sensor shift; lens VR with VR lenses."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "5-axis sensor shift; about 7.5 stops centre / 6.0 periphery (CIPA 2024, 24-120 f/4 S)."
+      },
+      {
+        "id": "nikon-z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "No in-body VR listed; electronic VR in video menu."
+      },
+      {
+        "id": "nikon-sports-af-guide",
+        "name": "Nikon Professional Setting Guide: Sports AF Edition (2021, Z9-era; hosted copy)",
+        "url": "https://fotori.cz/files/upload/soubory/tela/Z9_TG_AF_En(Cz)01.pdf",
+        "kind": "manufacturer",
+        "findings": "Set VR to Sport to stabilise the display and make tracking easier."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8: Sport by default; Normal for very slow handheld shots."
+      }
+    ]
+  },
+  {
+    "id": "focus-point-vr",
+    "group": "Drive, shutter & VR",
+    "name": "Link VR to focus point (Focus-point VR)",
+    "available_on": [
+      "z5ii"
+    ],
+    "menu_path": {
+      "z8": null,
+      "z5ii": "Photo shooting menu > Link VR to focus point",
+      "z50ii": null
+    },
+    "one_liner": "Z5II centres IBIS correction on your focus point, not the frame centre.",
+    "what_it_does": "Normal IBIS is optimised for the frame centre, so off-centre subjects get less effective correction (Nikon rates the Z5II about 7.5 stops at centre vs 6.0 at the periphery). Linking VR to the focus point optimises correction at the active focus point, helping off-centre subjects at slow shutter speeds.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Correction optimised at the focus point.",
+        "use_when": "Off-centre subjects at slow handheld speeds: dancers placed on thirds, macro with the point near the edge."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Correction optimised at frame centre.",
+        "use_when": "Centred subjects or tripod."
+      }
+    ],
+    "when_to_change": "Turn ON for slow-shutter handheld work with off-centre focus points.",
+    "suggested": [
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "ON (Z5II)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "ON (Z5II)",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "ON (no downside at fast speeds)",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a on Z8",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "OFF (VR off)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "OFF",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z5II only. Not in the Z8 or Z50II menus.",
+    "gotchas": [
+      "Benefit shows mainly at slow shutter speeds; irrelevant above about 1/500 s.",
+      "Lens compatibility not confirmed this session."
+    ],
+    "related": [
+      "vibration-reduction",
+      "synchro-vr"
+    ],
+    "firmware_note": "",
+    "research_notes": "Z5II page body unreadable; behaviour inferred from Nikon's centre vs periphery VR figures and the setting name. Menu name confirmed from the Z5II manual index.",
+    "sources": [
+      {
+        "id": "nikon-z5ii-link-vr",
+        "name": "Nikon Z5II Reference Guide - Link VR to focus point",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_link_vr_to_focus_point_155.html",
+        "kind": "manufacturer",
+        "findings": "Photo shooting menu item directly after Vibration reduction (body text not retrievable)."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "VR about 7.5 stops at centre and 6.0 stops at periphery."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "No such item in Z8 Photo shooting menu."
+      },
+      {
+        "id": "nikon-z50ii-psm-index",
+        "name": "Nikon Z50II Reference Guide - Photo shooting menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03.html",
+        "kind": "manufacturer",
+        "findings": "No such item in Z50II Photo shooting menu."
+      }
+    ]
+  },
+  {
+    "id": "synchro-vr",
+    "group": "Drive, shutter & VR",
+    "name": "Synchro VR (body + lens VR combined)",
+    "available_on": [
+      "z8",
+      "z5ii"
+    ],
+    "menu_path": {
+      "z8": "No menu setting: automatic with a compatible lens and VR on",
+      "z5ii": "No menu setting: automatic with a compatible lens and VR on",
+      "z50ii": null
+    },
+    "one_liner": "Body and lens VR working together for extra stops - automatic, no menu.",
+    "what_it_does": "On supporting bodies, Synchro VR coordinates in-body and lens VR instead of splitting axes between them, for a higher rated stabilization (Z8: 6.0 stops with Synchro VR versus 5.5 body-only, per Nikon USA). There is no setting to toggle; it runs whenever a compatible lens with current firmware is attached and VR is on.",
+    "options": [],
+    "when_to_change": "Nothing to change - just know whether your combination supports it.",
+    "suggested": [
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Irrelevant on a locked tripod; VR off per your tripod practice.",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Birds in flight",
+        "value": "Z 70-200 VR S (lens firmware 1.20+) on Z8: active. Z 180-600: support not verified.",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Z MC 105 VR S support not verified; Nikon says VR effect shrinks at close range anyway.",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Only relevant with the 70-200 VR S; F lenses on the FTZ II cannot use Synchro VR.",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Z8 and Z5 II are listed in Nikon's Synchro VR support article (as quoted publicly; the Nikon page itself is robots-blocked). Z50 II has no IBIS, so it cannot use Synchro VR. F lenses on the FTZ II never use Synchro VR (Nikon FTZ compatibility guide).",
+    "gotchas": [
+      "Not a menu setting.",
+      "Lens firmware matters: the Z 70-200 f/2.8 VR S gained Synchro VR in lens firmware 1.20.",
+      "Support for the 180-600 and MC 105 is not verified; Nikon's list as quoted was truncated."
+    ],
+    "related": [
+      "vibration-reduction",
+      "focus-point-vr"
+    ],
+    "firmware_note": "",
+    "research_notes": "Updated by main session from evidence gathered in the lens and body research: Nikon firmware notes for the 70-200 (1.20 added Synchro VR), a Jan 2026 forum quote of Nikon support article 000066751 listing Z8 and Z5 II, and Nikon USA's Z8 6.0-stop Synchro VR figure. The earlier claim that the 180-600 is not compatible came from the owner's notes, not a source, and is no longer asserted.",
+    "sources": [
+      {
+        "id": "nikon_fw_122",
+        "name": "Nikon Download Center: NIKKOR Z 70-200mm f/2.8 VR S firmware 1.22",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/532.html",
+        "kind": "manufacturer",
+        "tested_on": null,
+        "date": null,
+        "findings": "Version 1.20 added Z 9 features including synchro VR ('Camera and lens VR are synchronized for improved vibration reduction'). 1.21 fixed focus-position display/recall beep issues; 1.22 improved focus tracking while zooming. Applies to lens firmware 1.10–1.21."
+      },
+      {
+        "id": "synchro_vr_forum",
+        "name": "FredMiranda forum thread 'Nikon IBIS + VR: Which lenses work & how?' (post #10, ekam, 2026-01-07) quoting Nikon support article 000066751",
+        "url": "https://www.fredmiranda.com/forum/topic/1922057/",
+        "kind": "forum",
+        "tested_on": null,
+        "date": "2026-01",
+        "findings": "Quotes Nikon's Synchro VR support article (https://www.nikonimgsupport.com/eu/BV_article?articleNo=000066751&ctry=gb&lang=en_GB, which could not be fetched: robots-blocked). Compatible cameras: Z9, Z8, Z6III, Z5II, Zf, ZR. Synchro VR runs when a compatible lens is on a compatible body with body stabilization on. Visible lens entries: Z 28-400 VR, Z 70-200 f/2.8 VR S (marked with an unexplained asterisk), Z 100-400 VR S, Z 400 f/2.8 TC VR S; the quoted list is truncated ('...Show more'), so absence of a lens proves nothing."
+      },
+      {
+        "id": "nikonusa-spec",
+        "name": "Nikon USA Z8 product page and tech specs",
+        "url": "https://www.nikonusa.com/p/z-8/1695/overview#tech-specs",
+        "kind": "manufacturer",
+        "tested_on": null,
+        "date": "accessed 2026-11-05",
+        "findings": "45.7 MP. 35.9 × 23.9 mm. FX L 8256 × 5504, DX L 5392 × 3592. Electronic shutter, 1/32000–30 s, extendable to 900 s. X-sync 1/200, FP to 1/8000. C-H 10–20 fps, C30/C60/C120. ISO 64–25600, Lo to 32, Hi to 102400. VR 5.5 stops, 6.0 with Synchro VR. AF −7 to +19 EV (−9 with Starlight View). 9 subject types. EN-EL15c. CFexpress B/XQD + SD."
+      }
+    ]
+  },
+  {
+    "id": "non-cpu-lens-data",
+    "group": "Drive, shutter & VR",
+    "name": "Non-CPU lens data",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Setup menu > Non-CPU lens data",
+      "z5ii": "Setup menu > Non-CPU lens data",
+      "z50ii": "Setup menu > Non-CPU lens data"
+    },
+    "one_liner": "Tell the body a manual lens's focal length and aperture.",
+    "what_it_does": "Stores focal length, maximum aperture and an optional name (up to 36 characters) per lens number for non-CPU lenses, so shooting data and EXIF show something useful. On IBIS bodies the entered focal length is widely understood to set the IBIS correction for manual lenses, so a wrong value weakens stabilisation.",
+    "options": [
+      {
+        "value": "Lens number",
+        "meaning": "Slot for each manual lens.",
+        "use_when": "One slot per lens: Thypoch 28, Zeiss 35 ZF.2 (if unchipped), Voigtlander 58 (if unchipped), etc."
+      },
+      {
+        "value": "Focal length (mm)",
+        "meaning": "Entered focal length.",
+        "use_when": "Always set before shooting a manual lens on the Z8/Z5II."
+      },
+      {
+        "value": "Maximum aperture",
+        "meaning": "Entered widest aperture.",
+        "use_when": "Set to the lens's f-number."
+      },
+      {
+        "value": "Lens name",
+        "meaning": "Recorded in EXIF.",
+        "use_when": "Lets you filter shots by lens later."
+      }
+    ],
+    "when_to_change": "Every time you mount a different unchipped lens - assign 'Non-CPU lens data' to a button or My Menu for quick switching.",
+    "suggested": [
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Set correct lens number (VR off on tripod anyway)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Set lens number for the Laowa 65 or Tokina 100 if unchipped",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Set lens number if using the Thypoch 28",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a (CPU lens)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a unless manual lens",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a (CPU lens)",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Available on all three. On the Z50II (no IBIS) it only affects EXIF/shooting data.",
+    "gotchas": [
+      "Only needed for lenses with no electronic contacts; chipped manual lenses (e.g. ZF.2/SL II-S CPU versions on the FTZ II) pass data automatically.",
+      "Forgetting to switch slots writes the wrong lens to EXIF and may mis-set IBIS."
+    ],
+    "related": [
+      "vibration-reduction",
+      "focus-peaking",
+      "mf-subject-detection-area"
+    ],
+    "firmware_note": "",
+    "research_notes": "The IBIS-uses-entered-focal-length link is not stated on the Z50II page and was not read from the Z8/Z5II manuals - treat as likely, verify. Whether the Thypoch Simera 28 Z-mount has electronic contacts was not checked.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-noncpu",
+        "name": "Nikon Z50II Reference Guide - Non-CPU lens data",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-13.html",
+        "kind": "manufacturer",
+        "findings": "Lens number, focal length, maximum aperture, lens name (36 chars) for non-CPU lenses on an adapter; data shown as shooting data; name written to EXIF."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu: Non-CPU Lens Data."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu: Non-CPU lens data."
+      }
+    ]
+  },
+  {
+    "id": "focus-shift-shooting",
+    "group": "Drive, shutter & VR",
+    "name": "Focus shift shooting",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Focus shift shooting",
+      "z5ii": "Photo shooting menu > Focus shift shooting",
+      "z50ii": "Photo shooting menu > Focus shift shooting"
+    },
+    "one_liner": "Auto-steps focus from near to far for focus stacking.",
+    "what_it_does": "Takes up to 300 frames while stepping focus from your starting point towards infinity, for stacking in software. You set number of shots, step width, interval, first-frame exposure lock, electronic shutter, and whether focus resets afterwards. Requires an AF lens (camera drives focus).",
+    "options": [
+      {
+        "value": "No. of shots (up to 300)",
+        "meaning": "Max frames; stops early at infinity.",
+        "use_when": "Overshoot - extras are cheap."
+      },
+      {
+        "value": "Focus step width (1-10)",
+        "meaning": "Focus move per frame; Nikon advises 5 or lower.",
+        "use_when": "Smaller steps for macro (shallow DOF)."
+      },
+      {
+        "value": "Interval until next shot",
+        "meaning": "Seconds between frames.",
+        "use_when": "00 without flash; longer for flash recycle."
+      },
+      {
+        "value": "First-frame exposure lock",
+        "meaning": "Lock exposure to frame 1.",
+        "use_when": "ON for changing light (landscapes)."
+      },
+      {
+        "value": "Electronic shutter options",
+        "meaning": "Use e-shutter to avoid vibration.",
+        "use_when": "Macro on tripod (Z5II/Z50II); Z8 always electronic."
+      },
+      {
+        "value": "Focus position auto reset / Starting storage folder",
+        "meaning": "Return focus to start; new folder per sequence.",
+        "use_when": "Repeat stacks; easy sorting."
+      }
+    ],
+    "when_to_change": "Tripod macro or near-far landscapes needing more depth than f/8 gives.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "n/a",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Step 5, 10-20 shots, first-frame exposure lock ON, f/5.6-f/8",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Not handheld - use on tripod: step 2-3, 30-100 shots, MC 105 at f/5.6-f/8",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "All three. Z8 FW 3.00 can combine focus shift with pixel shift. Z8 has no mechanical shutter so e-shutter option is moot.",
+    "gotchas": [
+      "Start focus slightly in front of the nearest point - sequence runs towards infinity.",
+      "Use apertures wider than f/8-f/11 (Nikon) to avoid diffraction softening.",
+      "Manual-focus lenses (Laowa 65, Tokina 100, AF-D 60 Micro on FTZ II) can't be driven - use a focusing rail instead.",
+      "Not combinable with HSFC+, bracketing, interval timer, multiple exposure, HDR, bulb."
+    ],
+    "related": [
+      "pixel-shift-shooting",
+      "interval-timer-shooting",
+      "exposure-delay-mode"
+    ],
+    "firmware_note": "Z8 FW 3.00: focus shift + pixel shift combination; fixed a rare focus-shift freeze.",
+    "research_notes": "Z8/Z5II option lists assumed to match the Z50II (not read).",
+    "sources": [
+      {
+        "id": "nikon-z50ii-focus-shift",
+        "name": "Nikon Z50II Reference Guide - Focus shift shooting",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-33.html",
+        "kind": "manufacturer",
+        "findings": "Up to 300 shots; step width <=5 advised; interval; first-frame exposure lock; e-shutter; auto reset; storage folder; apertures wider than f/8-f/11; restrictions."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 3.00: pixel shift with focus shift; focus shift freeze fix."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Focus Shift Shooting in Photo shooting menu."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "Focus shift shooting in Photo shooting menu."
+      }
+    ]
+  },
+  {
+    "id": "interval-timer-shooting",
+    "group": "Drive, shutter & VR",
+    "name": "Interval timer shooting",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Interval timer shooting",
+      "z5ii": "Photo shooting menu > Interval timer shooting",
+      "z50ii": "Photo shooting menu > Interval timer shooting"
+    },
+    "one_liner": "Shoots stills automatically at set intervals; can also build a time-lapse.",
+    "what_it_does": "Takes a set number of shots at a fixed interval from a start time. Options include exposure smoothing (gradual exposure changes), electronic shutter, interval priority, refocus before each shot, AE bracketing per interval and an in-camera time-lapse movie built from the stills.",
+    "options": [
+      {
+        "value": "Interval / Intervals x shots",
+        "meaning": "Timing and count.",
+        "use_when": "Moonrise every 10-30 s; sunset sequences."
+      },
+      {
+        "value": "Exposure smoothing",
+        "meaning": "Matches exposure to previous frame (needs Auto ISO in M).",
+        "use_when": "Day-to-night transitions."
+      },
+      {
+        "value": "Interval priority",
+        "meaning": "Keeps the interval in P/A even if exposure gets long.",
+        "use_when": "Time-lapse where rhythm matters."
+      },
+      {
+        "value": "Focus before each shot",
+        "meaning": "Refocus every frame.",
+        "use_when": "OFF for moon/landscape (keep focus fixed)."
+      },
+      {
+        "value": "Options: AE bracketing / Time-lapse video",
+        "meaning": "Bracket each interval or make a movie too.",
+        "use_when": "High-contrast scenes / quick shareable time-lapse."
+      }
+    ],
+    "when_to_change": "Any timed sequence on a tripod.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "n/a",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Interval 3-5 s, exposure smoothing ON, focus before each shot OFF",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "n/a",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Interval 10-20 s, 60-200 shots, manual exposure, focus before each shot OFF, VR off",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "All three. Z50II e-shutter option overrides d6.",
+    "gotchas": [
+      "Interval must exceed exposure + write time or intervals get skipped.",
+      "E-shutter still makes a sound unless volume is 0, even in Silent mode.",
+      "Moon moves its own diameter in about 2 minutes - at 280mm reframe or plan the path."
+    ],
+    "related": [
+      "time-lapse-video",
+      "focus-shift-shooting",
+      "exposure-delay-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "Moon-motion tip is general astronomy, not from a fetched source.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-interval",
+        "name": "Nikon Z50II Reference Guide - Interval timer shooting",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-31.html",
+        "kind": "manufacturer",
+        "findings": "Options: start, interval, intervals x shots, exposure smoothing, e-shutter, interval priority, focus before each shot, AE bracketing / time-lapse video option, storage folder; cautions."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Interval Timer Shooting in Photo shooting menu."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "Interval timer shooting in Photo shooting menu."
+      }
+    ]
+  },
+  {
+    "id": "time-lapse-video",
+    "group": "Drive, shutter & VR",
+    "name": "Time-lapse video",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Time-lapse video",
+      "z5ii": "Photo shooting menu > Time-lapse video",
+      "z50ii": "Photo shooting menu > Time-lapse video"
+    },
+    "one_liner": "Makes a time-lapse movie in camera without keeping the stills.",
+    "what_it_does": "Shoots at intervals and assembles a movie directly; individual frames are not kept as stills. Use the interval timer's Time-lapse video option instead if you also want the stills for editing.",
+    "options": [
+      {
+        "value": "Interval, shooting time, exposure smoothing, frame size/rate",
+        "meaning": "Defines the movie.",
+        "use_when": "Clouds, crowds, moonrise preview."
+      }
+    ],
+    "when_to_change": "Quick shareable time-lapses; use interval timer + stills for best quality.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "n/a",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Interval 2-5 s, exposure smoothing ON",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "n/a",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Prefer interval timer stills (keeps raw frames)",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "All three list it in the Photo shooting menu.",
+    "gotchas": [
+      "No stills to rescue if exposure goes wrong.",
+      "HLG tone mode forces H.265 10-bit output (Z50II)."
+    ],
+    "related": [
+      "interval-timer-shooting"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option list not read from manual body text for any body.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-psm-index",
+        "name": "Nikon Z50II Reference Guide - Photo shooting menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03.html",
+        "kind": "manufacturer",
+        "findings": "Time-lapse video listed in Photo shooting menu."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Time-Lapse Video in Photo shooting menu."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "Time-lapse video in Photo shooting menu."
+      }
+    ]
+  },
+  {
+    "id": "auto-capture",
+    "group": "Drive, shutter & VR",
+    "name": "Auto capture",
+    "available_on": [
+      "z8"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Auto capture (video menu has its own)",
+      "z5ii": null,
+      "z50ii": null
+    },
+    "one_liner": "Z8 fires by itself when a subject moves, is detected, or enters a distance band.",
+    "what_it_does": "Unattended triggering based on motion (direction/speed), subject detection type and size, and/or a focus distance range. Useful for a camera on a tripod at a perch, feeder or nest while you shoot with another body.",
+    "options": [
+      {
+        "value": "Motion criteria",
+        "meaning": "Trigger on movement direction/speed.",
+        "use_when": "Birds landing on a perch."
+      },
+      {
+        "value": "Subject detection criteria",
+        "meaning": "Trigger when a set subject type/size is detected.",
+        "use_when": "Birds at feeder."
+      },
+      {
+        "value": "Distance criteria",
+        "meaning": "Trigger when subject is in a focus distance range.",
+        "use_when": "Pre-focused perch or landing spot."
+      }
+    ],
+    "when_to_change": "Remote/second-camera wildlife setups.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Z8 on tripod at a feeder/perch: Birds detection + distance criteria; you shoot BIF with the Z5II",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "n/a",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "n/a",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 only (FW 2.00+, improved FW 3.00). Not in Z5II or Z50II menus.",
+    "gotchas": [
+      "Battery and card fill quickly - set limits and test triggers first."
+    ],
+    "related": [
+      "release-mode",
+      "subject-detection",
+      "interval-timer-shooting"
+    ],
+    "firmware_note": "Added FW 2.00; FW 2.10 fixed failure to start; FW 3.00 improvements.",
+    "research_notes": "Sub-option names not read from the Z8 manual body.",
+    "sources": [
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 2.00 added auto capture (motion, distance, subject detection); FW 3.00 improvements."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Auto Capture in Photo shooting menu."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "No Auto capture in Z5II Photo shooting menu."
+      },
+      {
+        "id": "nikon-z50ii-psm-index",
+        "name": "Nikon Z50II Reference Guide - Photo shooting menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03.html",
+        "kind": "manufacturer",
+        "findings": "No Auto capture in Z50II Photo shooting menu."
+      }
+    ]
+  },
+  {
+    "id": "pixel-shift-shooting",
+    "group": "Drive, shutter & VR",
+    "name": "Pixel shift shooting",
+    "available_on": [
+      "z8",
+      "z5ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Pixel shift shooting",
+      "z5ii": "Photo shooting menu > Pixel shift shooting",
+      "z50ii": null
+    },
+    "one_liner": "Shifts the sensor between frames for higher-resolution, low-moire composites.",
+    "what_it_does": "Takes a series of RAW frames with the sensor moved by sub-pixel amounts, then merges them in Nikon NX Studio on a computer into a higher-resolution image (Nikon cites up to about 180 MP on the Z8). Needs a static subject and a rock-solid tripod. On the Z8, FW 3.00 can combine it with focus shift or AE bracketing.",
+    "options": [
+      {
+        "value": "Number of shots / delay / interval",
+        "meaning": "How many shifted frames and timing.",
+        "use_when": "More frames = more resolution and colour accuracy, more chance of movement artefacts."
+      },
+      {
+        "value": "Z8: combine with focus shift or AE bracketing (FW 3.00)",
+        "meaning": "High-res stacking or HDR.",
+        "use_when": "Static macro (MC 105) or high-contrast architecture."
+      },
+      {
+        "value": "Z8: WB lock at first shot, new folder per sequence, self-timer (FW 3.00)",
+        "meaning": "Workflow aids.",
+        "use_when": "Always - sorting and merging is easier."
+      }
+    ],
+    "when_to_change": "Static, tripod-mounted subjects only: architecture, art reproduction, still-life macro.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "n/a",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Only for windless, cloud-free static scenes",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Not handheld; tripod still-life only",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "No - the moon moves",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8: added FW 2.00; FW 3.00 adds focus-shift/AE-bracket combination. Z5II: listed in its Photo shooting menu. Z50II: not available.",
+    "gotchas": [
+      "Merging happens in NX Studio, not in camera.",
+      "Any movement (leaves, water, people) causes artefacts.",
+      "Uses the IBIS mechanism - VR has no role here."
+    ],
+    "related": [
+      "focus-shift-shooting",
+      "vibration-reduction"
+    ],
+    "firmware_note": "Z8 FW 2.00 added pixel shift; FW 3.00 extended it.",
+    "research_notes": "Z5II shot-count options and output resolution not retrieved; Nikon's Z5II spec section doesn't mention pixel shift, but the Z5II manual index lists it.",
+    "sources": [
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 2.00 added pixel shift; FW 3.00 pixel shift with focus shift and AE bracketing."
+      },
+      {
+        "id": "petapixel-z8-fw3",
+        "name": "PetaPixel - Nikon Z8 firmware adds pixel shift with focus shift and AE bracketing (2025-06-11)",
+        "url": "https://petapixel.com/2025/06/11/nikon-z8-firmware-adds-worlds-first-pixel-shift-mode-with-focus-shift-and-ae-bracketing",
+        "kind": "review",
+        "findings": "Up to 180 MP composite assembled in NX software; FW 3.00 adds focus-shift/AE-bracket combination, per-sequence folder, self-timer, WB lock."
+      },
+      {
+        "id": "nikon-z5ii-pixel-shift",
+        "name": "Nikon Z5II Reference Guide - Pixel shift shooting",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_pixel_shift_shooting_162.html",
+        "kind": "manufacturer",
+        "findings": "Listed as a Photo shooting menu item (body text not retrievable)."
+      },
+      {
+        "id": "nikon-z50ii-psm-index",
+        "name": "Nikon Z50II Reference Guide - Photo shooting menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03.html",
+        "kind": "manufacturer",
+        "findings": "No pixel shift item in Z50II Photo shooting menu."
+      }
+    ]
+  },
+  {
+    "id": "sensor-shield-power-off",
+    "group": "Drive, shutter & VR",
+    "name": "Sensor shield behavior at power off",
+    "available_on": [
+      "z8"
+    ],
+    "menu_path": {
+      "z8": "Setup menu > Sensor shield behavior at power off",
+      "z5ii": null,
+      "z50ii": null
+    },
+    "one_liner": "Z8 closes a shield over the sensor when off, keeping dust out.",
+    "what_it_does": "The Z8 has a thin shield in front of the sensor (it has no mechanical shutter). Set it to close at power-off so dust lands on the shield instead of the sensor during lens changes - but only if you switch off before changing lenses.",
+    "options": [
+      {
+        "value": "Sensor shield closes",
+        "meaning": "Shield closes when the camera is turned off.",
+        "use_when": "Default choice for field use, especially changing lenses outdoors."
+      },
+      {
+        "value": "Sensor shield stays open (factory default)",
+        "meaning": "Sensor exposed when off.",
+        "use_when": "Wet sensor cleaning (or use Clean image sensor maintenance)."
+      }
+    ],
+    "when_to_change": "Set to close once; switch off before every lens change.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Closes",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Closes",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Closes",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Closes",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Closes",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Closes",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 only. Z5II and Z50II have mechanical shutters and no such setting.",
+    "gotchas": [
+      "Never touch the shield - it is more fragile than a mechanical shutter; use only a hand blower.",
+      "If the power switch is on 'sleep'/standby or the card is still writing, the shield may stay open - turn fully OFF.",
+      "Doesn't help if you change lenses with the camera on."
+    ],
+    "related": [
+      "clean-image-sensor"
+    ],
+    "firmware_note": "",
+    "research_notes": "Exact option labels from Have Camera Will Travel, not from the Z8 manual body.",
+    "sources": [
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Electronic shutter with shutter sound and sensor shield."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu: Sensor Shield Behavior at Power Off."
+      },
+      {
+        "id": "hcwt-z8-shield",
+        "name": "Have Camera Will Travel - Nikon Z8 sensor shield",
+        "url": "https://havecamerawilltravel.com/nikon-z8-sensor-shield/",
+        "kind": "review",
+        "findings": "Options 'Sensor shield stays open' (default) and 'Sensor shield closes'; don't touch the shield; blower only; stays open if writing or switch not fully OFF."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Recommends turning it on, provided the camera is off before lens changes."
+      }
+    ]
+  },
+  {
+    "id": "clean-image-sensor",
+    "group": "Drive, shutter & VR",
+    "name": "Clean image sensor",
+    "available_on": [
+      "z8",
+      "z5ii"
+    ],
+    "menu_path": {
+      "z8": "Setup menu > Clean image sensor",
+      "z5ii": "Setup menu > Clean image sensor",
+      "z50ii": null
+    },
+    "one_liner": "Ultrasonic shake that knocks loose dust off the sensor.",
+    "what_it_does": "Vibrates the sensor filter to remove loose dust, on demand or automatically at shutdown. It won't remove sticky spots - those need a blower or wet clean.",
+    "options": [
+      {
+        "value": "Clean now",
+        "meaning": "Run once.",
+        "use_when": "After a dusty outing or before a critical f/11+ landscape."
+      },
+      {
+        "value": "Clean at shutdown (Z5II default since FW 1.02) / off",
+        "meaning": "Automatic cleaning when switching off.",
+        "use_when": "Leave on."
+      }
+    ],
+    "when_to_change": "Run Clean now when a test shot of sky at f/16 shows spots.",
+    "suggested": [
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Clean now before the shoot",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Clean at shutdown",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Birds in flight",
+        "value": "Clean at shutdown",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Clean at shutdown",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Clean at shutdown",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Clean at shutdown (dust shows at small apertures)",
+        "scenario_id": "macro"
+      }
+    ],
+    "body_differences": "Z8 and Z5II only. The Z50II setup menu has no Clean image sensor item (Image Dust Off ref photo only).",
+    "gotchas": [
+      "On the Z8, use this maintenance mode (or set the shield to stay open) before a wet clean."
+    ],
+    "related": [
+      "sensor-shield-power-off"
+    ],
+    "firmware_note": "Z5II FW 1.02 changed the default to 'Clean at shutdown'.",
+    "research_notes": "Exact option labels not read from manual body text.",
+    "sources": [
+      {
+        "id": "nikon-z5ii-fw-history",
+        "name": "Nikon Download Center - Z5II firmware change history (latest C 1.20)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/601.html",
+        "kind": "manufacturer",
+        "findings": "FW 1.02 changed default image sensor cleaning to 'Clean at shutdown'."
+      },
+      {
+        "id": "nikon-z8-menu-index",
+        "name": "Nikon Z8 Reference Guide - menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu: Clean Image Sensor."
+      },
+      {
+        "id": "nikon-z5ii-menu-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings / Photo shooting / Setup menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu: Clean image sensor."
+      },
+      {
+        "id": "nikon-z50ii-setup-index",
+        "name": "Nikon Z50II Reference Guide - Setup menu (index via Silent mode page)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-49.html",
+        "kind": "manufacturer",
+        "findings": "Z50II setup menu has Image Dust Off ref photo but no Clean image sensor."
+      },
+      {
+        "id": "hcwt-z8-shield",
+        "name": "Have Camera Will Travel - Nikon Z8 sensor shield",
+        "url": "https://havecamerawilltravel.com/nikon-z8-sensor-shield/",
+        "kind": "review",
+        "findings": "Z8 Clean image sensor runs at power-off by default; use it for wet-cleaning access."
+      }
+    ]
+  }
+]

@@ -1,0 +1,219 @@
+{
+  "id": "z-180-600-vr",
+  "name": "NIKKOR Z 180-600mm f/5.6-6.3 VR",
+  "short": "180-600 VR",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "zoom",
+  "focal_mm": [
+    180,
+    600
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 180,
+      "f": 5.6
+    },
+    {
+      "focal_mm": 600,
+      "f": 6.3
+    }
+  ],
+  "min_aperture_f": 32,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 2140,
+  "filter_mm": 95,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Not stated on Nikon's page (described only as fast and quiet AF)",
+    "focus_throw_deg": null,
+    "notes": "Internal zoom with a short 70° zoom-ring throw (Nikon). Weight about 2,140 g with tripod collar, about 1,955 g without (Nikon spec table; the overview text says 1,995 g). Cameralabs (Z8): AF repeatability 99.2% in Reikan FoCal; infinity to 6 m in about 0.5 s at 600mm; parfocal from 600mm back to about 300mm, refocus at 250mm and shorter; focus breathing about 4% at 600mm, 1% at 180mm. Has a focus limiter, multi-function ring and Fn buttons (Cameralabs). Tripod foot is not Arca-Swiss compatible (Cameralabs). Lenstip: AF 'falls well short' (a con), which contradicts Cameralabs' fast, reliable AF; focus limiter FULL or 6 m–infinity; focus-by-wire ring, ~270° throw with a fast turn."
+  },
+  "stabilization": {
+    "lens_vr": true,
+    "lens_vr_stops": 5.5,
+    "synchro_vr": null,
+    "ibis_on_ftz": null,
+    "notes": "Nikon claims 5.5 stops (mode/standard not stated on the product page). Lenstip measured 4.3 EV at 600mm (several dozen shots 1/800–1/5 s) and Cameralabs measured about 4 stops in a 160-shot handheld test at 600mm on a Z8 and suggests not going slower than about 1/80 s handheld at 600mm. Synchro VR: still unverified. Nikon's support article (000066751) could not be fetched (robots-blocked); a FredMiranda quote of it (Jan 2026) lists the Z8 and Z5 II as compatible bodies but shows only a truncated lens list without this lens, which proves nothing either way. Field left null. Z50 II: no IBIS, lens VR only."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 180,
+        "value": 1.3
+      },
+      {
+        "focal_mm": 600,
+        "value": 2.4
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 600,
+        "value": 0.25
+      },
+      {
+        "focal_mm": 180,
+        "value": 0.16
+      }
+    ],
+    "working_distance_mm_at_max_mag": 2000,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "Nikon: MFD 1.3 m at 180mm, 2.4 m at 600mm (from the focal plane); max reproduction 0.25x. Cameralabs measured 1:3.9 (≈0.26x) at 600mm with a working distance 'just over 2 m', and 1:6.2 (≈0.16x) at 180mm with MFD about 1.25 m. Working distance is entered as 2000 mm from Cameralabs' 'just over 2 m'. Photography Life also says the long end focuses to just over 2 m, which doesn't match Nikon's 2.4 m (Nikon measures from the sensor, and the lens is 315.5 mm long, so both can be roughly right). With the TC-1.4x, Nikon says the reproduction ratio is 1.4× the lens's (so about 0.35x at 840mm) and that MFD may differ from the lens documentation."
+  },
+  "quick": {
+    "headline": "Sharp wide open from 180–400mm; at 600mm stop to about f/8 if light allows (Lenstip), though other 45MP tests saw little gain. f/11 costs detail. With the TC-1.4x (840mm f/9) center is good, FX corners soft.",
+    "sweet_spot": "Wide open at 180–400mm; f/7.1–f/8 at 600mm",
+    "wide_open": "Lenstip (MTF50): center over 67 lpmm at 180mm f/5.6, almost 59 mid-range wide open, but only 'merely decent' at 600mm f/6.3 (over 47 at f/8; decency 40–42, diffraction ceiling about 66 at f/8). OpticalLimits (45MP): center very good, outer field good, stopping down brings little. Cameralabs (Z8): 180mm f/5.6 extremely crisp and even; 600mm f/6.3 only a tad softer in the center, FX corner a bit soft.",
+    "by_focal": [
+      {
+        "focal_mm": 180,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Lenstip: strongest focal length, center over 67 lpmm wide open; APS-C edge good from wide open; FF edge slightly behind mid-range. Cameralabs (Z8): extremely crisp center, DX corner not far behind, very even across the frame at f/5.6. OpticalLimits: lens is best in the low-to-mid range. Lateral CA highest here (1.5–2 px at borders, OpticalLimits)."
+      },
+      {
+        "focal_mm": 300,
+        "center_peak": "f/6",
+        "corners_peak": "f/6–f/8",
+        "wide_open_note": "Cameralabs (Z8) at f/6: FX corner best of the group tested (ahead of Z 100-400 and Tamron 150-600 G2); field curvature undetectable at 300mm. Lenstip: mid-range center almost 59 lpmm wide open, almost 60 slightly stopped down; FF edge best in mid-range."
+      },
+      {
+        "focal_mm": 400,
+        "center_peak": "f/6",
+        "corners_peak": "f/8",
+        "wide_open_note": "Cameralabs (Z8) at f/6: center similar to the Z 400mm f/4.5 VR S; DX contrast and FX corner slightly behind the prime. Lenstip: mid-range center almost 59 lpmm wide open, almost 60 slightly stopped down; FF edge best in mid-range."
+      },
+      {
+        "focal_mm": 600,
+        "center_peak": "f/8",
+        "corners_peak": "f/8",
+        "wide_open_note": "Sources disagree. Lenstip: weakest point; center only 'merely decent' at f/6.3, over 47 lpmm at f/8; APS-C edge needs f/7.1–f/8, FF edge near f/8. Cameralabs (Z8): center only a tad softer than 180mm and FX corner only a bit soft at f/6.3. OpticalLimits: quality stays high at 600mm, stopping down improves little, f/11 diffraction-affected. Verdict f/8 when light allows; f/6.3 is still usable."
+      },
+      {
+        "focal_mm": 840,
+        "center_peak": "f/9–f/11 (displayed, with TC-1.4x)",
+        "corners_peak": "f/11 (displayed, with TC-1.4x)",
+        "wide_open_note": "TC-1.4x: Cameralabs (Z8): good center and DX corner at f/9, FX corner 'decidedly soft'; acuity improves a little at f/11. Strong in a 1 km city test at 840mm. OpticalLimits advises against teleconverters because the smaller effective aperture adds diffraction (not tested)."
+      }
+    ],
+    "close_up_best": "f/8–f/11, subject centered",
+    "close_up_note": "Cameralabs (Z8): at 180mm MFD (1:6.2) the center is very sharp at f/5.6, the DX corner needs about f/11, and the FX corner stays soft beyond f/11 because of field curvature (refocusing per corner barely helps). At 600mm MFD (1:3.9) the center is sharp at f/6.3 but everything outside it is soft; at f/11 with the subject centered and carefully focused, results are usable. Cameralabs lists soft close-up performance outside the center as a con and recommends f/11. One measured-visual source only: medium confidence.",
+    "diffraction_note": "Lenstip: f/8 is about the absolute maximum resolution this lens can deliver (diffraction ceiling ~66 lpmm). OpticalLimits (45MP): f/11 already affected. Cameralabs (Z8): TC-2.0x at 1200mm f/13 diffraction-limited; bokeh discs spike from f/11. On the Z8 treat f/8 as the limit.",
+    "avoid": [
+      "Don't stop past f/8 at normal distances: f/11 is diffraction-affected (OpticalLimits); Lenstip puts the diffraction ceiling at about f/8.",
+      "Don't use the TC-2.0x for detail: mushy at 1200mm f/13 even with aggressive sharpening (Cameralabs).",
+      "Don't put subjects in the FX corners at close focus (field curvature).",
+      "Don't count on Nikon's 5.5 stops handheld at 600mm: Cameralabs measured about 4; stay at 1/80 s or faster for static subjects."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two measured sources (Lenstip MTF50 with numbers; OpticalLimits at 45MP, chart-only) plus Cameralabs' Z8 Siemens-star test. All agree on a sharp 180–400mm and f/11 diffraction cost; they disagree on 600mm wide open (Lenstip: needs f/8; OpticalLimits/Cameralabs: little gain). TC-1.4x verdict rests on Cameralabs alone."
+  },
+  "character": {
+    "bokeh": "Very nice for a zoom (Cameralabs): discs perfectly circular in the center up to f/8, smooth interior with no onion rings, mild outlining, no LoCA colouring; mild cat's-eye compression toward corners wide open. OpticalLimits: nearly circular discs at max aperture with slight outlining and faint inner pattern; corner discs distorted until about f/8; smooth transitions. Entrance pupil 95mm (Cameralabs).",
+    "flare_sunstar": "Lenstip lists significant problems against bright light as a con; Cameralabs and OpticalLimits did not test flare. Use the hood and avoid the sun near the frame. Sunstars only from f/11 (Cameralabs); 9 rounded blades give 18 points.",
+    "ca": "Lateral CA about 1.5–2 px at the borders at 180mm, nearly absent at longer focal lengths (OpticalLimits); auto-corrected. Longitudinal CA and focus shift practically none at 600mm; no notable purple fringing (Cameralabs).",
+    "distortion": "Slight pincushion in RAW, peak about 1.1% mid-range (OpticalLimits); clearly visible uncorrected at 180 and 600mm, corrected well by the profile (Cameralabs).",
+    "vignetting": "Low even on FX (Lenstip). Low: about 0.7 EV RAW wide open, negligible from f/8 (OpticalLimits). Cameralabs: negligible at 180mm (profile lifts FX corner ~0.4 EV at f/5.6), stronger at 600mm (~0.5 EV correction at f/6.3, some falloff remains). Adobe disables profile vignette correction if in-camera vignette control is off.",
+    "coma_astro": "Well-corrected coma and low astigmatism (Lenstip); practically coma-free at 180mm wide open (Cameralabs).",
+    "focus_breathing": "About 4% at 600mm, about 1% at 180mm (Cameralabs, Z8); Lenstip calls it moderate.",
+    "other": "Internal zoom, 70° zoom throw, 95 mm filter. Parfocal only from 600mm down to about 300mm (Cameralabs). Value pick: OpticalLimits optics 6.5, build 9, value 9; Cameralabs 'Highly Recommended'. Photography Life field review (Z8/Z9): very sharp, slightly lower contrast than the Z 400mm f/2.8."
+  },
+  "field_tips": [
+    "Birds on the Z8: 180–400mm wide open is fine. At 600mm use f/8 when light allows (Lenstip: wide open only 'decent'), but f/6.3 is usable (Cameralabs). Never go past f/8 for detail.",
+    "VR measured about 4–4.3 stops at 600mm (Cameralabs, Lenstip; not 5.5): stay at 1/80 s or faster for perched birds, and much faster for motion; use the focus limiter for distant birds to cut hunting.",
+    "Zoom-to-frame works without refocusing from 600 down to about 300mm (parfocal there); below 250mm, refocus before firing.",
+    "TC-1.4x = 252–840mm at f/8–f/9 displayed: keep birds central (FX corners soft), stop to f/11 only if the light allows, and expect AF to struggle in low contrast or poor light (Nikon warns AF may fail or the focus indicator flicker). On the Z8, DX crop at 600mm (900mm equivalent) is the comparison to make.",
+    "Close-ups (0.25x at 600mm, about 2 m away; about 0.35x with TC-1.4x): center the subject and use f/8–f/11."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "Cameralabs tested on a Z8 and OpticalLimits at 45MP: wide open at 180–400mm, f/8 at 600mm if light allows, f/11 diffraction-affected. VR measured 4–4.3 stops. Synchro VR not verified. For extra reach compare TC-1.4x at 840mm f/9 against DX crop at 600mm (19.4MP crop; 1⅓ stops faster)."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: corner softness wide open and with the TC is less visible per pixel; f/11 costs less (pixel-pitch inference). Slower body AF than the Z8 may make the TC-1.4x low-light AF warning more relevant (inference)."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX crop = 270–900mm equivalent. No IBIS: lens VR only, so shutter discipline matters even more (Cameralabs' 1/80 s at 600mm was on a Z8 with IBIS+VR). The DX corners are close to the frame centre, where this lens is strongest."
+    }
+  ],
+  "tc_compatible": true,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z 180-600 mm f/5.6-6.3 VR (resolution, build/stabilization, summary chapters)",
+      "url": "https://www.lenstip.com/695.4-Lens_review-Nikon_Nikkor_Z_180-600_mm_f_5.6-6.3_VR_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z body not named in the fetched chapters; RAW MTF50",
+      "date": "2025-06",
+      "findings": "Decency 40–42 lpmm; diffraction ceiling about 66 lpmm at f/8, which the author calls the absolute maximum to count on. Center: over 67 lpmm at 180mm wide open; almost 59 mid-range wide open (almost 60 slightly stopped down); 600mm only 'merely decent' wide open, over 47 at f/8. APS-C edge: good from wide open at 180mm and mid-range; at 600mm needs f/7.1–f/8. FF edge: best mid-range, 180mm slightly weaker, 600mm weakest, needs near f/8. Very good 180–400mm, sacrifices resolution at 600mm. Stabilization (695.3): measured 4.3 EV at 600mm vs 5.5 claimed. Build: internal zoom, focus limiter FULL/6 m–∞, 1,960 g without collar. Summary (695.11) pros: very good center, sensible APS-C edges, negligible LoCA, moderate lateral CA, slight distortion, low astigmatism, well-corrected coma, low vignetting, moderate breathing, nice bokeh, efficient VR, value. Cons: significant problems against bright light; AF falls well short. Other chapters: 695.7 coma/bokeh, 695.8 vignetting, 695.10 AF/breathing (not read)."
+    },
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Nikkor Z 180-600mm f/5.6-6.3 VR review (Klaus)",
+      "url": "https://opticallimits.com/nikon/nikon-z/nikkor-z-180-600mm-f-5-6-6-3-vr-review/",
+      "kind": "measured",
+      "tested_on": "45MP-normalized MTF (body not named in fetched text)",
+      "date": "2025-12",
+      "findings": "Center very good, outer field good; best in the low-to-mid range, quality stays high at 600mm. Stopping down brings little improvement; f/11 already affected by diffraction. RAW pincushion peak ~1.1% mid-range. RAW vignetting ~0.7 EV wide open, negligible from f/8. Lateral CA ~1.5–2 px at borders at 180mm, nearly absent at longer focal lengths. Bokeh: near-circular discs, slight outlining, corner discs distorted until ~f/8. TCs not tested; advises against them (diffraction from the smaller effective aperture). MFD 1.3–2.4 m, 1:4. Scores: optics 6.5, build 9, value 9. Numbers only in a chart image."
+    },
+    {
+      "id": "cameralabs",
+      "name": "Cameralabs: Nikon Z 180-600mm f5.6-6.3 VR review (Thomas), pages 1, 2 (Quality) and 4 (Verdict)",
+      "url": "https://www.cameralabs.com/nikon-z-180-600mm-f5-6-6-3-vr-review/2/",
+      "kind": "review",
+      "tested_on": "Nikon Z8 (45.7MP), Siemens stars at ~45× focal length plus 1 km city scene, Lightroom with profile",
+      "date": "2023-09",
+      "findings": "180mm f/5.6: extremely crisp center, very even to FX corner. 300mm f/6: best FX corner vs Z 100-400 and Tamron G2; no field curvature. 400mm f/6: center like Z 400 f/4.5, corners slightly behind it. 600mm f/6.3: center a tad softer than 180mm, FX corner a bit soft. TC-1.4x 840mm f/9: good center and DX corner, FX corner decidedly soft; slightly better at f/11. TC-2.0x 1200mm f/13: mushy, diffraction-limited. Close-up: 180mm 1:6.2, center very sharp at f/5.6, DX corner needs ~f/11, FX corner soft beyond f/11 (field curvature); 600mm 1:3.9, working distance just over 2 m, only center sharp at f/6.3, usable at f/11 centered. Bokeh circular to f/8, smooth, no onion rings. Vignetting correction ~0.4 EV (180) / ~0.5 EV (600). Practically no LoCA. Coma practically absent at 180mm. Page 1: AF repeatability 99.2%, ~0.5 s infinity→6 m at 600mm, breathing ~4% at 600mm and ~1% at 180mm, parfocal to ~300mm; VR measured ~4 stops at 600mm on Z8, suggests ≥1/80 s. Verdict: Highly Recommended; cons: soft close-up outside center (use f/11), not perfectly parfocal, non-Arca foot."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 180-600mm f/5.6-6.3 VR field review",
+      "url": "https://photographylife.com/reviews/nikon-z-180-600mm-f-5-6-6-3-vr",
+      "kind": "review",
+      "tested_on": "Nikon Z8 and Z9 (45.7MP)",
+      "date": null,
+      "findings": "Field review without per-aperture data: very sharp, not as sharp as the Z 400 f/2.8 mainly due to slightly lower contrast, but resolves a lot on 45MP. Lists 1.3 m (180mm) / 2.4 m (600mm), 0.25x; text says the long end focuses to just over 2 m. No TC tests; notes the Z 100-400 reaches 0.38x."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon Imaging: NIKKOR Z 180-600mm f/5.6-6.3 VR product/spec page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_180-600mmf56-63_vr/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "f/5.6–6.3, min f/32–36; MFD 1.3 m (180mm) / 2.4 m (600mm); 0.25x; about 2,140 g with collar, 1,955 g without (overview says 1,995 g); 95 mm filter; 9 rounded blades; 25 elements/17 groups (6 ED, 1 aspherical), fluorine front; VR 5.5 stops; internal zoom; 70° zoom rotation; 110 × 315.5 mm. Teleconverters compatible, but AF may fail or the focus indicator flicker depending on subject, light and focus point. Synchro VR not mentioned."
+    },
+    {
+      "id": "nikon_tc14",
+      "name": "Nikon Imaging: Z TELECONVERTER TC-1.4x product/spec page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_tc_14x/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Lists the Z 180-600 f/5.6-6.3 VR as compatible. Focal length and reproduction ratio ×1.4; effective aperture reduced by one stop; MFD with TC may differ from the lens documentation; AF may fail or the focus indicator flicker depending on subject, light and focus point. 220 g, 6 elements/4 groups."
+    },
+    {
+      "id": "dcw_z50ii",
+      "name": "Digital Camera World: Nikon Z50 II vs Nikon Z50",
+      "url": "https://www.digitalcameraworld.com/buying-guides/nikon-z50-ii-vs-nikon-z50",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "Z50 II has no IBIS; relies on VR lenses for stabilized stills."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "One web search for a Christopher Frost review of the Z 180-600mm returned no Frost video (results were Fstoppers, Photography Life, Cameralabs, Photography Blog, Lenstip, Ken Rockwell, etc.). YouTube pages can't be fetched directly. Nothing here is attributed to him."
+  },
+  "research_notes": "1) Lenstip was added in a follow-up pass and is the only source with MTF numbers. DXOMARK, The-Digital-Picture, Photography Life lab data and Thom Hogan's zsystemuser review (page body not retrievable) are still missing. 2) OpticalLimits (measured, 45MP) and Cameralabs (Z8 visual) agree: sharp wide open, little gain from stopping down, f/11 diffraction-affected. Hence 'wide open to f/8' and medium confidence. Per-focal corner peaks are from Cameralabs' wide-open crops plus OpticalLimits' 'corner discs distorted until ~f/8' (bokeh, not resolution), so corner f/8 entries are partly inference. 3) Max aperture transition: Nikon doesn't say where f/6.3 starts; Cameralabs tested 300 and 400mm at f/6, so f/6 is reached by 300mm. Only 180mm f/5.6 and 600mm f/6.3 are entered. 4) TC-1.4x: Cameralabs says good IQ (Highly Recommended pro), OpticalLimits advises against TCs without testing. Verdict follows the tested source. 5) Weight discrepancy on Nikon's page (1,955 vs 1,995 g without collar). 6) MFD at 600mm: Nikon 2.4 m from the sensor vs 'just over 2 m' (Cameralabs working distance, Photography Life). 7) Synchro VR not verified. 8) Z5 II AF comment is inference. 9) 600mm conflict: Lenstip says wide open is only 'decent' and recommends f/7.1–f/8; OpticalLimits and Cameralabs saw little gain from stopping down. The record uses f/8 at 600mm when light allows. 10) AF conflict: Lenstip says AF falls well short; Cameralabs measured 99.2% repeatability and fast focusing on a Z8. Lenstip's body is not named, which may explain the difference (unverified). 11) Lenstip flags bright-light (flare) problems that the other sources did not test."
+}

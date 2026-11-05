@@ -1,0 +1,190 @@
+{
+  "id": "thypoch-simera-28-f14",
+  "name": "Thypoch Simera 28mm f/1.4 ASPH (Nikon Z)",
+  "short": "Simera 28 f/1.4",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    28
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 28,
+      "f": 1.4
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 14,
+  "rounded_blades": true,
+  "weight_g": 368,
+  "filter_mm": 49,
+  "focus": {
+    "on_z_body": "MF (manual-focus lens)",
+    "cpu": false,
+    "motor": "None. Fully manual helicoid, manual aperture ring, no electronic contacts.",
+    "focus_throw_deg": null,
+    "notes": "No electronic contacts: no EXIF, no camera-controlled aperture, no AF (OpticalLimits, tested on Nikon Z). Dustin Abbott measured about 100° of focus rotation, but on the Leica M version; the Z version is longer (72.1 mm vs 55 mm per Thypoch's spec table / OpticalLimits) and its throw was not found, so the field is null. M-version reviewers note slight extra drag at about 0.7 m, a deliberate detent where rangefinder coupling ends (Phillip Reeve, Dustin Abbott, PetaPixel). Aperture ring: 1/3-stop clicks f/1.4–f/8, full stops f/11 and f/16, with a click/declick switch (Abbott, M version; Thypoch lists the 'dual aperture mode'). Reeve found the click spacing irregular. Fstoppers (Sony E version) found the throw nearly ideal, with a fixed focus tab. Thypoch newsroom: a 'Type II' focus-tab version also exists (OpticalLimits news); which one the owner has is not known. Focus with peaking plus magnified view; with no CPU the Z8 has no focus-distance readout."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "Native Z mount, so FTZ II does not apply. The body cannot read the focal length, so enter 28 mm and f/1.4 under Setup menu > Non-CPU lens data on the Z8 and Z5 II. Nikon's Z8 manual says recording these values enables on-board vibration reduction tuned to the lens (and records focal length/aperture in EXIF). Without it, IBIS does not know the focal length. The Z50 II has no IBIS for stills."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 28,
+        "value": 0.4
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 28,
+        "value": 0.08
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": false,
+    "notes": "MFD 0.4 m from the sensor plane (Thypoch, OpticalLimits, Lenstip spec). Max magnification 0.08× (Lenstip spec database); Phillip Reeve measured 1:12.8 (about 0.078×) on the M version. Thypoch does not publish magnification. Floating element group for close-range correction (Thypoch). Reeve: the close-range part of the focus throw is very short, which makes precise close focusing hard. Effective-aperture loss at 0.08× is negligible (about 1/10 stop)."
+  },
+  "quick": {
+    "headline": "Rendering-first compact 28: pretty f/1.4 look with soft corners and heavy vignetting; centre outstanding by f/2.8, whole frame best at f/5.6–f/8.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Centre good to 'very good' at f/1.4 but not biting; corners soft (OpticalLimits on 45MP Z; Abbott 'very soft' on 61MP; Fstoppers soft). About 2.6–3.2 EV vignetting. Contrast and LoCA improve noticeably by f/2.",
+    "by_focal": [
+      {
+        "focal_mm": 28,
+        "center_peak": "f/2.8–f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "OpticalLimits (Nikon Z, 45MP): f/1.4 centre very good, corners soft; f/2 corners still unimpressive; f/2.8 centre outstanding, borders very sharp, corners good; peak around f/5.6 with very good corners. Abbott (61MP a7RV, M version adapted): centre very high detail by f/2, midframe pin-sharp f/4–f/5.6, corners peak f/8. Reeve (24MP M10): best f/5.6–f/8 overall; at 0.9 m it was already good across the frame at f/1.4."
+      }
+    ],
+    "close_up_best": "f/2.8–f/4",
+    "close_up_note": "Phillip Reeve (42MP A7rII, M version): centre slightly soft wide open at close range; one to two stops down noticeably improves contrast and resolution. OpticalLimits (Z): focus shifts rearward when stopping down, a potential issue at close focus, so check focus magnified at the shooting aperture.",
+    "diffraction_note": "Abbott (61MP a7RV): slight diffraction softening at f/11 and f/16, not severe. OpticalLimits (45MP Z): peak around f/5.6; numeric values beyond were only in a chart image. On the Z8 expect a small loss from f/11.",
+    "avoid": [
+      "Do not expect sharp corners before f/5.6 on the Z8.",
+      "Do not focus wide open and then stop down at close range: focus shifts rearward (OpticalLimits).",
+      "Do not shoot into strong light without the hood."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "One measured test on Nikon Z (OpticalLimits, 45MP; chart values not readable, verbal grades used). Abbott (61MP) and Reeve (24MP) visual tests on the M version agree on soft wide-open corners and an f/5.6–f/8 peak. Focus-shift and flare verdicts conflict between sources."
+  },
+  "character": {
+    "bokeh": "Phillip Reeve rates it the best of the fast 28mm M lenses: well-corrected field curvature and 14 rounded blades keep highlights round when stopped down. Abbott: lemon-shaped highlights near the edges at f/1.4 give mild swirl, round by f/2.8; transitions very nice. OpticalLimits: clean centre discs, good background blur, but foreground blur 'more nervous' with outlined edges. PetaPixel (film) found nothing special. Onion rings from the asphere can show (Reeve).",
+    "flare_sunstar": "Mixed. OpticalLimits (Z): flare 'very obvious' in contra-light, use the hood. Reeve (pre-production, limited test): various artifacts with strong point sources, including sensor reflections. Abbott: good flare resistance, mostly one ghost blob. PetaPixel: moderately controlled. Sunstars: Reeve saw distinct, even rays f/5.6–f/16; OpticalLimits: first rays at f/4, pointy at f/8, best at f/16.",
+    "ca": "Lateral CA low: OpticalLimits about 0.8 px at the borders at f/1.4, about 0.4 px stopped down; Reeve and Abbott minimal. LoCA moderate: OpticalLimits noticeable at f/1.4–f/2, much reduced at f/2.8, gone by f/4; Reeve green behind / magenta in front, not fully gone at f/2.",
+    "distortion": "Low pincushion: OpticalLimits about 0.7% (no in-camera correction possible). Reeve: low, slightly wavy. Abbott: next to none.",
+    "vignetting": "Heavy wide open. OpticalLimits (Z): about 2.6 EV at f/1.4, about 1.3 EV from f/2.8. Reeve (M10): 3.2 EV at f/1.4, 2.4 at f/2, 2.1 at f/2.8, 1.9 from f/4. Abbott: nearly 3 stops of correction needed. No profile is applied in-camera (no CPU).",
+    "coma_astro": "Reeve: noticeable but small at f/1.4, most 'wings' gone at f/2, f/5.6 for clean extreme corners. Abbott: average coma toward the edges. Usable for astro at f/2 with some edge coma.",
+    "focus_breathing": "Not measured by any source found.",
+    "other": "OpticalLimits optical score 6/10, build 9/10. PetaPixel's lab test (a7RV, adapted M version) found the lens measured closer to f/1.7 than f/1.4 (method not stated in what was read). Sony E/M-adapted results on thick-filter-stack bodies are worse than on Z: Reeve's A7rII corners needed f/11. The Z filter stack is thinner, and OpticalLimits tested natively on Z."
+  },
+  "field_tips": [
+    "Before the first shot: Setup menu > Non-CPU lens data, store 28 mm f/1.4 and select it, so IBIS is set for 28 mm and EXIF records the lens.",
+    "Focus at the shooting aperture with peaking + magnified view, especially closer than about 1 m: focus moves rearward as you stop down (OpticalLimits).",
+    "For character: f/1.4–f/2 with the subject near the centre; for landscapes edge to edge: f/5.6–f/8, and stop at f/11.",
+    "Always fit the hood; flare is the most-criticised trait in backlight. Use f/8–f/16 for sunstars.",
+    "Add vignetting (about 2.5–3 EV at f/1.4) and distortion corrections manually in raw processing; no profile is applied automatically."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP shows soft corners until f/5.6 and LoCA at f/1.4–f/2 (OpticalLimits tested at 45MP on Z). Enter Non-CPU lens data for IBIS. No distance scale in the EVF."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP is more forgiving; Reeve's 24MP M10 results (good across the frame at f/1.4 at 0.9 m, best f/5.6–f/8) are a fair guide. Enter Non-CPU lens data for IBIS."
+    },
+    {
+      "body": "z50ii",
+      "note": "About 42mm-equivalent framing on DX; the soft corners and much of the vignetting fall outside the frame, so f/1.4–f/2 is more usable. No IBIS. Whether the Z50 II offers Non-CPU lens data was not verified."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Thypoch Simera 28mm f/1.4 (Z) review",
+      "url": "https://opticallimits.com/nikon/nikon-z/thypoch-simera-28mm-f-1-4-z-review/",
+      "kind": "measured",
+      "tested_on": "Nikon Z full-frame, 45MP (Imatest MTF)",
+      "date": "2024-07",
+      "findings": "Z version: 368 g, φ54 × 72.1 mm, 49 mm filter, 14 blades, 11/7 (1 ED, 1 asph, 3 HRI), MFD 0.4 m, floating system. All-manual: no AF, EXIF or camera-controlled aperture. Resolution (verbal; numbers only in chart image): f/1.4 centre very good, corners soft; f/2 corners unimpressive; f/2.8 centre outstanding, borders very sharp, corners good; peak around f/5.6 with very good corners; focus field of the tested copy slightly wavy. Vignetting about 2.6 EV at f/1.4, about 1.3 EV from f/2.8. Distortion about 0.7% pincushion. Lateral CA about 0.8 px at f/1.4, about 0.4 px stopped down. LoCA noticeable at f/1.4–f/2, much reduced f/2.8, gone by f/4. Focus shift rearward when stopping down; check magnified, especially at close focus. Flare very obvious in contra-light. Sunstars from f/4, best at f/16. Bokeh: clean centre highlights, edge discs deteriorate at f/1.4, foreground blur nervous. Scores: optics 6, build 9, price/performance 7.5."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "phillipreeve.net: Review: Thypoch Simera 28mm 1.4",
+      "url": "https://phillipreeve.net/blog/review-thypoch-simera-28mm-1-4/",
+      "kind": "review",
+      "tested_on": "Leica M10 (24MP), Sony A7rII (42MP), Sony A7III (24MP), film; M-mount version",
+      "date": "2024-04 (updated 2025-12)",
+      "findings": "331 g (M), 49 mm filter, 14 rounded blades, 0.40 m MFD, 1:12.8 measured max magnification. Infinity on M10: very good, slight midzone dip and lower corner contrast at f/1.4–f/2, best f/5.6–f/8; on A7rII much worse (midframe needs f/5.6, corners best at f/11). At 0.9 m: very good across the frame already at f/1.4. Close (A7rII centre): slightly soft wide open, 1–2 stops down improves noticeably. No relevant focus shift; field curvature well corrected. Best bokeh of fast 28mm M lenses. Lateral CA minimal; LoCA average, not fully gone at f/2. Vignetting 3.2 / 2.4 / 2.1 / 1.9 EV at f/1.4 / f/2 / f/2.8 / f/4+. Coma small at f/1.4, mostly gone at f/2, clean corners f/5.6. Sunstars distinct f/5.6–f/16. Flare artifacts with strong point sources (pre-production test). Close-range focus throw very short. Comments: Z filter stack slightly thinner than Sony E."
+    },
+    {
+      "id": "dustinabbott",
+      "name": "Dustin Abbott: Thypoch Simera 28mm F1.4 Review",
+      "url": "https://dustinabbott.net/2024/01/thypoch-simera-28mm-f1-4-review/",
+      "kind": "review",
+      "tested_on": "Sony a7RV (61MP) and Alpha 1 (50MP), M version via adapters; visual chart crops",
+      "date": "2024-01",
+      "findings": "330 g, 49 mm, 14 rounded blades, 0.4 m MFD (estimates about 0.09×), 11/7 with floating group. f/1.4 centre good not pin-sharp, corners very soft; f/2 centre very high contrast; f/4–f/5.6 midframe pin-sharp; f/8 corners peak 'fantastic'; f/11–f/16 slight diffraction softening. Close-to-medium distances strong. Bokeh: lemon highlights near edges at f/1.4 (mild swirl), round by f/2.8. LoCA minimal; lateral CA not evident. Good flare resistance. Coma average. Vignetting nearly 3 stops (about +73 LR). Distortion next to none. Focus rotation about 100°; 1/3-stop clicks to f/8; declick switch."
+    },
+    {
+      "id": "fstoppers",
+      "name": "Fstoppers: We Review the Thypoch Simera 28mm f/1.4 Lens",
+      "url": "https://fstoppers.com/gear/review-thypoch-simera-28mm-f14-lens-673893",
+      "kind": "review",
+      "tested_on": "Sony a7C R (61MP), Sony E version",
+      "date": null,
+      "findings": "Corners soft at f/1.4, good by about f/5.6 (brick-wall series f/1.4–f/16). Vignetting noticeable at f/1.4, well controlled by f/2. Minimal distortion. Well-damped focus ring with near-ideal throw; fixed focus tab."
+    },
+    {
+      "id": "petapixel",
+      "name": "PetaPixel: Thypoch Simera 28mm f/1.4 and Eureka 50mm f/2 Review",
+      "url": "https://petapixel.com/2025/07/01/thypoch-simera-28mm-f-1-4-and-eureka-50mm-f-2-review-great-options-for-film-fans",
+      "kind": "review",
+      "tested_on": "Sony a7RV (61MP) with M-to-E adapter for charts; Voigtländer Bessa R2a for film",
+      "date": "2025-07",
+      "findings": "f/1.4 centre good, edges/corners soft and smudgy; f/2.8 edges improve, corners still poor; measured closer to f/1.7 than f/1.4 (their lab). Bokeh nothing special. Flare moderately controlled with some ghosting. Small LoCA. Verdict 'maybe': good build and feel at $700, not a top performer."
+    },
+    {
+      "id": "thypoch",
+      "name": "Thypoch: Simera product page",
+      "url": "https://thypoch.com/Simera",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "F1.4–F16, 14 blades, 11 elements in 7 groups (ED, HRI, aspherical), floating elements for close range, MFD 0.4 m from sensor plane, 49 mm filter, φ54 mm. Weights per mount listed as ≈330/368/353/344/347 g and lengths 55 / 72.1 mm; the Z column assignment (368 g, 72.1 mm) is consistent with OpticalLimits."
+    },
+    {
+      "id": "lenstip_spec",
+      "name": "Lenstip specification database: Thypoch Simera 28 mm f/1.4",
+      "url": "https://www.lenstip.com/2305-Thypoch_Simera_28_mm_f_1.4-lens_specifications.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Spec page only (no Lenstip test): MFD 0.4 m, max magnification 0.08×, 14 blades, f/16 min, 49 mm. No full review exists."
+    },
+    {
+      "id": "nikon_z8_noncpu",
+      "name": "Nikon Z8 Online Manual: Non-CPU Lens Data",
+      "url": "https://onlinemanual.nikonimglib.com/z8/en/sum_non-cpu_lens_data_308.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Setup menu item. Record a lens number, focal length and maximum aperture for a non-CPU lens to use features normally reserved for CPU lenses, including on-board vibration reduction. The page phrases it for lenses on an optional mount adapter; a contactless native Z lens is also seen as non-CPU (inference)."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the Thypoch Simera 28mm f/1.4 was found. Searches for his name with the lens, a youtube.com-restricted search and a search on his usual title format returned only other reviewers (Dustin Abbott, PetaPixel, Fstoppers, Phillip Reeve). Nothing is attributed to him."
+  },
+  "research_notes": "1) Only OpticalLimits tested the Nikon Z version; its MTF values are in a chart image, so verbal grades are used. Abbott, Fstoppers and PetaPixel tested on 61MP Sony bodies (M version adapted or E version); Reeve on 24MP M10 and 42MP A7rII. Sony thick filter stacks hurt this lens's corners (Reeve), so Sony-based corner results may be pessimistic for Z. 2) Focus shift conflict: OpticalLimits (Z) reports rearward shift on stopping down; Reeve (M) reports none relevant. Tip follows the cautious OpticalLimits finding. 3) Flare conflict: OpticalLimits and Reeve negative, Abbott positive, PetaPixel moderate. 4) Bokeh: Reeve very positive, PetaPixel neutral, OpticalLimits mixed (foreground nervous). 5) Weight 368 g and length 72.1 mm for Z from OpticalLimits; the M version is 330 g / 55 mm. 6) Focus throw of the Z version not found (100° is Abbott's M-version figure). 7) Whether the Z version keeps the M version's 0.7 m detent and infinity lock was not confirmed; a Reeve commenter said the Z version would drop the infinity lock (unverified). 8) Digital Camera World, 35mmc, Australian Photography and Alik Griffin reviews exist but were not read. No Photography Life, DPReview or Lenstip review found. 9) Z50 II Non-CPU lens data availability not verified."
+}

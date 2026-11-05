@@ -1,0 +1,250 @@
+{
+  "id": "z-24-120-f4-s",
+  "name": "NIKKOR Z 24-120mm f/4 S",
+  "short": "24-120 f/4 S",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "zoom",
+  "focal_mm": [
+    24,
+    120
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 24,
+      "f": 4.0
+    },
+    {
+      "focal_mm": 120,
+      "f": 4.0
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 630,
+  "filter_mm": 77,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "STM (stepping motor), focus-by-wire",
+    "focus_throw_deg": null,
+    "notes": "Nikon lists a stepping motor (STM). Lens has an AF/MF switch, a Fn button and a customizable control ring (Nikon; Dustin Abbott notes the AF/MF switch sits awkwardly near the Fn button and flash-sync cover on a Z8). Photography Life found AF fast and accurate with no meaningful focus shift on stopping down, but the lens is varifocal: refocus after zooming. Cameralabs saw a slight focus shift toward the background at 24mm. Nikon cites focus-breathing compensation for movie recording, and Dustin Abbott (Z8) describes breathing as very low (not measured)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical VR (Nikon spec lists none; every review confirms). Stabilization comes only from body IBIS on the Z8 and Z5 II. Dustin Abbott got a usable 1/13 s handheld frame at 120mm on a Z8. The Z50 II has no IBIS (Digital Camera World), so on that body this lens is completely unstabilized for stills."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 24,
+        "value": 0.35
+      },
+      {
+        "focal_mm": 120,
+        "value": 0.35
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 120,
+        "value": 0.39
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.35 m from the focal plane at every focal length (Nikon; Photography Life; Dustin Abbott). Max magnification 0.39x (1:2.6) at 120mm per Nikon. Ed Dozier (photoartfromscience) measured 0.42x on his copy; Cameralabs measured about 1:2.4 (≈0.42x) at 120mm with a sharp field of about 58 × 87 mm. Working distance not published. The lens is about 118 mm long at its retracted length (Nikon) and the barrel extends when zoomed, so the free distance at 120mm MFD is well under 0.35 m minus 16 mm flange back minus barrel length; no measured figure was found, so the field is null. Effective aperture at 0.39x is not reported by any source; the camera meters through the lens."
+  },
+  "quick": {
+    "headline": "Very sharp center from f/4 at every focal length; on the Z8 shoot f/5.6–f/8 for corners, focus slightly in front of infinity at 24–28mm, and stay at or wider than f/11.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Center is excellent at f/4 everywhere (Ed Dozier on a Z8: 65–77 lp/mm MTF50 center at f/4 across the range; OpticalLimits at 45MP: outstanding center from f/4). Corners are the weak point wide open: Dozier's worst corner at f/4 is 32–43 lp/mm, lowest at 34.5mm (32.4) and 70mm (38.3). 24mm extreme corners suffer field curvature (OpticalLimits, Admiring Light). Long end corners soften at f/4 (Cameralabs, Z7).",
+    "by_focal": [
+      {
+        "focal_mm": 24,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/8",
+        "wide_open_note": "Dozier (Z8) f/4: center 76.4, worst edge 57.9, worst corner 43.2 lp/mm. Strong field curvature in the extreme corners (OpticalLimits): for landscapes at infinity pull focus slightly toward the camera. Abbott (Z8): f/5.6 improves mid-frame and corners; f/8 narrows but never fully closes the extreme-corner gap."
+      },
+      {
+        "focal_mm": 35,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Abbott (Z8) calls 35mm peak performance, sharp to the edges by f/5.6. Dozier's 34.5mm f/4 worst corner (32.4 lp/mm) and worst edge (39.1) are the lowest of his five focal lengths; his stopped-down values are only in chart images, so the f/5.6 corner verdict rests on Abbott and Cameralabs (Z7: strong up to 50mm)."
+      },
+      {
+        "focal_mm": 50,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Dozier (Z8) f/4: center 77.4, edge 50.5, corner 43.2 lp/mm. Abbott: corners at f/4 better than 24mm at any aperture; center slightly softer than mid-frame at f/4, crisp and flatter-field at f/5.6. Cameralabs: good FX-corner resolution, negligible field curvature."
+      },
+      {
+        "focal_mm": 70,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/8",
+        "wide_open_note": "Dozier (Z8) f/4: center 65.2, edge 41.0, corner 38.3 lp/mm. Cameralabs (Z7): corners progressively softer from 70mm, improved at f/5.6 and f/8. Abbott: 85mm is the 'low ebb' of the zoom, with weaker corners than 50mm."
+      },
+      {
+        "focal_mm": 120,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/8",
+        "wide_open_note": "Dozier (Z8) f/4: center 66.5, edge 42.7, corner 41.2 lp/mm. Abbott: center sharper at f/5.6 than at 50 or 85mm; corners softer but usable. Cameralabs had to refocus per crop at 120mm (field curvature) and found f/5.6–f/8 improves corners. Photography Life: 105–120mm corners at infinity slightly behind other focal lengths."
+      }
+    ],
+    "close_up_best": "f/5.6–f/8",
+    "close_up_note": "Center stays excellent at close focus even at f/4, but corners drop at f/4, worst at 120mm (Photography Life). Cameralabs (Z7, 120mm, ~1:2.4): center quite sharp wide open, falls off quickly away from center, and f/16 did NOT give the sharpest result because of field curvature. Abbott (Z8): contrast slightly low at f/4 right at MFD, improving if you back off a few cm or stop down. Nobody published a per-aperture close-focus test, so f/5.6–f/8 is an inference from these comments plus Abbott's 'softening after f/8'.",
+    "diffraction_note": "OpticalLimits (45MP): diffraction becomes more dominant beyond f/8. Dustin Abbott (Z8): softening begins after f/8, minimal at f/11, clearly visible at f/22. Ed Dozier (Z8) stopped testing at f/16 because diffraction 'destroys the resolution'. So on the Z8 f/11 is a mild cost, f/16 a real one.",
+    "avoid": [
+      "Don't use f/16–f/22 for detail on the Z8; use f/11 at most and focus carefully (or focus-stack) for depth.",
+      "Don't focus exactly at infinity for 24–28mm landscapes with important corners: field curvature; focus a touch nearer.",
+      "Don't expect stabilization on the Z50 II: no lens VR and no IBIS."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two 45MP measured tests agree on an outstanding f/4 center and corners as the weakness (Dozier MTF50 on a Z8 with numbers at f/4 only; OpticalLimits at 45MP, numbers only in chart images). Per-focal corner peaks beyond f/4 come mostly from visual tests (Abbott Z8, Cameralabs Z7, Photography Life). No Lenstip test exists."
+  },
+  "character": {
+    "bokeh": "Busy for a zoom. Photography Life: poor for creamy backgrounds, cat's-eye corners at all focal lengths (worst 120mm), harsh-edged 'soap bubble' highlights, near-'Rubinar-like' foreground. Abbott (Z8): 9 rounded blades keep highlights round f/4–f/8, transitions fairly pleasant, cleaner than the Canon RF 24-105. OpticalLimits: smooth background, slightly grainy highlight interiors, nisen foreground; mechanical vignetting clips discs toward edges at f/4. Best at close focus and the long end.",
+    "flare_sunstar": "Flare control very good to excellent (Photography Life, Abbott, Admiring Light): little or no flare with the sun at a corner or outside the frame; most flare with the sun about halfway into the frame. Sunstars above average for a zoom (Photography Life): 18 points (9 blades, Abbott), best at f/11–f/16 (OpticalLimits; Cameralabs: nice at 24mm f/11, weak at f/5.6–f/8), cleanest with the sun partly hidden behind an edge.",
+    "ca": "Lateral CA well controlled: about 1 px at the borders at 24 and 120mm (OpticalLimits); peak about 1.76 px around 24–35mm (Photography Life); 1.3 px worst at 24mm f/4 on a Z8 (Dozier). Longitudinal CA very low (Abbott, Cameralabs).",
+    "distortion": "Strong uncorrected: about 4–5% barrel at 24mm (OpticalLimits ~4%, Photography Life ~5%), pincushion from about 35mm, about 3% at 120mm (OpticalLimits). Correction is mandatory in-camera and applied in raw converters, and corrects well.",
+    "vignetting": "Raw about 2.6 EV at 24mm f/4 and near 2 EV at 120mm f/4 (OpticalLimits); well controlled from f/8. With Nikon's correction on, about 0.35 EV at 24mm and 0.5 EV at 120mm at f/4 (Cameralabs). Matters for night-sky and time-lapse flats at 24mm f/4.",
+    "coma_astro": "Cameralabs: very little coma even wide open, clearly better than the F-mount 24-120 f/4G; no color artifacts around streetlights. f/4 is slow for astro, but fine for star-trail and night time-lapse.",
+    "focus_breathing": "Not measured. Nikon cites focus-breathing compensation in video; Abbott (Z8) calls breathing 'very low'.",
+    "other": "Varifocal: refocus after zooming (Photography Life). Weather sealed, fluorine front element (Nikon). OpticalLimits flags durability concerns about the dual-cam zoom and a flimsy hood. Zoom ring tighter past 85mm (Abbott)."
+  },
+  "field_tips": [
+    "Default walkaround setting on the Z8: f/5.6 for 35–50mm, f/8 at 24mm and 70–120mm when corners matter; f/4 is fine whenever the subject is central.",
+    "Landscape at 24–28mm: focus slightly in front of infinity (OpticalLimits) or on something about one-third into the scene; check a corner at 100% before committing to a time-lapse.",
+    "Time-lapse: use manual focus after AF-locking, keep the zoom ring taped (varifocal, so any zoom creep means refocus), and keep vignette control fixed so frames match; correction is baked into NEFs.",
+    "For close-ups at 120mm (0.39x): shoot f/5.6–f/8 and back off a few cm from MFD if contrast looks flat; don't go to f/16 hoping for sharper corners, field curvature wins.",
+    "Sunstars: f/11–f/16 at 24mm with the sun partly behind an edge gives an 18-point star; accept the diffraction cost on the Z8 only for that frame."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "Most tests here used 45MP bodies (Dozier and Abbott on a Z8, OpticalLimits at 45MP, Cameralabs on a Z7), so the f/5.6–f/8 sweet spot and 'diffraction beyond f/8' apply directly. IBIS only (no Synchro VR, since no lens VR); Abbott hand-held 1/13 s at 120mm."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: corners at f/4–f/5.6 look relatively better than on the Z8 and f/11 is practically free of visible diffraction at normal viewing (inference from pixel pitch, not tested). IBIS only."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX crop = about 36–180mm equivalent and the weak FX extreme corners fall outside the frame. No IBIS and no lens VR: keep shutter at least 1/(2 × 1.5 × focal) for stills. 20.9MP DX pixel pitch is close to the Z8's, so the f/8 diffraction onset still applies."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photoartfromscience",
+      "name": "Photo Art From Science (Ed Dozier): Nikkor Z 24-120mm f/4 S lens review",
+      "url": "https://www.photoartfromscience.com/single-post/nikkor-z-24-120mm-f-4-s-lens-review",
+      "kind": "measured",
+      "tested_on": "Nikon Z8 (45.7MP), unsharpened raw, MTFMapper",
+      "date": "2023-06 (updated 2023-09)",
+      "findings": "MTF50 at f/4 in lp/mm (center / worst edge / worst corner): 24mm 76.4/57.9/43.2; 34.5mm 72.7/39.1/32.4; 50mm 77.4/50.5/43.2; 70mm 65.2/41.0/38.3; 120mm 66.5/42.7/41.2. f/5.6–f/16 results are only in chart images (not readable). Meridional weaker than sagittal (astigmatism) at most settings until beyond f/11. Stops testing at f/16 because diffraction destroys resolution. Measured 0.42x at 120mm, MFD 35 cm; 120mm close-ups 'as sharp as a good macro lens'. Lateral CA worst at 24mm f/4 about 1.3 px. Heavy barrel at 24mm, evident pincushion at 120mm, auto-corrected by raw converters."
+    },
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Nikkor Z 24-120mm f/4 S review (Klaus)",
+      "url": "https://opticallimits.com/?p=6907",
+      "kind": "measured",
+      "tested_on": "45MP Nikon Z body (model not named on the page)",
+      "date": "2026-03 (updated 2026-08) per page",
+      "findings": "Center outstanding across the range straight from f/4; borders snappy; corners good at 24mm but strong field curvature there, very good mid-zoom, good to very good at the long end. Diffraction more dominant beyond f/8. Distortion ~4% barrel at 24mm, pincushion from ~35mm to ~3% at 120mm. Vignetting ~2.6 EV at 24mm f/4, near 2 EV at 120mm f/4, well controlled from f/8. Lateral CA ~1 px at borders at both ends. Bokeh smooth background, slightly grainy highlight interiors, nisen foreground. Sunstars from f/4, best f/11–f/16. MFD 0.35 m, 0.39x. Recommends pulling focus slightly toward the camera at 24–28mm for infinity scenes. Scores: optics 7.5, build 8, value 8. LW/PH numbers in chart image only."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 24-120mm f/4 S review (pages 1–3)",
+      "url": "https://photographylife.com/reviews/nikon-z-24-120mm-f-4-s/2",
+      "kind": "measured",
+      "tested_on": "Imatest; body not named in fetched text (samples on Z9 and Z7, 45.7MP)",
+      "date": null,
+      "findings": "Sharp across range and apertures with f/4–f/8 performing comparably; small spread between best and worst. Slightly weaker at 120mm. Field curvature measurable but rarely harmful. 105–120mm corners at infinity slightly behind. At close focus the center stays excellent at every focal length including f/4; corners at f/4 are the weak point, worst at 120mm. Diffraction at f/16. Distortion about 5% barrel at 24mm. Lateral CA peak about 1.76 px (24–35mm). Flare very good; most flare with sun halfway into frame. Sunstars above average, best f/16 with sun partly obscured. Bokeh poor/busy, cat's eye at all focal lengths. Specs page: 0.35 m at all focal lengths, 0.39x at 120mm, 630 g, 77 mm, 9 rounded blades. Lp/ph values only in chart images."
+    },
+    {
+      "id": "cameralabs",
+      "name": "Cameralabs: Nikon Z 24-120mm f4 S review, quality page",
+      "url": "https://cameralabs.com/nikon-z-24-120mm-f4-s-review/2",
+      "kind": "review",
+      "tested_on": "Nikon Z7 (45.7MP), 100% crops, studio at ~45× focal length plus 1 km city test",
+      "date": null,
+      "findings": "24mm: very good center and DX corner, FX corner quite good. 28–50mm: strong including FX corner, negligible field curvature. 70mm and 120mm: DX and FX corners progressively softer, field curvature relevant (refocused per crop at 120mm); f/5.6 and f/8 improve corners. Close-up at 120mm about 1:2.4 (sharp area ~58 × 87 mm): center quite sharp wide open, falls off quickly outside center; f/16 did not give the sharpest results. Very little coma wide open. Corrected vignetting about 0.35 EV (24mm) and 0.5 EV (120mm) at f/4. Sunstars nice at 24mm f/11, weak at f/5.6–f/8. Slight focus shift toward background at 24mm. Clearly sharper than AF-S 24-120 f/4G at all focal lengths."
+    },
+    {
+      "id": "dustinabbott",
+      "name": "Dustin Abbott: Nikkor Z 24-120mm F4 S review (written) and video transcript",
+      "url": "https://dustinabbott.net/2026/03/nikkor-z-24-120mm-f4-s-review/",
+      "kind": "review",
+      "tested_on": "Nikon Z8 (45.7MP), tripod, 2 s delay",
+      "date": "2026-03",
+      "findings": "24mm: exceptional center, extreme corners soft at f/4, f/5.6 improves mid-frame and corners. 35mm 'fantastic' (video: sharp to edges by f/5.6). 50mm: corners at f/4 better than 24mm at any aperture. 85mm the low ebb. 120mm: center sharper at f/5.6 than 50/85mm, deeper corner falloff. Extreme corners never fully catch up; f/8 narrows the gap. Diffraction: softening after f/8, minimal at f/11, clearly visible at f/22. MFD 35 cm constant, 0.39x; contrast a little low at MFD, better backing off or stopping down. Focus breathing very low (not measured). Flare consistently excellent. LoCA basically none. 18-point sunstar. 1/13 s handheld at 120mm with Z8 IBIS. Video page: https://dustinabbott.net/openvideo/v/nikkor-24-120mm-f4-s-review-the-best-f4-standard-zoom"
+    },
+    {
+      "id": "admiringlight",
+      "name": "Admiring Light: Review Nikon Nikkor Z 24-120mm f/4 S, page 2",
+      "url": "https://admiringlight.com/blog/review-nikon-nikkor-z-24-120mm-f-4-s/2/",
+      "kind": "review",
+      "tested_on": "Nikon Z8 and Z7 II (45.7MP)",
+      "date": null,
+      "findings": "Very good to excellent over most of the frame from f/4 at all focal lengths; center excellent stopped down; edges softer at f/4 but decent, very good stopped down; only 24mm extreme corners noticeably softer. Very good sharpness near MFD. Virtually no flare, small unobtrusive ghosts. Distortion moderate-to-high, correction cannot be disabled. Bokeh generally smooth, slight bright ring near 120mm, gumdrop-shaped highlights near corners."
+    },
+    {
+      "id": "photographyblog",
+      "name": "Photography Blog: Nikon Z 24-120mm f/4 S review, conclusion",
+      "url": "https://www.photographyblog.com/reviews/nikon_z_24_120mm_f4_s_review/conclusion",
+      "kind": "review",
+      "tested_on": "Nikon Z5 (24.3MP)",
+      "date": null,
+      "findings": "Center sharpness fantastic at all focal lengths and apertures; edges very good. CA and distortion well controlled (as corrected); vignetting more noticeable than hoped. Flare noticeable into the sun. No VR, which matters most on bodies without IBIS. 4.5/5."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon Imaging: NIKKOR Z 24-120mm f/4 S product/spec page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_24-120mmf4s/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "f/4–f/22; MFD 0.35 m from focal plane; max reproduction 0.39x; about 630 g; 84 × 118 mm; 77 mm filter; 9 blades, rounded opening; 16 elements/13 groups (3 ED, 1 aspherical ED, 3 aspherical), Nano Crystal and ARNEO coats, fluorine front element; STM motor. No VR listed. Focus-breathing compensation cited for movies. Dust- and drip-resistant."
+    },
+    {
+      "id": "lenstip_spec",
+      "name": "Lenstip: Nikon Nikkor Z 24-120 mm f/4 S lens specifications",
+      "url": "https://www.lenstip.com/1896-Nikon_Nikkor_Z_24-120_mm_f_4_S-lens_specifications.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Spec page only (no Lenstip lab review exists): 0.35 m, 0.39x, 630 g, 77 mm, 9 blades, 16/13."
+    },
+    {
+      "id": "nikon_tc14",
+      "name": "Nikon Singapore: NIKKOR Z Teleconverter TC-1.4x page",
+      "url": "https://www.nikon.com.sg/nikkor-z-teleconverter-tc-1-4x",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Compatible-lens list (70-180 f/2.8, 70-200 f/2.8 VR S, 100-400 VR S, 180-600 VR, 400 f/2.8 TC, 400 f/4.5, 600 f/4 TC, 800 f/6.3 PF) does not include the 24-120 f/4 S."
+    },
+    {
+      "id": "dcw_z50ii",
+      "name": "Digital Camera World: Nikon Z50 II vs Nikon Z50",
+      "url": "https://www.digitalcameraworld.com/buying-guides/nikon-z50-ii-vs-nikon-z50",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "Z50 II: no in-body image stabilization; relies on VR lenses for stabilized stills. 20.9MP APS-C."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://www.youtube.com/watch?v=dq7LFJ808Fc",
+    "access": "title-only",
+    "summary": "A Christopher Frost video exists: YouTube oEmbed confirms the title 'Nikon Z 24-120mm f/4 S lens review with samples' with author 'Christopher Frost'. The watch page could not be fetched (client error), and no transcript or written summary was found by search. His verdict is unknown; nothing in this record is attributed to him."
+  },
+  "research_notes": "1) No Lenstip lab review of this lens exists (only a spec page). Primary numbers are Ed Dozier's Z8 MTF50 values at f/4; his stopped-down results and the OpticalLimits/Photography Life lp/ph values were chart images that could not be read. Per-focal corner peaks beyond f/4 are therefore from visual tests (Abbott Z8, Cameralabs Z7, Admiring Light Z8/Z7 II) and OpticalLimits' text, hence medium confidence. 2) Sources disagree on the overall picture modestly: Photography Life says f/4–f/8 perform comparably across the frame; Abbott and Cameralabs see clear corner gains to f/5.6–f/8. The verdict follows the 45MP corner-focused tests (Z8 owner). 3) Distortion figure differs (OpticalLimits ~4%, Photography Life ~5%) — both raw-uncorrected, likely different measurement methods. 4) Max magnification: Nikon 0.39x; Dozier measured 0.42x and Cameralabs ~1:2.4 (0.42x); spec value used. 5) Working distance and close-focus per-aperture sharpness not published; close_up_best is inference. 6) Z5 II comment on diffraction and corners is pixel-pitch inference, not tested. 7) Photography Life's text did not name the Imatest body. 8) Cameralabs page 2 fetched text is attributed to Cameralabs as served at that URL. 9) TC: not on Nikon's TC-1.4x compatibility list (the havecamerawilltravel compatibility page could not be read)."
+}

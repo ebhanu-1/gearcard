@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "focus-mode",
+    "group": "Autofocus",
+    "name": "Focus mode (AF-S / AF-C / AF-F / MF)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Focus mode; or hold the focus-mode button and turn the main command dial",
+      "z5ii": "Photo shooting menu > Focus mode (also i menu)",
+      "z50ii": "Photo shooting menu > Focus mode (also i menu)"
+    },
+    "one_liner": "Lock focus once (AF-S), keep tracking (AF-C), or focus by hand (MF).",
+    "what_it_does": "Sets whether the camera focuses once and holds (AF-S), keeps re-focusing while you half-press or hold AF-ON (AF-C), or leaves focus to you (MF). AF-F is a video-only mode that focuses continuously without a button press. The default release behaviour differs: AF-S waits for focus, AF-C fires whether or not focus is achieved (changeable in a1/a2).",
+    "options": [
+      {
+        "value": "AF-S",
+        "meaning": "Single AF: focus locks on half-press; point turns green when locked, flashes red if it fails.",
+        "use_when": "Static subjects: landscapes, tripod moonrise, posed portraits, static macro."
+      },
+      {
+        "value": "AF-C",
+        "meaning": "Continuous AF: focus keeps updating while the AF control is held.",
+        "use_when": "Anything that moves: birds, dancers, running kids. Many shooters leave AF-C on full-time with back-button focus."
+      },
+      {
+        "value": "AF-A (Z50II only)",
+        "meaning": "Camera switches between AF-S and AF-C depending on subject movement. Photo mode only.",
+        "use_when": "Casual family snaps on the Z50II; avoid for serious action because you cannot predict which mode it picks."
+      },
+      {
+        "value": "AF-F",
+        "meaning": "Full-time AF, video mode only: focus adjusts continuously, locks on half-press.",
+        "use_when": "Video when you want the camera to keep focusing without holding a button."
+      },
+      {
+        "value": "MF",
+        "meaning": "Manual focus; shutter fires regardless of focus. Peaking and the focus indicator can assist.",
+        "use_when": "Stars, moon at long focal length, stacked macro, manual lenses (Thypoch, Laowa, Zeiss, Voigtlander, AF-D on FTZ II)."
+      }
+    ],
+    "when_to_change": "Switch to AF-C the moment the subject can move; switch to MF for night sky, high-magnification macro and manual lenses.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "AF-C",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "AF-C",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "AF-C",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "AF-S (or MF after focusing with magnified view)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "AF-C with a single point, or MF and rock the body; at 1:1 MF is usually more reliable",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "AF-S pinpoint/single on the moon's limb, then switch to MF so focus cannot shift",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8: AF-S, AF-C, AF-F (video), MF - no AF-A. Z50II: adds AF-A in photo mode. Z5II: Nikon's spec page does not list AF-A; confirm in camera.",
+    "gotchas": [
+      "AF-S default is focus priority (shutter will not fire until focus is found); AF-C default is release priority - check a1/a2 if shots are blocked or soft.",
+      "With screw-drive AF/AF-D lenses on the FTZ II (e.g. 60mm f/2.8D, 105 DC, 50 f/1.8D) the body can only manual focus.",
+      "Z8 a9 Focus mode restrictions can hide modes from the button/dial cycle."
+    ],
+    "related": [
+      "af-area-mode",
+      "af-c-priority",
+      "af-s-priority",
+      "af-activation"
+    ],
+    "firmware_note": "No functional change to the focus-mode list in Z8 FW 3.x, Z5II FW 1.20 or Z50II FW 1.10 found.",
+    "research_notes": "Z5II AF-A availability not confirmed: the Z5II online manual body text could not be retrieved (only navigation), and the Nikon spec page does not mention AF-A.",
+    "sources": [
+      {
+        "id": "nikon-z8-focus",
+        "name": "Nikon Z8 Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/focus_31.html",
+        "kind": "manufacturer",
+        "findings": "Lists four focus modes: AF-S (focus priority default), AF-C (release priority default), AF-F (video only), MF; focus mode set via focus-mode button + main command dial or menus."
+      },
+      {
+        "id": "nikon-z50ii-focus",
+        "name": "Nikon Z50II Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-02.html",
+        "kind": "manufacturer",
+        "findings": "Lists AF-A (photo only, auto-switches AF-S/AF-C), AF-S, AF-C, AF-F (video only), MF, with default priorities."
+      },
+      {
+        "id": "nikon-z8-csm-index",
+        "name": "Nikon Z8 Reference Guide - Custom Settings menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "Lists a9 Focus Mode Restrictions in the Z8 Custom Settings menu."
+      }
+    ]
+  },
+  {
+    "id": "af-area-mode",
+    "group": "Autofocus",
+    "name": "AF-area mode",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > AF-area mode; or hold the focus-mode button and turn the sub-command dial",
+      "z5ii": "Photo shooting menu > AF-area mode (also i menu)",
+      "z50ii": "Photo shooting menu > AF-area mode (also i menu)"
+    },
+    "one_liner": "Decides which part of the frame the camera is allowed to focus on.",
+    "what_it_does": "Controls how big the active focus area is and whether the camera or you choose where it sits. Small areas give precision on static subjects; larger or tracking areas keep moving subjects in focus. Subject detection only works in wide-area, 3D-tracking, subject-tracking and auto-area modes.",
+    "options": [
+      {
+        "value": "Pinpoint AF",
+        "meaning": "Very small point for precise focus; photo mode, AF-S only; slower.",
+        "use_when": "Moon limb, eye of a static macro subject, focusing through foliage."
+      },
+      {
+        "value": "Single-point AF",
+        "meaning": "One user-selected point.",
+        "use_when": "Static subjects where you choose exactly what is sharp; landscapes, tripod work."
+      },
+      {
+        "value": "Dynamic-area AF (S/M/L)",
+        "meaning": "Your chosen point, with surrounding points helping if the subject briefly slips off it. Photo mode, AF-C only. S is tightest.",
+        "use_when": "Predictable movers you can keep under the point; bird on a branch with clutter; dancer's face when you want to stay on one performer."
+      },
+      {
+        "value": "Wide-area AF (S/L)",
+        "meaning": "Like single-point but a larger box; closest subject in the box gets priority. Subject detection works inside the box.",
+        "use_when": "Subjects too fast for one point; panning; video. Good default for stage dance with People detection."
+      },
+      {
+        "value": "Wide-area AF (C1/C2)",
+        "meaning": "Custom-sized boxes you set by holding the OK button and resizing with the multi selector.",
+        "use_when": "Birds in flight against sky (tall/wide box sized to the bird); a stage strip where dancers move side to side."
+      },
+      {
+        "value": "3D-tracking",
+        "meaning": "Start on the subject and the camera follows it across the frame while AF is held; reverts when released. Photo mode, AF-C only.",
+        "use_when": "Erratic subjects: kids, BIF against clean backgrounds, a soloist moving across the stage."
+      },
+      {
+        "value": "Subject-tracking AF",
+        "meaning": "Video-mode tracking of a selected subject; started with OK or half-press, ended with OK.",
+        "use_when": "Video of a bird or dancer with the Z8 + 180-600."
+      },
+      {
+        "value": "Auto-area AF",
+        "meaning": "Camera detects the subject and picks the point over the whole frame.",
+        "use_when": "Kids, candid family shots, single bird against plain sky; least control when several subjects compete."
+      }
+    ],
+    "when_to_change": "Go smaller when the camera grabs the wrong thing (branches, other dancers); go larger or tracking when you cannot keep a small point on the subject.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Wide-area C1/C2 or 3D-tracking + Birds detection (Z8 + 180-600)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Wide-area (S) + People detection; 3D-tracking for a soloist",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Auto-area or 3D-tracking + People detection",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Single-point (or Pinpoint) on the chosen focus distance",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Single-point or Pinpoint; Dynamic (S) if the subject sways",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Pinpoint or Single-point on the moon's edge, AF-S",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Nikon's spec pages list the same set on all three bodies: Pinpoint (photo), Single, Dynamic S/M/L (photo), Wide S/L/C1/C2, Auto-area, 3D-tracking (photo), Subject-tracking (video). Z8 FW 3.00 added more custom wide-area (C1/C2) size patterns. Z5II and Z50II use the same Expeed 7 subject detection family, but the Z8's stacked sensor gives faster AF updates during bursts.",
+    "gotchas": [
+      "Pinpoint only in AF-S; Dynamic and 3D only in AF-C - the menu greys them out otherwise.",
+      "Subject detection is ignored in Single-point, Pinpoint and Dynamic modes.",
+      "3D-tracking resets to the start point when you release AF; recompose before re-engaging.",
+      "Tracking can fail on subjects with the same colour/brightness as the background, very small or fast subjects, or when obstructed."
+    ],
+    "related": [
+      "focus-mode",
+      "subject-detection",
+      "limit-af-area-mode-selection",
+      "focus-tracking-lock-on",
+      "store-points-by-orientation"
+    ],
+    "firmware_note": "Z8 FW 3.00: wider/more custom wide-area AF focus-area patterns (Nikon download center change log).",
+    "research_notes": "Z8 and Z5II option descriptions are taken from Nikon spec pages plus the Z50II manual text; the Z8/Z5II online manual bodies could not be retrieved, only their menu indexes.",
+    "sources": [
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "AF-area modes: pinpoint (photo), single-point, dynamic S/M/L (photo), wide-area S/L/C1/C2, auto-area, 3D-tracking (photo), subject-tracking (video)."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "Same AF-area mode list as Z8, with the same photo/video restrictions."
+      },
+      {
+        "id": "nikon-z50ii-focus",
+        "name": "Nikon Z50II Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-02.html",
+        "kind": "manufacturer",
+        "findings": "Describes each AF-area mode; Dynamic and 3D only in AF-A/AF-C; Pinpoint only with AF-S; C1/C2 sized by holding OK; tracking cautions."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 3.00 adds wider Wide-area AF focus areas."
+      },
+      {
+        "id": "nikon-sports-af-guide",
+        "name": "Nikon Professional Setting Guide: Sports AF Edition (2021, Z9-era; hosted copy)",
+        "url": "https://fotori.cz/files/upload/soubory/tela/Z9_TG_AF_En(Cz)01.pdf",
+        "kind": "manufacturer",
+        "findings": "Nikon recommends 3D-tracking for single erratic athletes, Dynamic (S) for team sports, Auto-area for subjects that fill the frame unpredictably."
+      }
+    ]
+  },
+  {
+    "id": "subject-detection",
+    "group": "Autofocus",
+    "name": "AF/MF subject detection options",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > AF/MF subject detection options (video menu has its own)",
+      "z5ii": "Photo shooting menu > AF/MF subject detection options",
+      "z50ii": "Photo shooting menu > AF/MF subject detection options"
+    },
+    "one_liner": "Tells the AF what kind of subject to look for: people, animals, birds, vehicles.",
+    "what_it_does": "Points the deep-learning detector at a subject class so the camera can find faces/eyes/heads or vehicles inside the active AF area. Detection works in Wide-area, 3D-tracking, Subject-tracking and Auto-area. Narrowing the class (e.g. Birds instead of Auto) reduces false grabs on other subject types.",
+    "options": [
+      {
+        "value": "Auto",
+        "meaning": "Looks for people, animals and vehicles and picks one.",
+        "use_when": "Mixed scenes; family outings where kids and dogs share the frame."
+      },
+      {
+        "value": "People",
+        "meaning": "Faces and eyes (and bodies).",
+        "use_when": "Kids, portraits, stage dance."
+      },
+      {
+        "value": "Animal",
+        "meaning": "Dogs, cats and birds (face/eye or whole animal).",
+        "use_when": "Mammals and mixed wildlife."
+      },
+      {
+        "value": "Birds",
+        "meaning": "Bird heads/eyes or whole bird.",
+        "use_when": "Birding with the 180-600; more decisive than Animal on small birds."
+      },
+      {
+        "value": "Vehicle",
+        "meaning": "Cars, motorbikes, trains, bicycles (and aircraft on bodies without a separate option).",
+        "use_when": "Motorsport, trains."
+      },
+      {
+        "value": "Airplanes",
+        "meaning": "Aircraft body, nose or cockpit.",
+        "use_when": "Airshows."
+      },
+      {
+        "value": "Subject detection off",
+        "meaning": "No detection; pure area-based AF.",
+        "use_when": "Landscapes, macro, moon - where detection would only add false hits."
+      }
+    ],
+    "when_to_change": "Change whenever your subject class changes; turn it off for static non-living subjects.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Birds",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "People",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "People (Auto if the dog joins in)",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Off",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Off (Animal can sometimes find insect eyes, but is unreliable)",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Off",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8: Birds option added in FW 2.00; FW 3.00 added subject-detection priority for MF and MF detection areas. Z5II: Nikon lists nine detectable subjects (people, birds, dogs, cats, cars, bicycles, motorcycles, trains, airplanes). Z50II manual lists Auto, People, Animal, Birds, Vehicle, Airplanes, Off.",
+    "gotchas": [
+      "Detection performance drops in high-speed frame capture+ and with HLG tone mode (Z50II manual).",
+      "Under fluorescent/mercury lights Birds detection can be affected by flicker - Photo flicker reduction may help.",
+      "Turn the AF-assist illuminator off for animals - it can affect their eyes.",
+      "When several subjects are detected, grey boxes appear; move between them with the multi selector left/right."
+    ],
+    "related": [
+      "af-area-mode",
+      "mf-subject-detection-area",
+      "af-assist-illuminator"
+    ],
+    "firmware_note": "Z8: Birds in FW 2.00; MF subject detection in FW 3.00. Z5II/Z50II: no detection changes in FW 1.20/1.10 change logs.",
+    "research_notes": "Exact option labels in the Z8 and Z5II menus were not readable from their online manuals; labels here follow the Z50II manual. Z8 option list (with Birds) is from the FW 2.00 change log and Nikon's '9 subject types including airplane and bird modes' copy.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-focus",
+        "name": "Nikon Z50II Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-02.html",
+        "kind": "manufacturer",
+        "findings": "Options Auto, People, Animal, Birds, Vehicle, Airplanes, off; detection only in Wide-area/3D/Subject-tracking/Auto-area; cautions on flicker, AF-assist, HLG, high-speed frame capture."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 2.00 added Birds subject detection; FW 3.00 added subject detection in manual focus."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Nine subject types for stills and video, including dedicated airplane and bird modes."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "Automatic detection of nine subjects (people, birds, dogs, cats, cars, bicycles, motorcycles, trains, airplanes) - retailer copy of Nikon specs agrees."
+      }
+    ]
+  },
+  {
+    "id": "af-c-priority",
+    "group": "Autofocus",
+    "name": "a1 AF-C priority selection",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a1 AF-C priority selection",
+      "z5ii": "Custom Settings menu > a Autofocus > a1 AF-C priority selection",
+      "z50ii": "Custom Settings menu > a Focus > a1 AF-C priority selection"
+    },
+    "one_liner": "In AF-C, fire immediately (Release) or only when in focus (Focus).",
+    "what_it_does": "Only applies in AF-C. Release lets the shutter fire on every press regardless of focus; Focus blocks the shot until the camera thinks it is in focus; Focus + release gives focus priority to the first frame of a burst on dark or low-contrast subjects and release priority after that.",
+    "options": [
+      {
+        "value": "Release",
+        "meaning": "Shutter always fires; burst rate never slows for focus.",
+        "use_when": "Action where timing matters more than every frame being sharp (Nikon's recommendation for all sports in its Sports AF guide)."
+      },
+      {
+        "value": "Focus + release",
+        "meaning": "First frame of a burst waits for focus in dim/low-contrast light; later frames release.",
+        "use_when": "Stage dance and dim indoor kids - protects the first frame without stalling the burst."
+      },
+      {
+        "value": "Focus",
+        "meaning": "Shutter only fires when focus is achieved.",
+        "use_when": "When a missed-focus frame is worse than a missed moment; rarely ideal for fast action."
+      }
+    ],
+    "when_to_change": "Use Release for bright, fast action; switch to Focus + release when light is poor and the first frame keeps missing.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Release",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Focus + release",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Release",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a (AF-S)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Release (you time the shot as you rock into focus)",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a (AF-S or MF)",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Same three options on all three bodies (verified in the Z50II manual; present as a1 on Z8 and Z5II menu indexes).",
+    "gotchas": [
+      "Has no effect in AF-S - use a2 for that.",
+      "Release priority means the camera will happily record out-of-focus frames; it does not make AF faster."
+    ],
+    "related": [
+      "af-s-priority",
+      "focus-mode",
+      "af-activation"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option labels confirmed from Z50II manual; Z8/Z5II confirmed present at a1 via menu index only.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a1",
+        "name": "Nikon Z50II Reference Guide - a1 AF-C priority selection",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-02.html",
+        "kind": "manufacturer",
+        "findings": "Options Release, Focus + release (focus priority for first shot in dark/low-contrast bursts), Focus; applies only in AF-C."
+      },
+      {
+        "id": "nikon-sports-af-guide",
+        "name": "Nikon Professional Setting Guide: Sports AF Edition (2021, Z9-era; hosted copy)",
+        "url": "https://fotori.cz/files/upload/soubory/tela/Z9_TG_AF_En(Cz)01.pdf",
+        "kind": "manufacturer",
+        "findings": "Recommends Release for all listed sports so the frame rate never drops."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 setup uses a1 Release."
+      },
+      {
+        "id": "cotswold-z8-wildlife",
+        "name": "The Cotswold Photographer - Best Nikon Z8 settings for wildlife",
+        "url": "https://thecotswoldphotographer.com/best-nikon-z8-settings-for-wildlife-photography/",
+        "kind": "review",
+        "findings": "Z8 wildlife setup uses AF-C priority Release."
+      }
+    ]
+  },
+  {
+    "id": "af-s-priority",
+    "group": "Autofocus",
+    "name": "a2 AF-S priority selection",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a2 AF-S priority selection",
+      "z5ii": "Custom Settings menu > a Autofocus > a2 AF-S priority selection",
+      "z50ii": "Custom Settings menu > a Focus > a2 AF-S priority selection"
+    },
+    "one_liner": "In AF-S, allow a shot before focus locks (Release) or not (Focus).",
+    "what_it_does": "Only applies in AF-S. Focus (default behaviour) blocks the shutter until focus is confirmed; Release fires whenever you press.",
+    "options": [
+      {
+        "value": "Focus",
+        "meaning": "Shutter fires only after focus confirmation.",
+        "use_when": "Normal static work - prevents accidental soft frames."
+      },
+      {
+        "value": "Release",
+        "meaning": "Shutter fires immediately regardless of focus.",
+        "use_when": "Night/moon scenes where AF struggles and you have already set focus; or if AF-S hunting is blocking shots."
+      }
+    ],
+    "when_to_change": "Switch to Release only when AF-S refuses to fire in conditions where you know focus is fine.",
+    "suggested": [
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Focus",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Focus (switch to MF after focusing rather than using Release)",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Focus if using AF-S",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a (AF-C)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "n/a (AF-C)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a (AF-C)",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Same on all three bodies.",
+    "gotchas": [
+      "If AF-S shots 'won't fire' in the dark, this is usually why."
+    ],
+    "related": [
+      "af-c-priority",
+      "focus-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a2",
+        "name": "Nikon Z50II Reference Guide - a2 AF-S priority selection",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-03.html",
+        "kind": "manufacturer",
+        "findings": "Options Release and Focus; applies only in AF-S."
+      },
+      {
+        "id": "nikon-z8-focus",
+        "name": "Nikon Z8 Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/focus_31.html",
+        "kind": "manufacturer",
+        "findings": "AF-S defaults to focus priority: if focus fails the point flashes red and the shutter is disabled."
+      }
+    ]
+  },
+  {
+    "id": "focus-tracking-lock-on",
+    "group": "Autofocus",
+    "name": "a3 Focus tracking with lock-on",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a3 Focus tracking with lock-on",
+      "z5ii": "Custom Settings menu > a Autofocus > a3 Focus tracking with lock-on",
+      "z50ii": "Custom Settings menu > a Focus > a3 Focus tracking with lock-on"
+    },
+    "one_liner": "How stubbornly AF-C sticks to the subject when something crosses in front.",
+    "what_it_does": "Blocked shot AF response (1 Quick to 5 Delayed) sets how long AF-C waits before jumping to something that passes between you and the subject. On the Z8 a second item, Subject motion (Erratic/Steady), tunes prediction for stop-start versus constant-speed subjects.",
+    "options": [
+      {
+        "value": "Blocked shot AF response 5 (Delayed) - 4",
+        "meaning": "Holds on the original subject through obstructions.",
+        "use_when": "Birds flying past branches; a dancer crossing behind another."
+      },
+      {
+        "value": "Blocked shot AF response 3 (default)",
+        "meaning": "Balanced.",
+        "use_when": "Start here."
+      },
+      {
+        "value": "Blocked shot AF response 2 - 1 (Quick)",
+        "meaning": "Jumps quickly to new subjects in the AF area.",
+        "use_when": "Switching between subjects deliberately, e.g. kids taking turns."
+      },
+      {
+        "value": "Subject motion: Erratic (Z8)",
+        "meaning": "Expects sudden stops/starts and direction changes.",
+        "use_when": "Small birds, kids, energetic jatis."
+      },
+      {
+        "value": "Subject motion: Steady (Z8)",
+        "meaning": "Expects smooth, constant-speed movement.",
+        "use_when": "Large birds in steady flight, runners towards camera."
+      }
+    ],
+    "when_to_change": "Raise it if AF keeps jumping to foreground clutter; lower it if AF is slow to pick up a new subject you deliberately switched to.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "3-4; Z8 Subject motion Erratic for small birds, Steady for large birds",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "4 (dancers cross each other); Z8 Erratic",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "3; Z8 Erratic",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "3 (default)",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 has both Blocked shot AF response and Subject motion. Z50II has only Blocked shot AF response. Z5II: Subject motion not verified.",
+    "gotchas": [
+      "With 3D-tracking the camera uses 3 regardless of the setting (Z50II manual).",
+      "With Auto-area AF, 1 or 2 behave as 3 (Z50II manual).",
+      "Only applies in AF-C (and AF-A when it is in AF-C on the Z50II)."
+    ],
+    "related": [
+      "af-area-mode",
+      "af-c-priority"
+    ],
+    "firmware_note": "",
+    "research_notes": "Z5II a3 sub-items unverified - only the menu title is readable in its online manual. Z8 Subject motion confirmed by two Z8-specific setup articles and Nikon's Z9-era sports guide.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a3",
+        "name": "Nikon Z50II Reference Guide - a3 Focus tracking with lock-on",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-04.html",
+        "kind": "manufacturer",
+        "findings": "Blocked shot AF response 1 (Quick) to 5 (Delayed); 3D-tracking forces 3; Auto-area makes 1/2 act as 3; no subject motion item."
+      },
+      {
+        "id": "nikon-sports-af-guide",
+        "name": "Nikon Professional Setting Guide: Sports AF Edition (2021, Z9-era; hosted copy)",
+        "url": "https://fotori.cz/files/upload/soubory/tela/Z9_TG_AF_En(Cz)01.pdf",
+        "kind": "manufacturer",
+        "findings": "Blocked shot: high = slow to refocus after obstruction, low = quick subject switching. Subject motion: Steady for constant-pace subjects, Erratic for stop-start subjects. Baseline 2 + Steady for many sports."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 a3 left at 3 and Steady; adjust per subject."
+      },
+      {
+        "id": "cotswold-z8-wildlife",
+        "name": "The Cotswold Photographer - Best Nikon Z8 settings for wildlife",
+        "url": "https://thecotswoldphotographer.com/best-nikon-z8-settings-for-wildlife-photography/",
+        "kind": "review",
+        "findings": "Z8 a3 blocked shot 3 (default); Erratic for small birds, Steady for most other wildlife."
+      }
+    ]
+  },
+  {
+    "id": "af-activation",
+    "group": "Autofocus",
+    "name": "a6 AF activation (back-button focus)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a6 AF activation",
+      "z5ii": "Custom Settings menu > a Autofocus > a6 AF activation",
+      "z50ii": "Custom Settings menu > a Focus > a6 AF activation"
+    },
+    "one_liner": "Choose whether half-pressing the shutter focuses, or only AF-ON does.",
+    "what_it_does": "Shutter/AF-ON lets both the shutter half-press and AF-ON focus. AF-ON only removes focusing from the shutter button (back-button focus), so you can lock focus by releasing AF-ON and fire freely. A sub-option, Out-of-focus release, decides whether the shutter can fire when not in focus in AF-ON-only mode.",
+    "options": [
+      {
+        "value": "Shutter/AF-ON",
+        "meaning": "Half-press focuses; AF-ON also focuses.",
+        "use_when": "Simple handling; lending the camera to family."
+      },
+      {
+        "value": "AF-ON only",
+        "meaning": "Only the AF-ON (or an assigned button) focuses.",
+        "use_when": "Mixed static/moving shooting with AF-C left on: hold to track, release to lock."
+      },
+      {
+        "value": "AF-ON only > Out-of-focus release: Enable",
+        "meaning": "Shutter fires even if not in focus.",
+        "use_when": "Most BBF users - you decide when focus is good."
+      },
+      {
+        "value": "AF-ON only > Out-of-focus release: Disable",
+        "meaning": "Shutter fires only when in focus.",
+        "use_when": "Rarely; can block shots in dim light."
+      }
+    ],
+    "when_to_change": "Set once; BBF pays off for birds, dance and kids. Revert to Shutter/AF-ON before handing the camera to someone else.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "AF-ON only, out-of-focus release Enable",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "AF-ON only (hold through phrases, release on held poses)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "AF-ON only or Shutter/AF-ON - personal preference",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "AF-ON only (focus once, then shoot without refocusing)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "AF-ON only",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "AF-ON only - prevents refocus on each frame of a sequence",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 has a dedicated AF-ON button (and a vertical-grip AF-ON on the MB-N12). Z5II and Z50II: AF-ON must be assigned to a button in f2 Custom controls if the body lacks a dedicated AF-ON (verify your button layout).",
+    "gotchas": [
+      "With AF-ON only, Out-of-focus release Disable and Pinpoint AF, the shutter can still release regardless of focus (Z50II manual note).",
+      "Set all three bodies the same way so muscle memory transfers on multi-body shoots."
+    ],
+    "related": [
+      "af-c-priority",
+      "focus-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "Whether the Z5II and Z50II have a dedicated AF-ON button was not checked against their manuals' controls pages this session.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a6",
+        "name": "Nikon Z50II Reference Guide - a6 AF activation",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-08.html",
+        "kind": "manufacturer",
+        "findings": "Options Shutter/AF-ON and AF-ON only, with Out-of-focus release Enable/Disable sub-option; Pinpoint exception."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 a6 set so AF runs only from AF-ON (back-button focus)."
+      },
+      {
+        "id": "cotswold-z8-wildlife",
+        "name": "The Cotswold Photographer - Best Nikon Z8 settings for wildlife",
+        "url": "https://thecotswoldphotographer.com/best-nikon-z8-settings-for-wildlife-photography/",
+        "kind": "review",
+        "findings": "Z8 wildlife setup keeps Shutter/AF-ON - shows both approaches are used."
+      }
+    ]
+  },
+  {
+    "id": "focus-points-used",
+    "group": "Autofocus",
+    "name": "a4 Focus points used",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a4 Focus points used",
+      "z5ii": "Custom Settings menu > a Autofocus > a4 Focus points used",
+      "z50ii": "Custom Settings menu > a Focus > a4 Focus points used"
+    },
+    "one_liner": "Use every focus point, or every other one for faster thumb movement.",
+    "what_it_does": "Sets how many selectable points the multi selector or sub-selector steps through. Alternating points uses about a quarter of the points so the point crosses the frame in fewer presses. Pinpoint AF is unaffected.",
+    "options": [
+      {
+        "value": "All points",
+        "meaning": "Finest placement.",
+        "use_when": "Tripod landscape, macro, moon."
+      },
+      {
+        "value": "Alternating points",
+        "meaning": "Coarser grid, faster movement.",
+        "use_when": "Action where you move the point a lot (dance, birds on perches)."
+      }
+    ],
+    "when_to_change": "Switch to Alternating if moving the point feels slow during action.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Alternating points",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Alternating points",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Alternating points",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "All points",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "All points",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "All points",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Present as a4 on all three bodies.",
+    "gotchas": [
+      "Does not change AF accuracy - only how far each press moves the point."
+    ],
+    "related": [
+      "focus-point-wrap",
+      "af-area-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "Exact option labels on Z8/Z5II not readable; description from the Z50II Focus chapter.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-focus",
+        "name": "Nikon Z50II Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-02.html",
+        "kind": "manufacturer",
+        "findings": "With a4 set to alternating points, a quarter of points are used for faster selection; Pinpoint unaffected."
+      },
+      {
+        "id": "nikon-z8-csm-index",
+        "name": "Nikon Z8 Reference Guide - Custom Settings menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "a4 Focus Points Used listed."
+      },
+      {
+        "id": "nikon-z5ii-csm-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "a4 Focus points used listed."
+      }
+    ]
+  },
+  {
+    "id": "store-points-by-orientation",
+    "group": "Autofocus",
+    "name": "a5 Store points by orientation",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a5 Store points by orientation",
+      "z5ii": "Custom Settings menu > a Autofocus > a5 Store points by orientation",
+      "z50ii": "Custom Settings menu > a Focus > a5 Store points by orientation"
+    },
+    "one_liner": "Remembers a different focus point (and area mode) for landscape vs portrait grip.",
+    "what_it_does": "Lets the camera keep separate focus-point positions for horizontal, rotated-clockwise and rotated-counter-clockwise orientations, optionally including the AF-area mode. Turning the camera snaps the point to wherever you last left it in that orientation.",
+    "options": [
+      {
+        "value": "Off",
+        "meaning": "One point for all orientations.",
+        "use_when": "Tripod work; you do not want the point to move when you rotate."
+      },
+      {
+        "value": "Focus point",
+        "meaning": "Separate point per orientation.",
+        "use_when": "Portraits/kids: eye-level point top-third in vertical, centre in horizontal."
+      },
+      {
+        "value": "Focus point and AF-area mode",
+        "meaning": "Separate point and AF-area mode per orientation.",
+        "use_when": "Dance: e.g. Wide-area horizontal for groups, 3D vertical for a soloist."
+      }
+    ],
+    "when_to_change": "Set once for handheld people work; turn Off if the point 'jumps' unexpectedly on a tripod or L-bracket.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Off",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Focus point and AF-area mode",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Focus point",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Off",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Off",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Off",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Same three options on all bodies (verified Z50II; present on Z8/Z5II menu index).",
+    "gotchas": [
+      "Confusing on a tripod when switching to vertical with an L-bracket: the point moves to its stored vertical position."
+    ],
+    "related": [
+      "af-area-mode",
+      "focus-point-persistence"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a5",
+        "name": "Nikon Z50II Reference Guide - a5 Store points by orientation",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-07.html",
+        "kind": "manufacturer",
+        "findings": "Options Off, Focus point, Focus point and AF-area mode; three orientations stored."
+      },
+      {
+        "id": "nikon-sports-af-guide",
+        "name": "Nikon Professional Setting Guide: Sports AF Edition (2021, Z9-era; hosted copy)",
+        "url": "https://fotori.cz/files/upload/soubory/tela/Z9_TG_AF_En(Cz)01.pdf",
+        "kind": "manufacturer",
+        "findings": "Nikon recommends a5 Focus point (or Focus point and AF-area mode) for many sports."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 setup stores focus point and AF-area mode separately for vertical."
+      }
+    ]
+  },
+  {
+    "id": "focus-point-persistence",
+    "group": "Autofocus",
+    "name": "a7 Focus point persistence",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a7 Focus point persistence",
+      "z5ii": "Custom Settings menu > a Autofocus > a7 Focus point persistence",
+      "z50ii": "Custom Settings menu > a Focus > a7 Focus point persistence"
+    },
+    "one_liner": "When you switch AF-area mode mid-focus, keep the camera's current point or yours.",
+    "what_it_does": "Only matters when you use a button assigned 'AF-area mode' or 'AF-area mode + AF-ON' (f2) while AF is active. Auto keeps the point the camera was tracking (e.g. from Auto-area) when you switch to a manual-point mode; Off returns to the point you last placed yourself.",
+    "options": [
+      {
+        "value": "Auto",
+        "meaning": "Hands over the camera's current tracking position.",
+        "use_when": "Auto-area to a smaller mode handoff on a moving bird or dancer."
+      },
+      {
+        "value": "Off",
+        "meaning": "Restores your last manually selected point.",
+        "use_when": "You always want a known start point."
+      }
+    ],
+    "when_to_change": "Set Auto if you use a custom button to jump from Auto-area to Wide/Single on the same subject.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Auto",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Auto",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Auto",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "n/a",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "n/a",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "n/a",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Present as a7 on all three bodies.",
+    "gotchas": [
+      "No effect unless you switch modes with an assigned button while AF is engaged."
+    ],
+    "related": [
+      "af-area-mode",
+      "limit-af-area-mode-selection"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a7",
+        "name": "Nikon Z50II Reference Guide - a7 Focus point persistence",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-51.html",
+        "kind": "manufacturer",
+        "findings": "Auto keeps camera-chosen point when switching from auto-selected to manual-point mode via f2-assigned control while half-pressed; Off restores last manual point."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 a7 set to Auto."
+      },
+      {
+        "id": "cotswold-z8-wildlife",
+        "name": "The Cotswold Photographer - Best Nikon Z8 settings for wildlife",
+        "url": "https://thecotswoldphotographer.com/best-nikon-z8-settings-for-wildlife-photography/",
+        "kind": "review",
+        "findings": "Z8 a7 set to Auto."
+      }
+    ]
+  },
+  {
+    "id": "limit-af-area-mode-selection",
+    "group": "Autofocus",
+    "name": "a8 Limit AF-area mode selection",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a8 Limit AF-area mode selection (video: g4)",
+      "z5ii": "Custom Settings menu > a Autofocus > a8 Limit AF-area mode selection (video: g4)",
+      "z50ii": "Custom Settings menu > a Focus > a8 Limit AF-area mode selection (video: g4)"
+    },
+    "one_liner": "Hide AF-area modes you never use so the dial cycles faster.",
+    "what_it_does": "Ticks which AF-area modes appear when you cycle modes with the sub-command dial (via a control assigned Focus mode/AF-area mode). Fewer choices means fewer clicks in the field.",
+    "options": [
+      {
+        "value": "Checkbox per AF-area mode",
+        "meaning": "Checked modes are selectable by dial.",
+        "use_when": "Keep 3-4 modes: e.g. Single, Wide-S, Wide-C1, 3D."
+      }
+    ],
+    "when_to_change": "Once during setup; revisit if you change genres for a trip.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Single, Wide C1, Wide C2, 3D",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Wide S, Wide L, 3D, Auto",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Wide L, 3D, Auto",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Pinpoint, Single",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Pinpoint, Single, Dynamic S",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Pinpoint, Single",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Present on all three; separate video item g4.",
+    "gotchas": [
+      "Only affects dial cycling; the menu still lists all modes."
+    ],
+    "related": [
+      "af-area-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a8",
+        "name": "Nikon Z50II Reference Guide - a8 Limit AF-area mode selection",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-09.html",
+        "kind": "manufacturer",
+        "findings": "Checked modes are selectable with the sub-command dial via the f2 Focus mode/AF-area mode control."
+      },
+      {
+        "id": "cotswold-z8-wildlife",
+        "name": "The Cotswold Photographer - Best Nikon Z8 settings for wildlife",
+        "url": "https://thecotswoldphotographer.com/best-nikon-z8-settings-for-wildlife-photography/",
+        "kind": "review",
+        "findings": "Z8 example a8 set: Single, Wide S, Wide L, Wide C1, Wide C2, 3D."
+      }
+    ]
+  },
+  {
+    "id": "focus-point-wrap",
+    "group": "Autofocus",
+    "name": "Focus point wrap-around",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a10 Focus point wrap-around",
+      "z5ii": "Custom Settings menu > a Autofocus > a9 Focus point wrap-around",
+      "z50ii": "Custom Settings menu > a Focus > a9 Focus point wrap-around"
+    },
+    "one_liner": "Lets the focus point jump from one frame edge to the opposite edge.",
+    "what_it_does": "With wrap on, pushing the point past the edge of the frame makes it reappear on the opposite side; with it off, the point stops at the edge.",
+    "options": [
+      {
+        "value": "Wrap",
+        "meaning": "Point wraps to the opposite edge.",
+        "use_when": "Crossing the frame quickly with few presses."
+      },
+      {
+        "value": "No wrap",
+        "meaning": "Point stops at the edge.",
+        "use_when": "Fast thumb work where you 'bump' to the edge as a known reference - most action shooters prefer this."
+      }
+    ],
+    "when_to_change": "Set once; most action shooters leave No wrap so the edge is a reliable stop.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "No wrap",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "No wrap",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "No wrap",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Either",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "No wrap",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Either",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Numbered a10 on Z8 (because Z8 has a9 Focus mode restrictions) and a9 on Z5II/Z50II.",
+    "gotchas": [
+      "Menu number differs between bodies - search by name."
+    ],
+    "related": [
+      "focus-points-used"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option labels (Wrap / No wrap) follow long-standing Nikon naming; not re-read from the current manual body text.",
+    "sources": [
+      {
+        "id": "nikon-z8-csm-index",
+        "name": "Nikon Z8 Reference Guide - Custom Settings menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "a10 Focus Point Wrap-Around."
+      },
+      {
+        "id": "nikon-z5ii-csm-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "a9 Focus point wrap-around."
+      },
+      {
+        "id": "nikon-z50ii-csm-index",
+        "name": "Nikon Z50II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05.html",
+        "kind": "manufacturer",
+        "findings": "a9 Focus point wrap-around."
+      }
+    ]
+  },
+  {
+    "id": "af-assist-illuminator",
+    "group": "Autofocus",
+    "name": "Built-in AF-assist illuminator",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a12 Built-in AF-assist illuminator",
+      "z5ii": "Custom Settings menu > a Autofocus > a11 Built-in AF-assist illuminator",
+      "z50ii": "Custom Settings menu > a Focus > a11 Built-in AF-assist illuminator"
+    },
+    "one_liner": "Front lamp that lights close subjects for AF in the dark - usually turn off.",
+    "what_it_does": "Fires a lamp on the camera front to help AF in dim light at short range. It is visible to subjects and other audience members.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Lamp lights in low light.",
+        "use_when": "Dark indoor kids' shots at close range."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Never lights.",
+        "use_when": "Performances, wildlife (Nikon warns it can affect animals' eyes), long lenses where it does not reach."
+      }
+    ],
+    "when_to_change": "Turn off before any performance or wildlife outing.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "OFF",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "OFF (distracting to performers and audience, and does not reach the stage)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "OFF (ON only for close indoor shots)",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "OFF",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "OFF (can spook insects)",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "OFF",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Present on all three; a12 on Z8, a11 on Z5II/Z50II.",
+    "gotchas": [
+      "Only helps at very close range.",
+      "Z8 FW 3.00 can use a Profoto A10 LED as AF assist (change log)."
+    ],
+    "related": [
+      "low-light-af-starlight-view",
+      "subject-detection"
+    ],
+    "firmware_note": "Z8 FW 3.00: Profoto A10 LED usable as AF-assist.",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "nikon-z50ii-focus",
+        "name": "Nikon Z50II Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-02.html",
+        "kind": "manufacturer",
+        "findings": "Advises turning Custom Setting a11 off when using Animal/Birds detection because the AF-assist light may affect animals' eyes."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 a12 AF-assist Off; helps only at very close range."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 3.00 allows Profoto A10 LED as AF-assist."
+      }
+    ]
+  },
+  {
+    "id": "focus-peaking",
+    "group": "Autofocus",
+    "name": "Focus peaking",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a13 Focus peaking",
+      "z5ii": "Custom Settings menu > a Autofocus > a12 Focus peaking",
+      "z50ii": "Custom Settings menu > a Focus > a12 Focus peaking"
+    },
+    "one_liner": "Outlines in-focus edges in colour while you focus manually.",
+    "what_it_does": "In MF (including manual lenses), edges with high contrast are highlighted in a chosen colour. Sensitivity 3 highlights a deeper zone (more forgiving, less precise); 1 highlights only the sharpest edges.",
+    "options": [
+      {
+        "value": "Focus peaking display ON/OFF",
+        "meaning": "Enables peaking in MF.",
+        "use_when": "Any manual-lens work."
+      },
+      {
+        "value": "Sensitivity 1 (low) / 2 (standard) / 3 (high)",
+        "meaning": "Higher shows more depth as 'in focus'.",
+        "use_when": "Use 1 for critical focus (macro, stars); 2 general; 3 for quick zone focus."
+      },
+      {
+        "value": "Highlight colour",
+        "meaning": "Outline colour.",
+        "use_when": "Pick a colour that contrasts with the scene (red on green foliage, blue/white on warm stage light)."
+      }
+    ],
+    "when_to_change": "Lower sensitivity for critical work; change colour when it disappears against the scene.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a (AF)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Off unless using a manual lens; peaking is noisy at high ISO",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "n/a",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "ON, sensitivity 1-2, then confirm with magnified view",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "ON, sensitivity 1, Laowa 65 2x / Tokina 100 manual",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "ON, sensitivity 1, but verify by zooming 100% - peaking is weak on the soft lunar limb",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Present on all three (a13 on Z8, a12 on Z5II/Z50II).",
+    "gotchas": [
+      "Peaking is approximate - always confirm critical focus with magnified view.",
+      "At high ISO noise can trigger false peaking."
+    ],
+    "related": [
+      "mf-subject-detection-area",
+      "non-cpu-lens-data",
+      "focus-mode"
+    ],
+    "firmware_note": "",
+    "research_notes": "Colour option list not retrieved.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-a12",
+        "name": "Nikon Z50II Reference Guide - a12 Focus peaking",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-54.html",
+        "kind": "manufacturer",
+        "findings": "Display on/off; sensitivity 3 (high), 2 (standard), 1 (low) - higher shows greater depth as in focus; highlight colour; MF only."
+      },
+      {
+        "id": "reed-hoffmann-z8",
+        "name": "Reed Hoffmann - Nikon Z 8 Menus Jump Start",
+        "url": "https://reedhoffmann.com/nikon-z-8-menus-jump-start/",
+        "kind": "review",
+        "findings": "Z8 a13 peaking On, level 2, red."
+      }
+    ]
+  },
+  {
+    "id": "low-light-af-starlight-view",
+    "group": "Autofocus",
+    "name": "Starlight view (photo Lv) / low-light AF",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > d Shooting/display > d10 Starlight view (photo Lv)",
+      "z5ii": "Custom Settings menu > d Shooting/display > d11 Starlight view (photo Lv)",
+      "z50ii": "Custom Settings menu > d Shooting/display > d11 Starlight view (photo Lv)"
+    },
+    "one_liner": "Brightens the viewfinder in darkness and extends AF to lower light.",
+    "what_it_does": "Brightens the live view so you can compose in very dark scenes, and Nikon's manuals say it improves focusing in low light (photo mode only). Nikon rates AF detection to -9 EV with starlight view on the Z8 (-7 EV without). The display may become slightly jerky and the histogram is hidden.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Brighter, slower-refresh display; extended low-light AF in photo mode.",
+        "use_when": "Night sky, moonrise in twilight, very dark interiors with static subjects."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Normal display refresh.",
+        "use_when": "Any action - the laggy display hurts tracking."
+      }
+    ],
+    "when_to_change": "Turn on for night/astro composition and static low-light AF; off for moving subjects.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "OFF",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "OFF (display lag; stage is usually brighter than starlight-view territory)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "OFF",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "ON at blue hour/night",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "OFF",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "ON while composing the dim foreground; AF on the moon itself does not need it",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8: -7 to +19 EV, -9 EV with starlight view (Nikon spec). Z5II: Nikon quotes -10 EV (spec doesn't state whether starlight view is required). Z50II: -9 to +19 EV in spec. Z8 FW 3.00 adds a14 Maximum aperture Lv, which focuses at maximum aperture in live view and can also help in dim light.",
+    "gotchas": [
+      "Histogram disappears while it is on.",
+      "Photo mode only - does nothing for video AF.",
+      "EV figures are for f/1.2 lenses at ISO 100 in AF-S, centre point; slower zooms like the 180-600 lose that margin."
+    ],
+    "related": [
+      "af-assist-illuminator",
+      "focus-mode"
+    ],
+    "firmware_note": "Z8 a14 Maximum aperture Lv added in FW 3.00 ('focusing works at maximum aperture in live view').",
+    "research_notes": "Whether the Z5II -10 EV and Z50II -9 EV figures assume starlight view is not stated in the spec text retrieved.",
+    "sources": [
+      {
+        "id": "nikon-z8-focus",
+        "name": "Nikon Z8 Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/focus_31.html",
+        "kind": "manufacturer",
+        "findings": "Low-light AF: setting d10 Starlight view ON improves focus in low light; photo mode only."
+      },
+      {
+        "id": "nikon-z50ii-focus",
+        "name": "Nikon Z50II Reference Guide - Focus chapter",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-02.html",
+        "kind": "manufacturer",
+        "findings": "Low-light AF: set d11 Starlight view ON; photo mode only."
+      },
+      {
+        "id": "nikon-z50ii-d11",
+        "name": "Nikon Z50II Reference Guide - d11 Starlight view",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-64.html",
+        "kind": "manufacturer",
+        "findings": "Brightens display in dark environments; display may be jerky; histogram not shown."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "AF detection -7 to +19 EV; -9 to +19 EV with starlight view (f/1.2, ISO 100, AF-S)."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page - Specifications",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "AF detection -10 to +19 EV (f/1.2, ISO 100, AF-S)."
+      },
+      {
+        "id": "nikon-z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "AF detection -9 to +19 EV (f/1.2, ISO 100, AF-S)."
+      },
+      {
+        "id": "nikon-usa-z8-fw3",
+        "name": "Nikon USA press release - Z8 firmware 3.00",
+        "url": "https://www.nikonusa.com/press-room/z-8-firmware-3-point-0",
+        "kind": "manufacturer",
+        "findings": "FW 3.00: focusing at maximum aperture in live view."
+      }
+    ]
+  },
+  {
+    "id": "mf-subject-detection-area",
+    "group": "Autofocus",
+    "name": "MF subject detection area (and manual lenses)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > MF subject detection area (video menu has its own)",
+      "z5ii": "Photo shooting menu > MF subject detection area",
+      "z50ii": "Photo shooting menu > MF subject detection area"
+    },
+    "one_liner": "Shows face/eye boxes while you focus manually, to guide manual lenses.",
+    "what_it_does": "In MF, the camera still runs subject detection and draws boxes on detected subjects, and the in-focus indicator can then judge focus on that subject. All searches the whole frame; Wide (L)/(S) limit detection to the current focus area; Off disables it. The subject class comes from AF/MF subject detection options.",
+    "options": [
+      {
+        "value": "All",
+        "meaning": "Detect anywhere; grey boxes on extra subjects, switch with left/right.",
+        "use_when": "Portraits with a manual lens where the subject moves around the frame."
+      },
+      {
+        "value": "Wide (L) / Wide (S)",
+        "meaning": "Detect only inside the focus area.",
+        "use_when": "Several people in frame and you want a specific one."
+      },
+      {
+        "value": "MF subject detection off",
+        "meaning": "No detection in MF.",
+        "use_when": "Landscapes, macro, moon."
+      }
+    ],
+    "when_to_change": "Turn on when shooting people with the Thypoch 28, Voigtlander 58 or Zeiss 35; off for everything non-living.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "n/a (AF)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Wide (S) if using a manual lens - otherwise n/a",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "All, if using a manual lens",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Off",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Off",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Off",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 gained MF subject detection in FW 3.00. Z5II and Z50II have the menu item in their current manuals.",
+    "gotchas": [
+      "The rangefinder-style focus indicator is only meaningful when the body receives lens data; with an unchipped lens rely on peaking and magnification.",
+      "Whether detection boxes appear with a fully unchipped lens (no electronic contacts) was not confirmed - test with your Thypoch."
+    ],
+    "related": [
+      "subject-detection",
+      "focus-peaking",
+      "non-cpu-lens-data"
+    ],
+    "firmware_note": "Z8 FW 3.00 added subject detection and selectable detection areas for manual focus.",
+    "research_notes": "Nikon's Z50II text does not state any lens requirement (chipped vs unchipped). Behaviour with the owner's unchipped manual lenses is untested.",
+    "sources": [
+      {
+        "id": "nikon-z50ii-mf-detect",
+        "name": "Nikon Z50II Reference Guide - Using subject detection with manual focus",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-02.html#18-02_008",
+        "kind": "manufacturer",
+        "findings": "Options All, Wide (L), Wide (S), MF subject detection off; All shows grey boxes on multiple subjects. No lens requirement stated."
+      },
+      {
+        "id": "nikon-usa-z8-fw3",
+        "name": "Nikon USA press release - Z8 firmware 3.00",
+        "url": "https://www.nikonusa.com/press-room/z-8-firmware-3-point-0",
+        "kind": "manufacturer",
+        "findings": "FW 3.00: subject-detection priority can be chosen for manual focus; detection areas selectable during MF."
+      },
+      {
+        "id": "nikon-z8-fw-history",
+        "name": "Nikon Download Center - Z8 firmware change history (latest C 3.10)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "FW 3.00 change log: subject detection in manual focus."
+      }
+    ]
+  },
+  {
+    "id": "focus-limiter",
+    "group": "Autofocus",
+    "name": "a16 Focus limiter setting",
+    "available_on": [
+      "z8"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a16 Focus limiter setting",
+      "z5ii": null,
+      "z50ii": null
+    },
+    "one_liner": "In-body near/far focus range so AF can't hunt to infinity or the foreground.",
+    "what_it_does": "Lets you set a minimum and maximum focus distance in-camera so the AF only searches within that band. Nikon pitches it for reducing hunting, helping in low light and with fast subjects, and keeping AF off the background. Works independently of any lens limiter switch.",
+    "options": [
+      {
+        "value": "Near/far limits (user set)",
+        "meaning": "AF restricted to the stored distance range.",
+        "use_when": "Birds over water or against distant backgrounds; a stage at a fixed distance from your seat."
+      }
+    ],
+    "when_to_change": "Set when AF keeps jumping to the background or hunting through the full range on a long lens.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Limit to the realistic flight distance band (e.g. 6 m to infinity at a feeder; tighter over open water)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Limit to roughly stage-front to back wall from your seat",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Off",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Off",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Optional: limit to close range to stop hunting to infinity",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Off",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 only (FW 3.00+). Not in the Z5II or Z50II Custom Settings menus.",
+    "gotchas": [
+      "Forgetting it is on makes AF refuse subjects outside the range - add it to My Menu or a button to see it."
+    ],
+    "related": [
+      "af-area-mode",
+      "focus-mode"
+    ],
+    "firmware_note": "Added in Z8 FW 3.00.",
+    "research_notes": "Sub-option details (how distances are registered, whether assignable to a button) not read from the manual body.",
+    "sources": [
+      {
+        "id": "nikon-z8-csm-index",
+        "name": "Nikon Z8 Reference Guide - Custom Settings menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "a16 Focus Limiter Setting listed in current Z8 manual."
+      },
+      {
+        "id": "nikon-usa-z8-fw3",
+        "name": "Nikon USA press release - Z8 firmware 3.00",
+        "url": "https://www.nikonusa.com/press-room/z-8-firmware-3-point-0",
+        "kind": "manufacturer",
+        "findings": "New in-camera focus limiter restricts focus to a set minimum and maximum distance."
+      },
+      {
+        "id": "nikon-au-z8-fw",
+        "name": "Nikon Australia - Z8 firmware updates",
+        "url": "https://www.nikon.com.au/z8-firmware-updates",
+        "kind": "manufacturer",
+        "findings": "FW 3.00 in-body focus limiter; reduces hunting, helps in low light and with fast subjects, limits background shifts."
+      },
+      {
+        "id": "nikon-z5ii-csm-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "No focus limiter item in Z5II a1-a14."
+      },
+      {
+        "id": "nikon-z50ii-csm-index",
+        "name": "Nikon Z50II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05.html",
+        "kind": "manufacturer",
+        "findings": "No focus limiter item in Z50II a1-a14."
+      }
+    ]
+  },
+  {
+    "id": "manual-focus-ring-in-af",
+    "group": "Autofocus",
+    "name": "Manual focus ring in AF mode",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom Settings menu > a Focus > a17 Manual focus ring in AF mode",
+      "z5ii": "Custom Settings menu > a Autofocus > a14 Manual focus ring in AF mode",
+      "z50ii": "Custom Settings menu > a Focus > a14 Manual focus ring in AF mode"
+    },
+    "one_liner": "Lets you tweak focus by ring while AF is engaged (AF+MF override).",
+    "what_it_does": "When enabled, turning a Z lens's focus ring after AF locks lets you fine-tune manually without switching to MF. Disable it if you bump the ring and lose focus.",
+    "options": [
+      {
+        "value": "Enable",
+        "meaning": "Ring overrides AF after lock.",
+        "use_when": "Macro, moon, landscape touch-ups."
+      },
+      {
+        "value": "Disable",
+        "meaning": "Ring ignored in AF.",
+        "use_when": "Long lenses where your hand rests on the ring (180-600)."
+      }
+    ],
+    "when_to_change": "Disable for long-lens action if accidental ring touches cause misses.",
+    "suggested": [
+      {
+        "scenario": "Birds in flight",
+        "value": "Disable",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance in low LED light",
+        "value": "Disable",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Kids running",
+        "value": "Disable",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape on tripod",
+        "value": "Enable",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Macro handheld",
+        "value": "Enable",
+        "scenario_id": "macro"
+      },
+      {
+        "scenario": "Moonrise at 280mm on tripod",
+        "value": "Enable",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "a17 on Z8; a14 on Z5II/Z50II.",
+    "gotchas": [
+      "Only works with lenses that support it (focus-by-wire Z lenses); not relevant to FTZ screw-drive lenses."
+    ],
+    "related": [
+      "focus-mode",
+      "focus-peaking"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option wording and lens-compatibility notes not read from manual body text.",
+    "sources": [
+      {
+        "id": "nikon-z8-csm-index",
+        "name": "Nikon Z8 Reference Guide - Custom Settings menu index (current FW 3.x manual)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csma_af-c_priority_selection_204.html",
+        "kind": "manufacturer",
+        "findings": "a17 Manual Focus Ring in AF Mode."
+      },
+      {
+        "id": "nikon-z5ii-csm-index",
+        "name": "Nikon Z5II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csm_menu_items_205.html",
+        "kind": "manufacturer",
+        "findings": "a14 Manual focus ring in AF mode."
+      },
+      {
+        "id": "nikon-z50ii-csm-index",
+        "name": "Nikon Z50II Reference Guide - Custom Settings menu index",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05.html",
+        "kind": "manufacturer",
+        "findings": "a14 Manual focus ring in AF mode."
+      },
+      {
+        "id": "cotswold-z8-wildlife",
+        "name": "The Cotswold Photographer - Best Nikon Z8 settings for wildlife",
+        "url": "https://thecotswoldphotographer.com/best-nikon-z8-settings-for-wildlife-photography/",
+        "kind": "review",
+        "findings": "Z8 wildlife setup: a17 enabled."
+      }
+    ]
+  }
+]

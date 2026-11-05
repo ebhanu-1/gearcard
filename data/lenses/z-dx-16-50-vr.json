@@ -1,0 +1,207 @@
+{
+  "id": "z-dx-16-50-vr",
+  "name": "NIKKOR Z DX 16-50mm f/3.5-6.3 VR",
+  "short": "DX 16-50 VR",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "DX",
+  "kind": "zoom",
+  "focal_mm": [
+    16,
+    50
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 16,
+      "f": 3.5
+    },
+    {
+      "focal_mm": 50,
+      "f": 6.3
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 7,
+  "rounded_blades": true,
+  "weight_g": 135,
+  "filter_mm": 46,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "STM (stepping motor), focus-by-wire",
+    "focus_throw_deg": null,
+    "notes": "Minimum aperture is f/22 at 16mm and f/40 at 50mm (Nikon). The lens retracts to about 32 mm long: the camera asks you to extend it before shooting, and it clicks in at 16mm (PL). PL notes that rotating slowly past the click gives a few mm wider than 16mm at an image-quality cost, and that focus resets at power-off. AF is fast and quiet (PL, PhotoReview, Hogan). It can be slow at 50mm in low light: Hogan puts the limit at about 0 EV at f/6.3. All-plastic build including the mount, with no weather gasket (Hogan). No hood is supplied (PhotoReview, PL)."
+  },
+  "stabilization": {
+    "lens_vr": true,
+    "lens_vr_stops": 4.5,
+    "synchro_vr": null,
+    "ibis_on_ftz": null,
+    "notes": "Nikon claims 4.5 stops at the tele end on a DX body. PL found it did a great job in low light. Not measured by any source found. On the Z50 II it is the only stabilisation. Synchro VR support was not confirmed, so it is null."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 16,
+        "value": 0.25
+      },
+      {
+        "focal_mm": 24,
+        "value": 0.2
+      },
+      {
+        "focal_mm": 35,
+        "value": 0.23
+      },
+      {
+        "focal_mm": 50,
+        "value": 0.3
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 50,
+        "value": 0.2
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD by focal length is from the Nikon spec as reproduced by PhotographyBlog and a dealer spec sheet. Nikon's own page lists only 0.2 m at 24mm. Max reproduction is 0.2x (Nikon). Its focal length is not stated, and 50mm is assumed (inference). PhotoReview: close focus is not great for close-ups, though workable at 50mm. PL: zoomed to 50mm and close, you get fairly decent background blur."
+  },
+  "quick": {
+    "headline": "Tiny pancake kit zoom: sharp center wide open at 16mm, corners need f/5.6. f/8 is a safe all-round setting, and stay at f/11 or wider.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Center excellent wide open at 16mm (PL, Hogan), and PhotoReview's Imatest found its best results at 16mm wide open. Corners at 16mm are fair to good wide open (field curvature, some coma per Hogan; PL) and improve noticeably at f/5.6. At 50mm f/6.3, the center drops to very good while the corners are good.",
+    "by_focal": [
+      {
+        "focal_mm": 16,
+        "center_peak": "f/3.5–f/4",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Center excellent wide open and barely better at f/4 (Hogan, PL). Corners weak wide open from field curvature, much better at f/5.6 (PL)."
+      },
+      {
+        "focal_mm": 24,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Strong in the center and extreme corners. f/5.6 gives the best overall results (PL)."
+      },
+      {
+        "focal_mm": 35,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Very good. f/5.6 again best center to corner (PL)."
+      },
+      {
+        "focal_mm": 50,
+        "center_peak": "f/6.3–f/8",
+        "corners_peak": "f/6.3–f/8",
+        "wide_open_note": "Center resolution drops at the long end but the corners get sharper (PL). PL says to use maximum aperture unless you need more depth of field. Hogan: center very good, corners solidly good."
+      }
+    ],
+    "close_up_best": "f/6.3–f/8 at 50mm (inference)",
+    "close_up_note": "No source measured sharpness at close focus. 0.2x at about 0.3 m (50mm) is a modest close-up. PL says 50mm is best used near wide open, and diffraction starts around f/8–f/11, so f/6.3–f/8 is a cautious inference. PhotoReview calls close-up ability not great.",
+    "diffraction_note": "Sources disagree. PhotoReview (Imatest, Z50): consistent to about f/8, with diffraction taking effect between f/10 and f/11. Hogan (Z50): visible diffraction softening starts between f/5.6 and f/8. PL: evenly good at f/8 across all focal lengths. Best-supported: f/8 is safe, f/11 shows a measurable loss, and f/16 and smaller should be avoided.",
+    "avoid": [
+      "f/16–f/40 on the Z50 II.",
+      "Wide open at 16mm when the corners matter: use f/5.6.",
+      "Shooting until the lens is fully extended and clicked to 16mm: slow-twisting past the click is softer."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two labs on the Z50 (Photography Life Imatest, PhotoReview Imatest) plus Hogan on the Z50 agree on the 16mm center-sharp / corner-weak pattern and f/5.6 as the corner fix. The diffraction onset differs (Hogan f/5.6–f/8 vs PhotoReview f/10–f/11). No numbers are readable (chart images)."
+  },
+  "character": {
+    "bokeh": "PhotoReview: smooth bokeh is hard at these apertures, with choppy bright spots and outlining, especially at short focal lengths. PL: decent background blur when close at 50mm.",
+    "flare_sunstar": "Flare and ghosting are well controlled (PL, PhotoReview, Hogan) even without a hood. Sunstars are 14-point but break up and dissipate. PL: 'definitely not the lens for' pretty sunstars.",
+    "ca": "Lateral CA is the most visible of Hogan's Z lenses: about 2 px at 24mm, 1.5 px at 35mm, about 1 px at 16mm, and not measurable at 50mm. PL (Imatest) agrees: about 1 px at 16mm, close to 2 px at 24–35mm, gone at 50mm. PhotoReview found it negligible in JPEG (corrected). Leave CA correction on.",
+    "distortion": "Uncorrected: 4.27% barrel at 16mm (PL Imatest), about 4% (Hogan), turning to pincushion from 24mm (Hogan about 2–3%). Always corrected in-camera.",
+    "vignetting": "Almost 2 stops at f/3.5 at 16mm (PL), about 1⅔ stops wide open (Hogan). Not a worry at f/5.6–f/6.3 (PL). Virtually none at 50mm (PhotoReview).",
+    "coma_astro": "Hogan saw some coma smearing in the 16mm corners wide open. Not an astro lens.",
+    "focus_breathing": "Negligible or not measurable (Hogan, who suspects firmware correction). Focus shift negligible.",
+    "other": "Slightly wider than 16mm uncorrected, with corrections bringing it to 16mm (Hogan). No hood fits by design (PL)."
+  },
+  "field_tips": [
+    "Twist the barrel until it clicks at 16mm before shooting. It is softer if you creep past the click.",
+    "At 16mm, f/3.5–f/4 is fine for centred subjects. Use f/5.6 for edge-to-edge landscapes.",
+    "If unsure, use f/8 at any focal length: PL found it even across the range. Don't go past f/11.",
+    "At 50mm, shoot f/6.3 wide open unless you need depth of field. Get as close as 0.3 m for the best background blur.",
+    "In dim light at 50mm, AF slows (f/6.3). Zoom wider or use AF-assist."
+  ],
+  "body_notes": [
+    {
+      "body": "z50ii",
+      "note": "Native kit pairing. PL, PhotoReview and Hogan all tested on the Z50 (same 20.9MP class), so their findings apply directly. Lens VR is the only stabilisation."
+    },
+    {
+      "body": "z8",
+      "note": "Auto DX crop, 19.4MP (4.35 µm), essentially the same per-pixel behaviour as the Z50 II. A pointless pairing apart from size."
+    },
+    {
+      "body": "z5ii",
+      "note": "DX crop only about 10MP (computed). Usable as a pocket lens, but low resolution."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z DX 16-50mm f/3.5-6.3 VR review (Nasim Mansurov), pages 1–3",
+      "url": "https://photographylife.com/reviews/nikon-z-dx-16-50mm-f3-5-6-3-vr/2",
+      "kind": "measured",
+      "tested_on": "Nikon Z50 (20.9MP DX), Imatest",
+      "date": "updated 2024-01-27",
+      "findings": "16mm: center and mid excellent at f/3.5–f/4, corners somewhat weak from field curvature, noticeably better at f/5.6. 24mm: strong center and corners, f/5.6 best. 35mm: f/5.6 best center to corner. 50mm: center drops wide open but the corners get sharper, so use max aperture unless you need depth of field. Even performance at f/8 across all focal lengths: 'just stop it down to f/8'. Vignetting almost 2 stops at 16mm f/3.5. Distortion 4.27% barrel at 16mm, pincushion from 24mm. Lateral CA a bit over 1 px at 16mm, close to 2 px at 24–35mm, disappears at 50mm. Flare well controlled. Weak, dissipating 14-point sunstars. Page 3 (per the 18-140 review): slightly sharper than the 18-140 overall, but the 18-140 has better 18mm corners."
+    },
+    {
+      "id": "photoreview",
+      "name": "PhotoReview (Australia): Nikkor Z DX 16-50mm f/3.5-6.3 VR lens review (Margaret Brown)",
+      "url": "https://www.photoreview.com.au/reviews/mirrorless-lenses/mirrorless-lenses-aps-c/nikkor-z-dx-16-50mm-f-3-5-6-3-vr-lens/",
+      "kind": "measured",
+      "tested_on": "Nikon Z50 (20.9MP DX), Imatest JPEG plus raw",
+      "date": "2020-03-13",
+      "findings": "Best results at the shortest focal length and widest aperture (unusual). Very good for a kit lens and fairly consistent to about f/8, then declining. Diffraction takes effect between f/10 and f/11. No numbers in text. CA negligible in JPEG, slightly higher in raw. Slight barrel at 16mm and pincushion at 50mm (raw). Vignetting obvious wide open at 16mm and 24mm, virtually none at 50mm. MFD 25 cm at 16mm and 30 cm at 50mm, 0.2x, close-up not great. Bokeh choppy with outlining. Little flare. Score 8.8."
+    },
+    {
+      "id": "hogan",
+      "name": "Thom Hogan (sansmirror): Nikon 16-50mm f/3.5-6.3 DX Lens Review",
+      "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-16-50mm-f35-63-lens.html",
+      "kind": "review",
+      "tested_on": "Nikon Z50 (20.9MP DX)",
+      "date": "2020 (page updated 2026-10-21)",
+      "findings": "16mm: center excellent wide open, peaking around f/4, corners fair to good (field curvature, some coma). Corners improve to good when zoomed. 50mm f/6.3: center very good, corners solidly good. Visible diffraction softening starts between f/5.6 and f/8. Distortion about 4% barrel at 16mm, about 2% pincushion at 24mm, about 3% at 35mm, about 2% at 50mm. Vignetting about 1⅔ stops wide open. Lateral CA about 2 px at 24mm, 1.5 px at 35mm, about 1 px at 16mm. Focus breathing negligible. Low-light AF at 50mm about 0 EV. Plastic mount, no gasket. Strong flare resistance. 'Outright bargain', Recommended."
+    },
+    {
+      "id": "nikon",
+      "name": "Nikon: NIKKOR Z DX 16-50mm f/3.5-6.3 VR product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_dx_16-50mmf35-63_vr/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.2 m at 24mm, 0.2x, about 135 g, 46 mm filter, 7 rounded blades, f/3.5–6.3, min f/22–40, VR 4.5 stops (tele, DX), 9 elements in 7 groups (1 ED, 4 aspherical), 70 × 32 mm, retractable."
+    },
+    {
+      "id": "spec_sheet",
+      "name": "PhotographyBlog spec page (reproducing Nikon specifications)",
+      "url": "https://www.photographyblog.com/reviews/nikon_z_dx_16_50mm_f3_5_6_3_vr_review/specifications",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD from the focal plane: 0.25 m at 16mm, 0.2 m at 24mm, 0.23 m at 35mm, 0.3 m at 50mm. 0.2x. 135 g, 46 mm, 7 rounded blades. Matches the Carmarthen Cameras expanded spec sheet (https://carmarthencameras.com/pages/expanded-specifications-nikon-nikkor-z-dx-16-50mm-f3-5-6-3-vr-lens)."
+    },
+    {
+      "id": "fstoppers_frost",
+      "name": "Fstoppers (Alex Cooke): 'Tiny and Versatile', a write-up of Christopher Frost's 16-50 video",
+      "url": "https://fstoppers.com/gear/tiny-and-versatile-review-nikon-nikkor-z-dx-16-50mm-f35-63-vr-lens-502130",
+      "kind": "video",
+      "tested_on": null,
+      "date": "2020-07-26",
+      "findings": "Article only points to the embedded Frost video for his thoughts. No findings transcribed."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "title-only",
+    "summary": "Frost reviewed this lens (Fstoppers write-up by Alex Cooke, 26 July 2020, embeds his video). The video, its description and transcript could not be opened, and the Fstoppers article reports none of his findings. His verdict is unknown."
+  },
+  "research_notes": "1) No Lenstip, OpticalLimits, Lensrentals or TDP test exists for this lens. The measured sources are Photography Life and PhotoReview, both Imatest on the Z50, with numbers only in chart images. 2) Diffraction conflict: Hogan says visible softening from f/5.6–f/8, PhotoReview says f/10–f/11, and PL says f/8 is evenly good. f/8 is the safe ceiling for maximum detail, and f/11 is acceptable. 3) PL's 50mm wording is ambiguous: the center drops wide open, but they advise max aperture. Interpreted as little gain from stopping down at 50mm, so f/6.3–f/8. 4) Max-mag focal length assumed 50mm. 5) Weather sealing: Nikon page does not state any, and Hogan says no mount gasket. 6) Synchro VR: null (not confirmed)."
+}

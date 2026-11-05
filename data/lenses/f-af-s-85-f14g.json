@@ -1,0 +1,217 @@
+{
+  "id": "f-af-s-85-f14g",
+  "name": "AF-S NIKKOR 85mm f/1.4G",
+  "short": "AF-S 85 f/1.4G",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    85
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 85,
+      "f": 1.4
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 595,
+  "filter_mm": 77,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "SWM (Silent Wave Motor, AF-S) with M/A full-time manual override",
+    "focus_throw_deg": null,
+    "notes": "Nikon's FTZ II page lists AF-S Type G lenses as fully supported for AF and AE. Photography Life's FTZ compatibility guide rates AF-S lenses fully compatible: AF, electronic rangefinder, peaking, aperture control, EXIF, distortion/vignetting control and IBIS all work. Phillip Reeve reports no limitations on Z bodies via the FTZ. Eye/subject detection: Nikon's FTZ II page does not mention it. Forum users on BCG report subject and eye detection working with adapted AF-S lenses in the wide-area, custom, 3D and auto modes, because the body does the detection. Treat this as user-reported (forum). Speed: Phillip Reeve calls AF slow next to the older AF-D, and says Nikon tuned the AF-S primes for accuracy over speed. Photography Life says it is more accurate than the AF-D, especially in low light. Ed Dozier (photoartfromscience, 2024) shot this lens on a Z8 and Z9, which requires an FTZ-type adapter (inference). He saw no sluggish AF until ambient light became very dim."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon's FTZ II page says that with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. The lens is a CPU lens, so it passes its focal length to IBIS automatically. Synchro VR needs a VR lens, so it does not apply. IBIS does not freeze dancer motion, so stage shutter speeds still have to be set for the subject."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 85,
+        "value": 0.85
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 85,
+        "value": 0.12
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "Nikon specifies MFD 0.85 m and maximum reproduction 0.12× (about 1:8.3). Phillip Reeve's page gives both 1:7.7 and 1:8.6 in different places, so the Nikon figure is used. Close up is a tight head-and-shoulders or face crop, not a detail lens. No source gives a working distance. Phillip Reeve (42MP A7R II): at close range the older AF-D was better at f/1.4–f/2, and the AF-S caught up at f/2.8."
+  },
+  "quick": {
+    "headline": "Creamy, flat-field FX portrait lens with full AF on Z: soft-ish but usable at f/1.4, crisp from f/2.8, peaks f/4–f/5.6, and has strong colour fringing in the blur wide open.",
+    "sweet_spot": "f/4–f/5.6",
+    "wide_open": "Center is decent at f/1.4 (Lenstip D3x: 30 lp/mm, right at their 'decency' level), and the edge is borderline wide open (Lenstip). Photozone (D3x) called the center excellent and the borders very good wide open. Strong LoCA (magenta in front, green behind) and about 1.8 EV corner vignetting at f/1.4.",
+    "by_focal": [
+      {
+        "focal_mm": 85,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/4–f/5.6",
+        "wide_open_note": "Lenstip (D3x, 24.5MP FX) center: f/1.4 30, f/2 33, f/4 and f/5.6 about 44 lp/mm, against about 46–47 for the best primes. The edge passes the 'useful' level about 1 EV down from f/1.4. Photozone (D3x): extremely high center at f/4, and excellent borders and corners from f/4. photoartfromscience (D7000 DX): peak at f/5.6, with a slight drop at f/8 from diffraction. Lensrentals (optical bench, 2014): 'clearly the off-center champion' among Canon/Nikon/Sigma/Zeiss 85s, with a nearly flat field but a less sharp center than the Canon and Zeiss."
+      }
+    ],
+    "close_up_best": "f/2.8–f/5.6",
+    "close_up_note": "Phillip Reeve: at close range the lens is weaker than the AF-D at f/1.4–f/2 and catches up at f/2.8. Its focus shift is worst close up. Z bodies autofocus at the shooting aperture up to f/5.6 (photoartfromscience, Z8/Z9), which removes the focus-shift error that plagued DSLRs. Tight face portraits at f/1.4 have razor-thin depth of field, so f/2.8 is the safer close-up choice (inference from depth of field, not measured).",
+    "diffraction_note": "photoartfromscience (D7000, 16MP DX, about 4.8 µm pitch): peak at f/5.6, and resolution 'drops a bit' at f/8 as diffraction sets in. The Z8's 4.35 µm pitch is slightly finer, so expect the same: best by f/5.6, softening visible from f/8, clearer at f/11–f/16. Lenstip (D3x, 5.9 µm) measured f/4 and f/5.6 equal at about 44 lp/mm. On the Z5 II (about 5.9 µm) f/8 costs little.",
+    "avoid": [
+      "Don't shoot high-contrast edges (white saree borders, jewellery, backlit hair) at f/1.4–f/2 if colour fringing matters: LoCA is strong and only partly fixable in post.",
+      "Don't expect sharp corners or even illumination at f/1.4 (about 1.8 EV vignetting). Stop to f/2.8 for group shots.",
+      "Don't stop past f/8 on the Z8 for sharpness: diffraction starts there."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Lenstip (24MP FX), Photozone (24MP FX) and photoartfromscience (16MP DX) all measured a peak at f/4–f/5.6, and Lensrentals' bench confirms the strong off-center field. No measured test on a 45MP body was found, so wide-open per-pixel softness on the Z8 will look somewhat worse than these 24MP figures suggest, while the peak aperture should not move."
+  },
+  "character": {
+    "bokeh": "Very smooth (Photozone: blur at a 'very high level'), with slight nervousness in the transition zone that eases a little stopped down. Nine rounded blades keep highlights round except toward the corners, where mechanical vignetting gives cat's-eye shapes at f/1.4 and somewhat at f/2. Minor outlining (Photozone). Phillip Reeve found the Sony 85 GM better in the corners, with less outlining and less cat's eye.",
+    "flare_sunstar": "Lenstip: 'quite good' against bright light. Phillip Reeve: veiling flare is still a problem even with the large hood, but ghosting is much improved over the AF-D. Distinct sunstars are hard to get (Reeve), because the rounded blades soften the points.",
+    "ca": "Lateral CA is low: Photozone measured a maximum of 0.9 px average at the borders at f/2 (D3x), and Lenstip rates it slight. Longitudinal CA is strong: Lenstip lists 'distinct longitudinal CA' as a con, Photozone saw magenta halos in front of focus and green behind, and Reeve saw clear bokeh fringing at f/1.4 that is still visible at f/2.8. Ed Dozier calls the spherochromatism mostly academic unless the subject is white.",
+    "distortion": "Slight barrel. Photozone: 'hardly field-relevant'. Lenstip: negligible.",
+    "vignetting": "Photozone (D3x, uncorrected JPEG): almost 1.8 EV in the corners at f/1.4, still potentially disturbing at f/2, not field-relevant from f/2.8. Lenstip: significant on FX, slight on DX. The Z bodies apply in-camera vignette control to AF-S lenses (Photography Life FTZ guide).",
+    "coma_astro": "Lenstip: slightly too much coma in FX corners wide open, well corrected on DX. Astigmatism 'sensationally corrected' (Lenstip).",
+    "focus_breathing": "Not measured by any source found.",
+    "other": "Focus shift from residual spherical aberration (Photozone: slight. Reeve: noticeable at f/2.8 close up. Dozier: severe on DSLRs). Z bodies focus at the taking aperture up to f/5.6, so this is largely solved on the Z8 and Z5 II (photoartfromscience, Z8/Z9). Introduced 2010, 10 elements in 9 groups, Nano Crystal Coat (Nikon). Lensrentals rates copy-to-copy variation excellent."
+  },
+  "field_tips": [
+    "Family portraits: f/2–f/2.8 gives the look with fewer fringes. Use f/4–f/5.6 for groups or when the eyes and jewellery must be biting sharp on the Z8.",
+    "Stage dance: f/1.4–f/2 is fine for light. Put eye-detect (Wide-area or Auto with People detection) on the dancer and keep the shutter at about 1/500 s or faster for hands and feet. AF is accurate rather than fast, so pre-focus on the dancer's position.",
+    "Watch for magenta/green fringing on bright edges wide open (white costume borders, gold jewellery, stage lights). Stop to f/2.8 or fix it with defringe in raw. Lateral CA correction alone won't remove it.",
+    "Focus shift isn't a worry on Z: the body focuses at the shooting aperture up to f/5.6. You can skip the AF fine-tune habits from the DSLR days.",
+    "On the Z50 II it frames like about 127mm, with no IBIS, so use 1/250 s or faster handheld, or a higher ISO."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP (4.35 µm) shows f/1.4 softness and LoCA more than the 24MP tests suggest. Peak f/4–f/5.6, diffraction visible from f/8. AF at shooting aperture to f/5.6 removes the focus-shift problem (Dozier, Z8). 3-axis IBIS via FTZ II."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP FX matches the D3x test pixel pitch almost exactly, so the Lenstip and Photozone numbers apply directly: f/1.4 decent, peak f/4–f/5.6, f/8 still fine. 3-axis IBIS via FTZ II."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX crop frames like about 127mm, and the vignetting and soft corners fall outside the frame. photoartfromscience's D7000 DX test (peak f/5.6, slight drop at f/8) is the closest match. No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor AF-S 85 mm f/1.4G (resolution + summary chapters)",
+      "url": "https://www.lenstip.com/264.4-Lens_review-Nikon_Nikkor_AF-S_85_mm_f_1.4G_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon D3x (24.5MP FX), RAW MTF50",
+      "date": null,
+      "findings": "Center MTF50: f/1.4 = 30 lp/mm, f/2 = 33, f/4 and f/5.6 about 44 (decency level about 30, best fixed lenses about 46–47). Edge (no numbers in text): borderline useful wide open across the full frame, exceeds that level about 1 EV down. Summary (https://www.lenstip.com/264.11-Lens_review-Nikon_Nikkor_AF-S_85_mm_f_1.4G_Summary.html) pros: splendid center, very good edges even on FX, slight lateral CA, negligible distortion, sensationally corrected astigmatism, quite good against bright light, fast, silent, accurate AF. Cons: significant FX vignetting, slightly too much coma in FX corners, distinct longitudinal CA."
+    },
+    {
+      "id": "photozone",
+      "name": "Photozone/OpticalLimits: Nikkor AF-S 85mm f/1.4G (FX) review",
+      "url": "https://www.photozone.de/nikon_ff/606-nikkorafs854ff?start=1",
+      "kind": "measured",
+      "tested_on": "Nikon D3x (24.5MP FX)",
+      "date": null,
+      "findings": "Center excellent wide open, extremely high at f/4. Borders and corners very good wide open, excellent from f/4. Slight focus shift when stopping down (residual spherical aberration). Lateral CA maximum 0.9 px average at the borders at f/2. Vignetting almost 1.8 EV at f/1.4 (uncorrected JPEG), disturbing at f/2, not field-relevant from f/2.8. Slight barrel distortion, hardly field-relevant. Bokeh at a very high level, slight nervousness in the transition zone, cat's-eye highlights toward the corners at f/1.4–f/2, small outlining. LoCA noticeable at large apertures: magenta in front of focus, green behind. MTF values are in chart images only."
+    },
+    {
+      "id": "photoartfromscience",
+      "name": "Photo Art From Science (Ed Dozier): Nikkor 85mm f/1.4 AF-S review",
+      "url": "https://www.photoartfromscience.com/single-post/2015-9-4-nikkor-85mm-f14-afs",
+      "kind": "measured",
+      "tested_on": "Nikon D7000 (16MP DX, about 4.8 µm), MTF50 (single copy)",
+      "date": "2015-09",
+      "findings": "Worst corner at f/1.4 about 28.3 lp/mm sagittal, about 31 meridional, roughly even across the DX frame. f/5.6 is 'peak resolution performance'. At f/8 diffraction starts and resolution drops a bit. Other per-aperture values are in chart images only. Focus shift: his copy needed fine-tune +1 at f/1.4, 0 at f/2, −4 further down. Spherochromatism: magenta in front, greenish behind, mostly academic unless the subject is white."
+    },
+    {
+      "id": "photoartfromscience_z",
+      "name": "Photo Art From Science (Ed Dozier): Nikon Z cameras fix spherical aberration focus shift",
+      "url": "https://photoartfromscience.com/single-post/nikon-z-cameras-fix-spherical-aberration-focus-shift",
+      "kind": "review",
+      "tested_on": "Nikon Z8 and Z9 (45.7MP) with the 85mm f/1.4 AF-S",
+      "date": "2024-01",
+      "findings": "Z cameras stop the lens down to the shooting aperture to autofocus, up to f/5.6. Beyond that they focus at f/5.6 and stop down at capture. With the 85/1.4 AF-S, which shifts focus badly on DSLRs, focus was 'nailed every single time at any aperture' (no measurements given). No sluggish AF on the Z8 or Z9 until ambient light got very dim."
+    },
+    {
+      "id": "lensrentals",
+      "name": "Lensrentals blog (Roger Cicala): Just the Lenses: Canon and Nikon mount 85mm f/1.4 (and 1.2) primes",
+      "url": "https://www.lensrentals.com/blog/2014/09/just-the-lenses-canon-and-nikon-mount-85mm-f1-4-and-1-2-primes/",
+      "kind": "measured",
+      "tested_on": "Optical bench (Olaf), lens only, multiple copies",
+      "date": "2014-09",
+      "findings": "Nikon 85/1.4G is 'clearly the off-center champion' and has a nearly perfectly flat field. Its center is not as sharp as the Canon 85L or Zeiss. Corner-to-corner copy variance rated excellent. MTF values are in charts only (not quoted)."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "Phillip Reeve: Review Nikon AF-S 85mm 1.4G",
+      "url": "https://phillipreeve.net/blog/review-nikon-af-s-85mm-1-4g/",
+      "kind": "review",
+      "tested_on": "Sony A7R II (42MP FX) via adapter for controlled tests. Samples on D700/D800",
+      "date": null,
+      "findings": "Corners at infinity better than the AF-D wide open. Some fringing wide open, gone by about f/4–f/5.6. Focus shift noticeable at f/2.8 at close range, but no problem on Z bodies because they focus stopped down. Clear LoCA and purple fringing at f/1.4, still visible at f/2.8. Lateral CA almost absent. Veiling flare remains even with the hood, ghosting much improved. Sunstars hard to get. MFD 0.85 m. At close range the AF-D was better at f/1.4–f/2, and the AF-S catches up at f/2.8. AF slow vs the AF-D. No limitations on Z via the FTZ."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon 85mm f/1.4G review",
+      "url": "https://photographylife.com/reviews/nikon-85mm-f1-4g/4",
+      "kind": "review",
+      "tested_on": "Nikon DSLRs (not stated on the page read)",
+      "date": "2010 (price note 2018)",
+      "findings": "Qualitative only on the page read. Sharp, good colour and contrast, beautiful subject isolation. AF possibly slower than the 85/1.4D but more accurate, especially in low light. Critical focus wide open in dim light needs care."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon: AF-S NIKKOR 85mm f/1.4G product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/f-mount/singlefocal/normal/af-s_nikkor85mmf_14g/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "10 elements in 9 groups (Nano Crystal Coat). f/16 minimum. MFD 0.85 m. Max reproduction 0.12×. 9 rounded blades. 77 mm filter. About 595 g. 86.5 × 84 mm. M/A mode."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Full AF/AE with AF-S Type G/D/E, AF-P and AF-I lenses. With a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. No mention of eye/subject detection."
+    },
+    {
+      "id": "pl_ftz_guide",
+      "name": "Photography Life: Nikon FTZ and FTZ II adapter lens compatibility, explained",
+      "url": "https://photographylife.com/nikon-ftz-adapter-lens-compatibility",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "AF-S lenses fully compatible: AF, electronic rangefinder, peaking, aperture control, EXIF, metering, distortion/vignetting control, diffraction compensation, focus shift shooting, IBIS. Eye detection not discussed."
+    },
+    {
+      "id": "bcg_forum",
+      "name": "BCG Forums thread: Does Z9 subject detection AF work using an F-mount lens and FTZ adapter?",
+      "url": "https://bcgforums.com/threads/does-z9-subject-detection-af-work-using-an-f-mount-lens-and-ftz-adapter.25416/",
+      "kind": "forum",
+      "tested_on": "Nikon Z9 with AF-S/AF-P telephotos",
+      "date": null,
+      "findings": "Users report subject and eye detection working with adapted AF-S/AF-P lenses in Wide-area S/L, custom, 3D and Auto modes. A dealer claim that Z lenses are required was contradicted. Not tested with this 85mm specifically."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the AF-S 85mm f/1.4G was found. Searches for his name with this lens, a youtube.com-restricted search, and a check of the lensvid.com 'christopher frost' tag pages turned up no video on it. YouTube itself is blocked to fetching here. Nothing is attributed to him."
+  },
+  "research_notes": "1) Test vintage: Lenstip and Photozone used a 24.5MP D3x (5.9 µm), photoartfromscience a 16MP D7000 DX, and Phillip Reeve a 42MP A7R II (qualitative). No measured MTF50 on a 45MP body was found. The peak aperture (f/4–f/5.6) is set by aberrations and diffraction and should hold on the Z8. Wide-open per-pixel softness and LoCA will be more visible on the Z8 than the numbers suggest. 2) DXOMARK measurement page was fetched, but its values are in interactive charts that could not be read, so none are quoted. The-Digital-Picture review page failed to load. 3) Eye-detection evidence for adapted AF-S lenses is forum-level (BCG). Nikon does not state it. 4) Dozier's Z8/Z9 article does not mention the adapter, but an F-mount lens can only mount on a Z8 via an FTZ-type adapter (inference). 5) Max magnification: Nikon 0.12×. Reeve's page shows conflicting 1:7.7 and 1:8.6, so it is not used. 6) tc_compatible false: Nikon AF-S teleconverters are designed for longer AF-S/AF-I telephotos, and this lens is not on the lists generally published (not re-verified this session). 7) DPReview's lab widget and Lensrentals' 2019 MTF graphs (referenced by Reeve) were not read."
+}

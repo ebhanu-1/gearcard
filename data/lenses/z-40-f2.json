@@ -1,0 +1,164 @@
+{
+  "id": "z-40-f2",
+  "name": "NIKKOR Z 40mm f/2",
+  "short": "Z 40 f/2",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    40
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 40,
+      "f": 2.0
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 170,
+  "filter_mm": 52,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Stepping motor (STM). Acceptably fast, very accurate and fairly quiet (Phillip Reeve). Silent and accurate (Lenstip).",
+    "focus_throw_deg": null,
+    "notes": "Single focus-by-wire ring, no AF/MF switch. Lens firmware 1.10 (40mm f/2 and 40mm f/2 SE) adds linear focus-ring rotation options. Focus shift: stopping down from f/2 moves the plane of focus behind the subject (Photography Life; Reeve sees it going from f/2 to f/2.8). Pronounced field curvature (Photography Life). Plastic mount (Lenstip, Reeve)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical VR. Body IBIS on the Z8 and Z5 II. None on the Z50 II."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 40,
+        "value": 0.29
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 40,
+        "value": 0.17
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.29 m from the focal plane, 0.17× (Nikon). Photography Life: just over 1:6. A useful close-up for food and details, not macro. Working distance not published."
+  },
+  "quick": {
+    "headline": "Tiny, light 40 that needs stopping down: soft-ish and low-contrast at f/2, good by f/2.8–f/4, peaks at f/5.6, and corners never reach excellent.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Center fair at f/2 (Lenstip Z7: 42.8 lp/mm, right at its decency level). Edges blurry near maximum aperture (Lenstip con). Reeve (Z7 II): center very good, mid good, corners just OK at f/2. Strong FX vignetting (Reeve 2.3 EV) and coma at f/2.",
+    "by_focal": [
+      {
+        "focal_mm": 40,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Lenstip (Z7, 45.7MP) center: 42.8 lp/mm at f/2, above 50 at f/2.8, 70 at f/4, peak 75.3 at f/5.6. Edges lag the center and only just pass 50 lp/mm around f/5.6. Reeve: peak at f/5.6, unchanged at f/8. Corners good at f/2.8 and very good at f/5.6–f/8, never excellent. Photography Life (Z7): weak at f/2–f/2.8, much sharper at f/4–f/5.6, corners strong f/5.6–f/11. Midframe at f/4 can look worse than corners because of field curvature."
+      }
+    ],
+    "close_up_best": "f/5.6–f/8",
+    "close_up_note": "Reeve (Z7 II) close-up: good sharpness but low contrast at f/2, peak at f/5.6, no clear change at f/8. Because of the backward focus shift and curved field (Photography Life), refocus or confirm with magnified view at the shooting aperture. f/2 close-ups give a soft, glowy look rather than crisp detail.",
+    "diffraction_note": "Reeve (Z7 II): small, negligible diffraction hit at f/11, more obvious at f/16, especially in the corners. Photography Life (Z7): gradual loss at f/11 and f/16.",
+    "avoid": [
+      "Don't expect crisp FX corners below f/5.6. They never become excellent.",
+      "Avoid f/16 on the Z8.",
+      "Don't focus wide open and then stop down for critical close work: focus shifts backward.",
+      "Flat subjects (documents, walls) at f/2–f/4: field curvature softens part of the frame."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Lenstip (Z7, center numbers readable), Photography Life (Z7) and Phillip Reeve (Z7 II) all agree on a weak f/2, a big gain by f/4, a peak around f/5.6 and corners that stay behind. Edge lp/mm per aperture is only in a Lenstip chart image."
+  },
+  "character": {
+    "bokeh": "Soft and pleasant at close range (Reeve). At medium and long distance the background can look busy. Highlights have sharply defined edges with LoCA fringing (Photography Life). Bokeh balls go polygonal from about f/2.8 (Reeve), despite Nikon's rounded blades.",
+    "flare_sunstar": "Fairly good flare resistance, not S-line level (Reeve). Lenstip: sensible against bright light. Reeve: no nice sunstars.",
+    "ca": "Lateral CA low (Photography Life: low at all apertures. Lenstip: slight. Reeve: very well corrected). LoCA: Reeve and Photography Life see it wide open (gone by f/5.6 per Reeve), while Lenstip rates it negligible.",
+    "distortion": "Very low barrel: Photography Life 0.62%. Lenstip: practically zero. Reeve: mild, +2 in Lightroom fixes it.",
+    "vignetting": "High on FX: Reeve 2.3 / 1.5 / 1.3 / 1.1 / 0.9 EV at f/2 / 2.8 / 4 / 5.6 / 8. Photography Life: about 2 stops at f/2 at infinity. Lenstip: significant on FX, slight on DX.",
+    "coma_astro": "Coma at f/2, improving at f/2.8 and gone by f/4 (Reeve). Lenstip: 'a bit too high'. Photography Life (Z7): solid but not stunning. Not an astro first choice.",
+    "focus_breathing": "Reeve: only a very small amount. Nikon claims focus-breathing reduction for movies (no number).",
+    "other": "6 elements in 4 groups, 2 aspherical (Nikon). Plastic barrel and mount (Lenstip, Reeve), dust and drip resistant (Nikon, not guaranteed). No fluorine front coat (Reeve)."
+  },
+  "field_tips": [
+    "Default to f/4–f/5.6 for anything that needs detail. Save f/2 for low light and a softer, glowing look.",
+    "For landscapes and architecture, use f/5.6–f/8. Corners are 'very good' there but never excellent.",
+    "Focus shifts backward when stopping down. For close subjects, focus at your working aperture or nudge focus slightly forward when shooting f/2.8–f/4 after focusing wide open.",
+    "Field curvature is pronounced: with off-center subjects at wide apertures, place the AF point on the subject itself rather than focusing and recomposing.",
+    "On the Z50 II it is a light 60mm-equivalent, and the DX crop avoids the weak corners and heavy FX vignetting. There is no IBIS, so keep shutter speeds up."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP shows the soft f/2 corners and low contrast clearly (Lenstip Z7, Reeve Z7 II, Photography Life Z7 are all 45MP). Peak f/5.6. Diffraction negligible at f/11 and visible at f/16."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP is more forgiving of wide-open softness per pixel. f/2.8–f/4 should look good in the center, but corners still benefit from f/5.6–f/8 (inference from pixel pitch)."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX (about 60mm-equivalent): Lenstip found slight vignetting on DX. The DX crop excludes the weakest FX corners. No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z 40 mm f/2.0 (resolution and summary chapters)",
+      "url": "https://www.lenstip.com/620.4-Lens_review-Nikon_Nikkor_Z_40_mm_f_2.0_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), RAW via dcraw",
+      "date": null,
+      "findings": "Decency level 41–43 lp/mm. Center 42.8 lp/mm at f/2, over 50 at f/2.8, 70 at f/4, peak 75.3 at f/5.6. Edges blurry wide open and only just over 50 lp/mm near f/5.6. Edge values otherwise only in a chart. Summary (https://www.lenstip.com/620.11-Lens_review-Nikon_Nikkor_Z_40_mm_f_2.0_Summary.html) pros: very good center, negligible LoCA, slight lateral CA, practically zero distortion, low astigmatism, slight DX vignetting, sensible against bright light, silent accurate AF. Cons: blurry edges near max aperture, significant FX vignetting, a bit too high coma, plastic mount and barrel."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 40mm f/2 review (page 2)",
+      "url": "https://photographylife.com/reviews/nikon-z-40mm-f-2/2",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP)",
+      "date": null,
+      "findings": "A bit weak at f/2 and f/2.8, substantially sharper at f/4 and f/5.6. Corners strong at f/5.6–f/11. Midframe at f/4 worse than corners because of pronounced field curvature. Gradual diffraction loss at f/11 and f/16. Focus migrates behind the subject when stopping down from f/2. Vignetting near 2 stops at f/2 at infinity. Distortion 0.62% barrel. Low lateral CA. Coma solid but not stunning. Highlights hard-edged with LoCA. MFD about 0.3 m, just over 1:6. Chart values not readable."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "Phillip Reeve: Review Nikon Z 40mm f/2 – The Street Sniper for Discreet Photography",
+      "url": "https://phillipreeve.net/blog/review-nikon-z-40mm-f-2-the-street-sniper-for-discreet-photography/",
+      "kind": "review",
+      "tested_on": "Nikon Z7 II (45.7MP)",
+      "date": null,
+      "findings": "Infinity: center very good, mid good, corner just OK at f/2. Corners good at f/2.8 and very good at f/5.6–f/8, never excellent. Peak f/5.6, unchanged at f/8. Portrait distance f/2: center quite good, outer zones OK. f/5.6 excellent and very good. Close-up: good but low contrast at f/2, peak at f/5.6. Slight focus shift f/2 → f/2.8. Diffraction negligible at f/11, more at f/16. Coma at f/2, gone by f/4. LoCA wide open, gone by f/5.6. Vignetting 2.3/1.5/1.3/1.1/0.9 EV (f/2–f/8). Very small breathing. Fairly good flare resistance, no nice sunstars. Says the SE has the same optics, size and weight."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon: NIKKOR Z 40mm f/2 product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_40mmf2/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.29 m. 0.17×. About 170 g. 52 mm filter. 9 rounded blades. 6 elements in 4 groups (2 aspherical). f/16 minimum. Dust and drip resistant (not guaranteed). Focus-breathing reduction for movies claimed."
+    },
+    {
+      "id": "pl_forum_fw",
+      "name": "Photography Life forum: lens firmware updates for NIKKOR Z 28mm f/2.8 and 40mm f/2",
+      "url": "https://photographylife.com/forum/nikon/lens-firmware-updates-for-nikkor-28mm-f-2-8-40mm-f-2-and-28-75mm-f-2-8",
+      "kind": "forum",
+      "tested_on": null,
+      "date": null,
+      "findings": "Firmware 1.10 for the 28mm f/2.8, 28mm f/2.8 (SE), 40mm f/2 and 40mm f/2 (SE) adds 'Focus ring rotation range' options (linear MF response). Release date not shown."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the Z 40mm f/2 was found. YouTube-restricted searches returned 40mm reviews whose oEmbed authors are Richard Wong (dam5CebG-II), Avp Studios (ZYoyYz240Wo) and Markus Fahs (znU6ccLRt9M), none by Frost. Nothing is attributed to him."
+  },
+  "research_notes": "1) LoCA disagreement: Lenstip calls it negligible, while Reeve and Photography Life see visible fringing wide open. It is reported as visible wide open and gone by f/5.6. 2) Lenstip's text says the edges become 'decently good' near f/2.5 but also lists blurry edges near maximum aperture as a con and has edges only just over 50 lp/mm at f/5.6. The corner verdict leans on Reeve (very good at f/5.6–f/8, never excellent) and Photography Life (strong at f/5.6–f/11). 3) Rounded blades per Nikon, though Reeve sees polygonal highlights from f/2.8. 4) Not on Nikon's Z TC-1.4x compatible list, so tc_compatible is false. 5) This record is the standard 40mm f/2. Reeve states the SE version is optically identical, so the data applies to both. 6) Working distance not published."
+}

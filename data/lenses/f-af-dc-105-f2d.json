@@ -1,0 +1,218 @@
+{
+  "id": "f-af-dc-105-f2d",
+  "name": "AF DC-NIKKOR 105mm f/2D",
+  "short": "AF DC 105 f/2D",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    105
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 105,
+      "f": 2.0
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 640,
+  "filter_mm": 72,
+  "focus": {
+    "on_z_body": "MF only (screw-drive lens on FTZ II)",
+    "cpu": true,
+    "motor": "None in lens: screw-drive AF from a DSLR body motor. The FTZ II has no drive, so there is no AF on Z bodies.",
+    "focus_throw_deg": null,
+    "notes": "Nikon's FTZ compatibility table lists AF Type D lenses as having no AF, with MF and the electronic rangefinder supported. Photography Life's FTZ guide confirms AF-D lenses on FTZ: no AF, but the electronic rangefinder (focus-point turns green, with in/out indicators), focus peaking, camera aperture control, metering, EXIF and IBIS all work. The CPU passes aperture and focal length. Ken Rockwell and Phillip Reeve both confirm MF only on the FTZ. Imaging Resource: there is no full-time manual override, so set the lens's M/A switch to M before turning the focus ring. Focusing is internal (rear group), with a light, smooth ring (Rockwell). The DC ring shifts the focal plane, so focus last, after setting DC (Rockwell, Reeve, Photozone). On a Z body this is natural, because you focus by eye in the EVF anyway. Eye detection cannot drive focus (no AF). Rockwell says 1993 DSLR AF was accurate at DC 0 or REAR and could be slightly off at FRONT, which is irrelevant on Z."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon's FTZ II page says that with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. As a CPU lens it passes 105mm to IBIS automatically (Photography Life lists IBIS as working for AF-D on the FTZ)."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 105,
+        "value": 0.9
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 105,
+        "value": 0.13
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.9 m. Max magnification 1:7.7 (0.13×) per Lenstip specs and Ken Rockwell. Phillip Reeve measured 1:7.3 on his copy. Close-up sharpness (Reeve, 42MP A7R II, 0.9 m): soft at f/2, slight colour fringing at f/2.8, good from f/4. Reeve also notes that at close range peak resolution and peak contrast fall at slightly different focus points (residual spherical aberration). The built-in telescoping metal hood locks with about two turns (Rockwell)."
+  },
+  "quick": {
+    "headline": "Classic portrait 105 with a unique bokeh-shaping DC ring: manual focus only on Z, soft-glowy at f/2, crisp by f/2.8, peak about f/5.6. Keep DC at 0 or match it to the aperture.",
+    "sweet_spot": "f/4–f/5.6",
+    "wide_open": "f/2 is slightly soft with strong LoCA and purple fringing (Reeve, 42MP). Imaging Resource (D3x) measured blur of 2–3 units, uneven across the frame. Photozone (D200 DX) says 'already very good at f/2'. Vignetting is about 0.75 stop at f/2 on FX (IR D3x). By f/2.8 the frame evens out (IR about 1.5 units) and portrait-distance performance is good across the frame (Reeve).",
+    "by_focal": [
+      {
+        "focal_mm": 105,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "All tests are at the neutral DC setting. Photozone (D200): sweet spot around f/5.6. Imaging Resource (D200 + D3x): essentially tack-sharp across the frame at f/5.6. Phillip Reeve (42MP A7R II): at infinity, 'very good everywhere' by f/5.6, with traces of fringing at f/2.8. At 2.6 m, good across the frame at f/2.8. Better corners than the 105/1.4E and 105/2.5 Ai, which needed about f/11. Photography Life: the 105/1.4E is significantly sharper at all apertures (no numbers on the page read)."
+      }
+    ],
+    "close_up_best": "f/4–f/5.6",
+    "close_up_note": "Reeve (42MP, 0.9 m, 1:7.3): soft at f/2, slight fringing at f/2.8, good from f/4. Residual spherical aberration (the very thing DC adjusts) means best-contrast and best-resolution focus differ slightly close up, so use magnified-view MF. Keep DC at 0 for close-ups unless you want the glow.",
+    "diffraction_note": "Imaging Resource (D3x, 24.5MP FX, about 5.9 µm): diffraction 'begins to set in very slightly' at f/11, still no more than 1.5 blur units at f/16. On the Z8 (4.35 µm) expect onset about one stop earlier, around f/8 (inference from pixel pitch, not measured). On the Z5 II, which matches the D3x pitch, f/11 is still fine.",
+    "avoid": [
+      "Don't set the DC number beyond the aperture you shoot (e.g. DC R4 at f/2) unless you want soft focus: it smears the focal plane (Reeve, Rockwell, IR, Photozone).",
+      "Don't change DC after focusing: the focus plane moves, so refocus every time.",
+      "Don't shoot bright, high-contrast edges at f/2 if fringing matters: LoCA is strong (Reeve). f/2.8 is much cleaner.",
+      "Don't use FRONT for portraits with busy backgrounds: it overcorrects spherical aberration and makes the background harsher (Nikon, Rockwell)."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two measured sources (Photozone D200 DX, Imaging Resource D200/D3x blur index) and one 42MP visual test (Reeve) agree on soft-ish f/2, good f/2.8, peak about f/5.6. No measured MTF50 on a 36–45MP body was found, and DXOMARK's figures are only a headline score of uncertain body. The diffraction onset for the Z8 is inferred."
+  },
+  "character": {
+    "bokeh": "The reason to own it. Rockwell calls it extraordinary. Reeve finds it pleasing at neutral DC (preferred to the 85/1.4D) with the usual era fringing. REAR settings smooth the background further. Reeve: R2 at f/2 gives subtly smoother backgrounds with no notable sharpness cost, R2.8 at f/2 gives a stronger effect but softens the focal plane, and R4 adds no smoothness, only lost contrast. 9 rounded blades.",
+    "flare_sunstar": "Reeve: the recessed front element and built-in hood don't prevent ghosting or veiling flare with strong light at f/2, and ghosts get more obvious at f/11. Somewhat better than the 85/1.4D, but 'still not great'. No distinct sunstars at any aperture (blade alignment). Stage lights in frame will flare.",
+    "ca": "Lateral CA is very low (Photozone about 0.5 px at the DX borders. Reeve: very low. IR: virtually none on D3x with auto correction). Longitudinal CA is strong at f/2 (Reeve), still present at f/2.8 with traces of outlining at f/4. Rockwell: slight green behind and magenta in front of focus. Photozone: greenish and reddish transitions on out-of-focus edges.",
+    "distortion": "Negligible. Photozone 0.12% (DX). IR trace barrel about 0.1% (D3x). DXOMARK 0.1%.",
+    "vignetting": "IR (D3x): about 0.75 stop at f/2, 0.25 at f/2.8, less beyond. DXOMARK headline −1.3 EV (body likely D800E, not explicit). Photozone (DX): very well controlled.",
+    "coma_astro": "Not tested by the sources read.",
+    "focus_breathing": "Not measured. Internal rear-group focusing (Rockwell).",
+    "other": "HOW THE DC RING WORKS (Nikon's 'Thousand and One Nights' No. 32, written for the sister 135 DC but describing the same Defocus-image Control): turning the DC ring changes the spacing of internal elements to alter spherical aberration (SA) slightly, without much change in astigmatism or colour. At 0, SA is corrected to near zero, giving the best sharpness. R (rear) leaves SA undercorrected, which softens the edges of out-of-focus BACKGROUND discs and makes them smoother. F (front) overcorrects SA, which smooths the FOREGROUND blur and makes the background harsher. Nikon optimised the SA amount per aperture, so the DC scale is marked in f-numbers (f/2–f/5.6 on R and F sides). Match the DC number to your shooting aperture: DC at or below your aperture (e.g. R2 at f/2, R2.8 at f/2.8) changes the blur with little cost to the focal plane (Reeve, IR, Photozone). DC set beyond your aperture (e.g. R4 or R5.6 at f/2) lets the SA reach the in-focus image and gives a soft-focus glow with highlight halation (Nikon, Rockwell, Reeve, Photozone). It is not a soft-focus filter by design (Rockwell). When to use: REAR at or matched to the aperture for head-and-shoulders portraits against a busy background. FRONT for still-life with foreground foliage. Neutral 0 for sharpness, stage and groups. Reeve: at long distances DC mostly costs resolution and contrast rather than visibly reshaping the bokeh, so it matters most at portrait distances. Photography Life: most owners rarely use it. Release button needed to rotate the ring (IR). 6 elements in 6 groups, introduced 1993."
+  },
+  "field_tips": [
+    "Default to DC 0 and the M/A switch on M. Focus with peaking plus magnified view, or the green focus point. Eye-detect can't focus this lens.",
+    "Portrait with a busy background: shoot f/2, set DC to R2, then refocus. For a dreamier look accept R2.8 at f/2. Never go beyond about one stop past your aperture unless you want glow.",
+    "For a deliberate soft-glow portrait (e.g. a vintage look), set DC well past the aperture (R4–R5.6 at f/2), expose a little bright, and refocus. Don't use this on stage.",
+    "Stage dance: MF at 105mm with moving dancers is hard. Use it for posed or slow moments at f/2.8 (much cleaner LoCA than f/2) with DC 0, or zone-focus on a known mark.",
+    "Sharpest frames: f/4–f/5.6 at DC 0. On the Z8 stay at f/8 or wider. On the Z50 II it frames like about 158mm with no IBIS, so use 1/320 s or faster."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP shows f/2 softness and LoCA plainly. Use f/2.8 or slower for crisp eyes and f/4–f/5.6 for maximum detail. Diffraction is likely from about f/8 (inferred). 3-axis IBIS via FTZ II. Use focus peaking and magnified view (no AF)."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP matches the D3x Imaging Resource test: tack-sharp at f/5.6, good at f/2.8, f/11 still fine. 3-axis IBIS via FTZ II. MF with electronic rangefinder."
+    },
+    {
+      "body": "z50ii",
+      "note": "About 158mm-equivalent. Vignetting and soft corners fall outside the DX frame (Photozone's D200 test applies directly: very good at f/2, peak about f/5.6). No IBIS: keep the shutter fast."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photozone",
+      "name": "Photozone/OpticalLimits: Nikkor AF 105mm f/2 D DC review (analysis + verdict)",
+      "url": "https://www.photozone.de/nikon--nikkor-aps-c-lens-tests/222-nikkor-af-105mm-f2-d-dc-review--test-report?start=1",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10.2MP DX), neutral DC setting",
+      "date": null,
+      "findings": "Resolution already very good at f/2, excellent beyond, sweet spot about f/5.6 (values in chart images only). Distortion 0.12%. Vignetting very well controlled on DX. Lateral CA about 0.5 px at the borders. LoCA present (greenish/reddish out-of-focus edges). DC settings other than neutral add softening to resolution and contrast in varying degree. Verdict (https://photozone.de/nikon--nikkor-aps-c-lens-tests/222-nikkor-af-105mm-f2-d-dc-review--test-report?start=2): very high-quality tele with excellent resolution as a conventional lens. DC toward F emphasizes foreground blur, toward R background blur. The ring locks at f/2–f/5.6. Past the working aperture it gives soft focus. Refocusing needed after a DC change. Screw AF dated. Optical 4 stars."
+    },
+    {
+      "id": "imaging_resource",
+      "name": "Imaging Resource / SLRgear: Nikon 105mm f/2D AF DC Nikkor review",
+      "url": "https://old.imaging-resource.com/lenses/nikon/105mm-f2d-af-dc-nikkor/review",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10MP DX) and D3x (24.5MP FX), DC at 0; blur-index",
+      "date": null,
+      "findings": "Blur index: f/2 2–3 units, some unevenness. f/2.8 about 1.5, even. f/5.6 essentially tack-sharp across the frame. Diffraction begins very slightly at f/11, f/16 at most 1.5. Vignetting D3x: f/2 about 0.75 stop, f/2.8 about 0.25. D200: f/2 about 0.25. Distortion D3x about +0.1% barrel. CA virtually nil on D3x with auto CA reduction. DC: selectable f/2–f/5.6 R or F. A DC value smaller (aperture) than the main aperture adds softness. For max sharpness, DC should be the same or larger aperture. F makes out-of-focus edges sharper, R blurs them more. No AF override: a switch must be set to M."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "Phillip Reeve: Review Nikon 105mm 2.0 AF DC-Nikkor",
+      "url": "https://phillipreeve.net/blog/review-nikon-105mm-2-0-af-dc-nikkor/",
+      "kind": "review",
+      "tested_on": "Sony A7R II (42MP FX) via adapter, 100% crops; neutral DC for sharpness",
+      "date": null,
+      "findings": "Infinity: purple fringing and good resolution except corners at f/2, traces at f/2.8, very good everywhere by f/5.6. 2.6 m: slightly soft and not fully colour-corrected at f/2, good across the frame at f/2.8. 0.9 m (1:7.3): soft f/2, slight fringing f/2.8, good from f/4. LoCA strong at f/2, present at f/2.8, traces at f/4. Lateral CA very low. Small focus shift f/2 to f/2.8. DC: at or below the aperture, no real focal-plane effect. Beyond the aperture, large sharpness loss. R smooths background and roughens foreground, F the reverse. R2 at f/2 subtly smoother (author's favourite). R2.8 at f/2 stronger but softer. R4 only loses contrast. Refocus after each DC change. Flare/ghosting not great. No distinct sunstars. No AF on Z via FTZ."
+    },
+    {
+      "id": "nikon_1001_nights_32",
+      "name": "Nikon: NIKKOR – The Thousand and One Nights No. 32 (Ai AF DC Nikkor 135mm f/2S)",
+      "url": "https://imaging.nikon.com/imaging/information/story/0032/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Explains Nikon's Defocus-image Control (written for the 135 DC, the same principle as the 105 DC). The DC ring changes element spacing to shift spherical aberration slightly with little effect on astigmatism or colour. Center position: SA about zero (best when DC is unused). R: SA undercorrected, softening out-of-focus background edges. F: SA overcorrected, blurring foreground more. Optimal SA per aperture found by simulation, hence the f-number scale to f/5.6. Turning past the marked range gives a soft-focus effect with flare around highlights."
+    },
+    {
+      "id": "kenrockwell",
+      "name": "Ken Rockwell: Nikon 105mm f/2 DC review",
+      "url": "https://kenrockwell.com/nikon/105mm-f2-dc.htm",
+      "kind": "review",
+      "tested_on": "Nikon D700, D3, D7000; qualitative",
+      "date": null,
+      "findings": "Set the DC ring to the aperture in use (unlock button). REAR softens the background, FRONT the foreground (usually looks unnatural). The effect is subtle. The wrong direction makes backgrounds harsher. In-focus areas stay sharp. It is not a soft-focus lens. DC beyond the shooting aperture gives the softer look. DC 0 is sharpest. Changing DC shifts focus. Sharp edge to edge at f/2 on D700/D3/D7000 (subjective). No lateral colour seen. Slight green behind and magenta in front. 620 g Nikon (624 g measured), 0.9 m, 1:7.7, 9 curved blades, f/16, 72 mm non-rotating, 6/6, built-in telescoping hood. No AF on the FTZ. Low weight as a source."
+    },
+    {
+      "id": "lenstip_spec",
+      "name": "Lenstip: Nikon Nikkor AF DC 105 mm f/2D specifications",
+      "url": "https://www.lenstip.com/353-Nikon_Nikkor_AF_DC_105_mm_f_2D-lens_specifications.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "6/6, MFD 0.9 m, 1:7.7, 9 blades, 72 mm, 640 g, 79 × 111 mm, f/16, marketed 1993. No full Lenstip review found."
+    },
+    {
+      "id": "dxomark",
+      "name": "DXOMARK: Nikon AF DC-Nikkor 105mm f/2D (lens database + D800 spec page)",
+      "url": "https://www.dxomark.com/Lenses/Camera-Lens-Database/Nikon/Nikon-AF-DC-Nikkor-105mm-F2D/(camera)/865",
+      "kind": "measured",
+      "tested_on": "Probably Nikon D800E (36MP), the widget-selected camera, not stated explicitly",
+      "date": null,
+      "findings": "Score 35 (best at f/2.8). Sharpness 23 P-Mpix. Transmission T2.2. Distortion 0.1%. Vignetting −1.3 EV. CA 2 µm. Spec page (https://www.dxomark.com/Lenses/Nikkor/Nikon-AF-DC-Nikkor-105mm-F2D-mounted-on-Nikon-D800---Specifications__792): released Jan 1993, 640 g, 72 mm, 6/6, 9 blades circular, no AF motor, no full-time MF."
+    },
+    {
+      "id": "photographylife_105e",
+      "name": "Photography Life: Nikon 105mm f/1.4E vs Nikon 105mm f/2 DC",
+      "url": "https://photographylife.com/reviews/nikon-105mm-f1-4e/3",
+      "kind": "review",
+      "tested_on": "Not stated on the page read (Imatest charts not readable)",
+      "date": null,
+      "findings": "The 105/1.4E is 'significantly sharper' than the DC wide open and stopped down. DC lenses show AF shifts at each DC setting, and DC beyond the aperture gives a soft glow. Most DC owners rarely use the ring."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "With a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. Full AF only for lenses with a built-in AF motor (AF-S, AF-P, AF-I)."
+    },
+    {
+      "id": "nikon_ftz_compat",
+      "name": "Nikon: FTZ 'Compatible F Mount Lenses' feature table (manualmachine copy)",
+      "url": "https://manualmachine.com/nikon/ftz/17014601-compatible-f-mount-lenses",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Row 'AF NIKKOR Type G and D': autofocus not supported. MF with electronic rangefinder supported. All exposure and metering modes supported. (Same source as used for the AF Micro 60 record.)"
+    },
+    {
+      "id": "pl_ftz_guide",
+      "name": "Photography Life: Nikon FTZ and FTZ II adapter lens compatibility, explained",
+      "url": "https://photographylife.com/nikon-ftz-adapter-lens-compatibility",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "AF-D lenses: no AF. Electronic rangefinder, focus peaking, camera aperture control, metering, EXIF, diffraction compensation and IBIS work. Distortion/vignetting control and focus-shift shooting do not."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the AF DC-Nikkor 105mm f/2D was found. Two web searches (one youtube.com-restricted with his name) and the LensVid 'christopher frost' tag returned no video on this lens. YouTube is blocked to fetching here. Nothing is attributed to him."
+  },
+  "research_notes": "1) No Lenstip review exists (spec page only). The Digital-Picture has a results container with no written review (text says a full review is not planned), and its ISO 12233 crops were not read. 2) The DC mechanism is cited from Nikon's 135 DC article, which describes the same Defocus-image Control. Nikon's own 105 DC explanation was not found. The stacken.kth.se DC explainer could not be fetched (redirect loop). 3) Measured sharpness comes from DX D200 (Photozone, IR) and 24MP D3x (IR blur index). Reeve's 42MP evidence is visual. Z8 diffraction onset (about f/8) is inferred from pixel pitch. 4) The DXOMARK body is ambiguous (assumed D800E). 5) Max magnification: 1:7.7 (Lenstip, Rockwell, DXOMARK-consistent) used; Reeve measured 1:7.3. 6) Weight: 640 g (Lenstip, DXOMARK) vs Rockwell's 620 g 'Nikon' figure. 640 used. 7) tc_compatible false: Nikon AF-S/AF-I teleconverters do not support screw-drive AF-D lenses on Nikon's lists (general knowledge, not re-verified this session). 8) Nikon's imaging.nikon.com FTZ II page summary listed 'AF Type G and D' as AF+MF, which conflicts with the Nikon compatibility table, Photography Life, Rockwell and Reeve. That extraction is treated as garbled, and MF-only stands. 9) Whether the Z EVF shows the DC effect at the taking aperture during MF is unverified."
+}

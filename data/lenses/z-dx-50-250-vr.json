@@ -1,0 +1,215 @@
+{
+  "id": "z-dx-50-250-vr",
+  "name": "NIKKOR Z DX 50-250mm f/4.5-6.3 VR",
+  "short": "DX 50-250 VR",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "DX",
+  "kind": "zoom",
+  "focal_mm": [
+    50,
+    250
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 50,
+      "f": 4.5
+    },
+    {
+      "focal_mm": 70,
+      "f": 4.8
+    },
+    {
+      "focal_mm": 100,
+      "f": 5.0
+    },
+    {
+      "focal_mm": 135,
+      "f": 5.3
+    },
+    {
+      "focal_mm": 200,
+      "f": 6.0
+    },
+    {
+      "focal_mm": 250,
+      "f": 6.3
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 7,
+  "rounded_blades": true,
+  "weight_g": 405,
+  "filter_mm": 62,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "STM (stepping motor)",
+    "focus_throw_deg": null,
+    "notes": "Minimum aperture is f/22 at 50mm and f/32 at 250mm (Nikon; Rockwell). Retractable: turn the zoom ring past 50mm to collapse it (Rockwell), giving 74 × 110 mm stored (Nikon). AF focus speed is quite good (Hogan, Z50) and generally competent in adequate light (PhotoReview). Zoom ring rotation is under 90° and not very smooth, and zoom noise is audible on a mic (Hogan). All-plastic build including the mount (Hogan). No hood supplied (PhotoReview)."
+  },
+  "stabilization": {
+    "lens_vr": true,
+    "lens_vr_stops": 5.0,
+    "synchro_vr": null,
+    "ibis_on_ftz": null,
+    "notes": "Nikon rates it at 5.0 stops (CIPA, DX, tele end). Rockwell (Z50) measured about 3.5 stops at 50mm and at least 4 stops at 250mm. There is no VR switch on the lens, so changing VR mode is a menu trip (Hogan). On the Z50 II it is the only stabilisation. Synchro VR support was not confirmed, so it is null."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 50,
+        "value": 0.5
+      },
+      {
+        "focal_mm": 250,
+        "value": 1.0
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 250,
+        "value": 0.23
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "Nikon gives 0.5 m at 50mm and 0.23x, without stating the focal length for 0.23x. PhotoReview gives 1 m at 250mm. 0.23x is assumed at 250mm (inference). At 250mm, about 1 m minus the extended lens (more than 110 mm) leaves roughly 0.8 m of working distance. This is arithmetic, not measured, so the field is null. Good for butterflies and flowers from a distance. No source assessed close-focus sharpness in writing."
+  },
+  "quick": {
+    "headline": "Light DX tele that is sharpest at 70–135mm. At 50mm and 250mm the corners are only fair: use f/5.6–f/8, and never go past f/11.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Good. Hogan (Z50) finds it mostly sharpest wide open at nearly every focal length, with corners best at 70mm and fair at 50mm and 250mm. PhotoReview (Imatest, Z50) found its highest resolution wide open at 70mm. PL (Imatest, Z50) agrees the 50–70mm range is strong but says sharpness drops toward 200–250mm, worst wide open at 250mm.",
+    "by_focal": [
+      {
+        "focal_mm": 50,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Similar to the 16-50 at 50mm wide open. Sharper center at f/5.6 (PL). Stopping down pulls the corners in (Hogan). PhotoReview saw edge softening across most of the aperture range at 50mm."
+      },
+      {
+        "focal_mm": 70,
+        "center_peak": "f/4.8–f/5.6",
+        "corners_peak": "f/4.8–f/5.6",
+        "wide_open_note": "Best focal length. Highest Imatest resolution wide open (PhotoReview). Center sharpest around 70mm, and corners best here (Hogan). PL: slightly better mid-frame and corners than at 50mm."
+      },
+      {
+        "focal_mm": 135,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Slightly weaker overall, with f/5.6 the sweet spot (PL). Corners second-best (Hogan). PhotoReview: varied."
+      },
+      {
+        "focal_mm": 250,
+        "center_peak": "f/6.3–f/8",
+        "corners_peak": "f/8",
+        "wide_open_note": "Weakest focal length. PL: worst at 250mm, especially wide open, so stop down to f/8. Hogan: center good, corners fair, mostly best wide open. Sources differ, so try f/8 when shutter speed allows."
+      }
+    ],
+    "close_up_best": "f/8 at 250mm (inference)",
+    "close_up_note": "No source measured or described close-focus sharpness. The long end is weakest wide open (PL), and diffraction is to be avoided from f/11 (Hogan), so f/8 is a cautious inference for 0.23x at about 1 m.",
+    "diffraction_note": "Hogan (Z50): avoid f/11 through f/22, where diffraction adds to the lens's limits. No lab source published a measured onset. PhotoReview did not test 200–250mm. On the Z50 II's 4.2 µm pixels, f/8 is the practical ceiling.",
+    "avoid": [
+      "f/11 and smaller, especially at 200–250mm.",
+      "Expecting sharp 50mm or 250mm corners wide open.",
+      "Shooting toward bright sources without a hood: PL says telephotos cope poorly with them."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two labs on the Z50 (PL and PhotoReview, chart images unreadable; PhotoReview skipped 200–250mm) plus Hogan's Z50 field review. They agree the lens is strongest at 70mm and weaker at the extremes, but disagree on stopping down at 250mm (PL: f/8; Hogan: wide open). Close-up advice is inference."
+  },
+  "character": {
+    "bokeh": "Quite good but nothing mind-blowing (PL). PhotoReview: bright background areas can render as hard-edged circles with some outlining.",
+    "flare_sunstar": "PhotoReview: flare only when pointed at a bright source, and veiling flare lower than expected without a hood. Sunstars soft, only at the smallest apertures (Rockwell).",
+    "ca": "A little over 1 px lateral at 50mm and 70mm, much less at 135mm (PL Imatest). About 1 px at the short half and halved at the long half, minimal longitudinal (Hogan). Negligible in JPEG (PhotoReview).",
+    "distortion": "Low. 1.87% barrel at 50mm (PL Imatest). Rockwell (correction off, Z50): about +3.00 correction factor at 50mm, none at 70mm, −1.5 to −2.6 from 100mm to 250mm. Fully corrected in-camera, with no residual (Hogan, Rockwell).",
+    "vignetting": "About 1 stop at the extreme edges at 50mm, much less at 70mm (PL). About ⅔ stop wide open after in-camera correction, nearly gone one stop down (Hogan). Very slight (PhotoReview).",
+    "coma_astro": "Not tested by any source found.",
+    "focus_breathing": "Surprisingly little (PL). None visible (Rockwell). Largely suppressed, with some in-camera help (Hogan).",
+    "other": "PL's comparison (18-140 review): sharper corner to corner than the 18-140 at overlapping long focal lengths, 'seriously sharp'. Not usable in FX: Hogan says it is less useful on 24MP FX bodies because DX crop leaves about 9–10MP."
+  },
+  "field_tips": [
+    "Best zone is 70–135mm at f/5.6. Wide open is fine there.",
+    "At 250mm, use f/8 if light allows, and keep the subject toward the center: the corners are only fair.",
+    "Never go past f/11 on the Z50 II. Raise ISO instead.",
+    "There is no VR switch: set VR Normal or Sport in the menu (or i menu) before birds or panning.",
+    "Unlock (extend) the barrel before power-on. For video, the short, stiff zoom ring makes smooth zooms hard: zoom between takes."
+  ],
+  "body_notes": [
+    {
+      "body": "z50ii",
+      "note": "Native pairing (375mm-equivalent at the long end). PL, PhotoReview, Hogan and Rockwell all tested on the Z50 (same 20.9MP class). Lens VR is the only stabilisation."
+    },
+    {
+      "body": "z8",
+      "note": "Auto DX crop, 19.4MP (4.35 µm), so the same per-pixel behaviour as the Z50 II. For FX telephoto work a full-frame lens is the better choice."
+    },
+    {
+      "body": "z5ii",
+      "note": "DX crop only about 10MP (computed). Hogan judged this lens less useful on 24MP FX bodies for this reason."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z DX 50-250mm f/4.5-6.3 VR review, pages 2–3",
+      "url": "https://photographylife.com/reviews/nikon-z-dx-50-250mm-f4-5-6-3-vr/2",
+      "kind": "measured",
+      "tested_on": "Nikon Z50 (20.9MP DX), Imatest",
+      "date": null,
+      "findings": "50mm f/4.5 similar to the 16-50, center sharper at f/5.6. 70mm strong, slightly better mid and corners. 135mm slightly weaker, f/5.6 the sweet spot. 200mm decent but a noticeable drop. 250mm worst, especially wide open: 'stop the lens down to f/8'. Vignetting about 1 stop at the edges at 50mm. Distortion 1.87% barrel at 50mm. Lateral CA a little over 1 px at 50–70mm, much less at 135mm. Surprisingly little focus breathing. Bokeh quite good. Page 3: weaker above 135mm. The 18-140 review's page 3 calls the 50-250 sharper corner to corner than the 18-140 at long focal lengths."
+    },
+    {
+      "id": "photoreview",
+      "name": "PhotoReview (Australia): Nikkor Z DX 50-250mm f/4.5-6.3 VR lens review (Margaret Brown)",
+      "url": "https://www.photoreview.com.au/reviews/mirrorless-lenses/mirrorless-lenses-aps-c/nikkor-z-dx-50-250mm-f-4-5-6-3-vr-lens/",
+      "kind": "measured",
+      "tested_on": "Nikon Z50 (20.9MP DX), Imatest JPEG; raw for distortion and vignetting",
+      "date": "2020-03-13",
+      "findings": "On par with the 16-50. Highest resolution wide open at 70mm. 50mm shows edge softening across most apertures. 100mm and 135mm varied. 200mm and 250mm not tested. No numbers in text, no diffraction comment. CA negligible (JPEG). No obvious distortion (raw). Very slight vignetting. MFD 50 cm at 50mm and 1 m at 250mm, 0.23x. Flare only with a bright source in view. Score 8.8."
+    },
+    {
+      "id": "hogan",
+      "name": "Thom Hogan (sansmirror): Nikon 50-250mm f/4.5-6.3 DX Lens Review",
+      "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-50-250mm-f45-63-dx.html",
+      "kind": "review",
+      "tested_on": "Nikon Z50 (20.9MP DX)",
+      "date": "2020 (page updated 2026-10-21)",
+      "findings": "Mostly sharpest wide open at nearly every focal length. At 50mm stopping down pulls the corners in. Center good to very good, best about 70mm, 250mm weakest ('good'). Corners best at 70mm, second at 135mm, 'fair' at 50mm and 250mm. Avoid f/11–f/22 (diffraction). Max apertures f/4.5 at 50, f/5 at 85, f/5.3 at 135, f/5.6 at 180, f/6 at 200, f/6.3 at 250. Corrected vignetting about ⅔ stop. About 1 px lateral CA at the short half. Breathing largely suppressed. No VR switch. Zoom ring under 90° and not smooth. Recommended."
+    },
+    {
+      "id": "kenrockwell",
+      "name": "Ken Rockwell: Nikon Z 50-250mm review",
+      "url": "https://kenrockwell.com/nikon/z/50-250mm.htm",
+      "kind": "review",
+      "tested_on": "Nikon Z50 (20.9MP DX)",
+      "date": "2019-12, updated 2023-02-13",
+      "findings": "Sharp wide open into the corners at every focal length (qualitative). MFD 0.5 m, 0.23x. Uncorrected distortion factors at 3 m: +3.00 at 50mm, 0 at 70mm, −1.50 at 100mm, −2.50 at 135mm, −2.60 at 200mm, −2.10 at 250mm, and 0 everywhere with correction on. VR measured about 3.5 stops at 50mm and at least 4 at 250mm. No focus breathing. Soft sunstars only at the smallest apertures. Measured 399.8 g. Retracts by turning the zoom ring past 50mm."
+    },
+    {
+      "id": "nikon",
+      "name": "Nikon: NIKKOR Z DX 50-250mm f/4.5-6.3 VR product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_dx_50-250mmf45-63_vr/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.5 m at 50mm (focal plane), 0.23x, about 405 g, 62 mm filter, 7 rounded blades, min f/22–32, VR 5.0 stops (DX, tele), 16 elements in 12 groups (1 ED), STM, 74 × 110 mm, retractable."
+    },
+    {
+      "id": "imaging_resource",
+      "name": "Imaging Resource / SLRgear lens page",
+      "url": "https://old.imaging-resource.com/lenses/nikon/z-50-250mm-f4.5-6.3-vr-dx-nikkor/review",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Marked 'Not yet tested'. Repeats Nikon's claims only: VR 5 stops, stepping motor, focus breathing suppressed, assignable control ring. No lab data."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the Z DX 50-250mm was found. Two searches (including 'lens review with samples') returned PL, PhotoReview, Hogan, Rockwell and other sites but no Frost video or Fstoppers write-up. YouTube itself could not be fetched. The session's web-search budget ran out before a further check, so a Frost video may exist. Nothing is attributed to him."
+  },
+  "research_notes": "1) No Lenstip, OpticalLimits, Lensrentals or TDP test exists for this lens. Imaging Resource lists it as untested. Measured sources are PL and PhotoReview, both Imatest on the Z50, numbers in chart images only, and PhotoReview did not test 200–250mm. 2) Conflict at 250mm: PL says stop to f/8, Hogan says mostly sharpest wide open, Rockwell says sharp wide open into the corners. 250mm is set to f/6.3–f/8 center and f/8 corners, which is why confidence is medium. 3) Max-mag focal length assumed 250mm. MFD at 250mm (1 m) is from PhotoReview, while Nikon's page gives only the 50mm value. 4) The PhotoReview page has typos (f/6.5, '112 groups'), and the Nikon values are used. 5) Synchro VR: null. 6) Frost search was cut short by the search budget."
+}

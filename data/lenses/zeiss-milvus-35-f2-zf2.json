@@ -1,0 +1,190 @@
+{
+  "id": "zeiss-milvus-35-f2-zf2",
+  "name": "ZEISS Milvus 2/35 ZF.2 (Distagon T*)",
+  "short": "Milvus 35 f/2",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    35
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 35,
+      "f": 2.0
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 649,
+  "filter_mm": 58,
+  "focus": {
+    "on_z_body": "MF (manual-focus lens)",
+    "cpu": true,
+    "motor": "None. Manual-focus Distagon with a CPU chip (ZF.2): passes aperture and focal length to the body; aperture set from the camera.",
+    "focus_throw_deg": 113,
+    "notes": "113° from infinity to 0.3 m (ZEISS datasheet; TDP measured 116°). Floating-element focusing (ZEISS marketing text, via Imaging Resource). Rubberised metal focus ring, weather-sealed (Phillip Reeve). On FTZ/FTZ II the aperture ring must sit at f/22; if moved away the camera refuses to fire until reset, so set aperture with the command dial (Phillip Reeve, tested on Z7II and Zf via FTZ II). As a CPU MF lens, the in-focus indicator should work alongside peaking (inference from Nikon FTZ table rows for CPU lenses; not specifically confirmed for ZF.2)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon FTZ II page: with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. CPU chip passes 35 mm to IBIS automatically; no Non-CPU lens data needed."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 35,
+        "value": 0.3
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 35,
+        "value": 0.19
+      }
+    ],
+    "working_distance_mm_at_max_mag": 180,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "ZEISS datasheet: focusing range 0.30 m–∞, free working distance 0.18 m at MOD, reproduction ratio 1:5.3 (about 0.19×; TDP gives 0.19×), coverage 128 × 191 mm at MOD. Light loss at 0.19× is about half a stop by N × (1 + m) (computed), so the effective aperture is not a practical concern. Phillip Reeve (46MP Z7II): close-up very good at f/2, excellent f/2.8–f/11, slight diffraction from f/11."
+  },
+  "quick": {
+    "headline": "Classic Zeiss 35: sharp centre from f/2, very good corners by f/8 on 45MP, gorgeous 18-point sunstars; heavy f/2 vignetting and a slightly busy background blur.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Centre excellent at f/2 on 46MP (Reeve), corners good. TDP (5Ds R): centre good at f/2, corners somewhat soft. Vignetting about 2.4–3 EV and LoCA at f/2.",
+    "by_focal": [
+      {
+        "focal_mm": 35,
+        "center_peak": "f/2.8–f/5.6",
+        "corners_peak": "f/8–f/11",
+        "wide_open_note": "Phillip Reeve (Z7II 46MP, ZF.2 on FTZ): centre excellent from f/2; midframe very good at f/2, excellent by f/4; corners good at f/2, very good at f/8; best across the frame at f/11; diffraction from f/16. TDP (50MP 5Ds R): centre clear gain at f/2.8, slight gain at f/4, little change from f/5.6; corners sharpen through f/8. Photozone (Canon FF DSLR, same optics as Distagon ZF): peak f/4–f/5.6, diffraction noticeable from f/8 (lower-resolution body). DxOMark (D800E 36MP): acutance peaks about f/2.8, uniform across the frame."
+      }
+    ],
+    "close_up_best": "f/2.8–f/8",
+    "close_up_note": "Phillip Reeve (46MP): close-up very good at f/2, excellent from f/2.8 through f/11, slight diffraction from f/11. Floating elements keep close range strong. At 0.19× the effective aperture is only about half a stop smaller (computed).",
+    "diffraction_note": "Phillip Reeve (46MP Z7II): diffraction reduces sharpness from f/16 at infinity and from f/11 at close range; f/22 visibly softer. Photozone (Canon FF DSLR, lower resolution): noticeable from f/8, easily usable at f/11.",
+    "avoid": [
+      "Do not move the aperture ring off f/22 on FTZ II: the camera will refuse to fire.",
+      "Avoid f/16–f/22 except for sunstars on the Z8.",
+      "Do not expect a silky background: transitions can look busy, with coloured fringes at f/2."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Phillip Reeve tested this exact ZF.2 lens on a 46MP Nikon Z via FTZ (visual crops) and TDP tested on 50MP; they agree on a strong centre and corners peaking about f/8. Older measured tests of the same optics (Lenstip D200, Photozone Canon FF) are low resolution; Lenstip numbers exist only for f/2. DxOMark is the only high-resolution measured source and gives acutance, not per-aperture centre/corner values."
+  },
+  "character": {
+    "bokeh": "Divided. Phillip Reeve: evenly lit highlights with no onion rings, but harsh transitions, bubble highlights toward the edges, orange/yellow midframe and green corner fringing, and some cat's eye; a bit busy. Photography Life: pleasant, round soft highlights with a slight edge. Photozone: pretty good for the class. TDP: smoothly filled highlights when stopped down.",
+    "flare_sunstar": "Sunstars are a highlight: 18-point stars from f/5.6, well defined at f/8, long rays at f/11, 'absolutely gorgeous' at f/16–f/22 (Reeve; TDP also notes 18 points). Flare is mixed: Reeve found contrast loss or ghosting in some situations; Photography Life saw large orange and purple flares from small bright sources at f/8 and smaller; TDP saw practically none with the sun in the corner at f/2, modest at f/16.",
+    "ca": "LoCA: small (Reeve), fully gone only at f/8; TDP purple/green fringing in out-of-focus highlights mostly at f/2. Lateral CA: Reeve small; Photozone about 1 px average at the borders; Photography Life over 2 px f/2–f/4, below 2 px at f/5.6; DxOMark noticeable far-corner fringing at f/2–f/2.8.",
+    "distortion": "Sources disagree. Reeve: minimal slight barrel (about +3 to correct). DxOMark (D800E): about 0.4% barrel. Photozone: about 1.8% barrel. TDP: slight barrel. A Lightroom profile exists.",
+    "vignetting": "Heavy wide open. Reeve (46MP): about 2.4 EV at f/2, 1.7 at f/2.8, 1.0 at f/4, 0.7 at f/5.6–f/8. Photozone: about 2.4 EV at f/2, 1.4 at f/2.8, not significant from f/4. Photography Life: almost 3 EV at f/2 and infinity. TDP: about 3 stops at f/2. DxOMark: about −1.7 EV at f/2.",
+    "coma_astro": "Reeve: coma noticeable at f/2–f/2.8, much better at f/4, gone by f/5.6. Lenstip (D200): well-controlled coma, low astigmatism.",
+    "focus_breathing": "Moderate (Reeve); TDP: modest change in subject size across focus distances.",
+    "other": "Focus shift: Phillip Reeve, on a 46MP Z7II, noted none. No other source reports any. Milvus shares the optical design of the earlier Distagon T* 2/35 ZF.2 / Classic (Reeve; TDP), with new housing, updated T* coating and weather sealing. ZF.2 649 g (ZEISS datasheet). Reeve: very sharp but 'doesn't truly excel' beyond sharpness; recommended mainly for DSLR/film/MF fans."
+  },
+  "field_tips": [
+    "Lock the aperture ring at f/22 and set aperture on the command dial; if the camera won't fire, check the ring.",
+    "Focus with peaking + magnified view. Reeve saw no focus shift, so focusing wide open is fine, but at f/2–f/2.8 keep critical focus in magnified view.",
+    "Landscapes on the Z8: f/8 for corners, f/11 if depth is needed; f/16 only for the 18-point sunstar.",
+    "f/2 gives about 2.4–3 EV vignetting and LoCA on high-contrast edges: stop to f/2.8–f/4 for portraits, or use it as character.",
+    "Close-ups to 0.3 m (0.19×, about 18 cm working room): f/2.8–f/8 is excellent."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "Reeve's 46MP Z7II results apply directly: centre excellent from f/2, corners very good at f/8, diffraction from f/16 (f/11 close up). IBIS 3-axis via FTZ II; focal length passed automatically."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: corners look good by f/5.6 (Photozone's lower-resolution peak f/4–f/5.6 applies); f/11 is safe. IBIS 3-axis via FTZ II."
+    },
+    {
+      "body": "z50ii",
+      "note": "About 52mm-equivalent framing on DX; vignetting drops to about 1 stop at f/2 (TDP APS-C figure) and the corners are outside the crop. No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "phillipreeve",
+      "name": "phillipreeve.net: Review: Zeiss Milvus 35mm f/2",
+      "url": "https://phillipreeve.net/blog/review-zeiss-milvus-35mm-f-2/",
+      "kind": "review",
+      "tested_on": "Nikon Z7II (45.7MP) via FTZ/FTZ II; samples on Nikon Zf; ZF.2 version",
+      "date": "2026-04",
+      "findings": "Infinity: centre excellent from f/2; midframe very good f/2, excellent f/4; corners good f/2, very good f/8; best across frame f/11; diffraction from f/16. Portrait distance: good f/2, very good f/2.8, excellent f/4. Close-up: very good f/2, excellent f/2.8–f/11, slight diffraction from f/11. No focus shift noted. LoCA small, gone at f/8. Lateral CA small. Vignetting about 2.4 EV at f/2, 1.7 at f/2.8, 1.0 at f/4, 0.7 at f/5.6–f/8. Distortion minimal barrel. Coma noticeable f/2–f/2.8, gone f/5.6. Sunstars 18-point from f/5.6, gorgeous f/16–f/22. Flare mixed. Focus breathing moderate. Bokeh evenly lit but harsh transitions, edge bubbles and fringing, a bit busy. Same optical construction as the classic Distagon 2/35 with new housing, coating, sealing. On FTZ/FTZ II the camera refuses to fire unless the aperture ring is at f/22. 113°, 0.3 m, 1:5.3, 649 g, 58 mm, 9 curved blades."
+    },
+    {
+      "id": "tdp",
+      "name": "The-Digital-Picture: Zeiss Milvus 35mm f/2 Lens Review",
+      "url": "https://www.the-digital-picture.com/Reviews/Zeiss-Milvus-35mm-f-2-Lens.aspx",
+      "kind": "measured",
+      "tested_on": "Canon EOS 5Ds R (50.6MP), ZE version",
+      "date": null,
+      "findings": "Centre good at f/2, clear gain at f/2.8, slight gain f/4, little change from f/5.6. Corners somewhat soft at f/2, sharpening through f/8. Lateral CA modest; axial CA with purple/green fringing in highlights mostly at f/2. Vignetting about 3 stops at f/2 on FF, about 1 stop on APS-C, about 0.6 stop at f/5.6–f/8. Slight barrel. Flare practically none at f/2 with sun in corner, modest at f/16; 18-point stars. Bokeh good. 116° focus rotation, 0.3 m, 0.19×, 9 blades. Optical design shared with the Classic 35 f/2 ZE."
+    },
+    {
+      "id": "dxomark",
+      "name": "DXOMARK: Carl Zeiss Milvus 2/35 ZF.2 Nikon lens review",
+      "url": "https://www.dxomark.com/carl-zeiss-milvus-2-35-zf.2-nikon-lens-review-affordable-quality",
+      "kind": "measured",
+      "tested_on": "Nikon D800E (36MP)",
+      "date": "2017-03",
+      "findings": "Score 40, sharpness 29 P-Mpix. Acutance about 70% at f/2, peak about 80% at f/2.8, strong f/4–f/11, uniform across the frame at all apertures. Distortion about 0.4% barrel. Vignetting about −1.7 EV at f/2, −1 EV at f/2.8, about 0.33 EV from f/4. Noticeable far-corner CA at f/2–f/2.8, mild in outer field f/4–f/22. Rated sharper and more uniform at f/2 than the older Distagon 2/35 ZF.2 measured on the same system."
+    },
+    {
+      "id": "photozone",
+      "name": "Photozone (OpticalLimits): Zeiss Distagon T* 35mm f/2 ZF (ZE) on Canon EOS FF",
+      "url": "https://photozone.de/canon_eos_ff/503-zeiss35f2eosff?start=1",
+      "kind": "measured",
+      "tested_on": "Canon full-frame DSLR (model not named in text; likely 21MP 5D Mark II), ZF version adapted",
+      "date": "2010-04",
+      "findings": "Same optics (pre-Milvus). Centre strong from f/2; borders/corners good to very good; peak f/4–f/5.6 across frame; diffraction noticeable from f/8, easily usable at f/11. Distortion about 1.8% barrel. Vignetting about 2.4 EV at f/2, 1.4 at f/2.8, insignificant from f/4. CA about 1 px. Bokeh pretty good for class. MTF numbers only in chart image."
+    },
+    {
+      "id": "lenstip",
+      "name": "Lenstip: Carl Zeiss Distagon T* 35 mm f/2 ZF/ZK/ZS/ZE review",
+      "url": "https://www.lenstip.com/179.4-Lens_review-Carl_Zeiss_Distagon_T*_35_mm_f_2_ZF_ZK_ZS_ZE_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10.2MP DX)",
+      "date": "2009-06",
+      "findings": "Pre-Milvus optics. f/2: centre almost 40 lp/mm, corner (DX) over 30 lp/mm; both improve progressively stopping down (other values only in chart). Summary: consistently high centre quality, very good corners, low CA wide open but higher CA stopped down, low distortion, well-controlled coma, low astigmatism, vignetting higher than competitors."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Zeiss Distagon 35mm f/2 ZF.2 review",
+      "url": "https://photographylife.com/reviews/zeiss-distagon-35mm-f2-zf2",
+      "kind": "review",
+      "tested_on": "Nikon D3s (12MP FX) for field tests; lab body not named",
+      "date": null,
+      "findings": "Pre-Milvus Distagon ZF.2. Centre very good wide open, corners a tad weaker, sharper by f/5.6. Lateral CA over 2 px f/2–f/4, below 2 px from f/5.6. LoCA visible wide open. Bokeh pleasant, round soft highlights with slight edge. Flare minimal wide open; large orange/purple flares from small bright sources at f/8 and smaller. Vignetting almost 3 EV at f/2, infinity. Distortion moderate."
+    },
+    {
+      "id": "zeiss_datasheet",
+      "name": "ZEISS Milvus 2/35 datasheet (PDF)",
+      "url": "https://www.zeiss.it/content/dam/consumer-products/downloads/photography/datasheets/en/milvus-lenses/datasheet-zeiss-milvus-235.pdf",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "9 elements / 7 groups; f/2–f/22; focusing range 0.30 m–∞; free working distance 0.18 m; 1:5.3 at MOD; coverage 128 × 191 mm; focus rotation 113°; M58 × 0.75 filter; ZF.2 length 81.3 mm, weight 649 g; MTF charts at f/2 and f/4 (values not readable)."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Fetched 2026-11-05: 'when you're shooting with a non-VR F-mount lens, yaw, pitch, and roll are corrected in-camera'. With VR F lenses, in-lens yaw/pitch is supplemented by in-camera roll. Full AF/AE for AF-S, AF-P and AF-I types (94 of about 360 compatible F lenses)."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the ZEISS Milvus 2/35 (or the Distagon 2/35 ZF.2) was found. A search with his name and the lens returned only Phillip Reeve, Fstoppers (Milvus 35/1.4), DxOMark and The-Digital-Picture. Nothing is attributed to him."
+  },
+  "research_notes": "1) Optics: Reeve and TDP say the Milvus 2/35 keeps the classic Distagon 2/35 optical design (new housing, coating, sealing), so older Distagon ZF/ZF.2 tests (Lenstip, Photozone, Photography Life) are used for character, with lower weight. DxOMark nonetheless measured the Milvus sharper at f/2 than the old Distagon, possibly sample or coating differences. 2) Resolution vintage: Lenstip (10MP DX) and Photozone (Canon FF DSLR, likely 21MP) peak earlier (f/4–f/5.6, diffraction from f/8) than Reeve's 46MP Z7II (corners very good f/8, best f/11, diffraction from f/16). The Reeve result is the most directly relevant to the Z8, hence corners_peak f/8–f/11. 3) Focus shift: the brief asked for focus-at-shooting-aperture advice, but the only source that addresses it (Reeve, 46MP Z) reports none. No source reports focus shift, so the tip is phrased accordingly. 4) Distortion conflict: 0.4% (DxOMark), minimal (Reeve), 1.8% (Photozone, older optics test). 5) Nikon FTZ II IBIS statement confirmed on Nikon's FTZ II page this session (yaw, pitch, roll for non-VR F lenses). 6) Rounded blades: Reeve says 9 curved blades; the ZEISS datasheet fetched did not list blades. 7) No Lensrentals, OpticalLimits Milvus, Photography Life Milvus or Lenstip Milvus review found. Imaging Resource lists the lens as not tested."
+}

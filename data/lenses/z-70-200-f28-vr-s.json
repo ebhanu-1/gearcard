@@ -1,0 +1,268 @@
+{
+  "id": "z-70-200-f28-vr-s",
+  "name": "NIKKOR Z 70-200mm f/2.8 VR S (original 2019 version)",
+  "short": "70-200 f/2.8 VR S",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "zoom",
+  "focal_mm": [
+    70,
+    200
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 70,
+      "f": 2.8
+    },
+    {
+      "focal_mm": 200,
+      "f": 2.8
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 1440,
+  "filter_mm": 77,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Not stated on Nikon's spec page; not verified this session",
+    "focus_throw_deg": null,
+    "notes": "Weight is with tripod collar (Nikon: about 1,440 g; about 1,360 g without). Photography Life: no focus shift, no field curvature, zero focus breathing at any focal length, but not parfocal (refocus after zooming). OpticalLimits lists AF speed as 'not the fastest' and recommends the Mk II for action. Imaging Resource: AF slightly slower with the TC-1.4x, noticeably slower with the TC-2.0x. Mirrorlesscomparison (Z6/Z7): TC-1.4x did not noticeably slow AF in bird tests."
+  },
+  "stabilization": {
+    "lens_vr": true,
+    "lens_vr_stops": 5.5,
+    "synchro_vr": true,
+    "ibis_on_ftz": null,
+    "notes": "Nikon: 5.5 stops CIPA (NORMAL mode, max telephoto, FX mirrorless). VR is controlled from the camera menu (no switch on the barrel per mirrorlesscomparison), with Normal and Sport modes, and works together with body IBIS. A Photography Life commenter saw framing 'jumps' in VR Normal on a Z8 burst that Sport avoided; the reply attributes it to VR recentering between frames (forum-weight). Synchro VR: supported. Nikon's lens firmware 1.20 added synchro VR (camera and lens VR synchronized), and Nikon's Synchro VR support article, as quoted on FredMiranda (Jan 2026), lists the Z8 and Z5 II among compatible bodies and this lens among compatible lenses (with an unexplained asterisk, probably the firmware requirement — inference). Make sure the lens is on firmware 1.20 or later (current 1.22) and keep body VR on. The Nikon article itself could not be fetched (robots-blocked), so this rests on a forum quote plus Nikon's firmware notes. The Z50 II has no IBIS, so lens VR is the only stabilization there."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 70,
+        "value": 0.5
+      },
+      {
+        "focal_mm": 200,
+        "value": 1.0
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 200,
+        "value": 0.2
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "Nikon: MFD 0.5 m at 70mm, 1.0 m at 200mm, max reproduction 0.2x. Photography Life: 1:5 at 200mm; 1:2.5 with the TC-2.0x. With the TC-1.4x, Nikon says the reproduction ratio is 1.4× the lens's, so about 0.28x at 280mm; Nikon adds that MFD with a teleconverter may differ from the lens documentation. Lens is about 220 mm long (Nikon), so free distance at 200mm MFD is roughly 1.0 m − 16 mm flange back − 220 mm ≈ 0.76 m minus the hood (arithmetic, not measured; field left null)."
+  },
+  "quick": {
+    "headline": "Sharp wide open at every focal length; f/4–f/5.6 is the bare-lens sweet spot. With the TC-1.4x at 280mm, f/4 is noticeably softer and f/5.6–f/8 (displayed) is very crisp.",
+    "sweet_spot": "f/4–f/5.6 (bare); f/5.6–f/8 displayed with TC-1.4x",
+    "wide_open": "Excellent. Lenstip (Z7): center over 80 lpmm at 70mm f/2.8, almost 72 at 135mm, over 66 at 200mm; FF edge above 50 lpmm wide open at all focal lengths (decency 41–43). DXOMARK (Z7): excellent sharpness wide open at all focal lengths, slight corner drop. OpticalLimits (45MP): center excellent from f/2.8; borders drop to 'very good' only at 200mm f/2.8.",
+    "by_focal": [
+      {
+        "focal_mm": 70,
+        "center_peak": "f/2.8–f/4",
+        "corners_peak": "f/4",
+        "wide_open_note": "Lenstip: center over 80 lpmm at f/2.8 (its peak). Photography Life: center peaks at f/2.8, corners already very good, f/4 best overall. Imaging Resource (Z7): f/2.8–f/8 nearly identical. Mirrorlesscomparison: razor sharp at f/2.8, corners excellent at f/4."
+      },
+      {
+        "focal_mm": 105,
+        "center_peak": "f/2.8–f/4",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Photography Life: corners strongest at 105mm, very high at f/5.6. Mirrorlesscomparison: peak at f/2.8, corners near-perfect at f/5.6."
+      },
+      {
+        "focal_mm": 135,
+        "center_peak": "f/4",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Lenstip: center almost 72 lpmm at f/2.8, over 76 at f/4; FF edge about 60. Imaging Resource: f/2.8 noticeably softer than f/4. DXOMARK: slight astigmatic softness at 135mm mainly wide open. Photography Life: corners extremely sharp at f/5.6."
+      },
+      {
+        "focal_mm": 200,
+        "center_peak": "f/4",
+        "corners_peak": "f/4–f/5.6",
+        "wide_open_note": "Lenstip: center over 66 at f/2.8, slightly over 69 at f/4. Photography Life: f/2.8, f/4 and f/5.6 essentially equal; corners stable. Imaging Resource: slight softness at f/2.8 at 100%, better at f/4, f/5.6–f/8 identical. OpticalLimits: only at 200mm does f/4 slightly improve the corners."
+      },
+      {
+        "focal_mm": 280,
+        "center_peak": "f/5.6–f/8 (displayed, with TC-1.4x)",
+        "corners_peak": "f/5.6–f/8 (displayed, with TC-1.4x)",
+        "wide_open_note": "TC-1.4x: Imaging Resource (Z7): at 280mm f/4 noticeably softer than bare 200mm f/2.8 but 'not too bad'; at f/5.6 very crisp, only slightly behind the bare lens. Digital Camera World (Zf, 24MP): center loses sharpness at large apertures, little difference at narrower apertures. Cameralabs (45MP): gradual softening at 280mm, not too bad. Mirrorlesscomparison: almost no loss vs bare."
+      }
+    ],
+    "close_up_best": "f/4–f/5.6",
+    "close_up_note": "Mirrorlesscomparison: at MFD (0.5 m at 70mm, 1 m at 200mm) performance stays at the highest level, very sharp at f/2.8 and peaking at f/4; same behaviour with the TC-1.4x (crops at 98 and 280mm). Photography Life did not test close-focus sharpness. One visual source only, so medium-low confidence; f/5.6 adds depth of field at 0.2x without diffraction cost.",
+    "diffraction_note": "OpticalLimits (45MP): visible impact from f/8. Imaging Resource (Z7): noticeable at f/11 but usable; f/16–f/22 very soft. Mirrorlesscomparison: starts at f/11, more at f/16. Photography Life: softening at f/16. With the TC-1.4x, diffraction follows the displayed (effective) f-number, so displayed f/8 is the limit for detail on the Z8 (inference).",
+    "avoid": [
+      "Don't stop below f/8 bare (f/11 displayed with TC) on the Z8 unless you need the depth.",
+      "Don't shoot the TC-1.4x wide open (f/4 displayed) when you have light to spare: f/5.6 is clearly crisper (Imaging Resource).",
+      "Don't use the TC-2.0x on this lens for critical detail: soft at f/5.6, never crystal clear at f/8 (Imaging Resource)."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Lenstip (Z7, MTF50 numbers), DXOMARK (Z7), OpticalLimits (45MP) and Photography Life (Imatest) agree it is sharp wide open with f/4–f/5.6 at or near peak. The TC-1.4x verdict rests on Imaging Resource (Z7, visual) and Digital Camera World (lab, 24MP Zf), which agree on 'softer wide open, near-bare when stopped down': medium for that row."
+  },
+  "character": {
+    "bokeh": "Neutral and softer than expected for so sharp a lens (Photography Life); noticeable cat's-eye highlights, most at 200mm f/2.8 (Photography Life) and at 110mm in corners until f/5.6 (OpticalLimits). Slightly busy highlight interiors but smooth transitions, nearly no bokeh fringing (OpticalLimits). 9 rounded blades.",
+    "flare_sunstar": "Some ghosting into the sun, better at 70mm than 200mm; use the hood since sun just outside the frame can flare (Photography Life). Sunstars essentially absent (Photography Life).",
+    "ca": "Lateral CA very low: under ~1 px (Photography Life; OpticalLimits ~1 px); DXOMARK best of three compared, slight mid-frame CA at 200mm f/2.8. Axial CA basically absent (OpticalLimits). Important for moon limbs: almost no colour fringing.",
+    "distortion": "Low. DXOMARK: −0.1% at 70mm to +0.6% pincushion at 200mm; Photography Life: nearly 2% pincushion at 200mm (method difference). Profile removes it.",
+    "vignetting": "Photography Life uncorrected: about 1 stop at 70–85mm f/2.8, up to about 1.6 stops at 200mm infinity; halved at f/4, negligible from f/5.6. OpticalLimits: beyond 2 EV at 200mm f/2.8 RAW. DXOMARK: clears by f/8.",
+    "coma_astro": "Photography Life (Z7): barely visible at 70mm wide open, none at 200mm. Not an astro lens, but fine for moon and star-field tele shots.",
+    "focus_breathing": "None at any focal length (Photography Life).",
+    "other": "Not parfocal (refocus after zooming). Heavy (1.36 kg without collar). Superseded by the 2025 Mk II with faster AF; OpticalLimits still recommends the original for non-action work. Transmission about T3.1 (DXOMARK)."
+  },
+  "field_tips": [
+    "Moonrise at 280mm (TC-1.4x on the Z8): shoot at displayed f/5.6–f/8, not f/4. The moon is only about 2.5 mm across on the sensor at 280mm (≈580 px on the Z8), so you'll crop; switch to DX crop for framing only if you want the 420mm-equivalent view.",
+    "With the TC-1.4x the lens is 98–280mm at f/4 max (Nikon: one stop lost); aperture readouts and EXIF show the effective value. Diffraction follows the displayed number, so keep it at or wider than f/8.",
+    "On a tripod for moonrise, focus manually on the moon's limb at maximum magnification; the lens has no breathing and no focus shift, so focus holds when you stop down, but it isn't parfocal, so refocus after any zoom change.",
+    "For bursts in VR Normal, framing can jump between frames as VR recenters; use VR Sport for steady framing during long sequences.",
+    "Close-ups: 0.2x at 200mm from 1 m; the TC-1.4x raises that to about 0.28x (Nikon: reproduction ratio ×1.4). Shoot f/4–f/5.6."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "Measured data mostly on 45MP bodies (Lenstip, DXOMARK, Imaging Resource on Z7; OpticalLimits at 45MP), so verdicts apply directly. Bare: f/4–f/5.6; diffraction visible from about f/8. TC-1.4x at 280mm: f/5.6–f/8 displayed. Synchro VR supported (lens firmware 1.20+)."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: f/2.8 softness at 135–200mm and TC f/4 softness are less visible per pixel; Digital Camera World's TC test on a 24MP Zf found little center difference once stopped down. f/11 is a safer working limit than on the Z8 (pixel-pitch inference)."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX crop: 105–300mm equivalent bare, about 147–420mm equivalent with the TC-1.4x. Lenstip's APS-C edge is 60–70 lpmm from f/2.8 to f/5.6 with no weak points. No IBIS, so lens VR is the only stabilization."
+    }
+  ],
+  "tc_compatible": true,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z 70-200 mm f/2.8 VR S, Image resolution",
+      "url": "https://www.lenstip.com/616.4-Lens_review-Nikon_Nikkor_Z_70-200_mm_f_2.8_VR_S_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), RAW MTF50",
+      "date": null,
+      "findings": "Decency 41–43 lpmm; record ~85. Center: 70mm over 80 lpmm at f/2.8 (peak); 135mm almost 72 at f/2.8, over 76 at f/4; 200mm over 66 at f/2.8, slightly over 69 at f/4 (doesn't quite reach 70). APS-C edge about 60–70 lpmm f/2.8–f/5.6 at all focal lengths. FF edge above 50 lpmm wide open everywhere, about 60 at 135mm. Center better than the 24-70 f/2.8 S. No TC or diffraction comments in the text."
+    },
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Nikkor Z 70-200mm f/2.8 VR S review",
+      "url": "https://opticallimits.com/nikon/nikon-z/nikkor-z-70-200mm-f-2-8-vr-s/",
+      "kind": "measured",
+      "tested_on": "45MP-normalized results (body not named in fetched text)",
+      "date": null,
+      "findings": "Center excellent from f/2.8 across the zoom; borders excellent at 70–135mm, very good at 200mm f/2.8; corners very good at 70–135mm, f/4 slight improvement only at 200mm. Diffraction visible from f/8. Distortion none at 70mm, medium pincushion at long end. RAW vignetting beyond 2 EV at 200mm f/2.8, negligible from f/5.6. Lateral CA ~1 px; axial CA basically absent. Cat's-eye at 110mm until f/5.6. MFD 0.5–1 m, 0.2x. Teleconverter samples 'less tack sharp' (no test). Scores 8.5/9/9, 'Highly Recommended'; AF not the fastest, Mk II recommended for action."
+    },
+    {
+      "id": "dxomark",
+      "name": "DXOMARK: Nikon Nikkor Z 70-200mm F2.8 VR S lens review",
+      "url": "https://www.dxomark.com/nikon-nikkor-z-70-200mm-f2-8-vr-s-lens-review-great-performer-optically/",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP)",
+      "date": null,
+      "findings": "Score 38 (second-best 70-200/2.8 in their database). Very high, uniform sharpness at almost every aperture; excellent at f/2.8 at all focal lengths including 200mm; slight corner drop at f/2.8; slight astigmatic softness at 135mm wide open; diffraction noticeable at f/22. Transmission about T3.1. Distortion −0.1% (70mm) to +0.6% (200mm). Vignetting heaviest at 200mm wide open, gone by f/8. Lateral CA very low; slight mid-frame CA at 200mm f/2.8."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 70-200mm f/2.8 VR S review, optical performance",
+      "url": "https://photographylife.com/reviews/nikon-z-70-200mm-f2-8-vr-s/2",
+      "kind": "measured",
+      "tested_on": "Imatest (body not named for sharpness); coma test on Z7",
+      "date": null,
+      "findings": "70mm: center peaks f/2.8, best overall f/4. 85mm: center highest f/2.8, best overall f/4. 105mm: strongest corners, very high at f/5.6. 135mm: corners dip slightly wide open, extremely sharp f/5.6. 200mm: f/2.8, f/4, f/5.6 essentially equal; corners stable. Diffraction softening at f/16. No focus shift, no field curvature, no focus breathing; not parfocal. 1:5 at 200mm; 1:2.5 with TC-2.0x. Uncorrected vignetting ~1 stop at 70–85mm f/2.8, ~1.6 stops at 200mm; negligible from f/5.6. Pincushion nearly 2% at 200mm. Lateral CA under ~1 px. Coma barely visible at 70mm, none at 200mm. Some ghosting into the sun; sunstars essentially absent. Bokeh neutral with cat's eye at 200mm f/2.8. Comments page (/6) has no TC test; a commenter reports VR Normal frame jumps on a Z8 burst."
+    },
+    {
+      "id": "imagingresource",
+      "name": "Imaging Resource: Nikon Z 70-200mm f/2.8 VR S Nikkor review (field test)",
+      "url": "https://imaging-resource.com/lenses/nikon/z-70-200mm-f2.8-vr-s-nikkor/review",
+      "kind": "review",
+      "tested_on": "Nikon Z7 (45.7MP) for sharpness; also Z5, Z6 II",
+      "date": "2020-12 (field test news item dated 2020-12-18)",
+      "findings": "70mm strong at f/2.8, f/2.8–f/8 nearly identical. 135mm f/2.8 noticeably softer than f/4. 200mm slight softness at f/2.8 at 100%, better at f/4, f/5.6 and f/8 identical. Corners very good at 70mm f/2.8, some softness at 135mm f/2.8 improved at f/4. Diffraction noticeable at f/11, f/16–f/22 very soft. TC-1.4x (98–280mm f/4): at 280mm f/4 noticeably softer than bare 200mm f/2.8 but not too bad; at f/5.6 very crisp, only slightly behind bare; AF slightly slower. TC-2.0x: soft at f/5.6, better at f/8 but never crystal clear; AF noticeably slower. MFD 50 cm, 0.2x."
+    },
+    {
+      "id": "dcw_tc",
+      "name": "Digital Camera World (Ben Andrews lab test, via inkl): Nikon claims its teleconverters don't degrade image quality – let's find out",
+      "url": "https://inkl.com/news/nikon-claims-its-teleconverters-don-t-degrade-image-quality-let-s-find-out",
+      "kind": "measured",
+      "tested_on": "Nikon Zf (24.5MP) with Z 70-200 f/2.8 VR S",
+      "date": null,
+      "findings": "TC-1.4x: center sharpness drops at large apertures, little difference at narrower apertures; corners reported to improve, by as much as 50% at f/4 (as published; the basis of comparison is not explained in the fetched text). TC-2.0x: center drop largest at maximum aperture (f/5.6), smaller but present stopped down; small corner loss. No absolute numbers."
+    },
+    {
+      "id": "cameralabs_tc",
+      "name": "Cameralabs: Nikon Z TC-1.4x / TC-2.0x teleconverter review, quality page",
+      "url": "https://cameralabs.com/nikon-z-tc-1-4x-tc-2-0x-teleconverter-review/2",
+      "kind": "review",
+      "tested_on": "45MP Nikon Z7 (implied; samples page states Z7)",
+      "date": null,
+      "findings": "Tested with the Z 70-200 f/2.8 VR S. Degradation slight up to 200mm; gradual, 'not too bad' softening at 280mm and 400mm. At 280mm, TC-1.4x at f/4 clearly sharper across the frame than TC-2.0x at f/5.6. Cropped to a 400mm view, the TC-2.0x is a bit sharper in the center, equal in the DX corner, softer in the FX corner. Siemens-star crops at f/4, f/5.6, f/8 with the 1.4x carry no text verdict."
+    },
+    {
+      "id": "mirrorlesscomparison",
+      "name": "Mirrorlesscomparison: Nikon Z 70-200mm 2.8, TC 1.4x, bird photography and more (pages 1–2)",
+      "url": "https://mirrorlesscomparison.com/stories/nikon-z-70-200mm-2-8-tc-1-4-birds/2/",
+      "kind": "review",
+      "tested_on": "Nikon Z6 and Z7 (also Z7 DX crop)",
+      "date": null,
+      "findings": "Bare: razor sharp from f/2.8; 85mm slightly soft wide open; corners near-perfect at f/5.6 (105–135mm); diffraction from f/11, more at f/16. TC-1.4x tested at 98–280mm: almost no loss vs bare (crops f/4–f/32 without per-aperture verdict). MFD performance at the highest level, very sharp at f/2.8, peak f/4; same with TC at 98 and 280mm. AF not noticeably slowed by the TC; bird keeper rates 83–96%. VR controlled in-camera (Normal/Sport); about 1/15 s at 200mm for ~50% keepers."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon Imaging: NIKKOR Z 70-200mm f/2.8 VR S product/spec page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_70-200mmf28_vr_s/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.5 m (wide), 1.0 m (tele); 0.2x; about 1,440 g with collar, 1,360 g without; 77 mm filter; 9 rounded blades; f/22 min; 21 elements/18 groups (6 ED, 2 aspherical, 1 fluorite, 1 SR), Nano Crystal and ARNEO; VR 5.5 stops CIPA; 89 × 220 mm. Motor, Synchro VR and TC compatibility not listed on the page."
+    },
+    {
+      "id": "nikon_tc14",
+      "name": "Nikon Imaging: Z TELECONVERTER TC-1.4x product/spec page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_tc_14x/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Lists the Z 70-200 f/2.8 VR S as compatible. Focal length and reproduction ratio ×1.4; effective aperture reduced by one stop; MFD with TC may differ from lens documentation; AF/VR kept reliable with minimal degradation, but AF may fail or the focus indicator flicker depending on subject, light and focus point. Nikon publishes MTF charts for the 70-200 + TC-1.4x (no numbers in text). 220 g. Nikon Singapore's TC page (https://www.nikon.com.sg/nikkor-z-teleconverter-tc-1-4x) gives the same compatibility list."
+    },
+    {
+      "id": "dcw_z50ii",
+      "name": "Digital Camera World: Nikon Z50 II vs Nikon Z50",
+      "url": "https://www.digitalcameraworld.com/buying-guides/nikon-z50-ii-vs-nikon-z50",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "Z50 II has no IBIS; relies on VR lenses for stabilized stills."
+    },
+    {
+      "id": "synchro_vr_forum",
+      "name": "FredMiranda forum thread 'Nikon IBIS + VR: Which lenses work & how?' (post #10, ekam, 2026-01-07) quoting Nikon support article 000066751",
+      "url": "https://www.fredmiranda.com/forum/topic/1922057/",
+      "kind": "forum",
+      "tested_on": null,
+      "date": "2026-01",
+      "findings": "Quotes Nikon's Synchro VR support article (https://www.nikonimgsupport.com/eu/BV_article?articleNo=000066751&ctry=gb&lang=en_GB, which could not be fetched: robots-blocked). Compatible cameras: Z9, Z8, Z6III, Z5II, Zf, ZR. Synchro VR runs when a compatible lens is on a compatible body with body stabilization on. Visible lens entries: Z 28-400 VR, Z 70-200 f/2.8 VR S (marked with an unexplained asterisk), Z 100-400 VR S, Z 400 f/2.8 TC VR S; the quoted list is truncated ('...Show more'), so absence of a lens proves nothing."
+    },
+    {
+      "id": "nikon_fw_122",
+      "name": "Nikon Download Center: NIKKOR Z 70-200mm f/2.8 VR S firmware 1.22",
+      "url": "https://downloadcenter.nikonimglib.com/en/download/fw/532.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Version 1.20 added Z 9 features including synchro VR ('Camera and lens VR are synchronized for improved vibration reduction'). 1.21 fixed focus-position display/recall beep issues; 1.22 improved focus tracking while zooming. Applies to lens firmware 1.10–1.21."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "One web search for a Christopher Frost review of the Z 70-200mm f/2.8 VR S returned no Frost video (results were Fstoppers, Photography Blog, Cameralabs, Lenstip, Photography Life, Shotkit, etc.). YouTube pages can't be fetched directly. Nothing here is attributed to him."
+  },
+  "research_notes": "1) Bare-lens verdict is well supported by four measured sources on 45MP bodies. Lenstip puts the center peak at f/2.8 (70mm) and f/4 (135/200mm); Photography Life says f/2.8–f/5.6 are essentially equal at 200mm. f/4–f/5.6 is used as the sweet spot because it covers corners at 105–135mm (f/5.6 per Photography Life and mirrorlesscomparison). 2) TC-1.4x: sources differ in degree. Imaging Resource sees a clear f/4 softening at 280mm and crisp f/5.6; mirrorlesscomparison sees almost no loss; DCW lab (24MP) sees a center drop wide open only; Cameralabs 'not too bad'. Verdict f/5.6–f/8 displayed for the Z8, medium confidence for that row. DCW's '50% better corners at f/4 with the 1.4x' is reported as published; its baseline is unclear. 3) Synchro VR set true: Nikon firmware notes (1.20 added synchro VR) plus Nikon support article 000066751 as quoted on FredMiranda listing Z8, Z5 II and this lens. The Nikon article could not be fetched directly (robots-blocked). 4) AF motor type not on Nikon's page; left as unverified. 5) Diffraction onset differs: OpticalLimits f/8, Imaging Resource/mirrorlesscomparison f/11, Photography Life f/16 — 45MP lab results point to f/8 onset with f/11 still usable. 6) Close-up best rests on one visual source. 7) TC magnification ×1.4 is from Nikon's TC-1.4x page. Moon-size figure is arithmetic (0.5° × 280mm), not sourced. 8) Chris Frost: not searched (budget), see chris_frost. 9) Distortion figures differ by method (DXOMARK 0.6% vs Photography Life ~2% at 200mm)."
+}

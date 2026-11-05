@@ -1,0 +1,199 @@
+{
+  "id": "f-af-50-f18d",
+  "name": "AF NIKKOR 50mm f/1.8D",
+  "short": "AF 50 f/1.8D",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    50
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 50,
+      "f": 1.8
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 7,
+  "rounded_blades": false,
+  "weight_g": 155,
+  "filter_mm": 52,
+  "focus": {
+    "on_z_body": "MF only (screw-drive lens on FTZ II)",
+    "cpu": true,
+    "motor": "None in lens: screw-drive AF (AF-D) powered by a DSLR body motor. The FTZ II has no drive, so there is no AF on Z bodies.",
+    "focus_throw_deg": 100,
+    "notes": "Nikon's FTZ compatibility table lists AF Type D lenses as having no AF, with MF and the electronic rangefinder supported. Photography Life's FTZ guide: on AF-D lenses via FTZ, the electronic rangefinder (focus point turns green, with in/out indicators per Ken Rockwell's FTZ page), focus peaking, camera control of aperture through the CPU, metering, EXIF, diffraction compensation and IBIS all work. In-camera distortion/vignetting control and focus-shift shooting do not. Eye/subject detection cannot drive focus because there is no AF. Mechanics: Imaging Resource measured about 100° of focus-ring travel from close to infinity, with hard stops. The lens extends about 3/4 inch (about 19 mm) when focusing close. It has an aperture ring with a lock at f/22. Imaging Resource found no A/M switch on the lens, and Dozier says MF is selected on the camera body ('D' design). On a Z body the FTZ II gives no AF, so you simply turn the ring (the lens has no clutch to switch)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon's FTZ II page says that with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. Photography Life lists IBIS as working with AF-D lenses on the FTZ. As a CPU lens it passes 50mm to IBIS automatically."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 50,
+        "value": 0.45
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 50,
+        "value": 0.15
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "Nikon (Australia sales page) and Photography Life: MFD 0.45 m, max reproduction 0.15×. Lenstip lists 1:6.8 (0.147×), which agrees, and Imaging Resource lists 46 cm and 0.15×. No source measured sharpness close up. Photozone notes that the low wide-open contrast makes bokeh fringing more visible at close focus distances. Working distance not given by any source read."
+  },
+  "quick": {
+    "headline": "Tiny, cheap, very sharp from f/2.8: manual focus only on Z, weak and low-contrast at f/1.8–f/2 (especially FX corners), best at f/5.6–f/8. Bokeh behind the subject can be busy.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Weak wide open. Lenstip (D200 DX) center below 30 lp/mm near f/1.8, 'unsatisfying', passing their decency level about f/2.2. Imaging Resource (D3x FX): f/1.8 center about 1.5 blur units, but corners over 12 and the frame average about 5. Photozone (D3x FX): center very good but lacking contrast, borders 'barely good'. Fine by f/2.8 (IR D3x: center about 1.5, corners 3 or under). Vignetting about 1–1.3 EV at f/1.8 on FX.",
+    "by_focal": [
+      {
+        "focal_mm": 50,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/8",
+        "wide_open_note": "Center: Lenstip (D200) peak 46.4 lp/mm at f/5.6 ('outstanding'). Its D3x FX center is 2–3 lp/mm lower with the same shape. Photozone (D3x): center outstanding at f/4–f/5.6, declining from f/8 (diffraction). IR (D3x): almost 1 blur unit at f/4. Borders/corners: Photozone (D3x) improve steadily and peak at f/8. IR (D3x): 'as sharp as sharp gets' by f/8. Lenstip FX edge 'very decent' f/2.8–f/16. photoartfromscience (D7100 24MP DX): good edge to edge at f/2.8, peak overall at f/8."
+      }
+    ],
+    "close_up_best": "f/4–f/5.6",
+    "close_up_note": "Not measured by any source. This is inferred from the general center peak (f/4–f/5.6) and Photozone's note that low wide-open contrast makes fringing more visible close up. At 0.45 m, f/1.8 depth of field is very thin and the lens is at its weakest, so stop down to at least f/2.8 for close detail. Low confidence.",
+    "diffraction_note": "Photozone (D3x, 24.5MP FX, about 5.9 µm): center declines from f/8. Imaging Resource (D200 and D3x): diffraction limiting begins at f/11, and f/22 is still only about 2 blur units. photoartfromscience (D7100, 3.9 µm, a finer pitch than the Z8's 4.35 µm): peak f/8, softening visible at f/16. On the Z8 expect the center to soften slightly past f/5.6–f/8 and clearly from f/11. Corners still gain to f/8, so f/8 is the best whole-frame compromise.",
+    "avoid": [
+      "Don't use f/1.8–f/2 for FX group shots that need sharp edges: corners are very soft (IR D3x: over 12 blur units) and vignetting is about 1–1.3 EV.",
+      "Don't place busy, high-contrast backgrounds (fairy lights, foliage) close behind the subject wide open: rear bokeh is nervous, with outlining and polygonal highlights stopped down (Photozone).",
+      "Don't expect AF on any Z body: there is no motor in the lens."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Three measured sources agree: Lenstip (D200 + D3x), Photozone (D3x FX) and Imaging Resource (D200 + D3x) put the center peak at f/4–f/5.6 and the whole-frame peak at f/8, with photoartfromscience (24MP DX) also at f/8. All tests are 10–24MP, and none is on 36–45MP. On the Z8 the wide-open weakness will look worse per pixel, but the peak apertures should not move. Copy variation is notable (Dozier's borrowed second copy was poor)."
+  },
+  "character": {
+    "bokeh": "The main weakness. Photozone (D3x): smooth in front of the focus plane but visibly nervous behind it, 'somewhat unpleasant'. Highlights are not circular toward the edges wide open (mechanical vignetting) and polygonal stopped down, with pronounced outlining. 7 blades. Photozone recommends the AF-S 50/1.8G for better bokeh.",
+    "flare_sunstar": "Lenstip lists weaker-than-expected performance against bright light as a con. Sunstars not documented by the sources read (7 straight blades would give 14 points, an inference).",
+    "ca": "Lateral CA moderate. Photozone (D3x) 0.9 to almost 1.5 px, highest wide open. Lenstip: not bothersome. IR: almost none on the D3x with auto correction. LoCA/bokeh fringing is noticeable wide open (Photozone: magenta halos in front of focus, green behind), reduced stopped down.",
+    "distortion": "Low. Photozone (D3x): 0.3% barrel. IR (D3x): about +0.1% barrel in the corners. Lenstip: negligible.",
+    "vignetting": "IR (D3x): about 1 EV at f/1.8, 2/3 EV at f/2, 1/4 EV or less at f/2.8. Photozone (D3x): about 1.3 EV at f/1.8, not an issue from f/2.8. Lenstip: significant. In-camera vignette control does not apply to AF-D lenses on FTZ (Photography Life), so correct it in raw.",
+    "coma_astro": "Lenstip: distinct coma, and bothersome astigmatism near maximum aperture. Not an astro lens wide open.",
+    "focus_breathing": "Not measured. Unit-focusing design that extends about 19 mm (IR), so framing changes with focus distance (unquantified).",
+    "other": "6 elements in 5 groups, marketed 2002 per Lenstip (D version). 155 g, 52 mm filter, 63.5 × 39 mm (Nikon). Lenstip: high light transmission, and AF accuracy on DSLRs 'could be better', which is irrelevant on Z because you focus manually off the sensor. Copy variation: Dozier found a second copy poor."
+  },
+  "field_tips": [
+    "Focus by turning the ring (about 100° of travel). Use peaking plus magnified view, or the green focus-point indicator. Keep the aperture ring locked at f/22 and set aperture from the camera.",
+    "Family portraits: f/2.8–f/4 gives the best mix of blur and crisp eyes. f/1.8 is soft and low-contrast on the Z8, so use it only when light forces it.",
+    "Groups and landscapes on FX: f/8 for edge-to-edge sharpness. Past f/11 diffraction costs detail on the Z8.",
+    "Keep backgrounds far behind the subject or simple: its rear bokeh gets busy and outlined, especially with bright points.",
+    "On the Z50 II it frames like about 75mm (a compact portrait lens) with no IBIS, and the soft FX corners fall outside the crop. Use 1/160 s or faster handheld."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP magnifies the weak f/1.8–f/2 contrast and corners. Center peak f/4–f/5.6, corners f/8, diffraction clear from f/11. MF only via FTZ II (rangefinder + peaking). 3-axis IBIS."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP matches the D3x tests (Photozone, IR, Lenstip FX) directly: good from f/2.8, best f/5.6–f/8. MF only. 3-axis IBIS via FTZ II."
+    },
+    {
+      "body": "z50ii",
+      "note": "About 75mm-equivalent. DX tests apply (Lenstip D200: 46.4 lp/mm center at f/5.6. Dozier D7100: good edge to edge at f/2.8, peak f/8). No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor AF 50 mm f/1.8D (resolution + summary chapters)",
+      "url": "https://www.lenstip.com/219.4-Lens_review-Nikon_Nikkor_AF_50_mm_f_1.8D_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10.2MP DX) and Nikon D3x (24.5MP FX), RAW MTF50",
+      "date": null,
+      "findings": "DX center below 30 lp/mm near f/1.8 ('unsatisfying'), passes the decency level about f/2.2, peak 46.4 lp/mm at f/5.6 ('outstanding'). Comparisons: AF 50/1.4D 44.6, AF-S 50/1.4G 44.4, Zeiss Planar 50/1.4 48. DX edge similar to center: low at f/1.8–f/2, decent from f/2.5, very good near f/5.6. D3x center about 2–3 lp/mm below D200 with the same shape. FX edge very decent f/2.8–f/16. Per-aperture values are in chart images (not read). Summary (https://lenstip.com/219.11-Lens_review-Nikon_Nikkor_AF_50_mm_f_1.8D_Summary.html) pros: excellent center, good edges, CA not bothersome, negligible distortion, quiet fairly fast AF, high transmission. Cons: weak near max aperture, distinct coma, bothersome astigmatism wide open, significant vignetting, AF accuracy could be better, weaker against bright light than expected. Specs page (https://www.lenstip.com/351-Nikon_Nikkor_AF_50_mm_f_1.8D-lens_specifications.html): 6/5, 0.45 m, 1:6.8, 7 blades, 52 mm, 155 g, 63.5 × 39 mm, f/22, marketed 2002."
+    },
+    {
+      "id": "photozone_fx",
+      "name": "Photozone/OpticalLimits: Nikkor AF 50mm f/1.8 D (FX) review, analysis + verdict",
+      "url": "https://photozone.de/nikon_ff/623-nikkorafd5018ff?start=1",
+      "kind": "measured",
+      "tested_on": "Nikon D3x (24.5MP FX), RAW via Capture One",
+      "date": null,
+      "findings": "Distortion 0.3% barrel. Vignetting about 1.3 EV at f/1.8, not an issue from f/2.8. Center very good wide open but low contrast, excellent from f/2.8, outstanding at f/4–f/5.6, declining from f/8 (diffraction). Borders/corners barely good wide open, improving steadily, peaking at f/8. Lateral CA 0.9 to almost 1.5 px. Bokeh smooth in front of focus, nervous behind ('somewhat unpleasant'), non-circular edge highlights wide open, polygonal with pronounced outlining stopped down. Bokeh fringing (magenta front, green behind) noticeable wide open, more visible close up. Verdict (https://photozone.de/nikon_ff/623-nikkorafd5018ff?start=2): wide open lacks contrast and sharpness especially at borders and corners, sharp stopped down, bokeh the main weakness, AF-S 50/1.8G suggested for better bokeh and borders."
+    },
+    {
+      "id": "imaging_resource",
+      "name": "Imaging Resource / SLRgear: Nikon 50mm f/1.8D AF Nikkor review",
+      "url": "https://old.imaging-resource.com/lenses/nikon/50mm-f1.8d-af-nikkor/review",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10MP DX) and Nikon D3x (24.5MP FX); blur index",
+      "date": null,
+      "findings": "D3x: f/1.8 center about 1.5 blur units, corners over 12, average about 5. f/2 similar. f/2.8 center about 1.5, corners 3 or under. f/4 almost 1. f/8 'as sharp as sharp gets'. Diffraction begins f/11. f/22 just over 2. D200: f/1.8–f/2 3–4 across the frame, tack-sharp by f/5.6, f/22 about 2. Vignetting D3x: about 1 EV f/1.8, 2/3 EV f/2, 1/4 EV or less f/2.8. Distortion D3x about +0.1% barrel. CA nearly nil on D3x with auto correction. About 100° focus travel with hard stops. Lens extends about 3/4 in. Aperture ring locks at f/22. Focus ring turns during AF. MFD 46 cm, 0.15×. 156 g."
+    },
+    {
+      "id": "photoartfromscience",
+      "name": "Photo Art From Science (Ed Dozier): Nikkor 50mm f/1.8 AF-D FX review",
+      "url": "https://www.photoartfromscience.com/single-post/2016/02/29/nikkor-50mm-f18-afd-fx-review",
+      "kind": "measured",
+      "tested_on": "Nikon D7100 (24MP DX, about 3.9 µm), MTF50, single copy",
+      "date": "2016-02 (updated 2020-08)",
+      "findings": "f/1.8 acceptable center, corners a bit off. f/2 similar. f/2.8 good edge to edge. f/4 stellar center. f/8 peak overall. f/16 diffraction softening but still quite good. No MTF numbers in text. A second borrowed copy performed poorly (copy variation). MF requires switching the camera to M (D design). Focus ring turns during AF."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon Australia: AF NIKKOR 50mm f/1.8D product page",
+      "url": "https://sales.nikon.com.au/af-nikkor-50mm-f-1-8d",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "6 elements in 5 groups. MFD 0.45 m. Max reproduction 0.15×. 7 blades (rounding not stated). 52 mm filter. About 155 g. 63.5 × 39 mm. f/22 minimum."
+    },
+    {
+      "id": "pl_spec",
+      "name": "Photography Life lens database: Nikon AF NIKKOR 50mm f/1.8D",
+      "url": "https://photographylife.com/lenses/nikon-af-nikkor-50mm-f1-8d",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Spec summary matching Nikon: 0.45 m, 0.15×, 7 blades, 52 mm, 155 g, 6/5, f/22, 63.5 × 39 mm. No lab test on the page (MTF chart image only)."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "With a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. Full AF only for lenses with a built-in AF motor (AF-S Type G/D/E, AF-P, AF-I)."
+    },
+    {
+      "id": "nikon_ftz_compat",
+      "name": "Nikon: FTZ 'Compatible F Mount Lenses' feature table (manualmachine copy)",
+      "url": "https://manualmachine.com/nikon/ftz/17014601-compatible-f-mount-lenses",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Row 'AF NIKKOR Type G and D': autofocus not supported. MF with electronic rangefinder supported. All exposure and metering modes supported. (Cited from the AF Micro 60 record, not re-fetched this session.)"
+    },
+    {
+      "id": "pl_ftz_guide",
+      "name": "Photography Life: Nikon FTZ and FTZ II adapter lens compatibility, explained",
+      "url": "https://photographylife.com/nikon-ftz-adapter-lens-compatibility",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "AF-D lenses: no AF. Electronic rangefinder, focus peaking, camera aperture control, metering, EXIF, diffraction compensation and IBIS work. Distortion/vignetting control and focus-shift shooting do not."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the AF NIKKOR 50mm f/1.8D was found in one targeted web search (his name, the lens, 'youtube'). Results showed other reviewers (TDP, Lenstip, Fstoppers) and a Frost review of an unrelated Viltrox 50mm. YouTube is blocked to fetching here. Nothing is attributed to him."
+  },
+  "research_notes": "1) Chris Frost: searched once (as instructed, to save budget), not found. 2) Test vintage: all measured tests are 10–24MP (D200, D3x, D7100). None on 36–45MP. Peak apertures should hold on the Z8, but f/1.8–f/2 softness and fringing will look worse per pixel. 3) rounded_blades false: Photozone describes polygonal highlights stopped down, and Nikon/Lenstip don't claim rounded blades. Inferred from Photozone, not a manufacturer statement. 4) focus_throw_deg 100 is from Imaging Resource's measurement (about 100°). 5) Close-up guidance is inferred, since no source measured near MFD (low confidence for that field only). 6) No A/M switch: per Imaging Resource (none mentioned) and Dozier (MF set on the camera body). Not checked against the Nikon manual. 7) tc_compatible false: Nikon AF-S/AF-I teleconverters are not intended for AF-D standard primes (general knowledge, not re-verified). 8) The Digital-Picture page and the Photozone DX test (https://www.photozone.de/nikon--nikkor-aps-c-lens-tests/217-nikkor-af-50mm-f18-d-review--test-report?start=1) appeared in search results but were not read. DXOMARK not consulted. 9) Lenstip's 'marketed 2002' likely refers to the current D production. The lens was not researched for earlier versions. 10) Searches used for this lens: 3 (Lenstip/Photozone, Nikon specs, Chris Frost). The earlier attempts were refused when the budget ran out."
+}

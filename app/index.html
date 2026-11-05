@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="GearCard" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#FBFAF7" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <title>GearCard</title>
+    <style>html{background:#fbfaf7}html[data-theme=night]{background:#000}</style>
+    <script>
+      // Set the theme before first paint so Night never flashes white (SPEC §9 Phase 3).
+      try {
+        var s = JSON.parse(localStorage.getItem('gearcard.v1') || '{}')
+        if (s.theme === 'night') {
+          document.documentElement.setAttribute('data-theme', 'night')
+          document.querySelector('meta[name=theme-color]').setAttribute('content', '#000000')
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

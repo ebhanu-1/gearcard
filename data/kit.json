@@ -1,0 +1,26 @@
+{
+  "as_of": "2026-11-05",
+  "ownership_source": "Owner's gear spreadsheet gear_spend_August_2026.xlsx and the Camera Stuff project manifest (camera_project_knowledge.md), Nov 5, 2026",
+  "bodies": [
+    {"id": "z8", "order": 1, "role": "Primary / serious use"},
+    {"id": "z5ii", "order": 2, "role": "Second body for multi-body shoots"},
+    {"id": "z50ii", "order": 3, "role": "Travel / everyday (DX)"}
+  ],
+  "accessories": [
+    {"id": "ftz-ii", "role": "F-mount adapter"},
+    {"id": "z-tc-14x", "role": "Teleconverter, mostly on the 70-200"}
+  ],
+  "lens_groups": [
+    {"id": "z-fx-zoom", "label": "Z zooms (FX)", "lenses": ["z-14-30-f4-s", "z-24-120-f4-s", "z-70-200-f28-vr-s", "z-180-600-vr"]},
+    {"id": "z-fx-prime", "label": "Z primes (FX)", "lenses": ["z-26-f28", "z-28-f28-se", "z-40-f2", "z-50-f18-s", "z-mc-105-f28-vr-s"]},
+    {"id": "z-dx", "label": "Z DX", "lenses": ["z-dx-12-28-pz-vr", "z-dx-16-50-vr", "z-dx-18-140-vr", "z-dx-50-250-vr", "sigma-30-f14-dc-dn", "sigma-56-f14-dc-dn"]},
+    {"id": "manual", "label": "Manual & character", "lenses": ["thypoch-simera-28-f14", "laowa-65-f28-2x-macro", "zeiss-milvus-35-f2-zf2", "voigtlander-58-f14-sl2", "tokina-100-f28-macro"]},
+    {"id": "f-af", "label": "F lenses on FTZ II", "lenses": ["f-af-micro-60-f28d", "f-af-s-85-f14g", "sigma-135-f18-art", "f-af-dc-105-f2d", "f-af-50-f18d"]}
+  ],
+  "assumptions": [
+    "Spreadsheet lists 'Nikon Z 105mm lens'; treated as NIKKOR Z MC 105mm f/2.8 VR S (to confirm).",
+    "Z 40mm f/2 treated as the standard (non-SE) version.",
+    "AF Micro-NIKKOR 60mm f/2.8D confirmed owned by Bhanu on Nov 5, 2026 (manifest update pending)."
+  ],
+  "out_of_scope_v1": ["Nikon D750", "AF-S 28-300mm VR", "AF-S 17-35mm f/2.8D", "AF 70-300mm", "Nikon N80", "lighting", "supports"]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "z5ii",
+  "name": "Nikon Z5II",
+  "format": "FX",
+  "sensor": {
+    "effective_mp": 24.5,
+    "width_px": 6048,
+    "height_px": 4032,
+    "width_mm": 35.9,
+    "height_mm": 23.9,
+    "pixel_pitch_um": 5.94,
+    "type": "BSI CMOS (not stacked)",
+    "olpf": true,
+    "readout_ms": null,
+    "readout_notes": "No measured stills electronic-shutter readout was found. DPReview says readout is faster than the original Z5's but still slow enough that the e-shutter is best avoided except for silent shooting or the JPEG-only bursts, which use a faster 12-bit readout. Photography Life expects it to be about 1/20 s, like the Zf; that is an estimate, not a measurement. Video readout (DPReview): 4K 24/25/30p full width 22.2 ms (17.8 ms with e-VR crop). 4K 50/60p (1.52× crop) 14.6 ms. N-RAW 4K30 22.2 ms at 1.00×, 11.6 ms at 1.52× crop."
+  },
+  "iso": {
+    "base": 100,
+    "native_range": "100–64000",
+    "extended": "Hi 0.3–Hi 1.7 (up to ISO 204800 equivalent). No Lo setting is listed for stills.",
+    "dual_gain_notes": null,
+    "ptp_notes": "PhotonsToPhotos published Z5II data (Nikon Rumors, 2025-05-07), but the chart is JavaScript-rendered and could not be read here. The dual-gain ISO is unverified."
+  },
+  "ibis": {
+    "cipa_stops": 7.5,
+    "synchro_vr_stops": null,
+    "focus_point_vr": true,
+    "notes": "5-axis sensor-shift VR: 7.5 stops at the center and 6.0 stops at the periphery (CIPA 2024, Z 24-120mm f/4 S at telephoto, NORMAL). Focus-point VR (menu label 'Link VR to focus point') centers the correction on the active AF point. It works only in photo mode, only with NIKKOR Z lenses that have no VR, and not when multiple focus points are displayed. Nikon sources fetched here do not mention Synchro VR for the Z5II, so the field is null. Electronic VR for video."
+  },
+  "shutter": {
+    "mechanical": true,
+    "efcs": true,
+    "electronic_fastest": "1/8000 (Nikon lists a single 1/8000–30 s range. A separate electronic-shutter top speed is not stated.)",
+    "flash_sync": "1/200 s or slower. Auto FP high-speed sync up to 1/8000 s. Flash support with the fully electronic shutter was not confirmed.",
+    "slowest": "30 s standard. 900 s in M with extended shutter speeds. Bulb and Time also available.",
+    "notes": "Vertical-travel focal-plane mechanical shutter, electronic front-curtain, and electronic shutter (Custom setting d6). With the slow e-shutter readout, use mechanical or EFCS for anything that moves. Pixel shift always uses the electronic shutter."
+  },
+  "drive": {
+    "max_fps_raw": "About 11 fps RAW with the mechanical shutter (DPReview). Nikon's C-H (extended) rates are 14 fps (mechanical) and 15 fps (silent). Nikon's footnote limits the high rates to non-RAW image quality. DPReview's press-release notes say 14 fps mechanical is JPEG only.",
+    "pre_release_capture": "Yes. C15 and C30 (High-Speed Frame Capture+), JPEG only. Buffers up to 1 s before the full press. Options in Custom setting d3.",
+    "notes": "C-L 1–7 fps. C-H 7.8 fps (mechanical), 9.4 fps (EFCS), 10 fps (silent). 3D-tracking holds at 14 fps."
+  },
+  "af": {
+    "subject_detection": ["People (faces, eyes, heads, upper bodies)", "Dogs", "Cats", "Birds (bird detection mode)", "Cars", "Motorcycles", "Bicycles", "Airplanes", "Trains"],
+    "low_light_ev": "−10 to +19 EV (f/1.2 lens, ISO 100, 20 °C, AF-S center point). Photography Life standardizes this to −8.5 EV at f/2.",
+    "notes": "273 points. Nikon says AF takes about one-third the time of the original Z5. AF-A is available. AF/MF subject detection options and an MF subject detection area are in the menus."
+  },
+  "ftz_ii_behavior": "AF-S, AF-P and AF-I lenses: full AF with electronic rangefinder. Screw-drive AF and AF-D lenses: MF only, with electronic rangefinder. AI-P and non-CPU (AI/AI-S) lenses: MF, modes A and M only. Non-CPU lenses need Non-CPU lens data. Non-VR F lenses get 3-axis IBIS (yaw, pitch, roll). VR F lenses combine lens VR with body roll correction. No Synchro VR. Focus-point VR needs NIKKOR Z lenses, so it is not available on F lenses. Focus shift shooting works with AF-S and AF-P lenses, but auto reset is disabled. Z teleconverters cannot be used on the FTZ II. See accessories/ftz-ii.json.",
+  "dx_crop": {
+    "mp": 10.6,
+    "notes": "DX image area L is 3984 × 2656 px, about 10.6 MP (Nikon Asia spec). Only useful for a quick framing crop."
+  },
+  "special_features": [
+    {"name": "Pixel shift", "available": true, "firmware": "launch", "notes": "About 96 MP from 16 or 32 shots (4 and 8 shots keep 24 MP). Electronic shutter, RAW only, tripod and static subject, merged in NX Studio (DPReview, J.M. Peltier)."},
+    {"name": "Focus shift shooting", "available": true, "firmware": "launch", "notes": "Photo shooting menu (Z5II manual TOC; Photography Life)."},
+    {"name": "Auto capture", "available": false, "firmware": null, "notes": "Not in the Z5II Reference Guide TOC."},
+    {"name": "Bird detection", "available": true, "firmware": "launch", "notes": "Nikon press material: bird detection mode for birds in motion and in flight."},
+    {"name": "Starlight View", "available": true, "firmware": "launch", "notes": "Custom setting d11 (photo Lv). Warm color display mode is also available."},
+    {"name": "High-frequency flicker reduction", "available": true, "firmware": "launch", "notes": "In the Photo and Video menus (Z5II manual TOC)."},
+    {"name": "MF subject detection", "available": true, "firmware": "launch", "notes": "MF Subject Detection Area and AF/MF Subject Detection Options are in the TOC. Whether chipped F lenses work is not confirmed by Nikon. J.M. Peltier reports MF detection working with CPU and non-CPU F lenses on the Zf/Z6III (likely, unverified on the Z5II)."},
+    {"name": "Focus-point VR", "available": true, "firmware": "launch", "notes": "Non-VR NIKKOR Z lenses only, photo mode only."},
+    {"name": "Imaging Recipes (formerly Cloud Picture Control)", "available": true, "firmware": "launch; renamed 'Imaging Recipe' in 1.20", "notes": "Downloaded through Nikon Imaging Cloud and applied with the dedicated Picture Control button. 31 built-in presets."},
+    {"name": "Flexible Color Picture Control", "available": true, "firmware": "launch", "notes": "Created in NX Studio and imported as a Custom Picture Control."},
+    {"name": "Hi-Res Zoom", "available": true, "firmware": "launch", "notes": "Video only: up to 2× at 1080p 24/25/30, FX area."},
+    {"name": "Focus limiter", "available": false, "firmware": null, "notes": "Not in the Z5II manual TOC."}
+  ],
+  "video_key": {
+    "internal_raw": "N-RAW 12-bit to SD: 4032 × 2268 (FX) at 30/25/24p. V90 cards recommended.",
+    "log": "N-Log (ISO Lo 0.3–2.0 and 800–51200 in N-Log) and HLG.",
+    "notes": "4K/30 full width. 4K/60 with a 1.5× crop. 1080p to 120p. 10-bit H.265. Electronic VR is not available with N-RAW."
+  },
+  "firmware": {
+    "current": "1.20",
+    "date": "2026-08-18",
+    "notable_changes": "1.20 (2026-08-18): 'Cloud Picture Control' renamed 'Imaging Recipe'. Auto ISO minimum shutter speed range updated. 'On saving user settings' option for Save focus position. Automatic monitor display switch. Wi-Fi Always On. FTP inactive timeout. Aperture no longer restricted in S mode video. Bug fixes. 1.11 (May 2026): changes aperture behavior when the standby timer expires. 1.10 (Dec 2025): HDMI output no longer interrupted when recording ends. 1.02 (Nov 2025): sensor cleaning default set to 'Clean at shutdown'. 1.01 (Jun 2025): text and naming changes."
+  },
+  "battery_media": "EN-EL15c (EN-EL15b/a also fit, with fewer shots). CIPA 330 shots (LCD) per DPReview. MB-N14 grip available. Two SD UHS-II slots.",
+  "field_tips": [
+    "Use the mechanical shutter or EFCS for anything that moves. The non-stacked sensor's electronic shutter reads out slowly and will skew motion.",
+    "Pre-release capture (C15/C30) only records JPEG. Switch image quality to JPEG before a bird-takeoff session, or stay on 11 fps RAW mechanical.",
+    "Focus-point VR works only with non-VR NIKKOR Z lenses (for example the 26, 28, 40 and 50 primes), in photo mode, with a single focus point. It does nothing for VR lenses or F glass.",
+    "For about 96 MP pixel shift, use 16 or 32 shots on a tripod with a still subject, then merge in NX Studio. It always uses the electronic shutter, so watch for flicker under artificial light.",
+    "Under LED or venue lighting, enable High-Frequency Flicker Reduction, especially with the electronic shutter.",
+    "Since FW 1.02 the default is 'Clean at shutdown'. Leave it on, because the sensor is exposed during lens changes."
+  ],
+  "sources": [
+    {"id": "nikon-asia-spec", "name": "Nikon Asia Z5II body specifications", "url": "https://www.nikon-asia.com/z5ii-body", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "24.5 MP effective. 35.9 × 23.9 mm. FX L 6048 × 4032, DX L 3984 × 2656. Mechanical, EFCS and electronic shutters. 1/8000–30 s, 900 s extended. Flash sync 1/200. C-L 1–7, C-H 7.8/9.4/10, C-H extended 14/15, C15/C30 with pre-release. ISO 100–51200 (highest standard 64000), Hi to 204800. AF −10 to +19 EV. Pixel shift. 2× SD UHS-II. N-RAW 12-bit."},
+    {"id": "dpreview-review", "name": "DPReview Nikon Z5II in-depth review", "url": "https://www.dpreview.com/reviews/2735390920", "kind": "review", "tested_on": "Nikon Z5II", "date": "2025", "findings": "24 MP BSI. E-shutter best avoided except silent or JPEG bursts (faster 12-bit readout). Video readout 22.2/17.8/14.6/11.6 ms. 11 fps RAW mechanical. Pre-release JPEG only. IBIS 7.5/6.0 EV. Focus-point VR. Pixel shift about 96 MP. CIPA 330 shots."},
+    {"id": "dpreview-specs", "name": "DPReview Z5II specifications", "url": "https://www.dpreview.com/reviews/2735390920/2", "kind": "review", "tested_on": null, "date": "2025", "findings": "ISO 100–64000, Hi 1.7 = 204800. 1/8000 s max. C15/C30 JPEG only with pre-release up to 1 s. 11 fps RAW mechanical. 700 g."},
+    {"id": "dpreview-pr", "name": "DPReview Z5II press release page", "url": "https://www.dpreview.com/reviews/2735390920/3", "kind": "manufacturer", "tested_on": null, "date": "2025-04-03", "findings": "Nine subject types listed. Bird detection. Starlight View. Hi-Res Zoom 2× at 1080p. Imaging Recipes. Flexible Color. 14 fps mechanical JPEG only."},
+    {"id": "nr-announce", "name": "Nikon Rumors: Z5II officially announced", "url": "https://nikonrumors.com/?p=204704", "kind": "manufacturer", "tested_on": null, "date": "2025-04-03", "findings": "BSI CMOS. VR 7.5 stops center and 6.0 periphery (CIPA 2024). Focus-point VR conditions. −10 EV AF. Pre-release capture JPEG only. Pixel shift about 96 MP."},
+    {"id": "nr-compare", "name": "Nikon Rumors: Z5 vs Z5II specifications comparison", "url": "https://nikonrumors.com/2025/04/03/nikon-z5-vs-nikon-z5ii-specifications-comparison.aspx", "kind": "manufacturer", "tested_on": null, "date": "2025-04-03", "findings": "Nikon spec text, including the footnote that the high-speed rates apply to non-NEF image quality and auto FP sync to 1/8000."},
+    {"id": "pl-compare", "name": "Photography Life: Nikon Z5 II vs Zf vs Z6 III", "url": "https://photographylife.com/nikon-z5-ii-vs-zf-vs-z6-iii", "kind": "review", "tested_on": null, "date": "2025", "findings": "5.94 µm pitch. Low-pass filter present. Readout not yet known (expected about 1/20 s like the Zf). Flash sync 1/200. Pixel shift and focus shift present. −8.5 EV at f/2. Extended ISO 50–204800 (conflicts with Nikon, which lists no Lo)."},
+    {"id": "z5ii-manual-toc", "name": "Nikon Z5II Online Reference Guide (TOC)", "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_pixel_shift_shooting_162.html", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "Lists Pixel shift, Focus shift, High-frequency flicker reduction, d11 Starlight view, d3 Pre-Release Capture options, MF subject detection area, Hi-Res Zoom, Link VR to focus point, d6 Shutter type. No Auto capture, no focus limiter, no Lo ISO."},
+    {"id": "nikon-in", "name": "Nikon India Z5II page", "url": "https://www.nikon.co.in/mirrorless-z5ii", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "7.5/6.0 stops (CIPA 2024). Pre-release 1 s. Nine subjects. Pixel shift. Starlight View. Imaging Recipes via Nikon Imaging Cloud. Flexible Color."},
+    {"id": "wikipedia", "name": "Wikipedia: Nikon Z5II", "url": "https://en.wikipedia.org/wiki/Nikon_Z5II", "kind": "review", "tested_on": null, "date": "accessed 2026-11-05", "findings": "BSI-CMOS 35.9 × 23.9 mm, 6048 × 4032. Firmware history 1.01 (2025-06-24), 1.02 (2025-11-05, Clean at shutdown default), 1.10 (2025-12-16)."},
+    {"id": "nikon-dc-2026", "name": "Nikon Download Center: 2026 updates", "url": "https://downloadcenter.nikonimglib.com/en/update/index/2026.html", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "Z5II firmware 1.20 dated 2026-08-18."},
+    {"id": "ir-fw120", "name": "Imaging Resource: Nikon releases major firmware update for the Z5 II", "url": "https://www.imaging-resource.com/news/nikon-releases-major-firmware-update-for-the-z5-ii/", "kind": "review", "tested_on": null, "date": "2026-08-19", "findings": "1.20 changes: Auto ISO min shutter range, Imaging Recipe rename, Save focus position option, monitor auto switch, Wi-Fi Always On, FTP timeout, aperture freed in S mode video."},
+    {"id": "nr-fw111", "name": "Nikon Rumors: Z5II firmware 1.11", "url": "https://nikonrumors.com/2026/05/12/nikon-z5ii-firmware-update-version-1-11-released.aspx/amp/", "kind": "review", "tested_on": null, "date": "2026-05-12", "findings": "Changes how aperture is adjusted when the standby timer expires."},
+    {"id": "pronews-110", "name": "PRONEWS: Z9 5.30 and Z5II 1.10", "url": "https://en.pronews.com/news/20251217132713636.html", "kind": "review", "tested_on": null, "date": "2025-12-17", "findings": "Z5II 1.10: HDMI output no longer interrupted when recording ends."},
+    {"id": "peltier-pixelshift", "name": "J.M. Peltier: Nikon pixel shift shooting", "url": "https://www.jmpeltier.com/nikon-pixel-shift-shooting/", "kind": "review", "tested_on": "24 MP Z bodies and Z8", "date": "2026-09-14", "findings": "16 and 32 shots give about 4× resolution (24 MP to 96 MP). Electronic shutter, RAW only."},
+    {"id": "peltier-mfsd", "name": "J.M. Peltier: Manual focus subject detection on Nikon Z", "url": "https://www.jmpeltier.com/manual-focus-subject-detection-nikon-z/", "kind": "review", "tested_on": "Nikon Zf / Z6III", "date": "2024-09-16 (updated 2026-07-11)", "findings": "MF subject detection works with CPU and non-CPU F lenses. ERF is not available on non-CPU lenses."},
+    {"id": "cined-recipes", "name": "CineD: Nikon and RED Imaging Recipes", "url": "https://www.cined.com/nikon-and-red-release-nine-free-image-recipes-for-select-z-mount-cameras/", "kind": "review", "tested_on": null, "date": "2025-12-10", "findings": "Z5II is a compatible camera."},
+    {"id": "ftz-guide", "name": "Nikon: Using F-mount NIKKOR lenses with the FTZ II/FTZ (PDF)", "url": "https://download.nikonimglib.com/archive6/amgQQ00igi0U06sJjMP25JWC2H05/FTZ_CompatibleFmount_(En)11.pdf", "kind": "manufacturer", "tested_on": null, "date": null, "findings": "F-lens compatibility classes. Focus shift works with AF-S and AF-P only."}
+  ],
+  "research_notes": "Pixel pitch = 35.9 / 6048 × 1000 = 5.936, rounded to 5.94 µm (matches Photography Life's 5.94). The stills e-shutter readout is unmeasured: no Kasson, Horshack or PtP figure was found, so the field is null. The ISO range conflicts: Nikon Asia lists 100–51200 in one row and 'highest standard 64000' in another. DPReview and the press release say 100–64000, which is used here. Photography Life lists extended ISO 50, but Nikon lists no Lo for stills. The RAW frame rate is ambiguous: Nikon's footnote and DPReview indicate RAW tops out at about 11 fps mechanical; whether C-H extended at 14/15 fps accepts RAW is unclear. Synchro VR is not mentioned in any Z5II source fetched, so the field is null. The dual-gain ISO is unknown because the PtP chart could not be read. Whether the mechanical shutter closes at power-off is not stated (the TOC has no sensor-shield item). The web search budget ran out before these gaps could be closed."
+}

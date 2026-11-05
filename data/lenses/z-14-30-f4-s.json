@@ -1,0 +1,227 @@
+{
+  "id": "z-14-30-f4-s",
+  "name": "NIKKOR Z 14-30mm f/4 S",
+  "short": "14-30 f/4 S",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "zoom",
+  "focal_mm": [
+    14,
+    30
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 14,
+      "f": 4.0
+    },
+    {
+      "focal_mm": 30,
+      "f": 4.0
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 7,
+  "rounded_blades": true,
+  "weight_g": 485,
+  "filter_mm": 82,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "STM (stepping motor), focus-by-wire",
+    "focus_throw_deg": null,
+    "notes": "Retractable design: the lens must be unlocked (twist the zoom ring out of the retracted position) before the camera will shoot (Phillip Reeve: cannot shoot while locked). Front element does not rotate during zoom or focus (Phillip Reeve), so polarizers and graduated filters stay put. Dustin Abbott (Z8) calls focus breathing very low even at 30mm and the lens near-parfocal when zooming. Lenstip: AF quiet, fast and accurate; stopping from f/4 to f/5.6 shifts the depth of field slightly backward, visible only at 30mm and short distances."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical VR (Nikon spec lists none). Body IBIS only on Z8 and Z5 II. The Z50 II has no IBIS (Digital Camera World), but at 14–30mm (21–45mm equivalent) handholding is rarely the limit."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 14,
+        "value": 0.28
+      },
+      {
+        "focal_mm": 30,
+        "value": 0.28
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 30,
+        "value": 0.16
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "Nikon: MFD 0.28 m (single figure for the whole range), max reproduction 0.16x. Photography Life: 1:6.3 at 30mm, filling the frame horizontally with an object about 22.4 cm wide. At 0.16x the effective-aperture loss is negligible. Working distance not published; the lens is 85 mm long from the flange (Nikon), so at 0.28 m from the focal plane the front is roughly 0.18 m from the subject (rough arithmetic: 280 − 16 flange back − 85 barrel; not measured, so the field is null)."
+  },
+  "quick": {
+    "headline": "Excellent center from f/4; on the Z8 use f/5.6–f/8 for edge-to-edge at 14–24mm and f/8–f/11 at 30mm, where the corners are weakest. Strong raw vignetting, low coma.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Center very good to excellent at f/4 from 14–24mm (Lenstip Z7; Abbott Z8; Phillip Reeve Z7 II). FX corners need stopping down: Lenstip says the 14mm FF edge needs closing down for sensible quality; Photography Life says 14mm corners are weakest wide open. 30mm is the weak setting: Lenstip's center at f/4 is only at the 42–44 lpmm decency level and the APS-C edge is below it even at f/5.6.",
+    "by_focal": [
+      {
+        "focal_mm": 14,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Lenstip (Z7): center very good at f/4, over 60 lpmm at f/5.6; FF edge almost 50 lpmm at f/5.6, sensible f/5.6–f/11. Abbott (Z8): f/4 corners good for a UWA, f/5.6 excellent across the frame. Photography Life: 14mm corners never fully reach 'good', best f/5.6–f/8. Reeve: center 'excellent to phenomenal' f/4–f/5.6."
+      },
+      {
+        "focal_mm": 20,
+        "center_peak": "f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Lenstip 22mm (Z7): center over 50 lpmm at f/4, near 60 stopped down; APS-C edge blurry areas at f/4 that f/4.5 removes; FF edge slightly weaker than 14mm, sensible f/5.6–f/11. Abbott: 20mm center slightly softer than 16mm but midframe and corners better; 16mm has a midframe dip at f/4 fixed by f/5.6 (wavy field curvature per Photography Life)."
+      },
+      {
+        "focal_mm": 24,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Abbott (Z8): center and corners excellent at f/4 but midframe dips; f/5.6 evens it out. Photography Life ranks its 24mm corners above the Z 14-24 f/2.8 S."
+      },
+      {
+        "focal_mm": 30,
+        "center_peak": "f/5.6–f/8",
+        "corners_peak": "f/8–f/11",
+        "wide_open_note": "Weakest focal length. Lenstip (Z7): center at f/4 only at the 42–44 lpmm decency level, near 60 stopped down; APS-C edge below decency at f/4 and f/5.6; sharp across the frame by f/11. Phillip Reeve (Z7 II): 30mm corners sharpest at f/11. Abbott: low contrast at f/4, restored at f/5.6. Lenstip astigmatism 24.5% at 30mm."
+      }
+    ],
+    "close_up_best": "f/5.6–f/8",
+    "close_up_note": "Phillip Reeve (Z7 II) found close-range sharpness strong at all focal lengths from f/4 to f/16 (floating elements), with only f/22 to avoid. Abbott (Z8): sharp in the plane of focus at MFD, but that plane is not perfectly flat. Lenstip: focus shift from f/4 to f/5.6 at 30mm at short distances. No per-aperture close-focus numbers exist, so f/5.6–f/8 is an inference: enough to cover the curved focus plane and focus shift without diffraction cost. Medium-low confidence.",
+    "diffraction_note": "Abbott (Z8): softening very slight from f/11, obvious at f/22 ('huge difference between F11 and F22'). Photography Life: diffraction noticeable especially at f/16. Phillip Reeve (Z7 II): f/16 still very good, f/22 the weakest. On the Z8 treat f/11 as the practical limit except at 30mm, where corners need it.",
+    "avoid": [
+      "Avoid f/16–f/22 for detail on the Z8 (except for sunstars).",
+      "Don't judge 30mm at f/4: it is the soft corner of the zoom; stop to f/8–f/11 when corners matter.",
+      "Don't stack thick or multiple filters at 14mm (Photography Life: added vignetting; slim 82 mm is fine).",
+      "Don't trust uncorrected raw at 14mm: ~7–8% barrel and ~3.5 EV corner falloff; always apply the profile."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Lenstip (Z7, MTF50 with some values) and Photography Life (Imatest, text summary) agree on corner peaks at f/5.6–f/8 for 14–24mm, with OpticalLimits (45MP) agreeing on a strong center and slight drop at f/4. The 30mm f/8–f/11 corner verdict rests on Lenstip plus Phillip Reeve (visual), so that row is medium."
+  },
+  "character": {
+    "bokeh": "Not a bokeh lens. Lenstip: imperfect out-of-focus circles with slight onion rings from the four aspherical elements; mechanical vignetting at 30mm only at f/4; spherical aberration not fully corrected at 30mm (bright/dark-centered circles). 7 rounded blades keep highlights round (Abbott).",
+    "flare_sunstar": "Flare resistance very good (Lenstip: good against bright light; Abbott: 'unfazed' in a barn test where other lenses flared; Reeve: handles the sun in frame well). Photography Life: some green/magenta dots at 14mm with sun near the frame, fainter blobs at 30mm, red-dot flare at narrow apertures. Sunstars: 14 points (7 blades). Reeve: attractive at 14mm from f/11; 20mm needs f/16–f/22; 30mm needs f/22. Photography Life: present at f/16 but not well defined.",
+    "ca": "Lateral CA is the main aberration: Lenstip rates 14mm poor and high near maximum aperture, medium mid-zoom, low at 30mm. OpticalLimits: over 3 px average at the borders at 14mm, well corrected at 30mm. Photography Life: modest, under ~2 px, greatest at 14mm f/4. Auto-corrected by the profile. Longitudinal CA negligible (Lenstip, Reeve).",
+    "distortion": "Severe uncorrected: Lenstip −7.04% at 14mm, +1.22% at 20mm, +3.0% at 24mm, +3.72% at 30mm (RAW FF); Photography Life nearly 8% barrel at 14mm; OpticalLimits about 6%. Nikon designed it to be 14mm after correction; correction is embedded and cannot be removed in Nikon/Adobe software (Photography Life). Corrected JPEG residual ≤0.22% (Lenstip).",
+    "vignetting": "Heavy at 14mm on FX. Lenstip RAW (Z7): 14mm −3.48 EV at f/4, −2.74 at f/5.6, −2.31 at f/8, −2.01 at f/16; 22mm −1.48 EV at f/4; 30mm −1.39 at f/4, −0.88 from f/8. JPEG with correction off: 14mm −2.06 EV at f/4. DX crop: only about −0.4 to −0.6 EV. OpticalLimits RAW over 4.5 EV at 14mm f/4. Abbott needed +100 correction at 14mm; Nikon's profile undercorrects. Matters for night-sky stacking: shoot flats or apply the profile before stacking.",
+    "coma_astro": "Low coma. Lenstip: no serious coma; slight elongation at 14mm f/4 in FF corners, slight enlargement of star images at 22–30mm. Photography Life: very good, corner points stay sharp at 14mm f/4. Phillip Reeve: negligible, fine for occasional astro. Against it: f/4 is 1–2 stops slower than astro primes, astigmatism is high (Lenstip average 19.3%, 24.5% at 30mm), and raw vignetting is strong. Astropix rates it 2/5 for astro (slight coma, weak corners, large vignetting).",
+    "focus_breathing": "Very low, even at 30mm; near-parfocal (Dustin Abbott, Z8, not measured).",
+    "other": "Copy variation: Photography Life found one of two lab samples (four copies in total) significantly decentered with poor 14mm corners at f/8; check your copy. Takes standard 82 mm filters, unusual for a 14mm. Retracted for transport and locked; cannot shoot until extended."
+  },
+  "field_tips": [
+    "Aurora and meteors: shoot 14mm at f/4 (coma is low, so wide open is usable); stars elongate only slightly in the corners. Focus manually on a bright star with maximum magnification; the lens is focus-by-wire, so re-check focus after power-cycling.",
+    "Expect about 3.5 EV raw corner falloff at 14mm f/4: apply the Nikon profile (or shoot flat frames) before stacking or stitching night skies and meteor composites.",
+    "Landscape at 14–24mm on the Z8: f/5.6–f/8. At 30mm go to f/8–f/11 if corners matter; f/16+ softens visibly.",
+    "Remember to un-retract the zoom before a timed or remote sequence; a locked lens blocks shooting.",
+    "For a 14-point sunstar use f/11–f/16 at 14mm; at 30mm it needs f/22, which costs detail on the Z8."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "Most measured data are 45MP (Lenstip Z7, OpticalLimits 45MP, Abbott Z8, Reeve Z7 II), so verdicts apply directly. f/11 is the practical limit for detail; 30mm corners are the exception. No Synchro VR (no lens VR)."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: corner softness at f/4 is less visible per pixel and f/11–f/16 costs less (inference from pixel pitch). Good astro pairing because the larger pixels tolerate f/4 ISO pushes; the vignetting and coma notes still apply."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX crop = about 21–45mm equivalent. Lenstip DX vignetting is only about −0.4 to −0.6 EV, and the APS-C edge is usable wide open at 14mm but weak at 30mm f/4–f/5.6 (stop to f/8). No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z 14-30 mm f/4 S (resolution, CA, distortion, coma, vignetting, summary chapters)",
+      "url": "https://lenstip.com/599.4-Lens_review-Nikon_Nikkor_Z_14-30_mm_f_4_S_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), RAW MTF50",
+      "date": "2019 or later (summary mentions a 2019 Iceland trip); exact date not captured",
+      "findings": "Decency level 42–44 lpmm; f/4 zooms at f/8 reach about 65 lpmm on Z7. 14mm: center very good at f/4, over 60 lpmm at f/5.6; APS-C edge good from f/4; FF edge needs stopping down, almost 50 lpmm at f/5.6, sensible f/5.6–f/11. 22mm: center over 50 at f/4, near 60 stopped down; APS-C edge blurry areas at f/4 removed at f/4.5; FF edge slightly weaker than 14mm, sensible f/5.6–f/11. 30mm: weakest — center borderline decency at f/4, APS-C edge below decency at f/4 and f/5.6, sharp across frame by f/11. Coma (599.7): no serious problems, slight elongation at 14mm f/4 corners; astigmatism 19.3% average, 24.5% at 30mm. Vignetting (599.8) RAW FF 14mm: −3.48/−2.74/−2.31/−2.13/−2.01 EV at f/4/5.6/8/11/16; 30mm −1.39 EV at f/4. DX JPEG about −0.3 to −0.57 EV. Distortion (599.6) RAW FF: −7.04% (14mm), +1.22% (20), +3.00% (24), +3.72% (30). CA (599.5): lateral poor at 14mm, high near max aperture; longitudinal negligible; slight focus shift f/4→f/5.6 at 30mm close range. Summary (599.11): pros include little serious coma, good against bright light; cons include RAW distortion, strong FF vignetting, weaker 30mm edges, high astigmatism, high lateral CA at 14mm."
+    },
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Nikkor Z 14-30mm f/4 S review",
+      "url": "https://opticallimits.com/nikon/nikon-z/nikkor-z-14-30mm-f-4-s-review/",
+      "kind": "measured",
+      "tested_on": "45MP Nikon Z body (model not named in fetched text)",
+      "date": null,
+      "findings": "Center mostly excellent across the range up to f/8, near-center very good, borders very good at 14mm, corners fine but extreme edge soft; slight drop at f/4. RAW distortion ~6% barrel at 14mm, ~2.7% pincushion at 30mm; autocorrection mandatory and 'perfect'. RAW vignetting over 4.5 EV at 14mm f/4, still heavy at f/11; corrected just under 2 EV at 14mm f/4. Lateral CA over 3 px at 14mm borders, well corrected at 30mm. MFD 0.28 m, 0.16x. Scores: optics 6, build 7, value 7. Numbers only in chart images."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 14-30mm f/4 S review, optical performance page",
+      "url": "https://photographylife.com/reviews/nikon-z-14-30mm-f4-s/2",
+      "kind": "measured",
+      "tested_on": "Imatest lab; body not named in fetched text",
+      "date": null,
+      "findings": "Corners weakest at 14mm wide open and never fully 'good' at 14mm; better by 16mm; slight drop toward 30mm. Best corner apertures f/5.6–f/8. Diffraction especially at f/16. Slight wavy field curvature (midframe can trail corners). One of two lab samples (four copies total) significantly decentered. Coma very good, corner points sharp at 14mm f/4. Uncorrected vignetting about 2.5 stops at 14mm f/4; slim 82 mm filter adds little, avoid thick/stacked filters. Nearly 8% barrel at 14mm, profile not removable; Nikon designed it to be 14mm after correction. Lateral CA modest, under ~2 px, worst 14mm f/4. Flare well resisted; sunstars at f/16 not well defined. Max magnification 1:6.3 at 30mm. Comparison page (/3) ranks it close to the 14-24 f/2.8G at 14mm and sharper in the corners than the Z 14-24 f/2.8 S at 24mm."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "Phillip Reeve blog: REVIEW Nikon Z Nikkor 14-30mm F/4 S",
+      "url": "https://phillipreeve.net/blog/review-nikon-z-nikkor-14-30mm-f-4-s/",
+      "kind": "review",
+      "tested_on": "Nikon Z7 II (45.7MP); samples on Zf",
+      "date": null,
+      "findings": "14mm best: center excellent to phenomenal at f/4–f/5.6, corners good to very good. 30mm corners sharpest at f/11, weakest at f/22 (still good). Overall f/5.6–f/8 optimal; f/16 very good; f/22 weakest (diffraction). Close-up strong at all focal lengths (floating elements); avoid f/22. Negligible coma; OK for occasional astro. Sunstars: 14mm attractive from f/11; 20mm at f/16–f/22; 30mm needs f/22. No LoCA; negligible lateral CA at 14–16mm (as processed). Front element doesn't rotate; 82 mm filters; cannot shoot while locked."
+    },
+    {
+      "id": "dustinabbott",
+      "name": "Dustin Abbott: Nikkor Z 14-30mm F4 S review (2026)",
+      "url": "https://dustinabbott.net/2026/04/nikkor-z-14-30mm-f4-s-review/",
+      "kind": "review",
+      "tested_on": "Nikon Z8 (45.7MP); Z6III for AF",
+      "date": "2026-04",
+      "findings": "14mm f/4: center extremely sharp, midframe weaker, corners good; f/5.6 excellent across the frame. 16mm midframe dip at f/4. 20mm better midframe/corners than 16mm. 24mm center and corners excellent at f/4, midframe dips, f/5.6 improves. 30mm low contrast at f/4, restored at f/5.6. Diffraction very slight around f/11, obvious at f/22. MFD 28 cm, 0.16x; focus plane at MFD not perfectly flat. Flare very good. Heavy vignetting at 14mm (+100 correction), Nikon profile undercorrects. Focus breathing very low; near-parfocal. Video: https://dustinabbott.net/openvideo/v/nikkor-z-14-30mm-f4-s-review-2026-still-the-best-nikon-uwa-zoom"
+    },
+    {
+      "id": "astropix",
+      "name": "Astropix (Jerry Lodriguss site): Nikon Z lenses for astrophotography",
+      "url": "https://astropix.com/html/equipment/ultimate/Nikon-Z-Lenses-For-Astrophotography.html",
+      "kind": "review",
+      "tested_on": "Not stated",
+      "date": null,
+      "findings": "Z 14-30 f/4 S: slight coma, good center sharpness, not great in corners, large vignetting; notes high astigmatism and high CA wide open. Astro rating 2/5 ('Not That Great'). Appears to be a compilation of others' test results rather than an own test."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon Imaging: NIKKOR Z 14-30mm f/4 S product/spec page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_14-30mmf4s/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "f/4–f/22; MFD 0.28 m; 0.16x; about 485 g; 89 × 85 mm; 82 mm filter; 7 blades, rounded; 14 elements/12 groups (4 ED, 4 aspherical), Nano Crystal Coat, fluorine front; STM. Retractable mechanism. Claimed first FX 14mm-start ultra-wide zoom that accepts screw-in filters. No VR listed."
+    },
+    {
+      "id": "nikon_tc14",
+      "name": "Nikon Singapore: NIKKOR Z Teleconverter TC-1.4x page",
+      "url": "https://www.nikon.com.sg/nikkor-z-teleconverter-tc-1-4x",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Compatible-lens list does not include the 14-30 f/4 S."
+    },
+    {
+      "id": "dcw_z50ii",
+      "name": "Digital Camera World: Nikon Z50 II vs Nikon Z50",
+      "url": "https://www.digitalcameraworld.com/buying-guides/nikon-z50-ii-vs-nikon-z50",
+      "kind": "review",
+      "tested_on": null,
+      "date": null,
+      "findings": "Z50 II has no IBIS; relies on VR lenses for stabilized stills."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://www.youtube.com/watch?v=i5m5NoW3-iw",
+    "access": "title-only",
+    "summary": "A Christopher Frost video exists: YouTube oEmbed confirms the title 'Nikon Z 14-30 f/4 S lens review with samples' by 'Christopher Frost'. No transcript or description text could be retrieved (YouTube watch pages fail to fetch). His verdict is unknown; nothing here is attributed to him."
+  },
+  "research_notes": "1) Sources mostly agree: strong center from f/4, corners best f/5.6–f/8 at 14–24mm, 30mm is the weak end. OpticalLimits is the most negative overall (optics score 6/10) mainly for raw distortion, vignetting and 14mm lateral CA, not for center resolution. 2) Astro: the lab reviewers (Lenstip, Photography Life, Reeve) all rate coma low; Astropix rates it 2/5 for astro, apparently weighing f/4 speed, vignetting and astigmatism. The record treats coma as low but notes those limitations. 3) Distortion figures differ by method (Lenstip −7.04%, Photography Life ~8%, OpticalLimits ~6%). 4) Lenstip numeric lpmm values were only partly stated in text; the rest are chart images. OpticalLimits and Photography Life MTF values are in chart images. 5) The Digital Picture review URL failed to fetch (client error). 6) Close-up best aperture is inference (no per-aperture close-range numbers). 7) Working distance is rough arithmetic, not measured. 8) Z5 II/Z50 II notes on diffraction are pixel-pitch inference. 9) The re-check-focus-after-power-cycle tip is a cautious practice for focus-by-wire lenses, not a sourced claim about these bodies."
+}

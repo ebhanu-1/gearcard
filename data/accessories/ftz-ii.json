@@ -1,0 +1,67 @@
+{
+  "id": "ftz-ii",
+  "name": "Nikon Mount Adapter FTZ II",
+  "kind": "adapter",
+  "short": "FTZ II",
+  "summary": "F-mount to Z-mount adapter with no optics and no AF motor. AF works only with lenses that have their own motor (AF-S, AF-P, AF-I). Screw-drive AF and AF-D lenses become manual focus with an electronic rangefinder. Same function as the FTZ, without the tripod foot.",
+  "effects": {
+    "aperture_loss_stops": 0,
+    "magnification_factor": 1.0,
+    "af_impact": "No AF motor in the adapter. AF-S, AF-P and AF-I lenses autofocus. Nikon warns AF may be slower and may fail on dark or low-contrast subjects in some combinations, and lists three DX lenses (18-55 VR, 18-55 VR II, 55-200 IF-ED) that may need repeated AF attempts.",
+    "notes": "Purely mechanical and electrical adapter with no glass, so no optical effect."
+  },
+  "compatibility_classes": [
+    {"class": "AF-S (Type G, E, D)", "af": "Yes", "mf_rangefinder": "Yes", "exposure_modes": "All", "metering": "All", "aperture": "Camera-controlled", "vr": "Lens VR works if present. Body IBIS combines with it (see stabilization)."},
+    {"class": "AF-P (Type G, E)", "af": "Yes", "mf_rangefinder": "Yes", "exposure_modes": "All", "metering": "All", "aperture": "Camera-controlled", "vr": "Lens VR works if present.", "notes": "Focus position may shift if the camera is turned off and on after focusing."},
+    {"class": "AF-I (Type D)", "af": "Yes", "mf_rangefinder": "Yes", "exposure_modes": "All", "metering": "All", "aperture": "Camera-controlled (lock the aperture ring at minimum)", "vr": "None in lens. Body IBIS on Z8 and Z5II."},
+    {"class": "E-type (electromagnetic diaphragm)", "af": "Yes if AF-S or AF-P", "mf_rangefinder": "Yes", "exposure_modes": "All", "metering": "All", "aperture": "Camera-controlled electronically", "vr": "As per lens"},
+    {"class": "G-type (no aperture ring)", "af": "Yes if AF-S or AF-P. No if screw-drive AF G.", "mf_rangefinder": "Yes", "exposure_modes": "All", "metering": "All", "aperture": "Camera-controlled", "vr": "As per lens"},
+    {"class": "AF Type G/D screw-drive (AF, AF-D, AF Micro, AF DC)", "af": "No (MF only)", "mf_rangefinder": "Yes (focus indicator)", "exposure_modes": "All", "metering": "All", "aperture": "Camera-controlled. Set the aperture ring to minimum aperture before mounting.", "vr": "No lens VR. Body IBIS 3-axis on Z8 and Z5II."},
+    {"class": "Other AF lenses (e.g. F3AF type)", "af": "No", "mf_rangefinder": "No", "exposure_modes": "A and M (per Nikon table; reading of a garbled table)", "metering": "Yes", "aperture": "-", "vr": "Body IBIS on Z8 and Z5II"},
+    {"class": "AI-P (CPU manual focus)", "af": "No", "mf_rangefinder": "No", "exposure_modes": "A and M (per Nikon table; reading of a garbled table)", "metering": "Yes", "aperture": "Aperture ring", "vr": "Body IBIS on Z8 and Z5II, using the focal length the CPU passes."},
+    {"class": "PC-E / PC 19mm f/4E", "af": "No", "mf_rangefinder": "No", "exposure_modes": "A and M", "metering": "Yes", "aperture": "Lens/camera per type", "vr": "Body IBIS"},
+    {"class": "PC Micro 85mm f/2.8D", "af": "No", "mf_rangefinder": "No", "exposure_modes": "M only", "metering": "Yes", "aperture": "Aperture ring", "vr": "Body IBIS"},
+    {"class": "Non-CPU (AI, AI-S, Series E)", "af": "No", "mf_rangefinder": "No", "exposure_modes": "A and M only", "metering": "Yes. Highlight-weighted falls back to center-weighted.", "aperture": "Aperture ring", "vr": "Body IBIS on Z8 and Z5II. Enter focal length and max aperture in Non-CPU lens data so IBIS and EXIF are correct."}
+  ],
+  "stabilization": {
+    "non_vr_f_lenses": "Z8 and Z5II: 3-axis in-body correction (yaw, pitch, roll), per Nikon's FTZ II product page as recorded in the existing lens record f-af-micro-60-f28d. Not re-fetched here. Z50II: none (no IBIS).",
+    "vr_f_lenses": "Lens VR handles pitch and yaw. Nikon's FTZ guide says in-camera VR works together with lens VR across pitch, yaw and roll, and the lens VR switch takes precedence.",
+    "synchro_vr": "Not supported with F lenses (Nikon FTZ guide).",
+    "focus_point_vr": "Z5II Focus-point VR needs non-VR NIKKOR Z lenses, so it is not available with F lenses."
+  },
+  "limitations": [
+    "Z TELECONVERTER TC-1.4x and TC-2.0x cannot be used with the FTZ or FTZ II.",
+    "F-mount AF-S and AF-I teleconverters work only with Nikon's listed lenses. AF may be slower or fail in low contrast.",
+    "Focus shift shooting works with AF-S and AF-P lenses only. Focus position auto reset is disabled and no peaking stack image is recorded.",
+    "Save/Recall focus position roles are disabled with F lenses.",
+    "The Auto Capture 'Distance' criterion (Z8) may not work well with F lenses.",
+    "Vignette control and Auto distortion control have no effect on PC-E, AI-P, PC Micro, non-CPU and older non-G/E/D AF lenses.",
+    "The electronic rangefinder may be inaccurate with some AF-S, AF-P and AF-I lenses. AF fine-tune may help.",
+    "Non-CPU lenses: enter Non-CPU lens data (focal length, max aperture) for correct IBIS and EXIF.",
+    "Third-party F-mount lenses (Sigma, Tokina, Zeiss ZF.2, Voigtländer SL II) are not covered by Nikon's guide. Behavior is unverified."
+  ],
+  "mf_subject_detection_with_f_lenses": "Z8 (FW 3.00+), Z5II and Z50II have MF subject detection. Nikon sources fetched here do not say whether F lenses on the FTZ II are supported. J.M. Peltier (Zf/Z6III) reports that it works with non-CPU and CPU F lenses, that the ERF works with CPU lenses that pass distance data, and that some AF-D lenses are uncertain. Low confidence for the owner's bodies.",
+  "compatible_lenses": [
+    {"lens_id": "f-af-micro-60-f28d", "class": "AF Type D screw-drive", "on_ftz_ii": "MF only with electronic rangefinder. Metering and all exposure modes work. Body IBIS 3-axis on Z8 and Z5II. Focus shift shooting not supported (not AF-S/AF-P)."},
+    {"lens_id": "f-af-s-85-f14g", "class": "AF-S Type G", "on_ftz_ii": "Full AF. All modes. Body IBIS 3-axis on Z8 and Z5II. Focus shift shooting supported."},
+    {"lens_id": "f-af-dc-105-f2d", "class": "AF Type D screw-drive", "on_ftz_ii": "MF only with electronic rangefinder. Body IBIS 3-axis on Z8 and Z5II. Set the aperture ring to minimum."},
+    {"lens_id": "f-af-50-f18d", "class": "AF Type D screw-drive", "on_ftz_ii": "MF only with electronic rangefinder. Body IBIS 3-axis on Z8 and Z5II."},
+    {"lens_id": "sigma-135-f18-art", "class": "Third-party HSM (in-lens motor)", "on_ftz_ii": "Has its own motor, so AF is expected, but it is not in Nikon's guide. Behavior unverified here."},
+    {"lens_id": "zeiss-milvus-35-f2-zf2", "class": "Third-party CPU manual lens (ZF.2), if F mount", "on_ftz_ii": "Manual focus. Nikon's table for comparable AI-P lenses lists modes A and M only. Unverified for ZF.2."},
+    {"lens_id": "voigtlander-58-f14-sl2", "class": "Third-party CPU manual lens, if F mount", "on_ftz_ii": "Manual focus. Mount and CPU version to confirm."},
+    {"lens_id": "tokina-100-f28-macro", "class": "Unknown (mount/version to confirm)", "on_ftz_ii": "If it is the F-mount screw-drive AT-X Pro D, MF only. Unverified."}
+  ],
+  "field_tips": [
+    "Screw-drive lenses (AF-D Micro 60, DC 105, 50 f/1.8D) are manual focus on every Z body. Use the green focus-point indicator or magnified view and focus peaking.",
+    "Lock the aperture ring at minimum (largest f-number) on D lenses before mounting, or the camera will show an error.",
+    "On the Z50II there is no IBIS, so non-VR F lenses are unstabilized. Raise the shutter speed.",
+    "For focus stacking with F glass, only AF-S and AF-P lenses (e.g. the 85 f/1.4G) work with in-camera focus shift.",
+    "The Z teleconverter will not fit through the FTZ II."
+  ],
+  "sources": [
+    {"id": "ftz-guide", "name": "Nikon: Using F-mount NIKKOR lenses with the FTZ II/FTZ mount adapter (PDF, SB3J11(11))", "url": "https://download.nikonimglib.com/archive6/amgQQ00igi0U06sJjMP25JWC2H05/FTZ_CompatibleFmount_(En)11.pdf", "kind": "manufacturer", "tested_on": null, "date": "undated, copyright 2018 (revision 11)", "findings": "Compatibility table by lens class. AF-P focus-shift-after-power-cycle note. Focus shift works with AF-S/AF-P but auto reset is disabled. Z TCs cannot be used. No Synchro VR. Save/Recall focus position disabled. The Auto Capture Distance criterion may not work. Vignette and distortion control limits. Non-CPU lens data required."},
+    {"id": "wiki-mirror-zmount", "name": "Nikon Z-mount (Wikipedia mirror, wiki.riteme.site)", "url": "https://wiki.riteme.site/wiki/Nikon_Z", "kind": "forum", "tested_on": null, "date": null, "findings": "Metering, IBIS and EXIF work with any F lens. AF only with AF-I, AF-S and AF-P. Z TCs cannot be used with the FTZ. The FTZ II drops the tripod foot."},
+    {"id": "peltier-mfsd", "name": "J.M. Peltier: Manual focus subject detection on Nikon Z", "url": "https://www.jmpeltier.com/manual-focus-subject-detection-nikon-z/", "kind": "review", "tested_on": "Nikon Zf / Z6III", "date": "2024-09-16 (updated 2026-07-11)", "findings": "MF subject detection works with CPU and non-CPU F lenses. ERF works with CPU lenses that pass distance data. AF-D lenses are uncertain."}
+  ],
+  "research_notes": "The 3-axis (yaw, pitch, roll) IBIS claim for non-VR F lenses comes from Nikon's FTZ II product page as cited in the existing lens record f-af-micro-60-f28d. That page could not be re-fetched in this run (Nikon product pages returned errors), so no URL is listed. The 'A and M only' entries for 'Other AF' and AI-P lenses come from a partly garbled PDF table; the PDF text explicitly confirms them for non-CPU and PC Micro lenses. The FTZ II's own weight and dimensions were not captured. Third-party F lenses are not covered by Nikon. The mounts of the Zeiss, Voigtländer and Tokina lenses should be confirmed against the kit. The web search budget ran out before third-party lens behavior on the FTZ II could be researched."
+}

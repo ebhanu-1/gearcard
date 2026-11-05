@@ -1,0 +1,190 @@
+{
+  "id": "tokina-100-f28-macro",
+  "name": "Tokina AT-X M100 AF PRO D 100mm f/2.8 Macro (Nikon F)",
+  "short": "Tokina 100 f/2.8 Macro",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "macro",
+  "focal_mm": [
+    100
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 100,
+      "f": 2.8
+    }
+  ],
+  "min_aperture_f": 32,
+  "aperture_blades": 9,
+  "rounded_blades": false,
+  "weight_g": 490,
+  "filter_mm": 55,
+  "focus": {
+    "on_z_body": "MF only (screw-drive lens on FTZ II)",
+    "cpu": true,
+    "motor": "None in lens: screw-drive AF powered by a DSLR body motor (Tokina; Photozone). The FTZ II has no drive, so there is no AF on Z bodies.",
+    "focus_throw_deg": null,
+    "notes": "One-Touch Focus Clutch: push the focus ring forward for AF, pull it back toward the mount for MF (Tokina; Ken Rockwell; Photozone). On the FTZ II, pull it back to MF or the ring will not focus the lens (inference from the clutch design). Focus limiter switch: Tokina says it restricts focus to the macro or the non-macro range, and Rockwell says it blocks the 1:2–1:1 range. If the ring stops short of 1:1, check the limiter. Whether the limiter acts in MF was not verified. Not internal focusing: the inner tube extends considerably toward the subject as you focus closer (Photozone). The 55 mm filter thread moves in and out but does not rotate (Tokina; Rockwell). Aperture ring: Tokina says CPU-equipped Nikon bodies need it set to f/32 or the shutter will not release, so lock it at f/32 and set aperture from the camera. Nikon's FTZ table lists AF Type D lenses as MF with the electronic rangefinder (in-focus indicator) supported (as recorded in the GearCard AF Micro 60 record); not specifically confirmed for this third-party lens. Focus throw not found."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon FTZ II page (fetched 2026-11-05): with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. The CPU passes 100 mm to IBIS. Nikon names only those 3 axes, so x/y shift, which dominates at 1:1, is not corrected (inference). Use flash, a tripod or a rail for 1:1."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 100,
+        "value": 0.3
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 100,
+        "value": 1.0
+      }
+    ],
+    "working_distance_mm_at_max_mag": 115,
+    "effective_aperture_at_max_mag": "About f/5.6 at 1:1 when wide open (Ken Rockwell's table: f/2.8 becomes f/5.6 and f/32 becomes f/64 at 1:1). N_eff ≈ N × (1 + m) = N × 2 at 1:1, a 2-stop loss. Whether Z bodies show the reduced value through the FTZ II was not verified.",
+    "camera_displays_effective": null,
+    "notes": "MFD 0.3 m from the focal plane for 1:1 (Tokina; Photozone; Rockwell). Free working distance at 1:1 is about 115 mm (4.5 in) from the front of the lens, measured by Ken Rockwell. Tokina only says 'a little working distance'. An Imaging Resource user's '~12 in' figure matches the MFD, not the working distance, so it is disregarded. Arithmetic check: 300 mm MFD − 46.5 mm F flange − 95 mm lens length − the extended inner tube ≈ 115 mm if the tube extends about 40 mm (extension not measured; consistent, not proof).\n\nEffective aperture at 1:1 (×2, −2 stops), computed: f/2.8→f/5.6, f/4→f/8, f/5.6→f/11, f/8→f/16, f/11→f/22, f/16→f/32, f/32→f/64. At 1:2 the factor is ×1.5 (−1.2 stops): f/5.6→f/8.4.\n\nThe lens extends toward the subject while focusing, which shrinks the room for light."
+  },
+  "quick": {
+    "headline": "Superb, cheap classic 100mm macro: very good from f/2.8, excellent from f/4–f/8, no focus shift, about 115 mm of room at 1:1. Manual focus only on Z: pull the clutch back.",
+    "sweet_spot": "f/4–f/8",
+    "wide_open": "Very good centre and borders at f/2.8; FX corners one step softer, nearly equal to the border from f/4 (Photozone FX). Lenstip: edge over 30 lp/mm at f/2.8 (8MP APS-C). Strong bokeh fringing wide open (magenta in front, green behind).",
+    "by_focal": [
+      {
+        "focal_mm": 100,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Photozone FX (Nikon D3X 24MP, 2017): centre very good wide open, excellent at medium apertures; border very good wide open with little gain stopped down; corner one step softer wide open, nearly matching the border from f/4. DxOMark (D800 36MP): good centre wide open, across the frame by f/4, peak f/8, excellent corner-to-corner at f/11. Lenstip (Canon 20D 8MP APS-C): centre 42.8 lp/mm at f/4 ('sensational'). Photozone DX (D200): excellent f/2.8 to about f/11."
+      }
+    ],
+    "close_up_best": "f/4–f/5.6 set (f/8–f/11 effective at 1:1)",
+    "close_up_note": "No source measured resolution at 1:1, so this is calculated. At 1:1 the effective aperture doubles (Rockwell: f/2.8 shows as f/5.6). DxOMark (36MP) peaks at f/8 at distance and Photozone DX saw diffraction beyond f/11 on 10MP. On the Z8's 4.35 µm pixels, softening starts at about f/8–f/11 effective, which is set f/4–f/5.6 at 1:1. Photozone DX also advises avoiding very small apertures in macro. Focus-stack rather than stopping to f/16+ (f/32+ effective). No focus shift (Photozone FX), so focusing wide open is safe.",
+    "diffraction_note": "Photozone DX (D200 10MP): diffraction beyond about f/11. DxOMark (D800 36MP): still excellent at f/11 at distance. Ken Rockwell: diffraction limits sharpness by f/8 on flat subjects (not measured). At 1:1 every set aperture is one effective step of two stops smaller.",
+    "avoid": [
+      "Do not leave the clutch in the AF (forward) position: the ring will not focus the lens on the FTZ II.",
+      "Avoid set f/16–f/32 at 1:1 (f/32–f/64 effective) except as a last resort on the Z8.",
+      "Do not count on IBIS at 1:1 (no x/y shift correction for F lenses; none on the Z50 II)."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Photozone FX (D3X 24MP) and DxOMark (D800 36MP) agree on a strong lens peaking at f/5.6–f/8 across the frame. Lenstip and Photozone DX are low-resolution APS-C. No test above 36MP and none at 1:1, so the close-up guidance is computed (low confidence on that part)."
+  },
+  "character": {
+    "bokeh": "Good. Photozone FX: very smooth blur in front of the focal plane, slightly less smooth in the transition and behind; near-circular highlights stopped down with some outlining. Rockwell: mostly 'wonderful', varying with distance. Blades mostly straight (Rockwell).",
+    "flare_sunstar": "Lenstip: good performance against bright light. Sunstars not documented (9 straight blades would give 18-point stars; inferred, not tested).",
+    "ca": "Lateral CA: Photozone FX about 1 px average at the borders from f/5.6; Photozone DX above average, over 1 px; Lenstip and DxOMark well controlled. Bokeh fringing (LoCA): Photozone FX fairly strong wide open, magenta in front, green behind, decreasing stopped down; Rockwell slight spherochromatism.",
+    "distortion": "Essentially none: Photozone FX 0.06% barrel, DX 0.07%; Lenstip zero; Rockwell none visible.",
+    "vignetting": "Low: Photozone FX about 2/3 stop wide open; DxOMark (D800) very low at f/2.8, nearly gone by f/4, gone by f/5.6; Lenstip slight.",
+    "coma_astro": "Lenstip: small coma. Not an astro lens.",
+    "focus_breathing": "Not measured. The lens extends to focus, so framing changes strongly from infinity to 1:1.",
+    "other": "Photozone FX: no focus shift when stopping down. Ratings 5/5 optics, 5/5 build, 5/5 price/performance, but the lack of a motor and the extending tube feel dated. DxOMark: score 31, 19 P-Mpix on D800; nearly matches the Nikon AF-S 105 VR Micro, sharper stopped down, less sharp at full aperture. Weight: Tokina 490 g, Photozone 540 g, Rockwell measured 513 g."
+  },
+  "field_tips": [
+    "Pull the focus ring back toward the camera (MF clutch), lock the aperture ring at f/32 and set aperture on the command dial.",
+    "At 1:1 you get about 115 mm of room and the barrel grows toward the subject. Light from the side or use a diffused flash.",
+    "At 1:1 you lose 2 stops: f/4 set is f/8 effective. Shoot f/4–f/5.6 for the sharpest frame, then focus-stack instead of using f/16+.",
+    "To hit 1:1, set the ring to minimum focus and move the camera or rail. If the ring stops short, check the focus limiter switch.",
+    "At normal distances it is a fine 100mm portrait/tele: f/2.8 is very good, f/4–f/8 excellent across the frame, with no focus shift."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP: wide-open FX corners and LoCA are visible; f/5.6–f/8 at distance. At 1:1, diffraction appears from about set f/4–f/5.6. IBIS 3-axis via FTZ II."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP matches Photozone's D3X test: very good from f/2.8, excellent at medium apertures. At 1:1, set f/8 (f/16 effective) is still acceptable per pixel. IBIS 3-axis via FTZ II."
+    },
+    {
+      "body": "z50ii",
+      "note": "About 150mm-equivalent framing on DX, and soft FX corners fall outside the frame. 20.9MP (about 4.2 µm), similar diffraction behaviour to the Z8. No IBIS: flash or tripod at 1:1."
+    }
+  ],
+  "tc_compatible": null,
+  "sources": [
+    {
+      "id": "photozone_fx",
+      "name": "Photozone (OpticalLimits): Tokina AF 100mm f/2.8 AT-X Pro D macro (FX) review",
+      "url": "https://photozone.de/nikon_ff/819-tokina10028atxfx?start=1",
+      "kind": "measured",
+      "tested_on": "Nikon D3X (24.5MP FX) per sample-image captions",
+      "date": "2017-09",
+      "findings": "Centre very good wide open, excellent at medium apertures; border very good wide open, little gain stopped down; corner one step softer wide open, nearly equal to the border from f/4 (LW/PH only in chart). Distortion 0.06% barrel. Vignetting about 2/3 stop wide open. Lateral CA about 1 px from f/5.6. Bokeh fringing fairly strong wide open, magenta in front, green behind. Bokeh smooth in front, less so behind; some outlining. No focus shift. Page 1: 540 g, 0.3 m, 1:1, 9 blades, 55 mm non-rotating front, screw-drive AF, one-touch clutch, focus limiter; the inner tube extends considerably. Verdict (https://photozone.de/nikon_ff/819-tokina10028atxfx?start=2): very solid optics, 5/5/5 stars."
+    },
+    {
+      "id": "dxomark",
+      "name": "DXOMARK: Tokina AT-X M100 AF Pro D 100mm f/2.8 Nikon mount lens review",
+      "url": "https://www.dxomark.com/tokina-at-x-m100-af-pro-d-100mm-f2-8-nikon-mount-lens-review-excellent-all-round-performance/",
+      "kind": "measured",
+      "tested_on": "Nikon D800 (36MP FX)",
+      "date": "2013-12",
+      "findings": "Score 31, sharpness 19 P-Mpix. Good centre at f/2.8; across the frame by f/4; peak f/8; excellent corner-to-corner at f/11. Vignetting very low wide open, gone by f/5.6. Distortion and CA well controlled (no numbers in text). Nearly matches the Nikon AF-S 105 VR Micro, sharper stopped down; the Nikon is sharper wide open with better corners."
+    },
+    {
+      "id": "photozone_dx",
+      "name": "Photozone: Tokina AF 100mm f/2.8 AT-X Pro D macro (Nikon APS-C) review",
+      "url": "https://www.photozone.de/nikon--nikkor-aps-c-lens-tests/269-tokina-af-100mm-f28-at-x-pro-d-macro-review--test-report?start=1",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10.2MP DX)",
+      "date": null,
+      "findings": "Excellent centre and border from f/2.8 to about f/11; diffraction beyond about f/11. Distortion 0.07%. Vignetting well controlled. CA above average, over 1 px at the borders. Avoid very small apertures in macro use."
+    },
+    {
+      "id": "lenstip",
+      "name": "Lenstip: Tokina AT-X M100 PRO AF D 100 mm f/2.8 review",
+      "url": "https://www.lenstip.com/21.4-Lens_review-Tokina_AT-X_M100_PRO_AF_D_100_mm_f_2.8_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Canon EOS 20D (8.2MP APS-C), Canon-mount sample",
+      "date": "2007-10",
+      "findings": "Centre 42.8 lp/mm at f/4 ('sensational'); edge over 30 lp/mm at f/2.8; sharper than the Tamron 90 at f/2.8, comparable f/4–f/32. Summary (https://www.lenstip.com/21.11-Lens_review-Tokina_AT-X_M100_PRO_AF_D_100_mm_f_2.8_Summary.html): exquisite image quality, good CA correction, zero distortion, small coma, slight vignetting, good against bright light; average AF."
+    },
+    {
+      "id": "kenrockwell",
+      "name": "Ken Rockwell: Tokina 100mm f/2.8 AT-X PRO AF Macro review",
+      "url": "https://kenrockwell.com/tokina/100mm-f28.htm",
+      "kind": "review",
+      "tested_on": "Nikon D3 (12MP FX) and D7000 (16MP DX); qualitative",
+      "date": null,
+      "findings": "Measured 512.6 g (spec 540 g). MFD 0.3 m. Measured working distance at 1:1 about 115 mm (4.5 in). 9 mostly straight blades. 55 mm thread moves in and out, does not rotate. 9/8 with floating elements. Limiter blocks 1:2–1:1. Push/pull one-touch clutch (pull for MF). f/32 at infinity, f/64 at 1:1; max aperture f/5.6 at 1:1. Claims f/5.6 sharpest and diffraction by f/8 on flat subjects (not measured). Bokeh mostly wonderful; slight spherochromatism; no visible distortion. Lower weight as a source."
+    },
+    {
+      "id": "tokina",
+      "name": "Tokina: AT-X M100 PRO D product page",
+      "url": "https://tokinalens.com/product/at_x_m100_pro_d/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "9/8, MFD 0.3 m, 1:1, 9 blades, 55 mm, f/32 min, 74 × 95 mm, 490 g. One-Touch Focus Clutch: push forward for AF, pull back for MF. Limiter selects macro or non-macro range. Nikon F version has no AF motor. On CPU Nikon bodies the aperture ring must be at f/32 or the shutter will not release."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Non-VR F-mount lens: yaw, pitch and roll corrected in-camera. Full AF only for AF-S, AF-P and AF-I types; screw-drive lenses are not in that group."
+    },
+    {
+      "id": "imaging_resource_users",
+      "name": "Imaging Resource: Tokina 100mm f/2.8 AT-X 100 AF PRO D Macro (user reviews; not lab tested)",
+      "url": "https://old.imaging-resource.com/lenses/tokina/100mm-f2.8-at-x-100-af-pro-d/review",
+      "kind": "forum",
+      "tested_on": "Various (user reports, e.g. D70s, film)",
+      "date": "2006–2024",
+      "findings": "Not lab tested. Users: sharp, slow hunting AF, clutch works well, limiter helps but doesn't eliminate hunting, some CA wide open, corners soft wide open on film improving by f/4."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the Tokina AT-X M100 AF PRO D was found. A search with his name and the lens returned the newer Tokina FíRIN/atx-i 100mm reviews from other outlets, plus TDP and Photozone. Nothing is attributed to him."
+  },
+  "research_notes": "1) Version: Photozone FX, DxOMark, Photozone DX and Lenstip all tested the AT-X M100 AF PRO D (Lenstip on a Canon-mount sample). The later atx-i 100mm and FíRIN 100mm FE are different products and were not used. 2) Weight conflict: Tokina 490 g (current page), Photozone 540 g, Rockwell measured 512.6 g; manufacturer value used. 3) Working distance 115 mm rests on one measurement (Rockwell) plus a consistency check; Tokina publishes none. 4) Effective-aperture display on Z bodies via FTZ II not verified. 5) The-Digital-Picture review failed to load (client error) and Imaging Resource has no lab test. 6) Rounded blades false per Rockwell ('mostly straight'). Photozone saw near-circular highlights stopped down, so the field could be argued; Rockwell's direct statement is used. 7) tc_compatible null: not checked. 8) Limiter behaviour in MF and focus throw not verified. 9) Close-up apertures are computed (×2 at 1:1) from diffraction onsets measured at distance; low confidence."
+}

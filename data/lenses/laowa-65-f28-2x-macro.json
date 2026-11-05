@@ -1,0 +1,199 @@
+{
+  "id": "laowa-65-f28-2x-macro",
+  "name": "Venus Optics Laowa 65mm f/2.8 2x Ultra Macro APO (Nikon Z)",
+  "short": "Laowa 65 2x Macro",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "DX",
+  "kind": "macro",
+  "focal_mm": [
+    65
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 65,
+      "f": 2.8
+    }
+  ],
+  "min_aperture_f": 22,
+  "aperture_blades": 9,
+  "rounded_blades": null,
+  "weight_g": 335,
+  "filter_mm": 52,
+  "focus": {
+    "on_z_body": "MF (manual-focus lens)",
+    "cpu": false,
+    "motor": "None. Manual focus, manual aperture ring (full-stop clicks), no electronic contacts.",
+    "focus_throw_deg": null,
+    "notes": "Internal focusing: the length stays constant (Venus Optics; OpticalLimits). Long throw from 2:1 to infinity, reported as about 220° (OpticalLimits), about 240° (Dustin Abbott), about 260° (Amateur Photographer) and about 270° (Jonas Rask); the field is null because the figures differ. With no contacts there is no EXIF, no camera-controlled aperture and no focus-distance readout (OpticalLimits; Abbott). Abbott found peaking unreliable for precise portrait-distance focus, so use magnified view at longer distances. At 1:1–2:1, set the ring for the magnification you want and focus by moving the camera or a rail."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "Native Z mount, so FTZ II does not apply. IBIS only, on the Z8 and Z5 II, and only if 65 mm is entered under Setup menu > Non-CPU lens data (Nikon Z8 manual: the data enables on-board VR for non-CPU lenses). The Z50 II has no IBIS for stills. At 1:1–2:1, shift (x/y) shake dominates and in-body VR helps little at these magnifications (general macro principle, not lens-specific testing); use flash or a tripod."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 65,
+        "value": 0.17
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 65,
+        "value": 2.0
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": "About f/8.4 at 2:1 when set to f/2.8. Using N_eff ≈ N × (1 + m): f/5.6 at 1:1 and f/8.4 at 2:1. Amateur Photographer gives f/5.6 at 1:1 (−2 stops) and f/8 at 2:1 (−3 stops). The camera cannot show this value (no CPU); metering through the lens handles the exposure.",
+    "camera_displays_effective": false,
+    "notes": "MFD 17 cm from the image plane at 2:1 (Venus Optics; Neocamera). No published working distance was found from Venus Optics or any reviewer. Estimated free working distance at 2:1: about 50–55 mm, computed as 170 mm MFD − 16 mm Z flange − about 100 mm lens length (Venus Optics Φ57 × 100 mm; whether the Z version's length includes the mount was not confirmed). Abbott says 1:1 gives only 'a couple of extra centimetres' over 2:1, so roughly 70–75 mm at 1:1 (estimate). Internal focus means the barrel does not grow toward the subject. Remove the hood at close range to avoid shading the subject (Abbott).\n\nEffective aperture, N_eff ≈ N × (1 + m), computed:\n- At 1:1 (×2, −2 stops): f/2.8→f/5.6, f/4→f/8, f/5.6→f/11, f/8→f/16, f/11→f/22, f/16→f/32.\n- At 2:1 (×3, −3.2 stops): f/2.8→f/8.4, f/4→f/12, f/5.6→f/17, f/8→f/24, f/11→f/33, f/16→f/48.\n\nAmateur Photographer reports the same (f/5.6 at 1:1, f/8 at 2:1). Jonas Rask observed only about 1 stop of exposure loss at 2x on Fuji bodies. That conflicts with the formula and with AP, so treat it as anecdotal. OpticalLimits found the aperture slightly inaccurate: marked f/22 behaves closer to f/14–f/16 at distance."
+  },
+  "quick": {
+    "headline": "Superb APO 2:1 macro for DX: sharp from f/2.8 with no measurable CA. At 2:1 every marked stop is three stops smaller, so shoot f/2.8–f/4 and stack.",
+    "sweet_spot": "f/4–f/5.6 (at normal distances)",
+    "wide_open": "Excellent centre and very good borders at f/2.8; extreme DX corners 'good' (OpticalLimits). Abbott: excellent across the frame at f/2.8. DCW: centre very good wide open, peaking at f/4; corners more average.",
+    "by_focal": [
+      {
+        "focal_mm": 65,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "OpticalLimits (Fuji X APS-C): f/2.8 centre excellent, borders very good, corners good; f/4 outer field improves noticeably; f/5.6 superb across the frame (best); f/8 marginal diffraction impact; f/16 still impressive. DCW (Canon EF-M lab): centre peak at f/4. AP (26MP X-T3): sharpest about f/5.6, visible softening beyond f/8."
+      }
+    ],
+    "close_up_best": "1:1: f/4–f/5.6 set (f/8–f/11 effective). 2:1: f/2.8–f/4 set (f/8.4–f/12 effective) for maximum detail; f/5.6 (about f/17 effective) only when one frame must carry more depth.",
+    "close_up_note": "No source measured resolution at 1:1 or 2:1, so this is calculated. OpticalLimits saw marginal diffraction loss from f/8 at distance (APS-C), and Amateur Photographer saw softening 'almost immediately' at high magnification because effective apertures are small. Jonas Rask advises at least f/5.6 at 2x for usable depth of field and calls f/2.8 at 2x nearly useless (depth thinner than a hair). Best compromise: focus-stack at f/2.8–f/4 at 2:1 on the Z8's DX crop.",
+    "diffraction_note": "OpticalLimits (APS-C, distance): marginal impact at f/8, still impressive at f/16 (the marked f/22 is really about f/14–f/16). AP (26MP APS-C): visible softening beyond f/8. At 2:1 that onset (about f/8 effective) arrives at set f/2.8. On the Z8 DX crop (4.35 µm pitch) and Z50 II (about 4.2 µm), expect the same.",
+    "avoid": [
+      "Do not shoot FX image area on the Z8 or Z5 II: it is an APS-C lens (set Image area to DX manually; with no CPU the body cannot detect it).",
+      "Avoid set f/8 and smaller at 2:1 (f/24+ effective) except as a last resort.",
+      "Do not shoot into the sun without care: flare-prone (Abbott)."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "One lab test (OpticalLimits, APS-C, verbal grades; values only in charts) plus DCW lab (centre peak f/4) and AP agree on f/4–f/5.6 at distance. Nothing measured at 1:1 or 2:1, and no working-distance figure is published, so the macro guidance is computed (low confidence on those parts)."
+  },
+  "character": {
+    "bokeh": "Generally good. OpticalLimits and Canon News: smooth foreground blur, harsher-edged background blur; highlights nice at f/2.8 with a hint of an outer ring, edgier and outlined at f/4–f/5.6 (blades not rounded at smaller apertures). Abbott: good with character, busy backgrounds acceptable, APO edge hardness mild. Rask and AP: creamy, beautifully blurred backgrounds.",
+    "flare_sunstar": "Abbott: 'somewhat flare prone', with ghosting and veiling into the sun and a noticeable loss of contrast in backlit portraits. Sunstars not tested by any source found.",
+    "ca": "APO: OpticalLimits found lateral CA practically non-existent and no axial CA (LoCA), which it calls unusual. Abbott: no visible LoCA even in high-contrast scenes. AP: no objectionable fringing of either kind. DCW: very well controlled.",
+    "distortion": "Virtually none (OpticalLimits, without correction; DCW 0.17%; Abbott very low).",
+    "vignetting": "Low: OpticalLimits about 0.7 EV wide open, fading by about f/5.6. Abbott: mild but extends well into the frame (+33 LR). AP: disappears in the macro range or at f/4.",
+    "coma_astro": "Not tested; not an astro lens.",
+    "focus_breathing": "Not measured. Internal focus, and strong breathing is inherent to going from infinity to 2:1.",
+    "other": "OpticalLimits scores: optics 9, build 7.5, price/performance 9. All metal, not weather sealed. About 100mm-equivalent field of view on DX (Venus Optics). Z version released February 2021 (Nikon Rumors)."
+  },
+  "field_tips": [
+    "Mount it, then set Image area to DX on the Z8/Z5 II and select the stored 65 mm f/2.8 Non-CPU lens data (for IBIS and EXIF).",
+    "At 2:1 the subject sits only about 5 cm from the front (estimate): take the hood off, light from the side or use a diffused flash.",
+    "Remember the hidden light loss: 2 stops at 1:1 and about 3 stops at 2:1. f/4 set is about f/8 at 1:1 and f/12 at 2:1.",
+    "For the sharpest 2:1 frames, shoot f/2.8–f/4 and focus-stack by rocking the camera or using a rail. Use f/5.6 only when one frame must carry more depth.",
+    "Expect no CA (APO) but watch flare: shade the front element when the sun is near the frame."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "Use DX crop (19.4MP, 4.35 µm): diffraction appears from about f/8 effective, which is set f/4 at 1:1 and set f/2.8 at 2:1. IBIS only with Non-CPU lens data; DX crop is not automatic with a contactless lens."
+    },
+    {
+      "body": "z5ii",
+      "note": "DX crop is about 11MP (computed from 6048 × 4032 /1.5²), with coarse pixels that tolerate smaller apertures (set f/5.6 at 2:1 is fine per pixel), but there is little to crop. IBIS needs Non-CPU lens data."
+    },
+    {
+      "body": "z50ii",
+      "note": "The natural body: native DX, 20.9MP (about 4.2 µm), about 100mm-equivalent framing. No IBIS, so use flash or a tripod at 1:1–2:1. Whether the Z50 II offers Non-CPU lens data was not verified."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Laowa 65mm f/2.8 2x Ultra Macro APO review",
+      "url": "https://opticallimits.com/fujifilm/laowa-65mm-f-2-8-2x-ultra-macro-apo-review/",
+      "kind": "measured",
+      "tested_on": "Fujifilm X APS-C body (model/MP not stated on the page)",
+      "date": "2020-01 (updated 2024-06)",
+      "findings": "335 g, 57 × 100 mm, 52 mm, 9 blades, f/2.8–f/22 full-stop clicks, MFD 0.17 m, 2:1, 14/10 with 3 ED, internal focus, about 220° throw. Resolution (verbal; numbers only in charts): f/2.8 centre excellent, borders very good, extreme corners good; f/4 outer field noticeably better; f/5.6 superb across the frame (best); f/8 marginal diffraction; f/16 still impressive; f/22 more than usable because the true aperture is about f/14–f/16. Field curvature negligible. Distortion virtually none. Vignetting about 0.7 EV wide open. Lateral CA practically none; no axial CA. Bokeh: nice f/2.8 highlights with a slight outer ring, outlined at f/4–f/5.6; smooth foreground, harsher background; blades not curved stopped down. No close-up resolution figures. Scores 9 / 7.5 / 9."
+    },
+    {
+      "id": "dustinabbott",
+      "name": "Dustin Abbott: Laowa 65mm F2.8 Ultra 2x Macro Review",
+      "url": "https://dustinabbott.net/2020/02/laowa-65mm-f2-8-ultra-2x-macro-review/",
+      "kind": "review",
+      "tested_on": "Sony a6500 (24MP APS-C) and a7RIII in APS-C mode",
+      "date": "2020-02",
+      "findings": "Excellent across the frame at f/2.8 with little centre-to-corner fall-off; better at f/4 and f/5.6 (one of the best APS-C results he has seen). No visible LoCA. Bokeh good with character. 'Somewhat flare prone': ghosting and veiling into the sun, contrast loss in backlight. Vignetting mild but extends into the frame (+33). Distortion very low. About 240° throw (0.37 m to infinity per his note). MFD 17 cm at 2:1; 1:1 gives 'a couple of extra centimetres' of working distance over 2:1. Remove the hood at close range. No electronics: no EXIF, no focal length to IBIS. Peaking unreliable for precise portrait focus."
+    },
+    {
+      "id": "amateurphotographer",
+      "name": "Amateur Photographer: Laowa 65mm f/2.8 2x Ultra Macro review",
+      "url": "https://amateurphotographer.com/review/laowa-65mm-f-2-8-2x-ultra-macro-review/",
+      "kind": "review",
+      "tested_on": "Fujifilm X-T3 (26MP APS-C)",
+      "date": null,
+      "findings": "Effective aperture drops two stops at 1:1 (to f/5.6) and three stops at 2:1 (to f/8). About 260° focus travel from infinity to 17 cm. Wide open resolves impressive detail across the frame; sharpest about f/5.6 at longer distances, visible softening beyond f/8. At high magnification, diffraction softening is visible almost immediately. No objectionable lateral or longitudinal CA. Distortion essentially absent. Vignetting slight wide open, gone in the macro range or at f/4. Bokeh beautifully blurred. 'Sublime'."
+    },
+    {
+      "id": "dcw",
+      "name": "Digital Camera World: Laowa 65mm f/2.8 2x Ultra Macro APO review",
+      "url": "https://www.digitalcameraworld.com/reviews/laowa-65mm-f28-2x-ultra-macro-apo-review",
+      "kind": "measured",
+      "tested_on": "Canon EF-M body (model/MP not stated in text)",
+      "date": "2020-03",
+      "findings": "Lab: centre very good wide open through f/11, excellent peak at f/4; corners more average than expected. Per-aperture lw/ph values only in chart images. CA very well controlled at all apertures. Distortion 0.17. 9 blades, f/22 min, MFD 0.17 m. Verdict: 'ludicrously sharp' for the price; best on a tripod."
+    },
+    {
+      "id": "jonasrask",
+      "name": "Jonas Rask: The Laowa 65mm f/2.8 2x Ultra Macro APO review",
+      "url": "https://jonasraskphotography.com/2020/01/24/the-laowa-65mm-f-2-8-2x-ultra-macro-apo-review/",
+      "kind": "review",
+      "tested_on": "Fujifilm X-Pro3 (26MP) and X-H1 (24MP)",
+      "date": "2020-01",
+      "findings": "About 270° throw from 2x to infinity. In macro, use at least f/5.6; at 2x f/2.8 is 'about as useless as it gets' because the depth of field is thinner than a hair. Needed about 1 stop of extra exposure at 2x (observation, conflicts with AP). Creamy, pleasing out-of-focus areas."
+    },
+    {
+      "id": "canonnews",
+      "name": "Canon News: Laowa 65mm f/2.8 2x Ultra Macro APO review (summary of OpticalLimits)",
+      "url": "https://www.canonnews.com/laowa-65mm-f28-2x-ultra-macro-apo-review",
+      "kind": "review",
+      "tested_on": "Summarises the OpticalLimits Fuji test",
+      "date": "2020-02",
+      "findings": "Centre tack sharp at f/2.8, slight corner softness; f/5.6 'as good as it gets'. Lateral and axial CA and distortion non-existent. Bokeh good; background blur could be better; blades not curved stopped down. Not an independent test."
+    },
+    {
+      "id": "venus",
+      "name": "Venus Optics: Laowa 65mm f/2.8 2X Ultra-Macro APO product page",
+      "url": "https://www.venuslens.net/product/laowa-65mm-f-2-8-2x-ultra-macro-apo/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "APS-C format, 65mm f/2.8, 24.4° AOV, 14/10 with 3 ED, 9 blades, MFD 17 cm, 2:1, Φ57 × 100 mm, 335 g, 52 mm filter, internal focus keeps length constant, Nikon Z among mounts. No working distance, image circle or throw stated."
+    },
+    {
+      "id": "neocamera_nikonrumors",
+      "name": "Neocamera spec page (Nikon Z version) and Nikon Rumors Z-mount release post",
+      "url": "https://www.neocamera.com/lens/venus/laowa_65mm_f2.8_2x_macro/nz",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": "2021-02",
+      "findings": "Neocamera: Z version 335 g, 57 × 100 mm, 52 mm, MFD 17 cm from the imaging plane, 2X, 9 blades, f/2.8–f/22, APS-C, internal focus, introduced 2021-02-19. Nikon Rumors (https://nikonrumors.com/2021/02/19/juts-released-laowa-65mm-f-2-8-2x-ultra-macro-apo-for-nikon-z-mount.aspx/amp): Z version 'just released' 2021-02-19, optimised for APS-C mirrorless."
+    },
+    {
+      "id": "nikon_z8_noncpu",
+      "name": "Nikon Z8 Online Manual: Non-CPU Lens Data",
+      "url": "https://onlinemanual.nikonimglib.com/z8/en/sum_non-cpu_lens_data_308.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Setup menu: record focal length and maximum aperture for a non-CPU lens to enable features normally reserved for CPU lenses, including on-board vibration reduction."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the Laowa 65mm f/2.8 2x Ultra Macro APO was found. A search with his name, a youtube.com-restricted search and an exact-title search returned only Dustin Abbott, Digital Camera World, OpticalLimits, Fstoppers and others. Nothing is attributed to him."
+  },
+  "research_notes": "1) Every test was on Fuji X, Sony APS-C or Canon EF-M bodies (24–26MP APS-C). That matches the Z8 DX crop (19.4MP, 4.35 µm) and Z50 II (20.9MP) closely, so the verdicts transfer well, if anything slightly conservatively. No Nikon Z-specific test was found. 2) Working distance: no manufacturer or measured figure was found. 50–55 mm at 2:1 is computed from MFD (170 mm), Z flange (16 mm) and the 100 mm listed length. It assumes the 100 mm is measured from the mount and that the Z version keeps the same length, neither of which was confirmed. The 1:1 value is only inferred from Abbott's remark. Both are estimates, so working_distance_mm_at_max_mag is null. 3) Effective aperture: the formula N × (1 + m) agrees with Amateur Photographer (f/5.6 at 1:1, f/8 at 2:1). Jonas Rask's about-1-stop observation conflicts and is treated as anecdotal; pupil magnification for this lens is not published. 4) Focus throw: four figures between 220° and 270°, so null. 5) Rounded blades: AP says the diaphragm is curved; OpticalLimits and Canon News say it is not curved at smaller apertures. Null. 6) FX coverage: Venus Optics specifies APS-C. No test of the FX image area was found, so behaviour in FX mode is not documented here. Auto DX crop needs the lens to identify itself, which a contactless lens cannot (inference), so set DX manually. 7) Lens-cwi.pages.dev lists 12 blades and a 62 mm filter in its text, contradicting the manufacturer; it was ignored. 8) Close-up best apertures are computed from the f/8 diffraction onset (OpticalLimits, AP) and the effective-aperture factor. Low confidence."
+}

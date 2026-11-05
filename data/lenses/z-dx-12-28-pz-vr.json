@@ -1,0 +1,235 @@
+{
+  "id": "z-dx-12-28-pz-vr",
+  "name": "NIKKOR Z DX 12-28mm f/3.5-5.6 PZ VR",
+  "short": "DX 12-28 PZ VR",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "DX",
+  "kind": "zoom",
+  "focal_mm": [
+    12,
+    28
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 12,
+      "f": 3.5
+    },
+    {
+      "focal_mm": 14,
+      "f": 3.8
+    },
+    {
+      "focal_mm": 16,
+      "f": 4.2
+    },
+    {
+      "focal_mm": 18,
+      "f": 4.5
+    },
+    {
+      "focal_mm": 20,
+      "f": 4.8
+    },
+    {
+      "focal_mm": 22,
+      "f": 5.0
+    },
+    {
+      "focal_mm": 24,
+      "f": 5.3
+    },
+    {
+      "focal_mm": 28,
+      "f": 5.6
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 7,
+  "rounded_blades": true,
+  "weight_g": 205,
+  "filter_mm": 67,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Stepping motor (STM), internal focus",
+    "focus_throw_deg": null,
+    "notes": "Minimum aperture is f/16 at 12mm and f/25 at 28mm (Nikon; Photography Life). Zoom and focus are both internal, so the length never changes (Nikon; DCW; Savazzi), which suits gimbals. The zoom ring is by-wire power zoom with 11 speed settings, about 0.5 s to 36 s end to end (DCW; Thom Hogan). It can also be driven by the ML-L7 remote, the MC-N10 grip or SnapBridge. There is no AF/MF switch: the control ring defaults to by-wire manual focus (Savazzi; Photography Life). The focal length resets at power-off unless 'Save zoom position (PZ lenses)' is on (Photography Life). AF is fast, accurate and effectively silent (Hogan; Amateur Photographer), but hesitates at very close range (AP) and slows in low light (Photography Life)."
+  },
+  "stabilization": {
+    "lens_vr": true,
+    "lens_vr_stops": 4.5,
+    "synchro_vr": null,
+    "ibis_on_ftz": null,
+    "notes": "Nikon rates the VR at 4.5 stops (CIPA, DX body, VR NORMAL, at 28mm). Ken Rockwell measured about 3¾ stops at 12mm and 3 stops at 28mm in real use. On the Z50 II (no IBIS) this lens VR is the only stabilisation for stills, which is why the lens has it (Photography Life). Synchro VR support was not confirmed by any source found, so it is null."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 12,
+        "value": 0.19
+      },
+      {
+        "focal_mm": 28,
+        "value": 0.19
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 28,
+        "value": 0.21
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD is 0.19 m from the focal plane at every focal length, and max magnification is 0.21x (1:4.8) (Nikon; Savazzi; Hogan; AP). Nikon does not say at which focal length 0.21x occurs. 28mm is assumed because the MFD is constant, so this is an inference. Hogan: at MFD at the wide end the frame is about 23 cm wide. The lens is only about 64 mm long, so the free working distance at 28mm MFD is roughly 0.19 m − 64 mm − about 16 mm flange ≈ 11 cm. This is arithmetic, not measured, so the field is null. Savazzi: at 19 cm the hood almost always casts a shadow into the frame."
+  },
+  "quick": {
+    "headline": "Small power-zoom ultra-wide that is sharp wide open across the range. Shoot at any aperture to f/8, and stay at f/11 or wider on the Z50 II.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Good to excellent. Photography Life's lab says you can shoot at maximum aperture at any focal length without concern, with corners only slightly weaker at 12mm and the lens slightly weaker overall at 28mm. Hogan (Z30) and Rockwell (Z8 DX crop) agree: sharpness is flat from wide open, and corners hold up wide open.",
+    "by_focal": [
+      {
+        "focal_mm": 12,
+        "center_peak": "f/3.5–f/8",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Center at its best wide open (Savazzi, Z50 II, unchanged to f/11). Corners only slightly softer wide open (PL, Savazzi). Hogan saw a very small gain at f/5.6. Possible slight field curvature at 12mm (Hogan)."
+      },
+      {
+        "focal_mm": 18,
+        "center_peak": "f/4.5–f/8",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Not reported separately. PL and Hogan describe the mid-range as consistent with the ends. Hogan rates the corners good+ from 12mm to 20mm. Inferred plateau."
+      },
+      {
+        "focal_mm": 28,
+        "center_peak": "f/5.6–f/8",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Weakest focal length, but still good. PL: 'a little weaker at 28mm'. Hogan: center drops from excellent to very good, while corners are very good. Savazzi (Z50 II): no corner/center difference, and f/5.6 is as sharp as 12mm."
+      }
+    ],
+    "close_up_best": "f/5.6–f/8 (inference)",
+    "close_up_note": "No source measured resolution at close focus. Rockwell calls it very sharp even wide open at close range (subjective, Z8 DX crop). At 0.21x, depth of field is shallow and field curvature at 12mm was suspected (Hogan), so f/5.6–f/8 at 28mm is a cautious inference. Remove the hood at MFD (Savazzi), and expect AF to hesitate very close (AP).",
+    "diffraction_note": "PL lab: values fall as you stop down to f/11 and f/16. Savazzi (Z50 II, 20.9MP): slight but detectable blur at f/16 at both 12mm and 28mm, unchanged through f/11. Rockwell (Z8 DX crop): softer from f/11. Treat f/11 as the last 'free' stop and f/16 as visibly soft.",
+    "avoid": [
+      "f/16–f/25 except for sunstars or slow shutter.",
+      "Shooting at 19 cm with the HB-112 hood on: it shades the frame.",
+      "Relying on the zoom ring for fast stills reframing: it is by-wire, and Rockwell found it lags fast turns."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "One lab (Photography Life, numbers in chart images that could not be read) plus careful hands-on tests (Savazzi on the Z50 II, Hogan on the Z30, Rockwell on the Z8 DX crop). All agree the lens is flat from wide open to f/8–f/11. No Lenstip, OpticalLimits or PhotoReview numeric data exists. Close-up advice is inference."
+  },
+  "character": {
+    "bokeh": "Not assessed by sources found. Little background blur is possible at f/3.5–5.6 on an ultra-wide.",
+    "flare_sunstar": "Flare better than expected: typically one defined dot near the sun with faint reflections (PL). 7 rounded blades give moderately defined 14-point sunstars, best at f/11–f/16 (PL). Rockwell describes them as soft.",
+    "ca": "Lateral CA is low, under about 1 px and only near that at 12mm (PL). Under half a pixel (Hogan). Extremely little at all settings (DCW lab). Hogan saw some longitudinal CA on extreme-contrast edges.",
+    "distortion": "Very strong uncorrected barrel distortion at 12mm, close to fisheye (PL simulated −8.13%; DCW 'very severe' uncorrected). Z bodies always correct it in-camera, and Lightroom does too. After correction, it is virtually none (Hogan) with slight waviness at 12–18mm (Rockwell).",
+    "vignetting": "Uncorrected 2.45 stops at 12mm f/3.5 at distance (PL), and about 2 stops at 12mm that stopping down does not cure (Hogan). Minimal by 28mm and at f/5.6–f/11 (PL). PL recommends in-camera vignette control set to Medium or High.",
+    "coma_astro": "Not tested by any source found.",
+    "focus_breathing": "None at the wide end and slight at the long end (Rockwell). Very minor at tele and unnoticeable at wide (Hogan).",
+    "other": "Moiré: Savazzi saw colour moiré on window edges at 28mm f/5.6–f/11 on the Z50 II, which mostly disappeared at f/16. PL saw internal fogging in high humidity that cleared. Weather sealing conflict: Nikon/PL/Fstoppers say dust- and drip-resistant, Savazzi says not sealed, and Rockwell notes the plastic mount has no gasket."
+  },
+  "field_tips": [
+    "Turn on 'Save zoom position (PZ lenses)', or it returns to 12mm every power-on.",
+    "Set PZ speed low (of 11 settings) for smooth video zooms. For quick stills framing, expect the by-wire ring to trail fast turns.",
+    "Any aperture from wide open to f/8 is sharp. Use f/8–f/11 for depth of field and avoid f/16 unless you want sunstars (best f/11–f/16).",
+    "At 12mm, leave vignette control at Medium or High: about 2.5 stops of falloff wide open.",
+    "Close-ups at 19 cm: take the hood off, zoom to 28mm, use f/5.6–f/8, and use MF via the control ring if AF hesitates."
+  ],
+  "body_notes": [
+    {
+      "body": "z50ii",
+      "note": "Native body. 20.9MP (about 4.2 µm): Savazzi tested on exactly this body and found the center flat f/3.5–f/11 with a slight drop at f/16. No IBIS, so lens VR (4.5 stops) is the only stabilisation. Moiré possible at 28mm f/5.6–f/11 on fine repeating detail."
+    },
+    {
+      "body": "z8",
+      "note": "Auto DX crop, 19.4MP (4.35 µm), so per-pixel behaviour is essentially the same as on the Z50 II. Rockwell shot it this way: corners as sharp wide open as stopped down, and softer from f/11. The FX corners are not usable."
+    },
+    {
+      "body": "z5ii",
+      "note": "Auto DX crop leaves only about 10MP (computed 24.5MP / 1.5²). Diffraction is far less visible, so f/11 is fine. Weak on resolution: prefer the Z50 II or Z8 with this lens."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z DX 12-28mm f/3.5-5.6 PZ VR review (pages 1–3)",
+      "url": "https://photographylife.com/reviews/nikon-z-dx-12-28mm-f-3-5-5-6-pz-vr/2",
+      "kind": "measured",
+      "tested_on": "Nikon DX Z body (not named in text); PL DX lab charts",
+      "date": "2024 (conclusion says 'as of mid-2024')",
+      "findings": "Sharpness 'really nice and consistent regardless of your aperture or focal length'. A little weaker at 28mm, corners 'a hair less sharp' at 12mm. Numbers decrease at f/11 and f/16 due to diffraction. Maximum aperture usable at any focal length, and the author would use f/5.6–f/11 on a tripod for depth of field. Lab numbers are in chart images that could not be read. Vignetting 2.45 stops at 12mm f/3.5, minimal f/5.6–f/11. Lateral CA under about 1 px. Distortion very high at 12mm (−8.13% simulation), auto-corrected. Flare better than expected. Sunstars clearest at f/11–f/16. Max mag 0.21x. Page 3: sharpest Z DX lens at these focal lengths (mid-2024), with sharper corners than the 16-50 at 16–18mm and about equal to the 18-140 at 18mm. Page 1: 205 g, weather sealing, internal zoom, no AF/MF switch, use 'Save zoom position', no appreciable PZ lag."
+    },
+    {
+      "id": "savazzi",
+      "name": "Enrico Savazzi: Nikon Z DX 12-28 mm f/3.5-5.6 PZ",
+      "url": "https://www.savazzi.net/photography/nikon-z-dx-12-28pz.html",
+      "kind": "review",
+      "tested_on": "Nikon Z50 II (20.9MP DX), handheld, visual crops",
+      "date": "2026-05",
+      "findings": "12mm: center at its best wide open and unchanged through f/11, with slight detectable blur at f/16. Corners slightly softer than center, 'hardly noticeably'. 28mm: f/5.6 as sharp as 12mm, unchanged to f/11, very slight loss at f/16, and no corner/center difference. Colour moiré at 28mm f/5.6–f/11, mostly gone at f/16. Measured maximum aperture by focal length: 12mm f/3.5, 14mm f/3.8, 16mm f/4.2, 18mm f/4.5, 20mm f/4.8, 22mm f/5, 24–26mm f/5.3, 28mm f/5.6. MFD 19 cm at all focal lengths, 0.21x, and the hood shadow almost always visible at MFD. Internal zoom and focus, by-wire rings. Says not weather-sealed, plastic mount."
+    },
+    {
+      "id": "hogan",
+      "name": "Thom Hogan (sansmirror/zsystemuser): Nikon 12-28mm f/3.5-5.6 DX Lens Review",
+      "url": "https://sansmirror.com/lenses/lens-reviews/lenses-for-nikon-z-dx/nikon-12-28mm-f35-56-dx.html",
+      "kind": "review",
+      "tested_on": "Nikon Z30 (20.9MP DX)",
+      "date": "2023-06-28",
+      "findings": "Center excellent at all focal lengths except 28mm (very good). Corners good+ at 12–20mm and very good at 28mm. Sharpness fairly flat from max aperture until diffraction, with a very small gain at f/5.6 at 12mm. Possible slight field curvature at 12mm. About 2 stops of uncorrected vignetting at 12mm. Lateral CA under 0.5 px. Corrected distortion virtually none. Focus breathing very minor at tele. 11 PZ speeds, no zoom lock. MFD 0.19 m, about 1:5, frame about 23 cm wide at MFD at the wide end. Rated Recommended."
+    },
+    {
+      "id": "kenrockwell",
+      "name": "Ken Rockwell: Nikon Z 12-28mm VR DX PZ review",
+      "url": "https://kenrockwell.com/nikon/z/12-28mm.htm",
+      "kind": "review",
+      "tested_on": "Nikon Z8 in DX crop (19.4MP)",
+      "date": "2024-04 (update)",
+      "findings": "Surprisingly sharp, corners as sharp wide open as stopped down, softens at f/11 and smaller from diffraction. Very sharp wide open at close range (subjective). No focus breathing at the wide end, slight at the long end. PZ responds with a slight delay and cannot keep up with fast ring turns. VR measured about 3¾ stops at 12mm and 3 stops at 28mm. Soft 14-point sunstars. Mount has no gasket. Slight residual waviness at 12–18mm after correction."
+    },
+    {
+      "id": "dcw",
+      "name": "Digital Camera World: Nikon Z DX 12-28mm f/3.5-5.6 PZ VR review (Matthew Richards)",
+      "url": "https://www.digitalcameraworld.com/reviews/nikon-z-dx-12-28mm-f35-56-pz-vr-review",
+      "kind": "measured",
+      "tested_on": "Imatest lab body not named; samples on Nikon Z30",
+      "date": "2023-06-01",
+      "findings": "Imatest charts are images, no readable values. Very strong sharpness at the widest apertures across the zoom including corners. Center excellent 12–24mm and drops a little at 28mm. Extremely little fringing. Uncorrected distortion very severe. 11 PZ speeds, about 0.5–36 s end to end. MFD 0.19 m, 0.21x."
+    },
+    {
+      "id": "ap",
+      "name": "Amateur Photographer: Nikon Z DX 12-28mm lens review (Amy Davies)",
+      "url": "https://amateurphotographer.com/review/nikon-z-dx-12-28mm-lens-review/",
+      "kind": "review",
+      "tested_on": "Nikon Z30 (some samples on Z6 II)",
+      "date": null,
+      "findings": "Sharp throughout the zoom range and across the frame, no per-aperture data. No visible CA. AF effectively silent but hesitates very close. MFD 0.19 m at all focal lengths, 0.21x."
+    },
+    {
+      "id": "nikon",
+      "name": "Nikon: NIKKOR Z DX 12-28mm f/3.5-5.6 PZ VR product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_dx_12-28mmf35-56_pz_vr/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.19 m (focal plane), max reproduction 0.21x, about 205 g, 67 mm filter, 7 blades rounded, f/3.5–5.6, min f/16–25, VR 4.5 stops (CIPA, DX, NORMAL, tele end), 12 elements in 11 groups (1 ED, 1 aspherical), 72 × 63.5 mm, angle of view 99°–53°."
+    },
+    {
+      "id": "fstoppers_frost",
+      "name": "Fstoppers (Alex Cooke): write-up of Christopher Frost's 12-28 video",
+      "url": "https://fstoppers.com/reviews/review-nikon-nikkor-z-dx-12-28mm-f35-56-pz-vr-lens-634773",
+      "kind": "video",
+      "tested_on": null,
+      "date": "2023-06-15",
+      "findings": "Article only embeds and introduces Frost's video. No test results transcribed. Lists stepping AF motor, dust and drip resistance, 4.5-stop VR, internal focus and zoom, 11 zoom speeds. Article author's own line: 'quite a nice lens for the price'."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "title-only",
+    "summary": "Frost reviewed this lens (Fstoppers write-up by Alex Cooke, 15 June 2023, embeds his video). The video page itself could not be fetched (YouTube blocked), and no transcript or description was readable, so the exact video URL is unknown. A Rumble upload titled 'Nikon Z DX 12-28mm f/3.5-5.6 PZ VR lens review' also appeared in search but could not be opened. His verdict is not known and is not summarised here."
+  },
+  "research_notes": "1) No Lenstip, OpticalLimits, Lensrentals, TDP or PhotoReview test exists for this lens (searched). Photography Life's lab is the only measured sharpness source, and its numbers are in unreadable chart images, so only its text is used. 2) Test bodies: Savazzi used the Z50 II itself, Hogan the Z30 (same 20.9MP sensor class), and Rockwell the Z8 in DX crop, so the conclusions transfer directly. 3) PZ responsiveness conflict: PL says no appreciable lag, while Rockwell says a slight delay and it cannot keep up with fast turns. Both are reported. 4) Weather sealing conflict: Nikon, PL and Fstoppers say dust/drip resistant, Savazzi says not sealed, and Rockwell says no mount gasket. 5) Max magnification focal length not stated by Nikon. 28mm assumed. 6) Savazzi's summary text appeared to say the lens has no in-lens VR. That contradicts Nikon's spec (VR 4.5 stops) and was disregarded as a likely extraction error. 7) Synchro VR not confirmed: null. 8) tc_compatible false: Nikon Z teleconverters are only for specific S-line telephotos (general knowledge, not re-verified this session). 9) ephotozine's test page could not be fetched."
+}

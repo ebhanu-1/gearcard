@@ -1,0 +1,262 @@
+{
+  "id": "f-af-micro-60-f28d",
+  "name": "AF Micro-NIKKOR 60mm f/2.8D",
+  "short": "AF Micro 60 f/2.8D",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "macro",
+  "focal_mm": [
+    60
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 60,
+      "f": 2.8
+    }
+  ],
+  "min_aperture_f": 32,
+  "aperture_blades": 7,
+  "rounded_blades": null,
+  "weight_g": 440,
+  "filter_mm": 62,
+  "focus": {
+    "on_z_body": "MF only (screw-drive lens on FTZ II)",
+    "cpu": true,
+    "motor": "None in lens: screw-drive AF powered by a DSLR body motor. The FTZ II has no drive, so no AF on Z bodies.",
+    "focus_throw_deg": null,
+    "notes": "Nikon's FTZ compatibility table lists AF Type G/D lenses as: autofocus not supported; MF with electronic rangefinder supported (the focus point turns green and an in/out indicator shows when in focus, per Ken Rockwell's FTZ page). The lens has a separate A-M ring and no full-time manual override (DPReview, Nikon manual), so turn it to M to focus by hand. FULL/LIMIT switch: two LIMIT zones, about 0.3 m to infinity or 0.3 m to 0.219 m (Nikon manual; DPReview). Unit-focusing design with CRC (lens-db); the front group moves out about 24 mm from infinity to 1:1 (Ken Rockwell measured 74.8 mm to 99.3 mm from the flange). The filter thread does not rotate. One blog (Marco Aries) gives a 160° focus throw. That figure is unverified, so the field is null."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon FTZ II page: with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. Being a CPU lens, it passes its focal length to IBIS automatically. Nikon names only those 3 axes, so x/y shift is not corrected. That is inference, but x/y shift is the shake that dominates at 1:1, so do not count on IBIS for handheld macro. The Z50 II has no IBIS for stills (Digital Camera World)."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 60,
+        "value": 0.219
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 60,
+        "value": 1.0
+      }
+    ],
+    "working_distance_mm_at_max_mag": 73,
+    "effective_aperture_at_max_mag": "About f/5 at 1:1 when wide open (exposure factor 3.20 = 1⅔ stops per the Nikon manual; Ken Rockwell and Lenstip both give f/5). Whether a Z body shows this value through the FTZ II is not verified.",
+    "camera_displays_effective": null,
+    "notes": "MFD is 0.219 m from the focal plane (Nikon manual; Lenstip; DPReview). Free working distance at 1:1 is about 73 mm from the front of the lens (Ken Rockwell measured 73 mm; lens-db lists 0.073 m at 1:1; photoartfromscience says about 3 in). Rockwell cites a Nikon figure of 90.4 mm, which no Nikon document fetched here confirms. The barrel extends toward the subject as you focus closer. Effective aperture: the Nikon manual's exposure table gives a factor of 1.92 (1 stop) at 1:2 and 3.20 (1⅔ stops) at 1:1. So N_eff is about N × 1.79 at 1:1, a little less than the simple N × (1 + m) = N × 2, because pupil magnification is above 1. Set f/8 is about f/14 effective, f/11 about f/20, f/16 about f/29. Ken Rockwell's max-aperture table: f/2.8 at infinity and 3 m, f/3.2 at 1 m, f/3.5 at 0.3 m, f/4 at 0.25 m, f/5 at 1:1. Lenstip says the full f/2.8 holds only from about 1.8 m out. Nikon DSLRs (the owner's D750) show this reduced aperture for Micro lenses (Rockwell table; Unique Photo Q&A on a D90). No source found confirms whether Z8, Z5 II or Z50 II show the effective value with this D lens on the FTZ II. Metering is through the lens, so exposure follows the light loss automatically, but shutter speeds drop by about 1⅔ stops at 1:1."
+  },
+  "quick": {
+    "headline": "Sharp classic 1:1 macro and compact 60mm: manual focus only on Z, best at f/5.6–f/8, and only about 73 mm of working room at 1:1.",
+    "sweet_spot": "f/5.6–f/8",
+    "wide_open": "Center is very sharp at f/2.8 (Lenstip: about 40 lp/mm on 10MP DX, 'brilliant'). FX corners are soft at f/2.8 and still weak at f/4 on a 36MP body (Kasson, Rockwell). CA (about 0.10–0.12% Lenstip; 1.5 px Photozone) and coma in the corners are visible wide open.",
+    "by_focal": [
+      {
+        "focal_mm": 60,
+        "center_peak": "f/4–f/8",
+        "corners_peak": "f/8",
+        "wide_open_note": "Center plateaus from f/4: photoartfromscience (24MP DX) found +9% MTF50 from f/2.8 to f/4 and no measurable gain at f/5.6. Corners gained 40% at f/4 and another 29% at f/5.6, peaking at f/8. Photozone (D200) also peaked at f/8, even across the frame. FX corners at 36MP were 'credible' only from f/5.6 (Kasson, D810)."
+      }
+    ],
+    "close_up_best": "f/5.6–f/8 set (about f/10–f/14 effective at 1:1)",
+    "close_up_note": "No source measured resolution at 1:1, so this is a calculation, not a test. At 1:1 the effective aperture is about 1.79 × the set value (Nikon exposure factor 3.20), and per-pixel softening on 24MP DX starts at f/11 (photoartfromscience). Set f/5.6–f/8 for maximum detail per frame. Set f/11–f/16 (about f/20–f/29 effective) only when you need the depth of field and can accept visible softening on the Z8. Focus-stack at f/5.6–f/8 instead. photoartfromscience saw no sharpness gain from moving closer in limited tests.",
+    "diffraction_note": "photoartfromscience (D7100, 24MP DX, 3.9 µm pitch): softening begins at f/11 and is noticeable beyond f/11. Photozone (D200, 10MP DX): diffraction is the limit past medium apertures, and f/32 is 'still not good'. The Z8's 4.35 µm pitch is slightly coarser than the D7100's, so expect onset at about f/11 at normal distances. At 1:1 that same onset arrives at about set f/5.6–f/6.3 (×1.79).",
+    "avoid": [
+      "Set f/16–f/32 at 1:1 except as a last resort: that is about f/29–f/57 effective.",
+      "Do not rely on f/2.8 for FX corner detail at distance.",
+      "Do not trust IBIS to save handheld 1:1 shots (no x/y correction for non-VR F lenses; none at all on Z50 II)."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two measured DX tests (Photozone 10MP, photoartfromscience 24MP) agree on an f/8 peak across the DX frame. FX corner evidence on high-resolution bodies is only visual (Kasson D810, version unspecified) plus Rockwell. Lenstip per-aperture lp/mm values are in a chart image that could not be read. No measured 1:1 data exists, so close-up guidance is calculated (low confidence)."
+  },
+  "character": {
+    "bokeh": "Mixed. Ken Rockwell rates it poor (busy backgrounds at f/2.8). The Nikon Rumors guest review found highlights round wide open but polygonal stopped down. Marco Aries found highlights soft and backgrounds smooth. 7 blades.",
+    "flare_sunstar": "Some flare with a light source in frame: SLRgear/Imaging Resource saw more than expected, and Kasson saw flare in one corner at f/2.8 on a D810. Marco Aries had no problems in normal use without a hood. Sunstars are not documented (7 blades would give 14 points; inferred, not tested).",
+    "ca": "Lateral CA is moderate wide open. Lenstip: 0.10–0.12% at f/2.8 ('medium'), not a problem 2–3 stops down. Photozone: 1.5 px average at the borders at large apertures (D200), 'very high for a prime', decent from f/5.6. DxOMark (D800E): 3 µm. Enable lateral CA correction in raw processing.",
+    "distortion": "Essentially none. Photozone 0.03%, DxOMark 0.1% (D800E), Lenstip 'zero distortion', Rockwell none visible on FX. Good for copy work.",
+    "vignetting": "Low. Lenstip (DX): 12% (−0.37 EV) at f/2.8 and 5% at f/4. DxOMark (D800E, FX): −0.9 EV. Photozone: usable wide open.",
+    "coma_astro": "Lenstip: coma in the corners at f/2.8 between medium and large, almost gone one stop down. Astigmatism low (5%). Not an astro lens.",
+    "focus_breathing": "Not measured by any source found. The lens focuses by extending, so framing changes as you focus (unquantified).",
+    "other": "Designed 1989; D version 1993 (DxOMark, lens-db). It has an aperture ring with a minimum-aperture lock at f/32. Copy variation is possible: SLRgear/Imaging Resource found its APS-C sample 'mediocre' wide open with a soft left side, and a reader suggested a defective copy."
+  },
+  "field_tips": [
+    "Turn the A-M ring to M and focus with peaking or the green focus-point and in/out indicator. AF is impossible on the FTZ II. At 1:1, set the ring to minimum focus and move the camera (or a rail) to focus.",
+    "Lock the aperture ring at f/32 and set aperture from the camera. If the focus ring stops short of 1:1 or infinity, the FULL/LIMIT switch is on LIMIT.",
+    "At 1:1 the front of the lens is only about 73 mm from the subject and the barrel grows about 24 mm. Light from the side or use a small diffused flash, and don't spook insects.",
+    "At 1:1 you lose about 1⅔ stops (f/2.8 becomes about f/5). Set f/5.6–f/8 (about f/10–f/14 effective) for the sharpest frame, and focus-stack rather than going to f/16 or smaller on the Z8.",
+    "As a general 60mm: shoot f/5.6–f/8 for edge-to-edge FX, while f/2.8–f/4 is fine for centered subjects. On the Z50 II it frames like about 90mm with no IBIS, so keep shutter speeds fast."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP (4.35 µm) shows FX corner softness at f/2.8–f/4 and CA wide open. Peak about f/8 across the frame. At 1:1, diffraction appears from about set f/5.6–f/8. IBIS 3-axis only via FTZ II. Effective-aperture display not verified."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP FX (about 5.9 µm pitch) is less demanding. Its per-pixel behavior is close to the D200-era tests' 6 µm, so f/8 is a safe peak. At 1:1, f/11 set is still acceptable. IBIS 5-axis body (Nikon), but only yaw, pitch and roll apply to this non-VR F lens per Nikon's FTZ II statement."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX crop: about 90mm-equivalent framing (DPReview), and soft FX corners fall outside the frame. 20.9MP (about 4.2 µm) is close to the D7100 test (3.9 µm), so the f/8 peak and f/11 diffraction onset apply directly. No IBIS for stills."
+    }
+  ],
+  "tc_compatible": null,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor AF Micro 60 mm f/2.8D (Arkadiusz Olech)",
+      "url": "https://www.lenstip.com/29.4-Lens_review-Nikon_Nikkor_AF_Micro_60_mm_f_2.8D_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10.2MP DX), RAW MTF50",
+      "date": "2007-10",
+      "findings": "Center at f/2.8 is 'brilliant' at almost 40 lp/mm. Edge: weaker than the 105 VR at f/2.8, very high marks from f/4. Per-aperture lp/mm values are only in a chart image (not readable here). CA 0.10–0.12% at f/2.8 (medium), not problematic 2–3 stops down. Vignetting (DX) 12% (−0.37 EV) at f/2.8, 5% at f/4. Coma medium-to-large at f/2.8, almost gone one stop down. Astigmatism 5%. Summary: zero distortion, small vignetting, coma a bit large, CA wide open could be lower. Build page: MFD 0.219 m with max aperture f/5.0 there, full f/2.8 only at 1.8 m and beyond. Barrel extends noticeably. FULL/LIMIT switch. Separate A/M ring. 7 blades, non-rotating 62 mm filter. Other chapters: 29.3 Build, 29.5 CA, 29.7 Coma, 29.8 Vignetting, 29.11 Summary."
+    },
+    {
+      "id": "photozone",
+      "name": "Photozone (now OpticalLimits): Micro-Nikkor AF 60mm f/2.8 D review",
+      "url": "https://photozone.de/nikon--nikkor-aps-c-lens-tests/219-micro-nikkor-af-60mm-f28-d-review--test-report?start=1",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10.2MP DX)",
+      "date": "2006-06",
+      "findings": "Excellent from f/2.8. Center slightly better than the border at large to medium apertures. Peak at f/8 with a perfectly even characteristic across the frame. Beyond medium apertures, diffraction is the limit, and f/32 is comparatively good but 'still not good'. Distortion 0.03%. Vignetting very well controlled. CA peaks at about 1.5 px average at the borders at large apertures ('very high for a fix-focal'), very decent from f/5.6. LW/PH figures are only in the chart image. Page 1: MFD 0.22 m for 1:1, linear extension design, focus limiter, separate AF/MF ring, non-rotating front. Verdict page: 4 stars optical."
+    },
+    {
+      "id": "photoartfromscience",
+      "name": "Photo Art From Science: Micro-Nikkor 60mm AF-D review (MTF50 tests)",
+      "url": "https://www.photoartfromscience.com/single-post/2015/12/13/micro-nikkor-60mm-afd-review",
+      "kind": "measured",
+      "tested_on": "Nikon D7100 (24MP DX, about 3.9 µm pitch); single copy",
+      "date": "2015-12 (updated 2020-08)",
+      "findings": "Relative MTF50 changes. Center +9% from f/2.8 to f/4, no measurable gain at f/5.6. Corners +40% at f/4 and +29% more at f/5.6. f/8 is peak performance across the frame. Diffraction begins at f/11 (still great), noticeable drop beyond f/11. Min aperture f/32 (f/57 at 1:1). No resolution gain seen at closer distances (limited test, 1:1 not specifically tested). Working distance about 3 in at 1:1. Center about 13% sharper than the 105 f/2.8 AF-S VR Micro, while the 105 has better corners until f/5.6. Only percentages were published, no absolute values."
+    },
+    {
+      "id": "kasson",
+      "name": "Jim Kasson (The Last Word): normal lenses on the D810 at f/2.8, f/5.6 and f/8",
+      "url": "https://blog.kasson.com/the-last-word/normal-lenses-on-the-d810-at-f8",
+      "kind": "measured",
+      "tested_on": "Nikon D810 (36MP FX, 4.88 µm); distant landscape, visual 3× crops, no numbers",
+      "date": "2015-03",
+      "findings": "Lens listed only as 'Nikon 60mm f/2.8 AF Micro-Nikkor' (screw-drive AF; D or non-D not stated). f/2.8: center slightly soft relative to the 58/1.4G, Sigma 50 Art and Otus, and the upper-right corner soft with some flare. Corner not good enough at f/4 and 'credible' at f/5.6. f/8: centers all similar, corner second-weakest of six (behind the Sigma, Otus and Coastal 60, ahead of the 58/1.4G). Related pages: https://blog.kasson.com/the-last-word/normal-lenses-on-the-d810-at-f2-8 and https://blog.kasson.com/the-last-word/normal-lenses-on-the-d810-at-f5-6/"
+    },
+    {
+      "id": "dxomark",
+      "name": "DXOMARK: AF Micro-Nikkor 60mm f/2.8D on D800E",
+      "url": "https://www.dxomark.com/cn/Lenses/Nikon/Nikon-AF-Micro-Nikkor-60mm-F28D-mounted-on-Nikon-D800E__814",
+      "kind": "measured",
+      "tested_on": "Nikon D800E (36MP FX)",
+      "date": null,
+      "findings": "Score 30. Sharpness 25 P-Mpix. Transmission T3. Distortion 0.1%. Vignetting −0.9 EV. CA 3 µm. Spec page (D810 listing) says 7 blades with circular aperture 'yes', which conflicts with Rockwell."
+    },
+    {
+      "id": "slrgear",
+      "name": "SLRgear / Imaging Resource: Nikon 60mm f/2.8D AF Micro Nikkor",
+      "url": "https://www.imaging-resource.com/?p=479738",
+      "kind": "measured",
+      "tested_on": "APS-C Nikon body (D70-era, about 6MP); blur-index charts",
+      "date": "2005/2006",
+      "findings": "Wide open 'decidedly mediocre' with the whole left side soft, improving stopped down. Good CA, very good shading and distortion. More flare than expected. Verdict 'only a mediocre lens'. A reader comment suggests a defective copy, and this result disagrees with every other test. Treated as possible copy variation. No blur-index numbers were readable."
+    },
+    {
+      "id": "kenrockwell",
+      "name": "Ken Rockwell: Nikon 60mm f/2.8 AF-D Micro review",
+      "url": "https://kenrockwell.com/nikon/60mm-afd.htm",
+      "kind": "review",
+      "tested_on": "Nikon DSLRs, FX and DX (specific bodies not captured); qualitative",
+      "date": "2008-05 (nav shows 2013-06)",
+      "findings": "8 elements in 7 groups, CRC. 7 straight (not rounded) blades. 62 mm non-rotating filter. Measured weight 434 g (Nikon spec 440 g). MFD 0.219 m to the image plane. f/32 min (f/57 at 1:1). Extends from 74.8 mm (2.943 in) to 99.26 mm from the flange at 1:1. Measured working distance at 1:1 about 73 mm (says Nikon specifies 90.4 mm). Max aperture by distance: f/2.8 at infinity and 3 m, f/3.2 at 1 m, f/3.5 at 0.3 m, f/4 at 0.25 m, f/5 at 1:1. 'Unquestionably excellent'. Only weakness is the far FX corners at f/2.8. Diffraction-limited a stop or two down. No visible distortion (RMS 0.196). Low falloff on FX. Bokeh rated poor. Focus limiter present. AF hunts over the full range. Low weight as a source."
+    },
+    {
+      "id": "nikon_manual",
+      "name": "Nikon instruction manual: AF Micro-Nikkor 60mm f/2.8D (ManualsLib scan)",
+      "url": "https://manualslib.com/manual/953104/Nikon-Af-Micro-Nikkor-60mm-F-2-8-D.html?page=5",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Closest focus 0.219 m (8¾ in). Exposure factors: 1:2 = 1.92 (1 stop), 1:1.4 = 2.43 (1⅓ stops), 1:1 = 3.20 (1⅔ stops). Focus limit switch FULL/LIMIT with two LIMIT zones, about 0.3 m to infinity and 0.3 m to 0.219 m (page 4). Minimum-aperture lock at f/32. A-M ring selects AF or MF. OCR is partly garbled, and pages 4–5 were used."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "With a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. F lenses with a built-in AF motor (AF-S, AF-P, AF-I) keep full AF."
+    },
+    {
+      "id": "nikon_ftz_compat",
+      "name": "Nikon: FTZ 'Compatible F Mount Lenses' feature table (manualmachine copy)",
+      "url": "https://manualmachine.com/nikon/ftz/17014601-compatible-f-mount-lenses",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Row 'AF NIKKOR Type G and D': autofocus not supported. MF with electronic rangefinder and plain MF supported. All exposure modes and metering supported. Nikon's own PDF (https://download.nikonimglib.com/archive6/amgQQ00igi0U06sJjMP25JWC2H05/FTZ_CompatibleFmount_(En)11.pdf) was also fetched, but its table extraction was ambiguous. It says on-camera VR covers pitch, yaw and roll."
+    },
+    {
+      "id": "kenrockwell_ftz",
+      "name": "Ken Rockwell: Nikon FTZ and FTZ II compatibility",
+      "url": "https://kenrockwell.com/nikon/mirrorless/lenses/ftz.htm",
+      "kind": "review",
+      "tested_on": "Nikon Z bodies with FTZ",
+      "date": null,
+      "findings": "No AF with AF-D screw-drive lenses. Focus confirmation works: the selected focus point turns from red to green and in/out indicators appear. Full EXIF and exposure control. Nothing on Micro effective-aperture display."
+    },
+    {
+      "id": "dpreview_specs",
+      "name": "DPReview product page: Nikon AF Micro-Nikkor 60mm f/2.8D",
+      "url": "https://www.dpreview.com/products/nikon/lenses/nikon_60_2p8d_micro/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Spec database, not a lab test. MFD 0.22 m, 1.0×, 7 blades, 440 g. Focus limiter FULL, or LIMIT at 0.3 m–infinity / 0.3–0.219 m. About 90mm-equivalent on DX. No full-time manual focus in AF mode."
+    },
+    {
+      "id": "lensdb",
+      "name": "lens-db: Nikon AF Micro-Nikkor 60mm F/2.8D (1993)",
+      "url": "https://lens-db.com/nikon-af-micro-nikkor-60mm-f28d-1993",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Compiled from manufacturer data. MFD 0.219 m, 1:1, a figure of 0.073 m listed alongside 1:1 (likely working distance), 7 blades, 440 g, 62 mm, Ø70 × 74.5 mm, CRC, FULL/LIMIT limiter. Introduced Oct 1993 (AF non-D 1989)."
+    },
+    {
+      "id": "photoblogs_users",
+      "name": "Nikon Rumors guest review (Neo Vincent) and Marco Aries blog",
+      "url": "https://nikonrumors.com/2017/12/16/nikon-af-micro-nikkor-60mm-f-2-8d-lens-review.aspx/",
+      "kind": "review",
+      "tested_on": "Nikon D7200 (24MP DX); Marco Aries body unnamed, adapted",
+      "date": "2017-12 / 2024-11",
+      "findings": "Nikon Rumors guest: slightly soft below f/5 on their copy (improved with AF fine-tune +11). Bokeh highlights round wide open, polygonal stopped down. Mostly shot at f/5.6. Marco Aries (https://marcoaries.blogspot.com/2024/11/micro-nikkor-60mm-f28-lens-review-and.html): center very sharp at f/2.8, softer corners, very sharp across the frame by f/8. Smooth bokeh. Some flare toward light sources. CA wide open fades stopped down. States a 160° focus throw and about 420 g."
+    },
+    {
+      "id": "photolounge_video",
+      "name": "The Photo Lounge (YouTube): Nikon 60mm f2.8 Micro Nikkor tested!",
+      "url": "https://www.youtube.com/watch?v=Nb_SacLQK6Q",
+      "kind": "video",
+      "tested_on": "Mirrorless (body not stated in description)",
+      "date": "2021-12",
+      "findings": "Description only (video not watched): an older AF macro lens, 'a super sharp performer', with 'some slight issues for use on mirrorless cameras' (issues not specified in the description). Lens version not stated."
+    },
+    {
+      "id": "body_ibis",
+      "name": "Nikon Z5II product page; Digital Camera World Z50 II vs Z50",
+      "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Z5II: 5-axis image-sensor-shift VR (7.5 stops center, CIPA 2024). Digital Camera World (https://www.digitalcameraworld.com/buying-guides/nikon-z50-ii-vs-nikon-z50): the Z50 II relies on VR lenses for stabilized stills (no IBIS)."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the AF Micro-NIKKOR 60mm f/2.8D was found. A web search and a youtube.com-restricted search returned his channel pages but no video on this lens. The YouTube search page itself is blocked to fetching. Videos found on this lens are from other channels: The Photo Lounge (2021), David Saylors (2018), Jules Vuotto's Photo Focus (2025, as a standard lens) and Marco Aries (2025). An 'AF-S Micro 60mm f/2.8G ED review' result turned out to be from Camera Insider, not Frost. Nothing is attributed to him."
+  },
+  "research_notes": "1) Test vintage: every measured test predates high-resolution FX mirrorless. Lenstip and Photozone used a 10MP DX D200 (about 6 µm pitch), SLRgear a roughly 6MP DX body, photoartfromscience a 24MP DX D7100 (3.9 µm). Only Kasson (D810, 36MP FX, visual only, version unspecified) and DxOMark (D800E) cover FX at high resolution. For the Z8 (4.35 µm, FX), the DX tests describe the central 1.5× crop well: the D7100 is even finer-pitched. FX corners rest on Kasson and Rockwell, hence corners_peak f/8 with medium confidence. Lenstip lp/mm by aperture (chart image https://www.lenstip.com/upload3/2559_Nik60mm_res.jpg) and Photozone LW/PH charts could not be read, so they are not quoted. 2) Close-up: no source measured sharpness at 1:1. close_up_best is computed from the Nikon exposure factor (×1.79 at 1:1) plus photoartfromscience's f/11 diffraction onset. Low confidence. 3) Effective aperture on Z bodies via FTZ II: not verifiable (no Nikon document or user report found). DSLR display of reduced aperture is documented (Rockwell table; Unique Photo Q&A on D90: https://www.uniquephoto.com/community/qa/why-does-my-nikon-60mm-micro-af-d-show-a-smaller-maximum-aperture-on-a-d90). 4) Working distance: 73 mm (Rockwell measured, lens-db 0.073 m, photoartfromscience about 3 in, and arithmetic 219 − 46.5 flange − 99.3 extended length ≈ 73 mm) vs a 90.4 mm figure Rockwell attributes to Nikon. 73 mm is used. 5) Rounded blades: DxOMark says circular, Rockwell says straight, and the Nikon Rumors guest saw polygonal highlights stopped down. Set to null. 6) The SLRgear negative result conflicts with all other tests and is treated as a likely bad copy. 7) tc_compatible null: Nikon TC-E teleconverters are generally limited to specific AF-S/AF-I telephotos, but this was not verified this session. 8) Nikon official imaging.nikon.com/nikonusa spec page for this lens was not found. Specs are from the Nikon manual scan plus Lenstip, DPReview, lens-db and Photography Life (https://photographylife.com/lenses/nikon-af-micro-nikkor-60mm-f2-8d: 0.22 m, 1:1, 440 g, 62 mm, 7 blades, 8/7, f/2.8–32, 70 × 74.5 mm), which all agree. 9) The focus limiter's effect in MF on this lens is unverified, so the field tip is phrased conditionally. 10) data/kit.json notes ownership 'confirmed Nov 5, 2026 (manifest update pending)'."
+}

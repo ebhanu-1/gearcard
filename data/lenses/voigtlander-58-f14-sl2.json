@@ -1,0 +1,199 @@
+{
+  "id": "voigtlander-58-f14-sl2",
+  "name": "Voigtländer Nokton 58mm f/1.4 SL II (SL II / SL II N / SL II S)",
+  "short": "Nokton 58 f/1.4 SL II",
+  "mount": "F",
+  "adapter": "FTZ II",
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    58
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 58,
+      "f": 1.4
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": null,
+  "weight_g": 320,
+  "filter_mm": null,
+  "focus": {
+    "on_z_body": "MF (manual-focus lens)",
+    "cpu": true,
+    "motor": "None. Manual-focus double-Gauss with CPU contacts (AI-S/AI-P style): passes aperture and focal length to the body; aperture set from the camera's command dial.",
+    "focus_throw_deg": 270,
+    "notes": "Phillip Reeve's site (SL IIs, 2024): about 270° throw, turning the Nikon way. Lenstip: wide focus-ring range, and the contacts enable the in-focus indicator, though that indicator's range is often too broad to rely on. Use peaking + magnified view instead. Jake Horn (SL II): smooth but tight at the start and end of travel. Versions: SL II (rubber grip, Nikon and Pentax), SL II N (April 2012, all-metal focus barrel, Nikon only) and SL II S (2016, retro barrel, 52 mm filter, NAI prong). CameraQuest says each has 'the same glass' as the previous version. Phillip Reeve's site says the 2007, 2012 and 2017 versions share the same optical design. Diglloyd (2013) calls the newer versions 'apparently optically identical'. So all three are optically identical (manufacturer documentation not found; dealer and reviewer sources agree). As with other CPU lenses on the FTZ, the aperture ring should be locked at minimum aperture (f/16) so the camera controls the aperture (inferred from the ZF.2 behaviour Reeve documents and Nikon's CPU-lens convention; not specifically tested for this lens)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": "3-axis (yaw, pitch, roll) via FTZ II on Z8 and Z5 II. None on Z50 II (no IBIS).",
+    "notes": "Nikon FTZ II page (fetched 2026-11-05): with a non-VR F-mount lens, yaw, pitch and roll are corrected in-camera. The CPU passes 58 mm to IBIS automatically."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 58,
+        "value": 0.45
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 58,
+        "value": 0.17
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.45 m (Lenstip, Phillip Reeve's site, Photography Life). Max magnification 1:5.8 (about 0.17×; Lenstip, Photography Life, diglloyd); Reeve's site measured 1:5.9. Working distance was not found. Light loss at 0.17× is about 0.4 stop (computed), so negligible. Close-range sharpness is weak wide open: Reeve's site (42MP, 0.45 m) found f/1.4 very soft, f/2 still soft, f/2.8 almost good, f/4 very contrasty. Photozone (FF) says avoid large apertures at close focus."
+  },
+  "quick": {
+    "headline": "Character 58: glowy, low-contrast f/1.4 that is sharp in the centre by f/2.8 and excellent at f/5.6; wild bokeh, weak flare control, slight focus shift.",
+    "sweet_spot": "f/4–f/8",
+    "wide_open": "Centre very good but low contrast at f/1.4. Edges soft and extreme corners relatively soft (Photozone FF). Lenstip (D3x 24MP): FX edge needs about f/2.8 to be useful. Phillip Reeve's site: contrast rises markedly by f/2–f/2.8. Vignetting about 2.3–2.6 EV.",
+    "by_focal": [
+      {
+        "focal_mm": 58,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "Photozone (Canon FF DSLR): f/1.4 centre very good with low contrast, borders quite decent, corners soft; f/2 better; f/2.8 'really snappy'; f/5.6 peak, truly excellent; diffraction slightly more obvious from f/11. Lenstip (Nikon D3x 24MP, RAW): f/4 and f/5.6 centre 'nearly record-breaking'; FX edge needs about f/2.8; lp/mm values only in a chart. Phillip Reeve's site (Sony A7rII 42MP): corners good from f/8 at infinity; good at f/1.4–f/2 at portrait distance (1.5 m)."
+      }
+    ],
+    "close_up_best": "f/4–f/5.6",
+    "close_up_note": "Phillip Reeve's site (42MP, 0.45 m): f/1.4 very soft, f/2 soft, f/2.8 almost good, f/4 very contrasty. Photozone (FF): softer at close focus, avoid large apertures. Focus shift appears from f/2.8 to f/4 (diglloyd), so focus at the shooting aperture.",
+    "diffraction_note": "Photozone (Canon FF DSLR, lower resolution than the Z8): diffraction slightly more obvious from f/11, still plenty sharp. Expect it a little earlier, about f/8–f/11, on the Z8's 4.35 µm pixels (inference).",
+    "avoid": [
+      "Do not shoot close-ups at f/1.4–f/2 and expect detail: very soft at 0.45 m.",
+      "Do not trust the camera's in-focus indicator alone: Lenstip found its range too broad.",
+      "Avoid bright light sources in frame if you need clean contrast: flare-prone (Reeve's site)."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Two measured tests (Photozone FF and Lenstip D3x 24MP, verbal only; numbers in charts) agree on a centre peak at f/4–f/5.6 and weak FX edges below f/2.8. The 42MP visual test (Phillip Reeve's site, on Sony with a thick filter stack) puts the corners at f/8. No 45MP Nikon test was found."
+  },
+  "character": {
+    "bokeh": "Classic all-spherical double Gauss (Phillip Reeve's site): smooth backgrounds at close range at f/1.4, but busy double-edged rendering with structured backgrounds at mid distance; noticeably calmer at f/2.8. Strong cat's eyes from optical vignetting. Photozone FF: very smooth foreground blur, rough background with contrasty subjects, outlined highlights; better at f/2, very good at f/2.8. Photozone DX: outlining at f/1.4–f/2, gone by f/2.8.",
+    "flare_sunstar": "Conflict. Phillip Reeve's site: poor flare resistance, with strong ghosts even at f/1.4, a ring artifact at f/2.8 and ghosts or veiling at f/11; a hood would not help; easier to trigger than most Voigtländers. Lenstip (2010): good performance against bright light. Sunstars decent f/8–f/16 but less distinct than 10–12-blade lenses (Reeve's site).",
+    "ca": "Lateral CA low: Photozone FF under 0.4 px, DX about 0.5 px; Lenstip well corrected (graph only); Reeve's site almost none. LoCA: Photozone noticeable green/magenta halos at f/1.4–f/2, not objectionable at f/2.8, gone at f/4; Reeve's site average for the class. Purple halos at f/1.4 from undercorrected spherical aberration (Reeve's site).",
+    "distortion": "Low barrel: Photozone FF 0.7%, DX 0.3%; Lenstip slight; Reeve's site low.",
+    "vignetting": "Heavy wide open. Phillip Reeve's site (FF): 2.6 EV at f/1.4, 2.1 at f/2, 1.1 at f/2.8, 0.5 at f/4, 0.3 from f/5.6. Photozone FF: about 2.3 EV at f/1.4, moderate at f/2.8. Lenstip D3x: 52% at f/1.4, 36% at f/2, 18% at f/2.8, 8% at f/4. DX: Lenstip 28% (−0.96 EV), Photozone about 0.7 EV at f/1.4.",
+    "coma_astro": "Lenstip: high coma (con). Phillip Reeve's site: not well corrected, corners very good from f/5.6. Astigmatism low, 5% (Lenstip).",
+    "focus_breathing": "Not measured by any source found.",
+    "other": "Focus shift: Phillip Reeve's site found it slight, the lowest of three fast Voigtländers compared, and visible on close inspection; direction not stated. Diglloyd (excerpt only): relatively small, much less than 50mm alternatives, noticeable from f/2.8 to f/4. Photozone (DX) found about 2/3 EV overexposure on the D200. Photography Life readers say it is sensitive to filters."
+  },
+  "field_tips": [
+    "Focus at the shooting aperture for f/2.8–f/5.6 portraits and close-ups: focus shifts slightly between f/2.8 and f/4. Check a test frame magnified.",
+    "Keep the aperture ring at f/16 (minimum) and set aperture from the camera; focus with peaking + magnified view, not the in-focus dot.",
+    "For the glow and swirl, use f/1.4–f/2 at portrait distance (1.5 m is good across the frame). For clean detail use f/4–f/5.6, and f/8 for corners on the Z8.",
+    "Close to 0.45 m, start at f/4: wide open it is very soft up close.",
+    "Shade the lens when light sources are near the frame: ghosts appear even at f/1.4 and f/11."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP magnifies the f/1.4 haze, LoCA and focus shift. Centre excellent from f/4, corners need about f/8. IBIS 3-axis via FTZ II."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP matches Lenstip's D3x test (24MP FX): FX edges usable from f/2.8, peak f/4–f/5.6. IBIS 3-axis via FTZ II."
+    },
+    {
+      "body": "z50ii",
+      "note": "About 87mm-equivalent portrait lens on DX. Photozone (DX): f/2 already good at the borders, vignetting only about 0.7–1 EV at f/1.4. No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "photozone_ff",
+      "name": "Photozone (OpticalLimits): Voigtländer Nokton 58mm f/1.4 SL II, Full Format Review",
+      "url": "https://photozone.de/canon_eos_ff/518-voigtlander58f14ff?start=1",
+      "kind": "measured",
+      "tested_on": "Canon full-frame DSLR (model not named in text), adapted",
+      "date": null,
+      "findings": "f/1.4 centre very good with reduced contrast, borders quite decent, extreme corners relatively soft; f/2 better; f/2.8 really snappy; f/5.6 peak, truly excellent; softer at close focus, so avoid large apertures there. Diffraction slightly more obvious from f/11. Distortion 0.7% barrel. Vignetting about 2.3 EV at f/1.4, moderate at f/2.8. Lateral CA under 0.4 px. LoCA green/magenta at f/1.4–f/2, gone by f/4. Bokeh: smooth foreground, rough background with contrasty subjects, outlined highlights, very good by f/2.8. Ratings: optics 3, mechanics 4, price/performance 4. MTF values only in charts."
+    },
+    {
+      "id": "photozone_dx",
+      "name": "Photozone: Voigtländer Nokton 58mm f/1.4 SL II (Nikon APS-C)",
+      "url": "https://www.photozone.de/nikon--nikkor-aps-c-lens-tests/360-voigtlander-nokton-58mm-f14-sl-ii?start=1",
+      "kind": "measured",
+      "tested_on": "Nikon D200 (10.2MP DX)",
+      "date": null,
+      "findings": "f/1.4 centre very good, borders soft, low contrast; f/2 borders good; f/2.8 big improvement; f/5.6 peak. Distortion about 0.3% barrel. Vignetting about 0.7 EV at f/1.4 (DX). Lateral CA about 0.5 px. LoCA magenta in front, green behind, well controlled for the speed. Bokeh outlining at f/1.4–f/2, gone by f/2.8. About 2/3 EV overexposure noted."
+    },
+    {
+      "id": "lenstip",
+      "name": "Lenstip: Voigtländer Nokton 58 mm f/1.4 SL II review",
+      "url": "https://www.lenstip.com/265.4-Lens_review-Voigtlander_Nokton_58_mm_f_1.4_SL_II_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon D3x (24.5MP FX), RAW; APS-C on D200",
+      "date": "2010-09",
+      "findings": "Resolution numbers only in a graph; decency level about 30 lp/mm on D3x. FX: f/4–f/5.6 centre 'nearly record-breaking'; beats the AF-S 50/1.4G, slightly behind the Zeiss Planar 50/1.4. FX edge needs about f/2.8; APS-C edge acceptable about f/2.2, very high by f/4. Vignetting D3x 52% at f/1.4, 36% at f/2, 18% at f/2.8, 8% at f/4; D200 28% (−0.96 EV) at f/1.4. Astigmatism 5%. Coma high. Pros: excellent centre, well-corrected CA, slight distortion, good against bright light. Cons: weak edges near f/1.4, high coma, huge FX vignetting. Specs: 7/6, 0.45 m, 1:5.8, 9 blades, 320 g. In-focus indicator range often too broad (focusing chapter)."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "phillipreeve.net (BastianK): Review: Voigtländer 58mm 1.4 SL IIs Nokton (Nikon F)",
+      "url": "https://phillipreeve.net/blog/review-voigtlander-58mm-1-4-sl-iis-nokton-nikon-f/",
+      "kind": "review",
+      "tested_on": "Sony A7rII (42MP) adapted; A7III and Nikon FM2n film for samples; SL IIs (2017) version",
+      "date": "2024-06",
+      "findings": "2007, 2012 and 2017 versions share the same optical design. 315 g measured, 0.45 m, 1:5.9 measured, 9 rounded blades, 52 mm, about 270° throw. Infinity: contrast rises strongly by f/2–f/2.8; corners good from f/8. Portrait (1.5 m): good at f/1.4–f/2 across centre and midframe. Close (0.45 m): f/1.4 very soft, f/2 soft, f/2.8 almost good, f/4 very contrasty. Focus shift slight (lowest of three compared), visible on close inspection. Bokeh classic double Gauss: smooth close up, busy double edges mid-distance, calmer at f/2.8, strong cat's eyes. Lateral CA almost none; LoCA average. Flare poor (ghosts at f/1.4, ring at f/2.8, ghosts or veil at f/11). Sunstars decent f/8–f/16. Coma not well corrected, very good from f/5.6. Vignetting 2.6 / 2.1 / 1.1 / 0.5 / 0.3 EV at f/1.4 / f/2 / f/2.8 / f/4 / f/5.6+. Low barrel distortion."
+    },
+    {
+      "id": "diglloyd",
+      "name": "Diglloyd (premium page excerpt): Voigtländer Nokton 58 focus shift; and 2013 D800E 58mm blog post",
+      "url": "https://diglloyd.com/prem/s/DAP/Voigtlander/Nokton58-focus-shift-dolls.html",
+      "kind": "review",
+      "tested_on": "Body not named in the visible excerpt",
+      "date": "2022 or earlier (copyright footer)",
+      "findings": "Visible excerpt only: focus shift relatively small, much less than 50mm alternatives, noticeable from f/2.8 to f/4, predictable elsewhere. Direction not visible. Blog post https://diglloyd.com/blog/2013/20131103_1-D800E-58mm-lenses.html (2013-11): focuses to 1:5.8; newer SL II N 'apparently optically identical'."
+    },
+    {
+      "id": "cameraquest",
+      "name": "CameraQuest: Voigtländer SL II lenses",
+      "url": "https://cameraquest.com/Voigt_SL2.htm",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Dealer/importer page. SL II v1: rubber grip, Nikon AI-S and Pentax KA, CPU. SL II N (April 2012): 'same glass as earlier SL II Version', all-metal focus barrel, 65.9 mm diameter (vs 64.4), Nikon only, CPU. SL II S (2016): 'same glass as the previous SLIIN version'; differences are the barrel, smaller 52 mm filter ring, NAI prong and new 58LHs hood; CPU integrated."
+    },
+    {
+      "id": "specs_db",
+      "name": "Lenstip SL II S spec page and Photography Life lens database",
+      "url": "https://lenstip.com/1415-Voigtlander_Nokton_58_mm_f_1.4_SL_II_S-lens_specifications.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Lenstip SL II S: 7/6, 0.45 m, 9 blades, 52 mm, 320 g, f/16, announced 2016-09-16. Photography Life (https://photographylife.com/lenses/voigtlander-58mm-f1-4-nokton-sl-ii): 0.45 m, 1:5.8, 9 blades, 320 g, 7/6, CPU built in, and lists a 58 mm filter for the SL II."
+    },
+    {
+      "id": "jakehorn",
+      "name": "Jake Horn: Voigtlander 58mm F1.4 SL II Review",
+      "url": "https://jakehornphotography.com/blog/voigtlander58",
+      "kind": "review",
+      "tested_on": "Body not named (digital and film)",
+      "date": "2018-09",
+      "findings": "SL II v1. Second version optically and mechanically the same, with cosmetic changes such as a metal focus ring. Focus smooth but tight at the ends of travel. Implies the blades are straight compared with the Nikon 58/1.4G's curved blades. Aperture clicks only at marked stops. Hood sold separately."
+    },
+    {
+      "id": "nikon_ftz_ii",
+      "name": "Nikon: Mount Adapter FTZ II product page",
+      "url": "https://www.nikon.ie/en_IE/product/accessories/mirrorless/mount-adapter-ftz-ii",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Non-VR F-mount lens: yaw, pitch and roll corrected in-camera."
+    }
+  ],
+  "chris_frost": {
+    "url": null,
+    "access": "not-found",
+    "summary": "No Christopher Frost review of the Voigtländer Nokton 58mm f/1.4 SL II (any version) was found. A search with his name and the lens returned only Lenstip, Photozone, Adorama and spec pages. Nothing is attributed to him."
+  },
+  "research_notes": "1) Version identity: CameraQuest (SL II → SL II N → SL II S each 'same glass'), Phillip Reeve's site (2007/2012/2017 same optical design), Jake Horn and diglloyd ('apparently optically identical') agree. No Cosina/voigtlaender.de document was fetched to confirm. 2) Filter: SL II S is 52 mm (Lenstip spec, Reeve's site, CameraQuest). CameraQuest calls the SL II S filter 'smaller', and Photography Life lists 58 mm for the SL II, yet Lenstip's SL II review lists 52 mm. The owner's version is not recorded, so filter_mm is null. 3) Rounded blades: Reeve's site (SL IIs) says rounded; Jake Horn (SL II) implies straight. Null. 4) Test vintage: Lenstip D3x (24MP) and Photozone FF (Canon DSLR) are 2010-era; Reeve's site used a 42MP Sony with a thick filter stack, which may make the corners look worse than on Nikon Z. No Nikon Z or 45MP Nikon test found. 5) Focus shift: present but small; direction not stated by any source read (diglloyd full page is paywalled). 6) Flare conflict: Lenstip positive (2010) vs Reeve's site strongly negative (2024). Reeve's more detailed test is weighted higher. 7) Aperture-ring-at-minimum behaviour on FTZ II is inferred from general CPU-lens behaviour and the Zeiss ZF.2 finding; not tested for this lens. 8) Weight 315 g (Reeve's site measured, SL IIs) to 320 g (Lenstip, Photography Life)."
+}

@@ -1,0 +1,1728 @@
+[
+  {
+    "id": "video-file-type",
+    "group": "Video & Controls",
+    "name": "Video file type (codec)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Video file type",
+      "z5ii": "Video recording menu > Video file type",
+      "z50ii": "Video recording menu > Video file type"
+    },
+    "one_liner": "Chooses the recording codec: RAW, ProRes, or compressed H.265/H.264.",
+    "what_it_does": "Sets codec, bit depth and container for video. RAW (N-RAW, ProRes RAW) keeps sensor data for maximum grading latitude with huge files; ProRes 422 HQ is an edit-friendly 10-bit intermediate; H.265 10-bit is the efficient choice for Log/HLG; H.265 8-bit and H.264 8-bit are SDR-only for small, easy files. On the Z50II, tone mode is picked by highlighting the 10-bit file type and pressing right.",
+    "options": [
+      {
+        "value": "N-RAW 12-bit (NEV)",
+        "meaning": "Nikon RAW video; Z8 and Z5II.",
+        "use_when": "Maximum grading latitude - but needs DaVinci Resolve, not Final Cut Pro."
+      },
+      {
+        "value": "ProRes RAW HQ 12-bit (MOV)",
+        "meaning": "Apple RAW video; Z8 only.",
+        "use_when": "RAW video that edits natively in Final Cut Pro."
+      },
+      {
+        "value": "ProRes 422 HQ 10-bit (MOV)",
+        "meaning": "Intra-frame 10-bit, very edit-friendly; Z8 only.",
+        "use_when": "Final Cut Pro editing with minimal transcoding; big files."
+      },
+      {
+        "value": "H.265 10-bit (MOV)",
+        "meaning": "Long-GOP 10-bit 4:2:0; supports SDR, HLG, N-Log.",
+        "use_when": "Default for N-Log/HLG and long bird sessions."
+      },
+      {
+        "value": "H.265 8-bit (MOV)",
+        "meaning": "SDR only, smaller files.",
+        "use_when": "Family clips."
+      },
+      {
+        "value": "H.264 8-bit (MP4)",
+        "meaning": "SDR only, most compatible, AAC audio.",
+        "use_when": "Quick sharing; Z50II slow-motion modes use it."
+      }
+    ],
+    "when_to_change": "Choose per project: H.265 10-bit for most work; ProRes RAW/422 HQ on Z8 when grading matters and cards allow.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "Z8: H.265 10-bit N-Log 4K (or ProRes RAW HQ for hero shots, FCP-native)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Z8: H.265 10-bit SDR or N-Log; Z5II: H.265 10-bit",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "H.265 8-bit or H.264 8-bit SDR",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "H.265 10-bit N-Log or HLG",
+        "scenario_id": "landscape"
+      }
+    ],
+    "body_differences": "Z8: N-RAW 12-bit, ProRes RAW HQ 12-bit, ProRes 422 HQ 10-bit, H.265 10/8-bit, H.264 8-bit. Z5II: N-RAW 12-bit, H.265 10/8-bit, H.264 8-bit (no ProRes; N-RAW at 4032x2268 FX / 3984x2240 DX up to 30p). Z50II: H.265 10/8-bit and H.264 8-bit only.",
+    "gotchas": [
+      "Final Cut Pro does not import N-RAW; use ProRes RAW on the Z8, or DaVinci Resolve for N-RAW (general knowledge - verify on your FCP version).",
+      "8-bit options lock tone mode to SDR - N-Log and HLG need a 10-bit (or RAW) file type.",
+      "RAW and ProRes files fill cards very fast; Z5II/Z50II record to SD."
+    ],
+    "related": [
+      "video-frame-size-rate",
+      "tone-mode-video",
+      "view-assist"
+    ],
+    "firmware_note": "Z8 fw 3.00: ProRes 422 HQ metadata now includes make/model.",
+    "research_notes": "Codec lists from Nikon product/spec pages (Z8, Z5II) and the Z50II manual. FCP/N-RAW incompatibility is general knowledge, not re-sourced this pass. DPReview video sections could not be searched (search budget exhausted).",
+    "sources": [
+      {
+        "id": "z50ii-filetypes",
+        "name": "Nikon Z50II Reference Guide - Video file types",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/19-01.html",
+        "kind": "manufacturer",
+        "findings": "H.265 10-bit (SDR/HLG/N-Log, 4:2:0), H.265 8-bit and H.264 8-bit SDR only; tone mode chosen by highlighting H.265 10-bit and pressing right."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "N-RAW 12-bit, ProRes RAW HQ 12-bit, ProRes 422 HQ 10-bit, H.265 8/10-bit, H.264 8-bit; NEV/MOV/MP4."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "N-RAW 12-bit, H.265 8/10-bit, H.264 8-bit; RAW video 4032x2268 (FX) / 3984x2240 (DX) at 30/25/24p."
+      },
+      {
+        "id": "z8-filetype",
+        "name": "Nikon Z8 Reference Guide - Video File Type",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_video_file_type_165.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-filetype",
+        "name": "Nikon Z5II Reference Guide - Video file type",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/vrm_video_file_type_169.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "video-frame-size-rate",
+    "group": "Video & Controls",
+    "name": "Frame size/frame rate, image area and crops",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Frame size/frame rate; Video recording menu > Image area (FX/DX); Video recording menu > Extended oversampling",
+      "z5ii": "Video recording menu > Frame size/frame rate; Video recording menu > Image area",
+      "z50ii": "Video recording menu > Frame size/frame rate (DX sensor; no video Image area item)"
+    },
+    "one_liner": "Sets resolution and fps; some modes crop the frame.",
+    "what_it_does": "Chooses resolution (8K/4K/1080) and frame rate, which together set bit rate, slow-motion potential and sometimes a sensor crop. High frame rates let you slow birds down in Final Cut Pro. Image area (FX/DX) on the FX bodies crops for reach; some frame rates force a crop.",
+    "options": [
+      {
+        "value": "8K UHD 30/25/24p",
+        "meaning": "Z8 only.",
+        "use_when": "Reframing in post; heavy files."
+      },
+      {
+        "value": "4K UHD up to 120p (Z8) / 60p (Z5II, Z50II)",
+        "meaning": "Main 4K choices.",
+        "use_when": "4K 24/30p for stage; 4K 60/120p for birds."
+      },
+      {
+        "value": "1080p up to 120p",
+        "meaning": "All three.",
+        "use_when": "Slow motion on Z5II/Z50II; Hi-Res Zoom."
+      },
+      {
+        "value": "1080p slow motion (30p x4, 25p x4, 24p x5)",
+        "meaning": "In-camera slow motion, no sound, ~3 min max (Z50II).",
+        "use_when": "Quick slow-mo clips without editing."
+      },
+      {
+        "value": "Image area FX / DX",
+        "meaning": "DX = 1.5x crop on Z8/Z5II.",
+        "use_when": "Extra reach for birds."
+      }
+    ],
+    "when_to_change": "Pick 24/25/30p for normal motion, 60p+ when you'll slow it down.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "Z8: 4K 60p (or 4K 120p for slow motion), FX or DX for reach",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "4K 24/25/30p (allows 1/50–1/60 s shutter in low light)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "4K 30p or 1080 60p",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Z8: 8K up to 30p, 4K up to 120p, RAW video up to 8256x4644 60p, Extended oversampling option. Z5II: 4K up to 60p, with 4K 60p labelled a crop mode by Nikon; 1080 up to 120p. Z50II: 4K up to 60p (4K 60/50p carries a crop note and forces Electronic VR off), 1080 up to 120p; H.264 limited to 1080 60p and below.",
+    "gotchas": [
+      "Z50II 120p/100p and 4K 60/50p force Electronic VR off.",
+      "Slow-motion modes record no sound and cannot use Hi-Res Zoom or Electronic VR (Z50II).",
+      "Frame size choices depend on the chosen Video file type."
+    ],
+    "related": [
+      "video-file-type",
+      "video-shutter-speed",
+      "electronic-vr",
+      "hi-res-zoom"
+    ],
+    "firmware_note": "Z8 fw 2.00 added slow-motion video recording.",
+    "research_notes": "Z5II crop factor for 4K 60p and whether its 4K 30p is full-width oversampled were not verified. Z8 Extended oversampling behaviour not read. Exact Z50II 4K60 crop factor unclear from the fetched page.",
+    "sources": [
+      {
+        "id": "z50ii-framesizes",
+        "name": "Nikon Z50II Reference Guide - Frame size and rate options",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/19-02.html",
+        "kind": "manufacturer",
+        "findings": "Frame sizes and bit rates; crop note for 4K 60/50p; E-VR fixed off at 120/100p, 4K60/50 and slow-mo; slow-mo ~3 min, no sound."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "8K 30/25/24p; 4K up to 120p; 1080 up to 120p; slow-mo; RAW video sizes; extended oversampling."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "4K UHD 60p labelled Crop; 1080 up to 120p; slow-mo."
+      },
+      {
+        "id": "z8-framesize",
+        "name": "Nikon Z8 Reference Guide - Frame Size/Frame Rate",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_frame_size_frame_rate_166.html",
+        "kind": "manufacturer",
+        "findings": "Menu location; Image Area and Extended Oversampling are separate video menu items."
+      },
+      {
+        "id": "z5ii-imagearea-v",
+        "name": "Nikon Z5II Reference Guide - Image area (video)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/vrm_image_area_171.html",
+        "kind": "manufacturer",
+        "findings": "Video image area item exists on Z5II."
+      }
+    ]
+  },
+  {
+    "id": "tone-mode-video",
+    "group": "Video & Controls",
+    "name": "Video tone mode (SDR, HLG, N-Log)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Video file type > highlight a 10-bit type and press right (inferred from Z50II; not verified on Z8)",
+      "z5ii": "Video recording menu > Video file type > highlight H.265 10-bit and press right (inferred from Z50II; not verified on Z5II)",
+      "z50ii": "Video recording menu > Video file type > highlight H.265 10-bit (MOV), press right > SDR / HLG / N-Log"
+    },
+    "one_liner": "SDR looks finished; N-Log keeps range for grading; HLG is HDR-ready.",
+    "what_it_does": "SDR (BT.709) bakes in the Picture Control look. N-Log (BT.2020) records a flat logarithmic curve that keeps highlight and shadow range for grading with a LUT in Final Cut Pro. HLG (BT.2100) is an HDR delivery format for HDR TVs/phones. Log and HLG raise the minimum ISO.",
+    "options": [
+      {
+        "value": "SDR",
+        "meaning": "Standard, ready to use.",
+        "use_when": "Family clips, quick turnaround."
+      },
+      {
+        "value": "N-Log",
+        "meaning": "Flat log needing a LUT/grade. ISO floor 800 on Z5II/Z50II (Lo values also offered); Z8 gained low-ISO N-Log options in fw 2.00.",
+        "use_when": "Bright birds against sky, stage with hot spots, when you will grade."
+      },
+      {
+        "value": "HLG",
+        "meaning": "HDR curve; ISO from 400 (Z8 400–25600, Z5II 400–51200, Z50II 400–25600).",
+        "use_when": "Delivering HDR to iPhone/Apple TV."
+      }
+    ],
+    "when_to_change": "Use N-Log when highlights matter and you will grade; SDR otherwise.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "N-Log with View assist ON; expose brighter than SDR, protect whites with zebras",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "SDR (N-Log's ISO floor and grading noise hurt in dim light); N-Log only if stage lights are bright",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "SDR",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "All three support SDR/HLG/N-Log with 10-bit H.265. Z8 also offers RAW video and ProRes 422 HQ. ISO floors differ as listed.",
+    "gotchas": [
+      "N-Log looks washed out on screen - turn on View assist.",
+      "Underexposed N-Log is noisier than SDR - expose brighter.",
+      "8-bit file types force SDR."
+    ],
+    "related": [
+      "video-file-type",
+      "view-assist",
+      "zebra-pattern",
+      "brightness-information-display"
+    ],
+    "firmware_note": "Z8 fw 2.00: low ISO options in mode M for N-Log.",
+    "research_notes": "'Expose brighter' is common N-Log practice, not Nikon text. Tone-mode selection path verified on Z50II only. Z8 N-Log ISO floor value not read directly.",
+    "sources": [
+      {
+        "id": "z50ii-filetypes",
+        "name": "Nikon Z50II Reference Guide - Video file types",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/19-01.html",
+        "kind": "manufacturer",
+        "findings": "SDR BT.709, HLG BT.2100, N-Log BT.2020; selection via H.265 10-bit."
+      },
+      {
+        "id": "z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "HLG ISO 400–25600; N-Log Lo 0.3–2.0 and 800–25600."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "N-Log ISO 800–51200; HLG 400–51200."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "N-Log and HLG supported; HLG ISO 400–25600."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.00 added low ISO options in mode M for N-Log."
+      }
+    ]
+  },
+  {
+    "id": "view-assist",
+    "group": "Video & Controls",
+    "name": "View assist (Log preview)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > g14 View assist",
+      "z5ii": "Custom settings menu > g11 View assist",
+      "z50ii": "Custom settings menu > g11 View assist"
+    },
+    "one_liner": "Shows N-Log with normal contrast on screen; the recording stays flat.",
+    "what_it_does": "When recording N-Log, View assist applies a simplified contrast/color conversion to the monitor and EVF so you can judge focus and composition. The recorded file is unaffected and the preview colors are only approximate.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Contrast-enhanced preview of N-Log (also in playback).",
+        "use_when": "Always when shooting N-Log."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Flat log view.",
+        "use_when": "Judging the log signal with the waveform."
+      }
+    ],
+    "when_to_change": "Leave ON whenever N-Log is active.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "ON",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "ON if using N-Log",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "g14 on Z8 (fw 3.00 changed its tonal characteristics); g11 on Z5II/Z50II.",
+    "gotchas": [
+      "Don't judge exposure from the View-assist image - use zebras or waveform.",
+      "Preview colors are simplified and won't match your grade."
+    ],
+    "related": [
+      "tone-mode-video",
+      "zebra-pattern",
+      "brightness-information-display"
+    ],
+    "firmware_note": "Z8 fw 3.00: changed tonal characteristics when View assist is ON.",
+    "research_notes": "Whether Z8 View assist also applies to RAW video/HLG was not verified.",
+    "sources": [
+      {
+        "id": "z50ii-g11",
+        "name": "Nikon Z50II Reference Guide - g11 View assist",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-90.html",
+        "kind": "manufacturer",
+        "findings": "N-Log only; higher-contrast preview; simplified colors; recording unaffected; also applies in playback."
+      },
+      {
+        "id": "z8-g14",
+        "name": "Nikon Z8 Reference Guide - g14 View Assist",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmg_view_assist_288.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-g11",
+        "name": "Nikon Z5II Reference Guide - g11 View assist",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmg_view_assist_283.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 3.00 changed tonal characteristics with View assist ON."
+      }
+    ]
+  },
+  {
+    "id": "video-shutter-speed",
+    "group": "Video & Controls",
+    "name": "Shutter speed in video (180° rule), shutter angle and ND",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Mode M in video; Custom settings g13 Shutter mode (speed or angle, fw 2.10+); g12 Extended shutter speeds (mode M)",
+      "z5ii": "Mode M (or S) in video; Custom settings g10 Extended shutter speeds (S/M)",
+      "z50ii": "Mode M (or S) in video; Custom settings g10 Extended shutter speeds (S/M)"
+    },
+    "one_liner": "Keep shutter near 1/(2 x fps) for natural motion; ND in bright light.",
+    "what_it_does": "Video shutter speed sets motion blur per frame. The 180° convention (about double the frame rate: 1/50 at 24/25p, 1/60 at 30p, 1/125 at 60p) gives natural motion. With shutter and aperture fixed, a variable ND controls exposure in daylight. The Z8 can express shutter as an angle so it stays at 180° when you change frame rate.",
+    "options": [
+      {
+        "value": "180° (1/(2 x fps))",
+        "meaning": "Natural motion blur.",
+        "use_when": "Most video, stage, family."
+      },
+      {
+        "value": "Faster (e.g. 1/500+)",
+        "meaning": "Crisp frames, staccato motion.",
+        "use_when": "Bird video you'll pull frames from."
+      },
+      {
+        "value": "Z8 g13 Shutter mode: angle (5.6°–360°)",
+        "meaning": "Shutter set as angle, preserved across frame-rate changes.",
+        "use_when": "Switching between 24p and 120p for birds."
+      }
+    ],
+    "when_to_change": "Set once per frame rate; change only for creative blur or to freeze wing beats.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "4K 60p at 1/125 (or 180° angle) with variable ND; 1/250–1/500 for crisp wings",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "1/50 at 25p or 1/60 at 30p; match mains frequency to avoid LED flicker",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "1/60 at 30p",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Only the Z8 has Shutter mode (shutter angle), added in fw 2.10. Extended shutter speeds in video: Z8 g12 (mode M); Z5II/Z50II g10 (S/M).",
+    "gotchas": [
+      "Under LED/stage lighting, speeds not matched to the mains frequency can flicker - use Video flicker reduction or match it.",
+      "No built-in ND on these bodies - carry a variable ND for daylight 180° work."
+    ],
+    "related": [
+      "video-frame-size-rate",
+      "zebra-pattern",
+      "electronic-vr"
+    ],
+    "firmware_note": "Z8 fw 2.10 added g13 Shutter mode (shutter angle 5.6°–360°).",
+    "research_notes": "180° rule and ND practice are general cinematography practice, not Nikon text.",
+    "sources": [
+      {
+        "id": "nikon-au-z8fw",
+        "name": "Nikon Australia - Z8 firmware updates",
+        "url": "https://www.nikon.com.au/z8-firmware-updates",
+        "kind": "manufacturer",
+        "findings": "Fw 2.10: shutter angle adjustable 5.6°–360°, kept when frame rate changes."
+      },
+      {
+        "id": "z8-g13",
+        "name": "Nikon Z8 Reference Guide - g13 Shutter Mode",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/shutter_mode_287.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-g12",
+        "name": "Nikon Z8 Reference Guide - g12 Extended Shutter Speeds (Mode M)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmg_extended_shutter_speeds_mode_m_286.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z50ii-g10",
+        "name": "Nikon Z50II Reference Guide - g10 Extended shutter speeds (S/M)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-89.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.10 added Shutter mode (g13)."
+      }
+    ]
+  },
+  {
+    "id": "electronic-vr",
+    "group": "Video & Controls",
+    "name": "Electronic VR (video)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Electronic VR",
+      "z5ii": "Video recording menu > Electronic VR",
+      "z50ii": "Video recording menu > Electronic VR"
+    },
+    "one_liner": "Digital stabilisation on top of IBIS for handheld video.",
+    "what_it_does": "Adds digital stabilisation by shifting the recorded area within the frame, smoothing handheld walking or shaky long-lens footage. It works together with lens/sensor VR. Some frame rates and features force it off.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Digital stabilisation active.",
+        "use_when": "Handheld family/travel video."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Optical/sensor VR only.",
+        "use_when": "Tripod or gimbal head."
+      }
+    ],
+    "when_to_change": "On for handheld, off on tripods.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "OFF on tripod/gimbal; ON for handheld 180-600 at 600 mm",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "ON",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "OFF on tripod/monopod",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Z50II forces it OFF at 120/100p, 4K 60/50p, slow motion and with Hi-Res Zoom. Z8/Z5II restrictions not read in this pass.",
+    "gotchas": [
+      "Electronic stabilisation normally narrows the angle of view slightly (amount not stated by Nikon's Z50II page).",
+      "Can produce odd warping with fast pans."
+    ],
+    "related": [
+      "hi-res-zoom",
+      "video-frame-size-rate"
+    ],
+    "firmware_note": "",
+    "research_notes": "Crop amount and Z8/Z5II restrictions not verified.",
+    "sources": [
+      {
+        "id": "z50ii-evr",
+        "name": "Nikon Z50II Reference Guide - Electronic VR",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-04-22.html",
+        "kind": "manufacturer",
+        "findings": "ON/OFF; fixed OFF at 120/100p, 4K 60/50p, slow motion, Hi-Res Zoom ON."
+      },
+      {
+        "id": "z8-evr",
+        "name": "Nikon Z8 Reference Guide - Electronic VR",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_electronic_vr_190.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-evr",
+        "name": "Nikon Z5II Reference Guide - Electronic VR",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/vrm_electronic_vr_194.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "hi-res-zoom",
+    "group": "Video & Controls",
+    "name": "Hi-Res Zoom",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Hi-Res Zoom; Custom settings g8 Hi-Res Zoom speed; g10 Power/Hi-Res Zoom collab",
+      "z5ii": "Video recording menu > Hi-Res Zoom; Custom settings g7 Hi-Res Zoom speed",
+      "z50ii": "Video recording menu > Hi-Res Zoom; Custom settings g7 Hi-Res Zoom speed"
+    },
+    "one_liner": "Smooth in-camera zoom up to 2x by cropping a larger sensor readout.",
+    "what_it_does": "Records a lower resolution than the sensor provides so it can crop in without upscaling, giving a smooth zoom of up to 2x controlled by buttons, the lens Fn ring or control ring. It turns a prime into a zoom for video.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Zoom with assigned controls; position bar shown.",
+        "use_when": "Stage recording from a fixed seat; extra reach on birds."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Normal recording.",
+        "use_when": "Default."
+      }
+    ],
+    "when_to_change": "Turn on when you need a smooth push-in without touching the lens.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Z5II/Z50II: ON at 1080 30p for smooth push-ins with a fast prime",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Z8: ON for extra reach beyond 600 mm (check frame size requirement)",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "Z50II: max 2x, 1080 30/25/24p only, AF-area fixed to Wide-area with no focus point shown, Electronic VR off. Z5II: FX 1080 30/25/24p (CineD). Z8: DX image area allowed since fw 2.10; focus point shown on detected subject since fw 3.00; required frame sizes not verified.",
+    "gotchas": [
+      "Z50II locks AF-area to Wide-area during Hi-Res Zoom - subject tracking is limited.",
+      "Not available in slow-motion modes (Z50II)."
+    ],
+    "related": [
+      "electronic-vr",
+      "video-frame-size-rate",
+      "custom-controls-i-menu"
+    ],
+    "firmware_note": "Z8 fw 2.00 changed zoom speed range; fw 2.10 allowed DX; fw 3.00 shows focus point on detected subject.",
+    "research_notes": "Z8 frame-size requirements for Hi-Res Zoom were not read (Z8 manual body not machine-readable).",
+    "sources": [
+      {
+        "id": "z50ii-hrz",
+        "name": "Nikon Z50II Reference Guide - Hi-Res Zoom",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/19-07.html",
+        "kind": "manufacturer",
+        "findings": "Max 2x; 1080 30/25/24p; AF-area fixed Wide-area; E-VR off; controls assignable."
+      },
+      {
+        "id": "cined-z5ii",
+        "name": "CineD - Nikon Z5II announced",
+        "url": "https://www.cined.com/es/nikon-z5ii-announced-supports-internal-n-raw-video-recording-and-more/",
+        "kind": "review",
+        "findings": "Z5II Hi-Res Zoom in FX at 1920x1080 30/25/24p with H.265/H.264."
+      },
+      {
+        "id": "z8-hrz",
+        "name": "Nikon Z8 Reference Guide - Hi-Res Zoom",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_hi_res_zoom_199.html",
+        "kind": "manufacturer",
+        "findings": "Menu location; g8 speed, g10 collab."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.10 Hi-Res Zoom in DX; fw 3.00 focus point on detected subject."
+      }
+    ]
+  },
+  {
+    "id": "zebra-pattern",
+    "group": "Video & Controls",
+    "name": "Zebra pattern (video)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > g15 Zebra pattern; g16 Limit zebra pattern tone range",
+      "z5ii": "Custom settings menu > g12 Zebra pattern; g13 Limit zebra pattern tone range",
+      "z50ii": "Custom settings menu > g12 Zebra pattern; g13 Limit zebra pattern tone range"
+    },
+    "one_liner": "Stripes over areas above a brightness threshold to warn of clipping.",
+    "what_it_does": "Overlays stripes on highlights above a threshold (120–255) or on a chosen mid-tone band, in video mode. Highlight zebras show where you are about to clip; mid-tone zebras help place skin at a consistent level.",
+    "options": [
+      {
+        "value": "Pattern tone range: Highlights / Mid-tones / Off",
+        "meaning": "What the stripes mark.",
+        "use_when": "Highlights for birds/stage; Mid-tones for faces."
+      },
+      {
+        "value": "Pattern 1 / Pattern 2",
+        "meaning": "Stripe style.",
+        "use_when": "Whichever is visible against your subject."
+      },
+      {
+        "value": "Highlight threshold 120–255",
+        "meaning": "Lower marks more of the image; 255 = only near-clipped areas.",
+        "use_when": "~245–250 for an SDR clipping warning (field judgement)."
+      },
+      {
+        "value": "Mid-tone range (value + range)",
+        "meaning": "Band of brightness to mark.",
+        "use_when": "Skin exposure."
+      }
+    ],
+    "when_to_change": "Set once; adjust the threshold when switching between SDR and N-Log.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "Highlights, threshold ~245 (protect white plumage)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Highlights on faces under spots",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Z8 fw 2.10 added a zebra color option. g15/g16 on Z8; g12/g13 on Z5II/Z50II.",
+    "gotchas": [
+      "In MF with focus peaking display on, only peaking shows - turn peaking off to see zebras.",
+      "Video mode only; no live stills zebras."
+    ],
+    "related": [
+      "brightness-information-display",
+      "tone-mode-video",
+      "view-assist"
+    ],
+    "firmware_note": "Z8 fw 2.10: zebra pattern color.",
+    "research_notes": "Threshold suggestions are field judgement.",
+    "sources": [
+      {
+        "id": "z50ii-g12",
+        "name": "Nikon Z50II Reference Guide - g12 Zebra pattern",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-91.html",
+        "kind": "manufacturer",
+        "findings": "Highlights/mid-tones; patterns 1/2; threshold 120–255; mid-tone range; peaking overrides in MF."
+      },
+      {
+        "id": "z8-g15",
+        "name": "Nikon Z8 Reference Guide - g15 Zebra Pattern",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmg_zebra_pattern_289.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-g12",
+        "name": "Nikon Z5II Reference Guide - g12 Zebra pattern",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmg_zebra_pattern_284.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "nikon-au-z8fw",
+        "name": "Nikon Australia - Z8 firmware updates",
+        "url": "https://www.nikon.com.au/z8-firmware-updates",
+        "kind": "manufacturer",
+        "findings": "Fw 2.10: zebra colours customisable."
+      }
+    ]
+  },
+  {
+    "id": "brightness-information-display",
+    "group": "Video & Controls",
+    "name": "Brightness information display (histogram / waveform)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > g18 Brightness information display; show via g20/g21 Custom monitor/viewfinder shooting display",
+      "z5ii": "Custom settings menu > g15 Brightness information display; show via g17/g18",
+      "z50ii": "Custom settings menu > g15 Brightness information display; show via g17/g18"
+    },
+    "one_liner": "Choose histogram or waveform for judging video exposure.",
+    "what_it_does": "Selects which brightness tool appears in video mode: histogram or waveform monitor (normal or large). The waveform plots brightness across the frame left to right, so you see exactly which part of the scene is near clipping. Enable it on a DISP page through the video custom display items.",
+    "options": [
+      {
+        "value": "Histogram",
+        "meaning": "Brightness distribution.",
+        "use_when": "Quick general check."
+      },
+      {
+        "value": "Waveform monitor / Waveform monitor (large)",
+        "meaning": "Brightness by horizontal position.",
+        "use_when": "N-Log exposure, stage spotlights, bird against sky."
+      }
+    ],
+    "when_to_change": "Use the waveform when shooting Log or high-contrast scenes.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "Waveform (watch the bird's column)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Waveform",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Z8 fw 2.10 added position, size and transparency options. Numbering: Z8 g18; Z5II/Z50II g15.",
+    "gotchas": [
+      "Must also be ticked in the custom shooting display (g17/g18, or g20/g21 on Z8) to appear."
+    ],
+    "related": [
+      "zebra-pattern",
+      "view-assist",
+      "tone-mode-video"
+    ],
+    "firmware_note": "Z8 fw 2.10: brightness information display options.",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "z50ii-g15",
+        "name": "Nikon Z50II Reference Guide - g15 Brightness information display",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-94.html",
+        "kind": "manufacturer",
+        "findings": "Histogram or waveform (normal/large); enable via g17/g18."
+      },
+      {
+        "id": "z8-g18",
+        "name": "Nikon Z8 Reference Guide - g18 Brightness Information Display",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmg_brightness_information_display_292.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-g15",
+        "name": "Nikon Z5II Reference Guide - g15 Brightness information display",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmg_brightness_information_display_287.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "nikon-au-z8fw",
+        "name": "Nikon Australia - Z8 firmware updates",
+        "url": "https://www.nikon.com.au/z8-firmware-updates",
+        "kind": "manufacturer",
+        "findings": "Fw 2.10: position, size and transparency of histogram and waveform."
+      }
+    ]
+  },
+  {
+    "id": "audio-mic-sensitivity",
+    "group": "Video & Controls",
+    "name": "Microphone sensitivity",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Microphone sensitivity",
+      "z5ii": "Video recording menu > Microphone sensitivity",
+      "z50ii": "Video recording menu > Microphone sensitivity"
+    },
+    "one_liner": "Sets recording level for built-in or external mic: Auto, Manual 1–20, or off.",
+    "what_it_does": "Controls the gain applied to the internal stereo mic or an external mic. Auto adjusts continuously, which can pump on music with quiet passages; Manual (1–20) holds a fixed level you set from a test. Microphone off records silent video.",
+    "options": [
+      {
+        "value": "Auto",
+        "meaning": "Camera adjusts gain automatically.",
+        "use_when": "Casual family clips."
+      },
+      {
+        "value": "Manual (1–20)",
+        "meaning": "Fixed gain; higher = more sensitive.",
+        "use_when": "Dance performances with live/recorded music - set so peaks stay out of red."
+      },
+      {
+        "value": "Microphone off",
+        "meaning": "No sound recorded.",
+        "use_when": "B-roll, birds where wind/shutter noise is unwanted."
+      }
+    ],
+    "when_to_change": "Use Manual whenever the sound itself matters (music, speech).",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Manual, set from a rehearsal so loud passages peak below red; consider Attenuator ON near speakers",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Manual low-mid level, or external shotgun mic; Wind noise reduction ON for built-in",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Auto",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Same item on all three.",
+    "gotchas": [
+      "Red level meters mean clipping - lower the sensitivity (Nikon note).",
+      "Auto gain amplifies room noise and lens/IS noise in quiet scenes."
+    ],
+    "related": [
+      "audio-attenuator",
+      "audio-wind-noise-reduction"
+    ],
+    "firmware_note": "",
+    "research_notes": "Options read from Z50II page; Z8/Z5II assumed same option set.",
+    "sources": [
+      {
+        "id": "z50ii-mic",
+        "name": "Nikon Z50II Reference Guide - Microphone sensitivity",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-04-23.html",
+        "kind": "manufacturer",
+        "findings": "Auto, Manual 1–20, Microphone off; red level = too loud."
+      },
+      {
+        "id": "z8-mic",
+        "name": "Nikon Z8 Reference Guide - Microphone Sensitivity",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_microphone_sensitivity_191.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-mic",
+        "name": "Nikon Z5II Reference Guide - Microphone sensitivity",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/vrm_microphone_sensitivity_195.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "audio-attenuator",
+    "group": "Video & Controls",
+    "name": "Attenuator",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Attenuator",
+      "z5ii": "Video recording menu > Attenuator",
+      "z50ii": "Video recording menu > Attenuator"
+    },
+    "one_liner": "Cuts mic input gain to stop distortion in very loud places.",
+    "what_it_does": "Reduces microphone input gain so loud sources do not distort. It helps where turning Microphone sensitivity down alone is not enough, such as near PA speakers or percussion.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Lower input gain.",
+        "use_when": "Loud music, near speakers, mridangam close by."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Normal gain.",
+        "use_when": "Everything else."
+      }
+    ],
+    "when_to_change": "Turn on when audio distorts even at low sensitivity.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "ON if seated near speakers; test first",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Same item on all three.",
+    "gotchas": [
+      "With a quiet source it makes the recording too low and noisy - turn it off afterwards."
+    ],
+    "related": [
+      "audio-mic-sensitivity",
+      "audio-wind-noise-reduction"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "z50ii-att",
+        "name": "Nikon Z50II Reference Guide - Attenuator",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-04-24.html",
+        "kind": "manufacturer",
+        "findings": "ON reduces microphone gain to prevent distortion in loud environments."
+      },
+      {
+        "id": "z8-att",
+        "name": "Nikon Z8 Reference Guide - Attenuator",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_attenuator_192.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-att",
+        "name": "Nikon Z5II Reference Guide - Attenuator",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/vrm_attenuator_196.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Attenuator option listed for audio."
+      }
+    ]
+  },
+  {
+    "id": "audio-wind-noise-reduction",
+    "group": "Video & Controls",
+    "name": "Wind noise reduction (and frequency response)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Video recording menu > Wind noise reduction; Video recording menu > Frequency response",
+      "z5ii": "Video recording menu > Wind noise reduction; Video recording menu > Frequency response",
+      "z50ii": "Video recording menu > Wind noise reduction; Video recording menu > Frequency response"
+    },
+    "one_liner": "Low-cut filter for the built-in mic to tame wind rumble outdoors.",
+    "what_it_does": "Wind noise reduction applies a low-cut filter to the built-in microphone. It does not act on external stereo mics, which use their own wind/low-cut switch. Frequency response chooses how wide a frequency band is recorded (Nikon offers wide and vocal-focused settings).",
+    "options": [
+      {
+        "value": "Wind noise reduction ON",
+        "meaning": "Low-cut on built-in mic; may thin other sounds.",
+        "use_when": "Outdoor bird/landscape video with the internal mic."
+      },
+      {
+        "value": "Wind noise reduction OFF",
+        "meaning": "Full low end.",
+        "use_when": "Indoors, music."
+      },
+      {
+        "value": "Frequency response",
+        "meaning": "Wide vs voice-weighted band (option names not verified).",
+        "use_when": "Wide for music/dance; vocal for speech."
+      }
+    ],
+    "when_to_change": "ON outdoors with the built-in mic; OFF for indoor music.",
+    "suggested": [
+      {
+        "scenario": "Bird video",
+        "value": "ON (built-in mic) or use a furry windscreen on an external mic",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "OFF; wide frequency response",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Same items on all three.",
+    "gotchas": [
+      "Has no effect on external stereo mics - use the mic's own low-cut (Nikon note).",
+      "Low-cut also thins drums/bass in music."
+    ],
+    "related": [
+      "audio-mic-sensitivity",
+      "audio-attenuator"
+    ],
+    "firmware_note": "",
+    "research_notes": "Frequency response option names not read in this pass.",
+    "sources": [
+      {
+        "id": "z50ii-wind",
+        "name": "Nikon Z50II Reference Guide - Wind noise reduction",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-04-26.html",
+        "kind": "manufacturer",
+        "findings": "ON = low-cut for built-in mic; no effect on optional stereo mics; may affect other sounds."
+      },
+      {
+        "id": "z8-wind",
+        "name": "Nikon Z8 Reference Guide - Wind Noise Reduction",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_wind_noise_reduction_194.html",
+        "kind": "manufacturer",
+        "findings": "Menu location; Frequency Response is a separate item."
+      },
+      {
+        "id": "z5ii-wind",
+        "name": "Nikon Z5II Reference Guide - Wind noise reduction",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/vrm_wind_noise_reduction_198.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "red-rec-frame",
+    "group": "Video & Controls",
+    "name": "Red REC frame indicator",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > g22 Red REC frame indicator",
+      "z5ii": "Custom settings menu > g19 Red REC frame indicator",
+      "z50ii": "Custom settings menu > g19 Red REC frame indicator"
+    },
+    "one_liner": "Red border on screen while recording so you never miss 'not recording'.",
+    "what_it_does": "Draws a red frame around the display while video is recording. It makes record state obvious at a glance in the EVF or on the monitor.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Red border during recording.",
+        "use_when": "Always - especially stage and bird video."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Only the small REC indicator.",
+        "use_when": "If the border distracts from framing."
+      }
+    ],
+    "when_to_change": "Set ON once and leave it.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "ON",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "ON",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "g22 on Z8; g19 on Z5II/Z50II.",
+    "gotchas": [],
+    "related": [
+      "custom-controls-i-menu"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "z50ii-g19",
+        "name": "Nikon Z50II Reference Guide - g19 Red REC frame indicator",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-98.html",
+        "kind": "manufacturer",
+        "findings": "ON shows red frame while recording."
+      },
+      {
+        "id": "z8-g22",
+        "name": "Nikon Z8 Reference Guide - g22 Red REC Frame Indicator",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmg_red_rec_frame_indicator_296.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-g19",
+        "name": "Nikon Z5II Reference Guide - g19 Red REC frame indicator",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmg_red_rec_frame_indicator_291.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "custom-controls-i-menu",
+    "group": "Video & Controls",
+    "name": "Custom controls and i menu (photo f1/f2, video g1/g2)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > f1 Customize i menu / f2 Custom controls (shooting) / f3 (playback); video: g1 Customize i menu / g2 Custom controls",
+      "z5ii": "Custom settings menu > f1 Customize i menu / f2 Custom controls (shooting) / f3 (playback) / f4 Touch Fn; video: g1 / g2",
+      "z50ii": "Custom settings menu > f1 Customize i menu / f2 Custom controls (shooting) / f3 (playback) / f4 Touch Fn; video: g1 / g2"
+    },
+    "one_liner": "Put the settings you change in the field on buttons and the i menu.",
+    "what_it_does": "f1/g1 choose the 12 slots of the i menu separately for photo and video; f2/g2 assign roles to buttons, dials, lens Fn and control rings separately for photo and video. Good assignments remove menu diving: e.g. Metering, Silent mode, View mode, Hi-Res Zoom, Electronic VR, Zebra, Mic sensitivity.",
+    "options": [
+      {
+        "value": "f1 / g1 Customize i menu",
+        "meaning": "Items in the photo / video i menu.",
+        "use_when": "Set up once per body; mirror layouts across bodies."
+      },
+      {
+        "value": "f2 / g2 Custom controls",
+        "meaning": "Roles for Fn buttons, AF-ON, movie button, lens rings etc.",
+        "use_when": "Assign metering/view mode for stage; AF-ON + subject-detection for birds."
+      }
+    ],
+    "when_to_change": "When you find yourself entering a menu for the same thing twice in a shoot.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Photo i menu: Metering, Silent mode, Picture Control, View mode; one Fn = Highlight-weighted metering",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Video i menu: Frame size/rate, Electronic VR, Zebra, Mic sensitivity, Hi-Res Zoom; lens Fn = Hi-Res Zoom",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Skin softening / Portrait impression balance in photo i menu if shooting JPEG",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Z8 has more physical controls (incl. second Fn buttons, AF-ON, sub-selector) and f2 roles such as 'Recall shooting functions'. Z5II/Z50II add f4 Touch Fn and have a Picture Control button. Z50II f2 roles verified; Z8/Z5II role lists not read.",
+    "gotchas": [
+      "Photo and video assignments are separate - setting f2 doesn't change g2.",
+      "On the Z8, f/g settings live in the active Custom settings bank - switching banks swaps your button layout."
+    ],
+    "related": [
+      "recall-shooting-functions",
+      "z8-menu-banks",
+      "user-settings-u1-u3",
+      "picture-control-button"
+    ],
+    "firmware_note": "Z8 fw 3.00 added new roles to f2/g2/f3 and Auto capture to the i menu.",
+    "research_notes": "Video i menu item list verified on Z50II (g1, ~34 items).",
+    "sources": [
+      {
+        "id": "z50ii-f2",
+        "name": "Nikon Z50II Reference Guide - f2 Custom controls (shooting)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-40.html",
+        "kind": "manufacturer",
+        "findings": "Full control and role list; no Recall shooting functions role."
+      },
+      {
+        "id": "z50ii-g1",
+        "name": "Nikon Z50II Reference Guide - g1 Customize i menu (video)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-46.html",
+        "kind": "manufacturer",
+        "findings": "Video i menu set separately; items include E-VR, zebra, mic, Hi-Res Zoom, warm display colors."
+      },
+      {
+        "id": "z8-f2",
+        "name": "Nikon Z8 Reference Guide - f2 Custom Controls (Shooting)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmf_custom_controls_shooting_261.html",
+        "kind": "manufacturer",
+        "findings": "Menu location; g2 is the video equivalent."
+      },
+      {
+        "id": "z5ii-f2",
+        "name": "Nikon Z5II Reference Guide - f2 Custom controls (shooting)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmf_custom_controls_shooting_259.html",
+        "kind": "manufacturer",
+        "findings": "Menu location; f4 Touch Fn."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 3.00 added roles to f2/g2/f3 and Auto capture to i menu."
+      }
+    ]
+  },
+  {
+    "id": "z8-menu-banks",
+    "group": "Video & Controls",
+    "name": "Shooting menu banks and Custom settings banks (Z8)",
+    "available_on": [
+      "z8"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Shooting menu bank (A–D) and Extended menu banks; Video recording menu > Shooting menu bank / Extended menu banks; Custom settings menu > Custom settings bank (A–D)"
+    },
+    "one_liner": "Four switchable menu sets on the Z8 for different genres.",
+    "what_it_does": "The Z8 stores four photo shooting menu banks and four Custom settings banks (A–D); switching a bank swaps a whole set of values, e.g. A = birds, B = stage, C = landscape. Extended menu banks makes photo banks also store exposure mode and exposure values. Banks are not memories: any change is written into the active bank immediately.",
+    "options": [
+      {
+        "value": "Shooting menu bank A–D",
+        "meaning": "Separate sets of shooting-menu values.",
+        "use_when": "One bank per genre."
+      },
+      {
+        "value": "Extended menu banks ON/OFF",
+        "meaning": "ON adds exposure mode, shutter, aperture and related values to the bank.",
+        "use_when": "ON if each genre has its own exposure mode."
+      },
+      {
+        "value": "Custom settings bank A–D",
+        "meaning": "Separate Custom settings (AF, controls, displays).",
+        "use_when": "Genre-specific button layouts."
+      }
+    ],
+    "when_to_change": "Switch bank when the genre changes; rename banks (e.g. BIRD, STAGE) to avoid confusion.",
+    "suggested": [
+      {
+        "scenario": "Birds",
+        "value": "Bank A: M + Auto ISO, HE* RAW, Matrix",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Bank B: Highlight-weighted, silent drive, Neutral PC",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Bank C: Lossless RAW, base ISO, Auto ISO off",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Bank C or D with Warm display colors Mode 2",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z8 only. Z5II and Z50II use U1–U3 user settings on the mode dial instead.",
+    "gotchas": [
+      "Any tweak overwrites the bank's stored value - there is no 'revert to saved'.",
+      "Photo menu bank and Custom settings bank are chosen separately - check both."
+    ],
+    "related": [
+      "recall-shooting-functions",
+      "save-load-menu-settings",
+      "user-settings-u1-u3"
+    ],
+    "firmware_note": "Z8 fw 2.10: photo and video shooting modes can be selected separately (banks reset to P after that update).",
+    "research_notes": "Bank contents and Extended menu banks behaviour summarised from Nikon's menu naming and long-standing Nikon bank behaviour; Z8 page text not machine-readable. Whether the photo and video shooting menu banks are linked was not verified.",
+    "sources": [
+      {
+        "id": "z8-bank",
+        "name": "Nikon Z8 Reference Guide - Shooting Menu Bank",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_shooting_menu_bank_113.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-extbank",
+        "name": "Nikon Z8 Reference Guide - Extended Menu Banks",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_extended_menu_banks_114.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-csbank",
+        "name": "Nikon Z8 Reference Guide - Custom Settings Bank",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csm_custom_settings_bank_203.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-vbank",
+        "name": "Nikon Z8 Reference Guide - Video Shooting Menu Bank",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/vrm_shooting_menu_bank_160.html",
+        "kind": "manufacturer",
+        "findings": "Video recording menu also has bank items."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.10: photo and video shooting modes selectable separately; banks reset to P."
+      }
+    ]
+  },
+  {
+    "id": "user-settings-u1-u3",
+    "group": "Video & Controls",
+    "name": "User settings U1–U3 (mode dial)",
+    "available_on": [
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z5ii": "Setup menu > Save user settings > Save to U1/U2/U3; Setup menu > Reset user settings",
+      "z50ii": "Setup menu > Save user settings > Save to U1/U2/U3; Setup menu > Reset user settings"
+    },
+    "one_liner": "Saves a complete camera setup to U1–U3 on the mode dial.",
+    "what_it_does": "Saves current photo, video and Custom settings plus shooting mode, shutter, aperture and exposure compensation to a mode-dial position. Turning the dial to U1–U3 recalls that snapshot; unlike Z8 banks, changes made while in U mode are not kept unless you save again.",
+    "options": [
+      {
+        "value": "U1 / U2 / U3",
+        "meaning": "Three saved setups.",
+        "use_when": "e.g. U1 stage, U2 birds, U3 landscape."
+      },
+      {
+        "value": "Reset user settings",
+        "meaning": "Returns a U position to defaults (P mode).",
+        "use_when": "Starting a slot over."
+      }
+    ],
+    "when_to_change": "Re-save after you refine a setup in the field.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "U1: M + Auto ISO, 1/500, Highlight-weighted, silent shutter",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "U2: A + Auto ISO, Auto WB 0, RAW + JPEG fine",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "U3: A, base ISO, Auto ISO off, Lossless",
+        "scenario_id": "landscape"
+      }
+    ],
+    "body_differences": "Z5II and Z50II only. Z8 uses shooting menu banks/Custom settings banks and Recall shooting functions instead.",
+    "gotchas": [
+      "Not saved: storage folder, Manage Picture Control, multiple exposure, interval timer, time-lapse, focus shift (Z50II manual).",
+      "Loading menu settings from a card overwrites U1–U3."
+    ],
+    "related": [
+      "z8-menu-banks",
+      "save-load-menu-settings",
+      "custom-controls-i-menu"
+    ],
+    "firmware_note": "Z50II fw 1.10 and Z5II fw 1.20 added a 'Save focus position > On saving user settings' option.",
+    "research_notes": "Saved/not-saved lists read from Z50II manual; Z5II assumed equivalent.",
+    "sources": [
+      {
+        "id": "z50ii-u",
+        "name": "Nikon Z50II Reference Guide - Exposure / user settings (U1–U3)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-03.html",
+        "kind": "manufacturer",
+        "findings": "What is saved (menus, custom settings, mode, shutter, aperture, exposure comp) and exclusions; reset to P."
+      },
+      {
+        "id": "z50ii-saveu",
+        "name": "Nikon Z50II Reference Guide - Save user settings",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-36.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu location."
+      },
+      {
+        "id": "z5ii-saveu",
+        "name": "Nikon Z5II Reference Guide - Save user settings",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/sum_save_user_settings_310.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu location."
+      },
+      {
+        "id": "z5ii-fw120-focus",
+        "name": "Nikon Z5II - 'On saving user settings' for Save focus position (fw 1.20)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/adding_on_saving_user_settings_391.html",
+        "kind": "manufacturer",
+        "findings": "New option in fw 1.20."
+      }
+    ]
+  },
+  {
+    "id": "recall-shooting-functions",
+    "group": "Video & Controls",
+    "name": "Recall shooting functions (Z8)",
+    "available_on": [
+      "z8"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > f2 Custom controls (shooting) > choose a button > Recall shooting functions (press) or Recall shooting functions (hold) - role names not re-read in this pass"
+    },
+    "one_liner": "One button instantly swaps to a stored alternate setup, e.g. bird-in-flight.",
+    "what_it_does": "Stores an alternate set of shooting values (such as exposure mode, shutter speed, AF-area mode, subject detection, metering) on a button. Pressing or holding that button temporarily switches to them - e.g. from perched-bird settings to flight settings - and releasing/pressing again returns. Since fw 2.00 you can adjust white balance and exposure compensation while the recall is active.",
+    "options": [
+      {
+        "value": "Recall shooting functions (hold)",
+        "meaning": "Active while held.",
+        "use_when": "Quick flight burst, then back."
+      },
+      {
+        "value": "Recall shooting functions (toggle)",
+        "meaning": "Press on, press off.",
+        "use_when": "Longer stretches in the alternate setup."
+      }
+    ],
+    "when_to_change": "Set it up once per genre bank; it's a faster alternative to switching banks.",
+    "suggested": [
+      {
+        "scenario": "Birds",
+        "value": "Hold-button recall: 1/3200 s, Wide-area C1 + bird detection, CH 20 fps",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Recall to faster shutter (1/1000) for jumps/turns",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Z8 only among the three; Z50II's f2 role list has no such role; Z5II not verified (assumed absent).",
+    "gotchas": [
+      "Recall values are stored per Custom settings bank.",
+      "Forgetting a toggled recall leaves you on the alternate setup."
+    ],
+    "related": [
+      "z8-menu-banks",
+      "custom-controls-i-menu"
+    ],
+    "firmware_note": "Z8 fw 2.00: white balance and exposure compensation adjustable while recalling.",
+    "research_notes": "Exact role names and the list of recallable items were not read from the Z8 manual (page body not machine-readable). Existence confirmed by Nikon's fw 2.00 note. Per-bank storage is assumed from Custom settings bank design.",
+    "sources": [
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.00: white balance and exposure compensation can be adjusted while recalling shooting functions."
+      },
+      {
+        "id": "z8-f2",
+        "name": "Nikon Z8 Reference Guide - f2 Custom Controls (Shooting)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmf_custom_controls_shooting_261.html",
+        "kind": "manufacturer",
+        "findings": "Where button roles are assigned."
+      },
+      {
+        "id": "z50ii-f2",
+        "name": "Nikon Z50II Reference Guide - f2 Custom controls (shooting)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-40.html",
+        "kind": "manufacturer",
+        "findings": "No Recall shooting functions role on Z50II."
+      }
+    ]
+  },
+  {
+    "id": "save-load-menu-settings",
+    "group": "Video & Controls",
+    "name": "Save/load menu settings",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Setup menu > Save/load menu settings",
+      "z5ii": "Setup menu > Save/load menu settings",
+      "z50ii": "Setup menu > Save/load menu settings"
+    },
+    "one_liner": "Back up your whole camera setup to a card and restore it later.",
+    "what_it_does": "Writes most menu settings (photo, video, all Custom settings, selected playback/setup items, My Menu, U1–U3) to an NCSET file on the memory card, and loads them back. Use it as a backup before firmware updates or resets; files only load into the same camera model.",
+    "options": [
+      {
+        "value": "Save menu settings",
+        "meaning": "Writes NCSET*** file to card.",
+        "use_when": "After setting up; before firmware updates."
+      },
+      {
+        "value": "Load menu settings",
+        "meaning": "Restores from card (appears only if a file is present).",
+        "use_when": "After a reset or on a second body of the same model."
+      }
+    ],
+    "when_to_change": "Save after any setup session; keep a copy on your computer.",
+    "suggested": [
+      {
+        "scenario": "Birds",
+        "value": "Save after building the bird bank; copy NCSET file to the Mac",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "All three. Settings cannot cross models (Z8 file won't load on Z5II). Z8 fw 2.00: NX MobileAir can also transfer saved menu settings.",
+    "gotchas": [
+      "Renaming the NCSET file stops it loading.",
+      "Custom Picture Controls are saved as Auto; monitor brightness and storage folder aren't saved (Z50II).",
+      "Loading overwrites U1–U3 (Z5II/Z50II)."
+    ],
+    "related": [
+      "z8-menu-banks",
+      "user-settings-u1-u3"
+    ],
+    "firmware_note": "Z8 fw 2.00: NX MobileAir can transfer saved menu settings to/from the camera.",
+    "research_notes": "Save/exclusion lists read from Z50II page.",
+    "sources": [
+      {
+        "id": "z50ii-saveload",
+        "name": "Nikon Z50II Reference Guide - Save/load menu settings",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-33.html",
+        "kind": "manufacturer",
+        "findings": "What is/isn't saved; NCSET file name; same model only; overwrites U1–U3."
+      },
+      {
+        "id": "z8-saveload",
+        "name": "Nikon Z8 Reference Guide - Save/Load Menu Settings",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/sum_save_load_menu_settings_352.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-saveload",
+        "name": "Nikon Z5II Reference Guide - Save/load menu settings",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/sum_save_load_menu_settings_346.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.00: NX MobileAir transfers saved menu settings."
+      }
+    ]
+  },
+  {
+    "id": "monitor-evf-brightness",
+    "group": "Video & Controls",
+    "name": "Monitor/EVF brightness and monitor modes",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Setup menu > Monitor brightness / Viewfinder brightness / Monitor & Viewfinder color balance / Viewfinder display size / Limit monitor mode selection; monitor mode button cycles modes",
+      "z5ii": "Setup menu > Monitor brightness / Viewfinder brightness / color balance / Viewfinder display size / Limit monitor mode selection / Automatic monitor display switch (fw 1.20)",
+      "z50ii": "Setup menu > Monitor brightness / Viewfinder brightness / color balance / Viewfinder display size / Limit monitor mode selection / Automatic monitor display switch (fw 1.10); REC lamp brightness"
+    },
+    "one_liner": "Display brightness only affects viewing - judge exposure by histogram, not screen.",
+    "what_it_does": "Sets how bright the rear monitor and EVF look, their color balance and EVF image size. Monitor modes (automatic eye-sensor switching, viewfinder only, monitor only, etc.) are cycled with the monitor mode button and can be limited. None of this changes the recorded image, but a too-bright screen at night makes images look brighter than they are.",
+    "options": [
+      {
+        "value": "Monitor / Viewfinder brightness",
+        "meaning": "Display brightness only; higher drains battery more.",
+        "use_when": "Lower at night/stage; higher in sun."
+      },
+      {
+        "value": "Viewfinder display size",
+        "meaning": "Smaller EVF image for eyeglass wearers.",
+        "use_when": "If you can't see the corners with glasses."
+      },
+      {
+        "value": "Limit monitor mode selection",
+        "meaning": "Removes modes from the monitor-mode button cycle.",
+        "use_when": "Prevent accidental EVF-only/monitor-only."
+      }
+    ],
+    "when_to_change": "Dim for night/stage; brighten in bright sun; then trust the histogram.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Monitor dimmed, EVF use, 'Viewfinder only' mode to avoid lighting up the audience",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Low brightness + Warm display colors",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Monitor brightness higher outdoors; check waveform not screen",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "Z5II (fw 1.20) and Z50II (fw 1.10) added an 'Automatic monitor display switch' setup item. Z50II has a REC lamp brightness item. Z8 fw 2.00 extended Viewfinder display size to video and playback.",
+    "gotchas": [
+      "Monitor brightness can only be changed while the monitor is the active display (Z50II).",
+      "In HLG, raising monitor brightness changes the displayed tone distribution and reduces highlight fidelity (Z50II)."
+    ],
+    "related": [
+      "warm-display-colors",
+      "histogram",
+      "brightness-information-display"
+    ],
+    "firmware_note": "Z8 fw 2.00: viewfinder display size applies to video and playback. Z50II fw 1.10 / Z5II fw 1.20: Automatic monitor display switch.",
+    "research_notes": "Monitor mode names and EVF brightness ranges not read in this pass.",
+    "sources": [
+      {
+        "id": "z50ii-monbright",
+        "name": "Nikon Z50II Reference Guide - Monitor brightness",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-06.html",
+        "kind": "manufacturer",
+        "findings": "Adjustable only when monitor active; higher drains battery; HLG tone distribution note."
+      },
+      {
+        "id": "z50ii-limitmon",
+        "name": "Nikon Z50II Reference Guide - Limit monitor mode selection",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-06-42.html",
+        "kind": "manufacturer",
+        "findings": "Choose which modes the monitor mode button cycles."
+      },
+      {
+        "id": "z8-monbright",
+        "name": "Nikon Z8 Reference Guide - Monitor Brightness",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/sum_monitor_brightness_318.html",
+        "kind": "manufacturer",
+        "findings": "Setup menu location; Viewfinder brightness, color balance, display size, Limit monitor mode selection are adjacent items."
+      },
+      {
+        "id": "z5ii-autoswitch",
+        "name": "Nikon Z5II - New setup item 'Automatic monitor display switch' (fw 1.20)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/adding_automatic_monitor_display_switch_392.html",
+        "kind": "manufacturer",
+        "findings": "Added in fw 1.20."
+      },
+      {
+        "id": "z50ii-autoswitch",
+        "name": "Nikon Z50II - New setup item 'Automatic monitor display switch' (fw 1.10)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/80-04.html",
+        "kind": "manufacturer",
+        "findings": "Added in fw 1.10."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.00: viewfinder display size applies in video and playback."
+      }
+    ]
+  }
+]

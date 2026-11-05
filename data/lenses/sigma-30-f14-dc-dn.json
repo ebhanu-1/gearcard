@@ -1,0 +1,181 @@
+{
+  "id": "sigma-30-f14-dc-dn",
+  "name": "Sigma 30mm F1.4 DC DN | Contemporary (Nikon Z)",
+  "short": "Sigma 30 f/1.4 DC DN",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "DX",
+  "kind": "prime",
+  "focal_mm": [
+    30
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 30,
+      "f": 1.4
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 285,
+  "filter_mm": 52,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Stepping motor (STM); focus-by-wire MF ring",
+    "focus_throw_deg": null,
+    "notes": "Z-mount weight is 285 g and length 75.3 mm (Sigma UK). Dust- and splash-resistant mount on the Z, L and X versions only (Sigma). On the Nikon Z30, AF was fast, accurate and quiet (Amateur Photographer). Lenstip (Micro 4/3, E-PL1/E-M10): infinity to MFD in about 0.6 s, silent, no misses in good light, and some hunting in dim, low-contrast scenes. On the E-PL1, a very slight back-focus tendency appeared only at MFD. Fstoppers (OM-1) saw occasional hunting. Lenstip (M4/3 version) measured about 220° of MF ring rotation. Z-version ring behaviour is unverified, and Sigma lists non-linear focus as L-mount only. No AF/MF switch."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical stabilisation. On the Z50 II (no IBIS) stills are unstabilised: AP's Z section advises faster shutter speeds or higher ISO. The Z8 and Z5 II use their body IBIS (inferred from them being IBIS bodies; no source tested this lens on them)."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 30,
+        "value": 0.3
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 30,
+        "value": 0.14
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 30 cm and max magnification 1:7 (0.14x) (Sigma UK; Lenstip barrel marking). Working distance is roughly 300 − 75 mm lens − 16 mm flange ≈ 0.21 m. This is arithmetic, not measured, so the field is null. AP: depth of field at close range is very shallow, so focus must be precise. Lenstip: slight back-focus at MFD on one M4/3 body, and a slight focus shift (DoF moving farther away) between f/1.4 and f/2.0 from imperfectly corrected spherical aberration."
+  },
+  "quick": {
+    "headline": "Sharp, fast normal prime (45mm-equivalent on DX): excellent center wide open, best overall at f/4–f/5.6, corners best at f/5.6–f/8, no stabilisation on the Z50 II.",
+    "sweet_spot": "f/4–f/5.6",
+    "wide_open": "Center very sharp at f/1.4 (Lenstip: record 83.8 lp/mm peak on M4/3; AP: as sharp in the center as a 50mm f/1.4 DSLR prime). Edges were 'decent' at f/1.4 on M4/3 (Lenstip), but on APS-C the corners are softer from field curvature (AP MTF) and slightly soft wide open (Finding Range, X-T3). About 1.2–1.4 stops of vignetting and medium longitudinal CA wide open.",
+    "by_focal": [
+      {
+        "focal_mm": 30,
+        "center_peak": "f/4–f/5.6",
+        "corners_peak": "f/5.6–f/8",
+        "wide_open_note": "AP (Applied Imaging MTF, APS-C Sony): center peak about f/4–f/5.6, edges improve stopped down, and a slight test drop at f/8. Fstoppers (OM-1, M4/3): sharp at f/1.4, slightly better f/2.8, sharpest about f/5–f/8. Finding Range (X-T3): best f/5.6–f/8. Lenstip's per-aperture lp/mm values are in a chart image only."
+      }
+    ],
+    "close_up_best": "f/2.8–f/5.6 (inference)",
+    "close_up_note": "No source measured sharpness at 30 cm. Inference: avoid f/1.4–f/2 at MFD unless you want the look, because DoF is razor-thin (AP), there is slight f/1.4→f/2 focus shift (Lenstip), and Lenstip saw slight back-focus at MFD on one body. f/2.8–f/5.6 gives center sharpness near peak with enough DoF to absorb focus error.",
+    "diffraction_note": "AP MTF (APS-C): slight drop already at f/8, though real images still looked sharp. Fstoppers (OM-1, 20MP M4/3, finer pixels): slight diffraction softening at f/16, visible only at 100%. No source measured f/11 on APS-C. Best-supported: f/8 is fine, f/11 is a mild loss, and f/16 is visibly softer on the Z50 II.",
+    "avoid": [
+      "f/1.4 at minimum focus for anything needing depth.",
+      "f/16 for detail work.",
+      "Slow handheld shutter speeds on the Z50 II: there is no VR in the lens or body."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "One measured lab with numbers in text (Lenstip, but on Micro 4/3, which does not see the APS-C corners) plus AP's MTF lab on APS-C Sony (qualitative text). Both agree on an excellent center from f/1.4. Corner and peak apertures rest on AP plus two hands-on APS-C/M4/3 reviews. OpticalLimits could not be fetched."
+  },
+  "character": {
+    "bokeh": "Lenstip: highlights rendered evenly without hot spots, but mechanical vignetting strongly truncates them (cat's-eye) at f/1.4. AP: round highlights and smooth transitions from f/1.8. Finding Range: smooth. Fstoppers: creamy, with some colour fringing in out-of-focus areas, gone by about f/5.",
+    "flare_sunstar": "Lenstip's only con: performance against bright light could be better. AP saw no flare in backlit tests. Fstoppers: 9 rounded blades give a pleasant 18-point starburst.",
+    "ca": "Lateral low: Lenstip about 0.09% at f/1.4 and about 0.04% from about f/2 on. Longitudinal medium: visible colour fringing out of focus at f/1.4–f/2 (Lenstip, Fstoppers), largely gone by f/5.",
+    "distortion": "Barrel. Lenstip (M4/3): −1.10% RAW, −0.30% JPEG. AP (APS-C): −2.6% SMIA TV uncorrected, so enable in-camera distortion control. Sigma says the design relies on in-camera correction, and the Z version is listed as compatible with Lens Aberration Correction.",
+    "vignetting": "Lenstip (M4/3): 38% (−1.39 EV) at f/1.4, 16% at f/2, 7% at f/2.8. AP (APS-C Sony): about 1.2 stops at f/1.4, essentially gone at f/2.8. The APS-C corners will be darker than Lenstip's M4/3 numbers.",
+    "coma_astro": "Lenstip: almost no coma problems at f/1.4–f/2. Astigmatism 6.2% (moderate). A good candidate for astro on DX (inferred from coma results).",
+    "focus_breathing": "Not measured by any source found.",
+    "other": "Lenstip (2016) gave it an Editors' Choice as best in class on M4/3, beating the Panasonic Leica 25mm f/1.4. AP's Z section (Amy Davies, Z30): fast, accurate, quiet AF and excellent sharpness with natural fall-off. On FX bodies the Z camera switches to DX crop."
+  },
+  "field_tips": [
+    "f/1.4–f/2 for subject isolation with the subject centred. f/4–f/5.6 for the sharpest frame, and f/5.6–f/8 for corner-to-corner detail.",
+    "Keep Auto distortion control and Vignette control on: the design relies on in-camera correction (Sigma; AP measured −2.6% raw).",
+    "No VR on the Z50 II: use a minimum shutter of about 1/60–1/100 s, or Auto ISO with a minimum shutter speed set.",
+    "At 30 cm, stop to f/2.8–f/5.6, and check focus on the first frame (a slight MFD back-focus was seen on one body in testing).",
+    "Shield the front element from strong light sources: flare resistance is its one Lenstip con."
+  ],
+  "body_notes": [
+    {
+      "body": "z50ii",
+      "note": "Native use, 45mm-equivalent. 20.9MP (4.2 µm), close to Lenstip's E-PL1 pitch (about 4.3 µm) but showing the full APS-C corners that Lenstip did not test. No stabilisation at all. AP confirmed fast, quiet AF on the Z30 (same mount and sensor class)."
+    },
+    {
+      "body": "z8",
+      "note": "Auto DX crop, 19.4MP (4.35 µm), so the same per-pixel behaviour as the Z50 II, plus body IBIS. Nikon's firmware page warns against updating the camera with non-NIKKOR lenses attached (Imaging Resource, Z8 FW 3.00 news), so remove the Sigma before body updates."
+    },
+    {
+      "body": "z5ii",
+      "note": "DX crop only about 10MP (computed). IBIS available. Prefer the Z50 II or Z8 for detail."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip: Sigma C 30 mm f/1.4 DC DN review (Arkadiusz Olech)",
+      "url": "https://www.lenstip.com/477.4-Lens_review-Sigma_C_30_mm_f_1.4_DC_DN_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Olympus E-PL1 (12MP Micro 4/3, about 4.3 µm); AF also on E-M10. M4/3 crop does not reach the APS-C corners.",
+      "date": "2016-06-14",
+      "findings": "Center peak 83.8 lp/mm, a new M4/3 record (decency level about 44–45 lp/mm). Edge 'decent' already at f/1.4, similar to the Panasonic Leica 25/1.4 by f/2.8. Per-aperture values only in a chart image. Lateral CA about 0.09% at f/1.4, about 0.04% from about 1 EV down. Longitudinal CA medium. Slight focus shift f/1.4→f/2. Distortion −1.10% RAW, −0.30% JPEG (barrel). Vignetting 38% (−1.39 EV) f/1.4, 16% (−0.51 EV) f/2, 7% (−0.22 EV) f/2.8. Coma almost absent, astigmatism 6.2%. AF about 0.6 s infinity to MFD, silent, slight back-focus at MFD on E-PL1 only. Con: performance against bright light. Editors' Choice. Build page: MFD 0.3 m, 52 mm filter, 9 blades, about 220° MF rotation. Other chapters: 477.5 CA, 477.6 Distortion, 477.7 Coma, 477.8 Vignetting, 477.10 AF, 477.11 Summary."
+    },
+    {
+      "id": "ap",
+      "name": "Amateur Photographer: Sigma 30mm f/1.4 DC DN review (Sony/Fuji/Nikon Z sections)",
+      "url": "https://amateurphotographer.com/review/sigma-30mm-f1-4-dc-dn-review/",
+      "kind": "measured",
+      "tested_on": "Sony A6000/A6300/A7R APS-C crop (MTF via Applied Imaging, body unspecified); Fujifilm X-S10; Nikon Z30 (Z section, Amy Davies)",
+      "date": "2017 (Sony); Nikon Z section 2023",
+      "findings": "Center very sharp wide open, corners softer on MTF partly from field curvature, improving stopped down. Peak center about f/4–f/5.6, with a slight test drop at f/8. Vignetting about 1.2 stops at f/1.4 on APS-C, gone by f/2.8. Barrel −2.6% SMIA TV uncorrected. Slight lateral CA. No flare in backlit shots. Very shallow DoF close up. Z section: fast, accurate, quiet AF on the Z30. Excellent sharpness. No stabilisation on Z DX bodies, so use faster shutter speeds or higher ISO. Recommended (4 stars)."
+    },
+    {
+      "id": "fstoppers_rackham",
+      "name": "Fstoppers (Ivor Rackham): Is the Affordable Sigma 30mm f/1.4 DC DN Contemporary Lens Worth Buying?",
+      "url": "https://fstoppers.com/reviews/affordable-sigma-30mm-f14-dc-dn-contemporary-lens-worth-buying-review-624085",
+      "kind": "review",
+      "tested_on": "OM System OM-1 (20MP Micro 4/3)",
+      "date": "2023-01-20",
+      "findings": "Incredibly sharp for the price. Sharp at f/1.4, slightly better f/2.8, sharpest about f/5–f/8. Slight diffraction softening at f/16 only at 100%. Out-of-focus CA, mostly gone by f/5. Pleasant starburst. Fast AF with occasional hunting. Distortion and vignetting well controlled. MFD 30 cm."
+    },
+    {
+      "id": "findingrange",
+      "name": "Finding Range: Sigma 30mm f1.4 DC DN Contemporary Review (Fuji X)",
+      "url": "https://findingrange.com/2022/11/27/sigma-30mm-f1-4-dc-dn-contemporary-review-fuji-x/",
+      "kind": "review",
+      "tested_on": "Fujifilm X-T3 (26MP APS-C)",
+      "date": "2022-11-27",
+      "findings": "Tack sharp center wide open with slightly softer corners. Best f/5.6–f/8 (pixel-peeping). Vignetting wide open, reduced by about f/2. Slight barrel distortion. Fast, silent, accurate AF."
+    },
+    {
+      "id": "sigma",
+      "name": "Sigma UK: 30mm F1.4 DC DN | C product page (Nikon Z specs)",
+      "url": "https://sigmauk.com/lenses/30mm-f1-4-dc-dn-c",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Z mount: 285 g, φ70 × 75.3 mm. MFD 30 cm, 1:7, 52 mm filter, 9 rounded blades, min f/16, 9 elements in 7 groups (1 aspherical, 1 double-aspherical). Dust/splash-resistant mount on L/X/Z. Lens Aberration Correction compatible (on supported cameras, limited to what the camera supports). Non-linear focus L-mount only. Stepping motor. Hood LH586-01 supplied."
+    },
+    {
+      "id": "frost_rumble",
+      "name": "Christopher Frost (Rumble): Sigma 30mm f/1.4 DC DN 'C' on Canon RF (EOS R7) review, description",
+      "url": "https://rumble.com/v5r326w-sigma-30mm-f1.4-dc-dn-c-on-canon-rf-eos-r7-review.html",
+      "kind": "video",
+      "tested_on": "Canon EOS R7 and Sony a5100 (per description)",
+      "date": null,
+      "findings": "Description only: notes the lens is now on about its sixth camera system and links his original full review (https://youtu.be/3p7ukIDfbnA). Pictures taken on the Canon EOS R7 and Sony a5100. No findings in the description."
+    },
+    {
+      "id": "ir_z8_fw",
+      "name": "Imaging Resource news: Nikon Z8 firmware 3.00 reportedly causing issues with third-party lenses",
+      "url": "https://old.imaging-resource.com/news/2025/07/03/nikon-z8-firmware-3.00-reportedly-causing-issues-with-third-party-lenses",
+      "kind": "review",
+      "tested_on": "Nikon Z8",
+      "date": "2025-07-03",
+      "findings": "Nikon's download page warns not to update with non-NIKKOR Z lenses attached. Tamron and Viltrox advisories. Sigma not mentioned."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://rumble.com/v5r326w-sigma-30mm-f1.4-dc-dn-c-on-canon-rf-eos-r7-review.html",
+    "access": "description",
+    "summary": "Only the description of his follow-up 'Sigma 30mm f/1.4 DC DN C on Canon RF (EOS R7)' video (Rumble) could be read. It says the lens has now come to a sixth camera system, links his original full review at https://youtu.be/3p7ukIDfbnA, and says the samples were shot on the Canon EOS R7 and Sony a5100. No transcript, no verdict and no sharpness findings were readable, and the YouTube video itself could not be opened."
+  },
+  "research_notes": "1) Format caveat: Lenstip tested on Micro 4/3 (2× crop), so its edge figures sit about 76% of the way to the APS-C corner and say nothing about the DX corners. AP's APS-C MTF (qualitative) and the X-T3 review fill that gap. 2) OpticalLimits (Sony APS-C) and Photography Life pages could not be fetched, and the web-search budget ran out before more measured sources (e.g. DPReview, TDP) could be tried. 3) Z-specific: AP's Z30 section confirms AF works well. Sigma lists Lens Aberration Correction compatibility without naming Z bodies. No source tested it on the Z50 II, Z8 or Z5 II specifically. 4) No source reported focus breathing. 5) synchro_vr false because the lens has no VR. 6) Weight differs by mount (Z 285 g per Sigma UK)."
+}

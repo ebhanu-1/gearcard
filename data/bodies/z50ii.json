@@ -1,0 +1,99 @@
+{
+  "id": "z50ii",
+  "name": "Nikon Z50II",
+  "format": "DX",
+  "sensor": {
+    "effective_mp": 20.9,
+    "width_px": 5568,
+    "height_px": 3712,
+    "width_mm": 23.5,
+    "height_mm": 15.7,
+    "pixel_pitch_um": 4.22,
+    "type": "CMOS (same 20.9 MP sensor as the Z50). Photography Life calls it BSI. Not stacked.",
+    "olpf": false,
+    "readout_ms": 45,
+    "readout_notes": "Stills, electronic shutter: about 1/22 s (about 45 ms), measured by mplough (Jan 2025). The figure is the same as the Z50 and Z30. That makes the e-shutter (silent mode) unsuitable for moving subjects. Bit depth of that measurement not stated. Video readout not found."
+  },
+  "iso": {
+    "base": 100,
+    "native_range": "100–51200",
+    "extended": "Hi 0.3–Hi 2 (ISO 204800 equivalent). No Lo setting for stills.",
+    "dual_gain_notes": null,
+    "ptp_notes": "PhotonsToPhotos published Z50II data (Nikon Rumors, 2026-02-05), but the chart could not be read here. Dual-gain point unverified."
+  },
+  "ibis": {
+    "cipa_stops": null,
+    "synchro_vr_stops": null,
+    "focus_point_vr": false,
+    "notes": "No in-body image stabilization (confirmed). Digital Camera World says the Z50II, like the Z50, relies on VR lenses for stabilized stills. Photography Life's spec table lists 'No IBIS'. Nikon's spec lists only electronic VR for video. Stills stabilization comes only from VR lenses (the owner's DX 12-28 PZ VR, 16-50 VR, 18-140 VR and 50-250 VR). The Sigma 30/56 DC DN and F lenses on the FTZ II get no stabilization."
+  },
+  "shutter": {
+    "mechanical": true,
+    "efcs": true,
+    "electronic_fastest": "1/4000 (Nikon lists a single 1/4000–30 s range)",
+    "flash_sync": "1/200 s (Photography Life). Nikon lists 1/250 or 1/200 s or slower, with a reduced flash range between 1/200 and 1/250. Auto FP high-speed sync up to 1/4000 s.",
+    "slowest": "30 s standard. 900 s in M with extended shutter speeds (up from 30 s on the Z50). Bulb and Time also available.",
+    "notes": "Vertical-travel focal-plane mechanical shutter, electronic front-curtain, and electronic shutter. There is no shutter or shield closure at shutdown and no built-in sensor cleaning, so the sensor is exposed during every lens change."
+  },
+  "drive": {
+    "max_fps_raw": "About 11 fps with the mechanical shutter (C-H extended). Nikon also lists 15 fps in silent mode for C-H extended. RAW support at that rate is not confirmed, and the 45 ms readout makes it poor for motion anyway.",
+    "pre_release_capture": "Yes, in C15 and C30 (High-Speed Frame Capture+), JPEG only. Buffers up to 1 s before the full press. FW 1.01 made it usable with the SmallRig SR-RG2 grip.",
+    "notes": "C-L 1–5 fps. C-H 5.6 fps (9.7 fps silent, non-RAW). C-H extended about 11 fps (15 fps silent). C15/C30 JPEG only (Digital Camera World)."
+  },
+  "af": {
+    "subject_detection": ["People (face, eye)", "Animals (dogs, cats)", "Birds", "Vehicles (cars, motorcycles, bicycles, trains)", "Airplanes"],
+    "low_light_ev": "−9 to +19 EV (f/1.2 lens, ISO 100, 20 °C, AF-S). Photography Life standardizes this to −7.5 EV at f/2.",
+    "notes": "209 points. Nine subject types (Digital Camera World). The exact list is inferred from the Z8/Z9 nine-type set it is said to match, and the bird item rests on a Wikipedia mirror, so confidence is medium. The manual lists AF/MF subject detection options."
+  },
+  "ftz_ii_behavior": "AF-S, AF-P and AF-I lenses: full AF with electronic rangefinder. Screw-drive AF and AF-D lenses: MF only, with electronic rangefinder. AI-P and non-CPU (AI/AI-S) lenses: MF, modes A and M only. Non-CPU lenses need Non-CPU lens data. No body stabilization for any F lens, because the Z50II has no IBIS; only VR F lenses are stabilized, by their own VR. FX F lenses give a 1.5× field of view. Focus shift shooting works with AF-S and AF-P lenses, but auto reset is disabled. Z teleconverters cannot be used on the FTZ II. See accessories/ftz-ii.json.",
+  "dx_crop": {
+    "mp": null,
+    "notes": "Native DX body. FX lenses give a 1.5× field of view."
+  },
+  "special_features": [
+    {"name": "Pixel shift", "available": false, "firmware": null, "notes": "Photography Life lists no sensor-shift high-res mode. It is not in the Z50II Reference Guide TOC, and there is no IBIS to drive it."},
+    {"name": "Focus shift shooting", "available": true, "firmware": "launch", "notes": "Confirmed by the Z50II Reference Guide (up to 300 shots, step width 1–10, AF-A/AF-S/AF-C). Photography Life's spec table says 'no focus stacking'; the manual takes precedence."},
+    {"name": "Auto capture", "available": false, "firmware": null, "notes": "Not in the Z50II Reference Guide TOC."},
+    {"name": "Bird detection", "available": true, "firmware": "launch", "notes": "Listed among subject-detection types by a Wikipedia mirror. Medium confidence."},
+    {"name": "Starlight View", "available": true, "firmware": "launch", "notes": "Custom setting d11 (photo Lv) in the manual TOC."},
+    {"name": "High-frequency flicker reduction", "available": true, "firmware": "launch", "notes": "In the photo menu, alongside Photo flicker reduction (manual TOC)."},
+    {"name": "MF subject detection", "available": true, "firmware": "launch", "notes": "The spec page mentions AF/MF subject detection options. F-lens support is unverified by Nikon."},
+    {"name": "Imaging Recipes (formerly Cloud Picture Control)", "available": true, "firmware": "launch; renamed in 1.10", "notes": "Through Nikon Imaging Cloud. A dedicated Picture Control button gives 31 presets."},
+    {"name": "Flexible Color Picture Control", "available": true, "firmware": "launch", "notes": "Created in NX Studio (Photography Life; Wikipedia mirror)."},
+    {"name": "Hi-Res Zoom", "available": true, "firmware": "launch", "notes": "Video at 1080p 24/25/30."},
+    {"name": "Pre-release capture", "available": true, "firmware": "launch", "notes": "JPEG only, in C15/C30."}
+  ],
+  "video_key": {
+    "internal_raw": "None (no RAW video).",
+    "log": "N-Log (10-bit H.265) and HLG.",
+    "notes": "4K UHD to 60p (4K/60 adds a 1.5× crop). 4K/30 oversampled from 5.6K. 1080p to 120p. Electronic VR for video only. Recording beyond 2 hours per Nikon's press release (Photography Life notes a conflicting 30-min figure in the spec table)."
+  },
+  "firmware": {
+    "current": "1.11",
+    "date": "2026-08-05",
+    "notable_changes": "1.11 (2026-08-05): Simplified/Traditional Chinese menu names only. 1.10 (2026-07): Cloud Picture Control renamed Imaging Recipe, Download Imaging Recipes, 'On saving user settings' for Save focus position, automatic monitor display switch, Wi-Fi Always ON, FTP inactive timeout, aperture freed in S mode video, HDMI output behavior after recording. 1.03 (2025-11-05): Imaging Cloud defaults, new Picture Control acquisition method, RAW and video freeze fixes. 1.01 (2025-04-16): pre-release capture with the SmallRig SR-RG2 grip."
+  },
+  "battery_media": "EN-EL25a (EN-EL25 also fits). CIPA 230 shots (EVF) / 250 (LCD) per Photography Life. USB-C PD charging in camera. One SD UHS-II slot.",
+  "field_tips": [
+    "The sensor is fully exposed at every lens change: no shutter closure at power-off and no built-in sensor cleaning. Change lenses mount-down, out of the wind, and carry a blower.",
+    "No IBIS: with the Sigma 30/56 or any non-VR or F lens, use about 1/(2 × focal length × 1.5) or faster for stills, or a support.",
+    "The electronic (silent) shutter reads out in about 1/22 s. Use the mechanical shutter for anything that moves, and silent mode only for static subjects.",
+    "C15/C30 and pre-release capture are JPEG only. Switch quality to JPEG first, or use about 11 fps mechanical for RAW.",
+    "The top shutter speed is 1/4000. With f/1.4 primes in bright sun at ISO 100 you will run out of speed, so carry an ND filter.",
+    "Focus shift shooting is available (up to 300 frames) for focus stacking, even though some reviews say otherwise."
+  ],
+  "sources": [
+    {"id": "z50ii-manual-spec", "name": "Nikon Z50II Reference Guide: Specifications", "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "20.9 MP. 23.5 × 15.7 mm. DX L 5568 × 3712. Mechanical, EFCS and electronic shutters. 1/4000–30 s, 900 s in M. Flash 1/250 or 1/200, FP to 1/4000. C-L 1–5, C-H 5.6/9.7, C-H extended 11/15, C15/C30 with pre-release. ISO 100–51200, Hi to 204800. Electronic VR for video only. AF −9 to +19 EV. EN-EL25a. SD UHS-II. 4K60, N-Log."},
+    {"id": "z50ii-manual-focusshift", "name": "Nikon Z50II Reference Guide: Focus shift shooting (and TOC)", "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-33.html", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "Focus shift up to 300 shots. The TOC lists High-frequency flicker reduction, d11 Starlight view and Vibration reduction (lens VR). No pixel shift, no auto capture."},
+    {"id": "dcw-compare", "name": "Digital Camera World: Nikon Z50 II vs Z50", "url": "https://www.digitalcameraworld.com/buying-guides/nikon-z50-ii-vs-nikon-z50", "kind": "review", "tested_on": null, "date": null, "findings": "No IBIS: relies on VR lenses for stills. 11 fps mechanical. 30 fps JPEG-only Frame Capture+. Pre-release capture. Nine subject types. EXPEED 7. EVF 1000 cd/m²."},
+    {"id": "pl-announce", "name": "Photography Life: Nikon Z50 II announced", "url": "https://photographylife.com/news/nikon-z50-ii-announced-autofocus-and-video-improvements/amp", "kind": "review", "tested_on": null, "date": "2024-11", "findings": "4.22 µm pitch. No low-pass filter. 1/4000 max. Flash sync 1/200. 900 s. No sensor protection at shutdown. No IBIS, no pixel shift, 'no focus stacking' (contradicted by the manual). Pre-release JPEG only. −7.5 EV at f/2. One SD UHS-II slot. CIPA 230/250."},
+    {"id": "mplough", "name": "Measuring camera sensor readout speeds (mplough)", "url": "https://mplough.github.io/2025/01/30/camera-sensor-readout-speeds.html", "kind": "measured", "tested_on": "Nikon Z50II", "date": "2025-01-30", "findings": "Z50II readout about 1/22 s (about 45 ms), the same as the Z50 and Z30."},
+    {"id": "wiki-mirror", "name": "Nikon Z50II (Wikipedia mirror, cavac.at)", "url": "https://cavac.at/cavacopedia/Nikon%20Z50II", "kind": "forum", "tested_on": null, "date": null, "findings": "No IBIS. No AA filter. No built-in sensor cleaning. Focus shift present. Subject detection includes birds. Firmware 1.01–1.03 history. Low weight, used as a corroborating source only."},
+    {"id": "nikon-dc-2026", "name": "Nikon Download Center: 2026 updates", "url": "https://downloadcenter.nikonimglib.com/en/update/index/2026.html", "kind": "manufacturer", "tested_on": null, "date": "accessed 2026-11-05", "findings": "Z50II firmware 1.11 dated 2026-08-05."},
+    {"id": "nr-fw111", "name": "Nikon Rumors: minor firmware update for the Z50II", "url": "https://nikonrumors.com/2026/08/05/nikon-released-a-minor-firmware-update-for-the-z50ii-camera.aspx/", "kind": "review", "tested_on": null, "date": "2026-08-05", "findings": "1.11 changes Chinese menu item names only."},
+    {"id": "nr-fw110", "name": "Nikon Rumors: Z50II firmware 1.10", "url": "https://nikonrumors.com/2026/07/06/nikon-z50ii-firmware-update-version-1-10-released.aspx/amp/", "kind": "review", "tested_on": null, "date": "2026-07-06", "findings": "Imaging Recipe rename, Save focus position option, monitor auto switch, Wi-Fi Always ON, FTP timeout, aperture freed in S mode video, HDMI change."},
+    {"id": "cined-recipes", "name": "CineD: Nikon and RED Imaging Recipes", "url": "https://www.cined.com/nikon-and-red-release-nine-free-image-recipes-for-select-z-mount-cameras/", "kind": "review", "tested_on": null, "date": "2025-12-10", "findings": "Z50II is a compatible camera."},
+    {"id": "ftz-guide", "name": "Nikon: Using F-mount NIKKOR lenses with the FTZ II/FTZ (PDF)", "url": "https://download.nikonimglib.com/archive6/amgQQ00igi0U06sJjMP25JWC2H05/FTZ_CompatibleFmount_(En)11.pdf", "kind": "manufacturer", "tested_on": null, "date": null, "findings": "F-lens compatibility classes."}
+  ],
+  "research_notes": "Pixel pitch = 23.5 / 5568 × 1000 = 4.2205, rounded to 4.22 µm (matches Photography Life). No IBIS is confirmed by three independent sources. Conflict: Photography Life says no focus stacking, but the Nikon Z50II Reference Guide has a Focus shift shooting page, and the manual wins. Sensor type: Photography Life calls it BSI and other sources only say CMOS, so stacking or BSI status is low confidence. The readout figure comes from a single hobbyist measurement (mplough), so confidence is medium. Whether RAW is allowed at the C-H extended 15 fps silent rate is not confirmed. The dual-gain ISO is unknown (PtP chart unreadable). The exact list of nine subject types is not quoted from Nikon text that was fetched. The web search budget ran out before these could be checked."
+}

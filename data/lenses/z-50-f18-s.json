@@ -1,0 +1,181 @@
+{
+  "id": "z-50-f18-s",
+  "name": "NIKKOR Z 50mm f/1.8 S",
+  "short": "Z 50 f/1.8 S",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    50
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 50,
+      "f": 1.8
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 415,
+  "filter_mm": 62,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Stepping motor (STM) with internal focusing, focus-by-wire control ring. Silent and accurate (Lenstip).",
+    "focus_throw_deg": null,
+    "notes": "No AF/MF switch on the barrel. The single ring can be set to focus or to aperture/exposure compensation in the camera menu. Focus shift: OpticalLimits saw a small amount when stopping down (Z50, DX), Photography Life 'very minimal', and Phillip Reeve none visible (Z7 II)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical VR. Body IBIS on the Z8 and Z5 II. No stabilization on the Z50 II. Synchro VR needs lens VR, so it does not apply."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 50,
+        "value": 0.4
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 50,
+        "value": 0.15
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.40 m from the focal plane, 0.15× (Nikon). That is not a close-up lens, so the effective-aperture loss at 0.15× is small (about 0.2 stop by the simple (1+m)² rule, a calculation, not a spec). Free working distance is not published and was not measured by any source found."
+  },
+  "quick": {
+    "headline": "One of the sharpest 50s tested: f/1.8 is already excellent in the center, the whole frame peaks around f/2.8–f/4, and it stays sharp down to MFD.",
+    "sweet_spot": "f/2.8–f/5.6",
+    "wide_open": "Center is outstanding at f/1.8 (Lenstip Z7: over 70 lp/mm. Phillip Reeve Z7 II: 'phenomenal'). FX corners are only fair wide open. Lenstip had them a little below its decency level at f/1.8–f/2, reaching it near f/2.2, and Reeve rated them 'good'. Heavy FX vignetting wide open (Reeve 2.2 EV).",
+    "by_focal": [
+      {
+        "focal_mm": 50,
+        "center_peak": "f/2.8–f/4",
+        "corners_peak": "f/4–f/5.6",
+        "wide_open_note": "Lenstip (Z7, 45.7MP): center peak 83.7 lp/mm at f/4 (excellent-prime territory). DXOMARK (Z7): overall peak at f/2.8, 37 P-Mpix. Photography Life: slightly better at f/2.8 in the center on its second copy. Reeve (Z7 II): everything peaks at f/4 with excellent corners. Corners keep evening out to f/5.6 (DXOMARK: stopping down past the peak mainly improves uniformity)."
+      }
+    ],
+    "close_up_best": "f/2.8–f/8",
+    "close_up_note": "Phillip Reeve (Z7 II) tested close-up: very good at f/1.8, excellent from f/2.8 through f/11, and only very good at f/16 from diffraction. No visible focus shift or field-curvature issues were reported there. There is no reason to stop down far for close-ups: f/2.8–f/8 covers peak sharpness, chosen by depth of field.",
+    "diffraction_note": "DXOMARK (Z7, 45.7MP): diffraction starts to cut sharpness around f/5.6–f/8 and is most visible from f/11. OpticalLimits (Z50, DX 20.9MP): resolution drops from f/8 onward. Reeve: close-up f/16 falls from excellent to very good.",
+    "avoid": [
+      "Avoid f/11–f/16 on the Z8 unless you need the depth of field.",
+      "Don't judge FX corners at f/1.8: stop to f/4 for edge-to-edge landscapes.",
+      "Don't expect smooth highlight bokeh in every scene: highlights can be defined, with faint onion rings and cat's-eyes off-center."
+    ],
+    "confidence": "high",
+    "confidence_reason": "Lenstip (Z7), DXOMARK (Z7), Photography Life and Phillip Reeve (Z7 II) all agree on excellent f/1.8 center, peak f/2.8–f/4 and weaker FX corners wide open. Corner peak aperture is from Reeve plus DXOMARK's uniformity note, because the Lenstip FX-edge numbers are in an unreadable chart image."
+  },
+  "character": {
+    "bokeh": "Smooth, soft backgrounds (OpticalLimits). Reeve: evenly lit bokeh balls without colored edges, faint onion-ring texture, cat's-eyes toward the corners ('Pass with Special Distinction'). Photography Life found highlights rather defined, not a sign of great bokeh. Lenstip: 'pleasing to the eye'.",
+    "flare_sunstar": "Good flare resistance (Lenstip 'good', Reeve 'very good'). 9 rounded blades give 18-point sunstars, decent from f/11 and better at f/16 (Reeve).",
+    "ca": "Lateral CA negligible: Lenstip 'negligible', Reeve 'virtually non-existent', DXOMARK about 1 px at f/1.8. LoCA: Lenstip 'moderate', OpticalLimits 'fairly low', Reeve 'negligible'.",
+    "distortion": "Very low barrel: DXOMARK 0.2%, OpticalLimits about 0.4% (Z50 DX), Photography Life 0.57%, Lenstip 'invisible'.",
+    "vignetting": "Strong on FX wide open: Reeve 2.2 EV at f/1.8, 1.3 EV at f/2.8, 0.9 EV from f/4. Photography Life up to 1.65 stops. Lenstip lists FX vignetting as its one con. Small on DX (OpticalLimits about ¾ stop on the Z50).",
+    "coma_astro": "Reeve: very good at f/1.8 though not perfect, gone by f/2.8. Lenstip: no astigmatism problems. Usable for wide-open night shots with stars near center (inference).",
+    "focus_breathing": "Reeve: none visible. Nikon lists the lens for movie focus-breathing compensation (camera feature). No source gave a number.",
+    "other": "Weather-sealed, mostly metal barrel (Lenstip). Larger and heavier (415 g) than older F-mount 50/1.8s."
+  },
+  "field_tips": [
+    "Shoot f/1.8–f/2.8 for people and centered subjects without hesitation. The center is already excellent wide open.",
+    "For landscapes or groups across the frame, use f/4–f/5.6. FX corners only catch up there.",
+    "On the Z8 stay at f/8 or wider when you can. Diffraction shows from about f/5.6–f/8 and clearly from f/11.",
+    "Leave vignetting correction on, or plan to fix about 2 EV of corner falloff at f/1.8 in raw.",
+    "On the Z50 II it frames like a 75mm portrait lens with excellent edge-to-edge DX results from f/1.8, but there is no stabilization, so keep shutter speeds up."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP is what Lenstip, DXOMARK (Z7) and Reeve (Z7 II, 45.7MP) tested on. Peak f/2.8–f/4, with diffraction visible from about f/8 and clearly at f/11."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: wide-open corner weakness and diffraction are less visible per pixel, so f/1.8–f/8 all look sharp and f/11 is fine (inference from pixel pitch)."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX (about 75mm-equivalent): uses only the strong central region. OpticalLimits on a Z50 (20.9MP DX): excellent across the frame from f/1.8, diffraction from f/8. Lenstip: very good DX edge, usable at f/1.8, about 65 lp/mm stopped down. No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z 50 mm f/1.8 S (resolution and summary chapters)",
+      "url": "https://lenstip.com/577.4-Lens_review-Nikon_Nikkor_Z_50_mm_f_1.8_S_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), RAW via dcraw",
+      "date": null,
+      "findings": "Center over 70 lp/mm at f/1.8, peak 83.7 ±0.9 lp/mm at f/4 (decency level 42–44, excellent primes 80–85). DX edge usable at f/1.8–f/2, about 65 lp/mm stopped down. FX edge slightly below decency at f/1.8–f/2, reaching it near f/2.2. FX edge numbers only in a chart. Summary (https://www.lenstip.com/577.11-Lens_review-Nikon_Nikkor_Z_50_mm_f_1.8_S_Summary.html): sensational center, very good DX edge, acceptable FX edge, moderate LoCA, negligible lateral CA, invisible distortion, good against bright light, pleasing bokeh. Con: distinct vignetting on FX."
+    },
+    {
+      "id": "dxomark",
+      "name": "DXOMARK: Nikon Nikkor Z 50mm F1.8 S lens review",
+      "url": "https://www.dxomark.com/nikon-nikkor-z-50mm-f1-8s-lens-review/",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP)",
+      "date": null,
+      "findings": "Score 44. Sharpness 37 P-Mpix (Otus 55: 33). T1.9. Distortion 0.2% barrel. Lateral CA about 1 px at f/1.8. Sharpness good at f/1.8, peaks at f/2.8. Stopping down further mainly improves uniformity. Diffraction starts around f/5.6–f/8 and is most noticeable from f/11. Corner vignetting stays near −0.5 EV beyond f/4."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 50mm f/1.8 S review (page 2)",
+      "url": "https://photographylife.com/reviews/nikon-z-50mm-f1-8-s/2",
+      "kind": "measured",
+      "tested_on": "Not stated on the page (chart values not readable)",
+      "date": null,
+      "findings": "'One of the sharpest lenses we have ever tested'. Second copy slightly best at f/2.8 in the center. Barrel distortion 0.57%. Vignetting max 1.65 stops at infinity, largely gone by f/2.8. Very minimal focus shift. Bokeh highlights rather defined."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "Phillip Reeve: Review Nikon Nikkor Z 50mm f/1.8 S",
+      "url": "https://phillipreeve.net/blog/?p=58683",
+      "kind": "review",
+      "tested_on": "Nikon Z7 II (45.7MP), plus Z fc and Z f samples",
+      "date": null,
+      "findings": "Infinity: center phenomenal wide open, mid almost excellent, corners good, all peaking at f/4 with excellent corners. Portrait distance: excellent across the zones. Close-up: very good at f/1.8, excellent f/2.8–f/11, very good at f/16 (diffraction). No focus shift. Coma very good at f/1.8, gone by f/2.8. Negligible LoCA and lateral CA. 18-point sunstars from f/11. Vignetting 2.2/1.3/0.9 EV at f/1.8/f/2.8/f/4. No visible distortion. No focus breathing. Bokeh: onion rings faint, cat's-eyes toward corners. Visual chart tests, not lab numbers."
+    },
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Nikkor Z 50mm f/1.8 S review (APS-C test)",
+      "url": "https://opticallimits.com/nikon/nikkor-z-50mm-f-1-8-s-review/",
+      "kind": "measured",
+      "tested_on": "Nikon Z50 (20.9MP DX)",
+      "date": null,
+      "findings": "Excellent resolution across the whole DX frame from f/1.8. Diffraction lowers results from f/8. Barrel distortion about 0.4% (about 0.16% corrected). Vignetting about ¾ stop wide open on DX. Lateral CA just under 0.3 px. Fairly low LoCA. Small focus shift on stopping down. Very smooth bokeh. Scores 10 optical, 9 build, 10 value. MTF values are in a chart image."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon: NIKKOR Z 50mm f/1.8 S product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_50mmf18s/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.4 m. 0.15×. About 415 g. 62 mm filter. 9 rounded blades. 12 elements in 9 groups. f/16 minimum. No VR. Page mentions focus-breathing compensation for movies."
+    },
+    {
+      "id": "frost_video",
+      "name": "Christopher Frost (YouTube): Nikkor Z 50mm f/1.8 S lens review with samples (Full-frame & APS-C)",
+      "url": "https://www.youtube.com/watch?v=i-PqTvcS1r0",
+      "kind": "video",
+      "tested_on": "Full-frame and APS-C Nikon Z bodies per the title (models not readable)",
+      "date": null,
+      "findings": "Only the title and channel were confirmed (YouTube oEmbed). Video, description and transcript could not be read, so none of his findings are used."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://www.youtube.com/watch?v=i-PqTvcS1r0",
+    "access": "title-only",
+    "summary": "The video exists: YouTube's oEmbed returns the title 'Nikkor Z 50mm f/1.8 S lens review with samples (Full-frame & APS-C)' with author 'Christopher Frost'. The watch page, description and transcript could not be fetched (client error), and no transcript or write-up was found by search. His verdict is unknown and is not used."
+  },
+  "research_notes": "1) Center peak: Lenstip f/4 (83.7 lp/mm), DXOMARK f/2.8, Photography Life f/2.8, Reeve f/4. Recorded as f/2.8–f/4. The difference is about one stop and all were on 45MP bodies. 2) Corner peak f/4–f/5.6 relies on Reeve (excellent at f/4) and DXOMARK (uniformity improves past the peak). Lenstip FX-edge per-aperture values are in a chart image that could not be read. 3) OpticalLimits tested only on DX (Z50), so its 'excellent from f/1.8' applies to the DX frame and is not used for FX corners. 4) LoCA disagreement: Lenstip moderate, OpticalLimits fairly low, Reeve negligible. All say it is minor. 5) Distortion figures vary 0.2–0.57% by method. All say low. 6) Working distance at MFD is not published, so it is null. 7) Nikon's Z TC-1.4x compatibility list does not include this lens (checked for the MC 105 record), so tc_compatible is false."
+}

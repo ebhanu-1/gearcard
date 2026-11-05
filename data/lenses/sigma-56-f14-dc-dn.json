@@ -1,0 +1,172 @@
+{
+  "id": "sigma-56-f14-dc-dn",
+  "name": "Sigma 56mm F1.4 DC DN | Contemporary (Nikon Z)",
+  "short": "Sigma 56 f/1.4 DC DN",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "DX",
+  "kind": "prime",
+  "focal_mm": [
+    56
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 56,
+      "f": 1.4
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 9,
+  "rounded_blades": true,
+  "weight_g": 295,
+  "filter_mm": 55,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "Stepping motor (STM); focus-by-wire MF ring",
+    "focus_throw_deg": null,
+    "notes": "Z-mount weight is 295 g and length 61.5 mm (Sigma UK). Dust- and splash-resistant mount on Z/L/X. No AF/MF switch: focus mode is set in the camera (AP). Lenstip (Sony A7R II APS-C mode): about 1 s across the full range, 'noiseless but not exactly quick', and inconsistent accuracy (a miss tended to repeat for 2–3 frames) with no front- or back-focus bias. Lenstip judged the lens unimpressive on an A6500 at Photokina. Dustin Abbott (a6400/a6500): very fast for f/1.4 with no focus misses, and silent in video. AP: brisk with occasional low-light hunting and a faint whir audible on camera mics. AP's Nikon Z30 section reports no separate AF test. DCW: quick for stills, smooth and near-silent for video. Lenstip: the focus-by-wire ring's range depends on turning speed (version not stated)."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical stabilisation. At 84mm-equivalent on the Z50 II (no IBIS) this is the lens's main practical weakness. AP's Z section flags shake risk at slow shutter speeds. The Z8 and Z5 II have body IBIS (no source tested this lens on them)."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 56,
+        "value": 0.5
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 56,
+        "value": 0.135
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 50 cm and 1:7.4 (0.135x) (Sigma UK; Dustin Abbott 0.135x; DCW 0.14x). Working distance is roughly 500 − 61.5 mm lens − 16 mm flange ≈ 0.42 m. This is arithmetic, not measured, so the field is null. Dustin Abbott: detail stays very high at MFD (subjective, Sony a6400). Lenstip: slight focus shift toward greater distances near MFD, possibly from field curvature, judged minor."
+  },
+  "quick": {
+    "headline": "Very sharp 84mm-equivalent portrait prime: excellent center from f/1.4, best center about f/2–f/4, edges best at f/5.6–f/6.3, strong pincushion until corrected, no stabilisation on the Z50 II.",
+    "sweet_spot": "f/2–f/5.6",
+    "wide_open": "Excellent center at f/1.4 (Lenstip: 'excellent already from maximum aperture', record center 82.4 lp/mm on APS-C crop of A7R II; DCW: plenty of sharpness wide open). Edges are above Lenstip's decency level wide open but never reach 60 lp/mm and lag the center (Lenstip; AP). Dustin Abbott found the corners nearly as sharp as the center at f/1.4 on a6400. Vignetting about 1.2–1.9 EV at f/1.4.",
+    "by_focal": [
+      {
+        "focal_mm": 56,
+        "center_peak": "f/2–f/4",
+        "corners_peak": "f/5.6–f/6.3",
+        "wide_open_note": "AP (A6500): center good at f/1.4, sharper from f/2, peak f/2.8–f/4, corners improve steadily to f/5.6 and best edge to edge at f/5.6–f/6.3. OpticalLimits (quoted via SonyAddict): 'downright superb' f/2–f/8. Lenstip: significant center dip at f/2.8 from local aberration behaviour, seen on all charts. Dustin Abbott: maxed by about f/2–f/2.8."
+      }
+    ],
+    "close_up_best": "f/2.8–f/4 (inference)",
+    "close_up_note": "No source measured resolution at 0.5 m. Dustin Abbott reports very high detail at MFD (aperture not stated). f/2.8–f/4 gives near-peak center (AP) and some depth at 0.135x. If maximum center detail matters, compare f/2.8 with f/2 and f/4, because Lenstip measured a dip at f/2.8. Lenstip noted a slight AF shift near MFD, so verify focus.",
+    "diffraction_note": "DCW (Imatest, Canon M): sharpness excellent through f/11, with a diffraction drop at f/16. AP (A6500): softening noticeable at f/16. OpticalLimits: superb to f/8. Best-supported: f/8 is free, f/11 is fine, and avoid f/16.",
+    "avoid": [
+      "f/16 except for long exposures.",
+      "Turning off distortion control: about +3.3–3.4% pincushion uncorrected.",
+      "Handheld below about 1/125 s on the Z50 II: 84mm-equivalent with no VR."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Lenstip (A7R II APS-C crop, about 18MP), DCW Imatest (Canon M), AP MTF (A6500) and OpticalLimits (summary only) all agree on an excellent center from wide open and diffraction only at f/16. Disagreement on the f/2.8 dip (Lenstip only) and on corners wide open (Abbott 'nearly as sharp' vs Lenstip and AP 'lagging') lowers confidence."
+  },
+  "character": {
+    "bokeh": "Mixed. AP: circular highlights and smooth transitions, with cat's-eye shapes toward the edges at f/1.4. Lenstip: smooth and even with barely visible onion rings, a moderate rim, and distinct mechanical vignetting. Dustin Abbott: subjectively busy, with more contrast and harder edges in defocused areas than he prefers (vs Samyang 85/1.4).",
+    "flare_sunstar": "Dustin Abbott: very strong flare resistance at all apertures. Lenstip's ghosting chapter was not read. Sunstars not assessed by sources read.",
+    "ca": "Lenstip: lateral CA about 0.06% or lower (peak 0.063% near f/2.8), longitudinal CA low, and no focus-shift signs from spherical aberration. AP: purple and green fringing on high-contrast edges at f/1.4 with corrections off, with some remaining even with the profile. DCW: very low fringing throughout. Abbott: close to nil.",
+    "distortion": "Strong pincushion for a short tele: Lenstip +3.43% (RAW and JPEG), AP 3.3% TV SMIA uncorrected, DCW 'a little pincushion'. Abbott found it not fully corrected by in-camera or profile corrections. Sigma's design relies on in-camera correction, and the Z version is listed as compatible with Lens Aberration Correction.",
+    "vignetting": "Lenstip (A7R II APS-C): 48% (−1.89 EV) f/1.4, 31% (−1.08 EV) f/2, 25% (−0.83 EV) f/2.8, 19% (−0.60 EV) f/4, 14% f/5.6, 13% f/8. AP: about 1.2 EV at f/1.4, 0.7 EV at f/2, almost gone at f/4. Lenstip: the lens does not cover full frame.",
+    "coma_astro": "Lenstip: coma visible at f/1.4 and reduced at f/2, with slight point deformation still at f/2. Astigmatism 5.6% (slight).",
+    "focus_breathing": "Not measured by any source found.",
+    "other": "Lenstip's cons: edges inconsistent with the rest of the frame, high distortion, heavy vignetting. Abbott: possibly the sharpest APS-C lens he had tested (2019). AP Z section (Z30): balances well on DX bodies and is recommended as an affordable portrait lens."
+  },
+  "field_tips": [
+    "Portraits: f/1.4–f/2 with the face centred, or near center where it's sharpest. Use f/5.6 for group shots where the edges matter.",
+    "Keep Auto distortion control on. Fix straight lines near the frame edge in post if needed: Abbott found residual pincushion.",
+    "On the Z50 II use at least about 1/125 s handheld (84mm-equivalent, no VR anywhere). Auto ISO with a minimum shutter speed helps.",
+    "If AF misses one frame, refocus rather than holding the burst: Lenstip saw misses repeat for 2–3 frames.",
+    "Close-ups at 0.5 m: f/2.8–f/4, then check focus at 100%."
+  ],
+  "body_notes": [
+    {
+      "body": "z50ii",
+      "note": "Native use, 84mm-equivalent. 20.9MP (4.2 µm) is close to Lenstip's A7R II APS-C crop (about 18MP, 4.5 µm), so its findings transfer well. No stabilisation, so shutter discipline matters."
+    },
+    {
+      "body": "z8",
+      "note": "Auto DX crop, 19.4MP (4.35 µm), so the same per-pixel behaviour plus body IBIS. Remove the Sigma before updating Z8 firmware (Nikon warning reported by Imaging Resource for FW 3.00)."
+    },
+    {
+      "body": "z5ii",
+      "note": "DX crop only about 10MP (computed), with IBIS. Lenstip confirmed the lens does not cover FX, so keep DX crop on."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip: Sigma C 56 mm f/1.4 DC DN review (Arkadiusz Olech)",
+      "url": "https://www.lenstip.com/550.4-Lens_review-Sigma_C_56_mm_f_1.4_DC_DN_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Sony A7R II in APS-C mode (about 18MP, about 4.5 µm)",
+      "date": "2018-12-22",
+      "findings": "Center excellent from f/1.4, own record 82.4 lp/mm (aperture not stated in text). Significant dip by f/2.8, confirmed on all charts and attributed to an aberration maximum. Edge above the decency level (39–41 lp/mm) wide open but never 60 lp/mm. Lateral CA 0.063% peak near f/2.8 (low), longitudinal CA low, no focus shift. Distortion +3.43%. Vignetting 48% (−1.89 EV) f/1.4, 31% (−1.08) f/2, 25% (−0.83) f/2.8, 19% (−0.60) f/4, 14% (−0.43) f/5.6, 13% (−0.41) f/8. Coma visible f/1.4, reduced f/2. Astigmatism 5.6%. AF about 1 s full range, quiet, inconsistent. Slight shift near MFD. Summary cons: inconsistent edges, high distortion, heavy vignetting. Build: MFD 0.5 m, 55 mm, 9 blades, 10 elements in 6 groups. Chapters 550.3–550.11."
+    },
+    {
+      "id": "dcw",
+      "name": "Digital Camera World: Sigma 56mm f/1.4 DC DN | C review (Matthew Richards)",
+      "url": "https://www.digitalcameraworld.com/reviews/sigma-56mm-f14-dc-dn-or-c-review",
+      "kind": "measured",
+      "tested_on": "Canon EOS M (APS-C) test sample; Imatest",
+      "date": "2020-01-11",
+      "findings": "Plenty of sharpness wide open at f/1.4, excellent through f/11, drop at f/16 from diffraction (chart values not in text). Very low fringing including the extreme corners. Distortion score 3.26 (a little pincushion). MFD 0.5 m, 0.14x. Quick AF, near-silent in video."
+    },
+    {
+      "id": "ap",
+      "name": "Amateur Photographer: Sigma 56mm f/1.4 DC DN Contemporary review (Sony, X and Nikon Z sections)",
+      "url": "https://amateurphotographer.com/review/sigma-56mm-f-1-4-dc-dn-contemporary-review/",
+      "kind": "measured",
+      "tested_on": "Sony A6500 (24MP APS-C) primary, A7 III crop; Fujifilm X-S10; Nikon Z30 (Z section)",
+      "date": "2019 (Sony); Z section 2023",
+      "findings": "Center good f/1.4, sharper from f/2, peak f/2.8–f/4. Corners improve steadily to f/5.6, never matching the center. Best edge to edge f/5.6–f/6.3. Diffraction noticeable at f/16. Fringing at f/1.4 with corrections off. Vignetting about 1.2 EV f/1.4, 0.7 EV f/2, almost gone by f/4. Pincushion 3.3% SMIA TV uncorrected. Cat's-eye bokeh at the edges at f/1.4. AF brisk with some low-light hunting and a faint whir. Z section: balances well on the Z30, recommended portrait lens for DX, no stabilisation."
+    },
+    {
+      "id": "dustinabbott",
+      "name": "Dustin Abbott: Sigma 56mm F1.4 DC DN Review",
+      "url": "https://dustinabbott.net/2019/04/sigma-56mm-f1-4-dc-dn-review/",
+      "kind": "review",
+      "tested_on": "Sony a6400 and a6500 (24MP APS-C)",
+      "date": "2019-04-09",
+      "findings": "f/1.4 near-perfect, with a pin-sharp center and corners nearly as sharp. Contrast up at f/2 and slightly better at f/2.8. Possibly the sharpest APS-C lens he had tested. Detail very high at MFD (0.5 m, 0.135x). Longitudinal and lateral CA close to nil. Strong pincushion not fully corrected. Very strong flare resistance. Busy bokeh. Fast, accurate, silent AF. Mount gasket."
+    },
+    {
+      "id": "opticallimits",
+      "name": "OpticalLimits: Sigma 56mm f/1.4 DC DN Contemporary (Sony APS-C), conclusion as quoted by SonyAddict",
+      "url": "https://sonyaddict.com/?p=11806",
+      "kind": "measured",
+      "tested_on": "Sony APS-C body (not stated in excerpt)",
+      "date": null,
+      "findings": "Original review at https://opticallimits.com/sony-alpha-aps-c-lens-tests/1092-sigma56f14 could not be fetched. Excerpt: sharpness 'downright superb' between f/2 and f/8. Lateral CA very low. Distortion on the high side for a prime. Vignetting pronounced at f/1.4 but largely corrected in JPEG/RAW. Highly recommended."
+    },
+    {
+      "id": "sigma",
+      "name": "Sigma UK: 56mm F1.4 DC DN | C product page (Nikon Z specs)",
+      "url": "https://sigmauk.com/lenses/56mm-f1-4-dc-dn-c",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "Z mount: 295 g, φ70 × 61.5 mm. MFD 50 cm, 1:7.4, 55 mm filter, 9 rounded blades, min f/16, 10 elements in 6 groups, 28.5° angle of view. Dust/splash-resistant mount on L/X/Z. Lens Aberration Correction compatible (limited to what the camera supports). Relies on the body for distortion and vignetting correction."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://www.youtube.com/watch?v=V9a7KXvboNI",
+    "access": "title-only",
+    "summary": "A web search returned a YouTube video titled \"Sigma 56mm f/1.4 DC DN 'C' lens review with samples\". The title format matches Frost's usual naming, but the channel could not be confirmed because the page could not be fetched. No description, transcript or verdict was readable, and nothing about the lens is attributed to him."
+  },
+  "research_notes": "1) Conflict on the f/2.8 behaviour: Lenstip measured a significant center dip at f/2.8 on all charts, while AP puts the center peak at f/2.8–f/4 and Abbott saw a mild gain at f/2.8. Possibly copy or test-body dependent. The sweet spot is kept broad (f/2–f/5.6). 2) Corners wide open: Abbott says nearly as sharp as the center, while Lenstip and AP say they lag, with best edges at f/5.6–f/6.3 (AP). Two measured sources outweigh one subjective one. 3) Distortion sign: Lenstip gives +3.43% without naming the type. AP, DCW and Abbott all call it pincushion. 4) OpticalLimits' own page could not be fetched, so only a third-party excerpt is used. 5) No source tested the Z version on Z50 II, Z8 or Z5 II for AF. AP's Z30 section gives handling only. 6) The Frost video channel is unverified, and the web-search budget ran out before a confirmation search. 7) synchro_vr false because the lens has no VR."
+}

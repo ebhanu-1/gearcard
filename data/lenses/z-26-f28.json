@@ -1,0 +1,183 @@
+{
+  "id": "z-26-f28",
+  "name": "NIKKOR Z 26mm f/2.8",
+  "short": "Z 26 f/2.8 pancake",
+  "mount": "Z",
+  "adapter": null,
+  "coverage": "FX",
+  "kind": "prime",
+  "focal_mm": [
+    26
+  ],
+  "max_aperture": [
+    {
+      "focal_mm": 26,
+      "f": 2.8
+    }
+  ],
+  "min_aperture_f": 16,
+  "aperture_blades": 7,
+  "rounded_blades": true,
+  "weight_g": 125,
+  "filter_mm": 52,
+  "focus": {
+    "on_z_body": "AF",
+    "cpu": true,
+    "motor": "All-group (unit) focusing: the whole optical block moves (Sans Mirror; Phillip Reeve). Accurate but slower and more audible than other Z lenses (Reeve).",
+    "focus_throw_deg": null,
+    "notes": "The barrel extends slightly when focusing close (Reeve). Remove the lens cap before powering on, or the camera shows a lens initialization error (Reeve). Focus shift: Photography Life measured it as significant and advises setting the aperture before focusing. Cameralabs saw it soften the foreground at f/5.6. Reeve: small. Noticeable field curvature (Photography Life, Cameralabs). AF quick but not silent (Photography Life). Mostly plastic with a metal mount plate and a sealing gasket (Reeve). Nikon: dust and drip resistant design, not guaranteed."
+  },
+  "stabilization": {
+    "lens_vr": false,
+    "lens_vr_stops": null,
+    "synchro_vr": false,
+    "ibis_on_ftz": null,
+    "notes": "No optical VR. Body IBIS on the Z8 and Z5 II. None on the Z50 II."
+  },
+  "close_focus": {
+    "mfd_m": [
+      {
+        "focal_mm": 26,
+        "value": 0.2
+      }
+    ],
+    "max_mag": [
+      {
+        "focal_mm": 26,
+        "value": 0.19
+      }
+    ],
+    "working_distance_mm_at_max_mag": null,
+    "effective_aperture_at_max_mag": null,
+    "camera_displays_effective": null,
+    "notes": "MFD 0.20 m from the focal plane, 0.19× (Nikon. Sans Mirror lists 1:5.3). The lens is only 23.5 mm long, but focusing extends it slightly. No working-distance figure is published."
+  },
+  "quick": {
+    "headline": "True pancake with a center that is already at its best at f/2.8 (about 78 lp/mm). FX corners stay weak at every aperture. Measured 5% barrel distortion and about 2.5 stops of vignetting rely on correction.",
+    "sweet_spot": "f/2.8–f/4 (center); f/5.6 for corners",
+    "wide_open": "Center excellent at f/2.8 (Lenstip Z7: over 78 lp/mm. Photography Life and Cameralabs: very good wide open). FX corners slightly below Lenstip's decency level wide open, with low contrast and strong coma (Cameralabs). FX vignetting about 2.5 stops (Photography Life 2.45, Reeve 2.7 EV correction off).",
+    "by_focal": [
+      {
+        "focal_mm": 26,
+        "center_peak": "f/2.8–f/4",
+        "corners_peak": "f/5.6",
+        "wide_open_note": "Lenstip (Z7, 45.7MP): center over 78 lp/mm at f/2.8. DX edge 55 lp/mm at max aperture. FX edge just below decency (41–43 lp/mm) and crawls along that borderline at all apertures, with a dip near f/5.6. Photography Life (Z7): center fairly high throughout, midframe weaker, corners 'not very sharp' even at their best aperture of f/5.6. Cameralabs (Z7, about 1 km): FX corner better only at f/5.6 and still lacks fine detail at f/8. Reeve (Z7 II): stopping down doesn't improve FX sharpness."
+      }
+    ],
+    "close_up_best": "f/2.8–f/4 (centre); f/5.6–f/8 for corners",
+    "close_up_note": "Cameralabs (Z7, 1:4.9): sharp center at f/2.8, corners need stopping down, and at f/5.6 the DX corner keeps some softness from field curvature (refocusing per crop was clearly sharper). Reeve rated close-up sharpness excellent on FX and DX. Photography Life measured significant focus shift and noticeable field curvature, so set the aperture before focusing and focus on the subject, not the center.",
+    "diffraction_note": "Reeve (Z7 II): sharpness drops slightly at f/16. Lenstip, Photography Life and Cameralabs did not discuss diffraction. On the 45.7MP Z8, expect a small loss by f/11 (inference from pixel pitch).",
+    "avoid": [
+      "Don't stop down expecting sharp FX corners. Lab tests show them weak at every aperture.",
+      "Don't focus wide open and then stop down: significant focus shift (Photography Life, Cameralabs).",
+      "Avoid f/16 on the Z8.",
+      "Don't power on with the lens cap fitted (initialization error).",
+      "Not for video focus pulls: focus breathing is strong."
+    ],
+    "confidence": "medium",
+    "confidence_reason": "Lenstip (Z7, numbers readable), Photography Life (Z7 lab) and Cameralabs (Z7) agree on an excellent wide-open center and weak FX corners. They disagree modestly on whether f/5.6 helps the corners (Photography Life and Cameralabs yes, Lenstip a dip near f/5.6). Close-up results are mixed: Reeve excellent, Cameralabs corners soft from field curvature."
+  },
+  "character": {
+    "bokeh": "Pleasant for its type. Photography Life: 'surprisingly pleasant', round and uniform, with slightly harsher fringed transitions. Reeve: some optical vignetting and mild onion rings, without harsh edges.",
+    "flare_sunstar": "Reeve: better than expected, though ghosts can appear. Lenstip: performance against bright light could have been better. Weak sunstars (Reeve).",
+    "ca": "Lateral CA: Photography Life 0.99 px wide open rising to 1.62 px stopped down. Lenstip: slight. LoCA: Lenstip negligible. Photography Life sees some fringing in slightly out-of-focus areas. Lenstip notes a local CA maximum near f/5.6.",
+    "distortion": "High barrel: Photography Life measured 4.98% (vs 2.39% for the Z 28 f/2.8). Lenstip: noticeable. Reeve: quite high. Cameralabs: always corrected by the lens profile, which can't be disabled in camera.",
+    "vignetting": "Strong on FX. Photography Life maximum 2.45 stops. Cameralabs: over -2 EV at f/2.8 even with the profile applied, still visible from f/4. Reeve (correction off): FX 2.7 / 2.0 / 1.8 / 1.4 / 1.3 EV and DX 1.3 / 0.9 / 0.7 / 0.7 / 0.7 EV at f/2.8 / 4 / 5.6 / 8 / 11. Lenstip: distinct on FX, moderate on DX.",
+    "coma_astro": "Relatively high coma at f/2.8: Photography Life ('works in a pinch' for Milky Way), Lenstip ('a bit too high'), Cameralabs (strong in the FX corner). Reeve: mild, gone by f/4.",
+    "focus_breathing": "Quite strong (Reeve). Fine for stills, poor for video focus pulls.",
+    "other": "8 elements in 6 groups, 3 aspherical. 70 × 23.5 mm. About 125 g (Nikon). The lens has no filter thread of its own: 52 mm filters screw onto the included HB-111 hood, which doesn't rotate (Reeve, Sans Mirror). A slip-on cap fits either the lens or the hood (Nikon)."
+  },
+  "field_tips": [
+    "Shoot it wide open freely for centered subjects: the center measured best at f/2.8. Stop down for depth of field, not corner sharpness.",
+    "Set the aperture before focusing (significant focus shift), and with off-center subjects put the AF point on the subject. Field curvature is noticeable.",
+    "For filters, mount the HB-111 hood. The 52 mm thread is on the hood, not the lens. Take the cap off before switching on.",
+    "Keep Vignette Control and distortion correction on. It measures about 5% barrel distortion and about 2.5 stops of FX corner falloff at f/2.8.",
+    "On the Z50 II it is a 39mm-equivalent pocket normal. The DX edge is usable at f/2.8 (Lenstip 55 lp/mm) and vignetting is small. No IBIS, so mind the shutter speed."
+  ],
+  "body_notes": [
+    {
+      "body": "z8",
+      "note": "45.7MP: Reeve's Z7 II results apply. Excellent center at f/2.8, corners just good with OK contrast that stopping down doesn't fix. Slight diffraction at f/16, possibly visible from f/11 (inference)."
+    },
+    {
+      "body": "z5ii",
+      "note": "24.5MP: FX corner weakness is less visible per pixel. f/2.8–f/8 all usable (inference)."
+    },
+    {
+      "body": "z50ii",
+      "note": "DX (about 39mm-equivalent): Reeve (Z fc, 20.9MP DX) found better corners than FX, improving at f/5.6, and vignetting negligible from f/4. No IBIS."
+    }
+  ],
+  "tc_compatible": false,
+  "sources": [
+    {
+      "id": "lenstip",
+      "name": "Lenstip review: Nikon Nikkor Z 26 mm f/2.8 (resolution and summary chapters)",
+      "url": "https://www.lenstip.com/649.4-Lens_review-Nikon_Nikkor_Z_26_mm_f_2.8_Image_resolution.html",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), RAW via dcraw",
+      "date": "2023-05",
+      "findings": "Decency level 41–43 lp/mm. Center over 78 lp/mm at f/2.8 (its best). DX edge 55 lp/mm maximum at max aperture, usable. FX edge a tad below decency wide open and crawling along the borderline at all apertures, with a dip near f/5.6 from off-axis aberrations and a local CA maximum. Other per-aperture values are in a chart. Summary (https://www.lenstip.com/649.11-Lens_review-Nikon_Nikkor_Z_26_mm_f_2.8_Summary.html) pros: excellent center, sensible DX edge, negligible LoCA, slight lateral CA, no spherical aberration problems, low astigmatism, moderate DX vignetting. Cons: distinct FX vignetting, noticeable distortion, a bit too high coma wide open, bright-light performance could be better."
+    },
+    {
+      "id": "photographylife",
+      "name": "Photography Life: Nikon Z 26mm f/2.8 review (page 2, lab tests)",
+      "url": "https://photographylife.com/reviews/nikon-z-26mm-f-2-8/2",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP)",
+      "date": null,
+      "findings": "Center fairly high at all apertures including f/2.8. Midframe a good bit weaker. Corners not very sharp even at their best, f/5.6. Significant focus shift (set aperture before focusing). Noticeable field curvature (focus at midframe or edge). Vignetting max 2.45 stops (Z 28 f/2.8: 2.20). Barrel distortion 4.98%. Lateral CA 0.99 px wide open, up to 1.62 px stopped down. Relatively high coma. Bokeh surprisingly pleasant. AF quick but not silent, somewhat slower than most Z lenses. 0.19× (1:5.3)."
+    },
+    {
+      "id": "cameralabs",
+      "name": "Cameralabs: Nikon Z 26mm f/2.8 review (Quality page)",
+      "url": "https://www.cameralabs.com/nikon-z-26mm-f2-8-review/2/",
+      "kind": "measured",
+      "tested_on": "Nikon Z7 (45.7MP), Siemens star at about 1.3 m and city scene at about 1 km",
+      "date": null,
+      "findings": "At about 1.3 m, f/2.8: center sharper than the Z 28 f/2.8 and just behind the Z 24 f/1.8 S. FX corner has the least contrast and strong coma, with contrast up at f/4. At about 1 km: center very good wide open, DX corner improves at f/4, FX corner only better at f/5.6 and lacks fine detail even at f/8. Close-up (1:4.9): sharp center at f/2.8, corners need stopping down, field curvature leaves DX-corner softness at f/5.6. Some focus shift at f/5.6. Vignetting over -2 EV at f/2.8 even with the profile. Distortion always corrected by the profile. Visual crops, no numeric scores."
+    },
+    {
+      "id": "phillipreeve",
+      "name": "Phillip Reeve: Review Nikon Z Nikkor 26mm f/2.8",
+      "url": "https://phillipreeve.net/blog/review-nikon-z-nikkor-26mm-f-2-8/",
+      "kind": "review",
+      "tested_on": "Nikon Z7 II (45.7MP FX) and Nikon Z fc (20.9MP DX)",
+      "date": null,
+      "findings": "FX infinity: center excellent at f/2.8, midframe very good, corners just good with OK contrast. Stopping down does not improve sharpness, and it drops slightly at f/16. DX: corners better, improving at f/5.6. Portrait distance: excellent center, very good circles. Close-up excellent on FX and DX. Quite high distortion uncorrected. Vignetting (off) FX 2.7/2.0/1.8/1.4/1.3 EV, DX 1.3/0.9/0.7/0.7/0.7 EV for f/2.8–f/11. Small focus shift. CA relatively well corrected. Mild coma gone by f/4. Flare better than expected, weak sunstars. Focus breathing quite strong. AF accurate but slower and louder than other Z lenses. Barrel extends close up. Cap-on startup error. No filter thread (filters via hood). Vs the Z 28 f/2.8: the 28 is less sharp in the center but more even across the frame, with less vignetting and weaker flare resistance."
+    },
+    {
+      "id": "nikon_spec",
+      "name": "Nikon: NIKKOR Z 26mm f/2.8 product page",
+      "url": "https://imaging.nikon.com/imaging/lineup/lens/z-mount/z_26mmf28/",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": null,
+      "findings": "MFD 0.2 m. 0.19×. About 125 g. 52 mm filter size. 7 rounded blades. 8 elements in 6 groups (3 aspherical). f/2.8–f/16. 70 × 23.5 mm. Dust and drip resistant design (not guaranteed). LC-K108 slip-on cap, HB-111 hood."
+    },
+    {
+      "id": "sansmirror_spec",
+      "name": "Thom Hogan (Sans Mirror): Nikkor Z 26mm f/2.8 lens specifications",
+      "url": "https://sansmirror.com/lenses/lens-database/lenses-from-camera-makers/nikon-z-mount-lenses/nikkor-z-26mm-f28.html",
+      "kind": "manufacturer",
+      "tested_on": null,
+      "date": "2023-02 (announced). Page updated 2025-12",
+      "findings": "Spec compilation: all elements move together for focus, 0.2 m, 1:5.3, 52 mm filter screws onto the HB-111 hood, metal mount, weather-sealed, 125 g, 24 mm long. Review listed as 'coming', so no optical verdict. Not S-line, and it overlaps heavily with the 28mm f/2.8."
+    },
+    {
+      "id": "frost_video",
+      "name": "Christopher Frost (YouTube): Nikon Z 26mm f/2.8 lens review",
+      "url": "https://www.youtube.com/watch?v=-ciyzzmq3lw",
+      "kind": "video",
+      "tested_on": "Not readable",
+      "date": null,
+      "findings": "Only the title and channel were confirmed (YouTube oEmbed). Content not readable, so no findings are used."
+    }
+  ],
+  "chris_frost": {
+    "url": "https://www.youtube.com/watch?v=-ciyzzmq3lw",
+    "access": "title-only",
+    "summary": "YouTube oEmbed confirms the title 'Nikon Z 26mm f/2.8 lens review' by Christopher Frost. The watch page, description and transcript could not be fetched, so his verdict is unknown and not used."
+  },
+  "research_notes": "1) Follow-up search added three lab or structured-test sources on 45.7MP Z7 bodies: Lenstip, Photography Life and Cameralabs. Confidence raised from low to medium. 2) Corner conflict: Photography Life and Cameralabs find FX corners best (still weak) at f/5.6, while Lenstip shows an FX-edge dip near f/5.6, staying at the decency borderline across apertures, and Reeve sees no gain. corners_peak f/5.6 is used with the caveat that corners stay weak. 3) Close-up conflict: Reeve rates it excellent, Cameralabs found soft corners at 1:4.9 from field curvature. The center is sharp at f/2.8 in both. 4) Focus shift: Photography Life 'significant', Cameralabs visible at f/5.6, Reeve 'small'. The stronger measured finding is used. 5) filter_mm 52 is Nikon's stated filter size, but the thread is on the HB-111 hood, not the lens. 6) Build: Sans Mirror lists a metal mount, Reeve says mostly plastic with a metal mount plate. Both agree on sealing. 7) Diffraction is not measured by the lab sources. Z8 onset is inferred. 8) Reeve's size and weight comparison with the 28mm is internally inconsistent. Nikon specs are used. 9) Not on Nikon's Z TC-1.4x compatible list."
+}

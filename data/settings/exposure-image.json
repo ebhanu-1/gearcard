@@ -1,0 +1,2225 @@
+[
+  {
+    "id": "auto-iso",
+    "group": "Exposure & Image",
+    "name": "Auto ISO sensitivity control (maximum ISO, minimum shutter speed)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > ISO sensitivity settings > Auto ISO sensitivity control / Maximum sensitivity / Minimum shutter speed",
+      "z5ii": "Photo shooting menu > ISO sensitivity settings > Auto ISO sensitivity control / Maximum sensitivity / Minimum shutter speed",
+      "z50ii": "Photo shooting menu > ISO sensitivity settings > Auto ISO sensitivity control / Maximum sensitivity / Minimum shutter speed"
+    },
+    "one_liner": "Camera raises ISO to protect your shutter speed, up to a ceiling you set.",
+    "what_it_does": "With Auto ISO on, the camera varies ISO to reach correct exposure, never exceeding Maximum sensitivity. In P and A modes it also holds a Minimum shutter speed: ISO climbs before shutter speed is allowed to drop below it. Minimum shutter speed can be a fixed value or Auto, which scales with focal length and can be fine-tuned faster or slower. In M mode with Auto ISO, you fix shutter and aperture and ISO floats, steered by exposure compensation.",
+    "options": [
+      {
+        "value": "Auto ISO sensitivity control: ON / OFF",
+        "meaning": "ON lets ISO float; OFF keeps the ISO you set.",
+        "use_when": "ON for moving subjects and changing light; OFF for tripod landscape/astro where you want base ISO or a fixed ISO."
+      },
+      {
+        "value": "Maximum sensitivity",
+        "meaning": "Upper ISO limit Auto ISO may use.",
+        "use_when": "Set to the highest ISO you still accept after Lightroom AI Denoise for that body."
+      },
+      {
+        "value": "Maximum sensitivity with flash",
+        "meaning": "Separate ISO ceiling when a flash is fitted.",
+        "use_when": "Keep lower for bounce flash indoors."
+      },
+      {
+        "value": "Minimum shutter speed: fixed value",
+        "meaning": "P/A modes: ISO rises before shutter falls below this speed (Z50II manual: 1/2000–30 s).",
+        "use_when": "When you know the speed the subject needs (e.g. dancer's hands)."
+      },
+      {
+        "value": "Minimum shutter speed: Auto (with fine-tune)",
+        "meaning": "Speed is derived from focal length; fine-tune shifts it faster (toward 'protect against motion') or slower.",
+        "use_when": "Zooms and walk-around use; push fine-tune faster for kids and birds."
+      }
+    ],
+    "when_to_change": "Change maximum ISO when light gets dramatically worse (stage, indoors at night) and change minimum shutter when the subject's speed changes, not the lens.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "M mode + Auto ISO ON, 1/500–1/640 s, lens wide open, max ISO 12800 (Z8) / 25600 (Z5II); use exposure compensation to bias for spotlit skin",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "M mode + Auto ISO, 1/2000–1/3200 s for flight, max ISO 6400–12800",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Auto ISO OFF, base ISO (64 on Z8, 100 on Z5II/Z50II)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Auto ISO OFF; fixed ISO, shutter ~1/125–1/250 s so the moon stays sharp; expose for the moon",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "A mode, Auto ISO ON, Minimum shutter Auto fine-tuned 1–2 steps faster, max ISO 12800",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Video uses its own ISO settings (Video recording menu > ISO sensitivity settings) - see video file",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "Z8 base ISO 64 (native 64–25600); Z5II native ISO 100–64000; Z50II native ISO 100–51200 (per Nikon spec pages/manual). On the Z5II, 'C' firmware 1.20 changed the range of selectable Minimum shutter speed values (Nikon manual change page; new range not read in this pass). Z8 minimum shutter speed range not verified in this pass.",
+    "gotchas": [
+      "If Maximum sensitivity is reached, shutter speed will drop below your minimum anyway - watch the shutter readout in dark venues.",
+      "Minimum shutter speed is ignored in S and M modes; it only governs P and A.",
+      "In M + Auto ISO, exposure compensation is how you brighten/darken - it changes ISO, not shutter/aperture.",
+      "Active D-Lighting stops working at Hi ISO values, including Hi values chosen by Auto ISO (Z50II manual)."
+    ],
+    "related": [
+      "exposure-compensation",
+      "metering",
+      "active-d-lighting",
+      "high-iso-nr"
+    ],
+    "firmware_note": "Z5II 'C' firmware 1.20 changed available Minimum shutter speed values. Z8 manual covers firmware 3.10.",
+    "research_notes": "Z8 and Z5II manual pages load their text via script and could not be read; Z8/Z5II option names inferred from the shared Nikon menu structure (Z8/Z5II table of contents confirms the menu item and location) and the readable Z50II page. Suggested ISO ceilings are field judgement, not measured.",
+    "sources": [
+      {
+        "id": "z50ii-iso",
+        "name": "Nikon Z50II Reference Guide - ISO sensitivity settings",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-09.html",
+        "kind": "manufacturer",
+        "findings": "Auto ISO with Maximum sensitivity, Maximum sensitivity with flash, Minimum shutter speed (P/A only, 1/2000–30 s, Auto with fine-tune); shutter can fall below minimum if max ISO is reached."
+      },
+      {
+        "id": "z8-iso",
+        "name": "Nikon Z8 Reference Guide - ISO Sensitivity Settings",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_iso_sensitivity_settings_124.html",
+        "kind": "manufacturer",
+        "findings": "Confirms item location in Photo shooting menu (page body not machine-readable)."
+      },
+      {
+        "id": "z5ii-iso",
+        "name": "Nikon Z5II Reference Guide - ISO sensitivity settings",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_iso_sensitivity_settings_129.html",
+        "kind": "manufacturer",
+        "findings": "Confirms item location in Photo shooting menu."
+      },
+      {
+        "id": "z5ii-fw120-minss",
+        "name": "Nikon Z5II - Change in available Minimum shutter speed (C fw 1.20)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/changing_min_shutter_speed_range_in_auto_iso_389.html",
+        "kind": "manufacturer",
+        "findings": "Firmware 1.20 changed the selectable Minimum shutter speed values (detail not readable)."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "ISO 64–25600, expandable to ISO 32 / 102400 equivalent."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "ISO 100–64000, expandable to ISO 50 / 204800 equivalent."
+      },
+      {
+        "id": "z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "ISO 100–51200, Hi up to ISO 204800 equivalent."
+      }
+    ]
+  },
+  {
+    "id": "metering",
+    "group": "Exposure & Image",
+    "name": "Metering mode",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Metering (also i menu; assignable to a button)",
+      "z5ii": "Photo shooting menu > Metering (also i menu)",
+      "z50ii": "Photo shooting menu > Metering (also i menu; assignable via f2 Custom controls)"
+    },
+    "one_liner": "Decides which part of the scene the meter trusts when setting exposure.",
+    "what_it_does": "Metering reads scene brightness and feeds the exposure the camera picks (or the meter you follow in M). Matrix analyses the whole frame; center-weighted favours the middle; spot reads a ~2.5% circle at the active focus point; highlight-weighted biases exposure to keep the brightest areas from clipping. It does not change RAW data, only the exposure chosen.",
+    "options": [
+      {
+        "value": "Matrix",
+        "meaning": "Whole-frame evaluation using tone distribution, color, composition and distance.",
+        "use_when": "Default for most scenes, family, travel; works best with Active D-Lighting."
+      },
+      {
+        "value": "Center-weighted",
+        "meaning": "Greatest weight on a central circle (size set in Custom setting b5; Average option meters full frame).",
+        "use_when": "Subject fills the centre; also Nikon's suggestion when using filters with a filter factor."
+      },
+      {
+        "value": "Spot",
+        "meaning": "Meters a circle about 2.5% of the frame centred on the current focus point (centre point with Auto-area AF).",
+        "use_when": "Bird against bright sky or dark foliage; meter a specific face."
+      },
+      {
+        "value": "Highlight-weighted",
+        "meaning": "Weights highlights to reduce highlight clipping, e.g. spotlit stage performers.",
+        "use_when": "Stage dance, moon, white birds in sun; expect a dark rest-of-frame you lift in Lightroom."
+      }
+    ],
+    "when_to_change": "Switch from Matrix when a small bright or dark subject sits against a very different background.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Highlight-weighted (protect costume and face highlights under spots)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "Matrix for general; Spot or Highlight-weighted for white egrets/gulls in sun",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Matrix, check histogram; bracket if needed",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Highlight-weighted or Spot on the moon (then check histogram)",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Matrix (with b4 Matrix metering face detection ON)",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Matrix or Highlight-weighted; spot metering is not offered for video",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "All three offer the same four modes for stills. For video, the Z8 and Z50II specs list Matrix, Center-weighted and Highlight-weighted only (no Spot).",
+    "gotchas": [
+      "Spot follows the focus point; with Auto-area AF it uses the centre - not where the subject is.",
+      "Highlight-weighted can underexpose a scene with a small specular highlight (chrome, sun glint).",
+      "In M mode with fixed ISO, metering only moves the exposure indicator - it changes nothing by itself."
+    ],
+    "related": [
+      "exposure-compensation",
+      "auto-iso",
+      "histogram",
+      "active-d-lighting"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option descriptions read from the Z50II manual; Z8 and Z5II menu location confirmed from their table of contents and spec pages list the same four modes.",
+    "sources": [
+      {
+        "id": "z50ii-metering",
+        "name": "Nikon Z50II Reference Guide - Metering",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-21.html",
+        "kind": "manufacturer",
+        "findings": "Four modes; spot ~2.5% of frame following focus point (centre with auto-area); highlight-weighted recommended for spotlit stage performers; b5 sets centre-weighted area."
+      },
+      {
+        "id": "z8-metering",
+        "name": "Nikon Z8 Reference Guide - Metering",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_metering_141.html",
+        "kind": "manufacturer",
+        "findings": "Item in Photo shooting menu; Custom settings b4 Matrix metering face detection, b5 Center-weighted area, b6 Fine-tune optimal exposure."
+      },
+      {
+        "id": "z5ii-metering",
+        "name": "Nikon Z5II Reference Guide - Metering",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_metering_145.html",
+        "kind": "manufacturer",
+        "findings": "Item in Photo shooting menu."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Stills: matrix, center-weighted, spot, highlight-weighted. Video: matrix, center-weighted, highlight-weighted."
+      },
+      {
+        "id": "z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "Spot = ~3.5 mm circle at focus point; video metering matrix/center-weighted/highlight-weighted."
+      }
+    ]
+  },
+  {
+    "id": "exposure-compensation",
+    "group": "Exposure & Image",
+    "name": "Exposure compensation and EV steps",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Exposure compensation button + main command dial; step size: Custom settings b2 EV steps for exposure cntrl; b3 Easy exposure compensation",
+      "z5ii": "Exposure compensation button + main command dial; step size: Custom settings b2 EV steps for exposure cntrl; b3 Easy exposure compensation",
+      "z50ii": "Exposure compensation button + main command dial; step size: Custom settings b2 EV steps for exposure cntrl; b3 Easy exposure compensation"
+    },
+    "one_liner": "Tells the camera to make the picture brighter or darker than metered.",
+    "what_it_does": "Exposure compensation biases the exposure the camera chooses in P, S, A, and in M when Auto ISO is on (where it moves ISO). b2 sets whether exposure steps (shutter, aperture, compensation) move in 1/3 or 1/2 EV. b3 Easy exposure compensation lets a bare command dial set compensation without pressing the button.",
+    "options": [
+      {
+        "value": "+ / − EV",
+        "meaning": "Positive brightens, negative darkens relative to the meter.",
+        "use_when": "Snow/white birds (+), stage spotlight or moon (−), backlit faces (+)."
+      },
+      {
+        "value": "b2: 1/3 step or 1/2 step",
+        "meaning": "Granularity of shutter/aperture/compensation changes.",
+        "use_when": "Keep 1/3 for finer control."
+      },
+      {
+        "value": "b3: Off / On / On (auto reset)",
+        "meaning": "Whether the free dial sets compensation directly; auto reset clears it at power-off/standby.",
+        "use_when": "On (auto reset) if you often forget to zero compensation."
+      }
+    ],
+    "when_to_change": "Whenever the histogram or preview shows the meter is fooled by a mostly bright or mostly dark scene.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "−0.7 to −1.3 EV with Matrix; ~0 with Highlight-weighted",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "+0.3 to +1 EV for dark birds in shade; −0.3 to −1 EV for white birds",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "0; adjust by histogram",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "−1 to −2 EV if Matrix is metering the dark sky",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "0 to +0.3 EV for faces",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Same Custom settings numbering (b2, b3) on all three per their manuals' tables of contents.",
+    "gotchas": [
+      "Compensation persists until you reset it - check the display before the next scene.",
+      "In M with Auto ISO OFF, the button only shifts the meter indicator, not the exposure.",
+      "b6 Fine-tune optimal exposure permanently shifts the meter without any on-screen icon - leave it at 0."
+    ],
+    "related": [
+      "auto-iso",
+      "metering",
+      "view-mode-exposure-preview",
+      "histogram"
+    ],
+    "firmware_note": "",
+    "research_notes": "Exact EV ranges not re-read in this pass; omitted.",
+    "sources": [
+      {
+        "id": "z8-b2",
+        "name": "Nikon Z8 Reference Guide - b2 EV Steps for Exposure Cntrl",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmb_ev_steps_for_exposure_cntrl_222.html",
+        "kind": "manufacturer",
+        "findings": "Menu location of EV steps."
+      },
+      {
+        "id": "z8-b3",
+        "name": "Nikon Z8 Reference Guide - b3 Easy Exposure Compensation",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmb_easy_exposure_compensation_223.html",
+        "kind": "manufacturer",
+        "findings": "Menu location of easy exposure compensation."
+      },
+      {
+        "id": "z5ii-b2",
+        "name": "Nikon Z5II Reference Guide - b2 EV steps",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmb_ev_steps_for_exposure_cntrl_222.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z50ii-b3",
+        "name": "Nikon Z50II Reference Guide - b3 Easy exposure compensation",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-16.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z50ii-f2",
+        "name": "Nikon Z50II Reference Guide - f2 Custom controls (shooting)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-40.html",
+        "kind": "manufacturer",
+        "findings": "Z50II has an Exposure compensation button among assignable controls."
+      }
+    ]
+  },
+  {
+    "id": "view-mode-exposure-preview",
+    "group": "Exposure & Image",
+    "name": "View mode (photo Lv) - exposure/settings preview",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > d9 View mode (photo Lv)",
+      "z5ii": "Custom settings menu > d10 View mode (photo Lv)",
+      "z50ii": "Custom settings menu > d10 View mode (photo Lv)"
+    },
+    "one_liner": "Choose whether the EVF shows the real exposure or an easy-to-see image.",
+    "what_it_does": "'Show effects of settings' makes the viewfinder/monitor preview reflect exposure, white balance, Picture Control and compensation, so what you see approximates the shot. 'Adjust for ease of viewing' brightens and neutralises the view regardless of settings, useful when using flash or deliberately dark exposures. Video mode always shows setting effects.",
+    "options": [
+      {
+        "value": "Show effects of settings > Always",
+        "meaning": "Preview reflects settings even when a flash is ready.",
+        "use_when": "Natural-light work where you judge exposure in the EVF."
+      },
+      {
+        "value": "Show effects of settings > Only when flash is not used",
+        "meaning": "Brightness adjusted for viewing when flash is in use; color effects still shown.",
+        "use_when": "Default choice if you sometimes use flash."
+      },
+      {
+        "value": "Adjust for ease of viewing > Auto / Custom",
+        "meaning": "View ignores settings; Custom lets you choose WB, Picture Control and Brighten shadows (Off/+1/+2/+3) for the view.",
+        "use_when": "Flash/studio, astro framing, or when you deliberately underexpose (moon, stage)."
+      }
+    ],
+    "when_to_change": "Use Show effects for natural-light stills; switch to Adjust for ease of viewing when the preview becomes too dark to compose.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Show effects of settings (see real exposure and highlight protection)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "Show effects of settings",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Show effects of settings",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Show effects of settings to judge the moon's exposure; temporarily Adjust for ease of viewing to compose a dark foreground",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Show effects of settings > Only when flash is not used",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Same feature on all three; it is d9 on the Z8 and d10 on Z5II/Z50II. Assignable to a button as 'View mode (photo Lv)' (verified on Z50II).",
+    "gotchas": [
+      "With 'Adjust for ease of viewing', the EVF lies about exposure - rely on the histogram.",
+      "With TTL flash and Auto ISO, the preview brightness may not match the result (Nikon note)."
+    ],
+    "related": [
+      "histogram",
+      "starlight-view",
+      "exposure-compensation",
+      "highlight-display-zebras-stills"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option text read from Z50II manual; Z8 option wording assumed identical (same menu item name).",
+    "sources": [
+      {
+        "id": "z50ii-d10",
+        "name": "Nikon Z50II Reference Guide - d10 View mode (photo Lv)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-63.html",
+        "kind": "manufacturer",
+        "findings": "Show effects of settings (Always / Only when flash is not used) vs Adjust for ease of viewing (Auto / Custom with WB, Picture Control, Brighten shadows). Video always shows effects."
+      },
+      {
+        "id": "z8-d9",
+        "name": "Nikon Z8 Reference Guide - d9 View Mode (Photo Lv)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmd_view_mode_photo_lv_239.html",
+        "kind": "manufacturer",
+        "findings": "Menu location on Z8."
+      },
+      {
+        "id": "z5ii-d10",
+        "name": "Nikon Z5II Reference Guide - d10 View mode (photo Lv)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmd_view_mode_photo_lv_239.html",
+        "kind": "manufacturer",
+        "findings": "Menu location on Z5II."
+      }
+    ]
+  },
+  {
+    "id": "starlight-view",
+    "group": "Exposure & Image",
+    "name": "Starlight view (photo Lv)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > d10 Starlight view (photo Lv)",
+      "z5ii": "Custom settings menu > d11 Starlight view (photo Lv)",
+      "z50ii": "Custom settings menu > d11 Starlight view (photo Lv)"
+    },
+    "one_liner": "Brightens the live view in near darkness so you can compose and focus.",
+    "what_it_does": "Starlight view boosts live-view brightness in very dark scenes so you can frame the Milky Way or a dark foreground and focus manually on a star. It is a display aid only; it does not change the recorded exposure.",
+    "options": [
+      {
+        "value": "ON / OFF",
+        "meaning": "ON brightens the photo live view in dark conditions.",
+        "use_when": "Astro and moonrise blue-hour foregrounds."
+      }
+    ],
+    "when_to_change": "Turn on at night on the tripod; turn off for normal shooting.",
+    "suggested": [
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "ON while composing the foreground before moonrise",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "ON for night/astro only",
+        "scenario_id": "landscape"
+      }
+    ],
+    "body_differences": "Present on all three; d10 on Z8, d11 on Z5II/Z50II.",
+    "gotchas": [
+      "Refresh rate drops in starlight view, so it is useless for moving subjects.",
+      "Z8 firmware 2.00 removed the histogram from starlight view (Nikon release notes) - don't expect a histogram there."
+    ],
+    "related": [
+      "view-mode-exposure-preview",
+      "warm-display-colors",
+      "extended-shutter-speeds"
+    ],
+    "firmware_note": "Z8 fw 2.00: histogram display removed in starlight view.",
+    "research_notes": "Detailed option text not read; description from Nikon feature naming and fw notes. Refresh-rate statement is general Nikon behaviour, not re-verified this pass.",
+    "sources": [
+      {
+        "id": "z8-d10",
+        "name": "Nikon Z8 Reference Guide - d10 Starlight View (Photo Lv)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmd_starlight_view_photo_lv_240.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z50ii-d11",
+        "name": "Nikon Z50II Reference Guide - d11 Starlight view",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-64.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware 3.10 notes (history)",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 2.00 removed histogram display in starlight view."
+      }
+    ]
+  },
+  {
+    "id": "highlight-display-zebras-stills",
+    "group": "Exposure & Image",
+    "name": "Highlight warning / zebras for stills",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Playback menu > Playback display options > Highlights (blinkies in playback). Live zebras: Custom settings g15 Zebra pattern (video mode only)",
+      "z5ii": "Playback menu > Playback display options > Highlights (unverified on Z5II). Live zebras: Custom settings g12 Zebra pattern (video mode only)",
+      "z50ii": "Playback menu > Playback display options > Highlights (unverified on Z50II). Live zebras: Custom settings g12 Zebra pattern (video mode only)"
+    },
+    "one_liner": "Stills get blinking highlights in playback; live zebras exist only in video mode.",
+    "what_it_does": "None of the three bodies lists a live zebra/highlight warning for photo mode: the zebra item sits in the video (g) group of Custom settings. For stills, the highlight check is the playback 'Highlights' page (clipped areas blink) plus the live histogram. Both are based on the JPEG rendering (Picture Control), so RAW usually has a little more headroom.",
+    "options": [
+      {
+        "value": "Playback display options > Highlights",
+        "meaning": "Adds a playback page where clipped areas flash.",
+        "use_when": "Always enable it; check after first frames of a scene."
+      },
+      {
+        "value": "Workaround: flip to video mode",
+        "meaning": "Video-mode zebras (threshold 120–255) show highlights live, then flip back to photo.",
+        "use_when": "Static scenes like moon or stage set-up shots."
+      }
+    ],
+    "when_to_change": "Enable Highlights once and leave it; use the video-mode trick when you must judge highlights live.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Highlights page on; review first frames of each lighting change",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Check moon with Highlights page; protect lunar detail",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Birds",
+        "value": "Highlights on for white plumage",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "Zebra pattern is g15 on Z8 (with zebra color option added in fw 2.10) and g12 on Z5II/Z50II.",
+    "gotchas": [
+      "Blinkies and histogram reflect the JPEG/Picture Control, not RAW - Flat Picture Control gives a more honest view.",
+      "In video-mode manual focus, focus peaking overrides zebras - turn peaking display off to see zebras (Z50II manual note)."
+    ],
+    "related": [
+      "histogram",
+      "picture-control",
+      "zebra-pattern",
+      "metering"
+    ],
+    "firmware_note": "Z8 fw 2.10 added zebra pattern color option.",
+    "research_notes": "The absence of photo-mode zebras is inferred from menu structure (zebra item in video group) and the Z50II zebra page, which describes video-mode use only. The Playback display options > Highlights wording was not read from page text in this pass. Claim that the histogram/blinkies are JPEG-based is general knowledge, not re-sourced.",
+    "sources": [
+      {
+        "id": "z50ii-g12",
+        "name": "Nikon Z50II Reference Guide - g12 Zebra pattern",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-91.html",
+        "kind": "manufacturer",
+        "findings": "Zebras in video mode; highlights threshold 120–255 or mid-tone range; peaking overrides zebras in MF."
+      },
+      {
+        "id": "z8-g15",
+        "name": "Nikon Z8 Reference Guide - g15 Zebra Pattern",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmg_zebra_pattern_289.html",
+        "kind": "manufacturer",
+        "findings": "Zebra pattern is in the g (video) custom settings group."
+      },
+      {
+        "id": "z8-pb-display",
+        "name": "Nikon Z8 Reference Guide - Playback Display Options",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/pbm_playback_display_options_301.html",
+        "kind": "manufacturer",
+        "findings": "Playback menu item where playback info pages are chosen."
+      }
+    ]
+  },
+  {
+    "id": "histogram",
+    "group": "Exposure & Image",
+    "name": "Live histogram (shooting display)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > d19 Custom monitor shooting display / d20 Custom viewfinder shooting display > tick Histogram; cycle with DISP",
+      "z5ii": "Custom settings menu > d19 Custom monitor shooting display / d20 Custom viewfinder shooting display > Histogram",
+      "z50ii": "Custom settings menu > d19 Custom monitor shooting display / d20 Custom viewfinder shooting display > Histogram"
+    },
+    "one_liner": "Puts a live brightness graph on one of your DISP screens.",
+    "what_it_does": "d19/d20 choose which indicators each DISP screen shows, separately for monitor and viewfinder; Histogram is one of them. The histogram reflects the previewed image, so it is only meaningful when View mode is 'Show effects of settings'.",
+    "options": [
+      {
+        "value": "Histogram ticked on a display (2–4)",
+        "meaning": "Histogram appears on that DISP page.",
+        "use_when": "Set one EVF page with histogram + virtual horizon for landscapes."
+      }
+    ],
+    "when_to_change": "Set once; use DISP to call the page when exposure matters.",
+    "suggested": [
+      {
+        "scenario": "Landscape tripod",
+        "value": "EVF page with histogram + virtual horizon + grid",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Histogram page; keep the moon's spike off the right wall",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Histogram page in EVF",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Same numbering (d19/d20) on all three. In video mode the brightness display is chosen separately (histogram or waveform) - see video file.",
+    "gotchas": [
+      "A tiny bright subject (moon, spotlit face) is a few pixels in the histogram - zoom the playback to check.",
+      "Histogram follows Picture Control and View mode; with 'Adjust for ease of viewing' it is misleading."
+    ],
+    "related": [
+      "view-mode-exposure-preview",
+      "highlight-display-zebras-stills",
+      "brightness-information-display"
+    ],
+    "firmware_note": "",
+    "research_notes": "Item list read from Z50II d19 page; Z8/Z5II assumed equivalent (same item names in ToC).",
+    "sources": [
+      {
+        "id": "z50ii-d19",
+        "name": "Nikon Z50II Reference Guide - d19 Custom monitor shooting display",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-71.html",
+        "kind": "manufacturer",
+        "findings": "Displays 2–4 customisable with Histogram, Virtual horizon, Framing grid, Center indicator etc."
+      },
+      {
+        "id": "z8-d19",
+        "name": "Nikon Z8 Reference Guide - d19 Custom Monitor Shooting Display",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmd_custom_monitor_shooting_display_249.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-d19",
+        "name": "Nikon Z5II Reference Guide - d19 Custom monitor shooting display",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmd_custom_monitor_shooting_display_248.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "active-d-lighting",
+    "group": "Exposure & Image",
+    "name": "Active D-Lighting (ADL)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Active D-Lighting (also i menu)",
+      "z5ii": "Photo shooting menu > Active D-Lighting (also i menu)",
+      "z50ii": "Photo shooting menu > Active D-Lighting (also i menu)"
+    },
+    "one_liner": "Protects highlights and lifts shadows in high-contrast scenes; can darken RAWs.",
+    "what_it_does": "ADL tries to keep both highlight and shadow detail in contrasty light, e.g. a shaded face against bright sky or a window view. Nikon describes it working best with Matrix metering. The shadow lift is applied to JPEG/HEIF (and honoured by NX Studio), but the highlight protection comes from the camera choosing a lower exposure, so the RAW file itself is recorded darker than without ADL.",
+    "options": [
+      {
+        "value": "Auto",
+        "meaning": "Camera picks the strength; in M mode Auto behaves as Normal.",
+        "use_when": "JPEG shooting of family/travel."
+      },
+      {
+        "value": "Extra high / High / Normal / Low",
+        "meaning": "Fixed strengths.",
+        "use_when": "Low or Normal if you want a little highlight protection on RAW."
+      },
+      {
+        "value": "Off",
+        "meaning": "No ADL processing or exposure change.",
+        "use_when": "RAW workflow in Lightroom; you control exposure yourself."
+      }
+    ],
+    "when_to_change": "For a RAW + Lightroom workflow leave it Off and use exposure compensation; turn on only for straight-out-of-camera JPEGs.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Off (high ISO; ADL adds noise and is disabled at Hi ISO anyway)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "Off",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Off; bracket or expose to the right instead",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Off",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Off for RAW; Auto if shooting JPEG-only for quick sharing",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Same options on all three. Unavailable when stills Tone mode is HLG (verified on Z50II).",
+    "gotchas": [
+      "Lightroom does not apply ADL's shadow lift, so ADL RAWs open darker than expected (widely reported; not re-verified this pass).",
+      "May add visible noise, banding or uneven shading (Nikon cautions).",
+      "Disabled at Hi ISO values, including those reached by Auto ISO.",
+      "In M mode, Auto = Normal."
+    ],
+    "related": [
+      "metering",
+      "picture-control",
+      "tone-mode-stills",
+      "exposure-compensation"
+    ],
+    "firmware_note": "",
+    "research_notes": "Nikon's Z50II ADL page does not describe an effect on exposure. The RAW-darkening behaviour is a long-standing, widely reported Nikon ADL characteristic (Thom Hogan, Photography Life) that I could not re-fetch in this pass (search budget exhausted, PL page failed). Treat as medium confidence.",
+    "sources": [
+      {
+        "id": "z50ii-adl",
+        "name": "Nikon Z50II Reference Guide - Active D-Lighting",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-14.html",
+        "kind": "manufacturer",
+        "findings": "Options Auto/Extra high/High/Normal/Low/Off; best with matrix metering; may cause noise/banding/uneven shading; Auto = Normal in M; not applied at Hi ISO."
+      },
+      {
+        "id": "z8-adl",
+        "name": "Nikon Z8 Reference Guide - Active D-Lighting",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_active_d-lighting_130.html",
+        "kind": "manufacturer",
+        "findings": "Menu location (photo and video menus each have an ADL item)."
+      },
+      {
+        "id": "z50ii-tone",
+        "name": "Nikon Z50II Reference Guide - Tone mode",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-36.html",
+        "kind": "manufacturer",
+        "findings": "ADL unavailable with HLG tone mode."
+      }
+    ]
+  },
+  {
+    "id": "picture-control",
+    "group": "Exposure & Image",
+    "name": "Picture Controls (incl. Flat, Rich Tone Portrait, Flexible Color, Imaging Recipes)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Set Picture Control (video: Video recording menu > Set Picture Control); custom ones via Manage Picture Control",
+      "z5ii": "Photo shooting menu > Set Picture Control (also Picture Control button); Manage Picture Control; Set Picture Control (HLG)",
+      "z50ii": "Photo shooting menu > Set Picture Control (also Picture Control button); Manage Picture Control; Set Picture Control (HLG)"
+    },
+    "one_liner": "Sets the JPEG/HEIF look and the preview, histogram and blinkies you judge.",
+    "what_it_does": "A Picture Control is the in-camera rendering recipe (contrast, color, sharpening) applied to JPEG/HEIF and video, and embedded with the NEF as an instruction that NX Studio honours. It also drives the EVF preview, histogram and highlight warnings. Lightroom ignores it unless you choose a matching Camera profile. Flexible Color profiles are built in NX Studio and loaded into the camera; Imaging Recipes come from Nikon Imaging Cloud.",
+    "options": [
+      {
+        "value": "Auto / Standard / Neutral / Vivid / Landscape",
+        "meaning": "General looks; Neutral is minimal processing.",
+        "use_when": "Standard for family JPEGs; Neutral for an honest preview."
+      },
+      {
+        "value": "Portrait / Rich Tone Portrait",
+        "meaning": "Portrait smooths skin; Rich Tone Portrait is more vivid while keeping skin and highlight detail, intended for retouching.",
+        "use_when": "Family portraits, dance portraits."
+      },
+      {
+        "value": "Flat",
+        "meaning": "Preserves detail across the tonal range; low contrast.",
+        "use_when": "RAW shooters wanting the histogram/blinkies to show the most highlight room; heavy grading."
+      },
+      {
+        "value": "Monochrome / Flat Monochrome / Deep Tone Monochrome",
+        "meaning": "B&W variants; Deep Tone has a built-in red-filter effect.",
+        "use_when": "B&W previsualisation."
+      },
+      {
+        "value": "Creative Picture Controls (01–20)",
+        "meaning": "Stylised presets with Effect level.",
+        "use_when": "Fun JPEGs."
+      },
+      {
+        "value": "Flexible Color (custom, from NX Studio)",
+        "meaning": "Custom color-graded profile made in NX Studio, loaded as a custom Picture Control; cannot be edited on-camera.",
+        "use_when": "Your own consistent look across bodies."
+      },
+      {
+        "value": "Imaging Recipe (Nikon Imaging Cloud)",
+        "meaning": "Downloaded looks via Wi-Fi + Nikon Imaging Cloud (formerly 'Cloud Picture Control').",
+        "use_when": "Z5II/Z50II only."
+      }
+    ],
+    "when_to_change": "Pick once per project: Flat or Neutral for RAW judgement, Standard/Rich Tone Portrait when you will use the JPEGs straight.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Neutral or Flat (honest highlight preview under spots)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "Standard or Neutral",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Flat or Neutral for RAW judgement",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Flat (maximises visible highlight room)",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Rich Tone Portrait (JPEGs) or Neutral (RAW)",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "N-Log (no Picture Control) or Neutral/Flat in SDR for grading in Final Cut Pro",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "Z8: Rich Tone Portrait, Flat Monochrome and Deep Tone Monochrome added in firmware 2.00; Flexible Color support added in firmware 3.00; no Nikon Imaging Cloud / Imaging Recipes (Z8 not on Nikon USA's compatible list as of July 2025 and its network menu lists no Imaging Cloud item); no dedicated Picture Control button. Z5II and Z50II: full set incl. Flexible Color and Imaging Recipes (renamed from 'Cloud Picture Control' in Z50II fw 1.10 / Z5II fw 1.20); dedicated Picture Control button.",
+    "gotchas": [
+      "Lightroom ignores in-camera Picture Controls - pick 'Camera Flat'/'Camera Standard' etc. profiles in Lightroom for a match.",
+      "Flexible Color-based custom Picture Controls cannot be adjusted or renamed on the camera.",
+      "Monochrome Picture Controls disable Portrait impression balance."
+    ],
+    "related": [
+      "picture-control-button",
+      "portrait-impression-balance",
+      "highlight-display-zebras-stills",
+      "tone-mode-video"
+    ],
+    "firmware_note": "Z8 fw 2.00: Rich Tone Portrait, Flat Monochrome, Deep Tone Monochrome. Z8 fw 3.00: Flexible Color. Z50II fw 1.10 and Z5II fw 1.20: 'Cloud Picture Control' renamed 'Imaging Recipe'.",
+    "research_notes": "Full preset list read from the Z50II Picture Controls page; Z8 list = same core presets plus fw 2.00 additions (Nikon USA). Lightroom profile behaviour is general knowledge, not re-sourced.",
+    "sources": [
+      {
+        "id": "z50ii-pc-list",
+        "name": "Nikon Z50II Reference Guide - Picture Controls",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-07.html",
+        "kind": "manufacturer",
+        "findings": "Preset list incl. Flat, Rich Tone Portrait, Flat/Deep Tone Monochrome, Creative 01–20, Flexible Color (NX Studio), Cloud Picture Controls; Picture Control button; parameter list."
+      },
+      {
+        "id": "z50ii-set-pc",
+        "name": "Nikon Z50II Reference Guide - Set Picture Control",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-11.html",
+        "kind": "manufacturer",
+        "findings": "Add Cloud Picture Control via Nikon Imaging Cloud; renamed Imaging Recipe in fw 1.10."
+      },
+      {
+        "id": "z5ii-recipe",
+        "name": "Nikon Z5II - 'Cloud Picture Control' changed to 'Imaging Recipe' (fw 1.20)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/changing_imaging_recipe_390.html",
+        "kind": "manufacturer",
+        "findings": "Rename in fw 1.20."
+      },
+      {
+        "id": "nikonusa-z8-fw2",
+        "name": "Nikon USA - Z8 firmware 2.0",
+        "url": "https://www.nikonusa.com/content/z-8-firmware-2-point-0",
+        "kind": "manufacturer",
+        "findings": "New Picture Controls: Rich Tone Portrait, Flat Monochrome, Deep Tone Monochrome."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 3.00 added Flexible Color Picture Controls (stills and video)."
+      },
+      {
+        "id": "nikonusa-nic",
+        "name": "Nikon USA - Understanding Nikon Imaging Cloud",
+        "url": "https://www.nikonusa.com/learn-and-explore/c/tips-and-techniques/understanding-what-nikon-imaging-cloud-can-do-for-you",
+        "kind": "manufacturer",
+        "findings": "Imaging recipes for Z6III, Z50II, Z5II, Zf and ZR (as of July 2025); Z8 not listed."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "Dedicated Picture Control button; Imaging Recipes and Flexible Color."
+      }
+    ]
+  },
+  {
+    "id": "picture-control-button",
+    "group": "Exposure & Image",
+    "name": "Picture Control button",
+    "available_on": [
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z5ii": "Dedicated Picture Control button on body; reassignable in Custom settings f2 Custom controls (shooting)",
+      "z50ii": "Dedicated Picture Control button on body; reassignable in Custom settings f2 Custom controls (shooting)"
+    },
+    "one_liner": "One press opens the Picture Control picker with live preview.",
+    "what_it_does": "Pressing the button shows the Picture Control list over live view so you can preview and choose a look; highlighting one and pressing right lets you edit it. You can limit which Picture Controls appear in this list (photo SDR and video lists separately). Like any Fn button it can be reassigned in f2.",
+    "options": [
+      {
+        "value": "Default role (Picture Control selection)",
+        "meaning": "Opens the Picture Control list.",
+        "use_when": "If you switch looks often (JPEG users)."
+      },
+      {
+        "value": "Reassigned role",
+        "meaning": "Any f2 role (e.g. AF-ON, ISO, Metering).",
+        "use_when": "RAW shooters who set Picture Control once - repurpose it."
+      }
+    ],
+    "when_to_change": "If you never change Picture Control in the field, reassign it to something you do change.",
+    "suggested": [
+      {
+        "scenario": "Family indoors",
+        "value": "Keep default if you shoot JPEG for sharing",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Reassign to Metering or Silent mode (Z50II f2 offers both)",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Z8 has no Picture Control button (assign 'Set Picture Control' to an Fn button or i menu instead).",
+    "gotchas": [
+      "Limiting the list hides Picture Controls only from this picker; menus still show all.",
+      "HLG photo-mode Picture Controls cannot be limited."
+    ],
+    "related": [
+      "picture-control",
+      "custom-controls-i-menu"
+    ],
+    "firmware_note": "",
+    "research_notes": "Reassignability verified on Z50II (Picture Control button listed in f2); Z5II assumed same.",
+    "sources": [
+      {
+        "id": "z50ii-pc-list",
+        "name": "Nikon Z50II Reference Guide - Picture Controls",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-07.html",
+        "kind": "manufacturer",
+        "findings": "Picture Control button behaviour; limiting choices."
+      },
+      {
+        "id": "z50ii-f2",
+        "name": "Nikon Z50II Reference Guide - f2 Custom controls (shooting)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-40.html",
+        "kind": "manufacturer",
+        "findings": "Picture Control button is an assignable control."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "Dedicated Picture Control button."
+      }
+    ]
+  },
+  {
+    "id": "white-balance",
+    "group": "Exposure & Image",
+    "name": "White balance (incl. Auto variants and Natural light auto)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > White balance (also WB button + dials / i menu)",
+      "z5ii": "Photo shooting menu > White balance (also i menu)",
+      "z50ii": "Photo shooting menu > White balance (also Fn1 + dials / i menu)"
+    },
+    "one_liner": "Sets color neutrality for the light; RAW lets you change it later.",
+    "what_it_does": "White balance neutralises the light's color for JPEG/HEIF/video and sets the as-shot value a RAW opens with in Lightroom. Auto has three flavours for warm light: Keep white, Keep overall atmosphere, Keep warm lighting colors. Natural light auto targets daylight scenes (about 4500–8000 K) for colors closer to what the eye sees. Kelvin and preset manual give fixed, repeatable results.",
+    "options": [
+      {
+        "value": "Auto 0 - Keep white (reduce warm colors)",
+        "meaning": "Removes the warm cast of incandescent light.",
+        "use_when": "Indoor family shots where you want neutral skin."
+      },
+      {
+        "value": "Auto 1 - Keep overall atmosphere",
+        "meaning": "Partially keeps warm cast.",
+        "use_when": "General default."
+      },
+      {
+        "value": "Auto 2 - Keep warm lighting colors",
+        "meaning": "Keeps the warm cast.",
+        "use_when": "Festival lamps, candle-lit pooja, cosy evenings."
+      },
+      {
+        "value": "Natural light auto",
+        "meaning": "Auto tuned for daylight (~4500–8000 K); may misbehave under artificial light.",
+        "use_when": "Landscape, foliage, birds outdoors."
+      },
+      {
+        "value": "Presets (Direct sunlight 5200K, Cloudy 6000K, Shade 8000K, Incandescent 3000K, Fluorescent, Flash 5400K)",
+        "meaning": "Fixed values.",
+        "use_when": "Consistent sequences."
+      },
+      {
+        "value": "Choose color temperature (~2500–10000 K)",
+        "meaning": "Manual Kelvin.",
+        "use_when": "Stage with fixed lighting, moonrise, video."
+      },
+      {
+        "value": "Preset manual (d-1 to d-6)",
+        "meaning": "Measure off a white/grey card or copy from a photo.",
+        "use_when": "Mixed or colored light, video interviews."
+      }
+    ],
+    "when_to_change": "For RAW stills Auto is fine; fix the Kelvin for video and for sequences you want consistent.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Auto 1 for RAW; for video or JPEG a fixed Kelvin (e.g. 3200–4300 K) measured at the venue",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "Natural light auto or Auto 1",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Natural light auto or Direct sunlight (fix for panoramas)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Daylight/~5000 K (fixed so the moon's color isn't neutralised)",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Auto 0 (Keep white) or Auto 2 for warm mood",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Fixed Kelvin or Natural light auto locked; never let WB drift mid-clip",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "Same option set on all three per Nikon menu structure; WB access buttons differ (Z8 has a dedicated WB button; Z50II uses Fn1 + dial by default).",
+    "gotchas": [
+      "Don't use Kelvin under fluorescent light - use the Fluorescent preset (Nikon note).",
+      "Auto may fail with large studio flash; use Flash preset or preset manual.",
+      "Video WB is a separate menu item; it doesn't follow the photo setting unless linked by your banks."
+    ],
+    "related": [
+      "picture-control",
+      "portrait-impression-balance"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option list and Kelvin values read from Z50II manual WB chapter. Z8 WB button: from body layout knowledge, not re-verified.",
+    "sources": [
+      {
+        "id": "z50ii-wb",
+        "name": "Nikon Z50II Reference Guide - White balance (chapter)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-06.html",
+        "kind": "manufacturer",
+        "findings": "Auto with Keep white / Keep overall atmosphere / Keep warm lighting colors (~3500–8000 K); Natural light auto (~4500–8000 K); preset values; Kelvin 2500–10000 K; preset manual d-1..d-6; fine-tuning."
+      },
+      {
+        "id": "z8-wb",
+        "name": "Nikon Z8 Reference Guide - White Balance",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_white_balance_125.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-wb",
+        "name": "Nikon Z5II Reference Guide - White balance",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_white_balance_130.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "image-area",
+    "group": "Exposure & Image",
+    "name": "Image area / DX crop",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Image area > Choose image area (FX, DX, 1:1, 16:9); limit choices in Custom settings d7",
+      "z5ii": "Photo shooting menu > Image area > Choose image area; limit choices in Custom settings d8",
+      "z50ii": "Photo shooting menu > Choose image area (DX, 1:1, 16:9); limit choices in Custom settings d8"
+    },
+    "one_liner": "Crops the sensor (DX or aspect ratios) for reach, framing or speed.",
+    "what_it_does": "Image area records only part of the sensor. DX on the FX bodies gives a 1.5x crop (Z8 DX = 5392 x 3592, about 19.4 MP) with the EVF filled by the cropped view. 1:1 and 16:9 change aspect ratio. JPEG/HEIF are permanently cropped; on the Z8, per one review, the RAW keeps crop information as metadata.",
+    "options": [
+      {
+        "value": "FX (36x24)",
+        "meaning": "Full sensor.",
+        "use_when": "Default on Z8/Z5II."
+      },
+      {
+        "value": "DX (24x16)",
+        "meaning": "1.5x crop; Z8 19.4 MP; Z5II about 10 MP (not verified).",
+        "use_when": "Birds when out of reach on Z8, DX-only lenses on FX bodies."
+      },
+      {
+        "value": "1:1 / 16:9",
+        "meaning": "Aspect-ratio crops.",
+        "use_when": "Previsualising square or cinematic frames."
+      }
+    ],
+    "when_to_change": "Use DX on the Z8 to fill the EVF with a distant bird; otherwise stay FX and crop in Lightroom.",
+    "suggested": [
+      {
+        "scenario": "Birds",
+        "value": "Z8: FX normally; DX when the bird is tiny and you need a bigger EVF view (19.4 MP)",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "FX (crop later)",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Z8: DX gives ~420 mm equivalent framing; same pixels on the moon as cropping FX",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Z50II is DX-native; its options are DX, 1:1 and 16:9 (no FX). Z8 offers FX/DX/1:1/16:9. Z5II offers FX and DX at least; aspect-ratio options not verified.",
+    "gotchas": [
+      "DX crop doesn't add detail on the moon/bird - it only changes framing and file size.",
+      "DX-format lenses force DX on FX bodies.",
+      "Forgetting DX on after a bird session silently cuts your landscape resolution."
+    ],
+    "related": [
+      "raw-compression",
+      "video-frame-size-rate"
+    ],
+    "firmware_note": "",
+    "research_notes": "Z8 pixel dimensions from havecamerawilltravel review; Z50II from Nikon manual. Z5II DX MP and aspect options not verified.",
+    "sources": [
+      {
+        "id": "z50ii-image-area",
+        "name": "Nikon Z50II Reference Guide - Image recording options",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-01.html",
+        "kind": "manufacturer",
+        "findings": "Z50II image areas DX, 1:1, 16:9 with pixel sizes; RAW always Large."
+      },
+      {
+        "id": "z8-image-area",
+        "name": "Nikon Z8 Reference Guide - Image Area",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_image_area_119.html",
+        "kind": "manufacturer",
+        "findings": "Menu location; d7 Limit selectable image area."
+      },
+      {
+        "id": "z5ii-image-area",
+        "name": "Nikon Z5II Reference Guide - Image area",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_image_area_124.html",
+        "kind": "manufacturer",
+        "findings": "Menu location; d8 Limit selectable image area."
+      },
+      {
+        "id": "hcwt-z8",
+        "name": "Have Camera Will Travel - Nikon Z8 image formats, sizes & types",
+        "url": "https://havecamerawilltravel.com/nikon-z8-image-settings/",
+        "kind": "review",
+        "findings": "Z8 FX/DX/1:1/16:9; DX Large 5392x3592 (19.4 MP); RAW keeps crop as metadata."
+      }
+    ]
+  },
+  {
+    "id": "raw-compression",
+    "group": "Exposure & Image",
+    "name": "RAW recording (NEF compression)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > RAW recording",
+      "z5ii": "Photo shooting menu > RAW recording",
+      "z50ii": "Photo shooting menu > RAW recording"
+    },
+    "one_liner": "Trades NEF file size against compression: Lossless, High efficiency star, High efficiency.",
+    "what_it_does": "Chooses how NEF files are compressed. Lossless keeps all data and is largest. High efficiency star (HE*) and High efficiency (HE) use Nikon's TicoRAW-based codec for much smaller files; Nikon states HE* is comparable in quality to lossless and better than HE. All three bodies record 14-bit NEFs per Nikon specifications.",
+    "options": [
+      {
+        "value": "Lossless compression",
+        "meaning": "Mathematically lossless; largest files.",
+        "use_when": "Landscapes, astro, macro stacks; anything you may push hard."
+      },
+      {
+        "value": "High efficiency* (HE star)",
+        "meaning": "Smaller files, near-lossless quality per Nikon.",
+        "use_when": "Default for birds/events on Z8 to save card space and buffer time."
+      },
+      {
+        "value": "High efficiency (HE)",
+        "meaning": "Smallest NEF, more compression.",
+        "use_when": "Long bird bursts or travel with limited cards."
+      }
+    ],
+    "when_to_change": "Go Lossless for scenes you'll lift shadows heavily; HE* for high-volume action.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Lossless or HE* (shadows get lifted after AI Denoise)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "HE*",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Lossless",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Lossless",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "HE*",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Same three options on all three bodies (Nikon spec pages / Z50II manual). Z50II and Z5II use SD cards, so HE* noticeably helps buffer clearing there.",
+    "gotchas": [
+      "Lightroom Classic supports HE/HE* NEFs only in recent versions - keep LR updated.",
+      "Lightroom AI Denoise works on HE/HE* NEFs, but deep-shadow pushes are where lossless matters most (field judgement)."
+    ],
+    "related": [
+      "raw-bit-depth-readout",
+      "raw-plus-jpeg-preview"
+    ],
+    "firmware_note": "",
+    "research_notes": "TicoRAW basis and Lightroom/AI Denoise remarks are general knowledge, not re-sourced this pass. Card-buffer remark is field judgement.",
+    "sources": [
+      {
+        "id": "z50ii-raw",
+        "name": "Nikon Z50II Reference Guide - RAW recording",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-08.html",
+        "kind": "manufacturer",
+        "findings": "Lossless / High efficiency* / High efficiency; HE* comparable to lossless and better than HE."
+      },
+      {
+        "id": "z8-raw",
+        "name": "Nikon Z8 Reference Guide - RAW Recording",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_raw_recording_123.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-raw",
+        "name": "Nikon Z5II Reference Guide - RAW recording",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_raw_recording_128.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "NEF 14-bit; lossless, HE*, HE."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "NEF 14-bit; lossless, HE*, HE."
+      },
+      {
+        "id": "z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "NEF 14-bit; lossless or two HE options."
+      }
+    ]
+  },
+  {
+    "id": "raw-plus-jpeg-preview",
+    "group": "Exposure & Image",
+    "name": "RAW + JPEG fine for sharper playback checks (embedded preview)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Image quality > RAW + JPEG fine (or fine star) ; secondary slot can split RAW/JPEG via Secondary slot function",
+      "z5ii": "Photo shooting menu > Image quality > RAW + JPEG fine",
+      "z50ii": "Photo shooting menu > Image quality > RAW + JPEG/HEIF fine"
+    },
+    "one_liner": "Adds a high-quality JPEG so zoomed playback shows truer sharpness.",
+    "what_it_does": "In-camera playback never renders the RAW; it shows a JPEG. With RAW only, it shows the JPEG preview embedded in the NEF, which on recent Nikon Z bodies is full-size but roughly 'basic' quality. With RAW + JPEG, the camera displays the separate JPEG copy, so 100% zoom gives a better read of focus and motion blur at the cost of card space.",
+    "options": [
+      {
+        "value": "RAW",
+        "meaning": "NEF only; playback uses the embedded preview.",
+        "use_when": "Card space matters; you check sharpness on the computer."
+      },
+      {
+        "value": "RAW + JPEG fine",
+        "meaning": "NEF plus fine JPEG; playback uses the JPEG.",
+        "use_when": "Critical focus checks in the field (macro, birds, stage)."
+      },
+      {
+        "value": "RAW + JPEG basic / normal",
+        "meaning": "Smaller companion JPEG.",
+        "use_when": "Compromise for sharing; preview quality between embedded and fine."
+      }
+    ],
+    "when_to_change": "Turn on when nailing focus in the field matters more than card space; off for long bird bursts.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "RAW + JPEG fine on Z8 (JPEG to slot 2 via Secondary slot function if you prefer)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "RAW only (buffer/card) - or RAW + JPEG basic",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "RAW + JPEG fine to judge focus/diffraction at 100%",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "RAW + JPEG fine to check moon sharpness",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "RAW + JPEG fine (quick sharing)",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Z50II records NEF + HEIF instead of NEF + JPEG when Tone mode is HLG (same applies to other HLG-capable bodies). Z8 has two card slots (CFexpress B + SD) so it can split RAW/JPEG across slots; Z5II has two SD slots; Z50II one SD slot.",
+    "gotchas": [
+      "Deleting the JPEG copy on the camera also deletes the NEF (Z50II manual).",
+      "Embedded-preview sharpness is a forum-measured observation (Z6III), not a Nikon spec; Z8 behaviour assumed similar.",
+      "JPEG burst depth is lower than RAW-only - matters on SD-card bodies."
+    ],
+    "related": [
+      "raw-compression",
+      "picture-control"
+    ],
+    "firmware_note": "",
+    "research_notes": "Embedded preview = full-size, ~JPEG basic quality: DPReview forum test on a Z6III (user 'Mike'); not verified for Z8/Z5II/Z50II specifically. Slot counts from general body knowledge, not re-sourced this pass.",
+    "sources": [
+      {
+        "id": "dpr-embedded",
+        "name": "DPReview forum - Z8 macro resolution, live view versus capture",
+        "url": "https://www.dpreview.com/forums/threads/z8-macro-resolution-live-view-versus-capture.4815332",
+        "kind": "forum",
+        "findings": "Z6III embedded NEF preview is full size (6040x4024) at about JPEG-basic sharpness; paired JPEG slightly sharper at 200%."
+      },
+      {
+        "id": "z50ii-quality",
+        "name": "Nikon Z50II Reference Guide - Image recording options",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/18-01.html",
+        "kind": "manufacturer",
+        "findings": "Camera displays only the JPEG/HEIF copy of dual-format pictures; deleting it deletes the NEF; HLG gives NEF+HEIF."
+      },
+      {
+        "id": "z8-quality",
+        "name": "Nikon Z8 Reference Guide - Image Quality Settings",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_image_quality_121.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "raw-bit-depth-readout",
+    "group": "Exposure & Image",
+    "name": "NEF bit depth (14 vs 12) and Z8 sensor readout",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "No user menu for bit depth; readout behaviour follows Release mode / Custom settings d1",
+      "z5ii": "No user menu for bit depth found in the menu structure",
+      "z50ii": "No user menu for bit depth (RAW recording page lists compression only)"
+    },
+    "one_liner": "All three record 14-bit NEFs; Z8's fast readout governs e-shutter distortion.",
+    "what_it_does": "Nikon lists 14-bit NEF for the Z8, Z5II and Z50II and none of their menus offers a bit-depth choice. On the Z8 (electronic shutter only), how fast the sensor is read decides rolling-shutter skew and banding under flicker: about 1/270 s in normal stills drive, slower in the JPEG-only C60/C120 modes and in video. 12-bit sensor reads apply to N-RAW/ProRes RAW video, not stills.",
+    "options": [
+      {
+        "value": "Normal stills drive (Single, CL, CH)",
+        "meaning": "Measured ~1/268–1/270 s readout (14-bit stills) on Z8/Z9.",
+        "use_when": "All stills; skew essentially invisible."
+      },
+      {
+        "value": "C60 / C120 high-speed frame capture+",
+        "meaning": "JPEG only; readout measured slower (~1/90 s at C60, ~1/173 s at C120).",
+        "use_when": "Rarely; expect more skew on fast wings."
+      },
+      {
+        "value": "Video",
+        "meaning": "Readout measured ~1/70 s in video mode; RAW video is 12-bit.",
+        "use_when": "Expect some skew on fast pans in 8K/full-width modes."
+      }
+    ],
+    "when_to_change": "Nothing to set for bit depth; choose release mode knowing C60/C120 and video read slower.",
+    "suggested": [
+      {
+        "scenario": "Birds",
+        "value": "Z8: CH (RAW) for flight - fast readout; avoid C60/C120 for wing detail",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Z8: fine under LED stage lights at normal drive; turn on Photo flicker reduction if banding appears",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Bird video",
+        "value": "Expect slower readout than stills; avoid whip pans",
+        "scenario_id": "birds"
+      }
+    ],
+    "body_differences": "Z8 is stacked-sensor, electronic-shutter only with very fast readout. Z5II and Z50II have mechanical shutters; their electronic-shutter readout is much slower (not measured in this pass) - use mechanical/EFCS for moving subjects on those bodies.",
+    "gotchas": [
+      "Some sources claim the Z8/Z9 drop to 12-bit in certain high-speed modes; Nikon's spec lists only 14-bit NEF - unverified.",
+      "Silent/electronic shutter on Z5II/Z50II can bend moving subjects and band under LED lights."
+    ],
+    "related": [
+      "raw-compression",
+      "video-file-type"
+    ],
+    "firmware_note": "",
+    "research_notes": "Readout figures are Horshack's measurements reported in a DPReview forum thread (forum-weight). Whether any Z8 stills mode is 12-bit could not be confirmed; Nikon's Z8 spec page shows 14-bit NEF only. Z5II/Z50II e-shutter readout not measured in this pass. Thom Hogan's 'Sensor read-out speeds' page could not be read (content not served).",
+    "sources": [
+      {
+        "id": "dpr-horshack",
+        "name": "DPReview forum - Z8/Z9 rolling shutter in 60fps/120fps modes (Horshack)",
+        "url": "https://www.dpreview.com/forums/thread/4752433",
+        "kind": "forum",
+        "findings": "Usual Z8/Z9 readout ~1/268–1/270; C60 1/90; C120 1/173; video ~1/70. Stills 14-bit, N-RAW 12-bit, H.264/H.265 10-bit readout."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "NEF 14-bit; 12-bit figures relate to RAW video."
+      },
+      {
+        "id": "z50ii-spec",
+        "name": "Nikon Z50II Reference Guide - Specifications",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/15-08.html",
+        "kind": "manufacturer",
+        "findings": "NEF 14-bit."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "NEF 14-bit."
+      },
+      {
+        "id": "thom-readout",
+        "name": "Thom Hogan - Sensor Read-Out Speeds",
+        "url": "https://zsystemuser.com/z-mount-cameras/z-camera-articles/sensor-read-out-speeds.html",
+        "kind": "review",
+        "findings": "Page exists but its body could not be retrieved in this pass."
+      }
+    ]
+  },
+  {
+    "id": "long-exposure-nr",
+    "group": "Exposure & Image",
+    "name": "Long exposure NR",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Long exposure NR",
+      "z5ii": "Photo shooting menu > Long exposure NR",
+      "z50ii": "Photo shooting menu > Long exposure NR"
+    },
+    "one_liner": "Dark-frame subtraction for exposures over 1 s; doubles each exposure's time.",
+    "what_it_does": "For shutter speeds slower than 1 s, the camera takes a second, dark exposure of equal length after the shot and subtracts its hot pixels and glow. This roughly doubles the time per frame and you cannot shoot while it runs.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Dark frame after exposures longer than 1 s.",
+        "use_when": "Single long exposures on warm nights where hot pixels show."
+      },
+      {
+        "value": "OFF",
+        "meaning": "No dark frame.",
+        "use_when": "Star stacking, time-lapse, moonrise sequences - take your own dark frames instead."
+      }
+    ],
+    "when_to_change": "Turn on for a few single long exposures; off for any sequence or stacking.",
+    "suggested": [
+      {
+        "scenario": "Landscape tripod",
+        "value": "ON for single 30 s+ night frames; OFF for blue hour sequences",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "OFF (short exposures, timing matters)",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Same on all three.",
+    "gotchas": [
+      "Turning the camera off during processing saves the photo without NR.",
+      "It blocks shooting during the dark frame - you will miss a fast-changing sky."
+    ],
+    "related": [
+      "extended-shutter-speeds",
+      "high-iso-nr"
+    ],
+    "firmware_note": "",
+    "research_notes": "Whether LENR is baked into the NEF is general knowledge (yes, dark frame is applied to raw data), not re-sourced this pass.",
+    "sources": [
+      {
+        "id": "z50ii-lenr",
+        "name": "Nikon Z50II Reference Guide - Long exposure NR",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-15.html",
+        "kind": "manufacturer",
+        "findings": "Applies slower than 1 s; processing roughly doubles time; cannot shoot during 'Performing noise reduction'."
+      },
+      {
+        "id": "z8-lenr",
+        "name": "Nikon Z8 Reference Guide - Long Exposure NR",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_long_exposure_nr_131.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-lenr",
+        "name": "Nikon Z5II Reference Guide - Long exposure NR",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_long_exposure_nr_136.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "high-iso-nr",
+    "group": "Exposure & Image",
+    "name": "High ISO NR (and Z8 High ISO NR mode)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > High ISO NR; Photo shooting menu > High ISO NR mode (fw 3.00+)",
+      "z5ii": "Photo shooting menu > High ISO NR",
+      "z50ii": "Photo shooting menu > High ISO NR"
+    },
+    "one_liner": "In-camera noise reduction for JPEG/HEIF; irrelevant if you use Lightroom AI Denoise.",
+    "what_it_does": "Applies noise reduction to processed images, more strongly at higher ISO. Settings are High, Normal, Low or Off (Off still applies minimal NR when needed). For NEF files Lightroom ignores this setting, so it matters for JPEGs, the playback preview and NX Studio renders. The Z8 gained a separate High ISO NR mode item in firmware 3.00.",
+    "options": [
+      {
+        "value": "High / Normal / Low",
+        "meaning": "Stronger to weaker NR; stronger smears fine detail.",
+        "use_when": "JPEG-only high-ISO shooting."
+      },
+      {
+        "value": "Off",
+        "meaning": "Only minimal NR when needed (always less than Low).",
+        "use_when": "RAW + Lightroom AI Denoise workflow."
+      },
+      {
+        "value": "Z8 High ISO NR mode",
+        "meaning": "Additional mode item added in fw 3.00; option names not verified.",
+        "use_when": "See Z8 manual page."
+      }
+    ],
+    "when_to_change": "Set Low/Off for RAW workflows; Normal for JPEG-only events.",
+    "suggested": [
+      {
+        "scenario": "Stage dance low light",
+        "value": "Low or Off (RAW + AI Denoise)",
+        "scenario_id": "dance"
+      },
+      {
+        "scenario": "Birds",
+        "value": "Low",
+        "scenario_id": "birds"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "Normal if sharing JPEGs straight from camera",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Only the Z8 has the extra 'High ISO NR mode' item (fw 3.00). Video has its own High ISO NR item in the Video recording menu on all three.",
+    "gotchas": [
+      "High NR on JPEGs can make the playback preview look softer than the RAW really is.",
+      "Video High ISO NR is separate and is baked into the footage."
+    ],
+    "related": [
+      "long-exposure-nr",
+      "auto-iso",
+      "raw-plus-jpeg-preview"
+    ],
+    "firmware_note": "Z8 fw 3.00 added 'High ISO NR mode' in the Photo shooting menu.",
+    "research_notes": "Z8 High ISO NR mode option names and behaviour could not be read (Z8 manual body not machine-readable; search budget exhausted). 'Lightroom ignores in-camera NR for NEF' is general knowledge, not re-sourced.",
+    "sources": [
+      {
+        "id": "z50ii-hinr",
+        "name": "Nikon Z50II Reference Guide - High ISO NR",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-16.html",
+        "kind": "manufacturer",
+        "findings": "High/Normal/Low/Off; Off still applies NR when needed, less than Low."
+      },
+      {
+        "id": "z8-hinr-mode",
+        "name": "Nikon Z8 Reference Guide - High ISO NR Mode",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_high_iso_nr_mode_132.html",
+        "kind": "manufacturer",
+        "findings": "Menu item exists (fw 3.10 guide)."
+      },
+      {
+        "id": "z8-hinr",
+        "name": "Nikon Z8 Reference Guide - High ISO NR",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_high_iso_nr_133.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z8-fw",
+        "name": "Nikon Download Center - Z8 firmware notes",
+        "url": "https://downloadcenter.nikonimglib.com/en/download/fw/573.html",
+        "kind": "manufacturer",
+        "findings": "Fw 3.00 added High ISO NR mode in the Photo shooting menu."
+      }
+    ]
+  },
+  {
+    "id": "extended-shutter-speeds",
+    "group": "Exposure & Image",
+    "name": "Extended shutter speeds (M) - up to 900 s",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > d6 Extended shutter speeds (M)",
+      "z5ii": "Custom settings menu > d7 Extended shutter speeds (M)",
+      "z50ii": "Custom settings menu > d7 Extended shutter speeds (M)"
+    },
+    "one_liner": "Unlocks timed exposures longer than 30 s, up to 900 s, in M.",
+    "what_it_does": "With ON, mode M offers timed shutter speeds beyond 30 s, up to 900 s (15 minutes), with a countdown shown for exposures over 30 s. It saves using Bulb/Time with a remote for star trails or heavy-ND daytime exposures.",
+    "options": [
+      {
+        "value": "ON",
+        "meaning": "Timed speeds to 900 s in mode M.",
+        "use_when": "Long ND seascapes, night foregrounds, star trails."
+      },
+      {
+        "value": "OFF",
+        "meaning": "Slowest timed speed 30 s.",
+        "use_when": "Normal shooting (avoids dialling past 30 s by accident)."
+      }
+    ],
+    "when_to_change": "Turn on for night or heavy-ND sessions.",
+    "suggested": [
+      {
+        "scenario": "Landscape tripod",
+        "value": "ON with 10-stop ND or night foregrounds",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "OFF (moon needs short exposures)",
+        "scenario_id": "moonrise"
+      }
+    ],
+    "body_differences": "Same feature; d6 on Z8, d7 on Z5II/Z50II. Video has separate extended shutter speeds for S/M (Z8 g12, Z5II/Z50II g10).",
+    "gotchas": [
+      "Nominal 15 s and 30 s are actually ~16 s and ~32 s; from 60 s the time is exact (Z50II manual).",
+      "Pair with Long exposure NR only for single frames - it doubles a 900 s exposure to 30 minutes."
+    ],
+    "related": [
+      "long-exposure-nr",
+      "starlight-view",
+      "warm-display-colors"
+    ],
+    "firmware_note": "",
+    "research_notes": "",
+    "sources": [
+      {
+        "id": "z50ii-d7",
+        "name": "Nikon Z50II Reference Guide - d7 Extended shutter speeds (M)",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-61.html",
+        "kind": "manufacturer",
+        "findings": "ON extends to 900 s in M; countdown beyond 30 s; 15/30 s are actually 16/32 s; exact from 60 s."
+      },
+      {
+        "id": "z8-d6",
+        "name": "Nikon Z8 Reference Guide - d6 Extended Shutter Speeds (M)",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmd_extended_shutter_speeds_m_236.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-d7",
+        "name": "Nikon Z5II Reference Guide - d7 Extended shutter speeds (M)",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmd_extended_shutter_speeds_m_236.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "Extendable to 900 s in mode M."
+      },
+      {
+        "id": "nikon-z5ii-spec",
+        "name": "Nikon Z5II product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/",
+        "kind": "manufacturer",
+        "findings": "Extendable to 900 s in mode M."
+      }
+    ]
+  },
+  {
+    "id": "color-space",
+    "group": "Exposure & Image",
+    "name": "Color space (sRGB / Adobe RGB)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Color space",
+      "z5ii": "Photo shooting menu > Color space",
+      "z50ii": "Photo shooting menu > Color space"
+    },
+    "one_liner": "Sets the JPEG gamut; RAW colors are chosen later in Lightroom.",
+    "what_it_does": "Chooses the gamut for JPEG/HEIF output: sRGB for screens and everyday prints, Adobe RGB for a wider gamut in color-managed print workflows. NEF files store the tag but Lightroom chooses its own working space, so for a RAW workflow this mostly affects the JPEG preview and histogram.",
+    "options": [
+      {
+        "value": "sRGB",
+        "meaning": "Standard web/screen gamut.",
+        "use_when": "Default; JPEGs for family, phone, web."
+      },
+      {
+        "value": "Adobe RGB",
+        "meaning": "Wider gamut; needs color-managed software/printer.",
+        "use_when": "JPEGs destined for professional print."
+      }
+    ],
+    "when_to_change": "Rarely; leave sRGB unless JPEGs go to a color-managed print lab.",
+    "suggested": [
+      {
+        "scenario": "Family indoors",
+        "value": "sRGB",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "sRGB (RAW); Adobe RGB only for print JPEGs",
+        "scenario_id": "landscape"
+      }
+    ],
+    "body_differences": "Same on all three. With HLG tone mode the color space is fixed to BT.2100 (Z50II manual).",
+    "gotchas": [
+      "Adobe RGB JPEGs look dull in apps that ignore color profiles."
+    ],
+    "related": [
+      "tone-mode-stills",
+      "picture-control"
+    ],
+    "firmware_note": "",
+    "research_notes": "Effect on RAW/Lightroom is general knowledge; Nikon page does not discuss RAW.",
+    "sources": [
+      {
+        "id": "z50ii-cs",
+        "name": "Nikon Z50II Reference Guide - Color space",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-13.html",
+        "kind": "manufacturer",
+        "findings": "sRGB for everyday; Adobe RGB wider gamut needing color management; third-party software may override."
+      },
+      {
+        "id": "z8-cs",
+        "name": "Nikon Z8 Reference Guide - Color Space",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_color_space_129.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-cs",
+        "name": "Nikon Z5II Reference Guide - Color space",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_color_space_134.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "skin-softening",
+    "group": "Exposure & Image",
+    "name": "Skin softening",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Skin softening (video: Video recording menu > Skin softening)",
+      "z5ii": "Photo shooting menu > Skin softening",
+      "z50ii": "Photo shooting menu > Skin softening (assignable to a button via f2)"
+    },
+    "one_liner": "Automatically smooths complexions on detected faces in processed images.",
+    "what_it_does": "When a human face is detected, the camera smooths skin texture in the processed image, for up to three people. It is a rendering adjustment for JPEG/HEIF (and video); the Nikon page does not say it alters RAW data.",
+    "options": [
+      {
+        "value": "High / Normal / Low",
+        "meaning": "Strength of smoothing.",
+        "use_when": "JPEG portraits for quick sharing."
+      },
+      {
+        "value": "Off",
+        "meaning": "No smoothing.",
+        "use_when": "RAW workflow; children (keep natural texture)."
+      }
+    ],
+    "when_to_change": "Turn on only for JPEG-delivered portraits.",
+    "suggested": [
+      {
+        "scenario": "Family indoors",
+        "value": "Off or Low",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Off (keeps makeup and costume detail)",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Present on all three for photo and video menus.",
+    "gotchas": [
+      "Not available with high-speed frame capture+, multiple exposure or HDR overlay (Z50II manual)."
+    ],
+    "related": [
+      "portrait-impression-balance",
+      "picture-control"
+    ],
+    "firmware_note": "",
+    "research_notes": "RAW effect not stated by Nikon; assumed rendering-only (NX Studio may honour it).",
+    "sources": [
+      {
+        "id": "z50ii-skin",
+        "name": "Nikon Z50II Reference Guide - Skin softening",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-38.html",
+        "kind": "manufacturer",
+        "findings": "High/Normal/Low/Off; up to three faces; not with C15/C30, multiple exposure, HDR overlay."
+      },
+      {
+        "id": "z8-skin",
+        "name": "Nikon Z8 Reference Guide - Skin Softening",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_skin_softening_137.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-skin",
+        "name": "Nikon Z5II Reference Guide - Skin softening",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_skin_softening_141.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "portrait-impression-balance",
+    "group": "Exposure & Image",
+    "name": "Portrait impression balance",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Portrait impression balance (video: Video recording menu > Portrait impression balance)",
+      "z5ii": "Photo shooting menu > Portrait impression balance",
+      "z50ii": "Photo shooting menu > Portrait impression balance (also i menu via f1)"
+    },
+    "one_liner": "Saves up to three skin-tone hue/brightness tweaks you can recall instantly.",
+    "what_it_does": "Lets you shift skin tones along a magenta-yellow (amber) hue axis and a brightness axis, saved as Mode 1–3. It is a rendering adjustment that affects skin-like tones in JPEG/HEIF and video, letting you match your family's complexion look across bodies.",
+    "options": [
+      {
+        "value": "Off",
+        "meaning": "No adjustment.",
+        "use_when": "RAW workflow."
+      },
+      {
+        "value": "Mode 1 / Mode 2 / Mode 3",
+        "meaning": "Your saved hue (M–Y) and brightness offsets.",
+        "use_when": "JPEG portraits or SDR video of people; e.g. one mode for warm indoor light."
+      }
+    ],
+    "when_to_change": "Set modes once; select a mode when shooting JPEG/video portraits.",
+    "suggested": [
+      {
+        "scenario": "Family indoors",
+        "value": "A Mode tuned slightly toward Y with +brightness for JPEGs",
+        "scenario_id": "kids"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Off (stage gels make skin-tone shifts unpredictable)",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "Present on all three. Matching the same Mode values across bodies helps multi-body consistency.",
+    "gotchas": [
+      "Unavailable with Monochrome, Flat Monochrome, Deep Tone Monochrome or Creative Picture Controls.",
+      "Affects any skin-like tones in the frame, not just faces (e.g. wood, sand)."
+    ],
+    "related": [
+      "skin-softening",
+      "picture-control",
+      "white-balance"
+    ],
+    "firmware_note": "",
+    "research_notes": "Nikon page does not say whether NEF data is affected; assumed rendering-only.",
+    "sources": [
+      {
+        "id": "z50ii-pib",
+        "name": "Nikon Z50II Reference Guide - Portrait impression balance",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-39.html",
+        "kind": "manufacturer",
+        "findings": "Hue on M–Y axis and brightness; Modes 1–3; unavailable with monochrome/creative PCs; may affect skin-like areas."
+      },
+      {
+        "id": "z8-pib",
+        "name": "Nikon Z8 Reference Guide - Portrait Impression Balance",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_portrait_impression_balance_138.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-pib",
+        "name": "Nikon Z5II Reference Guide - Portrait impression balance",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/psm_portrait_impression_balance_142.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "warm-display-colors",
+    "group": "Exposure & Image",
+    "name": "Warm display colors",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Custom settings menu > d11 Warm display colors",
+      "z5ii": "Custom settings menu > d12 Warm display colors",
+      "z50ii": "Custom settings menu > d12 Warm display colors"
+    },
+    "one_liner": "Dim, warm-tinted displays that protect your night vision during astro.",
+    "what_it_does": "Turns the displays warmer and dimmer so your dark-adapted eyes aren't dazzled. Mode 1 warms shooting, menu and playback displays; Mode 2 warms menus and on-screen icons but leaves the live image and playback picture colors unchanged. Brightness of the warm display is adjustable.",
+    "options": [
+      {
+        "value": "Mode 1",
+        "meaning": "Warm colors in shooting, menu and playback displays.",
+        "use_when": "Pure astro framing where colors don't matter."
+      },
+      {
+        "value": "Mode 2",
+        "meaning": "Warm menus/icons; through-the-lens view and picture colors unchanged.",
+        "use_when": "Moonrise/astro when you still need to judge colors."
+      },
+      {
+        "value": "Off",
+        "meaning": "Normal displays.",
+        "use_when": "Everything else."
+      }
+    ],
+    "when_to_change": "Switch on at dusk for night sessions; off afterwards.",
+    "suggested": [
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "Mode 2 (keep true colors of the moon)",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Landscape tripod",
+        "value": "Mode 1 for Milky Way sessions",
+        "scenario_id": "landscape"
+      },
+      {
+        "scenario": "Stage dance low light",
+        "value": "Mode 2 with low brightness to avoid distracting the audience (field judgement)",
+        "scenario_id": "dance"
+      }
+    ],
+    "body_differences": "d11 on Z8; d12 on Z5II/Z50II.",
+    "gotchas": [
+      "Mode 1 tints playback - don't judge white balance with it on."
+    ],
+    "related": [
+      "starlight-view",
+      "monitor-evf-brightness"
+    ],
+    "firmware_note": "",
+    "research_notes": "Option text from Z50II manual; Z8 assumed identical.",
+    "sources": [
+      {
+        "id": "z50ii-d12",
+        "name": "Nikon Z50II Reference Guide - d12 Warm display colors",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-05-65.html",
+        "kind": "manufacturer",
+        "findings": "Mode 1/Mode 2/Off and adjustable warm display brightness; intended for dark-adapted eyes (astro)."
+      },
+      {
+        "id": "z8-d11",
+        "name": "Nikon Z8 Reference Guide - d11 Warm Display Colors",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/csmd_warm_display_colors_241.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "z5ii-d12",
+        "name": "Nikon Z5II Reference Guide - d12 Warm display colors",
+        "url": "https://onlinemanual.nikonimglib.com/z5II/en/csmd_warm_display_colors_241.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      }
+    ]
+  },
+  {
+    "id": "tone-mode-stills",
+    "group": "Exposure & Image",
+    "name": "Tone mode for stills (SDR vs HLG/HEIF)",
+    "available_on": [
+      "z8",
+      "z5ii",
+      "z50ii"
+    ],
+    "menu_path": {
+      "z8": "Photo shooting menu > Tone mode",
+      "z5ii": "Photo shooting menu > Tone mode",
+      "z50ii": "Photo shooting menu > Tone mode"
+    },
+    "one_liner": "SDR makes JPEGs; HLG makes 10-bit HDR HEIFs for HDR screens.",
+    "what_it_does": "SDR records JPEG companions with normal dynamic range. HLG records 10-bit HEIF with extended highlight range for HDR displays, and NEF + HEIF instead of NEF + JPEG. HLG restricts several features and raises the minimum ISO.",
+    "options": [
+      {
+        "value": "SDR",
+        "meaning": "JPEG output, standard range.",
+        "use_when": "Default."
+      },
+      {
+        "value": "HLG",
+        "meaning": "HEIF output (BT.2100), wider highlight range.",
+        "use_when": "Sunset/moonrise images to view on an HDR iPhone/TV straight from camera."
+      }
+    ],
+    "when_to_change": "Only if you want HDR HEIFs from camera; RAW shooters can make HDR in Lightroom.",
+    "suggested": [
+      {
+        "scenario": "Moonrise at 280mm",
+        "value": "SDR (RAW); HLG only for straight-to-iPhone HDR",
+        "scenario_id": "moonrise"
+      },
+      {
+        "scenario": "Family indoors",
+        "value": "SDR",
+        "scenario_id": "kids"
+      }
+    ],
+    "body_differences": "Present on all three. Z8 HLG ISO range 400–25600 (Nikon spec); Z50II: minimum ISO 800 and no Hi ISO in HLG (manual).",
+    "gotchas": [
+      "HLG disables Active D-Lighting, multiple exposure, HDR overlay and some high-speed modes (Z50II).",
+      "HLG photos use Set Picture Control (HLG), not your normal Picture Control."
+    ],
+    "related": [
+      "picture-control",
+      "color-space",
+      "raw-plus-jpeg-preview",
+      "tone-mode-video"
+    ],
+    "firmware_note": "",
+    "research_notes": "Restrictions list read from Z50II page; Z8/Z5II restrictions may differ slightly.",
+    "sources": [
+      {
+        "id": "z50ii-tone",
+        "name": "Nikon Z50II Reference Guide - Tone mode",
+        "url": "https://onlinemanual.nikonimglib.com/z50II/en/09-03-36.html",
+        "kind": "manufacturer",
+        "findings": "SDR = JPEG, HLG = HEIF; HLG restrictions (min ISO 800, no Hi, BT.2100, no ADL/multiple exposure/HDR overlay, no C15/C30)."
+      },
+      {
+        "id": "z8-tone",
+        "name": "Nikon Z8 Reference Guide - Tone Mode",
+        "url": "https://onlinemanual.nikonimglib.com/z8/en/psm_tone_mode_120.html",
+        "kind": "manufacturer",
+        "findings": "Menu location."
+      },
+      {
+        "id": "nikon-z8-spec",
+        "name": "Nikon Z8 product/spec page",
+        "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/",
+        "kind": "manufacturer",
+        "findings": "HLG tone mode limits ISO to 400–25600."
+      },
+      {
+        "id": "hcwt-z8",
+        "name": "Have Camera Will Travel - Nikon Z8 image settings",
+        "url": "https://havecamerawilltravel.com/nikon-z8-image-settings/",
+        "kind": "review",
+        "findings": "HEIF 10-bit used when Tone mode is HLG."
+      }
+    ]
+  }
+]

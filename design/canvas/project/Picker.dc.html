@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GearCard — Lens picker</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#9A5B00}a:hover{color:#6F4100}
+button{font:inherit}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #8E8C86; font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #1D2129; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden">
+  <div style="height: 784px; box-sizing: border-box; background: #FBFAF7; border-radius: 18px 18px 0 0; padding: 8px 20px 0; display: flex; flex-direction: column; gap: 14px; overflow: hidden">
+    <div style="align-self: center; width: 40px; height: 5px; border-radius: 3px; background: #C9C6BD"></div>
+    <div style="display: flex; justify-content: space-between; align-items: center">
+      <h1 style="margin: 0; font-size: 20px; font-weight: 700">Mount a lens</h1>
+      <span style="font-size: 13px; color: #5B6270">on Z8</span>
+    </div>
+    <label style="display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 12px; background: #EFEDE6; border-radius: 10px">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5B6270" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+      <input placeholder="Search lenses" aria-label="Search lenses" style="border: none; background: transparent; font: inherit; font-size: 15px; flex-grow: 1; outline: none">
+    </label>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.05em; color: #5B6270">RECENT</span>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap">
+        <button style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1.5px solid #1D2129; background: #1D2129; color: #FFFFFF; font-size: 13px; font-weight: 600">70-200 f/2.8 S</button>
+        <button style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1px solid #E3E1DA; background: #FFFFFF; color: #1D2129; font-size: 13px">MC 105 S</button>
+        <button style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1px solid #E3E1DA; background: #FFFFFF; color: #1D2129; font-size: 13px">Sigma 135 Art</button>
+        <button style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1px solid #E3E1DA; background: #FFFFFF; color: #1D2129; font-size: 13px">24-120 f/4 S</button>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.05em; color: #5B6270">Z ZOOMS (FX)</span>
+      <div style="background: #FFFFFF; border: 1px solid #E3E1DA; border-radius: 14px; display: flex; flex-direction: column">
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; border-bottom: 1px solid #EFEDE6; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px">14-30 f/4 S</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/5.6–8</span></button>
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; border-bottom: 1px solid #EFEDE6; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px">24-120 f/4 S</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/5.6–8</span></button>
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; border-bottom: 1px solid #EFEDE6; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px; display: flex; gap: 8px; align-items: center">70-200 f/2.8 VR S<span style="font-size: 11px; padding: 1px 6px; border-radius: 5px; background: #FFF4E2; color: #6F4100; font-weight: 600">TC</span></span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/4–5.6</span></button>
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px; display: flex; gap: 8px; align-items: center">180-600 VR<span style="font-size: 11px; padding: 1px 6px; border-radius: 5px; background: #FFF4E2; color: #6F4100; font-weight: 600">TC</span></span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">open–f/8</span></button>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.05em; color: #5B6270">F LENSES ON FTZ II</span>
+      <div style="background: #FFFFFF; border: 1px solid #E3E1DA; border-radius: 14px; display: flex; flex-direction: column">
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; border-bottom: 1px solid #EFEDE6; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px; display: flex; gap: 8px; align-items: center">AF Micro 60 f/2.8D<span style="font-size: 11px; padding: 1px 6px; border-radius: 5px; background: #EFEDE6; color: #3D4350; font-weight: 600">MF</span></span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/5.6–8</span></button>
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; border-bottom: 1px solid #EFEDE6; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px">AF-S 85 f/1.4G</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/4–5.6</span></button>
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; border-bottom: 1px solid #EFEDE6; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px">Sigma 135 f/1.8 Art</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/2.8–4</span></button>
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; border-bottom: 1px solid #EFEDE6; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px; display: flex; gap: 8px; align-items: center">DC 105 f/2D<span style="font-size: 11px; padding: 1px 6px; border-radius: 5px; background: #EFEDE6; color: #3D4350; font-weight: 600">MF</span></span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/4–5.6</span></button>
+        <button style="display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 0 14px; border: none; background: transparent; text-align: left; color: #1D2129"><span style="font-size: 15px; display: flex; gap: 8px; align-items: center">AF 50 f/1.8D<span style="font-size: 11px; padding: 1px 6px; border-radius: 5px; background: #EFEDE6; color: #3D4350; font-weight: 600">MF</span></span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #17633E">f/5.6–8</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
