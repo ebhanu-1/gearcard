@@ -6,6 +6,7 @@ import { SettingsScreen } from './screens/Settings'
 import { More } from './screens/More'
 import { LensPicker } from './components/LensPicker'
 import { SourcesSheet } from './components/SourcesSheet'
+import { applyUpdate, useUpdate } from './lib/update'
 
 const TABS: { id: Tab; label: string; d: string }[] = [
   { id: 'mounted', label: 'Mounted', d: 'M4 12a8 8 0 1016 0 8 8 0 10-16 0M8.5 12a3.5 3.5 0 107 0 3.5 3.5 0 10-7 0' },
@@ -17,6 +18,7 @@ const TABS: { id: Tab; label: string; d: string }[] = [
 export function App() {
   const st = useStore()
   const scroller = useRef<HTMLDivElement>(null)
+  const upd = useUpdate()
   useEffect(() => void scroller.current?.scrollTo(0, 0), [st.tab, st.sub?.type, (st.sub as any)?.id])
 
   // Long-press on the header area toggles Night (SPEC §5.7).
@@ -37,6 +39,13 @@ export function App() {
 
   return (
     <>
+      {(upd.live || upd.note) && (
+        <div class="updatebar" role="status">
+          {upd.live ? (
+            <>GearCard v{upd.live} is available. <button class="upd" onClick={() => applyUpdate(upd.live!)}>Update now</button></>
+          ) : upd.note}
+        </div>
+      )}
       <main class="scroll" ref={scroller}>
         {st.tab === 'mounted' && <Mounted />}
         {st.tab === 'lenses' && <Lenses />}

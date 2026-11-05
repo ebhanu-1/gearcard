@@ -34,12 +34,11 @@ Each lens file is self-contained. To refresh one, ask Claude to re-research that
 ```
 cd app
 npm install
-npm run dev        # http://localhost:5173
-npm test           # optics + lens-card unit tests (34)
-npm run build      # validates data, typechecks, builds the PWA into app/dist
-npm run preview    # serve the production build (needed to test the service worker)
+npm run dev        # http://localhost:5173 (no service worker, no update checks)
+npm run check      # data validation + typecheck + 34 unit tests, no version bump
+npm run build      # release: bumps VERSION, builds the single-file PWA to the repo root and app/dist
 ```
 
-Host `app/dist` on any static HTTPS site (GitHub Pages, Cloudflare Pages, Netlify), open it in Safari on the iPhone, then Share → Add to Home Screen. After the first load it works in airplane mode.
+Release and hosting follow the ClearSky / MyWeather scheme (VERSION file, self-update probe, cache-first service worker, GitHub Pages from the repo root). Details in `CLAUDE.md`. Open the hosted page in Safari on the iPhone, then Share → Add to Home Screen. After the first load it works in airplane mode, and a new release shows up on the next launch or as an "Update now" banner.
 
 Phase 1–3 of `SPEC.md` are implemented. Known data gaps the app surfaces rather than hides: the Video scenario has no researched suggestions, and `tc_compatible` is unset for the AF Micro 60, Sigma 135 Art and Tokina 100 (treated as no teleconverter).

@@ -1,6 +1,7 @@
 import { bodies, dataWarnings, kit, lenses, settings } from '../lib/data'
 import { back, mount } from '../lib/state'
 import { BackBar } from '../components/Common'
+import { APP_VERSION } from '../lib/update'
 
 const KINDS = ['measured', 'review', 'video', 'manufacturer', 'forum'] as const
 
@@ -24,7 +25,7 @@ export function DataSources() {
         <div class="kv">
           <span>Researched</span><span class="r">{kit.as_of}</span>
           <span>Lenses / bodies / settings</span><span class="r">{lenses.length} / {bodies.length} / {settings.length}</span>
-          <span>App · data version</span><span class="r">1.0 · {kit.as_of}</span>
+          <span>App · data version</span><span class="r">{APP_VERSION} · {kit.as_of}</span>
         </div>
       </div>
       <section class="sec"><h2>Sources by kind</h2>

@@ -26,3 +26,15 @@ Add scripts: `validate` (tsx ../scripts/validate-data.ts), `test` (vitest run), 
 
 ## Owner preferences
 Direct, dense UI copy. Prose over bullet clutter. Light backgrounds. Tell him plainly when data is low-confidence or missing.
+
+
+## Versioning, release and hosting (same scheme as ClearSky, MyWeather and Studio Phone)
+- `VERSION` (repo root) holds e.g. `1.4`. `npm run build` (in `app/`) validates data, typechecks, bumps the last part, builds one
+  self-contained `index.html` with Vite (vite-plugin-singlefile) and copies it plus `sw.js`, `manifest.webmanifest` and the icons
+  to the repo root, which GitHub Pages serves. `node ../scripts/build.mjs --version 2.0` pins a bigger version, `--no-bump` rebuilds as is.
+- The page carries its version in `<meta name="app-version">`. The app probes the live page (`?u=<time>`, always network) 1.5 s after
+  launch and whenever it returns to the foreground. At launch a newer version reloads at once (`?v=<version>`); later it shows an
+  "Update now" banner. More → Version vX.Y checks on demand. Logic: `app/src/lib/update.ts`.
+- `app/public/sw.js` is cache-first for the page (so the Home Screen app opens offline); `?u=` always hits the network, `?v=` fetches fresh and replaces the cache.
+- Release: `npm run build`, commit (including the root `index.html`), `git push`. Size budget 260 KB gzipped (ClearSky's is 200; ~200 KB of this is the researched content).
+- `npm run check` runs validation, typecheck and tests without bumping the version. The dev server (`npm run dev`) never registers the service worker or checks for updates.
